@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.nigeriaImmunization
-canonical: http://example.org
+canonical: https://nphcda.gov.ng/immunizationIG
 name: Nigeria-immunization-FHIR-IG
 title: Nigeria Immunization FHIR IG
 description: Nigeria Immunization FHIR IG
@@ -16,8 +16,8 @@ releaseLabel: ci-build
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: intellisoftkenya.com
-  url: https://www.intellisoftkenya.com/
+  name: https://nphcda.gov.ng
+  url: https://nphcda.gov.ng
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -101,10 +101,10 @@ pages:
 # ContactDetail.
 #
 contact:
-  - name: IntelliSOFT Consulting Kenya.
+  - name: Nigeria Primary Healthcare Development Agency.
     telecom:
       - system: email # phone | fax | email | pager | url | sms | other
-        value: info@intellisoftkenya.com
+        value: ig@nphcda.gov.ng
         use: work
         
 jurisdiction: urn:iso:std:iso:3166#NG "Nigeria"        
