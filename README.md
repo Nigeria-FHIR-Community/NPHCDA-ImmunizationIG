@@ -7,12 +7,12 @@ National Primary Healthcare Development Agency (NPHCDA)
 **Build Tool:** SUSHI (ShortHand Unshortens Syntax Iteratively)  
 **License:** MIT
 
-## 🧭 Overview
+## Overview
 
 This repository contains the source files for the **Nigeria Immunization FHIR Implementation Guide (IG)** published by the **National Primary Healthcare Development Agency (NPHCDA)**.  
 The IG defines how HL7 FHIR standards are applied to immunization use cases in Nigeria, aligning with the **WHO SMART Guidelines**, **Digital Adaptation Kits (DAKs)**, and global best practices in digital health interoperability.
 
-## 🧱 Project Structure
+## Project Structure
 
 - `input/`: Main working folder containing:
   - `fsh/`: FHIR Shorthand (FSH) files (profiles, extensions, value sets, etc.)
@@ -24,9 +24,9 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
 - `ig.ini`: IG Publisher initialization file
 - `output/`: (auto-generated) IG publisher output including HTML, JSON, etc.
 
-## 🚀 Getting Started
+## Getting Started
 
-### 🧰 Prerequisites
+### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18 or higher)
 - [SUSHI](https://fshschool.org/docs/sushi/) (FHIR Shorthand compiler)
