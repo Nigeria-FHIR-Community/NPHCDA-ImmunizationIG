@@ -1,0 +1,26 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+ <li>
+      <a href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
+  </li> 
+   <li class="dropdown">
+    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="concepts.html">Concepts</a></li>
+      <li><a href="generic-personas.html">Generic Personas</a></li>
+      <li><a href="user-scenarios.html">User Scenarios</a></li>
+      <li><a href="business-processes.html">Business Processes &amp; Workflows</a></li>
+ 
+      <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
+       <li><a href="functional-requirements.html">Functional Requirements</a></li>
+       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+ 
+    </ul>
+  </li>
+   <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artifacts<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artifacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
+    </ul>
+  </li>
+</ul>  
