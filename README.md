@@ -16,7 +16,7 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
 
 - `input/`: Main working folder containing:
   - `fsh/`: FHIR Shorthand (FSH) files (profiles, extensions, value sets, etc.)
-  - `resources/`: Static files or manually curated resources (e.g., images, examples)
+  - `images/`: Contains static images used in the guide.
   - `includes/`: Custom content like narrative markdown, guidance pages
   - `pagecontent/`: Markdown files for IG narrative content
 - `fshconfig.yaml`: Configuration file for SUSHI
@@ -28,9 +28,9 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or higher)
-- [SUSHI](https://fshschool.org/docs/sushi/) (FHIR Shorthand compiler)
-- [Java JDK](https://adoptopenjdk.net/) (for HL7 IG Publisher)
+- [Node.js](https://nodejs.org/) (v18.20.7)
+- [SUSHI](https://fshschool.org/docs/sushi/) (v3.14.0)
+- [Java JDK](https://adoptopenjdk.net/) (v20 and above)
 
 ### 🛠️ Setup Instructions
 
