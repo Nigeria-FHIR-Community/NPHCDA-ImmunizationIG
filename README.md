@@ -19,10 +19,9 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
   - `images/`: Contains static images used in the guide.
   - `includes/`: Custom content like narrative markdown, guidance pages
   - `pagecontent/`: Markdown files for IG narrative content
-- `fshconfig.yaml`: Configuration file for SUSHI
 - `sushi-config.yaml`: Main config for IG metadata (title, canonical URL, etc.)
 - `ig.ini`: IG Publisher initialization file
-- `output/`: (auto-generated) IG publisher output including HTML, JSON, etc.
+- `output/`: (To be auto-generated) IG publisher output including HTML, JSON, etc. Generated when _genonce is run.
 
 ## Getting Started
 
