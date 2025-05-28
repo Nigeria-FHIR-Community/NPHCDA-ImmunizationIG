@@ -18,7 +18,7 @@ releaseLabel: ci-build
 publisher:
   name: https://nphcda.gov.ng
   url: https://nphcda.gov.ng
-  # email: test@example.org
+  # email: ig@nphcda.gov.ng
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
