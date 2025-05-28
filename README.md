@@ -1,7 +1,6 @@
 # 🇳🇬 Nigeria Immunization FHIR Implementation Guide [DRAFT]
 
-**Maintained by:**  
-National Primary Healthcare Development Agency (NPHCDA)  
+**Maintained by:**  National Primary Healthcare Development Agency (NPHCDA)  
 **Project Type:** HL7® FHIR® Implementation Guide  
 **Language:** FHIR Shorthand (FSH)  
 **Build Tool:** SUSHI (ShortHand Unshortens Syntax Iteratively)  
@@ -31,7 +30,7 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
 - [SUSHI](https://fshschool.org/docs/sushi/) (v3.14.0)
 - [Java JDK](https://adoptopenjdk.net/) (v20 and above)
 
-### 🛠️ Setup Instructions
+### Setup Instructions
 
 1. **Clone the repository**
 
