@@ -1,0 +1,8 @@
+# Ignored generated folders#
+############################
+
+fsh-generated
+input-cache
+output
+temp
+template
