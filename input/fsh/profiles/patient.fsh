@@ -17,7 +17,7 @@ Description: "NEIR for Patient Profile"
 * address 0..* 
 * address.line 0..1  
 * address.city 0..1  
-* extension contains address.ward named address.ward 0..1
+* extension contains wardExtension named ward 0..1
 * address.district 1..1 
 * address.state 1..1
 * contact 0..*
@@ -59,7 +59,7 @@ Description: "An example patient registration instance based on the NEIR profile
 * extension[hivStatus].valueCodeableConcept.text = "Negative"
 * extension[pregnancyStatus].valueBoolean = false
 * extension[birthWeight].valueQuantity.value = 2500
-* extension[siblingsGivenName].valueHumanName.given = "Sarah"
+* extension[siblingsGivenName].valueHumanName.given[0] = "Sarah"
 * extension[siblingsSurName].valueSurName.family = "Sarah"
 * address[0].line[0] = "123 Health Street"
 * address[0].city = "Garki"

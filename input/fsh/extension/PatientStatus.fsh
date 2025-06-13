@@ -54,12 +54,12 @@ Context: Patient
 * value[x] only Quantity
 
 
-Extension: address.ward
+Extension: ward
 Id:  address-ward
 Title:  "Ward extension"
 Description: "Ward extension"
 Context: Patient 
-* value[x] only Address
+
 
 
 Extension: ageInWeeks
