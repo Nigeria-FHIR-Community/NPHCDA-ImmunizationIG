@@ -14,8 +14,8 @@ Description: "The Client's details not covered in the base specificatuion, but e
     hivStatus 0..1 and
     pregnancyStatus 0..1 and
     Ward 0..1 and
-    siblingSurname 1..1 and
-    siblingGivenName 1..1 and
+    siblingSurname 0..1 and
+    siblingGivenName 0..1 and
     siblingBirthYear 0..1 and
     siblingGender 0..1 and
     siblingHealthStatus 0..1

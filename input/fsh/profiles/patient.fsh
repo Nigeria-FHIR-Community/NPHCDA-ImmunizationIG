@@ -13,8 +13,8 @@ Description: "NEIR for Patient Profile"
 * address 0..* 
 * address.line 0..1  
 * address.city 0..1  
-* address.district 1..1 
-* address.state 1..1
+* address.district 0..1 
+* address.state 0..1
 * contact 0..*
 * contact.name.given 0..1
 * contact.name.family 0..1
