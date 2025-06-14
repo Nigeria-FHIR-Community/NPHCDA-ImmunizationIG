@@ -55,7 +55,6 @@ The Nigeria Immunization FHIR Implementation Guide (IG) establishes the technica
 #### Key Systems and Their Roles
 
 <section>
-
    <p> Standalone Electronic Immunization Registries (EIRs) or Immunization modules in Hospital EMRs</p>
         <ul>
             <li>Capture, store, and followup on vaccination records for individuals.</li>
@@ -88,15 +87,10 @@ The Nigeria Immunization FHIR Implementation Guide (IG) establishes the technica
         </ul>               
 </section>
 
-
 #### FHIR-Based Data Exchange
 
-<section>
-<p>
 
 This IG defines FHIR-based interactions using standardized resources such as:
-
-<p>
 
 <ul>
     <li>Patient – Identifying individuals across systems.</li>
@@ -106,11 +100,9 @@ This IG defines FHIR-based interactions using standardized resources such as:
     <li>SupplyDelivery – Tracking vaccine inventory.</li>
 </ul>
 
-<p>
 
 
 ### Concepts
-
  <table class="table table-hover table-bordered table-striped">
     <thead>
         <tr>
