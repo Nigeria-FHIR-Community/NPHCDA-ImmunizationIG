@@ -58,7 +58,7 @@ Description: "Nigeria Immunization Patient Profile"
 * extension contains AgeInWeeks named ageInWeeks 0..1 MS
 * extension contains AgeInMonths named ageInMonths 0..1 MS
 * extension contains AgeInYears named ageInYears 0..1 MS
-
+* extension contains CreatedDate named createdDate 0..1 MS
 
 // Hide dataelements
 

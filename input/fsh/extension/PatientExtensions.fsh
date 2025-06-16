@@ -66,3 +66,13 @@ Description: "Age of the Immunization Client recorded in years"
 * ^context[0].expression = "Patient"
 * value[x] only integer
 * valueInteger ^short = "Age of the Immunization Client recorded in years"
+
+
+Extension: CreatedDate
+Id:  date-client-created
+Title:  "Date client record was created"
+Description: "Date the client record was first created"
+* ^context[0].type = #element
+* ^context[0].expression = "Patient"
+* value[x] only date
+* valueDate ^short = "Date the client record was first created"
