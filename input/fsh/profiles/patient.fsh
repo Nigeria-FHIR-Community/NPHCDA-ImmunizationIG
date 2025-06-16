@@ -18,8 +18,9 @@ Description: "Nigeria Immunization Patient Profile"
 * birthDate 0..1 MS
 * birthDate ^short = "The date of birth of the Immunization client in the form dd-mm-yyy"
 * address.line 0..1 MS
-* address.line ^short = "The address, used as Nigeria LGA in this profile"
+* address.line ^short = "The house number number, stree, village, setttement, and name where the Client lives"
 * address.city 0..1  
+* address.city ^short = "The city used where the client lives in the state"
 * address.district 0..1 MS
 * address.district ^short = "The FHIR name is district, used as Nigeria LGA in this profile"
 * address.district ^definition = "Full detailed definition for the address district field as Local Government Area"
@@ -43,6 +44,7 @@ Description: "Nigeria Immunization Patient Profile"
 * contact.address.district ^short = "The LGA where the Client's primary Caregiver or Guardian lives"
 * contact.address.state 0..1 MS
 * contact.address.state ^short = "The State in Nigeria where the Client's primary Caregiver or Guardian lives"
+* link.other only Reference(NgImmSiblingRelatedPerson)
 
 
 // Include the extensions
@@ -55,3 +57,17 @@ Description: "Nigeria Immunization Patient Profile"
 * extension contains AgeInMonths named ageInMonths 0..1 MS
 * extension contains AgeInYears named ageInYears 0..1 MS
 
+
+// Hide dataelements
+
+* name.use 0..0 
+* identifier.use 0..0
+* address.use 0..0
+* contact.name.use 0..0
+* contact.telecom.use 0..0
+* contact.address.use 0..0
+* implicitRules 0..0
+* modifierExtension 0..0
+* active 0..0
+* contact.modifierExtension 0..0
+* link.modifierExtension 0..0

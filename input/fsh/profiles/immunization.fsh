@@ -13,18 +13,9 @@ Alias: $validity-endDate-certificate =  https://chanjoke.intellisoftkenya.com/fh
 
 
 
-Profile: NEIRImmunization
+Profile: NgImmImmunization
 Parent: Immunization
-Description: "Nigerian Registry Profile for Immunization."
-//* extension contains 
-//    $kenya-healthworker-extension named healthWorker 0..1 and
-  //  $body-weight-extension named bodyWeight 0..1 and 
-    //$contraindication-to-vaccine named contraindicationToVaccine 0..1 and 
- //   $vaccine-brand named vaccineBrand 0..1 and 
-   // $certificate-Issued named certificateIssued 0..1 and 
-  //  $certificate-Issue-Date named CertificateIssueDate 0..1 and
-  //  $validity-startdate-certificate named certificateValidFrom  0..1 and 
-  //  $validity-endDate-certificate named CertificateValidUntil 0..1
+Description: "Nigerian Profile for Immunization resource."
 
 * identifier 0..0
 * location MS
@@ -59,8 +50,8 @@ Description: "If the status is not-done, a reason must be provided"
 Severity:    #error
 Expression:  "status != 'not-done' xor statusReason.exists()"
 
-Instance: NEIRImmunizationExample
-InstanceOf: NEIRImmunization
+Instance: NgImmImmunizationExample
+InstanceOf: NgImmImmunization
 Usage: #example
 * status = #completed
 * vaccineCode.coding[0] = $cvx#20 "DTaP"
