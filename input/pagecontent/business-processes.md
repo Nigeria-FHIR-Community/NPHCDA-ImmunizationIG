@@ -253,7 +253,7 @@ The business processes here have been informed by <a href="https://www.who.int/p
 The overview of the business processes in this DAK captures all business processes at a high level.
 
  <div> 
-<img src="summary-flow.png" alt="summary" style="width:85%"/>
+<img src="workflow-summary-bpmn.png" alt="summary" style="width:90%"/>
 </div>
 
 ### Workflows
@@ -263,7 +263,7 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To register and uniquely identify vaccination locations in order to administer vaccines and enable appropriate tracking of vaccine coverage and stock.
  
  <div> 
-<img src="health-facility-registration.png" alt="health_facility_registration.png" style="width:85%"/>
+<img src="workflow-a-facility-registration.png" alt="health_facility_registration.png" style="width:85%"/>
 </div>
 <br>
 
@@ -272,7 +272,7 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To prepare for an immunization session, either at the vaccination location or done at an outreach site.
  
  <div> 
-<img src="plan-service-delivery.png" alt="plan-service-delivery.png" style="width:85%"/>
+<img src="workflow-b-plan-immunization.png" alt="plan-service-delivery.png" style="width:85%"/>
 </div>
 <br>
 
@@ -281,14 +281,14 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To start the client’s lifelong immunization record.
  
  <div> 
-<img src="client-registration.png" alt="client-registration" style="width:85%"/>
+<img src="workflow-c-client-registration.png" alt="client-registration" style="width:85%"/>
 </div>
 <br>
 
 #### Vaccine administration
 <b> Objective: </b> To determine what vaccines a client needs, administer those, and record the data both in the system and on the client’s vaccination card.
  <div> 
-<img src="administer-vaccine.png" alt="administer-vaccine.png" style="width:85%"/>
+<img src="workflow-d-administer-vaccine.png" alt="administer-vaccine.png" style="width:85%"/>
 </div>
 <br>
 
@@ -296,7 +296,7 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To manage caregiver reports or client presenting at health facilities with cases of AEFI based on set triggers.
  
  <div> 
-<img src="manage-aefi.png" alt="manage-aefi.png" style="width:85%"/>
+<img src="workflow-e-manage-report-aefi.png" alt="manage-and-report-aefi.png" style="width:85%"/>
 </div>
 <br>
 
@@ -304,7 +304,7 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To send vaccination reminders to community health workers that certain clients are due for vaccination.
  
  <div> 
-<img src="client-reminder.png" alt="client-reminder.png" style="width:85%"/>
+<img src="workflow-f-client-reminder.png" alt="client-reminder.png" style="width:85%"/>
 </div>
 <br>
 
@@ -312,7 +312,7 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To identify clients that are overdue for follow-up
  
  <div> 
-<img src="defaulter-tracing.png" alt="defaulter-tracing.png" style="width:85%"/>
+<img src="workflow-g-defaulter-tracking.png" alt="defaulter-tracking.png" style="width:85%"/>
 </div>
 <br>
 
@@ -320,7 +320,23 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To provide data access and analysis for decision-making
  
  <div> 
-<img src="report-generation.png" alt="report-generation.png" style="width:85%"/>
+<img src="workflow-h-report-generation.png" alt="report-generation.png" style="width:85%"/>
+</div>
+<br>
+
+#### Resolve duplicate client record
+<b> Objective: </b> To ensure accurate and unified client data by identifying and merging duplicate records.
+ 
+ <div> 
+<img src="workflow-i-resolve-duplicate-client.png" alt="resolve-duplicate-client-records.png" style="width:85%"/>
+</div>
+<br>
+
+#### Resolve duplicate vaccination events
+<b> Objective: </b> To maintain reliable immunization records by detecting and resolving duplicate vaccination entries.
+ 
+ <div> 
+<img src="workflow-i-resolve-duplicate-event.png" alt="resolve-duplicate-vaccination-event.png" style="width:85%"/>
 </div>
 <br>
  
