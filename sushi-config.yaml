@@ -46,12 +46,8 @@ publisher:
 pages:
   index.md:
     title: Home
-  # dependancies.md:
-  #   title: Dependancies
   business-requirements.md:
-    title: Business Requirements
-  concepts.md:
-    title: Concepts
+    title: Business Requirements (DAKs)-(L2)
   generic-personas.md:
     title: Generic Personas
   user-scenarios.md:
@@ -64,8 +60,11 @@ pages:
     title: Functional Requirements
   non-functional-requirements.md:
     title: Non-Functional Requirements
-#
-#
+
+# dependancies.md:
+#   title: Dependancies
+# concepts.md:
+#    title: Concepts
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
 # resource), the code is the YAML key. If a parameter allows repeating

@@ -1,7 +1,7 @@
-Instance: FullExampleNEIRPatient
-InstanceOf: NEIRPatient
-Title: "Full Example NEIR Patient"
-Description: "A NEIR Patient instance with all required and optional fields populated"
+Instance: FullExampleNgImmPatient
+InstanceOf: NgImmPatient
+Title: "Example Full Nigeria Immunization Patient"
+Description: "A Nigeria Immunization Patient instance with all required and optional fields populated"
 Usage: #example
 
 // Identifier (required)
@@ -55,7 +55,7 @@ Usage: #example
 * extension[=].valueBoolean = false
 
 * extension[+].url = "pregnancyStatus"
-* extension[=].valueBoolean = false
+* extension[=].valueString = "pregnant"
 
 * extension[+].url = "adMinistrativeWard"
 * extension[=].valueString = "Tudun Wada Ward"
@@ -67,7 +67,7 @@ Usage: #example
 * extension[=].valueString = "Yusuf"
 
 * extension[+].url = "siblingBirthYear"
-* extension[=].valueDate = "2019-03-01"
+* extension[=].valueString = "2011"
 
 * extension[+].url = "siblingGender"
 * extension[=].valueString = "male"

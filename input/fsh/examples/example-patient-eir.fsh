@@ -1,7 +1,7 @@
-Instance: ExampleNEIRPatient2
-InstanceOf: NEIRPatient
-Title: "Example NEIR Patient"
-Description: "A sample patient conforming to the NEIRPatient profile"
+Instance: ExampleNgImmPatient
+InstanceOf: NgImmPatient
+Title: "Example Nigeria Immunization Patient"
+Description: "A sample patient conforming to the Nigeria Immunization Patient profile"
 Usage: #example
 
 //base elements
@@ -43,9 +43,9 @@ Usage: #example
 * extension[=].valueBoolean = false
 
 * extension[+].url = "pregnancyStatus"
-* extension[=].valueBoolean = false
+* extension[=].valueString = "pregnant"
 
-* extension[+].url = "adMinistrativeWard"
+* extension[+].url = "administrativeWard"
 * extension[=].valueString = "Udenu Ward 5"
 
 * extension[+].url = "siblingSurname"
@@ -60,20 +60,3 @@ Usage: #example
 * extension[+].url = "siblingGender"
 * extension[=].valueString = "male"
 
-
-
-
-/* 
-// Extensions
-* extension[ageInWeeks].valueInteger = 104
-* extension[ageInMonths].valueInteger = 24
-* extension[ageInYears].valueInteger = 2
-* extension[birthWeight].valueDecimal = 3.2
-* extension[pregnancyStatus].valueBoolean = false
-* extension[hivStatus].valueString = "Negative"
-* extension[administrativeWard].valueString = "Udenu Ward 5"
-* extension[siblingSurname].valueString = "Okonkwo"
-* extension[siblingGivenName].valueString = "Chinedu"
-* extension[siblingBirthYear].valueString = "2019"
-* extension[siblingGender].valueString = "male"
-* extension[siblingHealthStatus].valueString = "Alive" */
