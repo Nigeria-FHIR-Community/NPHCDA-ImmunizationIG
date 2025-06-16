@@ -52,7 +52,7 @@ Usage: #example
 * extension[=].valueDecimal = 3.4
 
 * extension[+].url = "hivStatus"
-* extension[=].valueBoolean = false
+* extension[=].valueString = "positive"
 
 * extension[+].url = "pregnancyStatus"
 * extension[=].valueString = "pregnant"
