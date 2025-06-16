@@ -6,7 +6,7 @@ Usage: #example
 * identifier[0].value = "12345"
 * name[0].family = "Hakeem"
 * name[0].given[0] = "Bisola"
-* gender = #female
+* gender = #male
 * contact[0].relationship[0].text[0] = "Parent"
 * contact[0].telecom[0].system = #phone
 * contact[0].telecom[0].value = "+2347030001111"

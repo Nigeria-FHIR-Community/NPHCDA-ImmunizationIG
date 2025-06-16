@@ -13,7 +13,9 @@ Description: "Nigeria Immunization Patient Profile"
 * name.given ^short = "The other names of the Immunization client"
 * name.family 1..1
 * name.family ^short = "The surname or family name of the Immunization client"
-* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
+//* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
+// Bind gender to your custom AdministrativeGender value set
+* gender from AdministrativeGender (required)
 * gender ^short = "The sex of the Immunization client"
 * birthDate 0..1 MS
 * birthDate ^short = "The date of birth of the Immunization client in the form dd-mm-yyy"

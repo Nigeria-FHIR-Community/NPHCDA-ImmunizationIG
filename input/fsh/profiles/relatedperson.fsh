@@ -12,7 +12,7 @@ Description: "Sibling that Represents the mother's other children as RelatedPers
 * name.family ^short = "The surname of Client's related person"
 * birthDate 0..1 MS
 * gender 1..1 MS
-* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
+* gender from AdministrativeGender (required)
 * relationship 1..1 MS
 
 // Hide extra items
