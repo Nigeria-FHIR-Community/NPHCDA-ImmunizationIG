@@ -15,7 +15,7 @@ Functional requirements describe the capabilities a digital tracking and decisio
       <tr>
 
 <td colspan="5">
-Business process A: vaccination location registration
+Business process A: Health Facility Registration
 </td>
 </tr>
 
@@ -23,7 +23,7 @@ Business process A: vaccination location registration
         <td>IMMZ.FXNREQ.001</td>
         <td>IMMZ.A1.Obtain vaccination location information</td>
         <td>State Immunization Officer</td>
-        <td>The EIR system to be integrated with other existing health registries</td>
+        <td>The EIR system to be integrated with other existing registries</td>
         <td>I will know about new vaccination locations and be informed about any updated information</td>
 
     </tr>

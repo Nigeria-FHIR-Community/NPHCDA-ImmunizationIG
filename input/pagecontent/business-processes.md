@@ -35,147 +35,184 @@ The business processes here have been informed by <a href="https://www.who.int/p
    <tr>
 
     <td>A</td>
-    <td>Vaccination Location Registration</td>
+    <td>Health Facility Registration
+    <br>
+      <img src="icon-a-facility-registration.png" alt="icon-a-facility-registration" style="width:85%"/></td>
     <td>IMMZ.A</td>
-    <td>EIR Staff</td>
-    <td>All vaccinator locations (public sector facilities, government facilities) able to administer vaccines should be registered and uniquely identified to allow vaccine coverage and stock.</td>
+    <td>System administrator</td>
+    <td>All vaccinator locations (public and private facilities) able to administer vaccines should be registered and uniquely identified to allow appropriate tracking of vaccine coverage and stock.</td>
     <td>
-      <ol>
-        <li>Starting point: EIR staff registers a new vaccination location.</li>
-        <li>Validate against the national facility master list (NFML).</li>
+        <p>Starting point: The system administrator registers a new vaccination location (e.g, a PHC).</p>
+      <ul>
+        <li>Validate against the National Master Facility List/Health Facility Registry (MFL/HFR).</li>
         <li>Notify NMFL of changes/updates.</li>
         <li>Request and submit additional information.</li>
         <li>Create and update vaccination location record.</li>
-        <li>Generate EIR Unique identifier.</li>
+        <li>Generate EIR Unique identifier for vaccination.</li>
         <li>Send vaccination location registration notification.</li>
-      </ol>
+      </ul>
     </td>
 
-  </tr> <tr>
+  </tr> 
+  <tr>
 
       <td>B</td>
-      <td>Plan service delivery</td>
+      <td>Plan immunization session
+      <br>
+      <img src="icon-b-plan-session.png" alt="icon-b-plan-session" style="width:85%"/></td>
       <td>IMMZ.B</td>
-      <td>Health worker</td>
+      <td>Health worker </td>
       <td>In preparation for a vaccination session, ensure sufficient supply and plan their workload.</td>
       <td>
-        <ol>
-          <li>Starting point: The health worker reviews vaccination records to determine vaccine needs estimates.</li>
+        <p>Starting point: The health worker reviews vaccination records to determine vaccine needs estimates.</p>
+        <ul>
           <li>Record details on the planning sheet.</li>
           <li>Order additional stock.</li>
           <li>Record stock received.</li>
           <li>Assemble all needed materials for vaccination.</li>
-        </ol>
+        </ul>
       </td>
-    </tr>
+  </tr>
     <tr>
       <td>C</td>
-      <td>Client Registration</td>
+      <td>Client Registration
+      <br>
+      <img src="icon-c-client-registration.png" alt="icon-c-client-registration" style="width:85%"/></td>
       <td>IMMZ.C</td>
       <td>Health worker</td>
-      <td>To create and/or update client’s lifelong vaccine record in the EIR to support future vaccine administration.</td>
+      <td>To create, retrieve and/or update a Client's lifelong vaccine record in the EIR (or Immunization module in EMR) to support future vaccine administration.</td>
       <td>
-        <ol>
-          <li>Starting point: The client arrives at the vaccination location and the health worker locates the client’s immunization history.</li>
-          <li>Search for the client’s record via the EIR.</li>
-          <li>Review and update the client’s record.</li>
-          <li>Create new client records as required.</li>
+      <p>Starting point: The Client arrives at the vaccination point  and the health worker locates the client’s immunization history.</p>
+        <ul>
+          <li>Search for the Client’s record via the EIR or Immunization module in EMR.</li>
+          <li>Review and update the Client’s record.</li>
+          <li>Create new Client records as required.</li>
           <li>Save the record.</li>
-        </ol>
+        </ul>
       </td>
     </tr>
     <tr>
       <td>D</td>
-      <td>Vaccine administration</td>
+      <td>Administer Vaccine
+      <br>
+      <img src="icon-d-vaccine-administration.png" alt="icon-d-vaccine-administration" style="width:85%"/></td>
       <td>IMMZ.D</td>
       <td>Health worker</td>
-      <td>To determine what vaccines a client needs, administer those and record the data both in the system and the client’s home-based vaccination record.</td>
+      <td>To determine what vaccines a Client needs, administer those and record the data both in the system and the client’s home-based vaccination record.</td>
       <td>
-        <ol>
-          <li>Starting point: The client has been registered in the system.</li>
-          <li>Query client’s record.</li>
-          <li>Determine the required vaccines.</li>
+        <p>Starting point: The Client has been registered in the system.</p>
+        <ul>
+          <li>Capture or query Client’s record.</li>
+          <li>Determine Client’s vaccination eligibility (also check contraindication).</li>
           <li>Prepare and administer vaccines.</li>
           <li>Record the appropriate data.</li>
-          <li>Monitor the client for any adverse effects of vaccination.</li>
-          <li>Inform the client when to return for vaccination and set client reminder.</li>
-          <li>Generate digital vaccination certificate.</li>
-        </ol>
+          <li>Monitor the Client for any adverse effects following vaccination.</li>
+          <li>Inform the Client when to return for vaccination/set Client reminder.</li>
+          <li>Provide Client with vaccination card</li>
+        </ul>
       </td>
     </tr>
     <tr>
       <td>E</td>
-      <td>AEFI Monitoring</td>
+      <td>Manage and Report AEFI
+      <br>
+      <img src="icon-e-manage-report-aefi.png" alt="icon-e-manage-report-aefi" style="width:85%"/></td>
       <td>IMMZ.E</td>
       <td>Health worker</td>
-      <td>To monitor and record AEFI.</td>
+      <td>To monitor, record, and report AEFI.</td>
       <td>
-        <ol>
-          <li>Starting point: The client reports AEFI.</li>
+       <p>Starting point: The Client reports AEFI or present with AEFI complaint at health facility</p>
+        <ul>
           <li>The health worker searches the record and records the AEFI against the vaccine administered.</li>
-          <li>Counsels the client and treats them appropriately.</li>
-          <li>Advises client on when to come for the next vaccine.</li>
-        </ol>
+          <li>Monitor and Report any AEFI as appropriate</li>
+          <li>Counsels the Client and treats them appropriately.</li>
+          <li>Advises Client on when to come for the next vaccine.</li>
+        </ul>
       </td>
     </tr>
     <tr>
       <td>F</td>
-      <td>Client reminder</td>
+      <td>Client reminder
+      <br>
+      <img src="icon-f-client-reminder.png" alt="icon-f-client-reminder" style="width:85%"/></td>
       <td>IMMZ.F</td>
       <td>Health worker</td>
       <td>This is to remind clients that it is time to return for vaccination.</td>
       <td>
-        <ol>
-          <li>Starting point: The client’s records are evaluated to determine if they meet the defined criteria.</li>
+        <p>Starting point: The Client’s records are evaluated to determine if they meet the defined criteria to recieve reminders.</p>
+        <ul>  
           <li>Select notification method.</li>
           <li>Generate a list of clients.</li>
           <li>Send reminder notifications.</li>
-        </ol>
+        </ul>
       </td>
     </tr>
     <tr>
       <td>G</td>
-      <td>Defaulter tracing</td>
+      <td>Defaulter tracking
+      <br>
+      <img src="icon-g-defaulter-tracking.png" alt="icon-g-defaulter-tracking" style="width:85%"/></td>
       <td>IMMZ.G</td>
       <td>Community health worker</td>
       <td>To identify clients that are overdue for follow-up.</td>
       <td>
-        <ol>
-          <li>Starting point: Clients are overdue for vaccination.</li>
+        <p>Starting point: Clients are overdue for vaccination.</p>
+        <ul>
           <li>Determine if and which vaccines were missed.</li>
-          <li>Generate a list of clients and their contact information.</li>
-          <li>Send the client’s info to the respective CHPs.</li>
-          <li>Plan for follow-up.</li>
-        </ol>
+          <li>Generate a list of cCients and their contact information.</li>
+          <li>Send the Client’s info to the respective CHPs.</li>
+          <li>Plan for and conduct follow-up.</li>
+        </ul>
       </td>
     </tr>
     <tr>
       <td>H</td>
-      <td>Report generation</td>
+      <td>Report generation
+      <br>
+      <img src="icon-h-report-generation.png" alt="icon-h-report-generation" style="width:85%"/></td>
       <td>IMMZ.H</td>
       <td>Health worker</td>
       <td>To provide data access and analysis for decision-making.</td>
       <td>
-        <ol>
-          <li>Starting point: Define the reporting parameters.</li>
+        <p>Starting point: Define the reporting parameters.</p>
+        <ul>
           <li>Generate report.</li>
           <li>High-level review and analyze.</li>
-        </ol>
+        </ul>
       </td>
     </tr>
     <tr>
       <td>I</td>
-      <td>Stock management</td>
+      <td>Resolve duplicate Client records
+      <br>
+      <img src="icon-i-resolve-duplicate-client.png" alt="icon-i-resolve-duplicate-client" style="width:85%"/></td>
       <td>IMMZ.I</td>
-      <td>Health worker</td>
-      <td>To track vaccine availability to avoid stockouts and shortages that could lead to missed vaccinations. This also helps prevent vaccine wastage due to expiry and demand forecasting.</td>
+      <td>Health Facility Systems Administrator</td>
+      <td>To ensure accurate and unified client data by identifying and merging duplicate records.</td>
       <td>
-        <ol>
-          <li>Starting point: Healthcare worker receiving vaccine stock from respective vaccine depot.</li>
-          <li>Receive vaccine stocks. Allow the user to receive vaccine stocks.</li>
-          <li>Dispatch vaccines (Issue Stock).</li>
-          <li>Monitor stock levels - be able to tell what is available at the facility.</li>
-        </ol>
+        <p>Starting point: Flag duplicate client records for evaluation and resolution.</p>
+        <ul>
+          <li>Review duplicate Client records.</li>
+          <li>Determine if the duplicate records can be merged.</li>
+          <li>Merge records.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>J</td>
+      <td>Resolve duplicate vaccination events
+      <br>
+      <img src="icon-i-resolve-duplicate-event.png" alt="icon-i-resolve-duplicate-event" style="width:85%"/></td>
+      <td>IMMZ.J</td>
+      <td>Routine immunization service provider</td>
+      <td>To maintain reliable immunization records by detecting and resolving duplicate vaccination entries.</td>
+      <td>
+        <p>Starting point: Identify groups of vaccination events for evaluation and resolution.</p>
+        <ul>
+          <li>Review duplicate events</li>
+          <li>Select the most accurate/suitable event record.</li>
+          <li>Update vaccination event.</li>
+        </ul>
       </td>
     </tr>
 
@@ -253,7 +290,7 @@ The business processes here have been informed by <a href="https://www.who.int/p
 The overview of the business processes in this DAK captures all business processes at a high level.
 
  <div> 
-<img src="workflow-summary-bpmn.png" alt="summary" style="width:90%"/>
+<img src="workflow-summary-bpmn.png" alt="summary" style="width:85%"/>
 </div>
 
 ### Workflows
