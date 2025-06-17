@@ -45,7 +45,7 @@ Usage: #example
 * extension[+].url = "ageInMonths"
 * extension[=].valueInteger = 2
 
-* extension[+].url = "ageInYears"
+* extension[+].url = "ageInYears"  
 * extension[=].valueInteger = 0
 
 * extension[+].url = "birthWeight"

@@ -1,4 +1,4 @@
-/* Profile: NgImmMeasureReport
+Profile: NgImmMeasureReport
 Parent: MeasureReport
 Id: measure-report-profile 
 Description: "Nigeria Immunization Measure Report Profile"
@@ -33,4 +33,4 @@ Description: "Nigeria Immunization Measure Report Profile"
 * group.measureScore.value ^short = "The calculated score of the measure / indicator which is being reported on"
 * group.measureScore.unit  0..1 
 * group.measureScore.unit ^short = "The unit of  calculated score of the measure / indicator which is being reported on"
- */
+ 

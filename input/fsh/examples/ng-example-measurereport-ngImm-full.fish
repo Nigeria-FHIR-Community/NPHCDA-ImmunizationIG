@@ -1,4 +1,4 @@
-/* Instance: FullExampleNgImmMeasureReport
+Instance: FullExampleNgImmMeasureReport
 InstanceOf: NgImmMeasureReport
 Usage: #example
 
