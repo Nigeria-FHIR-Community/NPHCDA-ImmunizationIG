@@ -78,6 +78,6 @@ Description: "Nigerian Profile for Immunization resource."
 * extension contains PrimaryVaccineStatus named primaryVaccineStatus 0..1 MS
 * extension contains Signature named signature 0..1 MS
 * extension contains SessionType named sessionType 0..1 MS
-* extension contains ImmunizationContraindicated named contraindicated 0..1 MS
-* extension contains ImmunizationContraindications named contraindications 0..* MS
+* extension contains Contraindicated named contraindicated 0..1 MS
+* extension contains Contraindications named contraindications 0..* MS
 * protocolApplied.extension contains NextDoseDate named nextDoseDate 0..1 MS
