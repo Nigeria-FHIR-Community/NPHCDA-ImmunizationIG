@@ -1,8 +1,8 @@
-Profile: NEIRLocation
+Profile: NigeriaLocation
 Parent: Location
-Id: neir-location 
+Id: nigeria-location 
 Description: "A profile for immunization service locations in the Nigerian Electronic Immunization Registry (NEIR), including health facilities, outreach sites, and mobile vaccination units."
-* ^url = "http://nigerian.org/fhir/StructureDefinition/neir-location"
+* ^url = "http://nphcda.gov.ng/fhir/StructureDefinition/ng-location"
 * ^version = "1.0.0"
 * ^status = #active
 * status 1..1
@@ -10,12 +10,13 @@ Description: "A profile for immunization service locations in the Nigerian Elect
 * type 1..* MS
 * type from http://terminology.hl7.org/CodeSystem/v3-RoleCode (extensible)
 * address 1..1 MS
+* address.extension contains NigeriaAdministrativeWard named administrativeWard 0..1 MS
 * address.country = "NG" (exactly)
 * telecom 0..* MS
 
 
 Instance: location-example
-InstanceOf: NEIRLocation
+InstanceOf: NigeriaLocation
 Usage: #example
 Description: "An example immunization service location in the Nigerian Electronic Immunization Registry (NEIR)."
 * status = #active
@@ -27,3 +28,5 @@ Description: "An example immunization service location in the Nigerian Electroni
 * telecom.system = #phone
 * telecom.value = "+2348012345678"
 * telecom.use = #work
+* address.extension[+].url = "administrativeWard"
+* address.extension[=].valueCodeableConcept = #alu

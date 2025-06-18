@@ -63,7 +63,7 @@ Description: "Nigerian Profile for Immunization resource."
 * performer 0..* MS //Who performed event
 * performer.function 0..1
 * performer.function ^short = "Designation of reporting officer" //What type of performance was done
-* performer.actor only Reference (Practitioner or PractitionerRole or Organisation)
+* performer.actor only Reference (Practitioner)
 * performer.actor ^short = "Name of reporting officer" //Individual or organization who was performing
 
 * occurrence[x] only dateTime
@@ -75,9 +75,12 @@ Description: "Nigerian Profile for Immunization resource."
 
 
 // Immunization Extensions
+
+/* 
 * extension contains PrimaryVaccineStatus named primaryVaccineStatus 0..1 MS
 * extension contains Signature named signature 0..1 MS
 * extension contains SessionType named sessionType 0..1 MS
 * extension contains ImmunizationContraindicated named contraindicated 0..1 MS
 * extension contains ImmunizationContraindications named contraindications 0..* MS
 * protocolApplied.extension contains NextDoseDate named nextDoseDate 0..1 MS
+ */
