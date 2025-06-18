@@ -60,7 +60,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #ak-abak "abak" "Abak LGA"
 * #ak-eastern-obolo "eastern obolo" "Eastern Obolo LGA"
 * #ak-eket "eket" "Eket LGA"
-* #ak-esit-eket (uquo) "esit eket (uquo)" "Esit Eket (Uquo) LGA"
+* #ak-esit-eket  "esit eket (uquo)" "Esit Eket (Uquo) LGA"
 * #ak-essien-udim "essien udim" "Essien Udim LGA"
 * #ak-etim-ekpo "etim ekpo" "Etim Ekpo LGA"
 * #ak-etinan "etinan" "Etinan LGA"
@@ -86,7 +86,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #ak-udung-uko "udung uko" "Udung Uko LGA"
 * #ak-ukanafun "ukanafun" "Ukanafun LGA"
 * #ak-uruan "uruan" "Uruan LGA"
-* #ak-urue-offong/oruko "urue offong/oruko" "Urue Offong/Oruko LGA"
+* #ak-urue-offong "urue offong/oruko" "Urue Offong/Oruko LGA"
 * #ak-uyo "uyo" "Uyo LGA"
 
 
