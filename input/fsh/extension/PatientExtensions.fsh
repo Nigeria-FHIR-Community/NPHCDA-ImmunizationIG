@@ -3,13 +3,16 @@
 
 
 
-Extension: AddressAdministrativeWard
-Id: address-administrative-ward
+Extension: NigeriaAdministrativeWard
+Id: nigeria-administrative-ward
 Title: "Administrative Ward in Address (e.g., Ward 3, Ikotun LCDA)"
 Description: "Captures the administrative ward within a geographic address"
 * ^context[0].type = #element
 * ^context[0].expression = "Address"
-* value[x] only string
+* ^status = #active
+* ^publisher = "NPHCDA"
+* value[x] only CodeableConcept
+* valueCodeableConcept from NigeriaWardsVS (required)
 
 
 

@@ -14,4 +14,4 @@ Usage: #example
 * contact[0].address.city = "Abuja"
 * contact[0].address.state = "FCT"
 * contact[0].address.extension[+].url = "administrativeWard"
-* contact[0].address.extension[=].valueString = "Ward G, Garki"
+* contact[0].address.extension[=].valueCodeableConcept = #alu

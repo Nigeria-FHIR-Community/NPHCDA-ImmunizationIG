@@ -58,7 +58,7 @@ Usage: #example
 * extension[=].valueString = "pregnant"
 
 * extension[+].url = "adMinistrativeWard"
-* extension[=].valueString = "Tudun Wada Ward"
+* extension[=].valueCodeableConcept = #Yaba
 
 * extension[+].url = "siblingSurname"
 * extension[=].valueString = "Abubakar"
