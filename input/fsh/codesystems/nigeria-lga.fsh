@@ -95,9 +95,6 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #an-anambra-east "anambra east" "Anambra East"
 * #an-anambra-west "anambra west (mbamili)" "Anambra West (Mbamili)"
 * #an-anaocha "anaocha" "Anaocha"
-* #an-aguata "aguata" "Aguata"
-
-
 
 
 * #fc-abaji "abaji" "Abaji Area Council"
