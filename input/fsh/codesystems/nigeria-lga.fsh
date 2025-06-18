@@ -17,7 +17,6 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #ab-arochukwu "arochukwu" "Arochukwu LGA"
 * #ab-bende "bende" "Bende LGA"
 * #ab-ikwuano "ikwuano" "Ikwuano LGA"
-* #ab-arochukwu "arochukwu" "Arochukwu LGA"
 * #ab-isiala-ngwa-north "isiala ngwa north" "Isiala-Ngwa-North LGA"
 * #ab-isiala-ngwa-south "isiala ngwa south" "Isiala-Ngwa-South LGA"
 * #ab-isuikwuato "isuikwuato" "Isuikwuato LGA"
@@ -86,7 +85,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #ak-udung-uko "udung uko" "Udung Uko LGA"
 * #ak-ukanafun "ukanafun" "Ukanafun LGA"
 * #ak-uruan "uruan" "Uruan LGA"
-* #ak-urue-offong "urue offong/oruko" "Urue Offong/Oruko LGA"
+* #ak-urue-offong "urue offong (oruko)" "Urue Offong (Oruko) LGA"
 * #ak-uyo "uyo" "Uyo LGA"
 
 
