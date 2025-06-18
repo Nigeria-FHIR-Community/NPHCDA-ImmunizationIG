@@ -10,7 +10,7 @@ Description: "This CodeSystem defines list of relationships that a pat"
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 
-// States in Nigeria and their codes
+// The different relationships used in the IG
 
 * #BROTHER	"Brother"
 * #SISTER	"Sister"
