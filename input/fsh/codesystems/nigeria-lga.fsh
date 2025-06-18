@@ -94,7 +94,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #an-aguata "aguata" "Aguata"
 * #an-ayamelum "ayamelum" "Ayamelum"
 * #an-anambra-east "anambra east" "Anambra East"
-* #an-anambra-west (mbamili) "anambra west (mbamili)" "Anambra West (Mbamili)"
+* #an-anambra-west "anambra west (mbamili)" "Anambra West (Mbamili)"
 * #an-anaocha "anaocha" "Anaocha"
 * #an-aguata "aguata" "Aguata"
 * #an-aguata "aguata" "Aguata"
