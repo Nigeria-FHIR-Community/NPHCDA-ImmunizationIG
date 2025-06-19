@@ -5,8 +5,8 @@
 
 Extension: NigeriaAdministrativeWard
 Id: nigeria-administrative-ward
-Title: "Administrative Wards "
-Description: "Captures the administrative ward within a geographic address (e.g., Ward 3, Ikotun LCDA)"
+Title: "Nigeria Administrative Wards "
+Description: "Captures the administrative ward within a geographic address "
 * ^context[0].type = #element
 * ^context[0].expression = "Address"
 * ^status = #active

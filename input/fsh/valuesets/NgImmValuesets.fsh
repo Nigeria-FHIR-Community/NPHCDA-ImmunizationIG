@@ -1,6 +1,6 @@
 ValueSet: NigeriaGenderVS
 Id: nigeria-gender
-Title: "Gender or Sex as used in Nigeria"
+Title: "Gender"
 Description: "The administrative gender of a person."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/administrative-gender"
@@ -9,7 +9,7 @@ Description: "The administrative gender of a person."
 
 ValueSet: NigeriaWardsVS
 Id: nigeria-wards
-Title: "Wards in Nigeria"
+Title: "Wards"
 Description: "The administrative Ward (within an LGA) where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/administrative-wards"
@@ -17,7 +17,7 @@ Description: "The administrative Ward (within an LGA) where a person or a facili
 
 ValueSet: NigeriaLGAsVS
 Id: nigeria-lgas
-Title: "LGAs in Nigeria"
+Title: "Administrative LGAs"
 Description: "The administrative Local Government Aread where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/lgas"
@@ -25,7 +25,7 @@ Description: "The administrative Local Government Aread where a person or a faci
 
 ValueSet: NigeriaStatesVS
 Id: nigeria-states
-Title: "States in Nigeria"
+Title: "States"
 Description: "The administrative ward where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/states"
@@ -34,24 +34,16 @@ Description: "The administrative ward where a person or a facility is."
 
 ValueSet: NigeriaRelationshipsVS
 Id: nigeria-relationship
-Title: "States in Nigeria"
+Title: "Relationships"
 Description: "The administrative ward where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/relationship"
 * include codes from system NigeriaRelationshipsCS
 
 
-ValueSet: NigeriaStockReportVS
-Id: nigeria-stock-report
-Title: "Stock reporting data elements"
-Description: " ."
-* ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/stock-report"
-* include codes from system NigeriaStockReportCS
-
 ValueSet: NigeriaVaccineLibraryVS
 Id: nigeria-vaccine-library
-Title: "Vaccine Library with SNOMED CT codes"
+Title: "Vaccines"
 Description: " ."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/vaccine-library"
@@ -59,7 +51,7 @@ Description: " ."
 
 ValueSet: NigeriaFacilityTypeVS
 Id: nigeria-facility-types
-Title: "Health Facility types"
+Title: "Health Facility Type"
 Description: " ."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/health-facility-types"
@@ -67,7 +59,7 @@ Description: " ."
 
 ValueSet: NigeriaClinicalStatusVS
 Id: nigeria-clinical-status
-Title: "Reaction outcome clinical Status"
+Title: "Reaction outcome"
 Description: "Reaction outcome clinical Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/clinical-status"
@@ -75,8 +67,8 @@ Description: "Reaction outcome clinical Status"
 
 ValueSet: NigeriaVerificationStatusVS
 Id: nigeria-verifiction-status
-Title: "Verification Status"
-Description: "Verification Status"
+Title: "AEFI Verification Status"
+Description: "AEFI Verification Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/verification-status"
 * include codes from system NigeriaVerificationStatusCS
@@ -84,7 +76,7 @@ Description: "Verification Status"
 ValueSet: NigeriaImmunizationSessionTypeVS
 Id: nigeria-session-type
 Title: "Session type"
-Description: "session type"
+Description: "Session type"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/session-type"
 * include codes from system NigeriaImmunizationSessionTypeCS

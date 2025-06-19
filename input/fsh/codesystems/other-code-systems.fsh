@@ -1,6 +1,6 @@
 CodeSystem: NigeriaSiblingHealthStatusCS
 Id: nigeria-sibling-health-status
-Title: "Nigeria Sibling Health Status CodeSystem"
+Title: "NG Sibling Health Status"
 Description: "This CodeSystem defines list of relationships that a part of this IG"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
 * ^status = #active
@@ -18,7 +18,7 @@ Description: "This CodeSystem defines list of relationships that a part of this 
 
 CodeSystem: NigeriaHivStatusCS
 Id: nigeria-hiv-status
-Title: "The CodeSystem for the HIV status of the Client"
+Title: "NG Client HIV status"
 Description: "This CodeSystem defines list of options for HIV status of a Client"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS"
 * ^status = #active
@@ -35,7 +35,7 @@ Description: "This CodeSystem defines list of options for HIV status of a Client
 
 CodeSystem: NigeriaPregnancyStatusCS
 Id: nigeria-pregnancy-status
-Title: "The CodeSystem for the Pregnancy status of the Client"
+Title: "NG Client Pregnancy status"
 Description: "This CodeSystem defines list of options for Pregnancy status of a Client"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
 * ^status = #active
@@ -52,7 +52,7 @@ Description: "This CodeSystem defines list of options for Pregnancy status of a 
 
 CodeSystem: NigeriaPrimaryVaccineStatusCS
 Id: nigeria-primary-vaccine-status
-Title: "The CodeSystem for Client's primary vaccine status"
+Title: "NG Client's primary vaccine status"
 Description: "This CodeSystem defines list of options for Client's primary vaccine status"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-statusCS"
 * ^status = #active
@@ -68,8 +68,8 @@ Description: "This CodeSystem defines list of options for Client's primary vacci
 
 CodeSystem: NigeriaFacilityTypeCS
 Id: nigeria-facility-type
-Title: "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."
-Description: "This CodeSystem defines list of options for categorising health facilities"
+Title: "NG Facility Type"
+Description: "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"
 * ^status = #active
 * ^hierarchyMeaning = #is-a

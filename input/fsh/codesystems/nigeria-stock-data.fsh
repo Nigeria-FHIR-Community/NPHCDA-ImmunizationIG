@@ -1,5 +1,5 @@
 CodeSystem:   NigeriaStockReportCS
-Title:        "CodeSystem for Stock Management Data Elements"
+Title:        "NG Stock Management Data Elements"
 Description:  "CodeSystem for Stock Management Data Elements"
 
 * ^experimental = false

@@ -1,6 +1,6 @@
 CodeSystem: NigeriaStatesCS
 Id: nigeria-states
-Title: "Administrative States in Nigeria"
+Title: "NG States in Nigeria"
 Description: "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states"
 * ^status = #active

@@ -44,7 +44,7 @@ Description: "Indicates whether the immunization was contraindicated"
 Extension: Contraindications
 Id: contraindications
 Title: "Contraindications"
-Description: "Indicates specific situations in which it is not recommended to administer certain vaccines (e.g Immunocompromised, severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)"
+Description: "Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)"
 
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"

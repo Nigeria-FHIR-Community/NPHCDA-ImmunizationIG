@@ -12,6 +12,6 @@
        <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
     </ul>
   </li>
-  <li ><a href="artifacts.html">FHIR Artifacts-(L3)<b class="caret"></b></a></li>
+   <li> <a href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a></li> 
 
 </ul>  

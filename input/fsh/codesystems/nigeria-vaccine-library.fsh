@@ -1,7 +1,7 @@
 CodeSystem: NigeriaVaccineLibraryCS
 Id: nigeria-vaccine-library
-Title: "Nigeria Vaccine Library CodeSystem"
-Description: "CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG"
+Title: "NG Vaccine Library with SNOMED CT codes"
+Description: "CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG using SNOMED CT codes"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
 * ^status = #active
 * ^content = #complete
@@ -9,7 +9,7 @@ Description: "CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by t
 * ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
-// The CodeSystem for Sibling Health Status
+// The CodeSystem for For Vaccine Library with SNOMED CT codes
 
 * #1861000221106	"BCG birth dose" "Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)."
 * #871822003	"HepB birth dose" "Vaccine terminology codes for Hepatitis B."

@@ -20,7 +20,6 @@ The **Administrative Gender** code system supports a minimal but practical set o
 |------|---------|------------|
 | `male` | Male | Male gender |
 | `female` | Female | Female gender |
-| `unknown` | Unknown | The gender is unknown or not stated |
 
 > **Note**: These values align with HL7 and ISO recommendations for basic gender classification in health systems.
 

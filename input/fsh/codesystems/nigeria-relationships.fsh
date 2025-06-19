@@ -1,6 +1,6 @@
 CodeSystem: NigeriaRelationshipsCS
 Id: nigeria-relationship
-Title: "Nigeria Relationships CodeSystem"
+Title: "NG Relationships"
 Description: "This CodeSystem defines list of relationships that a pat"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"
 * ^status = #active
