@@ -1,5 +1,5 @@
 
-Profile: NEIRPractitioner
+Profile: NgImmPractitioner
 Parent: Practitioner
 Description: "Profile for a Nigerian Practitioner" 
 * identifier 0..* MS
@@ -16,15 +16,15 @@ Description: "Profile for a Nigerian Practitioner"
 * birthDate MS 
 
 Instance: practitioner-example
-InstanceOf: NEIRPractitioner
+InstanceOf: NgImmPractitioner
 Usage: #example
-Title: "NEIRPractitionerExample"
+Title: "NgImmPractitionerExample"
 Description: "An example of a Nigerian Practitioner" 
 * identifier.system = ""
 * identifier.use = #official
 * identifier.value = "123456"
-* name.given = "John"
-* name.family = "Doe"
+* name.given = "Damola"
+* name.family = "Bello"
 * telecom.system = #phone
 * telecom.value = "0722000000"
 * birthDate = "1980-01-01"  

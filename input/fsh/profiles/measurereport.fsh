@@ -19,7 +19,7 @@ Description: "Nigeria Immunization Measure Report Profile"
 * date 1..1 MS
 * date ^short = "The date and time on which the report was generated"
 
-* reporter only Reference(Practitioner or Location or Organization)
+* reporter only Reference(Practitioner)
 * reporter ^short = "Indicates the organization, or location which is generating or producing the report"
 
 * period 1..1 MS

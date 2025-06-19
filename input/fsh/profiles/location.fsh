@@ -1,4 +1,4 @@
-Profile: NigeriaLocation
+Profile: NgImmLocation
 Parent: Location
 Id: nigeria-location 
 Description: "A profile for immunization service locations in the Nigerian Electronic Immunization Registry (NEIR), including health facilities, outreach sites, and mobile vaccination units."
@@ -16,7 +16,7 @@ Description: "A profile for immunization service locations in the Nigerian Elect
 
 
 Instance: location-example
-InstanceOf: NigeriaLocation
+InstanceOf: NgImmLocation
 Usage: #example
 Description: "An example immunization service location in the Nigerian Electronic Immunization Registry (NEIR)."
 * status = #active

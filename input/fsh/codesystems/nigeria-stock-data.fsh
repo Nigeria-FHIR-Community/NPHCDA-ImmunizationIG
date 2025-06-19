@@ -4,7 +4,7 @@ Description:  "CodeSystem for Stock Management Data Elements"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "nigeria-stock-data"
+* ^name = "NigeriaStockData"
 
 
 * #IMMZ.H.DE1  "Opening balance"
