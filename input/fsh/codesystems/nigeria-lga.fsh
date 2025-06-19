@@ -267,6 +267,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #eb-ohaukwu "ohaukwu" "Ohaukwu LGA"
 * #eb-onicha "onicha" "Onicha LGA"
 
+
 //EDO
 * #ed-akoko-edo "akoko-edo" "Akoko-Edo LGA"
 * #ed-egor "egor" "Egor LGA"
@@ -286,6 +287,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #ed-owan-east "owan east" "Owan East LGA"
 * #ed-owan-west "owan west" "Owan West LGA"
 * #ed-uhunmwonde "uhunmwonde" "Uhunmwonde LGA"
+
 
 //EKITI
 * #ek-ado-ekiti "ado-ekiti" "Ado Ekiti LGA"
@@ -307,7 +309,6 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 
 
 //ENUGU
-
 * #en-aninri "aninri" "Aninri LGA"
 * #en-awgu "awgu" "Awgu LGA"
 * #en-enugu-east "enugu east" "Enugu East LGA"
@@ -647,78 +648,75 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 
 
 //OGUN
-* #og-abeokuta-north "abeokuta north" "Abeokuta North LGA"  
-* #og-abeokuta-south "abeokuta south" "Abeokuta South LGA" 
-* #og-ado-odo "ado odo (ota)" "Ado Odo (Ota) LGA" 
-* #og-ewekoro "ewekoro" "Ewekoro LGA"  
-* #og-ifo "ifo" "Ifo LGA"  
-* #og-obafemiowode "obafemi owode" "Obafemi Owode LGA"  
-* #og-odeda "odeda" "Odeda LGA"  
-* #og-ijebu-east "ijebu east" "Ijebu East LGA"  
-* #og-ijebu-north "ijebu north" "Ijebu North LGA"  
-* #og-ijebu-north-east "ijebu north east" "Ijebu North East LGA"  
-* #og-ijebu-ode "ijebu ode" "Ijebu Ode LGA"  
-* #og-ikenne "ikenne" "Ikenne LGA"  
-* #og-odogbolu "odogbolu" "Odogbolu LGA"  
-* #og-ogunwaterside "ogun waterside" "Ogun Waterside LGA"  
-* #og-remonorth "remo north" "Remo North LGA"  
-* #og-sagamu "sagamu" "Sagamu LGA"  
-* #og-adoodoota "ado odo ota" "Ado Odo Ota LGA"  
-* #og-imekoafon "imeko afon" "Imeko Afon LGA"  
-* #og-ipokia "ipokia" "Ipokia LGA"  
-* #og-yewanorth "yewa north" "Yewa North LGA"  
-* #og-yewasouth "yewa south" "Yewa South LGA"
-
+* #og-abeokuta-north "abeokuta north" "Abeokuta North LGA"
+* #og-abeokuta-south "abeokuta south" "Abeokuta South LGA"
+* #og-ado-odo "ado-odo (ota)" "Ado Odo (Ota) LGA"
+* #og-ewekoro "ewekoro" "Ewekoro LGA"
+* #og-ifo "ifo" "Ifo LGA"
+* #og-ijebu-east "ijebu east" "Ijebu East LGA"
+* #og-ijebu-north "ijebu north" "Ijebu North LGA"
+* #og-ijebu-north-east "ijebu north east" "Ijebu North East LGA"
+* #og-ijebu-ode "ijebu ode" "Ijebu Ode LGA"
+* #og-ikenne "ikenne" "Ikenne LGA"
+* #og-imeko-afon "imeko afon" "Imeko Afon LGA"
+* #og-ipokia "ipokia" "Ipokia LGA"
+* #og-obafemi-owode "obafemi owode" "Obafemi Owode LGA"
+* #og-odeda "odeda" "Odeda LGA"
+* #og-odogbolu "odogbolu" "Odogbolu LGA"
+* #og-ogun-waterside "ogun waterside" "Ogun Waterside LGA"
+* #og-remo-north "remo north" "Remo North LGA"
+* #og-sagamu "sagamu" "Sagamu LGA"
+* #og-yewa-north "yewa north" "Yewa North LGA"
+* #og-yewa-south "yewa south" "Yewa South LGA"
 
 
 //ONDO
-* #on-akoko-northeast "akoko northeast" "Akoko North East LGA"
-* #on-akoko-northwest "akoko northwest" "Akoko North West LGA"
-* #on-akoko-southeast "akoko southeast" "Akoko South-East LGA"
-* #on-akoko-southwest "akoko southwest" "Akoko South-West LGA"
-* #on-akure-north "akure-north" "Akure North LGA"
-* #on-akure-south "akure-south" "Akure South LGA"
+* #on-akoko-north-east "akoko north east" "Akoko North East LGA"
+* #on-akoko-north-west "akoko north west" "Akoko North West LGA"
+* #on-akoko-south-east "akoko south east" "Akoko South East LGA"
+* #on-akoko-south-west "akoko south west" "Akoko South West LGA"
+* #on-akure-north "akure north" "Akure North LGA"
+* #on-akure-south "akure south" "Akure South LGA"
 * #on-ese-odo "ese odo" "Ese Odo LGA"
 * #on-idanre "idanre" "Idanre LGA"
 * #on-ifedore "ifedore" "Ifedore LGA"
 * #on-ilaje "ilaje" "Ilaje LGA"
-* #on-ile-oluji "ile oluji okeigbo" "Ile Oluji (Okeigbo) LGA"
+* #on-ile-oluji "ile oluji (okeigbo)" "Ile Oluji (Okeigbo) LGA"
 * #on-irele "irele" "Irele LGA"
 * #on-odigbo "odigbo" "Odigbo LGA"
 * #on-okitipupa "okitipupa" "Okitipupa LGA"
-* #on-ondo-east "ondo-east" "Ondo East LGA"
-* #on-ondo-west "ondo-west" "Ondo West LGA"
+* #on-ondo-east "ondo east" "Ondo East LGA"
+* #on-ondo-west "ondo west" "Ondo West LGA"
 * #on-ose "ose" "Ose LGA"
 * #on-owo "owo" "Owo LGA"
 
-//OSUN
-
-* #os-aiyedaade "aiyedaade" "Aiyedaade LGA"  
-* #os-aiyedire "aiyedire" "Aiyedire LGA"  
-* #os-atakunmosaeast "atakunmosa east" "Atakunmosa East LGA"  
-* #os-atakunmosawest "atakunmosa west" "Atakunmosa West LGA"  
+//OSUN 
+* #os-atakunmosa-east "atakunmosa east" "Atakunmosa East LGA"  
+* #os-atakunmosa-west "atakunmosa west" "Atakunmosa West LGA"  
+* #os-ayedaade "ayedaade" "Ayedaade LGA"  
+* #os-ayedire "ayedire" "Ayedire LGA" 
 * #os-boluwaduro "boluwaduro" "Boluwaduro LGA"  
 * #os-boripe "boripe" "Boripe LGA"  
-* #os-edenorth "ede north" "Ede North LGA"  
-* #os-edesouth "ede south" "Ede South LGA"  
+* #os-ede-north "ede north" "Ede North LGA"  
+* #os-ede-south "ede south" "Ede South LGA"  
 * #os-egbedore "egbedore" "Egbedore LGA"  
 * #os-ejigbo "ejigbo" "Ejigbo LGA"  
-* #os-ifecentral "ife central" "Ife Central LGA"  
-* #os-ifeeast "ife east" "Ife East LGA"  
-* #os-ifenorth "ife north" "Ife North LGA"  
-* #os-ifesouth "ife south" "Ife South LGA"  
+* #os-ife-central "ife central" "Ife Central LGA"  
 * #os-ifedayo "ifedayo" "Ifedayo LGA"  
+* #os-ife-east "ife east" "Ife East LGA"  
 * #os-ifelodun "ifelodun" "Ifelodun LGA"  
+* #os-ife-north "ife north" "Ife North LGA"  
+* #os-ife-south "ife south" "Ife South LGA"  
 * #os-ila "ila" "Ila LGA"  
-* #os-ilesaeast "ilesa east" "Ilesa East LGA"  
-* #os-ilesawest "ilesa west" "Ilesa West LGA"  
+* #os-ilesa-east "ilesa east" "Ilesa East LGA"  
+* #os-ilesa-west "ilesa west" "Ilesa West LGA"  
 * #os-irepodun "irepodun" "Irepodun LGA"  
 * #os-irewole "irewole" "Irewole LGA"  
 * #os-isokan "isokan" "Isokan LGA"  
 * #os-iwo "iwo" "Iwo LGA"  
 * #os-obokun "obokun" "Obokun LGA"  
-* #os-odootin "odo otin" "Odo Otin LGA"  
-* #os-olaoluwa "ola oluwa" "Ola Oluwa LGA"  
+* #os-odo-otin "odo otin" "Odo Otin LGA"  
+* #os-ola-oluwa "ola oluwa" "Ola Oluwa LGA"  
 * #os-olorunda "olorunda" "Olorunda LGA"  
 * #os-oriade "oriade" "Oriade LGA"  
 * #os-orolu "orolu" "Orolu LGA"  
@@ -733,26 +731,26 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #oy-atisbo "atisbo" "Atisbo LGA"
 * #oy-egbeda "egbeda" "Egbeda LGA"
 * #oy-ibadan-north "ibadan north" "Ibadan North LGA"
-* #oy-ibadan-north-east "ibadan north-east" "Ibadan North East LGA"
-* #oy-ibadan-north-west "ibadan north-west" "Ibadan North West LGA"
-* #oy-ibadan-south-east "ibadan south-east" "Ibadan South East LGA"
-* #oy-ibadan-south-west "ibadan south-west" "Ibadan South West LGA"
+* #oy-ibadan-north-east "ibadan north east" "Ibadan North East LGA"
+* #oy-ibadan-north-west "ibadan north west" "Ibadan North West LGA"
+* #oy-ibadan-south-east "ibadan south east" "Ibadan South East LGA"
+* #oy-ibadan-south-west "ibadan south west" "Ibadan South West LGA"
 * #oy-ibarapa-central "ibarapa central" "Ibarapa Central LGA"
 * #oy-ibarapa-east "ibarapa east" "Ibarapa East LGA"
 * #oy-ibarapa-north "ibarapa north" "Ibarapa North LGA"
 * #oy-ido "ido" "Ido LGA"
 * #oy-irepo "irepo" "Irepo LGA"
 * #oy-iseyin "iseyin" "Iseyin LGA"
-* #oy-itesiwaju "itesi-waju" "Itesiwaju LGA"
+* #oy-itesiwaju "itesiwaju" "Itesiwaju LGA"
 * #oy-iwajowa "iwajowa" "Iwajowa LGA"
 * #oy-kajola "kajola" "Kajola LGA"
 * #oy-lagelu "lagelu" "Lagelu LGA"
 * #oy-ogbomoso-north "ogbomoso north" "Ogbomosho North LGA"
 * #oy-ogbomoso-south "ogbomoso south" "Ogbomosho South LGA"
-* #oy-ogo-oluwa "ogo-oluwa" "Ogo Oluwa LGA"
+* #oy-ogo-oluwa "ogo oluwa" "Ogo Oluwa LGA"
 * #oy-olorunsogo "olorunsogo" "Olorunsogo LGA"
 * #oy-oluyole "oluyole" "Oluyole LGA"
-* #oy-ona-ara "ona-ara" "Ona Ara LGA"
+* #oy-ona-ara "ona ara" "Ona Ara LGA"
 * #oy-orelope "orelope" "Orelope LGA"
 * #oy-oriire "oriire" "Oriire LGA"
 * #oy-oyo-east "oyo east" "Oyo East LGA"
@@ -761,22 +759,133 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #oy-saki-west "saki west" "Saki West LGA"
 * #oy-surulere "surulere" "Surulere LGA"
 
+
 //PLATEAU
+* #pl-barkinladi "barkin ladi" "Barkin Ladi LGA"  
+* #pl-bassa "bassa" "Bassa LGA"  
+* #pl-bokkos "bokkos" "Bokkos LGA"  
+* #pl-jos-east "jos east" "Jos East LGA"  
+* #pl-jos-north "jos north" "Jos North LGA"  
+* #pl-jos-south "jos south" "Jos South LGA"  
+* #pl-kanam "kanam" "Kanam LGA"  
+* #pl-kanke "kanke" "Kanke LGA"  
+* #pl-langtang-north "langtang north" "Langtang North LGA"  
+* #pl-langtang-south "langtang south" "Langtang South LGA"  
+* #pl-mangu "mangu" "Mangu LGA"  
+* #pl-mikang "mikang" "Mikang LGA"  
+* #pl-pankshin "pankshin" "Pankshin LGA"  
+* #pl-qua'an-pan "qua'an pan" "Qua'an Pan LGA"  
+* #pl-riyom "riyom" "Riyom LGA"  
+* #pl-shendam "shendam" "Shendam LGA"  
+* #pl-wase "wase" "Wase LGA"
 
 
 //RIVERS
+* #ri-abua-odual "abua (odual)" "Abua (Odual) LGA"
+* #ri-ahoada-east "ahoada east" "Ahoada East LGA"
+* #ri-ahoada-west "ahoada west" "Ahoada West LGA"
+* #ri-akuku-toru "akuku toru" "Akuku Toru LGA"
+* #ri-andoni "andoni" "Andoni LGA"
+* #ri-asari toru "asari toru" "Asari Toru LGA"
+* #ri-bonny "bonny" "Bonny LGA"
+* #ri-degema "degema" "Degema LGA"
+* #ri-eleme "eleme" "Eleme LGA"
+* #ri-emohua "emohua" "Emohua LGA"
+* #ri-etche "etche" "Etche LGA"
+* #ri-gokana "gokana" "Gokana LGA"
+* #ri-ikwerre "ikwerre" "Ikwerre LGA"
+* #ri-khana "khana" "Khana LGA"
+* #ri-obio-akpor "obio akpor" "Obio Akpor LGA"
+* #ri-ogba-egbema-ndoni "ogba egbema (ndoni)" "Ogba Egbema (Ndoni) LGA"
+* #ri-ogu-bolo "ogu (bolo)" "Ogu (Bolo) LGA"
+* #ri-okrika "okrika" "Okrika LGA"
+* #ri-omuma "omuma" "Omuma LGA"
+* #ri-opobo-nkoro "opobo (nkoro)" "Opobo (Nkoro) LGA"
+* #ri-oyigbo "oyigbo" "Oyigbo LGA"
+* #ri-port harcourt "port harcourt" "Port Harcourt LGA"
+* #ri-tai "tai" "Tai LGA" 
 
 
 //SOKOTO
+* #so-binji "binji" "Binji LGA"  
+* #so-bodinga "bodinga" "Bodinga LGA"  
+* #so-dangeshuni "dange shuni" "Dange Shuni LGA"  
+* #so-gada "gada" "Gada LGA"  
+* #so-goronyo "goronyo" "Goronyo LGA"  
+* #so-gudu "gudu" "Gudu LGA"  
+* #so-gwadabawa "gwadabawa" "Gwadabawa LGA"  
+* #so-illela "illela" "Illela LGA"  
+* #so-isa "isa" "Isa LGA"  
+* #so-kebbe "kebbe" "Kebbe LGA"  
+* #so-kware "kware" "Kware LGA"  
+* #so-rabah "rabah" "Rabah LGA"  
+* #so-sabon-birni "sabon birni" "Sabon Birni LGA"  
+* #so-shagari "shagari" "Shagari LGA"  
+* #so-silame "silame" "Silame LGA"  
+* #so-sokoto-north "sokoto north" "Sokoto North LGA"  
+* #so-sokoto-south "sokoto south" "Sokoto South LGA"  
+* #so-tambuwal "tambuwal" "Tambuwal LGA"  
+* #so-tangaza "tangaza" "Tangaza LGA"  
+* #so-tureta "tureta" "Tureta LGA"  
+* #so-wamakko "wamakko" "Wamakko LGA"  
+* #so-wurno "wurno" "Wurno LGA"  
+* #so-yabo "yabo" "Yabo LGA"
 
 
 //TARABA
+* #ta-ardo-kola "ardo kola" "Ardo Kola LGA"  
+* #ta-bali "bali" "Bali LGA"  
+* #ta-donga "donga" "Donga LGA"  
+* #ta-gashaka "gashaka" "Gashaka LGA"  
+* #ta-gassol "gassol" "Gassol LGA"  
+* #ta-ibi "ibi" "Ibi LGA"  
+* #ta-jalingo "jalingo" "Jalingo LGA"  
+* #ta-karimlamido "karim lamido" "Karim Lamido LGA"  
+* #ta-kurmi "kurmi" "Kurmi LGA"  
+* #ta-lau "lau" "Lau LGA"  
+* #ta-sardauna "sardauna" "Sardauna LGA"  
+* #ta-takum "takum" "Takum LGA"  
+* #ta-ussa "ussa" "Ussa LGA"  
+* #ta-wukari "wukari" "Wukari LGA"  
+* #ta-yorro "yorro" "Yorro LGA"  
+* #ta-zing "zing" "Zing LGA"
 
 
 //YOBE
+* #yo-bade "bade" "Bade LGA"  
+* #yo-bursari "bursari" "Bursari LGA"  
+* #yo-damaturu "damaturu" "Damaturu LGA"  
+* #yo-fika "fika" "Fika LGA"  
+* #yo-fune "fune" "Fune LGA"  
+* #yo-geidam "geidam" "Geidam LGA"  
+* #yo-gujba "gujba" "Gujba LGA"  
+* #yo-gulani "gulani" "Gulani LGA"  
+* #yo-jakusko "jakusko" "Jakusko LGA"  
+* #yo-karasuwa "karasuwa" "Karasuwa LGA"  
+* #yo-machina "machina" "Machina LGA"  
+* #yo-nangere "nangere" "Nangere LGA"  
+* #yo-nguru "nguru" "Nguru LGA"  
+* #yo-potiskum "potiskum" "Potiskum LGA"  
+* #yo-tarmuwa "tarmuwa" "Tarmuwa LGA"  
+* #yo-yunusari "yunusari" "Yunusari LGA"  
+* #yo-yusufari "yusufari" "Yusufari LGA"
 
 
 //ZAMFARA
+* #za-anka "anka" "Anka LGA"
+* #za-bakura "bakura" "Bakura LGA"
+* #za-birnin-magaji "birnin magaji" "Birnin Magaji (Kiyaw) LGA"
+* #za-bukkuyum "bukkuyum" "Bukkuyum LGA"
+* #za-bungudu "bungudu" "Bungudu LGA"
+* #za-gummi "gummi" "Gummi LGA"
+* #za-gusau "gusau" "Gusau LGA"
+* #za-kaura-namoda "kaura namoda" "Kaura Namoda LGA"
+* #za-maradun "maradun" "Maradun LGA"
+* #za-maru "maru" "Maru LGA"
+* #za-shinkafi "shinkafi" "Shinkafi LGA"
+* #za-talata-mafara "talata mafara" "Talata Mafara LGA"
+* #za-tsafe "tsafe" "Tsafe LGA"
+* #za-zurmi "zurmi" "Zurmi LGA"
 
 
 //FCT
@@ -786,47 +895,3 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #fc-kuje "kuje" "Kuje Area Council"
 * #fc-kwali "kwali" "Kwali Area Council"
 * #fc-municipal "municipal" "Abuja Municipal Area Council"
-
-
-//.... to be completed
-
-//1
-//2
-//3
-//4
-//5
-//6
-//7
-//8
-//9
-//10
-//11
-//12
-//13
-//14
-//15
-//16
-//17
-//18
-//19
-//20
-//21
-//22
-//23
-//24
-//25
-//26
-//27
-//28
-//29
-//30
-//31
-//32
-//33
-//34
-//35
-//36
-//37
-//38
-//39
-//40
