@@ -1,127 +1,50 @@
 
 Logical:      IMMZGGenerateReport
-Title:        "Generate Report (Information only)"
-Description:  "IMMZ.G - Data elements for the IMMZ.G Report Generation Data Dictionary." 
-* ^name = "IMMZGGenerateReport"
+Title:        "H - Generate Report [information only]"
+Description:  "IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary." 
+* ^name = "IMMZHGenerateReport"
 * ^status = #active
 
 * reportIdentification 1..1 SU string "Report Identification" "A unique identifier for the instance of the report that has been generated"
-  * ^code[+] = #IMMZ.G.DE1
-
-* reportStatus 1..1 SU code "Report Status" "The status of the report (for example, initial, complete, etc.)"
-  * ^code[+] = #IMMZ.G.DE2   
-
-* reportType 1..1 SU code "Report Type" "The type of report which has been generated (i.e., list of individuals, summary, etc.)"
-  * ^code[+] = #IMMZ.G.DE6
-
-* reportIndicatorCode 1..1 SU code "Report Indicator Code" "The indicator or measure definition being reported on (e.g., dropout rate, defaulters, etc.)"
-  * ^code[+] = #IMMZ.G.DE10
-
+* reportStatus 1..1 SU CodeableConcept "Report Status" "The status of the report (for example, initial, complete, etc.)"
+  * ^code[+] = #NGVerificationStatusVS
+* reportType 1..1 SU string "Report Type" "The type of report which has been generated (i.e., list of individuals, summary, etc.)"
+* reportIndicatorCode 1..1 SU string "Report Indicator Code" "The indicator or measure definition being reported on (e.g., dropout rate, defaulters, etc.)"
 * numberOfDosesPerVial 1..1 SU integer "Number of doses per vial" "The number of doses contained within a vial"
-  * ^code[+] = #IMMZ.G.DE14  
-
 * minimumStock 1..1 SU integer "Minimum Stock" "25% of the vaccine requirement in a facility during the reporting month"
-  * ^code[+] = #IMMZ.G.DE15  
-
 * maximumStock 1..1 SU integer "Maximum Stock" "125% of the vaccine requirement in a facility during the reporting month"
-  * ^code[+] = #IMMZ.G.DE16  
-
 * openingBalance 1..1 SU integer "Opening balance" "The initial quantity of vials in stock at the beginning of a specific reporting period"
-  * ^code[+] = #IMMZ.G.DE17  
-
 * quantityReceived 1..1 SU integer "Quantity received" "The quantity of vaccines/diluents received during the reporting month."
-  * ^code[+] = #IMMZ.G.DE18  
-
 * dosesOpened 1..1 SU integer "Doses opened" "The quantity of vaccines/diluents opened in doses during the reporting month."
-  * ^code[+] = #IMMZ.G.DE19  
-
 * dosesReturned 1..1 SU integer "Doses returned to LGA/Facility" "The quantity of vaccines/diluents returned in doses to the LGA during the reporting month."
-  * ^code[+] = #IMMZ.G.DE20  
-
 * stockDiscarded 1..1 SU integer "Stock discarded" "The quantity of vaccine/diluent discarded in doses"
-  * ^code[+] = #IMMZ.G.DE21  
-
 * stockDiscardedType 1..1 SU code "Stock discarded type" "The reason vaccine was discarded"
-  * ^code[+] = #IMMZ.G.DE22    
-
 * aefiCaseRate 1..1 SU decimal "AEFI Case Rate" "An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate."
-  * ^code[+] = #IMMZ.G.DE27  
-
 * openVialWastage 1..1 SU decimal "Open Vial Wastage" "A measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization"
-  * ^code[+] = #IMMZ.G.DE28  
-
 * closedVialWastage 1..1 SU decimal "Closed Vial Wastage" "A measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc."
-  * ^code[+] = #IMMZ.G.DE29  
-
 * reportSubjectArea 1..1 SU string "Report Subject Area" "Location (facility or place) for which the data in the report is being represented."
-  * ^code[+] = #IMMZ.G.DE30  
-
 * reportGenerationDate 1..1 SU dateTime "Report Generation Date" "The date and time on which the report was generated."
-  * ^code[+] = #IMMZ.G.DE31  
-
 * reportingPeriodStart 1..1 SU dateTime "Reporting Period Start" "The start date of the reporting period for which data in the report has been included."
-  * ^code[+] = #IMMZ.G.DE32  
-
 * reportingPeriodEnd 1..1 SU dateTime "Reporting Period End" "The end date of the reporting period for which data in the report has been included."
-  * ^code[+] = #IMMZ.G.DE33  
-
-
 * improvementIndicator 1..1 SU code "Improvement Indicator" "Indicates to the receiver how to interpret the data (i.e., what constitutes an improvement or deterioration)"
-  * ^code[+] = #IMMZ.G.DE34   
-
 * reportGenerator 1..1 SU string "Report Generator / Author" "Indicates the organization, or location which is generating or producing the report"
-  * ^code[+] = #IMMZ.G.DE37  
-
 * measureIdentifier 1..1 SU string "Measure Identifier / Meaning" "Represents the name of the report/indicator. It codifies the meaning of the group / measure."
-  * ^code[+] = #IMMZ.G.DE38  
-
 * measuredScore 1..1 SU decimal "Measured Score" "The calculated score of the measure / indicator which is being reported on."
-  * ^code[+] = #IMMZ.G.DE39  
-
 * measureNumerator 1..1 SU integer "Measure Numerator" "The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score."
-  * ^code[+] = #IMMZ.G.DE40  
-
 * measureDenominator 1..1 SU integer "Measure Denominator" "The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score."
-  * ^code[+] = #IMMZ.G.DE41  
-
 * disaggregationGroup 1..1 SU code "Disaggregation Group" "Indicates the overall strata or disaggregation which is being represented in the report."
-  * ^code[+] = #IMMZ.G.DE42  
-
 * bySex 1..1 SU boolean "By-Sex" "Represents a disaggregation grouped by the indicator population's sex values."
-  * ^code[+] = #IMMZ.G.DE43  
 * byRegion 1..1 SU boolean "By-Region" "Represents a disaggregation grouped by the indicator population's administrative regions."
-  * ^code[+] = #IMMZ.G.DE44  
-
 * byAgeGroup 1..1 SU boolean "By-Age Group" "Represents a disaggregation grouped by the indicator population's age groups."
-  * ^code[+] = #IMMZ.G.DE45  
-
 * byDoseNumber 1..1 SU boolean "By-Dose Number" "Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine."
-  * ^code[+] = #IMMZ.G.DE46  
-
 * byVaccineType 1..1 SU boolean "By-Vaccine Type" "Represents a disaggregation grouped by the indicator population's vaccine types."
-  * ^code[+] = #IMMZ.G.DE47  
-
 * byVaccineManufacturer 1..1 SU boolean "By-Vaccine Manufacturer" "Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine."
-  * ^code[+] = #IMMZ.G.DE48  
-
 * byReactionManifestation 1..1 SU boolean "By-Reaction Manifestation" "Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine."
-  * ^code[+] = #IMMZ.G.DE49  
-
 * byOccupation 1..1 SU boolean "By-Occupation" "Represents a disaggregation grouped by the indicator population's occupations."
-  * ^code[+] = #IMMZ.G.DE50  
-
 * disaggregationMeasureIdentifier 1..1 SU string "Disaggregation Measure Identifier / Meaning" "The type or value of this stratum represents (male, female, region 1, dose 3, etc.). This value depends on the Disaggregation Group data element."
-  * ^code[+] = #IMMZ.G.DE51  
-
 * disaggregationNumerator 1..1 SU integer "Disaggregation Numerator" "The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score."
-  * ^code[+] = #IMMZ.G.DE52  
-
 * disaggregationDenominator 1..1 SU integer "Disaggregation Denominator" "The count of individual objects (persons, doses, etc.) which were used as the denominator for the disaggregation score."
-  * ^code[+] = #IMMZ.G.DE53  
-
 * disaggregatedScore 1..1 SU decimal "Disaggregated Score" "The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records."
-  * ^code[+] = #IMMZ.G.DE54  
-
 
 Instance: RoutineImmunizationReport
 InstanceOf: IMMZGGenerateReport

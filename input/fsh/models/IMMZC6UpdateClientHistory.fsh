@@ -1,12 +1,10 @@
 Logical: UpdateClientHistory
-Title: "Update Client History (Information only)"
+Title: "C6 - Update Client History [information only]"
 Description: "IMMZ.C6 - A logical model for tracking client immunization history updates."
 
 * clientCompletedPrimarySeries 1..1 boolean "Client has completed vaccine primary series" "Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen."
-  * ^code[+] = #IMMZ.C1.DE1
 * hivStatus 1..1 CodeableConcept "HIV Status" "The current HIV status of the client."
-  * ^code[+] = #IMMZ.C1.DE2
-  * ^binding.strength = #required 
+  * ^code[+] = #NGHivStatusVS
 
 // Vaccine Administration Dates
 * bcgDoseDate 0..1 date "Date BCG dose was administered" "The date the BCG vaccine dose was given to the client"

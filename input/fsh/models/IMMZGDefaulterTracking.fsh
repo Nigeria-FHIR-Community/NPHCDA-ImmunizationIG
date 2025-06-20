@@ -1,29 +1,17 @@
 Logical: DefaulterTracking
-Title: "Defaulter Tracking (Information only)"
+Title: "G - Defaulter Tracking [information only]"
 Description: "IMMZ.G - A logical model for tracking immunization defaulters."
 
 * clientName 1..1 string "Client's name" "The first and last name of the client."
-  * ^code[+] = #IMMZ.G.DE1
 * clientSex 1..1 CodeableConcept "Sex" "Biological sex of the client."
-  * ^code[+] = #IMMZ.G.DE2
-  * ^binding.strength = #required
-  * ^binding.valueSet = "#NGGender"
+  * ^code[+] = #NGGender
 * clientAge 1..1 integer "Client's age" "Total number of months since the client was born."
-  * ^code[+] = #IMMZ.G.DE3
-
 * caregiverName 0..1 string "Caregiver's name" "Full name of the caregiver."
-  * ^code[+] = #IMMZ.G.DE4
 * caregiverPhone 0..1 string "Caregiver's phone number" "Mobile number of the caregiver."
-  * ^code[+] = #IMMZ.G.DE5
-
 * missedVaccine 1..* CodeableConcept "Immunization missed" "The type of vaccine missed."
-  * ^code[+] = #IMMZ.G.DE6
-  * ^binding.strength = #required
-  * ^binding.valueSet = "#IMMZ.F.DE6"
+  * ^code[+] = #NGVaccineLibraryVS
 * missedVaccineDate 1..1 date "Date of immunization missed" "The date immunization was due."
-  * ^code[+] = #IMMZ.G.DE7
 * missedReason 0..1 string "Reason" "Capture's the reason(s) for a missed vaccination appointment."
-  * ^code[+] = #IMMZ.G.DE8
 
 Instance: defaulter-tracing-example
 InstanceOf: DefaulterTracking
