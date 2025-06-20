@@ -1,4 +1,4 @@
-CodeSystem: NigeriaSiblingHealthStatusCS
+CodeSystem: NGSiblingHealthStatusCS
 Id: nigeria-sibling-health-status
 Title: "NG Sibling Health Status"
 Description: "This CodeSystem defines list of relationships that a part of this IG"
@@ -16,7 +16,7 @@ Description: "This CodeSystem defines list of relationships that a part of this 
 * #diseased "underlying disease" "Referenced Sibling has an underlying disease"
 
 
-CodeSystem: NigeriaHivStatusCS
+CodeSystem: NGHivStatusCS
 Id: nigeria-hiv-status
 Title: "NG Client HIV status"
 Description: "This CodeSystem defines list of options for HIV status of a Client"
@@ -33,7 +33,7 @@ Description: "This CodeSystem defines list of options for HIV status of a Client
 * #unknown	"Unknown" "The Client does not know their HIV status"
 
 
-CodeSystem: NigeriaPregnancyStatusCS
+CodeSystem: NGPregnancyStatusCS
 Id: nigeria-pregnancy-status
 Title: "NG Client Pregnancy status"
 Description: "This CodeSystem defines list of options for Pregnancy status of a Client"
@@ -49,24 +49,7 @@ Description: "This CodeSystem defines list of options for Pregnancy status of a 
 * #notpregnant	"Not Pregnany" "The Client's pregnancy status is negative"
 * #unknown	"Not known" "The Client does not know their Pregnancy status"
 
-
-CodeSystem: NigeriaPrimaryVaccineStatusCS
-Id: nigeria-primary-vaccine-status
-Title: "NG Client's primary vaccine status"
-Description: "This CodeSystem defines list of options for Client's primary vaccine status"
-* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-statusCS"
-* ^status = #active
-* ^content = #complete
-* ^caseSensitive = true
-* ^hierarchyMeaning = #is-a
-* ^publisher = "NPHCDA"
-* ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
-// The CodeSystem for Pregnancy Status
-* #complete	"Complete" "Client has completed all primary vaccines"
-* #notcomplete	"Not Complete" "The Client has not completed all primary vaccines"
-
-
-CodeSystem: NigeriaFacilityTypeCS
+CodeSystem: NGFacilityTypeCS
 Id: nigeria-facility-type
 Title: "NG Facility Type"
 Description: "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."

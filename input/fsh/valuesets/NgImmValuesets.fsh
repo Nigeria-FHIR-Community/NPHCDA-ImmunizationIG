@@ -1,146 +1,157 @@
-ValueSet: NigeriaGenderVS
+ValueSet: NGGenderVS
 Id: nigeria-gender
-Title: "Gender"
+Title: "Gender or Sex"
 Description: "The administrative gender of a person."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/administrative-gender"
-* include codes from system NigeriaGenderCS
+//* include codes from valueset http://hl7.org/fhir/administrative-gender
+* include codes from system NGGenderCS
 
 
-ValueSet: NigeriaWardsVS
+ValueSet: NGWardsVS
 Id: nigeria-wards
 Title: "Wards"
 Description: "The administrative Ward (within an LGA) where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/administrative-wards"
-* include codes from system NigeriaWardsCS
+* include codes from system NGWardsCS
 
-ValueSet: NigeriaLGAsVS
+ValueSet: NGLGAsVS
 Id: nigeria-lgas
 Title: "Administrative LGAs"
 Description: "The administrative Local Government Aread where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/lgas"
-* include codes from system NigeriaLGAsCS
+* include codes from system NGLGAsCS
 
-ValueSet: NigeriaStatesVS
+ValueSet: NGStatesVS
 Id: nigeria-states
 Title: "States"
 Description: "The administrative ward where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/states"
-* include codes from system NigeriaStatesCS
+* include codes from system NGStatesCS
 
 
-ValueSet: NigeriaRelationshipsVS
+ValueSet: NGRelationshipsVS
 Id: nigeria-relationship
 Title: "Relationships"
 Description: "The administrative ward where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/relationship"
-* include codes from system NigeriaRelationshipsCS
+* include codes from system http://hl7.org/fhir/R4B/valueset-relationship
 
 
-ValueSet: NigeriaVaccineLibraryVS
+ValueSet: NGVaccineLibraryVS
 Id: nigeria-vaccine-library
 Title: "Vaccines"
 Description: " ."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/vaccine-library"
-* include codes from system NigeriaVaccineLibraryCS
+* include codes from system NGVaccineLibraryCS
 
-ValueSet: NigeriaFacilityTypeVS
+ValueSet: NGFacilityTypeVS
 Id: nigeria-facility-types
 Title: "Health Facility Type"
 Description: " ."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/health-facility-types"
-* include codes from system NigeriaFacilityTypeCS
+* include codes from system NGFacilityTypeCS
 
-ValueSet: NigeriaClinicalStatusVS
+ValueSet: NGClinicalStatusVS
 Id: nigeria-clinical-status
 Title: "Reaction outcome"
 Description: "Reaction outcome clinical Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/clinical-status"
-* include codes from system NigeriaClinicalStatusCS
+* include codes from system https://www.hl7.org/fhir/R4/valueset-allergyintolerance-clinical
 
-ValueSet: NigeriaVerificationStatusVS
+ValueSet: NGVerificationStatusVS
 Id: nigeria-verifiction-status
 Title: "AEFI Verification Status"
 Description: "AEFI Verification Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/verification-status"
-* include codes from system NigeriaVerificationStatusCS
+* include codes from system https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification
 
-ValueSet: NigeriaImmunizationSessionTypeVS
+ValueSet: NGSessionTypeVS
 Id: nigeria-session-type
 Title: "Session type"
 Description: "Session type"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/session-type"
-* include codes from system NigeriaImmunizationSessionTypeCS
+* include codes from system NGImmunizationSessionTypeCS
 
-ValueSet: NigeriaImmunizationContraindicationVS
+ValueSet: NGContraindicationVS
 Id: nigeria-vaccine-contraindication
 Title: "Vaccine Contraindication"
 Description: "Vaccine Contraindication"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/vaccine-contraindication"
-* include codes from system NigeriaImmunizationContraindicationCS
+* include codes from system NGImmunizationContraindicationCS
 
-ValueSet: NigeriaImmunizationSiteVS
+ValueSet: NGImmunizationSiteVS
 Id: nigeria-vaccine-site
 Title: "Vaccine Site"
 Description: "Vaccine Site"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/vaccine-site"
-* include codes from system NigeriaImmunizationSiteCS
+* include codes from system NGImmunizationSiteCS
 
-ValueSet: NigeriaImmunizationRouteVS
+ValueSet: NGImmunizationRouteVS
 Id: nigeria-vaccine-route
 Title: "Vaccine Route"
 Description: "Vaccine Route"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/vaccine-route"
-* include codes from system NigeriaImmunizationRouteCS
+* include codes from system https://www.hl7.org/fhir/R4/valueset-immunization-route
 
-ValueSet: NigeriaAllergySeverityVS
+ValueSet: NGAllergySeverityVS
 Id: nigeria-allergy-severity
 Title: "Allergy Severity"
 Description: "Vaccine reaction Severity"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/allergy-severity"
-* include codes from system NigeriaAllergySeverityCS
+* include codes from system http://hl7.org/fhir/ValueSet/reaction-event-severity 
 
-ValueSet: NigeriaSiblingHealthStatusVS
+ValueSet: NGSiblingHealthStatusVS
 Id: nigeria-sibling-health-status
 Title: "Sibling Health Status"
 Description: "Sibling Health Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/sibling-health-status"
-* include codes from system NigeriaSiblingHealthStatusCS
+* include codes from system NGSiblingHealthStatusCS
 
-ValueSet: NigeriaHivStatusVS
+ValueSet: NGHivStatusVS
 Id: nigeria-hiv-status
 Title: "Client HIV Status"
 Description: "Client HIV Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/client-hiv-status"
-* include codes from system NigeriaHivStatusCS
+* include codes from system NGHivStatusCS
 
-ValueSet: NigeriaPregnancyStatusVS
+ValueSet: NGPregnancyStatusVS
 Id: nigeria-pregnancy-status
 Title: "Client Preganancy Status"
 Description: "Client Pregnancy Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/client-pregnancy-status"
-* include codes from system NigeriaPregnancyStatusCS
+* include codes from system NGPregnancyStatusCS
 
-ValueSet: NigeriaPrimaryVaccineStatusVS
+ValueSet: NGPrimaryVaccineStatusVS
 Id: nigeria-primary-vaccine-status
 Title: "Primary vaccine Status"
 Description: "Primary Vaccine Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/primary-vaccine-status"
-* include codes from system NigeriaPrimaryVaccineStatusCS
+* include codes from system http://hl7.org/fhir/ValueSet/immunization-status
+
+ValueSet: NGImmunizationNotDoneReasonsVS
+Id: nigeria-Immunization-status-reason
+Title: "Reason for missed Vaccination"
+Description: "Reason for a Client missing the last or other vaccinations"
+* ^status = #active
+* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/primary-vaccine-status"
+* include codes from system http://hl7.org/fhir/ValueSet/immunization-status-reason
+
+

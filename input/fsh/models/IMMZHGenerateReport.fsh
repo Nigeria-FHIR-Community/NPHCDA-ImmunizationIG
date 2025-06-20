@@ -1,7 +1,7 @@
 
 Logical:      IMMZGGenerateReport
-Title:        "IMMZ.G Generate Report"
-Description:  "Data elements for the IMMZ.G Report Generation Data Dictionary." 
+Title:        "Generate Report (Information only)"
+Description:  "IMMZ.G - Data elements for the IMMZ.G Report Generation Data Dictionary." 
 * ^name = "IMMZGGenerateReport"
 * ^status = #active
 

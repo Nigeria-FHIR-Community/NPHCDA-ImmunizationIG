@@ -1,4 +1,4 @@
-CodeSystem: NigeriaLGAsCS
+CodeSystem: NGLGAsCS
 Id: nigeria-lgas
 Title: "NG LGAs in Nigeria"
 Description: "This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria."
@@ -786,7 +786,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #ri-ahoada-west "ahoada west" "Ahoada West LGA"
 * #ri-akuku-toru "akuku toru" "Akuku Toru LGA"
 * #ri-andoni "andoni" "Andoni LGA"
-* #ri-asari toru "asari toru" "Asari Toru LGA"
+* #ri-asari-toru "asari toru" "Asari Toru LGA"
 * #ri-bonny "bonny" "Bonny LGA"
 * #ri-degema "degema" "Degema LGA"
 * #ri-eleme "eleme" "Eleme LGA"
@@ -802,7 +802,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #ri-omuma "omuma" "Omuma LGA"
 * #ri-opobo-nkoro "opobo (nkoro)" "Opobo (Nkoro) LGA"
 * #ri-oyigbo "oyigbo" "Oyigbo LGA"
-* #ri-port harcourt "port harcourt" "Port Harcourt LGA"
+* #ri-port-harcourt "port harcourt" "Port Harcourt LGA"
 * #ri-tai "tai" "Tai LGA" 
 
 

@@ -1,11 +1,11 @@
-Alias: $IMMZD16 = http://example.org/fhir/CodeSystem/IMMZ-D16
+Alias: $IMMZ_E = http://example.org/fhir/CodeSystem/IMMZ_E
 
 
 
-Logical: TreatAEFI
-Id: treat-aefi
-Title: "IMMZ.D16 Treat AEFI"
-Description: "A logical model for recording and managing AEFI treatment."
+Logical: ManageAEFI
+Id: manage-aefi
+Title: "Manage & Report AEFI (Information only)"
+Description: "IMMZ.E - A logical model for recording and managing AEFI treatment."
 * reactionDate 1..1 date "Reaction Date" "The date when the adverse event or reaction started."
 * observationId 1..1 string "Reaction Observation ID" "A reference to the observation that recorded the reaction."
 * complaint 0..1 string "Complaint" "The symptom or concern reported by the patient."
@@ -25,20 +25,20 @@ Description: "A logical model for recording and managing AEFI treatment."
 * certificateSchemeVersion 0..1 string "Certificate Scheme Version" "Version of the core data set and HL7 FHIR Implementation Guide used."
 
 
-Instance: treat-aefi-example
-InstanceOf: TreatAEFI
+Instance: manage-aefi-example
+InstanceOf: ManageAEFI
 Usage: #example
 * reactionDate = "2025-03-20"
 * observationId = "obs12345"
 * complaint = "Severe headache and dizziness"
-* manifestation[+] = #IMMZ.D16.DE37 "Fever"
-* manifestation[+] = #IMMZ.D16.DE38 "Rash"
-* severity = #IMMZ.D16.DE10 "Severe"
-* outcome = #IMMZ.D16.DE10 "Recovered"
+* manifestation[+] = #IMMZ.E.DE37 "Fever"
+* manifestation[+] = #IMMZ.E.DE38 "Rash"
+* severity = #IMMZ.E.DE10 "Severe"
+* outcome = #IMMZ.E.DE10 "Recovered"
 * treatmentGiven[+] = "Administered antihistamines and IV fluids"
 * doseNumber = 2
 * totalDoses = 3
-* diseaseTargeted = #IMMZ.D16.DE27 "Measles"
+* diseaseTargeted = #IMMZ.E.DE27 "Measles"
 * nextDoseDueDate = "2025-06-20"
 * digitalCertificateNeeded = true
 * certificateIssuer = "Ministry of Health"

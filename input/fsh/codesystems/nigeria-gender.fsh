@@ -1,4 +1,4 @@
-CodeSystem: NigeriaGenderCS
+CodeSystem: NGGenderCS
 Id: nigeria-gender
 Title: "NG Gender or Sex"
 Description: "Codes for the administrative gender or sex of a person, used in demographic and administrative contexts."

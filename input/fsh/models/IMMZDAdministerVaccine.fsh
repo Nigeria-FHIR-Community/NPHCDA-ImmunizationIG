@@ -1,6 +1,6 @@
 Logical: AdministerVaccine
-Title: "IMMZ.D Administer Vaccine"
-Description: "A logical model for capturing vaccine administration details"
+Title: "Administer Vaccine (Information only)"
+Description: "IMMZ.D - A logical model for capturing vaccine administration details"
 
 * nameOfHealthFacility 1..1 string "Name of health facility" "Name of the facility where the vaccination is taking place."
   * ^code[+] = #IMMZ.D.DE1

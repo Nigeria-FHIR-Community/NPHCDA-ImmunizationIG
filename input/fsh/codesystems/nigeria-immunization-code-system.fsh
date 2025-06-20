@@ -1,4 +1,4 @@
-CodeSystem: NigeriaClinicalStatusCS
+CodeSystem: NGClinicalStatusCS
 Id: nigeria-clinical-status 
 Title: "NG Adverse Event Clinical Status"
 Description: "A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."
@@ -13,20 +13,7 @@ Description: "A classification system that represents the current clinical statu
 * #death "Death" "The adverse event resulted in the death of the individual."
 
 
-CodeSystem: NigeriaVerificationStatusCS
-Id: nigeria-verification-status 
-Title: "NG Adverse Events Verification Status"
-Description: "This element captures the confirmed clinical outcome or current state of an Adverse Event Following Immunization (AEFI) based on clinical assessment, investigation, or follow-up."
-* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-verification-status"
-* ^status = #active
-* ^content = #complete
-* #confirmed "Confirmed" "The reported adverse event has been assessed and confirmed to be a genuine AEFI based on available evidence and investigation."
-* #unconfirmed "Unconfirmed" "The reported adverse event is currently under investigation or lacks sufficient evidence to confirm or refute its classification as an AEFI."
-* #refuted "Refuted" "The reported adverse event has been assessed and found not to be related to immunization; it is ruled out as an AEFI."
-* #entered-in-error "Entered in Error" "The report was mistakenly entered or does not constitute a valid AEFI record and has been retracted or marked as invalid."
-
-
-CodeSystem: NigeriaImmunizationSessionTypeCS
+CodeSystem: NGImmunizationSessionTypeCS
 Id: nigeria-immunization-session-type
 Title: "NG Immunization Session types"
 Description: "A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR)."
@@ -41,7 +28,7 @@ Description: "A standardized classification of vaccine types administered for th
 * #mobile	"Mobile session" "An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport."
 
 
-CodeSystem: NigeriaImmunizationContraindicationCS
+CodeSystem: NGImmunizationContraindicationCS
 Id: nigeria-immunization-contraindication
 Title: " NG Vaccine contraindications"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
@@ -57,7 +44,7 @@ Description: "A set of standardized codes used to represent clinical conditions,
 * #hiv "HIV positive" "The individual has symptomatic HIV infection, which may contraindicate live vaccines or require specific vaccine schedules based on immunological status."
 
 
-CodeSystem: NigeriaImmunizationSiteCS
+CodeSystem: NGImmunizationSiteCS
 Id: nigeria-immunization-site
 Title: "NG Vaccine Site"
 Description: "This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered."
@@ -74,7 +61,7 @@ Description: "This CodeSystem captures the specific anatomical location on the p
 * #antero-lateral-left-thigh "Antero Lateral Aspect of Left Thigh" "The vaccine is administered into the antero-lateral (front-side) part of the left thigh, often used in infants when giving multiple vaccines."
 
 
-CodeSystem: NigeriaImmunizationRouteCS
+/* CodeSystem: NigeriaImmunizationRouteCS
 Id: nigeria-immunization-route
 Title: "NG Vaccine Route"
 Description: "This CodeSystem captures path by which a vaccine or medicinal product is introduced into the body."
@@ -88,9 +75,9 @@ Description: "This CodeSystem captures path by which a vaccine or medicinal prod
 * #Intradermal "Intradermal" "The vaccine is injected into the dermal layer of the skin, just below the surface. This route is commonly used for BCG vaccination."
 * #Intramuscular "Intramuscular" "The vaccine is injected deep into the muscle tissue, allowing for rapid absorption. This is the most common route for many vaccines, such as DTP or hepatitis B."
 * #Subcutaneous "Subcutaneous" "The vaccine is injected into the layer of fat and tissue just under the skin. It is typically used for vaccines like measles or yellow fever."
+ */
 
-
-CodeSystem: NigeriaAllergySeverityCS
+/* CodeSystem: NigeriaAllergySeverityCS
 Id: nigeria-allergy-severity
 Title: "NG Reaction Severity"
 Description: "This CodeSystem captures the assessed severity of an allergic reaction following immunization."
@@ -102,4 +89,33 @@ Description: "This CodeSystem captures the assessed severity of an allergic reac
 // The CodeSystem for  Allergy Severity
 * #mild "Mild" "The allergic reaction involves mild symptoms such as localized redness, itching, or rash, without systemic involvement or need for significant medical intervention."
 * #moderate "Moderate" "The reaction includes more pronounced symptoms like widespread hives, mild breathing difficulty, or swelling that requires medical observation or treatment but is not life-threatening."
-* #severe "Severe" "The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise."
+* #severe "Severe" "The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise." */
+
+
+/* CodeSystem: NigeriaVerificationStatusCS
+Id: nigeria-verification-status 
+Title: "NG Adverse Events Verification Status"
+Description: "This element captures the confirmed clinical outcome or current state of an Adverse Event Following Immunization (AEFI) based on clinical assessment, investigation, or follow-up."
+* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-verification-status"
+* ^status = #active
+* ^content = #complete
+* #confirmed "Confirmed" "The reported adverse event has been assessed and confirmed to be a genuine AEFI based on available evidence and investigation."
+* #unconfirmed "Unconfirmed" "The reported adverse event is currently under investigation or lacks sufficient evidence to confirm or refute its classification as an AEFI."
+* #refuted "Refuted" "The reported adverse event has been assessed and found not to be related to immunization; it is ruled out as an AEFI."
+* #entered-in-error "Entered in Error" "The report was mistakenly entered or does not constitute a valid AEFI record and has been retracted or marked as invalid."
+ */
+
+/* CodeSystem: NigeriaPrimaryVaccineStatusCS
+Id: nigeria-primary-vaccine-status
+Title: "NG Client's primary vaccine status"
+Description: "This CodeSystem defines list of options for Client's primary vaccine status"
+* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-statusCS"
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = true
+* ^hierarchyMeaning = #is-a
+* ^publisher = "NPHCDA"
+* ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
+// The CodeSystem for Pregnancy Status
+* #complete	"Complete" "Client has completed all primary vaccines"
+* #notcomplete	"Not Complete" "The Client has not completed all primary vaccines" */

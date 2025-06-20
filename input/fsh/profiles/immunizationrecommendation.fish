@@ -1,4 +1,4 @@
-Profile: NEIRImmunizationRecommendation
+Profile: NgImmImmunizationRecommendation
 Parent: ImmunizationRecommendation
 Description: "A patient's point-in-time set of recommendations (i.e. forecasting) according to a published schedule with optional supporting justification."
 

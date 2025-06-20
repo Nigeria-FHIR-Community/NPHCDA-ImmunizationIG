@@ -10,7 +10,7 @@ Description: "A profile for immunization service locations in the Nigerian Elect
 * type 1..* MS
 * type from http://terminology.hl7.org/CodeSystem/v3-RoleCode (extensible)
 * address 1..1 MS
-* address.extension contains NigeriaAdministrativeWard named administrativeWard 0..1 MS
+* address.extension contains NGAdministrativeWard named administrativeWard 0..1 MS
 * address.country = "NG" (exactly)
 * telecom 0..* MS
 

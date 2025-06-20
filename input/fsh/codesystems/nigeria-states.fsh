@@ -1,4 +1,4 @@
-CodeSystem: NigeriaStatesCS
+CodeSystem: NGStatesCS
 Id: nigeria-states
 Title: "NG States in Nigeria"
 Description: "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."

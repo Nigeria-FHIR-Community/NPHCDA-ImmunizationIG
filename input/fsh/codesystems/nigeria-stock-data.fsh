@@ -1,4 +1,4 @@
-CodeSystem:   NigeriaStockReportCS
+CodeSystem:   NGStockReportCS
 Title:        "NG Stock Management Data Elements"
 Description:  "CodeSystem for Stock Management Data Elements"
 

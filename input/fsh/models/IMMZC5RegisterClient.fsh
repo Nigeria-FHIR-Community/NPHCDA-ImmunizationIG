@@ -1,7 +1,7 @@
 Logical: RegisterClientModel
 Id: register-client-model
-Title: "IMMZ.C Register Client"
-Description: "A logical model representing a client being registered in the immunization system."
+Title: "Register Client (Information only)"
+Description: "IMMZ.C5 - A logical model representing a client being registered in the immunization system."
 
 * identifier 1..1 string "Unique identifier for clients including the national identification number, medical records number, immunization information system ID, and others."
   * ^code[+] = #DE1
@@ -44,13 +44,8 @@ Description: "A logical model representing a client being registered in the immu
   * telecom 0..* ContactPoint "Phone number of the caregiver."
     * system 1..1 code "Type of communication (e.g., phone, email)."
     * value 1..1 string "Caregiver's contact number or address."
-    * use 0..1 code "Purpose of the contact information (e.g., home, work, mobile)."
- 
   * relationship 0..1 CodeableConcept "The relationship of the caregiver to the client."
-    * coding 0..* Coding "Caregiver relationship coding."
-      * system 1..1 uri "System for caregiver relationship codes." 
-      * code 1..1 code "Caregiver relationship code."
-      * display 1..1 string "Caregiver relationship display text."
+    * text 0..* string "Caregiver relationship dsiplay text."
 * otherChildren 0..* BackboneElement "Any other children the mother has."
   * name 1..1 string "The full name of the mother's other children."
     * ^code[+] = #DE28
@@ -62,7 +57,7 @@ Description: "A logical model representing a client being registered in the immu
   * ^code[+] = #DE31
 * hivStatus 0..1 CodeableConcept "HIV status of the client."
   * ^code[+] = #DE37
-* pregnancyStatus 0..1 boolean "Confirms whether the client is pregnant or not."
+* pregnancyStatus 0..1 string "Confirms whether the client is pregnant or not."
   * ^code[+] = #DE41
 
 
@@ -87,22 +82,14 @@ Usage: #example
 * weightAtBirth.code = #DE12
 
 * address.residentialAddress = "123 Health Street"
-* address.village = "ImmunoCity"
-* address.town = "HealthyState"
+* address.village = "Wukari"
+* address.town = "Ikeja"
 * address.ward = "12345"
-* address.lga = "Central District"
+* address.lga = "Ikeja-central"
 * address.state = "Lagos"
-
-* contact[0].name.given = "Jane"
-* contact[0].name.family = "Doe" 
-
-
-* contact[0].relationship.coding[0].system = "http://example.org/fhir/contact-relationship"
-* contact[0].relationship.coding[0].code = #DE21
-* contact[0].relationship.coding[0].display = "Mother"
-
+* contact[0].name.given = "Amaka"
+* contact[0].name.family = "Iliya" 
+* contact[0].relationship.text = "Mother"
 * hivStatus.coding[0].system = "http://example.org/fhir/hiv-status"
-* hivStatus.coding[0].code = #DE39
 * hivStatus.coding[0].display = "Negative"
-
-* pregnancyStatus = false
+* pregnancyStatus = "not pregnant"

@@ -1,4 +1,4 @@
-CodeSystem: NigeriaVaccineLibraryCS
+CodeSystem: NGVaccineLibraryCS
 Id: nigeria-vaccine-library
 Title: "NG Vaccine Library with SNOMED CT codes"
 Description: "CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG using SNOMED CT codes"

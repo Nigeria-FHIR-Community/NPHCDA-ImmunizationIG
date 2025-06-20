@@ -1,4 +1,4 @@
-CodeSystem: NigeriaWardsCS
+CodeSystem: NGWardsCS
 Id: nigeria-wards
 Title: "NG Administrative Wards"
 Description: "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."
