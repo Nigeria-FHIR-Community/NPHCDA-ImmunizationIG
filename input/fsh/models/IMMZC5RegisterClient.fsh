@@ -65,7 +65,6 @@ Usage: #example
 * weightAtBirth.value = 3.2
 * weightAtBirth.unit = "kg"
 * weightAtBirth.system = "http://unitsofmeasure.org"
-* weightAtBirth.code = #DE12
 
 * address.residentialAddress = "123 Health Street"
 * address.village = "Wukari"
