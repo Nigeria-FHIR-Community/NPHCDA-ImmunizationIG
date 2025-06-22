@@ -2,7 +2,7 @@ Profile: NgImmLocation
 Parent: Location
 Id: nigeria-location 
 Description: "A profile for immunization service locations in the Nigerian Electronic Immunization Registry (NEIR), including health facilities, outreach sites, and mobile vaccination units."
-* ^url = "http://nphcda.gov.ng/fhir/StructureDefinition/ng-location"
+* ^url = "http://nphcda.gov.ng/ig/fhir/StructureDefinition/ng-location"
 * ^version = "1.0.0"
 * ^status = #active
 * status 1..1

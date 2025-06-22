@@ -12,13 +12,20 @@
        <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
     </ul>
   </li>
-     <li class="dropdown">
+  <li class="dropdown">
     <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a>
     <ul class="dropdown-menu">
       <li><a href="artifacts.html#structures-logical-models">Logical Models<a/></li>
       <li><a href="artifacts.html#structures-resource-profiles">Profiles &amp; Extensions<a/></li>
       <li><a href="artifacts.html#terminology-value-sets">Valuesets &amp; CodeSystems<a/></li>
       <li><a href="artifacts.html#example-example-instances">Examples &amp; Instances</a></li>
+    </ul>
+  </li>
+
+    <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Search &amp; Operations<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="search-operation.html">Search &amp; Operations<a/></li>
     </ul>
   </li>
 
