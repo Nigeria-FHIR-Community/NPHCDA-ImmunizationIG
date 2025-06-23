@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -27,8 +27,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -42,8 +42,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner"
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson",
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -159,11 +160,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-register-client-model.html" : "C5 - Register Client [information only]",
-      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
       "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
-      "StructureDefinition-register-facility-model.html" : "A - Register Facility [information only]"
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-register-facility-model.html" : "A - Register Facility [information only]",
+      "StructureDefinition-register-client-model.html" : "C5 - Register Client [information only]"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -177,11 +178,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-register-client-model.html" : "C5 - Register Client [information only]",
-      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
       "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
-      "StructureDefinition-register-facility-model.html" : "A - Register Facility [information only]"
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-register-facility-model.html" : "A - Register Facility [information only]",
+      "StructureDefinition-register-client-model.html" : "C5 - Register Client [information only]"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -223,11 +224,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
       "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
       "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
-      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition",
-      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -241,11 +242,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
       "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
       "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
-      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition",
-      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -411,14 +412,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
       "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson",
-      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
-      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition",
-      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
       "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance",
-      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization",
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -565,9 +566,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
       "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson",
-      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner"
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -760,8 +761,7 @@
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
@@ -818,8 +818,8 @@
       "systems" : ["http://hl7.org/fhir/R4B/valueset-relationship"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",

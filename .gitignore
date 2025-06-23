@@ -5,3 +5,6 @@ fsh-generated
 input-cache
 temp
 template
+output/cache/
+output/temp/
+*.log

@@ -62,8 +62,7 @@
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
@@ -120,8 +119,8 @@
       "systems" : ["http://hl7.org/fhir/R4B/valueset-relationship"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
-      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",

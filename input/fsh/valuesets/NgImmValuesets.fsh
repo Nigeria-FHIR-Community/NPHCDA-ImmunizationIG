@@ -4,7 +4,7 @@ Title: "Gender or Sex"
 Description: "The administrative gender of a person."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"
-* include codes from valueset http://hl7.org/fhir/administrative-gender
+//* include codes from valueset http://hl7.org/fhir/administrative-gender
 * include codes from system NGGenderCS
 
 

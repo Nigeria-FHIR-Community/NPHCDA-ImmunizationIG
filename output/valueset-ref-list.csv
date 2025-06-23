@@ -3,7 +3,7 @@ http://nphcda.gov.ng/ig/fhir/ValueSet/ng-allergy-severity,0.4.0,active,,NGAllerg
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status,0.4.0,active,,NGHivStatusVS,Client HIV Status,"Client HIV Status","StructureDefinition/hiv-status","Internal"
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status,0.4.0,active,,NGPregnancyStatusVS,Client Preganancy Status,"Client Pregnancy Status","StructureDefinition/pregnancy-status","Internal"
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status,0.4.0,active,,NGClinicalStatusVS,Reaction outcome,"Reaction outcome clinical Status","StructureDefinition/allergy-intolerance-profile","Internal"
-http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender,0.4.0,active,,NGGenderVS,Gender or Sex,"The administrative gender of a person.","StructureDefinition/mother-other-children,StructureDefinition/NgImmPatient","Internal"
+http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender,0.4.0,active,,NGGenderVS,Gender or Sex,"The administrative gender of a person.","StructureDefinition/NgImmPatient","Internal"
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types,0.4.0,active,,NGFacilityTypeVS,Health Facility Type," .","StructureDefinition/ng-imm-organization","Internal"
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas,0.4.0,active,,NGLGAsVS,Administrative LGAs,"The administrative Local Government Aread where a person or a facility is.","StructureDefinition/NgImmPatient","Internal"
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status,0.4.0,active,,NGPrimaryVaccineStatusVS,Primary vaccine Status,"Primary Vaccine Status","StructureDefinition/NgImmImmunization","FHIR"

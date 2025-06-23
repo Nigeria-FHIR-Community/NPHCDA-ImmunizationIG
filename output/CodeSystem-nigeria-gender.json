@@ -10,7 +10,7 @@
   "name" : "NGGenderCS",
   "title" : "NG Gender or Sex",
   "status" : "active",
-  "date" : "2025-06-23T12:00:39+01:00",
+  "date" : "2025-06-23T13:45:54+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -42,11 +42,25 @@
   "concept" : [{
     "code" : "male",
     "display" : "Male",
-    "definition" : "Male sex"
+    "definition" : "Male sex",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
+        "code" : "display"
+      },
+      "value" : "Male"
+    }]
   },
   {
     "code" : "female",
     "display" : "Female",
-    "definition" : "Female sex"
+    "definition" : "Female sex",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
+        "code" : "display"
+      },
+      "value" : "Female"
+    }]
   }]
 }

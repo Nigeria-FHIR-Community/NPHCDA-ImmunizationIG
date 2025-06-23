@@ -1,9 +1,9 @@
 NigeriaimmunizationFHIRIG : Validation Results
 =========================================
 
-err = 179, warn = 482, info = 35
+err = 178, warn = 478, info = 35
 IG Publisher Version: 2.0.7
-Generated Mon Jun 23 12:04:33 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.4.0 (canonical = https://nphcda.gov.ng/immunizationIG)
+Generated Mon Jun 23 13:48:55 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.4.0 (canonical = https://nphcda.gov.ng/immunizationIG)
  Build Errors : 6 / 11 / 0
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/AllergyIntolerance-FullExampleNgAllergyIntolerance : 5 / 2 / 3
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CapabilityStatement-NgImmCapabilityStatementClient : 0 / 0 / 1
@@ -12,7 +12,7 @@ Generated Mon Jun 23 12:04:33 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-allergy-severity : 5 / 2 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-clinical-status : 8 / 2 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-facility-type : 2 / 2 / 2
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-gender : 2 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-gender : 4 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-hiv-status : 2 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-immunization-contraindication : 2 / 3 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-immunization-session-type : 2 / 2 / 2
@@ -32,7 +32,7 @@ Generated Mon Jun 23 12:04:33 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Patient-ExampleNgPatientAdminWard : 6 / 3 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Patient-FullExampleNgImmPatient : 20 / 4 / 13
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Practitioner-ng-practitioner-example : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/RelatedPerson-Child1 : 5 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/RelatedPerson-Child1 : 3 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-SearchParameter-ngimm-birthdate : 1 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-SearchParameter-ngimm-createddate : 1 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-SearchParameter-ngimm-firstname : 1 / 1 / 1
@@ -49,7 +49,7 @@ Generated Mon Jun 23 12:04:33 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-DefaulterTracking : 0 / 4 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-IMMZGGenerateReport : 0 / 2 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmImmunization : 0 / 1 / 2
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmPatient : 0 / 3 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmPatient : 1 / 2 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmPractitioner : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-UpdateClientHistory : 0 / 78 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-age-in-months : 0 / 1 / 1
@@ -64,7 +64,7 @@ Generated Mon Jun 23 12:04:33 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-hiv-status : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-manage-aefi : 0 / 36 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-measure-report-profile : 0 / 0 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-mother-other-children : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-mother-other-children : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-next-dose-date : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-ng-imm-organization : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-ngimm-measure : 0 / 1 / 1
@@ -80,7 +80,7 @@ Generated Mon Jun 23 12:04:33 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-allergy-severity : 2 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-clinical-status : 2 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-facility-types : 2 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-gender : 4 / 2 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-gender : 2 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-hiv-status : 2 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-lgas : 2 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-pregnancy-status : 2 / 1 / 1
@@ -182,6 +182,8 @@ WARNING: CodeSystem/nigeria-facility-type: CodeSystem: Published code systems SH
 ERROR: /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-facility-type: URL Mismatch https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type vs http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS
 == fsh-generated/resources/CodeSystem-nigeria-gender.json ==
 ERROR: CodeSystem.where(url = 'http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender'): Conformance resource /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-gender.json - the canonical URL (https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender) does not match the URL (http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender)
+ERROR: CodeSystem/nigeria-gender: CodeSystem.concept[0].designation[0].use.system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/designation-usage'
+ERROR: CodeSystem/nigeria-gender: CodeSystem.concept[1].designation[0].use.system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/designation-usage'
 WARNING: CodeSystem/nigeria-gender: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 ERROR: /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-gender: URL Mismatch https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender vs http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender
 == fsh-generated/resources/CodeSystem-nigeria-hiv-status.json ==
@@ -373,9 +375,6 @@ WARNING: Practitioner/ng-practitioner-example: Practitioner.identifier[0].system
 ERROR: RelatedPerson/Child1: RelatedPerson.patient: Unable to resolve resource with reference 'NgImmPatient/ExampleNgImmPatient'
 ERROR: RelatedPerson/Child1: RelatedPerson.relationship[0].text: The System URI could not be determined for the code 'brother' in the ValueSet 'http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship|0.4.0': include #0 has system http://hl7.org/fhir/R4B/valueset-relationship which could not be found, and the server returned error [Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/R4B/valueset-relationship]
 ERROR: RelatedPerson/Child1: RelatedPerson.relationship[0].text: The value provided ('brother') was not found in the value set 'Relationships' (http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship|0.4.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'brother' in the ValueSet 'http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship|0.4.0': include #0 has system http://hl7.org/fhir/R4B/valueset-relationship which could not be found, and the server returned error [Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/R4B/valueset-relationship]; The System URI could not be determined for the code 'brother' in the ValueSet 'http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship|0.4.0')
-ERROR: RelatedPerson/Child1: RelatedPerson.gender: A definition for the value Set 'http://hl7.org/fhir/administrative-gender' could not be found
-WARNING: RelatedPerson/Child1: RelatedPerson.gender: Unable to check whether the code is in the value set 'http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender|0.4.0' because the value set http://hl7.org/fhir/administrative-gender was not found
-ERROR: RelatedPerson/Child1: RelatedPerson.gender: The value provided ('male') was not found in the value set 'Gender or Sex' (http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender|0.4.0), and a code is required from this value set  (error message = A definition for the value Set 'http://hl7.org/fhir/administrative-gender' could not be found; Unable to check whether the code is in the value set 'http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender|0.4.0' because the value set http://hl7.org/fhir/administrative-gender was not found)
 == fsh-generated/resources/SearchParameter-SearchParameter-ngimm-birthdate.json ==
 WARNING: SearchParameter/SearchParameter-ngimm-birthdate: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 ERROR: SearchParameter/SearchParameter-ngimm-birthdate: SearchParameter.expression: Error in search expression 'Patient.birthdate': Error evaluating FHIRPath expression: The name 'birthdate' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Patient] (@char 9)
@@ -433,7 +432,7 @@ WARNING: StructureDefinition/IMMZGGenerateReport: StructureDefinition.differenti
 WARNING: NgImmImmunization.Immunization.status: Binding http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status could not be expanded
 INFORMATION: StructureDefinition/NgImmImmunization: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-NgImmPatient.json ==
-WARNING: NgImmPatient.Patient.gender: Binding http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender could not be expanded
+ERROR: NgImmPatient.Patient.gender: Binding http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender is not a subset of binding http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 because The codes 'female,male' are not in the base valueset
 WARNING: StructureDefinition/NgImmPatient: StructureDefinition.snapshot.element[42].short: value should not start or finish with whitespace 'Nigeria Administrative Wards '
 WARNING: StructureDefinition/NgImmPatient: StructureDefinition.snapshot.element[86].short: value should not start or finish with whitespace 'Nigeria Administrative Wards '
 == fsh-generated/resources/StructureDefinition-NgImmPractitioner.json ==
@@ -575,7 +574,6 @@ WARNING: StructureDefinition/manage-aefi: StructureDefinition.differential.eleme
 WARNING: StructureDefinition/manage-aefi: StructureDefinition.differential.element[17]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 == fsh-generated/resources/StructureDefinition-measure-report-profile.json ==
 == fsh-generated/resources/StructureDefinition-mother-other-children.json ==
-WARNING: NgImmSiblingRelatedPerson.RelatedPerson.gender: Binding http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender could not be expanded
 == fsh-generated/resources/StructureDefinition-next-dose-date.json ==
 WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ng-imm-organization.json ==
@@ -812,10 +810,7 @@ WARNING: ValueSet/nigeria-facility-types: ValueSet: Published value sets SHOULD 
 ERROR: /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-facility-types: URL Mismatch https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types vs http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types
 == fsh-generated/resources/ValueSet-nigeria-gender.json ==
 ERROR: ValueSet.where(url = 'http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender'): Conformance resource /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-gender.json - the canonical URL (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender) does not match the URL (http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender)
-ERROR: ValueSet/nigeria-gender: ValueSet.compose.include[0].valueSet[0]: Canonical URL 'http://hl7.org/fhir/administrative-gender' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
-WARNING: ValueSet/nigeria-gender: ValueSet.compose.include[0].valueSet[0]: The value set import http://hl7.org/fhir/administrative-gender points to a resource of type CodeSystem which is not valid
 WARNING: ValueSet/nigeria-gender: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'nigeria-gender'): Cannot include value set 'http://hl7.org/fhir/administrative-gender' because it's actually a code system
 ERROR: /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-gender: URL Mismatch https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender vs http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender
 == fsh-generated/resources/ValueSet-nigeria-hiv-status.json ==
 ERROR: ValueSet.where(url = 'http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status'): Conformance resource /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-hiv-status.json - the canonical URL (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-hiv-status) does not match the URL (http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status)

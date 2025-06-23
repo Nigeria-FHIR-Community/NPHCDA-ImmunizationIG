@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ae458a32-0f33-43a8-901c-5f5647ac4439"/>
+  <id value="053173f7-fb6c-4272-9ed5-e52980fd9498"/>
   <meta>
-    <lastUpdated value="2025-06-23T12:01:47.027+01:00"/>
+    <lastUpdated value="2025-06-23T13:46:44.994+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -68,7 +68,7 @@
         <name value="NGAllergySeverityVS"/>
         <title value="Allergy Severity"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -77,8 +77,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db745666-8867-495e-b948-157def0fff9f"/>
-          <timestamp value="2025-06-23T12:03:06+01:00"/>
+          <identifier value="urn:uuid:68780635-3a30-4d43-ba83-69ec7f425612"/>
+          <timestamp value="2025-06-23T13:47:53+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -209,7 +209,7 @@
         <name value="NGClinicalStatusVS"/>
         <title value="Reaction outcome"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -218,8 +218,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8fa89d27-afbf-4ad0-811b-de297173ee2c"/>
-          <timestamp value="2025-06-23T12:03:06+01:00"/>
+          <identifier value="urn:uuid:000e2e52-3ab9-4241-8f21-f037de903657"/>
+          <timestamp value="2025-06-23T13:47:54+01:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -383,7 +383,7 @@
         <name value="NGFacilityTypeVS"/>
         <title value="Health Facility Type"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -392,8 +392,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6cba098a-ccfe-4dac-bf42-d83f920b80d2"/>
-          <timestamp value="2025-06-23T12:03:06+01:00"/>
+          <identifier value="urn:uuid:b0844c0a-7280-41cf-96ab-a87051229863"/>
+          <timestamp value="2025-06-23T13:47:54+01:00"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -461,6 +461,106 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nigeria-gender.html">codesystem NG Gender or Sex v0.4.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-male"> </a>  
+                  <a href="CodeSystem-nigeria-gender.html#nigeria-gender-male">male</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td>
+                <td>Male</td>
+                <td>Male sex</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-female"> </a>  
+                  <a href="CodeSystem-nigeria-gender.html#nigeria-gender-female">female</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td>
+                <td>Female</td>
+                <td>Female sex</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"/>
+        <version value="0.4.0"/>
+        <name value="NGGenderVS"/>
+        <title value="Gender or Sex"/>
+        <status value="active"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NG"/>
+            <display value="Nigeria"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:efa892b5-e456-4cd4-9403-c7b0e66202b1"/>
+          <timestamp value="2025-06-23T13:47:54+01:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender|0.4.0"/>
+          </parameter>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"/>
+            <code value="male"/>
+            <display value="Male"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"/>
+            <code value="female"/>
+            <display value="Female"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status"/>
     <resource>
       <ValueSet>
@@ -522,7 +622,7 @@
         <name value="NGHivStatusVS"/>
         <title value="Client HIV Status"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -531,8 +631,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:adcad446-53c1-40f3-b071-e742723f3518"/>
-          <timestamp value="2025-06-23T12:03:06+01:00"/>
+          <identifier value="urn:uuid:6520dd5e-b423-49b4-9c4d-f5c19ba07707"/>
+          <timestamp value="2025-06-23T13:47:54+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -7575,7 +7675,7 @@
         <name value="NGLGAsVS"/>
         <title value="Administrative LGAs"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -7584,8 +7684,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:20f5e3f1-db37-479d-a20d-9c1eaa711943"/>
-          <timestamp value="2025-06-23T12:03:06+01:00"/>
+          <identifier value="urn:uuid:b81ffead-d87e-47b3-82eb-de8e90216353"/>
+          <timestamp value="2025-06-23T13:47:54+01:00"/>
           <total value="774"/>
           <offset value="0"/>
           <parameter>
@@ -11544,7 +11644,7 @@
         <name value="NGPregnancyStatusVS"/>
         <title value="Client Preganancy Status"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -11553,8 +11653,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:771a2782-0cac-469b-8edf-a98ee12fbf1d"/>
-          <timestamp value="2025-06-23T12:03:08+01:00"/>
+          <identifier value="urn:uuid:19b4d9f6-c8ec-494d-951e-90436e4c15a6"/>
+          <timestamp value="2025-06-23T13:47:55+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11658,7 +11758,7 @@
         <name value="NGSessionTypeVS"/>
         <title value="Session type"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -11667,8 +11767,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:291abbda-49ff-4bed-90ad-48102413af01"/>
-          <timestamp value="2025-06-23T12:03:08+01:00"/>
+          <identifier value="urn:uuid:7fdf2947-6b6a-499e-89ed-1492adadbb24"/>
+          <timestamp value="2025-06-23T13:47:55+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11781,7 +11881,7 @@
         <name value="NGSiblingHealthStatusVS"/>
         <title value="Sibling Health Status"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -11790,8 +11890,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:40326e1b-28b6-4d34-ab81-b1878de8d6ac"/>
-          <timestamp value="2025-06-23T12:03:08+01:00"/>
+          <identifier value="urn:uuid:6863fa0b-4e4e-4b3f-b73c-d410ac7f68aa"/>
+          <timestamp value="2025-06-23T13:47:55+01:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -12166,7 +12266,7 @@
         <name value="NGStatesVS"/>
         <title value="States"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12175,8 +12275,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c92c3aea-d205-4ab2-b7f3-65fd32baab75"/>
-          <timestamp value="2025-06-23T12:03:09+01:00"/>
+          <identifier value="urn:uuid:ed80c197-7928-4c04-ae0e-a5b2eefe61a3"/>
+          <timestamp value="2025-06-23T13:47:55+01:00"/>
           <total value="37"/>
           <offset value="0"/>
           <parameter>
@@ -12459,7 +12559,7 @@
         <name value="NGContraindicationVS"/>
         <title value="Vaccine Contraindication"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12468,8 +12568,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a870a5f9-f9ad-477d-a093-1b5673cc5c05"/>
-          <timestamp value="2025-06-23T12:03:09+01:00"/>
+          <identifier value="urn:uuid:f8e46e1a-6635-48eb-971e-c988fcfe87c9"/>
+          <timestamp value="2025-06-23T13:47:56+01:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -12812,7 +12912,7 @@
         <name value="NGVaccineLibraryVS"/>
         <title value="Vaccines"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12821,8 +12921,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3855b97d-a144-411b-ad63-2dee3cf01737"/>
-          <timestamp value="2025-06-23T12:03:09+01:00"/>
+          <identifier value="urn:uuid:eb2d3451-8767-4bc3-b90f-861f0b7a36eb"/>
+          <timestamp value="2025-06-23T13:47:56+01:00"/>
           <total value="29"/>
           <offset value="0"/>
           <parameter>
@@ -13074,7 +13174,7 @@
         <name value="NGImmunizationSiteVS"/>
         <title value="Vaccine Site"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13083,8 +13183,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7100d62e-3959-4034-aa79-a87f2d079501"/>
-          <timestamp value="2025-06-23T12:03:09+01:00"/>
+          <identifier value="urn:uuid:938aded6-296d-45c1-9dcf-2d7051106527"/>
+          <timestamp value="2025-06-23T13:47:56+01:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -13261,7 +13361,7 @@
         <name value="NGWardsVS"/>
         <title value="Wards"/>
         <status value="active"/>
-        <date value="2025-06-23T12:00:39+01:00"/>
+        <date value="2025-06-23T13:45:54+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13270,8 +13370,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7ad54a93-1596-49d3-861b-8b99c858363c"/>
-          <timestamp value="2025-06-23T12:03:09+01:00"/>
+          <identifier value="urn:uuid:d5d9c810-2cc4-426d-8858-bbe6e6a74e91"/>
+          <timestamp value="2025-06-23T13:47:56+01:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>

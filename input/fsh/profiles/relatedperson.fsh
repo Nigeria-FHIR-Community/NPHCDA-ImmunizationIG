@@ -13,7 +13,7 @@ Description: "Sibling that Represents the mother's other children as RelatedPers
 * name.family ^short = "The surname of Client's sibling"
 * birthDate 0..1 MS
 * birthDate ^short = "The date the sibling was born"
-* gender from NGGenderVS (required)
+* gender 0..1
 * gender ^short = "The Sex of the sibling e.g. male| female"
 * relationship.text from NGRelationshipsVS (required)
 * relationship.text ^short = "The relationship of the sibling with the Client e.g. brother| sister"
