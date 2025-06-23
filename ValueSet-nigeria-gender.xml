@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="nigeria-gender"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-gender</b></p><a name="nigeria-gender"> </a><a name="hcnigeria-gender"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html">http://hl7.org/fhir/administrative-gender</a></li><li>Include all codes defined in <a href="CodeSystem-nigeria-gender.html"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-gender</b></p><a name="nigeria-gender"> </a><a name="hcnigeria-gender"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-gender.html"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</code></a></li></ul></div>
   </text>
   <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"/>
   <version value="0.4.0"/>
   <name value="NGGenderVS"/>
   <title value="Gender or Sex"/>
   <status value="active"/>
-  <date value="2025-06-23T12:11:34+01:00"/>
+  <date value="2025-06-23T13:45:54+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -36,9 +36,6 @@
     </coding>
   </jurisdiction>
   <compose>
-    <include>
-      <valueSet value="http://hl7.org/fhir/administrative-gender"/>
-    </include>
     <include>
       <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"/>
     </include>

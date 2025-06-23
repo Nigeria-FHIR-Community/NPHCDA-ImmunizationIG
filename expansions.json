@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "e0ca11b1-1cb2-40a8-b260-57e8519a9762",
+  "id" : "053173f7-fb6c-4272-9ed5-e52980fd9498",
   "meta" : {
-    "lastUpdated" : "2025-06-23T12:12:39.286+01:00"
+    "lastUpdated" : "2025-06-23T13:46:44.994+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "NGAllergySeverityVS",
       "title" : "Allergy Severity",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f1e544f7-eb2c-4db5-8c7f-03df1b2bcfc9",
-        "timestamp" : "2025-06-23T12:13:47+01:00",
+        "identifier" : "urn:uuid:68780635-3a30-4d43-ba83-69ec7f425612",
+        "timestamp" : "2025-06-23T13:47:53+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -82,7 +82,7 @@
       "name" : "NGClinicalStatusVS",
       "title" : "Reaction outcome",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -91,8 +91,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3d42ef8f-0dda-4469-a492-8d110cef71b7",
-        "timestamp" : "2025-06-23T12:13:47+01:00",
+        "identifier" : "urn:uuid:000e2e52-3ab9-4241-8f21-f037de903657",
+        "timestamp" : "2025-06-23T13:47:54+01:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -161,7 +161,7 @@
       "name" : "NGFacilityTypeVS",
       "title" : "Health Facility Type",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -170,8 +170,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:94f74106-e989-4899-81c4-f72073991b42",
-        "timestamp" : "2025-06-23T12:13:47+01:00",
+        "identifier" : "urn:uuid:b0844c0a-7280-41cf-96ab-a87051229863",
+        "timestamp" : "2025-06-23T13:47:54+01:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{
@@ -238,6 +238,65 @@
     }
   },
   {
+    "fullUrl" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-gender.html\">codesystem NG Gender or Sex v0.4.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-male\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-gender.html#nigeria-gender-male\">male</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td><td>Male</td><td>Male sex</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-female\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-gender.html#nigeria-gender-female\">female</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td><td>Female</td><td>Female sex</td></tr></table></div>"
+      },
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
+      "version" : "0.4.0",
+      "name" : "NGGenderVS",
+      "title" : "Gender or Sex",
+      "status" : "active",
+      "date" : "2025-06-23T13:45:54+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NG",
+          "display" : "Nigeria"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:efa892b5-e456-4cd4-9403-c7b0e66202b1",
+        "timestamp" : "2025-06-23T13:47:54+01:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender|0.4.0"
+        }],
+        "contains" : [{
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender",
+          "code" : "male",
+          "display" : "Male"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender",
+          "code" : "female",
+          "display" : "Female"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -250,7 +309,7 @@
       "name" : "NGHivStatusVS",
       "title" : "Client HIV Status",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -259,8 +318,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:08005d8d-4927-4ec4-a5fd-9d9edc69a428",
-        "timestamp" : "2025-06-23T12:13:47+01:00",
+        "identifier" : "urn:uuid:6520dd5e-b423-49b4-9c4d-f5c19ba07707",
+        "timestamp" : "2025-06-23T13:47:54+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -314,7 +373,7 @@
       "name" : "NGLGAsVS",
       "title" : "Administrative LGAs",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -323,8 +382,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:01c30e76-73ac-46d7-b1b9-99cb1bfbe403",
-        "timestamp" : "2025-06-23T12:13:47+01:00",
+        "identifier" : "urn:uuid:b81ffead-d87e-47b3-82eb-de8e90216353",
+        "timestamp" : "2025-06-23T13:47:54+01:00",
         "total" : 774,
         "offset" : 0,
         "parameter" : [{
@@ -4233,7 +4292,7 @@
       "name" : "NGPregnancyStatusVS",
       "title" : "Client Preganancy Status",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4242,8 +4301,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f8b4ee18-2467-46e9-94d2-4672e83f2f86",
-        "timestamp" : "2025-06-23T12:13:49+01:00",
+        "identifier" : "urn:uuid:19b4d9f6-c8ec-494d-951e-90436e4c15a6",
+        "timestamp" : "2025-06-23T13:47:55+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4297,7 +4356,7 @@
       "name" : "NGSessionTypeVS",
       "title" : "Session type",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4306,8 +4365,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:550dde3a-9435-4fdf-bdf6-2853545d0055",
-        "timestamp" : "2025-06-23T12:13:49+01:00",
+        "identifier" : "urn:uuid:7fdf2947-6b6a-499e-89ed-1492adadbb24",
+        "timestamp" : "2025-06-23T13:47:55+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4361,7 +4420,7 @@
       "name" : "NGSiblingHealthStatusVS",
       "title" : "Sibling Health Status",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4370,8 +4429,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f5c7709b-0717-4a11-b17e-c2d6081d8a37",
-        "timestamp" : "2025-06-23T12:13:49+01:00",
+        "identifier" : "urn:uuid:6863fa0b-4e4e-4b3f-b73c-d410ac7f68aa",
+        "timestamp" : "2025-06-23T13:47:55+01:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -4430,7 +4489,7 @@
       "name" : "NGStatesVS",
       "title" : "States",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4439,8 +4498,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:00a3f6d7-561a-4885-8d28-3cbdf78c5d9c",
-        "timestamp" : "2025-06-23T12:13:49+01:00",
+        "identifier" : "urn:uuid:ed80c197-7928-4c04-ae0e-a5b2eefe61a3",
+        "timestamp" : "2025-06-23T13:47:55+01:00",
         "total" : 37,
         "offset" : 0,
         "parameter" : [{
@@ -4664,7 +4723,7 @@
       "name" : "NGContraindicationVS",
       "title" : "Vaccine Contraindication",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4673,8 +4732,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:639fc236-5bd9-40ac-861f-77f67de752e3",
-        "timestamp" : "2025-06-23T12:13:49+01:00",
+        "identifier" : "urn:uuid:f8e46e1a-6635-48eb-971e-c988fcfe87c9",
+        "timestamp" : "2025-06-23T13:47:56+01:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -4733,7 +4792,7 @@
       "name" : "NGVaccineLibraryVS",
       "title" : "Vaccines",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4742,8 +4801,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a08998f9-0abd-4e2d-9d3a-a8111d9ac0d8",
-        "timestamp" : "2025-06-23T12:13:49+01:00",
+        "identifier" : "urn:uuid:eb2d3451-8767-4bc3-b90f-861f0b7a36eb",
+        "timestamp" : "2025-06-23T13:47:56+01:00",
         "total" : 29,
         "offset" : 0,
         "parameter" : [{
@@ -4927,7 +4986,7 @@
       "name" : "NGImmunizationSiteVS",
       "title" : "Vaccine Site",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4936,8 +4995,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9dabfe07-ef32-4601-aa51-e6f28a3ddbef",
-        "timestamp" : "2025-06-23T12:13:50+01:00",
+        "identifier" : "urn:uuid:938aded6-296d-45c1-9dcf-2d7051106527",
+        "timestamp" : "2025-06-23T13:47:56+01:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -5001,7 +5060,7 @@
       "name" : "NGWardsVS",
       "title" : "Wards",
       "status" : "active",
-      "date" : "2025-06-23T12:11:34+01:00",
+      "date" : "2025-06-23T13:45:54+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -5010,8 +5069,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f18b757a-e709-4597-a4b2-bb45f66f4ac3",
-        "timestamp" : "2025-06-23T12:13:50+01:00",
+        "identifier" : "urn:uuid:d5d9c810-2cc4-426d-8858-bbe6e6a74e91",
+        "timestamp" : "2025-06-23T13:47:56+01:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
