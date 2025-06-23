@@ -10,7 +10,7 @@
   <name value="NGGenderCS"/>
   <title value="NG Gender or Sex"/>
   <status value="active"/>
-  <date value="2025-06-23T12:11:34+01:00"/>
+  <date value="2025-06-23T13:45:54+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -43,10 +43,24 @@
     <code value="male"/>
     <display value="Male"/>
     <definition value="Male sex"/>
+    <designation>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
+        <code value="display"/>
+      </use>
+      <value value="Male"/>
+    </designation>
   </concept>
   <concept>
     <code value="female"/>
     <display value="Female"/>
     <definition value="Female sex"/>
+    <designation>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
+        <code value="display"/>
+      </use>
+      <value value="Female"/>
+    </designation>
   </concept>
 </CodeSystem>
