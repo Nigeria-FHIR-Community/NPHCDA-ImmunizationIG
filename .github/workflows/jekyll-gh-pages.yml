@@ -35,9 +35,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Upload artifact
+      - name: Upload output/ as artifact
         uses: actions/upload-pages-artifact@v3
-
+        with:
+          path: ./output
   # Deployment job
   deploy:
     environment:
