@@ -4,7 +4,8 @@ Title: "Primary Vaccine Status"
 Description: "Indicates whether the immunization patient has completed the full primary vaccine series"
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
-* valueCodeableConcept 0..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from NGPrimaryVaccineStatusVS (required)
 * valueCodeableConcept ^short = "Status of primary series (e.g., completed, not completed)"
 
 
@@ -14,8 +15,8 @@ Title: "Digital Signature"
 Description: "A digital or electronic signature capturing who signed, when, type, and signature data."
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
-* valueSignature 0..1 MS
-* valueSignature ^short = "Digital signature of the reporting officer"
+* value[x] only string 
+* valueString ^short = "Digital signature of the reporting officer"
 
 
 Extension: NGSessionType
@@ -24,19 +25,20 @@ Title: "Session Type"
 Description: "Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site)."
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
-* valueCodeableConcept 0..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from NGSessionTypeVS (required)
 * valueCodeableConcept ^short = "Type of vaccination session"
-//* valueCodeableConcept from ImmunizationSessionTypeVS (required)
 
 
-/* Extension: NGContraindicated
+Extension: NGContraindicated
 Id: contraindicated
 Title: "Immunization Contraindicated"
 Description: "Indicates whether the immunization was contraindicated"
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
-* valueBoolean 0..1 MS
-* valueBoolean ^short = "Indicates whether the immunization was contraindicated or not" */
+* value[x] only boolean 
+* valueBoolean ^short = "Indicates whether the immunization was contraindicated or not" 
+
 
 Extension: NGContraindications
 Id: contraindications
@@ -44,7 +46,8 @@ Title: "Contraindications"
 Description: "Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)"
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
-* valueCodeableConcept 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from NGContraindicationVS (required)
 * valueCodeableConcept ^short = "Contraindications to immunization"
 
 
@@ -54,7 +57,7 @@ Title: "Next Dose Date"
 Description: "The recommended due date for the next vaccine dose in the schedule."
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
-* valueDate 0..1 MS
+* value[x] only date 
 * valueDate ^short = "Recommended date for the next immunization dose"
 
 

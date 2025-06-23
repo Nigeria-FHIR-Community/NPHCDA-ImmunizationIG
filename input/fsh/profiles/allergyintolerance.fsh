@@ -5,10 +5,10 @@ Id: allergy-intolerance-profile
 Description: "Nigeria Immunization Allergy Intolerance Profile"
 
 // Required Elements
-* clinicalStatus 1..1 MS
+* clinicalStatus from NGClinicalStatusVS (required)
 * clinicalStatus.coding 1..1
 * clinicalStatus.coding ^short = "The clinical status of the allergy or intolerance"
-* verificationStatus from NGClinicalStatusVS (required)
+* verificationStatus from NGVerificationStatusVS (required)
 * verificationStatus ^short = "Assertion about certainty associated with a propensity or potential risk of a reaction to the identified substance"
 * type 1..1 MS
 * type ^short = "Identification of the underlying physiological mechanism for a Reaction Risk"
@@ -43,7 +43,7 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 // General Notes excluded
 * reaction.note 0..0
 * reaction.manifestation.coding 0..0
-//* reaction.manifestation.coding ^short = "Clinical symptoms/signs associated with the Event"
+* reaction.manifestation.coding ^short = "Clinical symptoms/signs associated with the Event"
 
 
 // Extensions
