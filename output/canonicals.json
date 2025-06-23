@@ -250,9 +250,9 @@
     "name" : "NigeriaStockData"
   },
   {
-    "id" : "fhir.nigeriaImmunization",
+    "id" : "fhir.nigeriaImmunizationIG",
     "type" : "ImplementationGuide",
-    "url" : "https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunization",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunizationIG",
     "version" : "0.4.0",
     "name" : "NigeriaimmunizationFHIRIG"
   },

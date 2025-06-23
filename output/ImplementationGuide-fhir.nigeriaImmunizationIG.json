@@ -1,16 +1,16 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "fhir.nigeriaImmunization",
+  "id" : "fhir.nigeriaImmunizationIG",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.nigeriaImmunization</b></p><a name=\"fhir.nigeriaImmunization\"> </a><a name=\"hcfhir.nigeriaImmunization\"> </a><h2>NigeriaimmunizationFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunization</pre><div><p>Nigeria Immunization FHIR IG</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.nigeriaImmunizationIG</b></p><a name=\"fhir.nigeriaImmunizationIG\"> </a><a name=\"hcfhir.nigeriaImmunizationIG\"> </a><h2>NigeriaimmunizationFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunizationIG</pre><div><p>Nigeria Immunization FHIR IG</p>\n</div></div>"
   },
-  "url" : "https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunization",
+  "url" : "https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunizationIG",
   "version" : "0.4.0",
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-06-23T10:40:32+01:00",
+  "date" : "2025-06-23T11:00:10+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -35,7 +35,7 @@
       "display" : "Nigeria"
     }]
   }],
-  "packageId" : "fhir.nigeriaImmunization",
+  "packageId" : "fhir.nigeriaImmunizationIG",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{

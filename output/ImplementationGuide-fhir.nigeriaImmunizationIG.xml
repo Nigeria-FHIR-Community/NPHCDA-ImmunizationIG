@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="fhir.nigeriaImmunization"/>
+  <id value="fhir.nigeriaImmunizationIG"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide fhir.nigeriaImmunization</b></p><a name="fhir.nigeriaImmunization"> </a><a name="hcfhir.nigeriaImmunization"> </a><h2>NigeriaimmunizationFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunization</pre><div><p>Nigeria Immunization FHIR IG</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide fhir.nigeriaImmunizationIG</b></p><a name="fhir.nigeriaImmunizationIG"> </a><a name="hcfhir.nigeriaImmunizationIG"> </a><h2>NigeriaimmunizationFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunizationIG</pre><div><p>Nigeria Immunization FHIR IG</p>
 </div></div>
   </text>
-  <url value="https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunization"/>
+  <url value="https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunizationIG"/>
   <version value="0.4.0"/>
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-06-23T10:40:32+01:00"/>
+  <date value="2025-06-23T11:00:10+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -36,7 +36,7 @@
       <display value="Nigeria"/>
     </coding>
   </jurisdiction>
-  <packageId value="fhir.nigeriaImmunization"/>
+  <packageId value="fhir.nigeriaImmunizationIG"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">

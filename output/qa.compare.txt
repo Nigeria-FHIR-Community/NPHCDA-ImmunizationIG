@@ -3,7 +3,7 @@ NigeriaimmunizationFHIRIG : Validation Results
 
 err = 179, warn = 482, info = 35
 $--
-Generated $--. FHIR version $-- for fhir.nigeriaImmunization#$-- (canonical = https://nphcda.gov.ng/immunizationIG)
+Generated $--. FHIR version $-- for fhir.nigeriaImmunizationIG#$-- (canonical = https://nphcda.gov.ng/immunizationIG)
  Build Errors : 6 / 11 / 0
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/AllergyIntolerance-FullExampleNgAllergyIntolerance : 5 / 2 / 3
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CapabilityStatement-NgImmCapabilityStatementClient : 0 / 0 / 1
@@ -25,7 +25,7 @@ Generated $--. FHIR version $-- for fhir.nigeriaImmunization#$-- (canonical = ht
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-wards : 2 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Immunization-ExampleNgImmImmunizationCompleted : 8 / 7 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Immunization-ExampleNgImmImmunizationNotDone : 10 / 9 / 2
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ImplementationGuide-fhir.nigeriaImmunization : 0 / 4 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ImplementationGuide-fhir.nigeriaImmunizationIG : 0 / 4 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/MeasureReport-ExampleNgImmMeasureReport : 1 / 3 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Organization-organization-example : 1 / 3 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Patient-ExampleNgImmPatient : 19 / 3 / 12
@@ -270,11 +270,11 @@ ERROR: Immunization/ExampleNgImmImmunizationNotDone: Immunization.performer[0].a
 ERROR: Immunization.text.div: Hyperlink 'Patient/NgImmPatient-004' at 'div/p/a' for 'Patient/NgImmPatient-004' does not resolve
 ERROR: Immunization.text.div: Hyperlink 'Organization/gavi-vax-001' at 'div/p/a' for 'GAVI Partner Vax Ltd' does not resolve
 ERROR: Immunization.text.div: Hyperlink 'Practitioner/nurse-chinedu' at 'div/table/tr/td/a' for 'Nurse Chinedu Umeh' does not resolve
-== fsh-generated/resources/ImplementationGuide-fhir.nigeriaImmunization.json ==
-WARNING: ImplementationGuide/fhir.nigeriaImmunization: ImplementationGuide.definition.resource[0].name: value should not start or finish with whitespace ' NG Vaccine contraindications'
-WARNING: ImplementationGuide/fhir.nigeriaImmunization: ImplementationGuide.definition.resource[30].description: value should not start or finish with whitespace ' .'
-WARNING: ImplementationGuide/fhir.nigeriaImmunization: ImplementationGuide.definition.resource[57].name: value should not start or finish with whitespace 'Nigeria Administrative Wards '
-WARNING: ImplementationGuide/fhir.nigeriaImmunization: ImplementationGuide.definition.resource[92].description: value should not start or finish with whitespace ' .'
+== fsh-generated/resources/ImplementationGuide-fhir.nigeriaImmunizationIG.json ==
+WARNING: ImplementationGuide/fhir.nigeriaImmunizationIG: ImplementationGuide.definition.resource[0].name: value should not start or finish with whitespace ' NG Vaccine contraindications'
+WARNING: ImplementationGuide/fhir.nigeriaImmunizationIG: ImplementationGuide.definition.resource[30].description: value should not start or finish with whitespace ' .'
+WARNING: ImplementationGuide/fhir.nigeriaImmunizationIG: ImplementationGuide.definition.resource[57].name: value should not start or finish with whitespace 'Nigeria Administrative Wards '
+WARNING: ImplementationGuide/fhir.nigeriaImmunizationIG: ImplementationGuide.definition.resource[92].description: value should not start or finish with whitespace ' .'
 == fsh-generated/resources/MeasureReport-ExampleNgImmMeasureReport.json ==
 WARNING: MeasureReport/ExampleNgImmMeasureReport: MeasureReport.identifier[0].system: No definition could be found for URL value 'https://nphcda.gov.ng/report-ids'
 WARNING: MeasureReport/ExampleNgImmMeasureReport: MeasureReport.measure: A definition could not be found for Canonical URL 'https://nphcda.gov.ng/report-ids/4565'
