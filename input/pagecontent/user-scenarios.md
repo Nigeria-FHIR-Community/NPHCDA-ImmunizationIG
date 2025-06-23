@@ -250,7 +250,7 @@ Mrs.Adekunle is happy with the advice and promises to do her best.
     <th style="vertical-align: top;">Key Personas</th>
     <th><ul>
      <li>Health Worker- Mary</li>
-     <li>Vaccine depot staff- Helena</li>
+     <li>Vaccine depot staff- Helen</li>
      </ul></th>    
 </tr>
 
@@ -261,7 +261,7 @@ Mrs.Adekunle is happy with the advice and promises to do her best.
   <p> Mary is a health worker in  Lavane health facility in Abuja state. 
 During her weekly stock count review, she notices that pentavalent vaccine is below the minimum count.  
 She needs to order for the vaccines from the state vaccine depot. She fills in the ordering form capturing the vaccine and quantity needed. She sends the ordering form to the state depot and monitors the status  for the vaccines.
-At the depot, Helena is the vaccine admin in Abuja. She receives the vaccine order from Lavane health facility. After confirming that vaccine is available, she accepts the order. She fills in the dispatch form indicating the vaccine and quantity released.
+At the depot, Helen is the vaccine admin in Abuja. She receives the vaccine order from Lavane health facility. After confirming that vaccine is available, she accepts the order. She fills in the dispatch form indicating the vaccine and quantity released.
 Mary, on the other hand, receives the vaccines and fills in the form indicating the vaccine name, batch number, expiry date and the manufacturing company.
 </p>
    </td>

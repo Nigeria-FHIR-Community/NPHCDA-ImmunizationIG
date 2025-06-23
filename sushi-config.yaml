@@ -9,7 +9,7 @@ name: Nigeria-immunization-FHIR-IG
 title: Nigeria Immunization FHIR IG
 description: Nigeria Immunization FHIR IG
 status: draft # draft | active | retired | unknown
-version: 0.2.0
+version: 0.4.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -55,11 +55,13 @@ pages:
   business-processes.md:
     title: Business Processes
   decision-support-logic.md:
-    title: Decision Support Logic
+    title: Decision Support Logic [TO BE TESTED and REFINED]
   functional-requirements.md:
     title: Functional Requirements
   non-functional-requirements.md:
     title: Non-Functional Requirements
+  search-operation.md:
+    title: Search and Operation
 
 # dependancies.md:
 #   title: Dependancies
@@ -74,7 +76,8 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
+#parameters:
+#  style-sheet: input/css/custom-styles.css
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #

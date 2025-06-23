@@ -41,7 +41,7 @@ Description: "Nigerian Profile for Immunization resource."
 
 
 
-//Invariant:   neir-imm-1
+//Invariant:   ng-imm-1
 //Description: "If the status is not-done, a reason must be provided"
 //Severity:    #error
 //Expression:  "status != 'not-done' xor statusReason.exists()"
@@ -52,7 +52,6 @@ Description: "Nigerian Profile for Immunization resource."
 * extension contains NGPrimaryVaccineStatus named primaryVaccineStatus 0..1 MS
 * extension contains NGSignature named signature 0..1 MS
 * extension contains NGSessionType named sessionType 0..1 MS
-//* extension contains Contraindicated named contraindicated 0..1 MS
 * extension contains NGContraindications named contraindications 0..* MS
 * protocolApplied.extension contains NextDoseDate named nextDoseDate 0..1 MS
  

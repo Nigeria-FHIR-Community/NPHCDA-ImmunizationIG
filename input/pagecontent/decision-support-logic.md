@@ -147,8 +147,9 @@ Each of the decision logic above have been elaborated on in decision support tab
         <tr>
             <td >Inputs placed on different rows are considered as <b>“OR”</b> conditions that can be considered independently of the inputs on other rows.</td>
             <td ></td>
-              <td ></td>
-               <td ></td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
         </tr>
     </tbody>
 
@@ -234,8 +235,7 @@ Each of the decision logic above have been elaborated on in decision support tab
 
             <th>Output</th>
             <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
+            <th>Annotations and Reference(s)</th>
         </tr>
     </thead>
 
@@ -259,8 +259,7 @@ Each of the decision logic above have been elaborated on in decision support tab
     <td> - </td>  <td> - </td>  <td> - </td>  <td> - </td>
     <td>Client is due for BCG vaccination "Immunization recommendation status" = "Due"</td>
     <td>Vaccinate client with first BCG dose as no BCG dose was administered, client is within age range, and HIV status is not positive Check for contraindications.</td>
-    <td><b>WHO Recommendation:</b> Neonates born to women of unknown HIV status should be vaccinated as the benefits of BCG vaccination outweigh the risks. Neonates of unknown HIV status born to HIV-infected women should be vaccinated if they have no clinical evidence suggestive of HIV infection.</td>
-    <td>WHO recommendations for routine immunization - summary tables: <a href="https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization---summary-tables" target="_blank">https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization---summary-tables</a></td>
+    <td><b>WHO Recommendation:</b> Neonates born to women of unknown HIV status should be vaccinated as the benefits of BCG vaccination outweigh the risks. Neonates of unknown HIV status born to HIV-infected women should be vaccinated if they have no clinical evidence suggestive of HIV infection. <br> WHO recommendations for routine immunization - summary tables: <a href="https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization---summary-tables" target="_blank">https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization---summary-tables</a></td>
     </tr>
 
 <tr>
@@ -273,7 +272,6 @@ Each of the decision logic above have been elaborated on in decision support tab
 <td>Client is due for BCG vaccination "Immunization recommendation status" = "Due" </td>
 <td>Vaccinate client with first BCG dose as no BCG dose was administered, and client is immunologically stable. Check for contraindications. </td>
 <td><b>WHO Recommendation:</b> For neonates with HIV infection confirmed by early virological testing, BCG vaccination should be delayed until ART has been started and the infant confirmed to be immunologically stable (CD4 > 25%). Moderate-to-late preterm infants (gestational age > 31 weeks) and low-birth-weight infants (< 2500 g) who are healthy and clinically stable can receive BCG vaccination at birth, or at the latest, upon discharge.</td>
-<td></td>
 </tr>
 <tr>
 <td></td><td></td><td></td><td></td>
@@ -441,7 +439,6 @@ Check for any vaccines due, and inform the caregiver of when to come back for th
 <td>Client is not due for BCG vaccination "Immunization recommendation status" = "Not Administered"</td>
 <td>Should not vaccinate client with first BCG dose as client is not currently receiving ART and is overdue for  first BCG dose</td>
 <td></td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -517,6 +514,7 @@ Check for any vaccines due, and inform the caregiver of when to come back for th
   
   <td></td>
   <td ></td>
+  <td ></td>
 </tr>
 
 <tr>
@@ -564,419 +562,12 @@ Check for any vaccines due, and inform the caregiver of when to come back for th
       <th><i>When does the service become overdue?</i></th>
       <th><i>When does the service expire?</i></th>
       <th><i>How does the health worker complete the service?</i></th>
-      <th></th>
-      <th> </th>
+      <th><i>Any additional comments</i></th>
+      <th><i>Source of recommendation (eg.Nigeria draft National Immunisation Policy 2024)?</i></th>
     </tr>
-     <tr>
-      <td>Bacille Calmette–Guérin (BCG) dose 1</td>
-      <td>Provision of the BCG dose</td>
-      <td>Child's birth</td>
-      <td>"Date of birth"</td>
-      <td>"BCG dose should be provided if the client has not received any BCG doses and is in a high incidence of tuberculosis (TB) and/or high leprosy burden. It should also be provided after a negative test result for tuberculin skin test (TST) or interferon-gamma release assay (IGRA) tests. The client should also receive vaccination if they are infected with HIV, on antiretroviral therapy (ART) and clinically well and immunologically stable. This dose also applies to neonates born to women with an unknown HIV status, as well as neonates with an unknown HIV status who were born to women infected with HIV. BCG dose should be provided up to 23 months, and during outbreaks/supplementary immunization activities up to 59 months of age."</td>
-      <td>"Date of birth"</td>
-      <td>To be determined by Nigeria MoH</td>
-      <td>To be determined by Nigeria MoH</td>
-      <td>"One BCG dose from the primary series was administered. The primary series has been completed
-        ""Completed the primary vaccination series"" = TRUE (where ""Vaccine type"" = ""BCG vaccines"")"</td>
-        <td></td>
-        <td>"WHO recommendations for routine immunization – summary tables (January 2025)<br>
-Nigeria - 2024 draft National Immunisation Policy v3"</td>
-    </tr>
+
     </tbody>
     </table>
 
-#### Polio
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Yellow Fever
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Measles
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Pneumococcal
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### DPT Hep B-Hib
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Rotavirus
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### HPV
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Vitamin A
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Malaria
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Covid 19
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Meningococcal
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
-
-#### Td for pregnant women
-
-<table border="1" class="dataframe table table-striped table-bordered">
-   <thead><tr class="header"> <th>Decision ID</th>
-
-            <th  colspan="5"></th>
-            </tr>
-            <tr class="header">
-            <th>Business Rule</th>
-            <th colspan="5"></th>
-           </tr> <tr class="header">
-            <th>Trigger</th>
-            <th colspan="5"> </th>
-            </tr>
-            </thead>
-              <thead>
-
-<tr class="header">
- <th colspan="2">Inputs</th>
-
-            <th>Output</th>
-            <th>Action</th>
-            <th>Annotations</th>
-            <th>Reference(s)</th>
-        </tr>
-    </thead>
-
-   <tbody> 
-<tr>
-</tr>
-</tbody>
-</table>
+#### Others -
+Polio, Yellow Fever, Measles, Pneumococcal, DPT Hep B-Hib, Rotavirus, HPV, Vitamin A, Malaria, Covid 19, Meningococcal, Td for pregnant women.

@@ -14,9 +14,9 @@
     <tbody>
         <tr>
             <td>Nigeria Primary Healthcare Development Agency</td>
-            <td>14th June 2025</td>
-            <td>Third Draft</td>
-            <td>0.3.0</td>
+            <td>23rd June 2025</td>
+            <td>Fourth Draft</td>
+            <td>0.4.0</td>
         </tr>
     </tbody>
 </table>
@@ -24,9 +24,7 @@
 
 ### Purpose
 
-This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country's adoption of the WHO SMART Guidelines for Immunization by developing a Digital Adaptation Kit (DAK) that aligns with both national and global immunization strategies.
-
-This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions. As part of this effort, the IG ensures that the Electronic Immunization Registry (EIR) is interoperable, scalable, and aligned with global health data exchange standards, particularly leveraging FHIR (Fast Healthcare Interoperability Resources) to facilitate seamless data sharing across systems.
+This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country's adoption of the WHO SMART Guidelines approach by presenting the Digital Adaptation Kit (Business Requirments) for Immunization developed from Nigeria Primary Healthcare Development Agency (NPHCDA) immunization guidelines. In addition, this IG presents the minimal Client/Server Capability for software-agnostic immunization systems in Nigeria. It presents the workflow in form of logical models, profiles and extensions, terminology structures (ValueSets and CodeSystems), and examples. Also, key operations necessary for conformance of the priority profiles where also presented. This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions.
 
 ### Background
 
@@ -36,70 +34,56 @@ The WHO SMART Guidelines provide a standardized framework for developing and imp
 
 Nigeria has faced challenges such as data quality issues, fragmented systems, and disparities in access to immunization services. To address these, the country is aligning with the SMART Guidelines methodology and national health strategies like the National Immunization Strategy (NIS) and Immunization Agenda 2030 (IA2030). This initiative aims to enhance data interoperability, decision-making, and service delivery through the adoption of FHIR-based digital systems.
 
-A User Requirement Gathering (URG) process is critical in developing Nigeria’s Immunization DAK. This process ensures that the digital immunization system is effective, adaptable, and user-friendly by engaging key stakeholders—health workers, program managers, and data specialists—to define essential system functionalities.
+A User Requirement Gathering (URG) process is critical in developing Nigeria’s Immunization DAK. This process ensures that the digital immunization system is effective, adaptable, and user-friendly by engaging key stakeholders (health workers, program managers, and data specialists) to define essential system functionalities. This FHIR Implementation Guide (IG) serves as a blueprint for Nigeria’s interoperable, scalable, and standardized immunization data system, ensuring seamless integration with national and global health initiatives.
 
-This FHIR Implementation Guide (IG) serves as a blueprint for Nigeria’s interoperable, scalable, and standardized immunization data system, ensuring seamless integration with national and global health initiatives.
+###  Scope of the FHIR Implementation Guide
 
-###  Scope of the FHIR IG
+This Implementation Guide (IG) defines the core FHIR profiles, extensions, value sets, and terminology bindings required to support routine immunization workflows in Nigeria, using HL7® FHIR® standards using the WHO SMART Guidelines framework. Developed under the leadership of the National Primary Health Care Development Agency (NPHCDA), this IG provides structured guidance for digitizing, exchanging, and interpreting immunization-related data in an interoperable and scalable way.
 
-This section defines how different systems interact within Nigeria’s immunization ecosystem, ensuring seamless data exchange, interoperability, and alignment with national and global health standards.
+The scope of this guide focuses on the following core components:
+- **Standardizing how immunization clients (patients) are registered and managed**, using the [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile.
+- **Structuring immunization service delivery records**, such as vaccine administration, using the [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profile.
+- **Defining the necessary search parameters, RESTful operations, and data constraints** to ensure interoperable exchange of immunization data across digital platforms.
+- **Providing the minimum data structures required** for systems to exchange immunization-related data across multiple levels of the health system, from point-of-care to national dashboards.
 
+### Use cases covered in this guide
+The IG covers the following key immunization use cases (which will continue to expand in subsequent iterations) prioritized by NPHCDA and stakeholders:
 
-### Interaction Between Systems
-
-#### Description of System Interactions
- 
-The Nigeria Immunization FHIR Implementation Guide (IG) establishes the technical framework for data exchange between key immunization-related systems. These interactions ensure  seamless interoperability, accurate data capture, and improved decision-making in Nigeria's immunization ecosystem.
-
-    
-#### Key Systems and Their Roles
-
-<section>
-   <p> Standalone Electronic Immunization Registries (EIRs) or Immunization modules in Hospital EMRs</p>
-        <ul>
-            <li>Capture, store, and followup on vaccination records for individuals.</li>
-            <li>Interact with health facility systems and national immunization databases.</li>
-        </ul>
-    <p>Health Facility Registry (HFR)</p>   
-         <ul>
-            <li>Record patient encounters and immunization services provided.</li>
-            <li>Share immunization event data with EIRs and decision-support systems.</li>
-        </ul>
-    <p>Health Workforce Registry (HWR)</p>   
-         <ul>
-            <li>Through this implementation guide update and read from national or state database of healthcare providers.</li>
-            <li>Validate routine immunization service providers</li>
-        </ul>
-
-     <p>National Health Information Systems (NHIS) & DHIS2</p>   
-         <ul>
-            <li>Aggregate immunization data for reporting and policy decision-making.</li>
-            <li>Interact with EIRs for real-time immunization coverage monitoring.</li>
-        </ul> 
-     <p>Civil Registration & Vital Statistics (CRVS)</p>   
-         <ul>
-            <li>Exchange birth and death records to support vaccination planning.</li>
-        </ul>
-     <p> Decision Support & Analytics Platforms</p>   
-         <ul>
-            <li>Provide alerts, reminders, and dashboards for vaccination tracking.</li>
-            <li>Integrate with AI-driven insights to identify zero-dose children </li>
-        </ul>               
-</section>
-
-#### FHIR-Based Data Exchange
+- **Health Facility Registration and Update** <br>
+  Standardizes how health facilities are referenced or updated in immunization records using external facility registries.
+- **Routine Immunization Client Registration and Update**<br>
+  Enables consistent identification and demographic capture of children and caregivers for immunization purposes.
+- **Planning Vaccination Sessions** <br>
+    Provides structure for managing immunization sessions, target population, and logistics information.
+- **Administer Vaccine** <br>
+    Captures all necessary data about the immunization event, including vaccine product, lot number, site, route, and performer.
+- **Manage and Report Adverse Events Following Immunization (AEFI)** <br>
+    Supports linking immunization events with reported AEFIs for monitoring and reporting purposes.
+- **Defaulter Tracking** <br>
+    Provides mechanisms to identify and recall clients who have missed scheduled doses.
+- **Report Generation** <br>
+    Enables data aggregation and export for DHIS2, performance dashboards, or public health surveillance.
 
 
-This IG defines FHIR-based interactions using standardized resources such as:
+This guide does **not prescribe a specific software platform or vendor product**. Instead, it defines a set of national interoperability standards that can be adopted by EMR vendors, immunization registries, mobile app developers, and data exchange platforms to ensure consistency, data quality, and alignment with Nigeria’s digital health strategy.
 
-<ul>
-    <li>Patient – Identifying individuals across systems.</li>
-    <li>Immunization – Recording administered vaccines.</li>
-    <li>Encounter – Documenting immunization visits.</li>
-    <li>Observation – Capturing adverse events and immunization status.</li>
-    <li>SupplyDelivery – Tracking vaccine inventory.</li>
-</ul>
+### Interaction Between priority Systems
 
+This FHIR IG is designed to promote system **interoperability** across the Nigerian digital health ecosystem. The artifacts defined in this guide (such as profiles, extensions, and value sets) are intended to work in conjunction with external health and administrative data systems to enable seamless integration and real-time information sharing.
+Specifically, this IG enables integration with the following external platforms:
+
+- **National Health Facility Registry (HFR)**
+ Enables linking of immunization events and service delivery to verified and uniquely identified facilities in the country.
+- **Health Workforce Registry (HWR)**
+Facilitates referencing of vaccinators, supervisors, and AEFI reporters using standardized practitioner records (eg. MDCN or other Workforce Registry).
+- **National Health Management Information System (HMIS - DHIS2)**
+ Supports reporting of immunization indicators and AEFI statistics to national dashboards through aggregate or individual record submission.
+- **Civil Registration and Vital Statistics (CRVS) Platform**
+ Supports potential linkages with birth registration systems to promote timely identification of newborns eligible for immunization.
+- **Analytics Tools and Dashboards**
+Provides clean, structured data for integration with data analytics platforms for coverage monitoring, predictive modeling, and operational intelligence.
+
+These integrations are essential to achieving the goals of a nationally scalable, data-driven immunization system, and reflect Nigeria’s commitment to advancing digital public infrastructure (DPIs) and universal health coverage (UHC).
 
 
 ### Concepts
