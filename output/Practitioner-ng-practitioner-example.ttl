@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/Practitioner/ng-practitioner-example> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ng-practitioner-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPractitioner"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ng-practitioner-example</b></p><a name=\"ng-practitioner-example\"> </a><a name=\"hcng-practitioner-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmPractitioner.html\">NgImmPractitioner</a></p></div><p><b>identifier</b>: <code>http://nursing-midwifery-council/</code>/123456</p><p><b>name</b>: Damola Bello </p><p><b>telecom</b>: ph: 0722000000</p><p><b>birthDate</b>: 1980-01-01</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://nursing-midwifery-council/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Bello" ] ;
+     fhir:given ( [ fhir:v "Damola" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0722000000" ]
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1980-01-01"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

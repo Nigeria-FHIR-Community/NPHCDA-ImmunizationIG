@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/AllergyIntolerance/FullExampleNgAllergyIntolerance> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FullExampleNgAllergyIntolerance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance FullExampleNgAllergyIntolerance</b></p><a name=\"FullExampleNgAllergyIntolerance\"> </a><a name=\"hcFullExampleNgAllergyIntolerance\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-allergy-intolerance-profile.html\">NgImmAllergyIntolerance</a></p></div><p><b>allergyReferenceDoseNumber</b>: 8</p><p><b>allergyReferenceDoseSeries</b>: 2</p><p><b>clinicalStatus</b>: <span title=\"Codes:\">active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:\">confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: High Risk</p><p><b>patient</b>: <code>NgImmPatient/ExampleNgImmPatient</code></p><p><b>onset</b>: 2025-06-14 14:30:00+0100</p><p><b>recordedDate</b>: 2025-06-15 09:45:00+0100</p><p><b>note</b>: </p><blockquote><div><p>Avoid all peanuts and peanut-containing foods</p>\n</div></blockquote><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Anaphylaxis</span></td><td>Facial swelling and difficulty breathing</td><td>2025-06-14 14:35:00+0100</td><td>Severe</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "allergyReferenceDoseNumber"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 8
+     ]
+  ] [
+     fhir:url [ fhir:v "allergyReferenceDoseSeries"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 2
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "food"] ) ; # 
+  fhir:criticality [ fhir:v "high"] ; # 
+  fhir:patient [
+     fhir:link <https://nphcda.gov.ng/immunizationIG/NgImmPatient/ExampleNgImmPatient> ;
+     fhir:reference [ fhir:v "NgImmPatient/ExampleNgImmPatient" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2025-06-14T14:30:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2025-06-15T09:45:00+01:00"^^xsd:dateTime] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Avoid all peanuts and peanut-containing foods" ]
+  ] ) ; # 
+  fhir:reaction ( [
+     fhir:manifestation ( [
+       fhir:text [ fhir:v "Anaphylaxis" ]
+     ] ) ;
+     fhir:description [ fhir:v "Facial swelling and difficulty breathing" ] ;
+     fhir:onset [ fhir:v "2025-06-14T14:35:00+01:00"^^xsd:dateTime ] ;
+     fhir:severity [ fhir:v "severe" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

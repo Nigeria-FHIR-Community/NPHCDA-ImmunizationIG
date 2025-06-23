@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-library> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nigeria-vaccine-library"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-vaccine-library</b></p><a name=\"nigeria-vaccine-library\"> </a><a name=\"hcnigeria-vaccine-library\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-vaccine-library.html\"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "NGVaccineLibraryVS"] ; # 
+  fhir:title [ fhir:v "Vaccines"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-23T09:24:42+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v " ."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

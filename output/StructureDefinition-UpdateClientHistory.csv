@@ -1,0 +1,122 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"UpdateClientHistory","UpdateClientHistory","","","",0,*,"","","","null {[]} {[]}
+","C6 - Update Client History [information only]","IMMZ.C6 - A logical model for tracking client immunization history updates.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"UpdateClientHistory.clientCompletedPrimarySeries","UpdateClientHistory.clientCompletedPrimarySeries","","","",1,1,"","","","boolean {[]} {[]}
+","Client has completed vaccine primary series","Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen.","","","","","","","","","",,,,,"",,,,"UpdateClientHistory.clientCompletedPrimarySeries",1,1,"",""
+"UpdateClientHistory.hivStatus","UpdateClientHistory.hivStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","HIV Status","The current HIV status of the client.","","","","","","","","","",,,,,"#NGHivStatusVS
+",,,,"UpdateClientHistory.hivStatus",1,1,"",""
+"UpdateClientHistory.bcgDoseDate","UpdateClientHistory.bcgDoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date BCG dose was administered","The date the BCG vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE6
+",,,,"UpdateClientHistory.bcgDoseDate",0,1,"",""
+"UpdateClientHistory.hepB0DoseDate","UpdateClientHistory.hepB0DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date HepB 0 dose was administered","The date the HepB 0 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE7
+",,,,"UpdateClientHistory.hepB0DoseDate",0,1,"",""
+"UpdateClientHistory.polioBopv0DoseDate","UpdateClientHistory.polioBopv0DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Polio (bOPV0) dose was administered","The date the Polio (bOPV0) vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE8
+",,,,"UpdateClientHistory.polioBopv0DoseDate",0,1,"",""
+"UpdateClientHistory.pentavalent1DoseDate","UpdateClientHistory.pentavalent1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Pentavalent 1 dose was administered","The date the Pentavalent 1 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE9
+",,,,"UpdateClientHistory.pentavalent1DoseDate",0,1,"",""
+"UpdateClientHistory.opv1DoseDate","UpdateClientHistory.opv1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date OPV 1 dose was administered","The date the OPV 1 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE10
+",,,,"UpdateClientHistory.opv1DoseDate",0,1,"",""
+"UpdateClientHistory.pcv1DoseDate","UpdateClientHistory.pcv1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date PCV 1 dose was administered","The date the PCV 1 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE11
+",,,,"UpdateClientHistory.pcv1DoseDate",0,1,"",""
+"UpdateClientHistory.rotavirus1DoseDate","UpdateClientHistory.rotavirus1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Rotavirus 1 dose was administered","The date the Rotavirus 1 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE12
+",,,,"UpdateClientHistory.rotavirus1DoseDate",0,1,"",""
+"UpdateClientHistory.ipv1DoseDate","UpdateClientHistory.ipv1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date IPV 1 dose was administered","The date the IPV 1 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE13
+",,,,"UpdateClientHistory.ipv1DoseDate",0,1,"",""
+"UpdateClientHistory.opv2DoseDate","UpdateClientHistory.opv2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date OPV 2 dose was administered","The date the OPV 2 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE14
+",,,,"UpdateClientHistory.opv2DoseDate",0,1,"",""
+"UpdateClientHistory.pcv2DoseDate","UpdateClientHistory.pcv2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date PCV 2 dose was administered","The date the PCV 2 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE15
+",,,,"UpdateClientHistory.pcv2DoseDate",0,1,"",""
+"UpdateClientHistory.pentavalent2DoseDate","UpdateClientHistory.pentavalent2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Pentavalent 2 dose was administered","The date the Pentavalent 2 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE16
+",,,,"UpdateClientHistory.pentavalent2DoseDate",0,1,"",""
+"UpdateClientHistory.rotavirus2DoseDate","UpdateClientHistory.rotavirus2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Rotavirus 2 dose was administered","The date the Rotavirus 2 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE17
+",,,,"UpdateClientHistory.rotavirus2DoseDate",0,1,"",""
+"UpdateClientHistory.opv3DoseDate","UpdateClientHistory.opv3DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date OPV 3 dose was administered","The date the OPV 3 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE18
+",,,,"UpdateClientHistory.opv3DoseDate",0,1,"",""
+"UpdateClientHistory.pentavalent3DoseDate","UpdateClientHistory.pentavalent3DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Pentavalent 3 dose was administered","The date the Pentavalent 3 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE19
+",,,,"UpdateClientHistory.pentavalent3DoseDate",0,1,"",""
+"UpdateClientHistory.pcv3DoseDate","UpdateClientHistory.pcv3DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date PCV 3 dose was administered","The date the PCV 3 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE20
+",,,,"UpdateClientHistory.pcv3DoseDate",0,1,"",""
+"UpdateClientHistory.rotavirus3DoseDate","UpdateClientHistory.rotavirus3DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Rotavirus 3 was administered","The date the Rotavirus 3 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE21
+",,,,"UpdateClientHistory.rotavirus3DoseDate",0,1,"",""
+"UpdateClientHistory.ipv2DoseDate","UpdateClientHistory.ipv2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date IPV 2 was administered","The date the IPV 2 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE22
+",,,,"UpdateClientHistory.ipv2DoseDate",0,1,"",""
+"UpdateClientHistory.malaria1DoseDate","UpdateClientHistory.malaria1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Malaria 1 was administered","The date the Malaria 1 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE23
+",,,,"UpdateClientHistory.malaria1DoseDate",0,1,"",""
+"UpdateClientHistory.vitaminA1DoseDate","UpdateClientHistory.vitaminA1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Vitamin A 1 was administered","The date the Vitamin A 1 supplement was given.","","","","","","","","","",,,,,"#IMMZ.C1.DE24
+",,,,"UpdateClientHistory.vitaminA1DoseDate",0,1,"",""
+"UpdateClientHistory.malaria2DoseDate","UpdateClientHistory.malaria2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Malaria 2 was administered","The date the Malaria 2 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE25
+",,,,"UpdateClientHistory.malaria2DoseDate",0,1,"",""
+"UpdateClientHistory.malaria3DoseDate","UpdateClientHistory.malaria3DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Malaria 3 was administered","The date the Malaria 3 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE26
+",,,,"UpdateClientHistory.malaria3DoseDate",0,1,"",""
+"UpdateClientHistory.mr1DoseDate","UpdateClientHistory.mr1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date MR 1 was administered","The date the MR 1 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE27
+",,,,"UpdateClientHistory.mr1DoseDate",0,1,"",""
+"UpdateClientHistory.yellowFeverDoseDate","UpdateClientHistory.yellowFeverDoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Yellow Fever was administered","The date the Yellow Fever vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE28
+",,,,"UpdateClientHistory.yellowFeverDoseDate",0,1,"",""
+"UpdateClientHistory.menADoseDate","UpdateClientHistory.menADoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Men A was administered","The date the Men A vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE29
+",,,,"UpdateClientHistory.menADoseDate",0,1,"",""
+"UpdateClientHistory.vitaminA2DoseDate","UpdateClientHistory.vitaminA2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Vitamin A 2 was administered","The date the Vitamin A 2 supplement was given.","","","","","","","","","",,,,,"#IMMZ.C1.DE30
+",,,,"UpdateClientHistory.vitaminA2DoseDate",0,1,"",""
+"UpdateClientHistory.mr2DoseDate","UpdateClientHistory.mr2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date MR 2 was administered","The date the MR 2 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE31
+",,,,"UpdateClientHistory.mr2DoseDate",0,1,"",""
+"UpdateClientHistory.malaria4DoseDate","UpdateClientHistory.malaria4DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Malaria 4 was administered","The date the Malaria 4 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE32
+",,,,"UpdateClientHistory.malaria4DoseDate",0,1,"",""
+"UpdateClientHistory.td1DoseDate","UpdateClientHistory.td1DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Td 1 vaccine was administered","The date the Td 1 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE33
+",,,,"UpdateClientHistory.td1DoseDate",0,1,"",""
+"UpdateClientHistory.td2DoseDate","UpdateClientHistory.td2DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Td 2 vaccine was administered","The date the Td 2 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE34
+",,,,"UpdateClientHistory.td2DoseDate",0,1,"",""
+"UpdateClientHistory.td3DoseDate","UpdateClientHistory.td3DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Td 3 vaccine was administered","The date the Td 3 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE35
+",,,,"UpdateClientHistory.td3DoseDate",0,1,"",""
+"UpdateClientHistory.td4DoseDate","UpdateClientHistory.td4DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Td 4 vaccine was administered","The date the Td 4 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE36
+",,,,"UpdateClientHistory.td4DoseDate",0,1,"",""
+"UpdateClientHistory.td5DoseDate","UpdateClientHistory.td5DoseDate","","","",0,1,"","","","date {[]} {[]}
+","Date Td 5 vaccine was administered","The date the Td 5 vaccine dose was given to the client","","","","","","","","","",,,,,"#IMMZ.C1.DE37
+",,,,"UpdateClientHistory.td5DoseDate",0,1,"",""
+"UpdateClientHistory.llinGivenDate","UpdateClientHistory.llinGivenDate","","","",0,1,"","","","date {[]} {[]}
+","Date LLIN was given","The date the Long-Lasting Insecticidal Net (LLIN) was given.","","","","","","","","","",,,,,"#IMMZ.C1.DE38
+",,,,"UpdateClientHistory.llinGivenDate",0,1,"",""
+"UpdateClientHistory.state","UpdateClientHistory.state","","","",0,1,"","","","string {[]} {[]}
+","State","The state or condition of the client at the time of reporting.","","","","","","","","","",,,,,"#IMMZ.C1.DE39
+",,,,"UpdateClientHistory.state",0,1,"",""
+"UpdateClientHistory.comments","UpdateClientHistory.comments","","","",0,1,"","","","string {[]} {[]}
+","Comments","Additional comments related to the client's immunization history.","","","","","","","","","",,,,,"#IMMZ.C1.DE40
+",,,,"UpdateClientHistory.comments",0,1,"",""
+"UpdateClientHistory.reportingOfficerName","UpdateClientHistory.reportingOfficerName","","","",0,1,"","","","string {[]} {[]}
+","Name of Reporting Officer","The full name of the reporting officer.","","","","","","","","","",,,,,"#IMMZ.C1.DE41
+",,,,"UpdateClientHistory.reportingOfficerName",0,1,"",""
+"UpdateClientHistory.designation","UpdateClientHistory.designation","","","",0,1,"","","","string {[]} {[]}
+","Designation","The designation or title of the reporting officer.","","","","","","","","","",,,,,"#IMMZ.C1.DE42
+",,,,"UpdateClientHistory.designation",0,1,"",""
+"UpdateClientHistory.signature","UpdateClientHistory.signature","","","",0,1,"","","","string {[]} {[]}
+","Signature","The signature of the reporting officer.","","","","","","","","","",,,,,"#IMMZ.C1.DE43
+",,,,"UpdateClientHistory.signature",0,1,"",""

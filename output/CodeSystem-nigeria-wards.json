@@ -1,0 +1,92 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nigeria-wards",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-wards</b></p><a name=\"nigeria-wards\"> </a><a name=\"hcnigeria-wards\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajic<a name=\"nigeria-wards-fc-amac-abajic\"> </a></td><td>Abaji central</td><td>Abaji central</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajine<a name=\"nigeria-wards-fc-amac-abajine\"> </a></td><td>Abaji North East</td><td>Abaji North East</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajise<a name=\"nigeria-wards-fc-amac-abajise\"> </a></td><td>Abaji South East</td><td>Abaji South East</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-agyana<a name=\"nigeria-wards-fc-amac-agyana\"> </a></td><td>Agyana/Pandagi</td><td>Agyana/Pandagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-rimba<a name=\"nigeria-wards-fc-amac-rimba\"> </a></td><td>Rimba Ebagi</td><td>Rimba Ebagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-nuku<a name=\"nigeria-wards-fc-amac-nuku\"> </a></td><td>Nuku</td><td>Nuku</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-alu<a name=\"nigeria-wards-fc-amac-alu\"> </a></td><td>Alu Mamagi</td><td>Alu Mamagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-yaba<a name=\"nigeria-wards-fc-amac-yaba\"> </a></td><td>Yaba</td><td>Yaba</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-gurdi<a name=\"nigeria-wards-fc-amac-gurdi\"> </a></td><td>Gurdi</td><td>Gurdi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-gawu<a name=\"nigeria-wards-fc-amac-gawu\"> </a></td><td>Gawu</td><td>Gawu</td></tr></table></div>"
+  },
+  "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward",
+  "version" : "0.4.0",
+  "name" : "NGWardsCS",
+  "title" : "NG Administrative Wards",
+  "status" : "active",
+  "date" : "2025-06-23T09:24:42+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "hierarchyMeaning" : "grouped-by",
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "fc-amac-abajic",
+    "display" : "Abaji central",
+    "definition" : "Abaji central"
+  },
+  {
+    "code" : "fc-amac-abajine",
+    "display" : "Abaji North East",
+    "definition" : "Abaji North East"
+  },
+  {
+    "code" : "fc-amac-abajise",
+    "display" : "Abaji South East",
+    "definition" : "Abaji South East"
+  },
+  {
+    "code" : "fc-amac-agyana",
+    "display" : "Agyana/Pandagi",
+    "definition" : "Agyana/Pandagi"
+  },
+  {
+    "code" : "fc-amac-rimba",
+    "display" : "Rimba Ebagi",
+    "definition" : "Rimba Ebagi"
+  },
+  {
+    "code" : "fc-amac-nuku",
+    "display" : "Nuku",
+    "definition" : "Nuku"
+  },
+  {
+    "code" : "fc-amac-alu",
+    "display" : "Alu Mamagi",
+    "definition" : "Alu Mamagi"
+  },
+  {
+    "code" : "fc-amac-yaba",
+    "display" : "Yaba",
+    "definition" : "Yaba"
+  },
+  {
+    "code" : "fc-amac-gurdi",
+    "display" : "Gurdi",
+    "definition" : "Gurdi"
+  },
+  {
+    "code" : "fc-amac-gawu",
+    "display" : "Gawu",
+    "definition" : "Gawu"
+  }]
+}

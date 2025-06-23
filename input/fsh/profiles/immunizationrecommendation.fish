@@ -22,9 +22,9 @@ Description: "A patient's point-in-time set of recommendations (i.e. forecasting
 
 
 Instance: immunizationRecommendation-example
-InstanceOf: NEIRImmunizationRecommendation
+InstanceOf: NgImmImmunizationRecommendation
 Usage: #example
-Title: "NEIRImmunizationRecommendationExample"
+Title: "NgImmImmunizationRecommendationExample"
 Description: "An example of a Nigerian Immunization Recommendation"
 * identifier.use = #official
 * identifier.system = ""

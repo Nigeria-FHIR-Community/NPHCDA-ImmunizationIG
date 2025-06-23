@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nigeria-immunization-contraindication"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-immunization-contraindication</b></p><a name=\"nigeria-immunization-contraindication\"> </a><a name=\"hcnigeria-immunization-contraindication\"> </a><p>This  code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">immuno<a name=\"nigeria-immunization-contraindication-immuno\"> </a></td><td>Immunocompromised</td><td>The individual has a weakened immune system due to a medical condition (e.g., cancer, organ transplant, or immunosuppressive therapy), which contraindicates certain live vaccines.</td></tr><tr><td style=\"white-space:nowrap\">severe-aefi<a name=\"nigeria-immunization-contraindication-severe-aefi\"> </a></td><td>severe AEFI</td><td>The individual is currently experiencing a severe febrile or respiratory illness (REFI), which may necessitate deferral of immunization until recovery.</td></tr><tr><td style=\"white-space:nowrap\">anaphylactic<a name=\"nigeria-immunization-contraindication-anaphylactic\"> </a></td><td>Anaphylactic reactions</td><td>The individual has a documented history of a severe allergic (anaphylactic) reaction to a previous dose of a vaccine or any of its components, making re-administration contraindicated.</td></tr><tr><td style=\"white-space:nowrap\">hiv<a name=\"nigeria-immunization-contraindication-hiv\"> </a></td><td>HIV positive</td><td>The individual has symptomatic HIV infection, which may contraindicate live vaccines or require specific vaccine schedules based on immunological status.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "NGImmunizationContraindicationCS"] ; # 
+  fhir:title [ fhir:v " NG Vaccine contraindications"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-23T09:24:42+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "immuno" ] ;
+     fhir:display [ fhir:v "Immunocompromised" ] ;
+     fhir:definition [ fhir:v "The individual has a weakened immune system due to a medical condition (e.g., cancer, organ transplant, or immunosuppressive therapy), which contraindicates certain live vaccines." ]
+  ] [
+     fhir:code [ fhir:v "severe-aefi" ] ;
+     fhir:display [ fhir:v "severe AEFI" ] ;
+     fhir:definition [ fhir:v "The individual is currently experiencing a severe febrile or respiratory illness (REFI), which may necessitate deferral of immunization until recovery." ]
+  ] [
+     fhir:code [ fhir:v "anaphylactic" ] ;
+     fhir:display [ fhir:v "Anaphylactic reactions" ] ;
+     fhir:definition [ fhir:v "The individual has a documented history of a severe allergic (anaphylactic) reaction to a previous dose of a vaccine or any of its components, making re-administration contraindicated." ]
+  ] [
+     fhir:code [ fhir:v "hiv" ] ;
+     fhir:display [ fhir:v "HIV positive" ] ;
+     fhir:definition [ fhir:v "The individual has symptomatic HIV infection, which may contraindicate live vaccines or require specific vaccine schedules based on immunological status." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

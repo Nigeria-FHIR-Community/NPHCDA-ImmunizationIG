@@ -4,8 +4,8 @@ Title: "Primary Vaccine Status"
 Description: "Indicates whether the immunization patient has completed the full primary vaccine series"
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
-* valueString 0..1 MS
-* valueString ^short = "Status of primary series (e.g., completed, not completed)"
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept ^short = "Status of primary series (e.g., completed, not completed)"
 
 
 Extension: NGSignature
@@ -29,14 +29,14 @@ Description: "Type of session for immunization (e.g., fixed-site clinic, outreac
 //* valueCodeableConcept from ImmunizationSessionTypeVS (required)
 
 
-Extension: NGContraindicated
+/* Extension: NGContraindicated
 Id: contraindicated
 Title: "Immunization Contraindicated"
 Description: "Indicates whether the immunization was contraindicated"
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
 * valueBoolean 0..1 MS
-* valueBoolean ^short = "Indicates whether the immunization was contraindicated or not"
+* valueBoolean ^short = "Indicates whether the immunization was contraindicated or not" */
 
 Extension: NGContraindications
 Id: contraindications

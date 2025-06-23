@@ -1,0 +1,82 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"IMMZGGenerateReport","IMMZGGenerateReport","","","",0,*,"","","","null {[]} {[]}
+","H - Generate Report [information only]","IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"IMMZGGenerateReport.reportIdentification","IMMZGGenerateReport.reportIdentification","","","",1,1,"","","Y","string {[]} {[]}
+","Report Identification","A unique identifier for the instance of the report that has been generated","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportIdentification",1,1,"",""
+"IMMZGGenerateReport.reportStatus","IMMZGGenerateReport.reportStatus","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
+","Report Status","The status of the report (for example, initial, complete, etc.)","","","","","","","","","",,,,,"#NGVerificationStatusVS
+",,,,"IMMZGGenerateReport.reportStatus",1,1,"",""
+"IMMZGGenerateReport.reportType","IMMZGGenerateReport.reportType","","","",1,1,"","","Y","string {[]} {[]}
+","Report Type","The type of report which has been generated (i.e., list of individuals, summary, etc.)","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportType",1,1,"",""
+"IMMZGGenerateReport.reportIndicatorCode","IMMZGGenerateReport.reportIndicatorCode","","","",1,1,"","","Y","string {[]} {[]}
+","Report Indicator Code","The indicator or measure definition being reported on (e.g., dropout rate, defaulters, etc.)","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportIndicatorCode",1,1,"",""
+"IMMZGGenerateReport.numberOfDosesPerVial","IMMZGGenerateReport.numberOfDosesPerVial","","","",1,1,"","","Y","integer {[]} {[]}
+","Number of doses per vial","The number of doses contained within a vial","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.numberOfDosesPerVial",1,1,"",""
+"IMMZGGenerateReport.minimumStock","IMMZGGenerateReport.minimumStock","","","",1,1,"","","Y","integer {[]} {[]}
+","Minimum Stock","25% of the vaccine requirement in a facility during the reporting month","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.minimumStock",1,1,"",""
+"IMMZGGenerateReport.maximumStock","IMMZGGenerateReport.maximumStock","","","",1,1,"","","Y","integer {[]} {[]}
+","Maximum Stock","125% of the vaccine requirement in a facility during the reporting month","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.maximumStock",1,1,"",""
+"IMMZGGenerateReport.openingBalance","IMMZGGenerateReport.openingBalance","","","",1,1,"","","Y","integer {[]} {[]}
+","Opening balance","The initial quantity of vials in stock at the beginning of a specific reporting period","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.openingBalance",1,1,"",""
+"IMMZGGenerateReport.quantityReceived","IMMZGGenerateReport.quantityReceived","","","",1,1,"","","Y","integer {[]} {[]}
+","Quantity received","The quantity of vaccines/diluents received during the reporting month.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.quantityReceived",1,1,"",""
+"IMMZGGenerateReport.dosesOpened","IMMZGGenerateReport.dosesOpened","","","",1,1,"","","Y","integer {[]} {[]}
+","Doses opened","The quantity of vaccines/diluents opened in doses during the reporting month.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.dosesOpened",1,1,"",""
+"IMMZGGenerateReport.dosesReturned","IMMZGGenerateReport.dosesReturned","","","",1,1,"","","Y","integer {[]} {[]}
+","Doses returned to LGA/Facility","The quantity of vaccines/diluents returned in doses to the LGA during the reporting month.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.dosesReturned",1,1,"",""
+"IMMZGGenerateReport.stockDiscarded","IMMZGGenerateReport.stockDiscarded","","","",1,1,"","","Y","integer {[]} {[]}
+","Stock discarded","The quantity of vaccine/diluent discarded in doses","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.stockDiscarded",1,1,"",""
+"IMMZGGenerateReport.stockDiscardedType","IMMZGGenerateReport.stockDiscardedType","","","",1,1,"","","Y","code {[]} {[]}
+","Stock discarded type","The reason vaccine was discarded","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.stockDiscardedType",1,1,"",""
+"IMMZGGenerateReport.aefiCaseRate","IMMZGGenerateReport.aefiCaseRate","","","",1,1,"","","Y","decimal {[]} {[]}
+","AEFI Case Rate","An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.aefiCaseRate",1,1,"",""
+"IMMZGGenerateReport.openVialWastage","IMMZGGenerateReport.openVialWastage","","","",1,1,"","","Y","decimal {[]} {[]}
+","Open Vial Wastage","A measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.openVialWastage",1,1,"",""
+"IMMZGGenerateReport.closedVialWastage","IMMZGGenerateReport.closedVialWastage","","","",1,1,"","","Y","decimal {[]} {[]}
+","Closed Vial Wastage","A measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.closedVialWastage",1,1,"",""
+"IMMZGGenerateReport.reportSubjectArea","IMMZGGenerateReport.reportSubjectArea","","","",1,1,"","","Y","string {[]} {[]}
+","Report Subject Area","Location (facility or place) for which the data in the report is being represented.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportSubjectArea",1,1,"",""
+"IMMZGGenerateReport.reportGenerationDate","IMMZGGenerateReport.reportGenerationDate","","","",1,1,"","","Y","dateTime {[]} {[]}
+","Report Generation Date","The date and time on which the report was generated.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportGenerationDate",1,1,"",""
+"IMMZGGenerateReport.reportingPeriodStart","IMMZGGenerateReport.reportingPeriodStart","","","",1,1,"","","Y","dateTime {[]} {[]}
+","Reporting Period Start","The start date of the reporting period for which data in the report has been included.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportingPeriodStart",1,1,"",""
+"IMMZGGenerateReport.reportingPeriodEnd","IMMZGGenerateReport.reportingPeriodEnd","","","",1,1,"","","Y","dateTime {[]} {[]}
+","Reporting Period End","The end date of the reporting period for which data in the report has been included.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportingPeriodEnd",1,1,"",""
+"IMMZGGenerateReport.improvementIndicator","IMMZGGenerateReport.improvementIndicator","","","",1,1,"","","Y","code {[]} {[]}
+","Improvement Indicator","Indicates to the receiver how to interpret the data (i.e., what constitutes an improvement or deterioration)","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.improvementIndicator",1,1,"",""
+"IMMZGGenerateReport.reportGenerator","IMMZGGenerateReport.reportGenerator","","","",1,1,"","","Y","string {[]} {[]}
+","Report Generator / Author","Indicates the organization, or location which is generating or producing the report","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportGenerator",1,1,"",""
+"IMMZGGenerateReport.measureIdentifier","IMMZGGenerateReport.measureIdentifier","","","",1,1,"","","Y","string {[]} {[]}
+","Measure Identifier / Meaning","Represents the name of the report/indicator. It codifies the meaning of the group / measure.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.measureIdentifier",1,1,"",""
+"IMMZGGenerateReport.measuredScore","IMMZGGenerateReport.measuredScore","","","",1,1,"","","Y","decimal {[]} {[]}
+","Measured Score","The calculated score of the measure / indicator which is being reported on.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.measuredScore",1,1,"",""
+"IMMZGGenerateReport.measureNumerator","IMMZGGenerateReport.measureNumerator","","","",1,1,"","","Y","integer {[]} {[]}
+","Measure Numerator","The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.measureNumerator",1,1,"",""
+"IMMZGGenerateReport.measureDenominator","IMMZGGenerateReport.measureDenominator","","","",1,1,"","","Y","integer {[]} {[]}
+","Measure Denominator","The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.measureDenominator",1,1,"",""
+"IMMZGGenerateReport.disaggregationGroup","IMMZGGenerateReport.disaggregationGroup","","","",1,1,"","","Y","code {[]} {[]}
+","Disaggregation Group","Indicates the overall strata or disaggregation which is being represented in the report.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.disaggregationGroup",1,1,"",""
+"IMMZGGenerateReport.bySex","IMMZGGenerateReport.bySex","","","",1,1,"","","Y","boolean {[]} {[]}
+","By-Sex","Represents a disaggregation grouped by the indicator population's sex values.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.bySex",1,1,"",""
+"IMMZGGenerateReport.byRegion","IMMZGGenerateReport.byRegion","","","",1,1,"","","Y","boolean {[]} {[]}
+","By-Region","Represents a disaggregation grouped by the indicator population's administrative regions.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.byRegion",1,1,"",""
+"IMMZGGenerateReport.byAgeGroup","IMMZGGenerateReport.byAgeGroup","","","",1,1,"","","Y","boolean {[]} {[]}
+","By-Age Group","Represents a disaggregation grouped by the indicator population's age groups.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.byAgeGroup",1,1,"",""
+"IMMZGGenerateReport.byDoseNumber","IMMZGGenerateReport.byDoseNumber","","","",1,1,"","","Y","boolean {[]} {[]}
+","By-Dose Number","Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.byDoseNumber",1,1,"",""
+"IMMZGGenerateReport.byVaccineType","IMMZGGenerateReport.byVaccineType","","","",1,1,"","","Y","boolean {[]} {[]}
+","By-Vaccine Type","Represents a disaggregation grouped by the indicator population's vaccine types.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.byVaccineType",1,1,"",""
+"IMMZGGenerateReport.byVaccineManufacturer","IMMZGGenerateReport.byVaccineManufacturer","","","",1,1,"","","Y","boolean {[]} {[]}
+","By-Vaccine Manufacturer","Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.byVaccineManufacturer",1,1,"",""
+"IMMZGGenerateReport.byReactionManifestation","IMMZGGenerateReport.byReactionManifestation","","","",1,1,"","","Y","boolean {[]} {[]}
+","By-Reaction Manifestation","Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.byReactionManifestation",1,1,"",""
+"IMMZGGenerateReport.byOccupation","IMMZGGenerateReport.byOccupation","","","",1,1,"","","Y","boolean {[]} {[]}
+","By-Occupation","Represents a disaggregation grouped by the indicator population's occupations.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.byOccupation",1,1,"",""
+"IMMZGGenerateReport.disaggregationMeasureIdentifier","IMMZGGenerateReport.disaggregationMeasureIdentifier","","","",1,1,"","","Y","string {[]} {[]}
+","Disaggregation Measure Identifier / Meaning","The type or value of this stratum represents (male, female, region 1, dose 3, etc.). This value depends on the Disaggregation Group data element.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.disaggregationMeasureIdentifier",1,1,"",""
+"IMMZGGenerateReport.disaggregationNumerator","IMMZGGenerateReport.disaggregationNumerator","","","",1,1,"","","Y","integer {[]} {[]}
+","Disaggregation Numerator","The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.disaggregationNumerator",1,1,"",""
+"IMMZGGenerateReport.disaggregationDenominator","IMMZGGenerateReport.disaggregationDenominator","","","",1,1,"","","Y","integer {[]} {[]}
+","Disaggregation Denominator","The count of individual objects (persons, doses, etc.) which were used as the denominator for the disaggregation score.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.disaggregationDenominator",1,1,"",""
+"IMMZGGenerateReport.disaggregatedScore","IMMZGGenerateReport.disaggregatedScore","","","",1,1,"","","Y","decimal {[]} {[]}
+","Disaggregated Score","The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records.","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.disaggregatedScore",1,1,"",""

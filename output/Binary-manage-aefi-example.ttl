@@ -1,0 +1,16 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/Binary/manage-aefi-example> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "manage-aefi-example"] ; # 
+  fhir:contentType [ fhir:v "application/fhir+json"] ; # 
+  fhir:data [ fhir:v "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cHM6Ly9ucGhjZGEuZ292Lm5nL2ltbXVuaXphdGlvbklHL1N0cnVjdHVyZURlZmluaXRpb24vbWFuYWdlLWFlZmkiLAogICJtYW5pZmVzdGF0aW9uIjogWwogICAgewogICAgICAiY29kaW5nIjogWwogICAgICAgIHsKICAgICAgICAgICJjb2RlIjogIklNTVouRS5ERTM3IiwKICAgICAgICAgICJkaXNwbGF5IjogIkZldmVyIgogICAgICAgIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgImNvZGluZyI6IFsKICAgICAgICB7CiAgICAgICAgICAiY29kZSI6ICJJTU1aLkUuREUzOCIsCiAgICAgICAgICAiZGlzcGxheSI6ICJSYXNoIgogICAgICAgIH0KICAgICAgXQogICAgfQogIF0sCiAgInRyZWF0bWVudEdpdmVuIjogWwogICAgIkFkbWluaXN0ZXJlZCBhbnRpaGlzdGFtaW5lcyBhbmQgSVYgZmx1aWRzIgogIF0sCiAgInJlYWN0aW9uRGF0ZSI6ICIyMDI1LTAzLTIwIiwKICAib2JzZXJ2YXRpb25JZCI6ICJvYnMxMjM0NSIsCiAgImNvbXBsYWludCI6ICJTZXZlcmUgaGVhZGFjaGUgYW5kIGRpenppbmVzcyIsCiAgInNldmVyaXR5IjogewogICAgImNvZGluZyI6IFsKICAgICAgewogICAgICAgICJjb2RlIjogIklNTVouRS5ERTEwIiwKICAgICAgICAiZGlzcGxheSI6ICJTZXZlcmUiCiAgICAgIH0KICAgIF0KICB9LAogICJvdXRjb21lIjogewogICAgImNvZGluZyI6IFsKICAgICAgewogICAgICAgICJjb2RlIjogIklNTVouRS5ERTEwIiwKICAgICAgICAiZGlzcGxheSI6ICJSZWNvdmVyZWQiCiAgICAgIH0KICAgIF0KICB9LAogICJkb3NlTnVtYmVyIjogMiwKICAidG90YWxEb3NlcyI6IDMsCiAgImRpc2Vhc2VUYXJnZXRlZCI6IHsKICAgICJjb2RpbmciOiBbCiAgICAgIHsKICAgICAgICAiY29kZSI6ICJJTU1aLkUuREUyNyIsCiAgICAgICAgImRpc3BsYXkiOiAiTWVhc2xlcyIKICAgICAgfQogICAgXQogIH0sCiAgIm5leHREb3NlRHVlRGF0ZSI6ICIyMDI1LTA2LTIwIiwKICAiZGlnaXRhbENlcnRpZmljYXRlTmVlZGVkIjogdHJ1ZSwKICAiY2VydGlmaWNhdGVJc3N1ZXIiOiAiTWluaXN0cnkgb2YgSGVhbHRoIiwKICAiaGVhbHRoQ2VydGlmaWNhdGVJZCI6ICJIQ0lELTk4NzY1NDMyMSIsCiAgImNlcnRpZmljYXRlVmFsaWRGcm9tIjogIjIwMjUtMDMtMjEiLAogICJjZXJ0aWZpY2F0ZVZhbGlkVW50aWwiOiAiMjAyOC0wMy0yMCIsCiAgImNlcnRpZmljYXRlU2NoZW1lVmVyc2lvbiI6ICIxLjAiCn0K"^^xsd:base64Binary] . # 
+
+# -------------------------------------------------------------------------------------
+

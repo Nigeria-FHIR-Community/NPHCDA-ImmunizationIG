@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/Patient/ExampleNgImmPatient> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleNgImmPatient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExampleNgImmPatient</b></p><a name=\"ExampleNgImmPatient\"> </a><a name=\"hcExampleNgImmPatient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmPatient.html\">NgImmPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Ada Okonkwo  Female, DoB: 2021-07-15 ( http://hospital.org/mrn#123456)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">10 Akintola Street Enugu Enugu </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: \">:</td><td colspan=\"3\"><ul><li>Nkechi Okonkwo </li><li>15 Ogui Road New Heaven Enugu </li><li><a href=\"tel:+2348031234567\">+2348031234567</a></li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "ageInWeeks"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 104
+     ]
+  ] [
+     fhir:url [ fhir:v "ageInMonths"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 24
+     ]
+  ] [
+     fhir:url [ fhir:v "ageInYears"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 2
+     ]
+  ] [
+     fhir:url [ fhir:v "birthWeight"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:decimal ;
+       fhir:v 3.4
+     ]
+  ] [
+     fhir:url [ fhir:v "hivStatus"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "negative"
+     ]
+  ] [
+     fhir:url [ fhir:v "pregnancyStatus"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "pregnant"
+     ]
+  ] [
+     fhir:url [ fhir:v "administrativeWard"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "Yaba" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "siblingSurname"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Okonkwo"
+     ]
+  ] [
+     fhir:url [ fhir:v "siblingGivenName"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Chinedu"
+     ]
+  ] [
+     fhir:url [ fhir:v "siblingBirthYear"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:date ;
+       fhir:v "2012"^^xsd:gYear
+     ]
+  ] [
+     fhir:url [ fhir:v "siblingGender"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "male"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.org/mrn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Okonkwo" ] ;
+     fhir:given ( [ fhir:v "Ada" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2021-07-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "10 Akintola Street" ] ) ;
+     fhir:city [ fhir:v "Enugu" ] ;
+     fhir:district [ fhir:v "Enugu North" ] ;
+     fhir:state [ fhir:v "Enugu" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:text [ fhir:v "mother" ]
+     ] ) ;
+     fhir:name [
+       fhir:family [ fhir:v "Okonkwo" ] ;
+       fhir:given ( [ fhir:v "Nkechi" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+2348031234567" ]
+     ] ) ;
+     fhir:address [
+       fhir:line ( [ fhir:v "15 Ogui Road" ] ) ;
+       fhir:city [ fhir:v "New Heaven" ] ;
+       fhir:district [ fhir:v "Enugu Central" ] ;
+       fhir:state [ fhir:v "Enugu" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

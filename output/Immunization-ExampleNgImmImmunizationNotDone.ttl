@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/Immunization/ExampleNgImmImmunizationNotDone> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleNgImmImmunizationNotDone"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization ExampleNgImmImmunizationNotDone</b></p><a name=\"ExampleNgImmImmunizationNotDone\"> </a><a name=\"hcExampleNgImmImmunizationNotDone\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmImmunization.html\">NgImmImmunization</a></p></div><p><b>Primary Vaccine Status</b>: <span title=\"Codes:{http://nphcda.gov.ng/fhir/CodeSystem/ng-vaccine-status not-given}\">not-given</span></p><p><b>Digital Signature</b>: signed-by-nurse-chinedu</p><p><b>Session Type</b>: <span title=\"Codes:{http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type outreach}\">outreach</span></p><p><b>Contraindications</b>: <span title=\"Codes:{http://snomed.info/sct 386661006}\">Fever</span></p><p><b>identifier</b>: <code>https://nphcda.gov.ng/imm-registry</code>/IMM-2025-0010</p><p><b>status</b>: Not Done</p><p><b>statusReason</b>: <span title=\"Codes:{http://nphcda.gov.ng/fhir/ValueSet/ng-immunization-notdone-reasons fever}\">fever</span></p><p><b>vaccineCode</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/cvx 130}\">Pentavalent Vaccine</span></p><p><b>patient</b>: <a href=\"Patient/NgImmPatient-004\">Patient/NgImmPatient-004</a></p><p><b>occurrence</b>: 2025-06-20 09:30:00+0100</p><p><b>manufacturer</b>: <a href=\"Organization/gavi-vax-001\">GAVI Partner Vax Ltd</a></p><p><b>lotNumber</b>: PENTA-2025-BATCH99</p><p><b>expirationDate</b>: 2025-11-30</p><p><b>site</b>: <span title=\"Codes:\">RA</span></p><p><b>route</b>: <span title=\"Codes:\">intramuscular</span></p><p><b>doseQuantity</b>: 0.5 mL</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Vaccination Supervisor</span></td><td><a href=\"Practitioner/nurse-chinedu\">Nurse Chinedu Umeh</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://nphcda.gov.ng/fhir/CodeSystem/ng-vaccine-status"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "not-given" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "signed-by-nurse-chinedu"
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "outreach" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:386661006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386661006" ] ;
+         fhir:display [ fhir:v "Fever" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nphcda.gov.ng/imm-registry"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "IMM-2025-0010" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "not-done"] ; # 
+  fhir:statusReason [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://nphcda.gov.ng/fhir/ValueSet/ng-immunization-notdone-reasons"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "fever" ]
+     ] )
+  ] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "130" ] ;
+       fhir:display [ fhir:v "Pentavalent" ]
+     ] ) ;
+     fhir:text [ fhir:v "Pentavalent Vaccine" ]
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://nphcda.gov.ng/immunizationIG/Patient/NgImmPatient-004> ;
+     fhir:reference [ fhir:v "Patient/NgImmPatient-004" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-06-20T09:30:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:manufacturer [
+     fhir:link <https://nphcda.gov.ng/immunizationIG/Organization/gavi-vax-001> ;
+     fhir:reference [ fhir:v "Organization/gavi-vax-001" ] ;
+     fhir:display [ fhir:v "GAVI Partner Vax Ltd" ]
+  ] ; # 
+  fhir:lotNumber [ fhir:v "PENTA-2025-BATCH99"] ; # 
+  fhir:expirationDate [ fhir:v "2025-11-30"^^xsd:date] ; # 
+  fhir:site [
+     fhir:coding ( [
+       fhir:code [ fhir:v "RA" ]
+     ] )
+  ] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:code [ fhir:v "intramuscular" ]
+     ] )
+  ] ; # 
+  fhir:doseQuantity [
+     fhir:value [ fhir:v 0.5 ] ;
+     fhir:unit [ fhir:v "mL" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:function [
+       fhir:text [ fhir:v "Vaccination Supervisor" ]
+     ] ;
+     fhir:actor [
+       fhir:link <https://nphcda.gov.ng/immunizationIG/Practitioner/nurse-chinedu> ;
+       fhir:reference [ fhir:v "Practitioner/nurse-chinedu" ] ;
+       fhir:display [ fhir:v "Nurse Chinedu Umeh" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

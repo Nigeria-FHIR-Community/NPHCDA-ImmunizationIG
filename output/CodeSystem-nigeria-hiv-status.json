@@ -1,0 +1,57 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nigeria-hiv-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-hiv-status</b></p><a name=\"nigeria-hiv-status\"> </a><a name=\"hcnigeria-hiv-status\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">positive<a name=\"nigeria-hiv-status-positive\"> </a></td><td>Positive</td><td>The Client is HIV positive</td></tr><tr><td style=\"white-space:nowrap\">negative<a name=\"nigeria-hiv-status-negative\"> </a></td><td>Negative</td><td>The Client is HIV Negative</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"nigeria-hiv-status-unknown\"> </a></td><td>Unknown</td><td>The Client does not know their HIV status</td></tr></table></div>"
+  },
+  "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS",
+  "version" : "0.4.0",
+  "name" : "NGHivStatusCS",
+  "title" : "NG Client HIV status",
+  "status" : "active",
+  "date" : "2025-06-23T09:24:42+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This CodeSystem defines list of options for HIV status of a Client",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "hierarchyMeaning" : "is-a",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "positive",
+    "display" : "Positive",
+    "definition" : "The Client is HIV positive"
+  },
+  {
+    "code" : "negative",
+    "display" : "Negative",
+    "definition" : "The Client is HIV Negative"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown",
+    "definition" : "The Client does not know their HIV status"
+  }]
+}

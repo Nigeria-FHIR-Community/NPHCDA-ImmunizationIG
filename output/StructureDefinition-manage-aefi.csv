@@ -1,0 +1,37 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"manage-aefi","manage-aefi","","","",0,*,"","","","null {[]} {[]}
+","E - Manage & Report AEFI [information only]","IMMZ.E - A logical model for recording and managing AEFI treatment.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"manage-aefi.reactionDate","manage-aefi.reactionDate","","","",1,1,"","","","date {[]} {[]}
+","Reaction Date","The date when the adverse event or reaction started.","","","","","","","","","",,,,,"",,,,"manage-aefi.reactionDate",1,1,"",""
+"manage-aefi.observationId","manage-aefi.observationId","","","",1,1,"","","","string {[]} {[]}
+","Reaction Observation ID","A reference to the observation that recorded the reaction.","","","","","","","","","",,,,,"",,,,"manage-aefi.observationId",1,1,"",""
+"manage-aefi.complaint","manage-aefi.complaint","","","",0,1,"","","","string {[]} {[]}
+","Complaint","The symptom or concern reported by the patient.","","","","","","","","","",,,,,"",,,,"manage-aefi.complaint",0,1,"",""
+"manage-aefi.manifestation","manage-aefi.manifestation","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reaction Manifestation","The observed clinical manifestations of the reaction.","","","","","","","","","",,,,,"",,,,"manage-aefi.manifestation",0,*,"",""
+"manage-aefi.severity","manage-aefi.severity","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Reaction Severity","The severity classification of the adverse event.","","","","","","","","","",,,,,"",,,,"manage-aefi.severity",1,1,"",""
+"manage-aefi.outcome","manage-aefi.outcome","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Reaction Outcome","The outcome of the reaction such as death, hospitalization, or recovery.","","","","","","","","","",,,,,"",,,,"manage-aefi.outcome",1,1,"",""
+"manage-aefi.treatmentGiven","manage-aefi.treatmentGiven","","","",0,*,"","","","string {[]} {[]}
+","Treatment Given","Description of treatments or interventions administered.","","","","","","","","","",,,,,"",,,,"manage-aefi.treatmentGiven",0,*,"",""
+"manage-aefi.doseNumber","manage-aefi.doseNumber","","","",1,1,"","","","integer {[]} {[]}
+","Dose Number","The vaccine dose number within the series.","","","","","","","","","",,,,,"",,,,"manage-aefi.doseNumber",1,1,"",""
+"manage-aefi.totalDoses","manage-aefi.totalDoses","","","",1,1,"","","","integer {[]} {[]}
+","Total Doses in Series","The recommended number of doses for immunity according to national protocol.","","","","","","","","","",,,,,"",,,,"manage-aefi.totalDoses",1,1,"",""
+"manage-aefi.diseaseTargeted","manage-aefi.diseaseTargeted","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Disease Targeted","The vaccine-preventable disease being targeted.","","","","","","","","","",,,,,"",,,,"manage-aefi.diseaseTargeted",1,1,"",""
+"manage-aefi.nextDoseDueDate","manage-aefi.nextDoseDueDate","","","",0,1,"","","","date {[]} {[]}
+","Due Date of Next Dose","The date on which the next vaccination should be administered, if applicable.","","","","","","","","","",,,,,"",,,,"manage-aefi.nextDoseDueDate",0,1,"",""
+"manage-aefi.digitalCertificateNeeded","manage-aefi.digitalCertificateNeeded","","","",0,1,"","","","boolean {[]} {[]}
+","Digital Certificate Needed","Indicates if a digital certificate is required.","","","","","","","","","",,,,,"",,,,"manage-aefi.digitalCertificateNeeded",0,1,"",""
+"manage-aefi.certificateIssuer","manage-aefi.certificateIssuer","","","",0,1,"","","","string {[]} {[]}
+","Certificate Issuer","The authority or organization that issued the vaccination certificate.","","","","","","","","","",,,,,"",,,,"manage-aefi.certificateIssuer",0,1,"",""
+"manage-aefi.healthCertificateId","manage-aefi.healthCertificateId","","","",0,1,"","","","string {[]} {[]}
+","Health Certificate Identifier (HCID)","Unique identifier used to associate the immunization event with its digital representation(s).","","","","","","","","","",,,,,"",,,,"manage-aefi.healthCertificateId",0,1,"",""
+"manage-aefi.certificateValidFrom","manage-aefi.certificateValidFrom","","","",0,1,"","","","date {[]} {[]}
+","Certificate Valid From","The date the immunization certificate became valid.","","","","","","","","","",,,,,"",,,,"manage-aefi.certificateValidFrom",0,1,"",""
+"manage-aefi.certificateValidUntil","manage-aefi.certificateValidUntil","","","",0,1,"","","","date {[]} {[]}
+","Certificate Valid Until","The last date the immunization certificate remains valid.","","","","","","","","","",,,,,"",,,,"manage-aefi.certificateValidUntil",0,1,"",""
+"manage-aefi.certificateSchemeVersion","manage-aefi.certificateSchemeVersion","","","",0,1,"","","","string {[]} {[]}
+","Certificate Scheme Version","Version of the core data set and HL7 FHIR Implementation Guide used.","","","","","","","","","",,,,,"",,,,"manage-aefi.certificateSchemeVersion",0,1,"",""

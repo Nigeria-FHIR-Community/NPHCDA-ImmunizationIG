@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nigeria-Immunization-status-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-Immunization-status-reason</b></p><a name="nigeria-Immunization-status-reason"> </a><a name="hcnigeria-Immunization-status-reason"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/immunization-status-reason</code></li></ul></div>
+  </text>
+  <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"/>
+  <version value="0.4.0"/>
+  <name value="NGImmunizationNotDoneReasonsVS"/>
+  <title value="Reason for missed Vaccination"/>
+  <status value="active"/>
+  <date value="2025-06-23T09:24:42+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reason for a Client missing the last or other vaccinations"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/immunization-status-reason"/>
+    </include>
+  </compose>
+</ValueSet>

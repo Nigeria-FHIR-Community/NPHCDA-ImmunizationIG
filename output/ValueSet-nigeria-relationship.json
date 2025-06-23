@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nigeria-relationship",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-relationship</b></p><a name=\"nigeria-relationship\"> </a><a name=\"hcnigeria-relationship\"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/R4B/valueset-relationship</code></li></ul></div>"
+  },
+  "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship",
+  "version" : "0.4.0",
+  "name" : "NGRelationshipsVS",
+  "title" : "Relationships",
+  "status" : "active",
+  "date" : "2025-06-23T09:24:42+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The administrative ward where a person or a facility is.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/R4B/valueset-relationship"
+    }]
+  }
+}

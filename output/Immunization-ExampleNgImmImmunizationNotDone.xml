@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="ExampleNgImmImmunizationNotDone"/>
+  <meta>
+    <profile value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Immunization ExampleNgImmImmunizationNotDone</b></p><a name="ExampleNgImmImmunizationNotDone"> </a><a name="hcExampleNgImmImmunizationNotDone"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgImmImmunization.html">NgImmImmunization</a></p></div><p><b>Primary Vaccine Status</b>: <span title="Codes:{http://nphcda.gov.ng/fhir/CodeSystem/ng-vaccine-status not-given}">not-given</span></p><p><b>Digital Signature</b>: signed-by-nurse-chinedu</p><p><b>Session Type</b>: <span title="Codes:{http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type outreach}">outreach</span></p><p><b>Contraindications</b>: <span title="Codes:{http://snomed.info/sct 386661006}">Fever</span></p><p><b>identifier</b>: <code>https://nphcda.gov.ng/imm-registry</code>/IMM-2025-0010</p><p><b>status</b>: Not Done</p><p><b>statusReason</b>: <span title="Codes:{http://nphcda.gov.ng/fhir/ValueSet/ng-immunization-notdone-reasons fever}">fever</span></p><p><b>vaccineCode</b>: <span title="Codes:{http://hl7.org/fhir/sid/cvx 130}">Pentavalent Vaccine</span></p><p><b>patient</b>: <a href="Patient/NgImmPatient-004">Patient/NgImmPatient-004</a></p><p><b>occurrence</b>: 2025-06-20 09:30:00+0100</p><p><b>manufacturer</b>: <a href="Organization/gavi-vax-001">GAVI Partner Vax Ltd</a></p><p><b>lotNumber</b>: PENTA-2025-BATCH99</p><p><b>expirationDate</b>: 2025-11-30</p><p><b>site</b>: <span title="Codes:">RA</span></p><p><b>route</b>: <span title="Codes:">intramuscular</span></p><p><b>doseQuantity</b>: 0.5 mL</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Vaccination Supervisor</span></td><td><a href="Practitioner/nurse-chinedu">Nurse Chinedu Umeh</a></td></tr></table></div>
+  </text>
+  <extension url="https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://nphcda.gov.ng/fhir/CodeSystem/ng-vaccine-status"/>
+        <code value="not-given"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature">
+    <valueString value="signed-by-nurse-chinedu"/>
+  </extension>
+  <extension url="https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type"/>
+        <code value="outreach"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386661006"/>
+        <display value="Fever"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://nphcda.gov.ng/imm-registry"/>
+    <value value="IMM-2025-0010"/>
+  </identifier>
+  <status value="not-done"/>
+  <statusReason>
+    <coding>
+      <system value="http://nphcda.gov.ng/fhir/ValueSet/ng-immunization-notdone-reasons"/>
+      <code value="fever"/>
+    </coding>
+  </statusReason>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="130"/>
+      <display value="Pentavalent"/>
+    </coding>
+    <text value="Pentavalent Vaccine"/>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/NgImmPatient-004"/>
+  </patient>
+  <occurrenceDateTime value="2025-06-20T09:30:00+01:00"/>
+  <manufacturer>
+    <reference value="Organization/gavi-vax-001"/>
+    <display value="GAVI Partner Vax Ltd"/>
+  </manufacturer>
+  <lotNumber value="PENTA-2025-BATCH99"/>
+  <expirationDate value="2025-11-30"/>
+  <site>
+    <coding>
+      <code value="RA"/>
+    </coding>
+  </site>
+  <route>
+    <coding>
+      <code value="intramuscular"/>
+    </coding>
+  </route>
+  <doseQuantity>
+    <value value="0.5"/>
+    <unit value="mL"/>
+  </doseQuantity>
+  <performer>
+    <function>
+      <text value="Vaccination Supervisor"/>
+    </function>
+    <actor>
+      <reference value="Practitioner/nurse-chinedu"/>
+      <display value="Nurse Chinedu Umeh"/>
+    </actor>
+  </performer>
+</Immunization>

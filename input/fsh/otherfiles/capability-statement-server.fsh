@@ -4,7 +4,7 @@ Usage: #definition
 Title: "Nigeria Immunization Server CapabilityStatement"
 Description: "Describes the expected behavior of systems serving immunization data based on the NgImmPatient and NgImmImmunization profiles."
 * status = #active
-* date = "2025-06-22"
+* date = "2025-06-23"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format = #json

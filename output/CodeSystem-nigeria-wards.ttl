@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nigeria-wards"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-wards</b></p><a name=\"nigeria-wards\"> </a><a name=\"hcnigeria-wards\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajic<a name=\"nigeria-wards-fc-amac-abajic\"> </a></td><td>Abaji central</td><td>Abaji central</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajine<a name=\"nigeria-wards-fc-amac-abajine\"> </a></td><td>Abaji North East</td><td>Abaji North East</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajise<a name=\"nigeria-wards-fc-amac-abajise\"> </a></td><td>Abaji South East</td><td>Abaji South East</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-agyana<a name=\"nigeria-wards-fc-amac-agyana\"> </a></td><td>Agyana/Pandagi</td><td>Agyana/Pandagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-rimba<a name=\"nigeria-wards-fc-amac-rimba\"> </a></td><td>Rimba Ebagi</td><td>Rimba Ebagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-nuku<a name=\"nigeria-wards-fc-amac-nuku\"> </a></td><td>Nuku</td><td>Nuku</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-alu<a name=\"nigeria-wards-fc-amac-alu\"> </a></td><td>Alu Mamagi</td><td>Alu Mamagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-yaba<a name=\"nigeria-wards-fc-amac-yaba\"> </a></td><td>Yaba</td><td>Yaba</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-gurdi<a name=\"nigeria-wards-fc-amac-gurdi\"> </a></td><td>Gurdi</td><td>Gurdi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-gawu<a name=\"nigeria-wards-fc-amac-gawu\"> </a></td><td>Gawu</td><td>Gawu</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "NGWardsCS"] ; # 
+  fhir:title [ fhir:v "NG Administrative Wards"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-23T09:24:42+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:hierarchyMeaning [ fhir:v "grouped-by"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "fc-amac-abajic" ] ;
+     fhir:display [ fhir:v "Abaji central" ] ;
+     fhir:definition [ fhir:v "Abaji central" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-abajine" ] ;
+     fhir:display [ fhir:v "Abaji North East" ] ;
+     fhir:definition [ fhir:v "Abaji North East" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-abajise" ] ;
+     fhir:display [ fhir:v "Abaji South East" ] ;
+     fhir:definition [ fhir:v "Abaji South East" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-agyana" ] ;
+     fhir:display [ fhir:v "Agyana/Pandagi" ] ;
+     fhir:definition [ fhir:v "Agyana/Pandagi" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-rimba" ] ;
+     fhir:display [ fhir:v "Rimba Ebagi" ] ;
+     fhir:definition [ fhir:v "Rimba Ebagi" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-nuku" ] ;
+     fhir:display [ fhir:v "Nuku" ] ;
+     fhir:definition [ fhir:v "Nuku" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-alu" ] ;
+     fhir:display [ fhir:v "Alu Mamagi" ] ;
+     fhir:definition [ fhir:v "Alu Mamagi" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-yaba" ] ;
+     fhir:display [ fhir:v "Yaba" ] ;
+     fhir:definition [ fhir:v "Yaba" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-gurdi" ] ;
+     fhir:display [ fhir:v "Gurdi" ] ;
+     fhir:definition [ fhir:v "Gurdi" ]
+  ] [
+     fhir:code [ fhir:v "fc-amac-gawu" ] ;
+     fhir:display [ fhir:v "Gawu" ] ;
+     fhir:definition [ fhir:v "Gawu" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

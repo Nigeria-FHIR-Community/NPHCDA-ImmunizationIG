@@ -1,0 +1,103 @@
+{
+  "resourceType" : "Patient",
+  "id" : "FullExampleNgImmPatient",
+  "meta" : {
+    "profile" : ["https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient FullExampleNgImmPatient</b></p><a name=\"FullExampleNgImmPatient\"> </a><a name=\"hcFullExampleNgImmPatient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmPatient.html\">NgImmPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Zainab Aisha Abubakar  Female, DoB: 2013-02-14 ( http://asokoro.hospital.org/mrn#NEIR-0001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>http://nimc.gov.ng/nin</code>/NEIR-0003</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">45 Gombe Road Bauchi Bauchi </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: \">:</td><td colspan=\"3\"><ul><li>Musa Abubakar </li><li>12 GRA Avenue Bauchi Bauchi </li><li><a href=\"tel:+2347012345678\">+2347012345678</a></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "ageInWeeks",
+    "valueInteger" : 8
+  },
+  {
+    "url" : "ageInMonths",
+    "valueInteger" : 2
+  },
+  {
+    "url" : "ageInYears",
+    "valueInteger" : 0
+  },
+  {
+    "url" : "birthWeight",
+    "valueDecimal" : 3.4
+  },
+  {
+    "url" : "hivStatus",
+    "valueString" : "positive"
+  },
+  {
+    "url" : "pregnancyStatus",
+    "valueString" : "pregnant"
+  },
+  {
+    "url" : "adMinistrativeWard",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "Yaba"
+      }]
+    }
+  },
+  {
+    "url" : "siblingSurname",
+    "valueString" : "Abubakar"
+  },
+  {
+    "url" : "siblingGivenName",
+    "valueString" : "Yusuf"
+  },
+  {
+    "url" : "siblingBirthYear",
+    "valueString" : "2011"
+  },
+  {
+    "url" : "siblingGender",
+    "valueString" : "male"
+  },
+  {
+    "url" : "siblingHealthStatus",
+    "valueString" : "Recovered from malaria"
+  }],
+  "identifier" : [{
+    "system" : "http://asokoro.hospital.org/mrn",
+    "value" : "NEIR-0001"
+  },
+  {
+    "system" : "http://nimc.gov.ng/nin",
+    "value" : "NEIR-0003"
+  }],
+  "name" : [{
+    "family" : "Abubakar",
+    "given" : ["Zainab",
+    "Aisha"]
+  }],
+  "gender" : "female",
+  "birthDate" : "2013-02-14",
+  "address" : [{
+    "line" : ["45 Gombe Road"],
+    "city" : "Bauchi",
+    "district" : "Bauchi Central LGA",
+    "state" : "Bauchi"
+  }],
+  "contact" : [{
+    "relationship" : [{
+      "text" : "Father"
+    }],
+    "name" : {
+      "family" : "Abubakar",
+      "given" : ["Musa"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "+2347012345678"
+    }],
+    "address" : {
+      "line" : ["12 GRA Avenue"],
+      "city" : "Bauchi",
+      "district" : "Tudun Wada",
+      "state" : "Bauchi"
+    }
+  }]
+}

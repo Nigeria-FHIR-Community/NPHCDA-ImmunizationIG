@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nigeria-relationship"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-relationship</b></p><a name="nigeria-relationship"> </a><a name="hcnigeria-relationship"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/R4B/valueset-relationship</code></li></ul></div>
+  </text>
+  <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"/>
+  <version value="0.4.0"/>
+  <name value="NGRelationshipsVS"/>
+  <title value="Relationships"/>
+  <status value="active"/>
+  <date value="2025-06-23T09:24:42+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The administrative ward where a person or a facility is."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/R4B/valueset-relationship"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "SearchParameter-ngimm-state",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter SearchParameter-ngimm-state</b></p><a name=\"SearchParameter-ngimm-state\"> </a><a name=\"hcSearchParameter-ngimm-state\"> </a><h2>state</h2><p>Parameter <code>state</code>:<code>token</code></p><div><p>Search by patient's State of residence</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td></tr><tr><td>Expression</td><td><code>Patient.state</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-state",
+  "version" : "0.4.0",
+  "name" : "state",
+  "status" : "active",
+  "date" : "2025-06-23T09:24:42+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Search by patient's State of residence",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "code" : "state",
+  "base" : ["Patient"],
+  "type" : "token",
+  "expression" : "Patient.state"
+}

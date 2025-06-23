@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Nigeria Immunization FHIR IG v0.4.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Immunization FHIR IG</span>
+            <br/>
+            <span style="display:inline-block;">0.4.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+
+ <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
+  
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements (DAKs)-(L2)<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="generic-personas.html">Generic Personas</a></li>
+      <li><a href="user-scenarios.html">User Scenarios</a></li>
+      <li><a href="business-processes.html">Business Processes &amp; Workflows</a></li>
+      <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
+       <li><a href="functional-requirements.html">Functional Requirements</a></li>
+       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
+      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
+      <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
+      <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
+    </ul>
+  </li>
+
+
+  <li> <a href="search-operation.html" >Search and Operations</a></li> 
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Immunization FHIR IG - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://nphcda.gov.ng/immunizationIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Behavior: Search Parameters</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#5">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-NgImmCapabilityStatementClient.html"
+                  title="CapabilityStatement/NgImmCapabilityStatementClient">Nigeria Immunization Client CapabilityStatement</a>
+            </td>
+            <td>
+<p>Describes expected behavior of clients consuming immunization services using the Nigerian profiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-NgImmCapabilityStatementServer.html"
+                  title="CapabilityStatement/NgImmCapabilityStatementServer">Nigeria Immunization Server CapabilityStatement</a>
+            </td>
+            <td>
+<p>Describes the expected behavior of systems serving immunization data based on the NgImmPatient and NgImmImmunization profiles.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Behavior: Search Parameters </h3>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-immdate.html"
+                  title="SearchParameter/SearchParameter-ngimm-immdate">Search Immunization records by date of vaccination</a>
+            </td>
+            <td>
+<p>Search Immunization records by date of vaccination</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-immpatient.html"
+                  title="SearchParameter/SearchParameter-ngimm-immpatient">Search Immunization records by patient</a>
+            </td>
+            <td>
+<p>Search Immunization records by patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-immstatus.html"
+                  title="SearchParameter/SearchParameter-ngimm-immstatus">Search Immunization records by status of immunization</a>
+            </td>
+            <td>
+<p>Search Immunization records by status (eg. completed, or not done)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-immvaccinecode.html"
+                  title="SearchParameter/SearchParameter-ngimm-immvaccinecode">Search Immunization records by vaccine code</a>
+            </td>
+            <td>
+<p>Search Immunization records by vaccination code</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-identifier.html"
+                  title="SearchParameter/SearchParameter-ngimm-identifier">Search by Patient Identifier</a>
+            </td>
+            <td>
+<p>Search by patient identifier</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-birthdate.html"
+                  title="SearchParameter/SearchParameter-ngimm-birthdate">Search by Patient birth date</a>
+            </td>
+            <td>
+<p>Search by patient birth date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-firstname.html"
+                  title="SearchParameter/SearchParameter-ngimm-firstname">Search by Patient firstname</a>
+            </td>
+            <td>
+<p>Search by patient firstname</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-gender.html"
+                  title="SearchParameter/SearchParameter-ngimm-gender">Search by Patient gender</a>
+            </td>
+            <td>
+<p>Search by patient gender</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-lastname.html"
+                  title="SearchParameter/SearchParameter-ngimm-lastname">Search by Patient lastname</a>
+            </td>
+            <td>
+<p>Search by patient lastname</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-lga.html"
+                  title="SearchParameter/SearchParameter-ngimm-lga">Search by Patient lga of residence</a>
+            </td>
+            <td>
+<p>Search by patient LGA of residence</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-createddate.html"
+                  title="SearchParameter/SearchParameter-ngimm-createddate">Search by Patient's date of creation</a>
+            </td>
+            <td>
+<p>Search by patient’s date of creation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-state.html"
+                  title="SearchParameter/SearchParameter-ngimm-state">Search by Patient's state of residence</a>
+            </td>
+            <td>
+<p>Search by patient’s State of residence</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-register-facility-model.html"
+                  title="StructureDefinition/register-facility-model">A - Register Facility [information only]</a>
+            </td>
+            <td>
+<p>IMMZ.A - A logical model representing a health facility being registered in the immunization system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-register-client-model.html"
+                  title="StructureDefinition/register-client-model">C5 - Register Client [information only]</a>
+            </td>
+            <td>
+<p>IMMZ.C5 - A logical model representing a client being registered in the immunization system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-UpdateClientHistory.html"
+                  title="StructureDefinition/UpdateClientHistory">C6 - Update Client History [information only]</a>
+            </td>
+            <td>
+<p>IMMZ.C6 - A logical model for tracking client immunization history updates.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AdministerVaccine.html"
+                  title="StructureDefinition/AdministerVaccine">D - Administer Vaccine [information only]</a>
+            </td>
+            <td>
+<p>IMMZ.D - A logical model for capturing vaccine administration details</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-manage-aefi.html"
+                  title="StructureDefinition/manage-aefi">E - Manage &amp; Report AEFI [information only]</a>
+            </td>
+            <td>
+<p>IMMZ.E - A logical model for recording and managing AEFI treatment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DefaulterTracking.html"
+                  title="StructureDefinition/DefaulterTracking">G - Defaulter Tracking [information only]</a>
+            </td>
+            <td>
+<p>IMMZ.G - A logical model for tracking immunization defaulters.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-IMMZGGenerateReport.html"
+                  title="StructureDefinition/IMMZGGenerateReport">H - Generate Report [information only]</a>
+            </td>
+            <td>
+<p>IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-allergy-intolerance-profile.html"
+                  title="StructureDefinition/allergy-intolerance-profile">NgImmAllergyIntolerance</a>
+            </td>
+            <td>
+<p>Nigeria Immunization Allergy Intolerance Profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgImmImmunization.html"
+                  title="StructureDefinition/NgImmImmunization">NgImmImmunization</a>
+            </td>
+            <td>
+<p>Nigerian Profile for Immunization resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-measure-report-profile.html"
+                  title="StructureDefinition/measure-report-profile">NgImmMeasureReport</a>
+            </td>
+            <td>
+<p>Nigeria Immunization Measure Report Profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-imm-organization.html"
+                  title="StructureDefinition/ng-imm-organization">NgImmOrganization</a>
+            </td>
+            <td>
+<p>An organization profile representing healthcare facilities responsible for immunization services or other types of organizations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgImmPatient.html"
+                  title="StructureDefinition/NgImmPatient">NgImmPatient</a>
+            </td>
+            <td>
+<p>Nigeria Immunization Patient Profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgImmPractitioner.html"
+                  title="StructureDefinition/NgImmPractitioner">NgImmPractitioner</a>
+            </td>
+            <td>
+<p>Profile for a Nigerian Practitioner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mother-other-children.html"
+                  title="StructureDefinition/mother-other-children">NgImmSiblingRelatedPerson</a>
+            </td>
+            <td>
+<p>Sibling that Represents the mother’s other children as RelatedPersons.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ngimm-measure.html"
+                  title="StructureDefinition/ngimm-measure">Nigeria Immunization Measure Definition</a>
+            </td>
+            <td>
+<p>A profile on the Measure resource used to define immunization indicators within Nigeria’s routine immunization program.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-age-in-months.html"
+                  title="StructureDefinition/age-in-months">Client Age in Months</a>
+            </td>
+            <td>
+<p>Age of the Immunization Client recorded in months</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-age-in-weeks.html"
+                  title="StructureDefinition/age-in-weeks">Client Age in Weeks</a>
+            </td>
+            <td>
+<p>Age of the Immunization Client recorded in weeks</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-age-in-years.html"
+                  title="StructureDefinition/age-in-years">Client Age in Years</a>
+            </td>
+            <td>
+<p>Age of the Immunization Client recorded in years</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hiv-status.html"
+                  title="StructureDefinition/hiv-status">Client's HIV status</a>
+            </td>
+            <td>
+<p>The HIV status (positive, negative, or unknown) of the Immunization Client</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pregnancy-status.html"
+                  title="StructureDefinition/pregnancy-status">Client's Pregnancy status</a>
+            </td>
+            <td>
+<p>The Pregnancy status (pregnant or not-pregnant) of the Immunization Client</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-contraindications.html"
+                  title="StructureDefinition/contraindications">Contraindications</a>
+            </td>
+            <td>
+<p>Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-date-client-created.html"
+                  title="StructureDefinition/date-client-created">Date client record was created</a>
+            </td>
+            <td>
+<p>Date the client record was first created</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-signature.html"
+                  title="StructureDefinition/signature">Digital Signature</a>
+            </td>
+            <td>
+<p>A digital or electronic signature capturing who signed, when, type, and signature data.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-next-dose-date.html"
+                  title="StructureDefinition/next-dose-date">Next Dose Date</a>
+            </td>
+            <td>
+<p>The recommended due date for the next vaccine dose in the schedule.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-nigeria-administrative-ward.html"
+                  title="StructureDefinition/nigeria-administrative-ward">Nigeria Administrative Wards </a>
+            </td>
+            <td>
+<p>Captures the administrative ward within a geographic address</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-primary-vaccine-status.html"
+                  title="StructureDefinition/primary-vaccine-status">Primary Vaccine Status</a>
+            </td>
+            <td>
+<p>Indicates whether the immunization patient has completed the full primary vaccine series</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-allergy-reference-dose-number.html"
+                  title="StructureDefinition/allergy-reference-dose-number">Reference Dose Number</a>
+            </td>
+            <td>
+<p>Reference immunization dose number for this AllergyIntolerance.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-allergy-reference-dose-series.html"
+                  title="StructureDefinition/allergy-reference-dose-series">Reference Dose Series</a>
+            </td>
+            <td>
+<p>Dose series number from the referenced Immunization.protocolApplied.doseNumber.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-session-type.html"
+                  title="StructureDefinition/session-type">Session Type</a>
+            </td>
+            <td>
+<p>Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-sibling-health-status.html"
+                  title="StructureDefinition/sibling-health-status">Sibling's health status</a>
+            </td>
+            <td>
+<p>The health status of the Client’s sibling</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-birth-weight.html"
+                  title="StructureDefinition/birth-weight">Weight at birth</a>
+            </td>
+            <td>
+<p>Weight  of the Immunization Client at birth</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-verifiction-status.html"
+                  title="ValueSet/nigeria-verifiction-status">AEFI Verification Status</a>
+            </td>
+            <td>
+<p>AEFI Verification Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-lgas.html" title="ValueSet/nigeria-lgas">Administrative LGAs</a>
+            </td>
+            <td>
+<p>The administrative Local Government Aread where a person or a facility is.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-allergy-severity.html"
+                  title="ValueSet/nigeria-allergy-severity">Allergy Severity</a>
+            </td>
+            <td>
+<p>Vaccine reaction Severity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-hiv-status.html"
+                  title="ValueSet/nigeria-hiv-status">Client HIV Status</a>
+            </td>
+            <td>
+<p>Client HIV Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-pregnancy-status.html"
+                  title="ValueSet/nigeria-pregnancy-status">Client Preganancy Status</a>
+            </td>
+            <td>
+<p>Client Pregnancy Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-gender.html" title="ValueSet/nigeria-gender">Gender or Sex</a>
+            </td>
+            <td>
+<p>The administrative gender of a person.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-facility-types.html"
+                  title="ValueSet/nigeria-facility-types">Health Facility Type</a>
+            </td>
+            <td>
+<p>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-primary-vaccine-status.html"
+                  title="ValueSet/nigeria-primary-vaccine-status">Primary vaccine Status</a>
+            </td>
+            <td>
+<p>Primary Vaccine Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-clinical-status.html"
+                  title="ValueSet/nigeria-clinical-status">Reaction outcome</a>
+            </td>
+            <td>
+<p>Reaction outcome clinical Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-Immunization-status-reason.html"
+                  title="ValueSet/nigeria-Immunization-status-reason">Reason for missed Vaccination</a>
+            </td>
+            <td>
+<p>Reason for a Client missing the last or other vaccinations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-relationship.html"
+                  title="ValueSet/nigeria-relationship">Relationships</a>
+            </td>
+            <td>
+<p>The administrative ward where a person or a facility is.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-session-type.html"
+                  title="ValueSet/nigeria-session-type">Session type</a>
+            </td>
+            <td>
+<p>Session type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-sibling-health-status.html"
+                  title="ValueSet/nigeria-sibling-health-status">Sibling Health Status</a>
+            </td>
+            <td>
+<p>Sibling Health Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-states.html" title="ValueSet/nigeria-states">States</a>
+            </td>
+            <td>
+<p>The administrative ward where a person or a facility is.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-vaccine-contraindication.html"
+                  title="ValueSet/nigeria-vaccine-contraindication">Vaccine Contraindication</a>
+            </td>
+            <td>
+<p>Vaccine Contraindication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-vaccine-route.html"
+                  title="ValueSet/nigeria-vaccine-route">Vaccine Route</a>
+            </td>
+            <td>
+<p>Vaccine Route</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-vaccine-site.html"
+                  title="ValueSet/nigeria-vaccine-site">Vaccine Site</a>
+            </td>
+            <td>
+<p>Vaccine Site</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-vaccine-library.html"
+                  title="ValueSet/nigeria-vaccine-library">Vaccines</a>
+            </td>
+            <td>
+<p>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-wards.html" title="ValueSet/nigeria-wards">Wards</a>
+            </td>
+            <td>
+<p>The administrative Ward (within an LGA) where a person or a facility is.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-immunization-contraindication.html"
+                  title="CodeSystem/nigeria-immunization-contraindication"> NG Vaccine contraindications</a>
+            </td>
+            <td>
+<p>A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-wards.html" title="CodeSystem/nigeria-wards">NG Administrative Wards</a>
+            </td>
+            <td>
+<p>This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-clinical-status.html"
+                  title="CodeSystem/nigeria-clinical-status">NG Adverse Event Clinical Status</a>
+            </td>
+            <td>
+<p>A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-hiv-status.html"
+                  title="CodeSystem/nigeria-hiv-status">NG Client HIV status</a>
+            </td>
+            <td>
+<p>This CodeSystem defines list of options for HIV status of a Client</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-pregnancy-status.html"
+                  title="CodeSystem/nigeria-pregnancy-status">NG Client Pregnancy status</a>
+            </td>
+            <td>
+<p>This CodeSystem defines list of options for Pregnancy status of a Client</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-facility-type.html"
+                  title="CodeSystem/nigeria-facility-type">NG Facility Type</a>
+            </td>
+            <td>
+<p>A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-gender.html" title="CodeSystem/nigeria-gender">NG Gender or Sex</a>
+            </td>
+            <td>
+<p>Codes for the administrative gender or sex of a person, used in demographic and administrative contexts.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-immunization-session-type.html"
+                  title="CodeSystem/nigeria-immunization-session-type">NG Immunization Session types</a>
+            </td>
+            <td>
+<p>A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-lgas.html" title="CodeSystem/nigeria-lgas">NG LGAs in Nigeria</a>
+            </td>
+            <td>
+<p>This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-allergy-severity.html"
+                  title="CodeSystem/nigeria-allergy-severity">NG Reaction Severity</a>
+            </td>
+            <td>
+<p>This CodeSystem captures the assessed severity of an allergic reaction following immunization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-sibling-health-status.html"
+                  title="CodeSystem/nigeria-sibling-health-status">NG Sibling Health Status</a>
+            </td>
+            <td>
+<p>This CodeSystem defines list of relationships that a part of this IG</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-states.html" title="CodeSystem/nigeria-states">NG States in Nigeria</a>
+            </td>
+            <td>
+<p>This CodeSystem defines ward codes and names mapped to their respective States in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-NGStockReportCS.html"
+                  title="CodeSystem/NGStockReportCS">NG Stock Management Data Elements</a>
+            </td>
+            <td>
+<p>CodeSystem for Stock Management Data Elements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-vaccine-library.html"
+                  title="CodeSystem/nigeria-vaccine-library">NG Vaccine Library with SNOMED CT codes</a>
+            </td>
+            <td>
+<p>CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG using SNOMED CT codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-immunization-site.html"
+                  title="CodeSystem/nigeria-immunization-site">NG Vaccine Site</a>
+            </td>
+            <td>
+<p>This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-AEFI-Case-Report-202503.html"
+                  title="Binary/AEFI-Case-Report-202503">AEFI-Case-Report-202503</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-ExampleNgImmImmunizationCompleted.html"
+                  title="Immunization/ExampleNgImmImmunizationCompleted">Example Completed BCG Immunization for Newborn</a>
+            </td>
+            <td>
+<p>An example of a completed BCG immunization event</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-FullExampleNgImmPatient.html"
+                  title="Patient/FullExampleNgImmPatient">Example Full Nigeria Immunization Patient</a>
+            </td>
+            <td>
+<p>A Nigeria Immunization Patient instance with all required and optional fields populated</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ExampleNgImmPatient.html"
+                  title="Patient/ExampleNgImmPatient">Example Nigeria Immunization Patient</a>
+            </td>
+            <td>
+<p>A sample patient conforming to the Nigeria Immunization Patient profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-example-register-client.html"
+                  title="Binary/example-register-client">Example Register Client</a>
+            </td>
+            <td>
+<p>Example instance of a client being registered in the IMMZ system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-Child1.html" title="RelatedPerson/Child1">Example Sibling - Mother's Other Child</a>
+            </td>
+            <td>
+<p>An example of a mother’s other child as a RelatedPerson resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ExampleNgPatientAdminWard.html"
+                  title="Patient/ExampleNgPatientAdminWard">ExampleNgPatientAdminWard</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-FullExampleNgAllergyIntolerance.html"
+                  title="AllergyIntolerance/FullExampleNgAllergyIntolerance">FullExampleNgAllergyIntolerance</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MeasureReport-ExampleNgImmMeasureReport.html"
+                  title="MeasureReport/ExampleNgImmMeasureReport">Monthly Immunization Coverage Summary - BCG</a>
+            </td>
+            <td>
+<p>An example of a summary MeasureReport generated for BCG coverage at a facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-example.html"
+                  title="Organization/organization-example">NG Example Organization</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-ng-practitioner-example.html"
+                  title="Practitioner/ng-practitioner-example">NgImmPractitionerExample</a>
+            </td>
+            <td>
+<p>An example of a Nigerian Routine Immunization Officer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-RoutineImmunizationReport.html"
+                  title="Binary/RoutineImmunizationReport">Routine Immunization Report - Facility A</a>
+            </td>
+            <td>
+<p>A routine monthly immunization report summarizing vaccine stock and usage for Facility A.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-ExampleNgImmImmunizationNotDone.html"
+                  title="Immunization/ExampleNgImmImmunizationNotDone">Scheduled Pentavalent Immunization Not Done Due to Fever</a>
+            </td>
+            <td>
+<p>An example where immunization was not done due to contraindication (fever)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-Vaccine-Stock-Report-202503.html"
+                  title="Binary/Vaccine-Stock-Report-202503">Vaccine-Stock-Report-202503</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-manage-aefi-example.html"
+                  title="Binary/manage-aefi-example">manage-aefi-example</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-update-client-history-example.html"
+                  title="Binary/update-client-history-example">update-client-history-example</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunization#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 23, 2025 09:25+0100">2025-06-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

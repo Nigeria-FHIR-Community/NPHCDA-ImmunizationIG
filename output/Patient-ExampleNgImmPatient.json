@@ -1,0 +1,94 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ExampleNgImmPatient",
+  "meta" : {
+    "profile" : ["https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExampleNgImmPatient</b></p><a name=\"ExampleNgImmPatient\"> </a><a name=\"hcExampleNgImmPatient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmPatient.html\">NgImmPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Ada Okonkwo  Female, DoB: 2021-07-15 ( http://hospital.org/mrn#123456)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">10 Akintola Street Enugu Enugu </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: \">:</td><td colspan=\"3\"><ul><li>Nkechi Okonkwo </li><li>15 Ogui Road New Heaven Enugu </li><li><a href=\"tel:+2348031234567\">+2348031234567</a></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "ageInWeeks",
+    "valueInteger" : 104
+  },
+  {
+    "url" : "ageInMonths",
+    "valueInteger" : 24
+  },
+  {
+    "url" : "ageInYears",
+    "valueInteger" : 2
+  },
+  {
+    "url" : "birthWeight",
+    "valueDecimal" : 3.4
+  },
+  {
+    "url" : "hivStatus",
+    "valueString" : "negative"
+  },
+  {
+    "url" : "pregnancyStatus",
+    "valueString" : "pregnant"
+  },
+  {
+    "url" : "administrativeWard",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "Yaba"
+      }]
+    }
+  },
+  {
+    "url" : "siblingSurname",
+    "valueString" : "Okonkwo"
+  },
+  {
+    "url" : "siblingGivenName",
+    "valueString" : "Chinedu"
+  },
+  {
+    "url" : "siblingBirthYear",
+    "valueDate" : "2012"
+  },
+  {
+    "url" : "siblingGender",
+    "valueString" : "male"
+  }],
+  "identifier" : [{
+    "system" : "http://hospital.org/mrn",
+    "value" : "123456"
+  }],
+  "name" : [{
+    "family" : "Okonkwo",
+    "given" : ["Ada"]
+  }],
+  "gender" : "female",
+  "birthDate" : "2021-07-15",
+  "address" : [{
+    "line" : ["10 Akintola Street"],
+    "city" : "Enugu",
+    "district" : "Enugu North",
+    "state" : "Enugu"
+  }],
+  "contact" : [{
+    "relationship" : [{
+      "text" : "mother"
+    }],
+    "name" : {
+      "family" : "Okonkwo",
+      "given" : ["Nkechi"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "+2348031234567"
+    }],
+    "address" : {
+      "line" : ["15 Ogui Road"],
+      "city" : "New Heaven",
+      "district" : "Enugu Central",
+      "state" : "Enugu"
+    }
+  }]
+}

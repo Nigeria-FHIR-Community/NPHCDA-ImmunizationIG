@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ExampleNgImmPatient"/>
+  <meta>
+    <profile value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient ExampleNgImmPatient</b></p><a name="ExampleNgImmPatient"> </a><a name="hcExampleNgImmPatient"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgImmPatient.html">NgImmPatient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Ada Okonkwo  Female, DoB: 2021-07-15 ( http://hospital.org/mrn#123456)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">10 Akintola Street Enugu Enugu </td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: ">:</td><td colspan="3"><ul><li>Nkechi Okonkwo </li><li>15 Ogui Road New Heaven Enugu </li><li><a href="tel:+2348031234567">+2348031234567</a></li></ul></td></tr></table></div>
+  </text>
+  <extension url="ageInWeeks">
+    <valueInteger value="104"/>
+  </extension>
+  <extension url="ageInMonths">
+    <valueInteger value="24"/>
+  </extension>
+  <extension url="ageInYears">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="birthWeight">
+    <valueDecimal value="3.4"/>
+  </extension>
+  <extension url="hivStatus">
+    <valueString value="negative"/>
+  </extension>
+  <extension url="pregnancyStatus">
+    <valueString value="pregnant"/>
+  </extension>
+  <extension url="administrativeWard">
+    <valueCodeableConcept>
+      <coding>
+        <code value="Yaba"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="siblingSurname">
+    <valueString value="Okonkwo"/>
+  </extension>
+  <extension url="siblingGivenName">
+    <valueString value="Chinedu"/>
+  </extension>
+  <extension url="siblingBirthYear">
+    <valueDate value="2012"/>
+  </extension>
+  <extension url="siblingGender">
+    <valueString value="male"/>
+  </extension>
+  <identifier>
+    <system value="http://hospital.org/mrn"/>
+    <value value="123456"/>
+  </identifier>
+  <name>
+    <family value="Okonkwo"/>
+    <given value="Ada"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="2021-07-15"/>
+  <address>
+    <line value="10 Akintola Street"/>
+    <city value="Enugu"/>
+    <district value="Enugu North"/>
+    <state value="Enugu"/>
+  </address>
+  <contact>
+    <relationship>
+      <text value="mother"/>
+    </relationship>
+    <name>
+      <family value="Okonkwo"/>
+      <given value="Nkechi"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+2348031234567"/>
+    </telecom>
+    <address>
+      <line value="15 Ogui Road"/>
+      <city value="New Heaven"/>
+      <district value="Enugu Central"/>
+      <state value="Enugu"/>
+    </address>
+  </contact>
+</Patient>

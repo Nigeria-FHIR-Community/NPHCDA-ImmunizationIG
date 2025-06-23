@@ -61,7 +61,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-createddate
 InstanceOf: SearchParameter
-Title: "Search by Patient created date"
+Title: "Search by Patient's date of creation"
 Usage: #definition
 * name = "createddate"
 * status = #active
@@ -69,11 +69,11 @@ Usage: #definition
 * base = #Patient
 * type = #token
 * expression = "Patient.createddate"
-* description = "Search by patient created date"
+* description = "Search by patient's date of creation"
 
 Instance: SearchParameter-ngimm-state
 InstanceOf: SearchParameter
-Title: "Search by Patient state of residence"
+Title: "Search by Patient's state of residence"
 Usage: #definition
 * name = "state"
 * status = #active
@@ -81,7 +81,7 @@ Usage: #definition
 * base = #Patient
 * type = #token
 * expression = "Patient.state"
-* description = "Search by patient State of residence"
+* description = "Search by patient's State of residence"
 
 Instance: SearchParameter-ngimm-lga
 InstanceOf: SearchParameter
@@ -94,3 +94,56 @@ Usage: #definition
 * type = #token
 * expression = "Patient.lga"
 * description = "Search by patient LGA of residence"
+
+Instance: SearchParameter-ngimm-immpatient
+InstanceOf: SearchParameter
+Title: "Search Immunization records by patient"
+Usage: #definition
+* name = "immpatient"
+* status = #active
+* code = #immpatient
+* base = #Immunization
+* type = #token
+* expression = "Immunization.patient"
+* description = "Search Immunization records by patient"
+
+
+Instance: SearchParameter-ngimm-immstatus
+InstanceOf: SearchParameter
+Title: "Search Immunization records by status of immunization"
+Usage: #definition
+* name = "immstatus"
+* status = #active
+* code = #immstatus
+* base = #Immunization
+* type = #token
+* expression = "Immunization.status"
+* description = "Search Immunization records by status (eg. completed, or not done)"
+
+Instance: SearchParameter-ngimm-immvaccinecode
+InstanceOf: SearchParameter
+Title: "Search Immunization records by vaccine code"
+Usage: #definition
+* name = "immvaccinecode"
+* status = #active
+* code = #immvaccinecode
+* base = #Immunization
+* type = #token
+* expression = "Immunization.vaccinecode"
+* description = "Search Immunization records by vaccination code"
+
+
+
+Instance: SearchParameter-ngimm-immdate
+InstanceOf: SearchParameter
+Title: "Search Immunization records by date of vaccination"
+Usage: #definition
+* name = "immdate"
+* status = #active
+* code = #immdate
+* base = #Immunization
+* type = #token
+* expression = "Immunization.date"
+* description = "Search Immunization records by date of vaccination"
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="organization-example"/>
+  <meta>
+    <profile value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization organization-example</b></p><a name="organization-example"> </a><a name="hcorganization-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NgImmOrganization</a></p></div><p><b>identifier</b>: <code>https://hfr.gov.ng/facility-ids</code>/LA-989898</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:">public-chc</span></p><p><b>name</b>: NG Karu Comprehensive Health Center</p><p><b>telecom</b>: <a href="tel:+23490888888">+23490888888</a>, <a href="mailto:contact@emr.ng">contact@emr.ng</a></p><p><b>address</b>: 25 labaran maku  Ikeja Lagos </p></div>
+  </text>
+  <identifier>
+    <system value="https://hfr.gov.ng/facility-ids"/>
+    <value value="LA-989898"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <code value="public-chc"/>
+    </coding>
+  </type>
+  <name value="NG Karu Comprehensive Health Center"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+23490888888"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="contact@emr.ng"/>
+  </telecom>
+  <address>
+    <line value="25 labaran maku "/>
+    <city value="Ikeja"/>
+    <state value="Lagos"/>
+  </address>
+</Organization>

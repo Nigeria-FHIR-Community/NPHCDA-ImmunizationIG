@@ -1,0 +1,187 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nigeria-vaccine-library",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-vaccine-library</b></p><a name=\"nigeria-vaccine-library\"> </a><a name=\"hcnigeria-vaccine-library\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1861000221106<a name=\"nigeria-vaccine-library-1861000221106\"> </a></td><td>BCG birth dose</td><td>Vaccine terminology codes for Bacillus Calmette–Guérin (BCG).</td></tr><tr><td style=\"white-space:nowrap\">871822003<a name=\"nigeria-vaccine-library-871822003\"> </a></td><td>HepB birth dose</td><td>Vaccine terminology codes for Hepatitis B.</td></tr><tr><td style=\"white-space:nowrap\">1031000221108-0<a name=\"nigeria-vaccine-library-1031000221108-0\"> </a></td><td>Polio (OPV0) birth dose</td><td>Vaccine terminology codes for Polio.</td></tr><tr><td style=\"white-space:nowrap\">1162637003-1<a name=\"nigeria-vaccine-library-1162637003-1\"> </a></td><td>Pentavalent 1</td><td>Vaccine terminology codes for Pentavalent.</td></tr><tr><td style=\"white-space:nowrap\">1031000221108-1<a name=\"nigeria-vaccine-library-1031000221108-1\"> </a></td><td>Oral Polio Vaccine (OPV 1)</td><td>Vaccine terminology codes for Polio.</td></tr><tr><td style=\"white-space:nowrap\">1252709000-1<a name=\"nigeria-vaccine-library-1252709000-1\"> </a></td><td>Pneumococcal Conjugate Vaccine (PCV 1)</td><td>Vaccine terminology codes for pneumococcal conjugate vaccine.</td></tr><tr><td style=\"white-space:nowrap\">1081000221109-1<a name=\"nigeria-vaccine-library-1081000221109-1\"> </a></td><td>Rotavirus 1</td><td>Vaccine terminology codes for rotavirus.</td></tr><tr><td style=\"white-space:nowrap\">871740006-1<a name=\"nigeria-vaccine-library-871740006-1\"> </a></td><td>Inactivated Polio Vaccine (IPV 1)</td><td>Vaccine terminology codes for polio vaccine</td></tr><tr><td style=\"white-space:nowrap\">1031000221108-2<a name=\"nigeria-vaccine-library-1031000221108-2\"> </a></td><td>Oral Polio Vaccine (OPV 2)</td><td>Vaccine terminology codes for polio vaccine.</td></tr><tr><td style=\"white-space:nowrap\">1252709000-2<a name=\"nigeria-vaccine-library-1252709000-2\"> </a></td><td>Pneumococcal Conjugate Vaccine (PCV 2)</td><td>Vaccine terminology codes for pneumococcal conjugate vaccine</td></tr><tr><td style=\"white-space:nowrap\">1162637003-2<a name=\"nigeria-vaccine-library-1162637003-2\"> </a></td><td>Pentavalent 2</td><td>Vaccine terminology codes for pentavalent.</td></tr><tr><td style=\"white-space:nowrap\">1081000221109-2<a name=\"nigeria-vaccine-library-1081000221109-2\"> </a></td><td>Rotavirus 2</td><td>Vaccine terminology codes for rotavirus.</td></tr><tr><td style=\"white-space:nowrap\">1031000221108-3<a name=\"nigeria-vaccine-library-1031000221108-3\"> </a></td><td>Oral Polio Vaccine  (OPV 3)</td><td>Vaccine terminology codes for polio  vaccine.</td></tr><tr><td style=\"white-space:nowrap\">1162637003-3<a name=\"nigeria-vaccine-library-1162637003-3\"> </a></td><td>Pentavalent 3</td><td>Vaccine terminology codes for  pentavalent. SNOMED code</td></tr><tr><td style=\"white-space:nowrap\">1252709000-3<a name=\"nigeria-vaccine-library-1252709000-3\"> </a></td><td>Pneumococcal Conjugate Vaccine (PCV 3)</td><td>Vaccine terminology codes for pneumococcal conjugate vaccine</td></tr><tr><td style=\"white-space:nowrap\">1081000221109-3<a name=\"nigeria-vaccine-library-1081000221109-3\"> </a></td><td>Rotavirus 3</td><td>Vaccine terminology codes for rotavirus.</td></tr><tr><td style=\"white-space:nowrap\">871740006-2<a name=\"nigeria-vaccine-library-871740006-2\"> </a></td><td>Inactivated Polio Vaccine (IPV 2)</td><td>Vaccine terminology codes for polio.</td></tr><tr><td style=\"white-space:nowrap\">45861000087106-1<a name=\"nigeria-vaccine-library-45861000087106-1\"> </a></td><td>Malaria 1</td><td>Vaccine terminology codes for malaria</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE19-0<a name=\"nigeria-vaccine-library-IMMZ.46Z.46DE19-0\"> </a></td><td>Vitamin A 1</td><td>Terminology codes for Vitamin A. No SNOMED CT code</td></tr><tr><td style=\"white-space:nowrap\">45861000087106-2<a name=\"nigeria-vaccine-library-45861000087106-2\"> </a></td><td>Malaria 2</td><td>Vaccine terminology codes for malaria. Malaria is new, general code for products containing plasmodium falciparum antigen is used as SNOMED code - 45861000087106</td></tr><tr><td style=\"white-space:nowrap\">45861000087106-3<a name=\"nigeria-vaccine-library-45861000087106-3\"> </a></td><td>Malaria 3</td><td>Vaccine terminology codes for malaria. Malaria is new, general code for products containing plasmodium falciparum antigen is used as SNOMED code - 45861000087106</td></tr><tr><td style=\"white-space:nowrap\">871817003-1<a name=\"nigeria-vaccine-library-871817003-1\"> </a></td><td>Measles Rubella (MR 1)</td><td>Vaccine terminology codes for measles rubella.</td></tr><tr><td style=\"white-space:nowrap\">1121000221106<a name=\"nigeria-vaccine-library-1121000221106\"> </a></td><td>Yellow Fever</td><td>Vaccine terminology codes for yellow fever.</td></tr><tr><td style=\"white-space:nowrap\">871873006<a name=\"nigeria-vaccine-library-871873006\"> </a></td><td>Meningitis</td><td>Vaccine terminology codes for meningitis.</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE25-0<a name=\"nigeria-vaccine-library-IMMZ.46Z.46DE25-0\"> </a></td><td>Vitamin A 2</td><td>Vaccine terminology codes for Vitamin A. No SNOMED CT code</td></tr><tr><td style=\"white-space:nowrap\">871817003-2<a name=\"nigeria-vaccine-library-871817003-2\"> </a></td><td>Measles Rubella (MR2)</td><td>Vaccine terminology codes for measles rubella.</td></tr><tr><td style=\"white-space:nowrap\">45861000087106-4<a name=\"nigeria-vaccine-library-45861000087106-4\"> </a></td><td>Malaria 4</td><td>Vaccine terminology codes for malaria.Malaria is new, general code for products containing plasmodium falciparum antigen is used as SNOMED code - 45861000087106</td></tr><tr><td style=\"white-space:nowrap\">2031000221103<a name=\"nigeria-vaccine-library-2031000221103\"> </a></td><td>Tetanus Diptheria</td><td>Vaccine terminology codes for tetanus diptheria.</td></tr><tr><td style=\"white-space:nowrap\">911000221103<a name=\"nigeria-vaccine-library-911000221103\"> </a></td><td>Human PapillomaVirus (HPV)</td><td>Vaccine terminology codes for human papillomavirus.</td></tr></table></div>"
+  },
+  "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS",
+  "version" : "0.4.0",
+  "name" : "NGVaccineLibraryCS",
+  "title" : "NG Vaccine Library with SNOMED CT codes",
+  "status" : "active",
+  "date" : "2025-06-23T09:24:42+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG using SNOMED CT codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "hierarchyMeaning" : "is-a",
+  "content" : "complete",
+  "count" : 29,
+  "concept" : [{
+    "code" : "1861000221106",
+    "display" : "BCG birth dose",
+    "definition" : "Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)."
+  },
+  {
+    "code" : "871822003",
+    "display" : "HepB birth dose",
+    "definition" : "Vaccine terminology codes for Hepatitis B."
+  },
+  {
+    "code" : "1031000221108-0",
+    "display" : "Polio (OPV0) birth dose",
+    "definition" : "Vaccine terminology codes for Polio."
+  },
+  {
+    "code" : "1162637003-1",
+    "display" : "Pentavalent 1",
+    "definition" : "Vaccine terminology codes for Pentavalent."
+  },
+  {
+    "code" : "1031000221108-1",
+    "display" : "Oral Polio Vaccine (OPV 1)",
+    "definition" : "Vaccine terminology codes for Polio."
+  },
+  {
+    "code" : "1252709000-1",
+    "display" : "Pneumococcal Conjugate Vaccine (PCV 1)",
+    "definition" : "Vaccine terminology codes for pneumococcal conjugate vaccine."
+  },
+  {
+    "code" : "1081000221109-1",
+    "display" : "Rotavirus 1",
+    "definition" : "Vaccine terminology codes for rotavirus."
+  },
+  {
+    "code" : "871740006-1",
+    "display" : "Inactivated Polio Vaccine (IPV 1)",
+    "definition" : "Vaccine terminology codes for polio vaccine"
+  },
+  {
+    "code" : "1031000221108-2",
+    "display" : "Oral Polio Vaccine (OPV 2)",
+    "definition" : "Vaccine terminology codes for polio vaccine."
+  },
+  {
+    "code" : "1252709000-2",
+    "display" : "Pneumococcal Conjugate Vaccine (PCV 2)",
+    "definition" : "Vaccine terminology codes for pneumococcal conjugate vaccine"
+  },
+  {
+    "code" : "1162637003-2",
+    "display" : "Pentavalent 2",
+    "definition" : "Vaccine terminology codes for pentavalent."
+  },
+  {
+    "code" : "1081000221109-2",
+    "display" : "Rotavirus 2",
+    "definition" : "Vaccine terminology codes for rotavirus."
+  },
+  {
+    "code" : "1031000221108-3",
+    "display" : "Oral Polio Vaccine  (OPV 3)",
+    "definition" : "Vaccine terminology codes for polio  vaccine."
+  },
+  {
+    "code" : "1162637003-3",
+    "display" : "Pentavalent 3",
+    "definition" : "Vaccine terminology codes for  pentavalent. SNOMED code"
+  },
+  {
+    "code" : "1252709000-3",
+    "display" : "Pneumococcal Conjugate Vaccine (PCV 3)",
+    "definition" : "Vaccine terminology codes for pneumococcal conjugate vaccine"
+  },
+  {
+    "code" : "1081000221109-3",
+    "display" : "Rotavirus 3",
+    "definition" : "Vaccine terminology codes for rotavirus."
+  },
+  {
+    "code" : "871740006-2",
+    "display" : "Inactivated Polio Vaccine (IPV 2)",
+    "definition" : "Vaccine terminology codes for polio."
+  },
+  {
+    "code" : "45861000087106-1",
+    "display" : "Malaria 1",
+    "definition" : "Vaccine terminology codes for malaria"
+  },
+  {
+    "code" : "IMMZ.Z.DE19-0",
+    "display" : "Vitamin A 1",
+    "definition" : "Terminology codes for Vitamin A. No SNOMED CT code"
+  },
+  {
+    "code" : "45861000087106-2",
+    "display" : "Malaria 2",
+    "definition" : "Vaccine terminology codes for malaria. Malaria is new, general code for products containing plasmodium falciparum antigen is used as SNOMED code - 45861000087106"
+  },
+  {
+    "code" : "45861000087106-3",
+    "display" : "Malaria 3",
+    "definition" : "Vaccine terminology codes for malaria. Malaria is new, general code for products containing plasmodium falciparum antigen is used as SNOMED code - 45861000087106"
+  },
+  {
+    "code" : "871817003-1",
+    "display" : "Measles Rubella (MR 1)",
+    "definition" : "Vaccine terminology codes for measles rubella."
+  },
+  {
+    "code" : "1121000221106",
+    "display" : "Yellow Fever",
+    "definition" : "Vaccine terminology codes for yellow fever."
+  },
+  {
+    "code" : "871873006",
+    "display" : "Meningitis",
+    "definition" : "Vaccine terminology codes for meningitis."
+  },
+  {
+    "code" : "IMMZ.Z.DE25-0",
+    "display" : "Vitamin A 2",
+    "definition" : "Vaccine terminology codes for Vitamin A. No SNOMED CT code"
+  },
+  {
+    "code" : "871817003-2",
+    "display" : "Measles Rubella (MR2)",
+    "definition" : "Vaccine terminology codes for measles rubella."
+  },
+  {
+    "code" : "45861000087106-4",
+    "display" : "Malaria 4",
+    "definition" : "Vaccine terminology codes for malaria.Malaria is new, general code for products containing plasmodium falciparum antigen is used as SNOMED code - 45861000087106"
+  },
+  {
+    "code" : "2031000221103",
+    "display" : "Tetanus Diptheria",
+    "definition" : "Vaccine terminology codes for tetanus diptheria."
+  },
+  {
+    "code" : "911000221103",
+    "display" : "Human PapillomaVirus (HPV)",
+    "definition" : "Vaccine terminology codes for human papillomavirus."
+  }]
+}

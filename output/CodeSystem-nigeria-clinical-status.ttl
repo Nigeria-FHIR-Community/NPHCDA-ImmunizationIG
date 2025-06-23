@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nigeria-clinical-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-clinical-status</b></p><a name=\"nigeria-clinical-status\"> </a><a name=\"hcnigeria-clinical-status\"> </a><p>This  code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"nigeria-clinical-status-active\"> </a></td><td>Active</td><td>The clinical condition is currently present, ongoing, or requires active management or monitoring.</td></tr><tr><td style=\"white-space:nowrap\">inactive<a name=\"nigeria-clinical-status-inactive\"> </a></td><td>Inactive</td><td>The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment.</td></tr><tr><td style=\"white-space:nowrap\">resolved<a name=\"nigeria-clinical-status-resolved\"> </a></td><td>Resolved</td><td>The clinical condition has completely resolved and is no longer impacting the patient’s health or requiring further management.</td></tr><tr><td style=\"white-space:nowrap\">recovered<a name=\"nigeria-clinical-status-recovered\"> </a></td><td>Recovered</td><td>The individual has recovered fully from the adverse event without any long-term effects or sequelae.</td></tr><tr><td style=\"white-space:nowrap\">recovered-with-sequelae<a name=\"nigeria-clinical-status-recovered-with-sequelae\"> </a></td><td>Recovered with sequelae</td><td>The individual has recovered from the adverse event but with lasting effects, complications, or disabilities.</td></tr><tr><td style=\"white-space:nowrap\">death<a name=\"nigeria-clinical-status-death\"> </a></td><td>Death</td><td>The adverse event resulted in the death of the individual.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "NGClinicalStatusCS"] ; # 
+  fhir:title [ fhir:v "NG Adverse Event Clinical Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-23T09:24:42+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Active" ] ;
+     fhir:definition [ fhir:v "The clinical condition is currently present, ongoing, or requires active management or monitoring." ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/designation-usage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "display" ]
+       ] ;
+       fhir:value [ fhir:v "Active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "inactive" ] ;
+     fhir:display [ fhir:v "Inactive" ] ;
+     fhir:definition [ fhir:v "The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment." ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/designation-usage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "display" ]
+       ] ;
+       fhir:value [ fhir:v "Inactive" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "resolved" ] ;
+     fhir:display [ fhir:v "Resolved" ] ;
+     fhir:definition [ fhir:v "The clinical condition has completely resolved and is no longer impacting the patient’s health or requiring further management." ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/designation-usage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "display" ]
+       ] ;
+       fhir:value [ fhir:v "Resolved" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "recovered" ] ;
+     fhir:display [ fhir:v "Recovered" ] ;
+     fhir:definition [ fhir:v "The individual has recovered fully from the adverse event without any long-term effects or sequelae." ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/designation-usage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "display" ]
+       ] ;
+       fhir:value [ fhir:v "Recovered" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "recovered-with-sequelae" ] ;
+     fhir:display [ fhir:v "Recovered with sequelae" ] ;
+     fhir:definition [ fhir:v "The individual has recovered from the adverse event but with lasting effects, complications, or disabilities." ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/designation-usage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "display" ]
+       ] ;
+       fhir:value [ fhir:v "Recovered with sequelae" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "death" ] ;
+     fhir:display [ fhir:v "Death" ] ;
+     fhir:definition [ fhir:v "The adverse event resulted in the death of the individual." ] ;
+     fhir:designation ( [
+       fhir:use [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/designation-usage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "display" ]
+       ] ;
+       fhir:value [ fhir:v "Death" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

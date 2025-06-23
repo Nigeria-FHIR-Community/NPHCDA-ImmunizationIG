@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nigeria-facility-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-facility-type</b></p><a name=\"nigeria-facility-type\"> </a><a name=\"hcnigeria-facility-type\"> </a><p>This  code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">private-clinic<a name=\"nigeria-facility-type-private-clinic\"> </a></td><td>Private Clinic</td><td>The Health facility is a primary health facility owned by the private sector</td></tr><tr><td style=\"white-space:nowrap\">private-hospital<a name=\"nigeria-facility-type-private-hospital\"> </a></td><td>Private Hospital</td><td>The Health facility is a Secondary health facility owned by the private sector</td></tr><tr><td style=\"white-space:nowrap\">public-health-post<a name=\"nigeria-facility-type-public-health-post\"> </a></td><td>Public Health Post</td><td>The Health facility is a primary health facility owned by the government</td></tr><tr><td style=\"white-space:nowrap\">public-chc<a name=\"nigeria-facility-type-public-chc\"> </a></td><td>Public CHC</td><td>The Health facility is a comprehensive primary health center owned by the government</td></tr><tr><td style=\"white-space:nowrap\">public-general<a name=\"nigeria-facility-type-public-general\"> </a></td><td>General Hospitals</td><td>These are General Hospitals owned by the government</td></tr><tr><td style=\"white-space:nowrap\">faith-clinic<a name=\"nigeria-facility-type-faith-clinic\"> </a></td><td>Faith-based Clinics</td><td>These are PHCs owned by the owned by faith orgnization (eg. mission clinics)</td></tr><tr><td style=\"white-space:nowrap\">faith-hospital<a name=\"nigeria-facility-type-faith-hospital\"> </a></td><td>Faith-based Hospitals</td><td>These are Secondary facilities owned by faith orgnization (eg. mission Hospitals)</td></tr><tr><td style=\"white-space:nowrap\">tertiary<a name=\"nigeria-facility-type-tertiary\"> </a></td><td>Tertiary facility</td><td>These are Higher level facilities and referal centers)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "NGFacilityTypeCS"] ; # 
+  fhir:title [ fhir:v "NG Facility Type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-23T09:24:42+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "private-clinic" ] ;
+     fhir:display [ fhir:v "Private Clinic" ] ;
+     fhir:definition [ fhir:v "The Health facility is a primary health facility owned by the private sector" ]
+  ] [
+     fhir:code [ fhir:v "private-hospital" ] ;
+     fhir:display [ fhir:v "Private Hospital" ] ;
+     fhir:definition [ fhir:v "The Health facility is a Secondary health facility owned by the private sector" ]
+  ] [
+     fhir:code [ fhir:v "public-health-post" ] ;
+     fhir:display [ fhir:v "Public Health Post" ] ;
+     fhir:definition [ fhir:v "The Health facility is a primary health facility owned by the government" ]
+  ] [
+     fhir:code [ fhir:v "public-chc" ] ;
+     fhir:display [ fhir:v "Public CHC" ] ;
+     fhir:definition [ fhir:v "The Health facility is a comprehensive primary health center owned by the government" ]
+  ] [
+     fhir:code [ fhir:v "public-general" ] ;
+     fhir:display [ fhir:v "General Hospitals" ] ;
+     fhir:definition [ fhir:v "These are General Hospitals owned by the government" ]
+  ] [
+     fhir:code [ fhir:v "faith-clinic" ] ;
+     fhir:display [ fhir:v "Faith-based Clinics" ] ;
+     fhir:definition [ fhir:v "These are PHCs owned by the owned by faith orgnization (eg. mission clinics)" ]
+  ] [
+     fhir:code [ fhir:v "faith-hospital" ] ;
+     fhir:display [ fhir:v "Faith-based Hospitals" ] ;
+     fhir:definition [ fhir:v "These are Secondary facilities owned by faith orgnization (eg. mission Hospitals)" ]
+  ] [
+     fhir:code [ fhir:v "tertiary" ] ;
+     fhir:display [ fhir:v "Tertiary facility" ] ;
+     fhir:definition [ fhir:v "These are Higher level facilities and referal centers)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

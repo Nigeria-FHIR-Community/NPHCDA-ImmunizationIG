@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nigeria-pregnancy-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-pregnancy-status</b></p><a name="nigeria-pregnancy-status"> </a><a name="hcnigeria-pregnancy-status"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">pregnant<a name="nigeria-pregnancy-status-pregnant"> </a></td><td>Pregnant</td><td>The Client's pregnanty status is positive</td></tr><tr><td style="white-space:nowrap">notpregnant<a name="nigeria-pregnancy-status-notpregnant"> </a></td><td>Not Pregnany</td><td>The Client's pregnancy status is negative</td></tr><tr><td style="white-space:nowrap">unknown<a name="nigeria-pregnancy-status-unknown"> </a></td><td>Not known</td><td>The Client does not know their Pregnancy status</td></tr></table></div>
+  </text>
+  <url value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"/>
+  <version value="0.4.0"/>
+  <name value="NGPregnancyStatusCS"/>
+  <title value="NG Client Pregnancy status"/>
+  <status value="active"/>
+  <date value="2025-06-23T09:24:42+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem defines list of options for Pregnancy status of a Client"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="pregnant"/>
+    <display value="Pregnant"/>
+    <definition value="The Client's pregnanty status is positive"/>
+  </concept>
+  <concept>
+    <code value="notpregnant"/>
+    <display value="Not Pregnany"/>
+    <definition value="The Client's pregnancy status is negative"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Not known"/>
+    <definition value="The Client does not know their Pregnancy status"/>
+  </concept>
+</CodeSystem>

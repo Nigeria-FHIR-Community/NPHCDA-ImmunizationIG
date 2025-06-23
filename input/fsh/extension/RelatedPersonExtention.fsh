@@ -4,8 +4,8 @@ Title: "Sibling's health status"
 Description: "The health status of the Client's sibling"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
-* value[x] only integer
-* valueInteger ^short = "The health status of the Client's sibling"
+* value[x] only CodeableConcept
+* valueCodeableConcept ^short = "The health status of the Client's sibling"
 
 
 

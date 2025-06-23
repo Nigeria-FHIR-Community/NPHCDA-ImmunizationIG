@@ -9,15 +9,16 @@ Description: "Nigerian Profile for Immunization resource."
 * vaccineCode.text 0..1
 * vaccineCode.text ^short = "Vaccine Administered"
 * statusReason from NGImmunizationNotDoneReasonsVS (required)
-* statusReason ^short = "Reason not done"
+* statusReason ^short = "Reason immunization was not done (or was missed)"
 * status MS
-* status ^short = "completed| entered-in-error | not-done"
+* status from NGPrimaryVaccineStatusVS (required)
+* status ^short = "Status of Immunization e.g. completed| entered-in-error | not-done"
 * manufacturer MS
 * manufacturer.display 1..1
 * manufacturer.display ^short = "Name of the Manufacturer"
 * manufacturer.reference 1..1
 * manufacturer.reference ^short = "Manufacturer ID"
-* patient 1..1 MS
+* patient only Reference (NgImmPatient)
 * protocolApplied 0..* MS
 * protocolApplied.targetDisease 0..* MS
 * protocolApplied.targetDisease ^short = "Vaccine preventable disease being targeted" 
@@ -38,6 +39,7 @@ Description: "Nigerian Profile for Immunization resource."
 * performer.actor ^short = "Name of reporting officer" //Individual or organization who was performing
 
 * occurrence[x] only dateTime
+
 
 
 

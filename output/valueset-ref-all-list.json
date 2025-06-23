@@ -1,0 +1,936 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.133"],
+      "sources" : ["2.16.840.1.113883.4.642.3.133"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.129"],
+      "sources" : ["2.16.840.1.113883.4.642.3.129"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.131"],
+      "sources" : ["2.16.840.1.113883.4.642.3.131"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes",
+      "title" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "description" : "This value set includes concept codes for specific substances/pharmaceutical products, allergy or intolerance conditions, and negation/exclusion codes to specify the absence of specific types of allergies or intolerances.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.137"],
+      "sources" : ["2.16.840.1.113883.4.642.3.137"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composite-measure-scoring",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositeMeasureScoring",
+      "title" : "CompositeMeasureScoring",
+      "description" : "The composite scoring method of the measure.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/composite-measure-scoring"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.773"],
+      "sources" : ["2.16.840.1.113883.4.642.3.773"],
+      "uses" : {
+      },
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
+      "StructureDefinition-register-facility-model.html" : "A - Register Facility [information only]",
+      "StructureDefinition-register-client-model.html" : "C5 - Register Client [information only]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
+      "StructureDefinition-register-facility-model.html" : "A - Register Facility [information only]",
+      "StructureDefinition-register-client-model.html" : "C5 - Register Client [information only]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/definition-topic",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DefinitionTopic",
+      "title" : "DefinitionTopic",
+      "description" : "High-level categorization of the definition, used for searching, sorting, and filtering.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/definition-topic"],
+      "oids" : ["2.16.840.1.113883.4.642.3.794"],
+      "sources" : ["2.16.840.1.113883.4.642.3.794"],
+      "uses" : {
+      },
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFunctionCodes",
+      "title" : "Immunization Function Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the function a practitioner or organization may play in the immunization event. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0443"],
+      "oids" : ["2.16.840.1.113883.4.642.3.995"],
+      "sources" : ["2.16.840.1.113883.4.642.3.995"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFundingSource",
+      "title" : "Immunization Funding Source",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-funding-source"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.293"],
+      "sources" : ["2.16.840.1.113883.4.642.3.293"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-origin",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationOriginCodes",
+      "title" : "Immunization Origin Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-origin"],
+      "oids" : ["2.16.840.1.113883.4.642.3.296"],
+      "sources" : ["2.16.840.1.113883.4.642.3.296"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationProgramEligibility",
+      "title" : "Immunization Program Eligibility",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.291"],
+      "sources" : ["2.16.840.1.113883.4.642.3.291"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationReasonCodes",
+      "title" : "Immunization Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was administered. This value set is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.290"],
+      "sources" : ["2.16.840.1.113883.4.642.3.290"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRouteCodes",
+      "title" : "Immunization Route Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.289"],
+      "sources" : ["2.16.840.1.113883.4.642.3.289"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CodesForImmunizationSiteOfAdministration",
+      "title" : "Codes for Immunization Site of Administration",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the body site where the vaccination occurred. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActSite"],
+      "oids" : ["2.16.840.1.113883.4.642.3.288"],
+      "sources" : ["2.16.840.1.113883.4.642.3.288"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationSubpotentReason",
+      "title" : "Immunization Subpotent Reason",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.993"],
+      "sources" : ["2.16.840.1.113883.4.642.3.993"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-target-disease",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationTargetDiseaseCodes",
+      "title" : "Immunization Target Disease Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the disease that the dose is being administered against. This value set is provided as a suggestive example and includes the SNOMED CT concepts from the 64572001 (Disease) hierarchy.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1047"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1047"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Jurisdiction ValueSet",
+      "title" : "Jurisdiction",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization",
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance",
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization",
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/measure-data-usage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MeasureDataUsage",
+      "title" : "MeasureDataUsage",
+      "description" : "The intended usage for supplemental data elements in the measure.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/measure-data-usage"],
+      "oids" : ["2.16.840.1.113883.4.642.3.771"],
+      "sources" : ["2.16.840.1.113883.4.642.3.771"],
+      "uses" : {
+      },
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/measure-improvement-notation",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MeasureImprovementNotation",
+      "title" : "MeasureImprovementNotation",
+      "description" : "Observation values that indicate what change in a measurement value or score is indicative of an improvement in the measured item or scored issue.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/measure-improvement-notation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1236"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1236"],
+      "uses" : {
+      },
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/measure-population",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MeasurePopulationType",
+      "title" : "MeasurePopulationType",
+      "description" : "The type of population.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/measure-population"],
+      "oids" : ["2.16.840.1.113883.4.642.3.765"],
+      "sources" : ["2.16.840.1.113883.4.642.3.765"],
+      "uses" : {
+      },
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport",
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/measure-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MeasureReportStatus",
+      "title" : "MeasureReportStatus",
+      "description" : "The status of the measure report.",
+      "systems" : ["http://hl7.org/fhir/measure-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.776"],
+      "sources" : ["2.16.840.1.113883.4.642.3.776"],
+      "uses" : {
+      },
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/measure-report-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MeasureReportType",
+      "title" : "MeasureReportType",
+      "description" : "The type of the measure report.",
+      "systems" : ["http://hl7.org/fhir/measure-report-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.778"],
+      "sources" : ["2.16.840.1.113883.4.642.3.778"],
+      "uses" : {
+      },
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/measure-scoring",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MeasureScoring",
+      "title" : "MeasureScoring",
+      "description" : "The scoring type of the measure.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/measure-scoring"],
+      "oids" : ["2.16.840.1.113883.4.642.3.767"],
+      "sources" : ["2.16.840.1.113883.4.642.3.767"],
+      "uses" : {
+      },
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/measure-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MeasureType",
+      "title" : "MeasureType",
+      "description" : "The type of measure (includes codes from 2.16.840.1.113883.1.11.20368).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/measure-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.769"],
+      "sources" : ["2.16.840.1.113883.4.642.3.769"],
+      "uses" : {
+      },
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner",
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-measure-report-profile.html" : "NgImmMeasureReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PatientRelationshipType",
+      "title" : "Patient relationship type",
+      "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.449"],
+      "sources" : ["2.16.840.1.113883.4.642.3.449"],
+      "uses" : {
+      },
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/subject-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SubjectType",
+      "title" : "Subject type",
+      "description" : "Possible types of subjects.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.775"],
+      "sources" : ["2.16.840.1.113883.4.642.3.775"],
+      "uses" : {
+      },
+      "StructureDefinition-ngimm-measure.html" : "Nigeria Immunization Measure Definition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SubstanceCode",
+      "title" : "Substance Code",
+      "description" : "This value set contains concept codes for specific substances. It includes codes from [SNOMED](http://snomed.info/sct) where concept is-a 105590001 (Substance (substance)) and where concept is-a 373873005 (Pharmaceutical / biologic product (product))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.473"],
+      "sources" : ["2.16.840.1.113883.4.642.3.473"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/vaccine-code",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "VaccineAdministeredValueSet",
+      "title" : "Vaccine Administered Value Set",
+      "description" : "This identifies the vaccine substance administered - CVX codes.",
+      "systems" : ["urn:oid:1.2.36.1.2001.1005.17", "http://hl7.org/fhir/sid/cvx"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.22"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.22"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-allergy-severity",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGAllergySeverityVS",
+      "title" : "Allergy Severity",
+      "description" : "Vaccine reaction Severity",
+      "systems" : [
+        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGHivStatusVS",
+      "title" : "Client HIV Status",
+      "description" : "Client HIV Status",
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-status.html" : "Client's HIV status"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGPregnancyStatusVS",
+      "title" : "Client Preganancy Status",
+      "description" : "Client Pregnancy Status",
+      "systems" : [
+        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-pregnancy-status.html" : "Client's Pregnancy status"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGClinicalStatusVS",
+      "title" : "Reaction outcome",
+      "description" : "Reaction outcome clinical Status",
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGGenderVS",
+      "title" : "Gender or Sex",
+      "description" : "The administrative gender of a person.",
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGFacilityTypeVS",
+      "title" : "Health Facility Type",
+      "description" : " .",
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"],
+      "uses" : {
+      },
+      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGLGAsVS",
+      "title" : "Administrative LGAs",
+      "description" : "The administrative Local Government Aread where a person or a facility is.",
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-lgas"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGPrimaryVaccineStatusVS",
+      "title" : "Primary vaccine Status",
+      "description" : "Primary Vaccine Status",
+      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGImmunizationNotDoneReasonsVS",
+      "title" : "Reason for missed Vaccination",
+      "description" : "Reason for a Client missing the last or other vaccinations",
+      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status-reason"]
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGRelationshipsVS",
+      "title" : "Relationships",
+      "description" : "The administrative ward where a person or a facility is.",
+      "systems" : ["http://hl7.org/fhir/R4B/valueset-relationship"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGSessionTypeVS",
+      "title" : "Session type",
+      "description" : "Session type",
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"]
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGSiblingHealthStatusVS",
+      "title" : "Sibling Health Status",
+      "description" : "Sibling Health Status",
+      "systems" : [
+        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
+      ]
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGStatesVS",
+      "title" : "States",
+      "description" : "The administrative ward where a person or a facility is.",
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGContraindicationVS",
+      "title" : "Vaccine Contraindication",
+      "description" : "Vaccine Contraindication",
+      "systems" : [
+        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
+      ]
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGVaccineLibraryVS",
+      "title" : "Vaccines",
+      "description" : " .",
+      "systems" : [
+        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
+      ]
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGImmunizationRouteVS",
+      "title" : "Vaccine Route",
+      "description" : "Vaccine Route",
+      "systems" : ["https://www.hl7.org/fhir/R4/ng-valueset-immunization-route"]
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGImmunizationSiteVS",
+      "title" : "Vaccine Site",
+      "description" : "Vaccine Site",
+      "systems" : [
+        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-immunization-site"
+      ]
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGVerificationStatusVS",
+      "title" : "AEFI Verification Status",
+      "description" : "AEFI Verification Status",
+      "systems" : [
+        "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
+      ]
+    },
+    {
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGWardsVS",
+      "title" : "Wards",
+      "description" : "The administrative Ward (within an LGA) where a person or a facility is.",
+      "systems" : [
+        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nigeria-administrative-ward.html" : "Nigeria Administrative Wards "
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPractitioner.html" : "NgImmPractitioner"
+    }
+  ]
+}

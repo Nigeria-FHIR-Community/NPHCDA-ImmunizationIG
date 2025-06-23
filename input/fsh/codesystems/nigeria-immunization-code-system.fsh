@@ -77,7 +77,7 @@ Description: "This CodeSystem captures path by which a vaccine or medicinal prod
 * #Subcutaneous "Subcutaneous" "The vaccine is injected into the layer of fat and tissue just under the skin. It is typically used for vaccines like measles or yellow fever."
  */
 
-/* CodeSystem: NigeriaAllergySeverityCS
+CodeSystem: NigeriaAllergySeverityCS
 Id: nigeria-allergy-severity
 Title: "NG Reaction Severity"
 Description: "This CodeSystem captures the assessed severity of an allergic reaction following immunization."
@@ -89,7 +89,7 @@ Description: "This CodeSystem captures the assessed severity of an allergic reac
 // The CodeSystem for  Allergy Severity
 * #mild "Mild" "The allergic reaction involves mild symptoms such as localized redness, itching, or rash, without systemic involvement or need for significant medical intervention."
 * #moderate "Moderate" "The reaction includes more pronounced symptoms like widespread hives, mild breathing difficulty, or swelling that requires medical observation or treatment but is not life-threatening."
-* #severe "Severe" "The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise." */
+* #severe "Severe" "The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise."
 
 
 /* CodeSystem: NigeriaVerificationStatusCS

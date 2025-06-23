@@ -12,16 +12,3 @@ Description: "IMMZ.G - A logical model for tracking immunization defaulters."
   * ^code[+] = #NGVaccineLibraryVS
 * missedVaccineDate 1..1 date "Date of immunization missed" "The date immunization was due."
 * missedReason 0..1 string "Reason" "Capture's the reason(s) for a missed vaccination appointment."
-
-Instance: defaulter-tracing-example
-InstanceOf: DefaulterTracking
-Usage: #example
-* clientName = "John Doe"
-* clientSex = #IMMZ.G.DE2 "Male"
-* clientAge = 24
-* caregiverName = "Jane Doe"
-* caregiverPhone = "+2348012345678"
-* missedVaccine[+] = #IMMZ.G.DE6 "Measles"
-* missedVaccine[+] = #IMMZ.G.DE6 "Polio"
-* missedVaccineDate = "2025-02-15"
-* missedReason = "Caregiver forgot the appointment."

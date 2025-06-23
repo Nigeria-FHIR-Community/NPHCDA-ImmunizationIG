@@ -1,8 +1,8 @@
 
  <p>
   A persona is a depiction of a relevant stakeholder, or end-user, of the system. In this section, the goal is to provide a clear depiction of the end-users, supervisors, and related stakeholders who would be interacting with the digital system or involved in the care pathway. 
-  The personas were derived from the Basic Guide on Routine Immunization for Service Providers in Nigeria</a> 
-  and the  <a href="https://iris.who.int/bitstream/handle/10665/380303/9789240099456-eng.pdf?sequence=1" target="_blank">Digital Adaptation Kit for Immunization</a>. 
+  The personas were derived from the Basic Guide on Routine Immunization for Service Providers in Nigeria</p> 
+  and the  <a href="https://iris.who.int/bitstream/handle/10665/380303/9789240099456-eng.pdf?sequence=1" target="_blank"> Digital Adaptation Kit for Immunization</a>. 
   It was further refined to reflect Nigeria by identifying the real user personas during the requirement gathering workshop.
 </p>
 

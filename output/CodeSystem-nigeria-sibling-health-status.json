@@ -1,0 +1,62 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nigeria-sibling-health-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-sibling-health-status</b></p><a name=\"nigeria-sibling-health-status\"> </a><a name=\"hcnigeria-sibling-health-status\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">alive<a name=\"nigeria-sibling-health-status-alive\"> </a></td><td>Alive</td><td>Sibling referenced is still alive</td></tr><tr><td style=\"white-space:nowrap\">dead<a name=\"nigeria-sibling-health-status-dead\"> </a></td><td>Dead</td><td>Sibling referenced is dead</td></tr><tr><td style=\"white-space:nowrap\">well<a name=\"nigeria-sibling-health-status-well\"> </a></td><td>well</td><td>Sibling reference is alive and well</td></tr><tr><td style=\"white-space:nowrap\">diseased<a name=\"nigeria-sibling-health-status-diseased\"> </a></td><td>underlying disease</td><td>Referenced Sibling has an underlying disease</td></tr></table></div>"
+  },
+  "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS",
+  "version" : "0.4.0",
+  "name" : "NGSiblingHealthStatusCS",
+  "title" : "NG Sibling Health Status",
+  "status" : "active",
+  "date" : "2025-06-23T09:24:42+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This CodeSystem defines list of relationships that a part of this IG",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "hierarchyMeaning" : "is-a",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "alive",
+    "display" : "Alive",
+    "definition" : "Sibling referenced is still alive"
+  },
+  {
+    "code" : "dead",
+    "display" : "Dead",
+    "definition" : "Sibling referenced is dead"
+  },
+  {
+    "code" : "well",
+    "display" : "well",
+    "definition" : "Sibling reference is alive and well"
+  },
+  {
+    "code" : "diseased",
+    "display" : "underlying disease",
+    "definition" : "Referenced Sibling has an underlying disease"
+  }]
+}

@@ -11,42 +11,42 @@ The listed search parameters are derived from standard FHIR-defined parameters, 
 
 | **Name**        | **Type** | **FHIR Path**            | **Description**                                                                 |
 |----------------|----------|--------------------------|---------------------------------------------------------------------------------|
-| `identifier`   | `token`  | `Patient.identifier`     | Search by patient’s unique identifier such as NIN or program ID.               |
+| `identifier`   | `token`  | `Patient.identifier`     | Search by patient’s unique identifier such as NIN or program ID.              |
 | `firstname`         | `string` | `Patient.firstname`       | Search by patient’s given name.                                      |
 | `lastname`         | `string` | `Patient.lastname`       | Search by patient’s family name.                                      |
 | `birthdate`    | `date`   | `Patient.birthDate`      | Filter patients by date of birth. Format: YYYY-MM-DD.                          |
-| `createdate`    | `createdate`   | `Patient.createDate`      | Filter patients by date of record creation. Format: YYYY-MM-DD.                          |
-| `gender`       | `token`  | `Patient.gender`         | Filter patients by sex (Male, Female). Bound to `[NGGenderVS](ValueSet-nigeria-gender.html)`.                  |
-| `address-state`| `string` | `Patient.address.state`  | Search by the state of residence. Bound to `[NGStatesVS](ValueSet-nigeria-states.html)`.                       |
-| `address-lgas` | `string` | `Patient.address.district` | Search by Local Government Area (LGA). Bound to `[NGLGAsVS](ValueSet-nigeria-lgas.html)`.              |
+| `createdate`    | `createdate`   | `Patient.createDate`      | Filter patients by date of record creation. Format: YYYY-MM-DD.        |
+| `gender`       | `token`  | `Patient.gender`         | Filter patients by sex (Male, Female). Bound to [**NGGenderVS**](ValueSet-nigeria-gender.html).                  |
+| `address-state`| `string` | `Patient.address.state`  | Search by the state of residence. Bound to [**NGStatesVS**](ValueSet-nigeria-states.html).                       |
+| `address-lgas` | `string` | `Patient.address.district` | Search by Local Government Area (LGA). Bound to [**NGLGAsVS**](ValueSet-nigeria-lgas.html). |
 
 ---
 
 #### Examples of Use
 
 ##### 1. Search by Patient Identifier
-```html
+```markdown
 GET [base]/Patient?identifier=NIN35635556
 ```
 
 ##### 2. Search by FiName
-```html
+```markdoown
 GET [base]/Patient?name=Chukwu
 ```
 
 ##### 3. Search by Date of Birth
-```html
+```markdown
 GET [base]/Patient?birthdate=2022-07-15
 ```
 
 ##### 4. Search by State of Residence
-```html
+```markdown
 GET [base]/Patient?address-state=Benue
 ```
 
 
 
-## Immunization Profile: [NgImmImmunization](StructureDefinition-NgImmImmunization.html)
+#### List of supported search for [NgImmImmunization](StructureDefinition-NgImmImmunization.html) Profile:
 
 | **Name**        | **Type** | **FHIR Path**                 | **Description**                                                                 |
 |----------------|----------|-------------------------------|---------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ GET [base]/Patient?address-state=Benue
 
 #### Notes
 - All search parameters comply with FHIR R4 standards and SMART Guidelines principles.
-- Custom value sets such as `[NGStatesVS](ValueSet-nigeria-states.html)`, `[NGLGAsVS](ValueSet-nigeria-lgas.html)`, and `[NGGenderVS](ValueSet-nigeria-gender.html)` are used to ensure consistency across systems.
+- Custom value sets such as [**NGStatesVS**](ValueSet-nigeria-states.html), [**NGLGAsVS**](ValueSet-nigeria-lgas.html), and [**NGGenderVS**](ValueSet-nigeria-gender.html) are used to ensure consistency across systems.
 - Implementers are encouraged to optimize server-side indexing for these fields to enable fast and scalable search.
 
 ---
@@ -90,23 +90,24 @@ This page describes the RESTful interactions supported for systems implementing 
 #### Examples of Use
 
 ##### 1. Read Patient by ID
-```html
+```markdown
 GET /Patient/12345
 ```
 
 ##### 2. Search for Patient by Identifier
-```html
+```markdown
 GET /Patient?identifier=NIN12345678
 ```
 
 ##### 3. Create New Patient Record
 
-```http
+```markdown
 POST /Patient
 Content-Type: application/fhir+json
 ```
 
-```http
+
+```json
 {
   "resourceType": "Patient",
   "identifier": [
@@ -128,12 +129,12 @@ Content-Type: application/fhir+json
 ```
 ##### 4. Update an Existing Record
 
-```html
+```markdown
 PUT /Patient/12345
 Content-Type: application/fhir+json
 ```
 
-```http
+```json
 {
   "resourceType": "Patient",
   "id": "12345",

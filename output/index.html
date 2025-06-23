@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - Nigeria Immunization FHIR IG v0.4.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Immunization FHIR IG</span>
+            <br/>
+            <span style="display:inline-block;">0.4.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+
+ <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
+  
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements (DAKs)-(L2)<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="generic-personas.html">Generic Personas</a></li>
+      <li><a href="user-scenarios.html">User Scenarios</a></li>
+      <li><a href="business-processes.html">Business Processes &amp; Workflows</a></li>
+      <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
+       <li><a href="functional-requirements.html">Functional Requirements</a></li>
+       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
+      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
+      <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
+      <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
+    </ul>
+  </li>
+
+
+  <li> <a href="search-operation.html" >Search and Operations</a></li> 
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Immunization FHIR IG - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://nphcda.gov.ng/immunizationIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunization<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunization"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunization|0.4.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-06-23
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NigeriaimmunizationFHIRIG</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#nigeria-immunization-fhir-implementation-guide-ig" id="markdown-toc-nigeria-immunization-fhir-implementation-guide-ig">Nigeria Immunization FHIR Implementation Guide (IG)</a>    <ul>
+      <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+      <li><a href="#background" id="markdown-toc-background">Background</a></li>
+      <li><a href="#scope-of-the-fhir-implementation-guide" id="markdown-toc-scope-of-the-fhir-implementation-guide">Scope of the FHIR Implementation Guide</a></li>
+      <li><a href="#interaction-between-priority-systems" id="markdown-toc-interaction-between-priority-systems">Interaction Between priority Systems</a></li>
+      <li><a href="#concepts" id="markdown-toc-concepts">Concepts</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="nigeria-immunization-fhir-implementation-guide-ig">Nigeria Immunization FHIR Implementation Guide (IG)</h1>
+
+<h4 id="revision-history">Revision History</h4>
+
+<table class="table table-hover table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Reason for Changes</th>
+            <th>Version</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nigeria Primary Healthcare Development Agency</td>
+            <td>23rd June 2025</td>
+            <td>Fourth Draft</td>
+            <td>0.4.0</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country’s adoption of the WHO SMART Guidelines approach by presenting the Digital Adaptation Kit (Business Requirments) for Immunization developed from Nigeria Primary Healthcare Development Agency (NPHCDA) immunization guidelines. In addition, this IG presents the minimal Client/Server Capability for software-agnostic immunization systems in Nigeria. It presents the workflow in form of logical models, profiles and extensions, terminology structures (ValueSets and CodeSystems), and examples. Also, key operations necessary for conformance of the priority profiles where also presented. This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions.</p>
+
+<h3 id="background">Background</h3>
+
+<p>Immunization is one of the most cost-effective public health interventions, yet many countries, including Nigeria, face challenges in achieving full vaccine coverage. Digital tools and data management systems are being integrated into immunization programs to improve efficiency, accuracy, and accessibility. However, the successful adoption and scaling of these systems require solutions that are country-driven, user-friendly, reliable, and contextually relevant.</p>
+
+<p>The WHO SMART Guidelines provide a standardized framework for developing and implementing interoperable, evidence-based, and scalable digital health solutions. This is particularly crucial for immunization, where timely and accurate data supports vaccine coverage tracking, identification of zero-dose children, and equitable service delivery. A key component of this approach is the Digital Adaptation Kit (DAK), which includes health interventions, workflows, core data elements, decision support logic, and other technical components necessary for effective immunization service management.</p>
+
+<p>Nigeria has faced challenges such as data quality issues, fragmented systems, and disparities in access to immunization services. To address these, the country is aligning with the SMART Guidelines methodology and national health strategies like the National Immunization Strategy (NIS) and Immunization Agenda 2030 (IA2030). This initiative aims to enhance data interoperability, decision-making, and service delivery through the adoption of FHIR-based digital systems.</p>
+
+<p>A User Requirement Gathering (URG) process is critical in developing Nigeria’s Immunization DAK. This process ensures that the digital immunization system is effective, adaptable, and user-friendly by engaging key stakeholders (health workers, program managers, and data specialists) to define essential system functionalities. This FHIR Implementation Guide (IG) serves as a blueprint for Nigeria’s interoperable, scalable, and standardized immunization data system, ensuring seamless integration with national and global health initiatives.</p>
+
+<h3 id="scope-of-the-fhir-implementation-guide">Scope of the FHIR Implementation Guide</h3>
+
+<p>This Implementation Guide (IG) defines the core FHIR profiles, extensions, value sets, and terminology bindings required to support routine immunization workflows in Nigeria, using HL7® FHIR® standards using the WHO SMART Guidelines framework. Developed under the leadership of the National Primary Health Care Development Agency (NPHCDA), this IG provides structured guidance for digitizing, exchanging, and interpreting immunization-related data in an interoperable and scalable way.</p>
+
+<p>The scope of this guide focuses on the following core components:</p>
+<ul>
+  <li><strong>Standardizing how immunization clients (patients) are registered and managed</strong>, using the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> profile.</li>
+  <li><strong>Structuring immunization service delivery records</strong>, such as vaccine administration, using the <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profile.</li>
+  <li><strong>Defining the necessary search parameters, RESTful operations, and data constraints</strong> to ensure interoperable exchange of immunization data across digital platforms.</li>
+  <li><strong>Providing the minimum data structures required</strong> for systems to exchange immunization-related data across multiple levels of the health system, from point-of-care to national dashboards.</li>
+</ul>
+
+<h4 id="use-cases-covered-in-this-guide">Use cases covered in this guide</h4>
+<p>The IG covers the following key immunization use cases (which will continue to expand in subsequent iterations) prioritized by NPHCDA and stakeholders:</p>
+
+<ul>
+  <li><strong>Health Facility Registration and Update</strong> <br />
+Standardizes how health facilities are referenced or updated in immunization records using external facility registries.</li>
+  <li><strong>Routine Immunization Client Registration and Update</strong><br />
+Enables consistent identification and demographic capture of children and caregivers for immunization purposes.</li>
+  <li><strong>Planning Vaccination Sessions</strong> <br />
+  Provides structure for managing immunization sessions, target population, and logistics information.</li>
+  <li><strong>Administer Vaccine</strong> <br />
+  Captures all necessary data about the immunization event, including vaccine product, lot number, site, route, and performer.</li>
+  <li><strong>Manage and Report Adverse Events Following Immunization (AEFI)</strong> <br />
+  Supports linking immunization events with reported AEFIs for monitoring and reporting purposes.</li>
+  <li><strong>Defaulter Tracking</strong> <br />
+  Provides mechanisms to identify and recall clients who have missed scheduled doses.</li>
+  <li><strong>Report Generation</strong> <br />
+  Enables data aggregation and export for DHIS2, performance dashboards, or public health surveillance.</li>
+</ul>
+
+<p>This guide does <strong>not prescribe a specific software platform or vendor product</strong>. Instead, it defines a set of national interoperability standards that can be adopted by EMR vendors, immunization registries, mobile app developers, and data exchange platforms to ensure consistency, data quality, and alignment with Nigeria’s digital health strategy.</p>
+
+<h4 id="high-level-workflows">High level workflows</h4>
+<p>The overview of the business processes in this DAK captures all business processes at a high level.</p>
+<div> 
+<img src="workflow-summary-bpmn.png" alt="summary" style="width:85%" />
+</div>
+
+<h3 id="interaction-between-priority-systems">Interaction Between priority Systems</h3>
+
+<p>This FHIR IG is designed to promote system <strong>interoperability</strong> across the Nigerian digital health ecosystem. The artifacts defined in this guide (such as profiles, extensions, and value sets) are intended to work in conjunction with external health and administrative data systems to enable seamless integration and real-time information sharing.
+Specifically, this IG enables integration with the following external platforms:</p>
+
+<ul>
+  <li><strong>National Health Facility Registry (HFR)</strong>
+ Enables linking of immunization events and service delivery to verified and uniquely identified facilities in the country.</li>
+  <li><strong>Health Workforce Registry (HWR)</strong>
+Facilitates referencing of vaccinators, supervisors, and AEFI reporters using standardized practitioner records (eg. MDCN or other Workforce Registry).</li>
+  <li><strong>National Health Management Information System (HMIS - DHIS2)</strong>
+ Supports reporting of immunization indicators and AEFI statistics to national dashboards through aggregate or individual record submission.</li>
+  <li><strong>Civil Registration and Vital Statistics (CRVS) Platform</strong>
+ Supports potential linkages with birth registration systems to promote timely identification of newborns eligible for immunization.</li>
+  <li><strong>Analytics Tools and Dashboards</strong>
+Provides clean, structured data for integration with data analytics platforms for coverage monitoring, predictive modeling, and operational intelligence.</li>
+</ul>
+
+<p>These integrations are essential to achieving the goals of a nationally scalable, data-driven immunization system, and reflect Nigeria’s commitment to advancing digital public infrastructure (DPIs) and universal health coverage (UHC).</p>
+
+<h3 id="concepts">Concepts</h3>
+<table class="table table-hover table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>SN</th>
+      <th>Acronym</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>AEFI</td>
+      <td>Adverse Event Following Immunization</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>BCG</td>
+      <td>Bacille Calmette-Guérin</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>BPMN</td>
+      <td>Business Process Modelling Notation</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>CHEW</td>
+      <td>Community Health Extension Worker</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>DAK</td>
+      <td>Digital Adaptation Kit</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>DHI</td>
+      <td>Digital Health Information</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>DPT</td>
+      <td>Diphtheria, Pertussis, Tetanus</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>eCHIS</td>
+      <td>electronic Community Health Information System</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>EIR</td>
+      <td>Electronic Immunization Registry</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>EPI</td>
+      <td>Expanded Program on Immunization</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>FMoHSW</td>
+      <td>Federal Ministry of Health and Social Welfare</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>Hep B</td>
+      <td>Hepatitis B Vaccine</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>HPV</td>
+      <td>Human Papilloma Virus</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>HWR</td>
+      <td>Health Workforce Registry</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>HFR</td>
+      <td>Health Facility Registry</td>
+    </tr>
+    <tr>
+      <td>16.</td>
+      <td>IPV</td>
+      <td>Inactivated Polio Vaccine</td>
+    </tr>
+      <tr>
+      <td>17.</td>
+      <td>LIO</td>
+      <td>Logistics Immunization officer</td>
+    </tr>
+    <tr>
+      <td>18.</td>
+      <td>LGA</td>
+      <td>Local Government Authority</td>
+    </tr>
+    <tr>
+      <td>19.</td>
+      <td>NPHCDA</td>
+      <td>National Primary Healthcare Development Agency</td>
+    </tr>
+    <tr>
+      <td>20.</td>
+      <td>OPV</td>
+      <td>Oral Polio Vaccine</td>
+    </tr>
+    <tr>
+      <td>21.</td>
+      <td>PHC</td>
+      <td>Primary HealthCare</td>
+    </tr>
+    <tr>
+      <td>22.</td>
+      <td>SIO</td>
+      <td>State Routine Immunization Officer</td>
+    </tr>
+    <tr>
+      <td>23.</td>
+      <td>OIC</td>
+      <td>Officer In Charge</td>
+    </tr>
+    
+    <tr>
+      <td>24.</td>
+      <td>SMoH</td>
+      <td>State Ministry of Health</td>
+    </tr>
+    <tr>
+      <td>25.</td>
+      <td>SPHCDA</td>
+      <td>State Primary Healthcare Development Agency</td>
+    </tr>
+
+    <tr>
+      <td>26.</td>
+      <td>SMART</td>
+      <td>Standards-based, Machine-readable, Adaptive, Requirements-based, Testable</td>
+    </tr>
+    <tr>
+      <td>27.</td>
+      <td>SRS</td>
+      <td>Software Requirements Specification</td>
+    </tr>
+    <tr>
+      <td>28.</td>
+      <td>WHO</td>
+      <td>World Health Organization</td>
+    </tr>
+  </tbody>
+
+
+</table>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunization#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 23, 2025 09:25+0100">2025-06-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

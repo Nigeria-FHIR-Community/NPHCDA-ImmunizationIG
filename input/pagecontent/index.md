@@ -46,7 +46,7 @@ The scope of this guide focuses on the following core components:
 - **Defining the necessary search parameters, RESTful operations, and data constraints** to ensure interoperable exchange of immunization data across digital platforms.
 - **Providing the minimum data structures required** for systems to exchange immunization-related data across multiple levels of the health system, from point-of-care to national dashboards.
 
-### Use cases covered in this guide
+#### Use cases covered in this guide
 The IG covers the following key immunization use cases (which will continue to expand in subsequent iterations) prioritized by NPHCDA and stakeholders:
 
 - **Health Facility Registration and Update** <br>
@@ -64,8 +64,15 @@ The IG covers the following key immunization use cases (which will continue to e
 - **Report Generation** <br>
     Enables data aggregation and export for DHIS2, performance dashboards, or public health surveillance.
 
-
 This guide does **not prescribe a specific software platform or vendor product**. Instead, it defines a set of national interoperability standards that can be adopted by EMR vendors, immunization registries, mobile app developers, and data exchange platforms to ensure consistency, data quality, and alignment with Nigeria’s digital health strategy.
+
+#### High level workflows
+The overview of the business processes in this DAK captures all business processes at a high level.
+ <div> 
+<img src="workflow-summary-bpmn.png" alt="summary" style="width:85%"/>
+</div>
+
+
 
 ### Interaction Between priority Systems
 
@@ -88,9 +95,8 @@ These integrations are essential to achieving the goals of a nationally scalable
 
 ### Concepts
  <table class="table table-hover table-bordered table-striped">
-    <thead>
-        <tr>
- 
+  <thead>
+    <tr>
       <th>SN</th>
       <th>Acronym</th>
       <th>Meaning</th>
@@ -109,66 +115,133 @@ These integrations are essential to achieving the goals of a nationally scalable
     </tr>
     <tr>
       <td>3.</td>
+      <td>BPMN</td>
+      <td>Business Process Modelling Notation</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>CHEW</td>
+      <td>Community Health Extension Worker</td>
+    </tr>
+    <tr>
+      <td>5.</td>
       <td>DAK</td>
       <td>Digital Adaptation Kit</td>
     </tr>
     <tr>
-      <td>4.</td>
+      <td>6.</td>
+      <td>DHI</td>
+      <td>Digital Health Information</td>
+    </tr>
+    <tr>
+      <td>7.</td>
       <td>DPT</td>
       <td>Diphtheria, Pertussis, Tetanus</td>
     </tr>
     <tr>
-      <td>5.</td>
+      <td>8.</td>
+      <td>eCHIS</td>
+      <td>electronic Community Health Information System</td>
+    </tr>
+    <tr>
+      <td>9.</td>
       <td>EIR</td>
       <td>Electronic Immunization Registry</td>
     </tr>
     <tr>
-      <td>6.</td>
+      <td>10.</td>
       <td>EPI</td>
       <td>Expanded Program on Immunization</td>
     </tr>
     <tr>
-      <td>7.</td>
+      <td>11.</td>
       <td>FMoHSW</td>
       <td>Federal Ministry of Health and Social Welfare</td>
     </tr>
     <tr>
-      <td>8.</td>
+      <td>12.</td>
       <td>Hep B</td>
       <td>Hepatitis B Vaccine</td>
     </tr>
     <tr>
-      <td>9.</td>
+      <td>13.</td>
       <td>HPV</td>
       <td>Human Papilloma Virus</td>
     </tr>
     <tr>
-      <td>10.</td>
+      <td>14.</td>
+      <td>HWR</td>
+      <td>Health Workforce Registry</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>HFR</td>
+      <td>Health Facility Registry</td>
+    </tr>
+    <tr>
+      <td>16.</td>
       <td>IPV</td>
       <td>Inactivated Polio Vaccine</td>
     </tr>
+      <tr>
+      <td>17.</td>
+      <td>LIO</td>
+      <td>Logistics Immunization officer</td>
+    </tr>
     <tr>
-      <td>11.</td>
+      <td>18.</td>
+      <td>LGA</td>
+      <td>Local Government Authority</td>
+    </tr>
+    <tr>
+      <td>19.</td>
       <td>NPHCDA</td>
       <td>National Primary Healthcare Development Agency</td>
     </tr>
     <tr>
-      <td>12.</td>
+      <td>20.</td>
       <td>OPV</td>
       <td>Oral Polio Vaccine</td>
     </tr>
     <tr>
-      <td>13.</td>
+      <td>21.</td>
+      <td>PHC</td>
+      <td>Primary HealthCare</td>
+    </tr>
+    <tr>
+      <td>22.</td>
+      <td>SIO</td>
+      <td>State Routine Immunization Officer</td>
+    </tr>
+    <tr>
+      <td>23.</td>
+      <td>OIC</td>
+      <td>Officer In Charge</td>
+    </tr>
+    
+    <tr>
+      <td>24.</td>
+      <td>SMoH</td>
+      <td>State Ministry of Health</td>
+    </tr>
+    <tr>
+      <td>25.</td>
+      <td>SPHCDA</td>
+      <td>State Primary Healthcare Development Agency</td>
+    </tr>
+
+    <tr>
+      <td>26.</td>
       <td>SMART</td>
       <td>Standards-based, Machine-readable, Adaptive, Requirements-based, Testable</td>
     </tr>
     <tr>
-      <td>14.</td>
+      <td>27.</td>
       <td>SRS</td>
       <td>Software Requirements Specification</td>
     </tr>
     <tr>
-      <td>15.</td>
+      <td>28.</td>
       <td>WHO</td>
       <td>World Health Organization</td>
     </tr>

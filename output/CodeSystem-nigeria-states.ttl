@@ -1,0 +1,163 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nigeria-states"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-states</b></p><a name=\"nigeria-states\"> </a><a name=\"hcnigeria-states\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AB<a name=\"nigeria-states-AB\"> </a></td><td>Abia</td></tr><tr><td style=\"white-space:nowrap\">AD<a name=\"nigeria-states-AD\"> </a></td><td>Adamawa</td></tr><tr><td style=\"white-space:nowrap\">AK<a name=\"nigeria-states-AK\"> </a></td><td>Akwa Ibom</td></tr><tr><td style=\"white-space:nowrap\">AN<a name=\"nigeria-states-AN\"> </a></td><td>Anambra</td></tr><tr><td style=\"white-space:nowrap\">BA<a name=\"nigeria-states-BA\"> </a></td><td>Bauchi</td></tr><tr><td style=\"white-space:nowrap\">BY<a name=\"nigeria-states-BY\"> </a></td><td>Bayelsa</td></tr><tr><td style=\"white-space:nowrap\">BE<a name=\"nigeria-states-BE\"> </a></td><td>Benue</td></tr><tr><td style=\"white-space:nowrap\">BO<a name=\"nigeria-states-BO\"> </a></td><td>Borno</td></tr><tr><td style=\"white-space:nowrap\">CR<a name=\"nigeria-states-CR\"> </a></td><td>Cross River</td></tr><tr><td style=\"white-space:nowrap\">DE<a name=\"nigeria-states-DE\"> </a></td><td>Delta</td></tr><tr><td style=\"white-space:nowrap\">EB<a name=\"nigeria-states-EB\"> </a></td><td>Ebonyi</td></tr><tr><td style=\"white-space:nowrap\">ED<a name=\"nigeria-states-ED\"> </a></td><td>Edo</td></tr><tr><td style=\"white-space:nowrap\">EK<a name=\"nigeria-states-EK\"> </a></td><td>Ekiti</td></tr><tr><td style=\"white-space:nowrap\">EN<a name=\"nigeria-states-EN\"> </a></td><td>Enugu</td></tr><tr><td style=\"white-space:nowrap\">GO<a name=\"nigeria-states-GO\"> </a></td><td>Gombe</td></tr><tr><td style=\"white-space:nowrap\">IM<a name=\"nigeria-states-IM\"> </a></td><td>Imo</td></tr><tr><td style=\"white-space:nowrap\">JI<a name=\"nigeria-states-JI\"> </a></td><td>Jigawa</td></tr><tr><td style=\"white-space:nowrap\">KD<a name=\"nigeria-states-KD\"> </a></td><td>Kaduna</td></tr><tr><td style=\"white-space:nowrap\">KN<a name=\"nigeria-states-KN\"> </a></td><td>Kano</td></tr><tr><td style=\"white-space:nowrap\">KT<a name=\"nigeria-states-KT\"> </a></td><td>Katsina</td></tr><tr><td style=\"white-space:nowrap\">KB<a name=\"nigeria-states-KB\"> </a></td><td>Kebbi</td></tr><tr><td style=\"white-space:nowrap\">KO<a name=\"nigeria-states-KO\"> </a></td><td>Kogi</td></tr><tr><td style=\"white-space:nowrap\">KW<a name=\"nigeria-states-KW\"> </a></td><td>Kwara</td></tr><tr><td style=\"white-space:nowrap\">LA<a name=\"nigeria-states-LA\"> </a></td><td>Lagos</td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"nigeria-states-NA\"> </a></td><td>Nasarawa</td></tr><tr><td style=\"white-space:nowrap\">NI<a name=\"nigeria-states-NI\"> </a></td><td>Niger</td></tr><tr><td style=\"white-space:nowrap\">OG<a name=\"nigeria-states-OG\"> </a></td><td>Ogun</td></tr><tr><td style=\"white-space:nowrap\">ON<a name=\"nigeria-states-ON\"> </a></td><td>Ondo</td></tr><tr><td style=\"white-space:nowrap\">OS<a name=\"nigeria-states-OS\"> </a></td><td>Osun</td></tr><tr><td style=\"white-space:nowrap\">OY<a name=\"nigeria-states-OY\"> </a></td><td>Oyo</td></tr><tr><td style=\"white-space:nowrap\">PL<a name=\"nigeria-states-PL\"> </a></td><td>Plateau</td></tr><tr><td style=\"white-space:nowrap\">RI<a name=\"nigeria-states-RI\"> </a></td><td>Rivers</td></tr><tr><td style=\"white-space:nowrap\">SO<a name=\"nigeria-states-SO\"> </a></td><td>Sokoto</td></tr><tr><td style=\"white-space:nowrap\">TA<a name=\"nigeria-states-TA\"> </a></td><td>Taraba</td></tr><tr><td style=\"white-space:nowrap\">YO<a name=\"nigeria-states-YO\"> </a></td><td>Yobe</td></tr><tr><td style=\"white-space:nowrap\">ZA<a name=\"nigeria-states-ZA\"> </a></td><td>Zamfara</td></tr><tr><td style=\"white-space:nowrap\">FC<a name=\"nigeria-states-FC\"> </a></td><td>Federal Capital Territory (FCT)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "NGStatesCS"] ; # 
+  fhir:title [ fhir:v "NG States in Nigeria"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-23T09:24:42+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:hierarchyMeaning [ fhir:v "grouped-by"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "37"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AB" ] ;
+     fhir:display [ fhir:v "Abia" ]
+  ] [
+     fhir:code [ fhir:v "AD" ] ;
+     fhir:display [ fhir:v "Adamawa" ]
+  ] [
+     fhir:code [ fhir:v "AK" ] ;
+     fhir:display [ fhir:v "Akwa Ibom" ]
+  ] [
+     fhir:code [ fhir:v "AN" ] ;
+     fhir:display [ fhir:v "Anambra" ]
+  ] [
+     fhir:code [ fhir:v "BA" ] ;
+     fhir:display [ fhir:v "Bauchi" ]
+  ] [
+     fhir:code [ fhir:v "BY" ] ;
+     fhir:display [ fhir:v "Bayelsa" ]
+  ] [
+     fhir:code [ fhir:v "BE" ] ;
+     fhir:display [ fhir:v "Benue" ]
+  ] [
+     fhir:code [ fhir:v "BO" ] ;
+     fhir:display [ fhir:v "Borno" ]
+  ] [
+     fhir:code [ fhir:v "CR" ] ;
+     fhir:display [ fhir:v "Cross River" ]
+  ] [
+     fhir:code [ fhir:v "DE" ] ;
+     fhir:display [ fhir:v "Delta" ]
+  ] [
+     fhir:code [ fhir:v "EB" ] ;
+     fhir:display [ fhir:v "Ebonyi" ]
+  ] [
+     fhir:code [ fhir:v "ED" ] ;
+     fhir:display [ fhir:v "Edo" ]
+  ] [
+     fhir:code [ fhir:v "EK" ] ;
+     fhir:display [ fhir:v "Ekiti" ]
+  ] [
+     fhir:code [ fhir:v "EN" ] ;
+     fhir:display [ fhir:v "Enugu" ]
+  ] [
+     fhir:code [ fhir:v "GO" ] ;
+     fhir:display [ fhir:v "Gombe" ]
+  ] [
+     fhir:code [ fhir:v "IM" ] ;
+     fhir:display [ fhir:v "Imo" ]
+  ] [
+     fhir:code [ fhir:v "JI" ] ;
+     fhir:display [ fhir:v "Jigawa" ]
+  ] [
+     fhir:code [ fhir:v "KD" ] ;
+     fhir:display [ fhir:v "Kaduna" ]
+  ] [
+     fhir:code [ fhir:v "KN" ] ;
+     fhir:display [ fhir:v "Kano" ]
+  ] [
+     fhir:code [ fhir:v "KT" ] ;
+     fhir:display [ fhir:v "Katsina" ]
+  ] [
+     fhir:code [ fhir:v "KB" ] ;
+     fhir:display [ fhir:v "Kebbi" ]
+  ] [
+     fhir:code [ fhir:v "KO" ] ;
+     fhir:display [ fhir:v "Kogi" ]
+  ] [
+     fhir:code [ fhir:v "KW" ] ;
+     fhir:display [ fhir:v "Kwara" ]
+  ] [
+     fhir:code [ fhir:v "LA" ] ;
+     fhir:display [ fhir:v "Lagos" ]
+  ] [
+     fhir:code [ fhir:v "NA" ] ;
+     fhir:display [ fhir:v "Nasarawa" ]
+  ] [
+     fhir:code [ fhir:v "NI" ] ;
+     fhir:display [ fhir:v "Niger" ]
+  ] [
+     fhir:code [ fhir:v "OG" ] ;
+     fhir:display [ fhir:v "Ogun" ]
+  ] [
+     fhir:code [ fhir:v "ON" ] ;
+     fhir:display [ fhir:v "Ondo" ]
+  ] [
+     fhir:code [ fhir:v "OS" ] ;
+     fhir:display [ fhir:v "Osun" ]
+  ] [
+     fhir:code [ fhir:v "OY" ] ;
+     fhir:display [ fhir:v "Oyo" ]
+  ] [
+     fhir:code [ fhir:v "PL" ] ;
+     fhir:display [ fhir:v "Plateau" ]
+  ] [
+     fhir:code [ fhir:v "RI" ] ;
+     fhir:display [ fhir:v "Rivers" ]
+  ] [
+     fhir:code [ fhir:v "SO" ] ;
+     fhir:display [ fhir:v "Sokoto" ]
+  ] [
+     fhir:code [ fhir:v "TA" ] ;
+     fhir:display [ fhir:v "Taraba" ]
+  ] [
+     fhir:code [ fhir:v "YO" ] ;
+     fhir:display [ fhir:v "Yobe" ]
+  ] [
+     fhir:code [ fhir:v "ZA" ] ;
+     fhir:display [ fhir:v "Zamfara" ]
+  ] [
+     fhir:code [ fhir:v "FC" ] ;
+     fhir:display [ fhir:v "Federal Capital Territory (FCT)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
