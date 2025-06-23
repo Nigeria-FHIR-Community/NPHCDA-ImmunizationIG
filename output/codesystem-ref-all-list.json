@@ -189,8 +189,8 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
-      "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type"
+      "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type",
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
     },
     {
       "url" : "http://hl7.org/fhir/sid/cvx",
@@ -368,12 +368,12 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
-      "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
       "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes"
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
