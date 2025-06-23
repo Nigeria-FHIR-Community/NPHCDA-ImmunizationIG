@@ -781,7 +781,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 
 
 //RIVERS
-* #ri-abua-odual "abua (odual)" "Abua (Odual) LGA"
+* #ri-abua-odual "abua odual" "Abua Odual LGA"
 * #ri-ahoada-east "ahoada east" "Ahoada East LGA"
 * #ri-ahoada-west "ahoada west" "Ahoada West LGA"
 * #ri-akuku-toru "akuku toru" "Akuku Toru LGA"
@@ -809,7 +809,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 //SOKOTO
 * #so-binji "binji" "Binji LGA"  
 * #so-bodinga "bodinga" "Bodinga LGA"  
-* #so-dangeshuni "dange shuni" "Dange Shuni LGA"  
+* #so-dange-shuni "dange shuni" "Dange Shuni LGA"  
 * #so-gada "gada" "Gada LGA"  
 * #so-goronyo "goronyo" "Goronyo LGA"  
 * #so-gudu "gudu" "Gudu LGA"  
@@ -840,7 +840,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 * #ta-gassol "gassol" "Gassol LGA"  
 * #ta-ibi "ibi" "Ibi LGA"  
 * #ta-jalingo "jalingo" "Jalingo LGA"  
-* #ta-karimlamido "karim lamido" "Karim Lamido LGA"  
+* #ta-karim-lamido "karim lamido" "Karim Lamido LGA"  
 * #ta-kurmi "kurmi" "Kurmi LGA"  
 * #ta-lau "lau" "Lau LGA"  
 * #ta-sardauna "sardauna" "Sardauna LGA"  
@@ -874,7 +874,7 @@ Description: "This CodeSystem defines LGA codes and names mapped to their respec
 //ZAMFARA
 * #za-anka "anka" "Anka LGA"
 * #za-bakura "bakura" "Bakura LGA"
-* #za-birnin-magaji "birnin magaji" "Birnin Magaji (Kiyaw) LGA"
+* #za-birnin-magaji "birnin magaji (kiyaw)" "Birnin Magaji (Kiyaw) LGA"
 * #za-bukkuyum "bukkuyum" "Bukkuyum LGA"
 * #za-bungudu "bungudu" "Bungudu LGA"
 * #za-gummi "gummi" "Gummi LGA"
