@@ -45,7 +45,7 @@ Description: "The administrative ward where a person or a facility is."
 ValueSet: NGVaccineLibraryVS
 Id: nigeria-vaccine-library
 Title: "Vaccines"
-Description: " ."
+Description: "A curated list of vaccines recognized under Nigeria's national immunization program"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"
 * include codes from system NGVaccineLibraryCS
@@ -53,7 +53,7 @@ Description: " ."
 ValueSet: NGFacilityTypeVS
 Id: nigeria-facility-types
 Title: "Health Facility Type"
-Description: " ."
+Description: ""Classification of Nigerian health facilities"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types"
 * include codes from system NGFacilityTypeCS
