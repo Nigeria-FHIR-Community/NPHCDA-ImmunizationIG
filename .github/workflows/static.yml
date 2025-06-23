@@ -27,17 +27,6 @@ jobs:
     - name: Install SUSHI
       run: npm install -g fsh-sushi
 
-    - name: Download IG Publisher
-      run: |
-        mkdir -p input-cache
-        curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
-
-    - name: Run SUSHI
-      run: sushi .
-
-    - name: Run IG Publisher
-      run: java -jar input-cache/publisher.jar -ig ig.ini
-
     - name: Add .nojekyll
       run: touch output/.nojekyll
 
