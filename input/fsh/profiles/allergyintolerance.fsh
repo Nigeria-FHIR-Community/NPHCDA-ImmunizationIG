@@ -1,7 +1,7 @@
 
 Profile: NgImmAllergyIntolerance
 Parent: AllergyIntolerance
-Title: "NGImm AllergyIntolerance"
+Title: "NG-Imm AllergyIntolerance"
 Id: allergy-intolerance-profile
 Description: "Nigeria Immunization Allergy Intolerance Profile"
 

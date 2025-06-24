@@ -26,11 +26,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AllergyIntolerance.extension:allergyReferenceDoseNumber","AllergyIntolerance.extension","allergyReferenceDoseNumber","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number]]} {[]}
-","Reference Dose Number","Reference immunization dose number for this AllergyIntolerance.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Allergy Dose Number","Reference immunization dose number for this AllergyIntolerance.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AllergyIntolerance.extension:allergyReferenceDoseSeries","AllergyIntolerance.extension","allergyReferenceDoseSeries","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series]]} {[]}
-","Reference Dose Series","Dose series number from the referenced Immunization.protocolApplied.doseNumber.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Dose Series","Dose series number from the referenced Immunization.protocolApplied.doseNumber.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AllergyIntolerance.modifierExtension","AllergyIntolerance.modifierExtension","","extensions

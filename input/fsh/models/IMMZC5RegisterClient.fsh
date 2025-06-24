@@ -1,6 +1,6 @@
 Logical: RegisterClientModel
 Id: register-client-model
-Title: "NGImm-C5 RegisterClient[information only]"
+Title: "NG-Imm-C5 RegisterClient[information only]"
 Description: "IMMZ.C5 - A logical model representing a client being registered in the immunization system."
 
 * identifier 1..1 string "Unique identifier for clients including the national identification number, medical records number, immunization information system ID, and others."
@@ -45,36 +45,3 @@ Description: "IMMZ.C5 - A logical model representing a client being registered i
   * ^code[+] = #NGHivStatusVS
 * pregnancyStatus 0..1 CodeableConcept "Confirms whether the client is pregnant or not."
   * ^code[+] = #NGPregnancyStatusVS
-
-
-
-Instance: example-register-client
-InstanceOf: RegisterClientModel
-Title: "Example Register Client"
-Description: "Example instance of a client being registered in the IMMZ system."
-Usage: #example
-
-* identifier.value = "123456789"
-* name.family = "Doe"
-* name.given = "John"
-* sex = #male
-* dateOfBirth = "2020-05-15"
-* ageInWeeks = 200
-* ageInMonths = 46
-* ageInYears = 3
-* weightAtBirth.value = 3.2
-* weightAtBirth.unit = "kg"
-* weightAtBirth.system = "http://unitsofmeasure.org"
-
-* address.residentialAddress = "123 Health Street"
-* address.village = "Wukari"
-* address.town = "Ikeja"
-* address.ward.text = "12345"
-* address.lga.text = "Ikeja-central"
-* address.state.text = "Lagos"
-* contact[0].name.given = "Amaka"
-* contact[0].name.family = "Iliya" 
-* contact[0].relationship.text = "Mother"
-* hivStatus.coding[0].system = "http://example.org/fhir/hiv-status"
-* hivStatus.coding[0].display = "Negative"
-* pregnancyStatus.text = "not pregnant"

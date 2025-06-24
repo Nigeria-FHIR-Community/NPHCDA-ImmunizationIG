@@ -8,9 +8,9 @@
   "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status",
   "version" : "0.4.0",
   "name" : "NGVerificationStatusVS",
-  "title" : "AEFI Verification Status",
+  "title" : "NG-Imm AEFI VerificationStatus VS",
   "status" : "active",
-  "date" : "2025-06-24T07:35:37+01:00",
+  "date" : "2025-06-24T09:13:37+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

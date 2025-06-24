@@ -8,10 +8,10 @@
   <url value="https://nphcda.gov.ng/immunizationIG/CodeSystem/NGStockReportCS"/>
   <version value="0.4.0"/>
   <name value="NigeriaStockData"/>
-  <title value="NG Stock Management Data Elements"/>
+  <title value="NG-Imm Stock Management Data Elements CS"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2025-06-24T07:35:37+01:00"/>
+  <date value="2025-06-24T09:13:37+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

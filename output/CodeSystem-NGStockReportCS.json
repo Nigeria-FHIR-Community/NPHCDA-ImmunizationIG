@@ -8,10 +8,10 @@
   "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/NGStockReportCS",
   "version" : "0.4.0",
   "name" : "NigeriaStockData",
-  "title" : "NG Stock Management Data Elements",
+  "title" : "NG-Imm Stock Management Data Elements CS",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-06-24T07:35:37+01:00",
+  "date" : "2025-06-24T09:13:37+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

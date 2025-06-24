@@ -1,6 +1,6 @@
 Logical: ManageAEFI
 Id: manage-aefi
-Title: "NGImm-E Manage & ReportAEFI[information only]"
+Title: "NG-Imm-E Manage & ReportAEFI[information only]"
 Description: "IMMZ.E - A logical model for recording and managing AEFI treatment."
 * reactionDate 1..1 date "Reaction Date" "The date when the adverse event or reaction started."
 * observationId 1..1 string "Reaction Observation ID" "A reference to the observation that recorded the reaction."
@@ -20,25 +20,3 @@ Description: "IMMZ.E - A logical model for recording and managing AEFI treatment
 * certificateValidUntil 0..1 date "Certificate Valid Until" "The last date the immunization certificate remains valid."
 * certificateSchemeVersion 0..1 string "Certificate Scheme Version" "Version of the core data set and HL7 FHIR Implementation Guide used."
 
-
-Instance: manage-aefi-example
-InstanceOf: ManageAEFI
-Usage: #example
-* reactionDate = "2025-03-20"
-* observationId = "obs12345"
-* complaint = "Severe headache and dizziness"
-* manifestation[+] = #IMMZ.E.DE37 "Fever"
-* manifestation[+] = #IMMZ.E.DE38 "Rash"
-* severity = #IMMZ.E.DE10 "Severe"
-* outcome = #IMMZ.E.DE10 "Recovered"
-* treatmentGiven[+] = "Administered antihistamines and IV fluids"
-* doseNumber = 2
-* totalDoses = 3
-* diseaseTargeted = #IMMZ.E.DE27 "Measles"
-* nextDoseDueDate = "2025-06-20"
-* digitalCertificateNeeded = true
-* certificateIssuer = "Ministry of Health"
-* healthCertificateId = "HCID-987654321"
-* certificateValidFrom = "2025-03-21"
-* certificateValidUntil = "2028-03-20"
-* certificateSchemeVersion = "1.0"

@@ -5,7 +5,7 @@
 
 Extension: NGAdministrativeWard
 Id: nigeria-administrative-ward
-Title: "NGImm Administrative Wards "
+Title: "NG-Imm Administrative Wards "
 Description: "Captures the administrative ward within a geographic address "
 * ^context[0].type = #element
 * ^context[0].expression = "Address"
@@ -18,7 +18,7 @@ Description: "Captures the administrative ward within a geographic address "
 
 Extension: NGBirthWeight
 Id:  birth-weight
-Title:  "NGImm Weight at birth"
+Title:  "NG-Imm Weight at birth"
 Description: "Weight  of the Immunization Client at birth"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
@@ -27,7 +27,7 @@ Description: "Weight  of the Immunization Client at birth"
 
 Extension: NGHIVStatus
 Id:  hiv-status
-Title:  "NGImm Client's HIV status"
+Title:  "NG-Imm Client's HIV status"
 Description: "The HIV status (positive, negative, or unknown) of the Immunization Client"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
@@ -36,7 +36,7 @@ Description: "The HIV status (positive, negative, or unknown) of the Immunizatio
 
 Extension: NGPregnancyStatus
 Id:  pregnancy-status
-Title:  "NGImm Client's Pregnancy status"
+Title:  "NG-Imm Client's Pregnancy status"
 Description: "The Pregnancy status (pregnant or not-pregnant) of the Immunization Client"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
@@ -45,7 +45,7 @@ Description: "The Pregnancy status (pregnant or not-pregnant) of the Immunizatio
 
 Extension: NGAgeInWeeks
 Id:  age-in-weeks
-Title:  "NGImm Client Age in Weeks"
+Title:  "NG-Imm Client Age in Weeks"
 Description: "Age of the Immunization Client recorded in weeks"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
@@ -54,7 +54,7 @@ Description: "Age of the Immunization Client recorded in weeks"
 
 Extension: NGAgeInMonths
 Id:  age-in-months
-Title:  "NGImm Client Age in Months"
+Title:  "NG-Imm Client Age in Months"
 Description: "Age of the Immunization Client recorded in months"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
@@ -63,7 +63,7 @@ Description: "Age of the Immunization Client recorded in months"
 
 Extension: NGAgeInYears
 Id:  age-in-years
-Title:  "NGImm Client Age in Years"
+Title:  "NG-Imm Client Age in Years"
 Description: "Age of the Immunization Client recorded in years"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
@@ -73,7 +73,7 @@ Description: "Age of the Immunization Client recorded in years"
 
 Extension: NGCreatedDate
 Id:  date-client-created
-Title:  "NGImm Date client record was created"
+Title:  "NG-Imm Date client record was created"
 Description: "Date the client record was first created"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"

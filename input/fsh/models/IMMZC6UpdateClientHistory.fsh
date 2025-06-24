@@ -1,5 +1,5 @@
 Logical: UpdateClientHistory
-Title: "NGImm-C6 UpdateClientHistory[information only]"
+Title: "NG-Imm-C6 UpdateClientHistory[information only]"
 Description: "IMMZ.C6 - A logical model for tracking client immunization history updates."
 
 * clientCompletedPrimarySeries 1..1 boolean "Client has completed vaccine primary series" "Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen."
@@ -84,31 +84,3 @@ Description: "IMMZ.C6 - A logical model for tracking client immunization history
   * ^code[+] = #IMMZ.C1.DE42
 * signature 0..1 string "Signature" "The signature of the reporting officer."
   * ^code[+] = #IMMZ.C1.DE43
-
-
-
-
-Instance: update-client-history-example
-InstanceOf: UpdateClientHistory
-Usage: #example
-* clientCompletedPrimarySeries = true
-* hivStatus = #IMMZ.C1.DE2 "Positive"
-
-// Vaccine Administration Dates
-* bcgDoseDate = "2024-01-15"
-* hepB0DoseDate = "2024-01-20"
-* polioBopv0DoseDate = "2024-01-25"
-* pentavalent1DoseDate = "2024-02-05"
-* opv1DoseDate = "2024-02-10"
-* pcv1DoseDate = "2024-02-15"
-* rotavirus1DoseDate = "2024-02-20"
-* ipv1DoseDate = "2024-02-25"
-* opv2DoseDate = "2024-03-01"
-* pcv2DoseDate = "2024-03-05"
-
-// Additional Details
-* state = "Completed"
-* comments = "All vaccines administered as per schedule."
-* reportingOfficerName = "Dr. Jane Doe"
-* designation = "Immunization Officer"
-* signature = "JDoe"

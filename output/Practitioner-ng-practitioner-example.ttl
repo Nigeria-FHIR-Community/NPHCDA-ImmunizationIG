@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ng-practitioner-example</b></p><a name=\"ng-practitioner-example\"> </a><a name=\"hcng-practitioner-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmPractitioner.html\">NgImmPractitioner</a></p></div><p><b>identifier</b>: <code>http://nursing-midwifery-council/</code>/123456</p><p><b>name</b>: Damola Bello </p><p><b>telecom</b>: ph: 0722000000</p><p><b>birthDate</b>: 1980-01-01</p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ng-practitioner-example</b></p><a name=\"ng-practitioner-example\"> </a><a name=\"hcng-practitioner-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmPractitioner.html\">NG-Imm Practitioner</a></p></div><p><b>identifier</b>: <code>http://nursing-midwifery-council/</code>/123456</p><p><b>name</b>: Damola Bello </p><p><b>telecom</b>: ph: 0722000000</p><p><b>birthDate</b>: 1980-01-01</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://nursing-midwifery-council/"^^xsd:anyURI ] ;

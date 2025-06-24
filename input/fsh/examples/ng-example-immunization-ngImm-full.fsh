@@ -1,6 +1,6 @@
 Instance: ExampleNgImmImmunizationCompleted
 InstanceOf: NgImmImmunization
-Title: "NGImm Example Immunization-Completed BCG Vaccination"
+Title: "NG-Imm Example Immunization-Completed BCG Vaccination"
 Description: "An example of a completed BCG immunization event"
 Usage: #example
 
@@ -34,7 +34,7 @@ Usage: #example
 
 Instance: ExampleNgImmImmunizationNotDone
 InstanceOf: NgImmImmunization
-Title: "Scheduled Pentavalent Immunization Not Done Due to Fever"
+Title: "NG-Imm Scheduled Pentavalent Immunization Not Done Due to Fever"
 Description: "An example where immunization was not done due to contraindication (fever)"
 Usage: #example
 

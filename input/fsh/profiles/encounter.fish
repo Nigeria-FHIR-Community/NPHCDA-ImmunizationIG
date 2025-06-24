@@ -2,7 +2,7 @@ Alias: V3ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
 Profile: NgImm Encounter
 Parent: Encounter
-Title: "NGImm Encounter"
+Title: "NG-Imm Encounter"
 Id: neir-encounter 
 Description: "A profile for encounters in the Nigerian Electronic Immunization Registry (NEIR), used to document immunization visits and related healthcare interactions."
 * ^url = "http://nigerian.org/fhir/StructureDefinition/neir-encounter"

@@ -1,7 +1,7 @@
 Profile: NgImmOrganization
 Parent: Organization
 Id: ng-imm-organization 
-Title: "NGImm Organization"
+Title: "NG-Imm Organization"
 Description: "An organization profile representing healthcare facilities responsible for immunization services or other types of organizations."
 
 

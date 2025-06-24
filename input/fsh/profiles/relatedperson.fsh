@@ -1,6 +1,6 @@
 Profile: NgImmSiblingRelatedPerson
 Parent: RelatedPerson
-Title: "NGImm RelatedPerson"
+Title: "NG-Imm RelatedPerson"
 Id: mother-other-children 
 Description: "Sibling that Represents the mother's other children as RelatedPersons."
 
@@ -14,7 +14,7 @@ Description: "Sibling that Represents the mother's other children as RelatedPers
 * name.family ^short = "The surname of Client's sibling"
 * birthDate 0..1 MS
 * birthDate ^short = "The date the sibling was born"
-* gender 0..1
+* gender from NGGenderVS
 * gender ^short = "The Sex of the sibling e.g. male| female"
 * relationship.text from NGRelationshipsVS (required)
 * relationship.text ^short = "The relationship of the sibling with the Client e.g. brother| sister"

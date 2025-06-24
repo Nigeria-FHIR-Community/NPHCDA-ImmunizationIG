@@ -1,6 +1,6 @@
 Instance: FullExampleNgImmPatient
 InstanceOf: NgImmPatient
-Title: "NGImm Example Full Immunization Patient"
+Title: "NG-Imm Example Full Immunization Patient"
 Description: "A Nigeria Immunization Patient instance with all required and optional fields populated"
 Usage: #example
 

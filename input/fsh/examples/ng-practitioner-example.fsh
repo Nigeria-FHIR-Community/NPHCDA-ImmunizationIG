@@ -2,7 +2,7 @@
 Instance: ng-practitioner-example
 InstanceOf: NgImmPractitioner
 Usage: #example
-Title: "NgImm Example Practitioner"
+Title: "NG-Imm Example Practitioner"
 Description: "An example of a Nigerian Routine Immunization Officer" 
 * identifier.system = "http://nursing-midwifery-council/"
 * identifier.value = "123456"

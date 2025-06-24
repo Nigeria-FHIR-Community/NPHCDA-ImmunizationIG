@@ -1,7 +1,7 @@
 
 Instance: Child1
 InstanceOf: NgImmSiblingRelatedPerson
-Title: "Example Sibling - Mother's Other Child"
+Title: "NG-Imm Example Sibling - Mother's Other Child"
 Description: "An example of a mother's other child as a RelatedPerson resource."
 
 * patient = Reference(NgImmPatient/ExampleNgImmPatient)
@@ -13,7 +13,7 @@ Description: "An example of a mother's other child as a RelatedPerson resource."
 
 Instance: Sister2
 InstanceOf: NgImmSiblingRelatedPerson
-Title: "NGImm Example Sibling"
+Title: "NG-Imm Example Sibling"
 Description: "An example of a mother's other child as a RelatedPerson resource."
 
 * patient = Reference(NgImmPatient/ExampleNgImmPatient)

@@ -1,7 +1,7 @@
 
 Profile: NgImmPatient
 Parent: Patient
-Title: "NGImm Patient"
+Title: "NG-Imm Patient"
 Description: "Nigeria Immunization Patient Profile"
 
 
@@ -16,7 +16,7 @@ Description: "Nigeria Immunization Patient Profile"
 * name.family ^short = "The surname or family name of the Immunization client"
 // Bind gender to your custom AdministrativeGender value set
 //* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
-* gender from NGGenderVS (required)
+* gender from NGGenderVS
 * gender ^short = "The sex of the Immunization client"
 * birthDate 0..1 MS
 * birthDate ^short = "The date of birth of the Immunization client in the form dd-mm-yyy"

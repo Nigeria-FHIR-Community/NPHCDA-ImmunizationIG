@@ -2,7 +2,7 @@
 Profile: NgImmMeasure
 Parent: Measure
 Id: ngimm-measure
-Title: "NGImm Measure"
+Title: "NG-Imm Measure"
 Description: "A profile on the Measure resource used to define immunization indicators within Nigeria's routine immunization program."
 
 * identifier 1..1 MS

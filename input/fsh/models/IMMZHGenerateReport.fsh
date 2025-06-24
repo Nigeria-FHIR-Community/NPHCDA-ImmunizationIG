@@ -1,6 +1,6 @@
 
 Logical:      IMMZGGenerateReport
-Title:        "NGImm-H GenerateReport[information only]"
+Title:        "NG-Imm-H GenerateReport[information only]"
 Description:  "IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary." 
 * ^name = "IMMZHGenerateReport"
 * ^status = #active
@@ -48,7 +48,7 @@ Description:  "IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dict
 
 Instance: RoutineImmunizationReport
 InstanceOf: IMMZGGenerateReport
-Title: "Routine Immunization Report - Facility A"
+Title: "NG-Imm Routine Immunization Report - Facility A"
 Description: "A routine monthly immunization report summarizing vaccine stock and usage for Facility A."
 
 * reportIdentification = "IMMZ-REP-202503"
@@ -95,6 +95,8 @@ Description: "A routine monthly immunization report summarizing vaccine stock an
 
 Instance: AEFI-Case-Report-202503
 InstanceOf: IMMZGGenerateReport
+Title: "NG-Imm Example AEFI case report"
+Description: "An example case of Adverse Event Following Immunization Report"
 Usage: #example
 * reportIdentification = "AEFI-CASE-202503"
 * reportStatus = #IMMZ.G.DE4
@@ -139,6 +141,8 @@ Usage: #example
 
 Instance: Vaccine-Stock-Report-202503
 InstanceOf: IMMZGGenerateReport
+Title: "NG-Imm Example Stock report"
+Description: "An example Stock management report"
 Usage: #example
 * reportIdentification = "VAX-STOCK-202503"
 * reportStatus = #IMMZ.G.DE3

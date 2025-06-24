@@ -1,7 +1,7 @@
 Instance: organization-example
 InstanceOf: NgImmOrganization
 Usage: #example
-Title: "NGImm Example Organization"
+Title: "NG-Imm Example Organization"
 Description: "A fictional example of a typical organization."
 
 * identifier.system = "https://hfr.gov.ng/facility-ids"

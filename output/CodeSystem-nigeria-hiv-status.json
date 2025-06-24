@@ -8,9 +8,9 @@
   "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS",
   "version" : "0.4.0",
   "name" : "NGHivStatusCS",
-  "title" : "NG Client HIV status",
+  "title" : "NG-Imm Client HIV status CS",
   "status" : "active",
-  "date" : "2025-06-24T07:35:37+01:00",
+  "date" : "2025-06-24T09:13:37+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

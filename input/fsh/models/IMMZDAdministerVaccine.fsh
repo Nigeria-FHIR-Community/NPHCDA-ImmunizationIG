@@ -1,5 +1,5 @@
 Logical: AdministerVaccine
-Title: "NGImm-D AdministerVaccine[information only]"
+Title: "NG-Imm-D AdministerVaccine[information only]"
 Description: "IMMZ.D - A logical model for capturing vaccine administration details"
 
 * nameOfHealthFacility 1..1 string "Name of health facility" "Name of the facility where the vaccination is taking place."

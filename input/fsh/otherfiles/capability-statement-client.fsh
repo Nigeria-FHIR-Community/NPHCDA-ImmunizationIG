@@ -1,7 +1,7 @@
 Instance: NgImmCapabilityStatementClient
 InstanceOf: CapabilityStatement
 Usage: #definition
-Title: "NGImm Client CapabilityStatement"
+Title: "NG-Imm Client CapabilityStatement"
 Description: "Describes expected behavior of clients consuming immunization services using the Nigerian profiles."
 * status = #active
 * date = "2025-06-22"

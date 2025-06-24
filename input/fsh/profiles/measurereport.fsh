@@ -1,7 +1,7 @@
 Profile: NgImmMeasureReport
 Parent: MeasureReport
 Id: measure-report-profile 
-Title: "NGImm MeasureReport"
+Title: "NG-Imm MeasureReport"
 Description: "Nigeria Immunization Measure Report Profile"
 
 

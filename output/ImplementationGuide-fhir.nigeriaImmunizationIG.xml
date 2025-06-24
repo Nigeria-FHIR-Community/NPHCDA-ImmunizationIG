@@ -11,7 +11,7 @@
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-06-24T07:35:37+01:00"/>
+  <date value="2025-06-24T09:13:37+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -461,35 +461,35 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nigeria-administrative-ward"/>
+      </reference>
+      <name value="NG-Imm Administrative Wards "/>
+      <description value="Captures the administrative ward within a geographic address"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/nigeria-immunization-contraindication"/>
+        <reference value="CodeSystem/nigeria-wards"/>
       </reference>
-      <name value=" NG Vaccine contraindications"/>
-      <description value="A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."/>
+      <name value="NG-Imm Administrative Wards CS"/>
+      <description value="This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/register-facility-model"/>
+        <reference value="CodeSystem/nigeria-clinical-status"/>
       </reference>
-      <name value="A - Register Facility [information only]"/>
-      <description value="IMMZ.A - A logical model representing a health facility being registered in the immunization system."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nigeria-lgas"/>
-      </reference>
-      <name value="Administrative LGAs"/>
-      <description value="The administrative Local Government Aread where a person or a facility is."/>
+      <name value="NG-Imm Adverse Event Clinical Status CS"/>
+      <description value="A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -499,8 +499,184 @@
       <reference>
         <reference value="ValueSet/nigeria-verifiction-status"/>
       </reference>
-      <name value="AEFI Verification Status"/>
+      <name value="NG-Imm AEFI VerificationStatus VS"/>
       <description value="AEFI Verification Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/allergy-reference-dose-number"/>
+      </reference>
+      <name value="NG-Imm Allergy Dose Number"/>
+      <description value="Reference immunization dose number for this AllergyIntolerance."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nigeria-allergy-severity"/>
+      </reference>
+      <name value="NG-Imm Allergy Severity VS"/>
+      <description value="Vaccine reaction Severity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/allergy-intolerance-profile"/>
+      </reference>
+      <name value="NG-Imm AllergyIntolerance"/>
+      <description value="Nigeria Immunization Allergy Intolerance Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/age-in-months"/>
+      </reference>
+      <name value="NG-Imm Client Age in Months"/>
+      <description value="Age of the Immunization Client recorded in months"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/age-in-weeks"/>
+      </reference>
+      <name value="NG-Imm Client Age in Weeks"/>
+      <description value="Age of the Immunization Client recorded in weeks"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/age-in-years"/>
+      </reference>
+      <name value="NG-Imm Client Age in Years"/>
+      <description value="Age of the Immunization Client recorded in years"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/NgImmCapabilityStatementClient"/>
+      </reference>
+      <name value="NG-Imm Client CapabilityStatement"/>
+      <description value="Describes expected behavior of clients consuming immunization services using the Nigerian profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-hiv-status"/>
+      </reference>
+      <name value="NG-Imm Client HIV status CS"/>
+      <description value="This CodeSystem defines list of options for HIV status of a Client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nigeria-hiv-status"/>
+      </reference>
+      <name value="NG-Imm Client HIV Status VS"/>
+      <description value="Client HIV Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nigeria-pregnancy-status"/>
+      </reference>
+      <name value="NG-Imm Client Preganancy Status VS"/>
+      <description value="Client Pregnancy Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-pregnancy-status"/>
+      </reference>
+      <name value="NG-Imm Client Pregnancy status CS"/>
+      <description value="This CodeSystem defines list of options for Pregnancy status of a Client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-status"/>
+      </reference>
+      <name value="NG-Imm Client's HIV status"/>
+      <description value="The HIV status (positive, negative, or unknown) of the Immunization Client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pregnancy-status"/>
+      </reference>
+      <name value="NG-Imm Client's Pregnancy status"/>
+      <description value="The Pregnancy status (pregnant or not-pregnant) of the Immunization Client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/date-client-created"/>
+      </reference>
+      <name value="NG-Imm Date client record was created"/>
+      <description value="Date the client record was first created"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/signature"/>
+      </reference>
+      <name value="NG-Imm Digital Signature"/>
+      <description value="A digital or electronic signature capturing who signed, when, type, and signature data."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/allergy-reference-dose-series"/>
+      </reference>
+      <name value="NG-Imm Dose Series"/>
+      <description value="Dose series number from the referenced Immunization.protocolApplied.doseNumber."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -513,184 +689,9 @@
       <reference>
         <reference value="Binary/AEFI-Case-Report-202503"/>
       </reference>
-      <name value="AEFI-Case-Report-202503"/>
+      <name value="NG-Imm Example AEFI case report"/>
+      <description value="An example case of Adverse Event Following Immunization Report"/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/IMMZGGenerateReport"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nigeria-allergy-severity"/>
-      </reference>
-      <name value="Allergy Severity"/>
-      <description value="Vaccine reaction Severity"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/register-client-model"/>
-      </reference>
-      <name value="C5 - Register Client [information only]"/>
-      <description value="IMMZ.C5 - A logical model representing a client being registered in the immunization system."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/UpdateClientHistory"/>
-      </reference>
-      <name value="C6 - Update Client History [information only]"/>
-      <description value="IMMZ.C6 - A logical model for tracking client immunization history updates."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/age-in-months"/>
-      </reference>
-      <name value="Client Age in Months"/>
-      <description value="Age of the Immunization Client recorded in months"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/age-in-weeks"/>
-      </reference>
-      <name value="Client Age in Weeks"/>
-      <description value="Age of the Immunization Client recorded in weeks"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/age-in-years"/>
-      </reference>
-      <name value="Client Age in Years"/>
-      <description value="Age of the Immunization Client recorded in years"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nigeria-hiv-status"/>
-      </reference>
-      <name value="Client HIV Status"/>
-      <description value="Client HIV Status"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nigeria-pregnancy-status"/>
-      </reference>
-      <name value="Client Preganancy Status"/>
-      <description value="Client Pregnancy Status"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-status"/>
-      </reference>
-      <name value="Client's HIV status"/>
-      <description value="The HIV status (positive, negative, or unknown) of the Immunization Client"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pregnancy-status"/>
-      </reference>
-      <name value="Client's Pregnancy status"/>
-      <description value="The Pregnancy status (pregnant or not-pregnant) of the Immunization Client"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/contraindications"/>
-      </reference>
-      <name value="Contraindications"/>
-      <description value="Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AdministerVaccine"/>
-      </reference>
-      <name value="D - Administer Vaccine [information only]"/>
-      <description value="IMMZ.D - A logical model for capturing vaccine administration details"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/date-client-created"/>
-      </reference>
-      <name value="Date client record was created"/>
-      <description value="Date the client record was first created"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/signature"/>
-      </reference>
-      <name value="Digital Signature"/>
-      <description value="A digital or electronic signature capturing who signed, when, type, and signature data."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/manage-aefi"/>
-      </reference>
-      <name value="E - Manage &amp; Report AEFI [information only]"/>
-      <description value="IMMZ.E - A logical model for recording and managing AEFI treatment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/ExampleNgImmImmunizationCompleted"/>
-      </reference>
-      <name value="Example Completed BCG Immunization for Newborn"/>
-      <description value="An example of a completed BCG immunization event"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -699,133 +700,20 @@
       <reference>
         <reference value="Patient/FullExampleNgImmPatient"/>
       </reference>
-      <name value="Example Full Nigeria Immunization Patient"/>
+      <name value="NG-Imm Example Full Immunization Patient"/>
       <description value="A Nigeria Immunization Patient instance with all required and optional fields populated"/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="Immunization"/>
       </extension>
       <reference>
-        <reference value="Patient/ExampleNgImmPatient"/>
+        <reference value="Immunization/ExampleNgImmImmunizationCompleted"/>
       </reference>
-      <name value="Example Nigeria Immunization Patient"/>
-      <description value="A sample patient conforming to the Nigeria Immunization Patient profile"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
-        <valueCode value="application/fhir+json"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Binary"/>
-      </extension>
-      <reference>
-        <reference value="Binary/example-register-client"/>
-      </reference>
-      <name value="Example Register Client"/>
-      <description value="Example instance of a client being registered in the IMMZ system."/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RelatedPerson"/>
-      </extension>
-      <reference>
-        <reference value="RelatedPerson/Child1"/>
-      </reference>
-      <name value="Example Sibling - Mother's Other Child"/>
-      <description value="An example of a mother's other child as a RelatedPerson resource."/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/mother-other-children"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/ExampleNgPatientAdminWard"/>
-      </reference>
-      <name value="ExampleNgPatientAdminWard"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/FullExampleNgAllergyIntolerance"/>
-      </reference>
-      <name value="FullExampleNgAllergyIntolerance"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DefaulterTracking"/>
-      </reference>
-      <name value="G - Defaulter Tracking [information only]"/>
-      <description value="IMMZ.G - A logical model for tracking immunization defaulters."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nigeria-gender"/>
-      </reference>
-      <name value="Gender or Sex"/>
-      <description value="The administrative gender of a person."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/IMMZGGenerateReport"/>
-      </reference>
-      <name value="H - Generate Report [information only]"/>
-      <description value="IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nigeria-facility-types"/>
-      </reference>
-      <name value="Health Facility Type"/>
-      <description value="Classification of Nigerian health facilities"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/contraindicated"/>
-      </reference>
-      <name value="Immunization Contraindicated"/>
-      <description value="Indicates whether the immunization was contraindicated"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
-        <valueCode value="application/fhir+json"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Binary"/>
-      </extension>
-      <reference>
-        <reference value="Binary/manage-aefi-example"/>
-      </reference>
-      <name value="manage-aefi-example"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/manage-aefi"/>
+      <name value="NG-Imm Example Immunization-Completed BCG Vaccination"/>
+      <description value="An example of a completed BCG immunization event"/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -834,64 +722,9 @@
       <reference>
         <reference value="MeasureReport/ExampleNgImmMeasureReport"/>
       </reference>
-      <name value="Monthly Immunization Coverage Summary - BCG"/>
+      <name value="NG-Imm Example MeasureReport Monthly Immunization Coverage Summary - BCG"/>
       <description value="An example of a summary MeasureReport generated for BCG coverage at a facility"/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/measure-report-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/next-dose-date"/>
-      </reference>
-      <name value="Next Dose Date"/>
-      <description value="The recommended due date for the next vaccine dose in the schedule."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-wards"/>
-      </reference>
-      <name value="NG Administrative Wards"/>
-      <description value="This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-clinical-status"/>
-      </reference>
-      <name value="NG Adverse Event Clinical Status"/>
-      <description value="A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-hiv-status"/>
-      </reference>
-      <name value="NG Client HIV status"/>
-      <description value="This CodeSystem defines list of options for HIV status of a Client"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-pregnancy-status"/>
-      </reference>
-      <name value="NG Client Pregnancy status"/>
-      <description value="This CodeSystem defines list of options for Pregnancy status of a Client"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -900,8 +733,89 @@
       <reference>
         <reference value="Organization/organization-example"/>
       </reference>
-      <name value="NG Example Organization"/>
+      <name value="NG-Imm Example Organization"/>
+      <description value="A fictional example of a typical organization."/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExampleNgImmPatient"/>
+      </reference>
+      <name value="NG-Imm Example Patient"/>
+      <description value="A sample patient conforming to the Nigeria Immunization Patient profile"/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExampleNgPatientAdminWard"/>
+      </reference>
+      <name value="NG-Imm Example Patient with Ward data"/>
+      <description value="A fictional example of a patient with information on administrative ward"/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ng-practitioner-example"/>
+      </reference>
+      <name value="NG-Imm Example Practitioner"/>
+      <description value="An example of a Nigerian Routine Immunization Officer"/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/Sister2"/>
+      </reference>
+      <name value="NG-Imm Example Sibling"/>
+      <description value="An example of a mother's other child as a RelatedPerson resource."/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/mother-other-children"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/Child1"/>
+      </reference>
+      <name value="NG-Imm Example Sibling - Mother's Other Child"/>
+      <description value="An example of a mother's other child as a RelatedPerson resource."/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/mother-other-children"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
+        <valueCode value="application/fhir+json"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Binary"/>
+      </extension>
+      <reference>
+        <reference value="Binary/Vaccine-Stock-Report-202503"/>
+      </reference>
+      <name value="NG-Imm Example Stock report"/>
+      <description value="An example Stock management report"/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/IMMZGGenerateReport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/FullExampleNgAllergyIntolerance"/>
+      </reference>
+      <name value="NG-Imm ExampleAllergyIntolerance"/>
+      <description value="A fictional example of a an allergy resulting from Immunization."/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -910,7 +824,7 @@
       <reference>
         <reference value="CodeSystem/nigeria-facility-type"/>
       </reference>
-      <name value="NG Facility Type"/>
+      <name value="NG-Imm Facility Type CS"/>
       <description value="A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -921,8 +835,52 @@
       <reference>
         <reference value="CodeSystem/nigeria-gender"/>
       </reference>
-      <name value="NG Gender or Sex"/>
+      <name value="NG-Imm Gender or Sex CS"/>
       <description value="Codes for the administrative gender or sex of a person, used in demographic and administrative contexts."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nigeria-gender"/>
+      </reference>
+      <name value="NG-Imm Gender or Sex VS"/>
+      <description value="The administrative gender of a person."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nigeria-facility-types"/>
+      </reference>
+      <name value="NG-Imm HealthFacility Type VS"/>
+      <description value="Classification of Nigerian health facilities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NgImmImmunization"/>
+      </reference>
+      <name value="NG-Imm Immunization"/>
+      <description value="Nigerian Profile for Immunization resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contraindicated"/>
+      </reference>
+      <name value="NG-Imm Immunization Contraindicated"/>
+      <description value="Indicates whether the immunization was contraindicated"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -932,7 +890,7 @@
       <reference>
         <reference value="CodeSystem/nigeria-immunization-session-type"/>
       </reference>
-      <name value="NG Immunization Session types"/>
+      <name value="NG-Imm Immunization Session types CS"/>
       <description value="A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR)."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -943,74 +901,19 @@
       <reference>
         <reference value="CodeSystem/nigeria-lgas"/>
       </reference>
-      <name value="NG LGAs in Nigeria"/>
+      <name value="NG-Imm LGAs in Nigeria CS"/>
       <description value="This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/nigeria-allergy-severity"/>
+        <reference value="ValueSet/nigeria-lgas"/>
       </reference>
-      <name value="NG Reaction Severity"/>
-      <description value="This CodeSystem captures the assessed severity of an allergic reaction following immunization."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-sibling-health-status"/>
-      </reference>
-      <name value="NG Sibling Health Status"/>
-      <description value="This CodeSystem defines list of relationships that a part of this IG"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-states"/>
-      </reference>
-      <name value="NG States in Nigeria"/>
-      <description value="This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/NGStockReportCS"/>
-      </reference>
-      <name value="NG Stock Management Data Elements"/>
-      <description value="CodeSystem for Stock Management Data Elements"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-vaccine-library"/>
-      </reference>
-      <name value="NG Vaccine Library with SNOMED CT codes"/>
-      <description value="CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG using SNOMED CT codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-immunization-site"/>
-      </reference>
-      <name value="NG Vaccine Site"/>
-      <description value="This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered."/>
+      <name value="NG-Imm LGAs VS"/>
+      <description value="The administrative Local Government Aread where a person or a facility is."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1018,21 +921,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/allergy-intolerance-profile"/>
+        <reference value="StructureDefinition/ngimm-measure"/>
       </reference>
-      <name value="NgImmAllergyIntolerance"/>
-      <description value="Nigeria Immunization Allergy Intolerance Profile"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NgImmImmunization"/>
-      </reference>
-      <name value="NgImmImmunization"/>
-      <description value="Nigerian Profile for Immunization resource."/>
+      <name value="NG-Imm Measure"/>
+      <description value="A profile on the Measure resource used to define immunization indicators within Nigeria's routine immunization program."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1042,8 +934,19 @@
       <reference>
         <reference value="StructureDefinition/measure-report-profile"/>
       </reference>
-      <name value="NgImmMeasureReport"/>
+      <name value="NG-Imm MeasureReport"/>
       <description value="Nigeria Immunization Measure Report Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/next-dose-date"/>
+      </reference>
+      <name value="NG-Imm Next Dose Date"/>
+      <description value="The recommended due date for the next vaccine dose in the schedule."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1053,7 +956,7 @@
       <reference>
         <reference value="StructureDefinition/ng-imm-organization"/>
       </reference>
-      <name value="NgImmOrganization"/>
+      <name value="NG-Imm Organization"/>
       <description value="An organization profile representing healthcare facilities responsible for immunization services or other types of organizations."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1064,7 +967,7 @@
       <reference>
         <reference value="StructureDefinition/NgImmPatient"/>
       </reference>
-      <name value="NgImmPatient"/>
+      <name value="NG-Imm Patient"/>
       <description value="Nigeria Immunization Patient Profile"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1075,85 +978,8 @@
       <reference>
         <reference value="StructureDefinition/NgImmPractitioner"/>
       </reference>
-      <name value="NgImmPractitioner"/>
+      <name value="NG-Imm Practitioner"/>
       <description value="Profile for a Nigerian Practitioner"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/ng-practitioner-example"/>
-      </reference>
-      <name value="NgImmPractitionerExample"/>
-      <description value="An example of a Nigerian Routine Immunization Officer"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPractitioner"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mother-other-children"/>
-      </reference>
-      <name value="NgImmSiblingRelatedPerson"/>
-      <description value="Sibling that Represents the mother's other children as RelatedPersons."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/nigeria-administrative-ward"/>
-      </reference>
-      <name value="Nigeria Administrative Wards "/>
-      <description value="Captures the administrative ward within a geographic address"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/NgImmCapabilityStatementClient"/>
-      </reference>
-      <name value="Nigeria Immunization Client CapabilityStatement"/>
-      <description value="Describes expected behavior of clients consuming immunization services using the Nigerian profiles."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ngimm-measure"/>
-      </reference>
-      <name value="Nigeria Immunization Measure Definition"/>
-      <description value="A profile on the Measure resource used to define immunization indicators within Nigeria's routine immunization program."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/NgImmCapabilityStatementServer"/>
-      </reference>
-      <name value="Nigeria Immunization Server CapabilityStatement"/>
-      <description value="Describes the expected behavior of systems serving immunization data based on the NgImmPatient and NgImmImmunization profiles."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/primary-vaccine-status"/>
-      </reference>
-      <name value="Primary Vaccine Status"/>
-      <description value="Indicates whether the immunization patient has completed the full primary vaccine series"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1163,8 +989,19 @@
       <reference>
         <reference value="ValueSet/nigeria-primary-vaccine-status"/>
       </reference>
-      <name value="Primary vaccine Status"/>
+      <name value="NG-Imm Primary vaccine Status VS"/>
       <description value="Primary Vaccine Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/primary-vaccine-status"/>
+      </reference>
+      <name value="NG-Imm Primary VaccineStatus"/>
+      <description value="Indicates whether the immunization patient has completed the full primary vaccine series"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1174,8 +1011,19 @@
       <reference>
         <reference value="ValueSet/nigeria-clinical-status"/>
       </reference>
-      <name value="Reaction outcome"/>
+      <name value="NG-Imm Reaction Outcome VS"/>
       <description value="Reaction outcome clinical Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-allergy-severity"/>
+      </reference>
+      <name value="NG-Imm Reaction Severity CS"/>
+      <description value="This CodeSystem captures the assessed severity of an allergic reaction following immunization."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1185,30 +1033,19 @@
       <reference>
         <reference value="ValueSet/nigeria-Immunization-status-reason"/>
       </reference>
-      <name value="Reason for missed Vaccination"/>
+      <name value="NG-Imm Reason for missed Vaccination VS"/>
       <description value="Reason for a Client missing the last or other vaccinations"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/allergy-reference-dose-number"/>
+        <reference value="StructureDefinition/mother-other-children"/>
       </reference>
-      <name value="Reference Dose Number"/>
-      <description value="Reference immunization dose number for this AllergyIntolerance."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/allergy-reference-dose-series"/>
-      </reference>
-      <name value="Reference Dose Series"/>
-      <description value="Dose series number from the referenced Immunization.protocolApplied.doseNumber."/>
+      <name value="NG-Imm RelatedPerson"/>
+      <description value="Sibling that Represents the mother's other children as RelatedPersons."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1218,7 +1055,7 @@
       <reference>
         <reference value="ValueSet/nigeria-relationship"/>
       </reference>
-      <name value="Relationships"/>
+      <name value="NG-Imm Relationships VS"/>
       <description value="The administrative ward where a person or a facility is."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1232,7 +1069,7 @@
       <reference>
         <reference value="Binary/RoutineImmunizationReport"/>
       </reference>
-      <name value="Routine Immunization Report - Facility A"/>
+      <name value="NG-Imm Routine Immunization Report - Facility A"/>
       <description value="A routine monthly immunization report summarizing vaccine stock and usage for Facility A."/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/IMMZGGenerateReport"/>
     </resource>
@@ -1243,7 +1080,7 @@
       <reference>
         <reference value="Immunization/ExampleNgImmImmunizationNotDone"/>
       </reference>
-      <name value="Scheduled Pentavalent Immunization Not Done Due to Fever"/>
+      <name value="NG-Imm Scheduled Pentavalent Immunization Not Done Due to Fever"/>
       <description value="An example where immunization was not done due to contraindication (fever)"/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"/>
     </resource>
@@ -1252,87 +1089,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-birthdate"/>
-      </reference>
-      <name value="Search by Patient birth date"/>
-      <description value="Search by patient birth date"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-firstname"/>
-      </reference>
-      <name value="Search by Patient firstname"/>
-      <description value="Search by patient firstname"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-gender"/>
-      </reference>
-      <name value="Search by Patient gender"/>
-      <description value="Search by patient gender"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-identifier"/>
-      </reference>
-      <name value="Search by Patient Identifier"/>
-      <description value="Search by patient identifier"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-lastname"/>
-      </reference>
-      <name value="Search by Patient lastname"/>
-      <description value="Search by patient lastname"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/SearchParameter-ngimm-lga"/>
       </reference>
-      <name value="Search by Patient lga of residence"/>
+      <name value="NG-Imm Search by Patient lga of residence"/>
       <description value="Search by patient LGA of residence"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-createddate"/>
-      </reference>
-      <name value="Search by Patient's date of creation"/>
-      <description value="Search by patient's date of creation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-state"/>
-      </reference>
-      <name value="Search by Patient's state of residence"/>
-      <description value="Search by patient's State of residence"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1342,7 +1102,7 @@
       <reference>
         <reference value="SearchParameter/SearchParameter-ngimm-immdate"/>
       </reference>
-      <name value="Search Immunization records by date of vaccination"/>
+      <name value="NG-Imm Search Immunization by date of vaccination"/>
       <description value="Search Immunization records by date of vaccination"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1353,7 +1113,7 @@
       <reference>
         <reference value="SearchParameter/SearchParameter-ngimm-immpatient"/>
       </reference>
-      <name value="Search Immunization records by patient"/>
+      <name value="NG-Imm Search Immunization by patient"/>
       <description value="Search Immunization records by patient"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1364,7 +1124,7 @@
       <reference>
         <reference value="SearchParameter/SearchParameter-ngimm-immstatus"/>
       </reference>
-      <name value="Search Immunization records by status of immunization"/>
+      <name value="NG-Imm Search Immunization by status of immunization"/>
       <description value="Search Immunization records by status (eg. completed, or not done)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1375,8 +1135,96 @@
       <reference>
         <reference value="SearchParameter/SearchParameter-ngimm-immvaccinecode"/>
       </reference>
-      <name value="Search Immunization records by vaccine code"/>
+      <name value="NG-Imm Search Immunization by vaccine code"/>
       <description value="Search Immunization records by vaccination code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-birthdate"/>
+      </reference>
+      <name value="NG-Imm Search Patient by birth date"/>
+      <description value="Search by patient birth date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-createddate"/>
+      </reference>
+      <name value="NG-Imm Search Patient by date of creation"/>
+      <description value="Search by patient's date of creation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-firstname"/>
+      </reference>
+      <name value="NG-Imm Search Patient by firstname"/>
+      <description value="Search by patient firstname"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-gender"/>
+      </reference>
+      <name value="NG-Imm Search Patient by gender"/>
+      <description value="Search by patient gender"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-identifier"/>
+      </reference>
+      <name value="NG-Imm Search Patient by Identifier"/>
+      <description value="Search by patient identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-lastname"/>
+      </reference>
+      <name value="NG-Imm Search Patient by lastname"/>
+      <description value="Search by patient lastname"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-state"/>
+      </reference>
+      <name value="NG-Imm Search Patient by state"/>
+      <description value="Search by patient's State of residence"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/NgImmCapabilityStatementServer"/>
+      </reference>
+      <name value="NG-Imm Server CapabilityStatement"/>
+      <description value="Describes the expected behavior of systems serving immunization data based on the NgImmPatient and NgImmImmunization profiles."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1386,7 +1234,7 @@
       <reference>
         <reference value="StructureDefinition/session-type"/>
       </reference>
-      <name value="Session Type"/>
+      <name value="NG-Imm Session Type"/>
       <description value="Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site)."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1397,8 +1245,19 @@
       <reference>
         <reference value="ValueSet/nigeria-session-type"/>
       </reference>
-      <name value="Session type"/>
+      <name value="NG-Imm Session Type VS"/>
       <description value="Session type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-sibling-health-status"/>
+      </reference>
+      <name value="NG-Imm Sibling Health Status CS"/>
+      <description value="This CodeSystem defines list of relationships that a part of this IG"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1408,7 +1267,7 @@
       <reference>
         <reference value="ValueSet/nigeria-sibling-health-status"/>
       </reference>
-      <name value="Sibling Health Status"/>
+      <name value="NG-Imm Sibling Health Status VS"/>
       <description value="Sibling Health Status"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1419,8 +1278,19 @@
       <reference>
         <reference value="StructureDefinition/sibling-health-status"/>
       </reference>
-      <name value="Sibling's health status"/>
+      <name value="NG-Imm Sibling's health status"/>
       <description value="The health status of the Client's sibling"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-states"/>
+      </reference>
+      <name value="NG-Imm States in Nigeria CS"/>
+      <description value="This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1430,22 +1300,20 @@
       <reference>
         <reference value="ValueSet/nigeria-states"/>
       </reference>
-      <name value="States"/>
+      <name value="NG-Imm States VS"/>
       <description value="The administrative ward where a person or a facility is."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
-        <valueCode value="application/fhir+json"/>
-      </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Binary"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="Binary/update-client-history-example"/>
+        <reference value="CodeSystem/NGStockReportCS"/>
       </reference>
-      <name value="update-client-history-example"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/UpdateClientHistory"/>
+      <name value="NG-Imm Stock Management Data Elements CS"/>
+      <description value="CodeSystem for Stock Management Data Elements"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1454,8 +1322,41 @@
       <reference>
         <reference value="ValueSet/nigeria-vaccine-contraindication"/>
       </reference>
-      <name value="Vaccine Contraindication"/>
+      <name value="NG-Imm Vaccine Contraindication VS"/>
       <description value="Vaccine Contraindication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contraindications"/>
+      </reference>
+      <name value="NG-Imm Vaccine Contraindications"/>
+      <description value="Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-immunization-contraindication"/>
+      </reference>
+      <name value="NG-Imm Vaccine contraindications CS"/>
+      <description value="A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-vaccine-library"/>
+      </reference>
+      <name value="NG-Imm Vaccine Library with SNOMED CT codes"/>
+      <description value="CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG using SNOMED CT codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1465,8 +1366,19 @@
       <reference>
         <reference value="ValueSet/nigeria-vaccine-route"/>
       </reference>
-      <name value="Vaccine Route"/>
+      <name value="NG-Imm Vaccine Route VS"/>
       <description value="Vaccine Route"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-immunization-site"/>
+      </reference>
+      <name value="NG-Imm Vaccine Site CS"/>
+      <description value="This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1476,22 +1388,9 @@
       <reference>
         <reference value="ValueSet/nigeria-vaccine-site"/>
       </reference>
-      <name value="Vaccine Site"/>
+      <name value="NG-Imm Vaccine Site VS"/>
       <description value="Vaccine Site"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
-        <valueCode value="application/fhir+json"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Binary"/>
-      </extension>
-      <reference>
-        <reference value="Binary/Vaccine-Stock-Report-202503"/>
-      </reference>
-      <name value="Vaccine-Stock-Report-202503"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/IMMZGGenerateReport"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1500,7 +1399,7 @@
       <reference>
         <reference value="ValueSet/nigeria-vaccine-library"/>
       </reference>
-      <name value="Vaccines"/>
+      <name value="NG-Imm VaccineLibrary VS"/>
       <description value="A curated list of vaccines recognized under Nigeria's national immunization program"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1511,7 +1410,7 @@
       <reference>
         <reference value="ValueSet/nigeria-wards"/>
       </reference>
-      <name value="Wards"/>
+      <name value="NG-Imm Wards VS"/>
       <description value="The administrative Ward (within an LGA) where a person or a facility is."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1522,8 +1421,85 @@
       <reference>
         <reference value="StructureDefinition/birth-weight"/>
       </reference>
-      <name value="Weight at birth"/>
+      <name value="NG-Imm Weight at birth"/>
       <description value="Weight  of the Immunization Client at birth"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/register-facility-model"/>
+      </reference>
+      <name value="NG-Imm-A RegisterFacility[information only]"/>
+      <description value="IMMZ.A - A logical model representing a health facility being registered in the immunization system."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/register-client-model"/>
+      </reference>
+      <name value="NG-Imm-C5 RegisterClient[information only]"/>
+      <description value="IMMZ.C5 - A logical model representing a client being registered in the immunization system."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UpdateClientHistory"/>
+      </reference>
+      <name value="NG-Imm-C6 UpdateClientHistory[information only]"/>
+      <description value="IMMZ.C6 - A logical model for tracking client immunization history updates."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AdministerVaccine"/>
+      </reference>
+      <name value="NG-Imm-D AdministerVaccine[information only]"/>
+      <description value="IMMZ.D - A logical model for capturing vaccine administration details"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/manage-aefi"/>
+      </reference>
+      <name value="NG-Imm-E Manage &amp; ReportAEFI[information only]"/>
+      <description value="IMMZ.E - A logical model for recording and managing AEFI treatment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DefaulterTracking"/>
+      </reference>
+      <name value="NG-Imm-G DefaulterTracking[information only]"/>
+      <description value="IMMZ.G - A logical model for tracking immunization defaulters."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IMMZGGenerateReport"/>
+      </reference>
+      <name value="NG-Imm-H GenerateReport[information only]"/>
+      <description value="IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

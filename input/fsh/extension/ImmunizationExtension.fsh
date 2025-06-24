@@ -1,6 +1,6 @@
 Extension: NGPrimaryVaccineStatus
 Id: primary-vaccine-status
-Title: "NGImm Primary VaccineStatus"
+Title: "NG-Imm Primary VaccineStatus"
 Description: "Indicates whether the immunization patient has completed the full primary vaccine series"
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
@@ -11,7 +11,7 @@ Description: "Indicates whether the immunization patient has completed the full 
 
 Extension: NGSignature
 Id: signature
-Title: "NGImm Digital Signature"
+Title: "NG-Imm Digital Signature"
 Description: "A digital or electronic signature capturing who signed, when, type, and signature data."
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
@@ -21,7 +21,7 @@ Description: "A digital or electronic signature capturing who signed, when, type
 
 Extension: NGSessionType
 Id: session-type
-Title: "NGImm Session Type"
+Title: "NG-Imm Session Type"
 Description: "Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site)."
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
@@ -32,7 +32,7 @@ Description: "Type of session for immunization (e.g., fixed-site clinic, outreac
 
 Extension: NGContraindicated
 Id: contraindicated
-Title: "NGImm Immunization Contraindicated"
+Title: "NG-Imm Immunization Contraindicated"
 Description: "Indicates whether the immunization was contraindicated"
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
@@ -42,7 +42,7 @@ Description: "Indicates whether the immunization was contraindicated"
 
 Extension: NGContraindications
 Id: contraindications
-Title: "NGImm Vaccine Contraindications"
+Title: "NG-Imm Vaccine Contraindications"
 Description: "Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)"
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
@@ -53,7 +53,7 @@ Description: "Indicates specific situations in which it is not recommended to ad
 
 Extension: NextDoseDate
 Id: next-dose-date
-Title: "NGImm Next Dose Date"
+Title: "NG-Imm Next Dose Date"
 Description: "The recommended due date for the next vaccine dose in the schedule."
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"

@@ -1,6 +1,6 @@
 CodeSystem: NGClinicalStatusCS
 Id: nigeria-clinical-status 
-Title: "NGImm Adverse Event Clinical Status CS"
+Title: "NG-Imm Adverse Event Clinical Status CS"
 Description: "A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"
 * ^status = #active
@@ -15,7 +15,7 @@ Description: "A classification system that represents the current clinical statu
 
 CodeSystem: NGImmunizationSessionTypeCS
 Id: nigeria-immunization-session-type
-Title: "NGImm Immunization Session types CS"
+Title: "NG-Imm Immunization Session types CS"
 Description: "A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR)."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"
 * ^status = #active
@@ -30,7 +30,7 @@ Description: "A standardized classification of vaccine types administered for th
 
 CodeSystem: NGImmunizationContraindicationCS
 Id: nigeria-immunization-contraindication
-Title: "NGImm Vaccine contraindications CS"
+Title: "NG-Imm Vaccine contraindications CS"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
 * ^status = #active
@@ -46,7 +46,7 @@ Description: "A set of standardized codes used to represent clinical conditions,
 
 CodeSystem: NGImmunizationSiteCS
 Id: nigeria-immunization-site
-Title: "NGImm Vaccine Site CS"
+Title: "NG-Imm Vaccine Site CS"
 Description: "This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-immunization-site"
 * ^status = #active
@@ -79,7 +79,7 @@ Description: "This CodeSystem captures path by which a vaccine or medicinal prod
 
 CodeSystem: NigeriaAllergySeverityCS
 Id: nigeria-allergy-severity
-Title: "NGImm Reaction Severity CS"
+Title: "NG-Imm Reaction Severity CS"
 Description: "This CodeSystem captures the assessed severity of an allergic reaction following immunization."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity"
 * ^status = #active

@@ -1,16 +1,17 @@
 ValueSet: NGGenderVS
 Id: nigeria-gender
-Title: "NGImm Gender or Sex VS"
+Title: "NG-Imm Gender or Sex VS"
 Description: "The administrative gender of a person."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"
 //* include codes from valueset http://hl7.org/fhir/administrative-gender
-* include codes from system NGGenderCS
+* include codes from system NGGenderCS 
+
 
 
 ValueSet: NGWardsVS
 Id: nigeria-wards
-Title: "NGImm Wards VS"
+Title: "NG-Imm Wards VS"
 Description: "The administrative Ward (within an LGA) where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards"
@@ -18,7 +19,7 @@ Description: "The administrative Ward (within an LGA) where a person or a facili
 
 ValueSet: NGLGAsVS
 Id: nigeria-lgas
-Title: "NGImm LGAs VS"
+Title: "NG-Imm LGAs VS"
 Description: "The administrative Local Government Aread where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas"
@@ -26,7 +27,7 @@ Description: "The administrative Local Government Aread where a person or a faci
 
 ValueSet: NGStatesVS
 Id: nigeria-states
-Title: "NGImm States VS"
+Title: "NG-Imm States VS"
 Description: "The administrative ward where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states"
@@ -35,7 +36,7 @@ Description: "The administrative ward where a person or a facility is."
 
 ValueSet: NGRelationshipsVS
 Id: nigeria-relationship
-Title: "NGImm Relationships VS"
+Title: "NG-Imm Relationships VS"
 Description: "The administrative ward where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"
@@ -44,7 +45,7 @@ Description: "The administrative ward where a person or a facility is."
 
 ValueSet: NGVaccineLibraryVS
 Id: nigeria-vaccine-library
-Title: "NGImm VaccineLibrary VS"
+Title: "NG-Imm VaccineLibrary VS"
 Description: "A curated list of vaccines recognized under Nigeria's national immunization program"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"
@@ -52,7 +53,7 @@ Description: "A curated list of vaccines recognized under Nigeria's national imm
 
 ValueSet: NGFacilityTypeVS
 Id: nigeria-facility-types
-Title: "NGImm HealthFacility Type VS"
+Title: "NG-Imm HealthFacility Type VS"
 Description: "Classification of Nigerian health facilities"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types"
@@ -60,7 +61,7 @@ Description: "Classification of Nigerian health facilities"
 
 ValueSet: NGClinicalStatusVS
 Id: nigeria-clinical-status
-Title: "NGImm Reaction Outcome VS"
+Title: "NG-Imm Reaction Outcome VS"
 Description: "Reaction outcome clinical Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
@@ -68,7 +69,7 @@ Description: "Reaction outcome clinical Status"
 
 ValueSet: NGVerificationStatusVS
 Id: nigeria-verifiction-status
-Title: "NGImm AEFI VerificationStatus VS"
+Title: "NG-Imm AEFI VerificationStatus VS"
 Description: "AEFI Verification Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status"
@@ -76,7 +77,7 @@ Description: "AEFI Verification Status"
 
 ValueSet: NGSessionTypeVS
 Id: nigeria-session-type
-Title: "NGImm Session Type VS"
+Title: "NG-Imm Session Type VS"
 Description: "Session type"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type"
@@ -84,7 +85,7 @@ Description: "Session type"
 
 ValueSet: NGContraindicationVS
 Id: nigeria-vaccine-contraindication
-Title: "NGImm Vaccine Contraindication VS"
+Title: "NG-Imm Vaccine Contraindication VS"
 Description: "Vaccine Contraindication"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication"
@@ -92,7 +93,7 @@ Description: "Vaccine Contraindication"
 
 ValueSet: NGImmunizationSiteVS
 Id: nigeria-vaccine-site
-Title: "NGImm Vaccine Site VS"
+Title: "NG-Imm Vaccine Site VS"
 Description: "Vaccine Site"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site"
@@ -100,7 +101,7 @@ Description: "Vaccine Site"
 
 ValueSet: NGImmunizationRouteVS
 Id: nigeria-vaccine-route
-Title: "NGImm Vaccine Route VS"
+Title: "NG-Imm Vaccine Route VS"
 Description: "Vaccine Route"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route"
@@ -108,7 +109,7 @@ Description: "Vaccine Route"
 
 ValueSet: NGAllergySeverityVS
 Id: nigeria-allergy-severity
-Title: "NGImm Allergy Severity VS"
+Title: "NG-Imm Allergy Severity VS"
 Description: "Vaccine reaction Severity"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-allergy-severity"
@@ -116,7 +117,7 @@ Description: "Vaccine reaction Severity"
 
 ValueSet: NGSiblingHealthStatusVS
 Id: nigeria-sibling-health-status
-Title: "NGImm Sibling Health Status VS"
+Title: "NG-Imm Sibling Health Status VS"
 Description: "Sibling Health Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status"
@@ -124,7 +125,7 @@ Description: "Sibling Health Status"
 
 ValueSet: NGHivStatusVS
 Id: nigeria-hiv-status
-Title: "NGImm Client HIV Status VS"
+Title: "NG-Imm Client HIV Status VS"
 Description: "Client HIV Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status"
@@ -132,7 +133,7 @@ Description: "Client HIV Status"
 
 ValueSet: NGPregnancyStatusVS
 Id: nigeria-pregnancy-status
-Title: "NGImm Client Preganancy Status VS"
+Title: "NG-Imm Client Preganancy Status VS"
 Description: "Client Pregnancy Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status"
@@ -140,7 +141,7 @@ Description: "Client Pregnancy Status"
 
 ValueSet: NGPrimaryVaccineStatusVS
 Id: nigeria-primary-vaccine-status
-Title: "NG Primary vaccine Status VS"
+Title: "NG-Imm Primary vaccine Status VS"
 Description: "Primary Vaccine Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"
@@ -148,7 +149,7 @@ Description: "Primary Vaccine Status"
 
 ValueSet: NGImmunizationNotDoneReasonsVS
 Id: nigeria-Immunization-status-reason
-Title: "NG Reason for missed Vaccination VS"
+Title: "NG-Imm Reason for missed Vaccination VS"
 Description: "Reason for a Client missing the last or other vaccinations"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"

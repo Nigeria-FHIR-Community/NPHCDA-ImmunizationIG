@@ -1,6 +1,6 @@
 Instance: ExampleNgPatientAdminWard
 InstanceOf: NgImmPatient
-Title: "NgImm Example Patient with Ward data"
+Title: "NG-Imm Example Patient with Ward data"
 Description: "A fictional example of a patient with information on administrative ward"
 Usage: #example
 

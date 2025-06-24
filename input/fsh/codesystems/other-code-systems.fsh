@@ -1,6 +1,6 @@
 CodeSystem: NGSiblingHealthStatusCS
 Id: nigeria-sibling-health-status
-Title: "NGImm Sibling Health Status CS"
+Title: "NG-Imm Sibling Health Status CS"
 Description: "This CodeSystem defines list of relationships that a part of this IG"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
 * ^status = #active
@@ -18,7 +18,7 @@ Description: "This CodeSystem defines list of relationships that a part of this 
 
 CodeSystem: NGHivStatusCS
 Id: nigeria-hiv-status
-Title: "NGImm Client HIV status CS"
+Title: "NG-Imm Client HIV status CS"
 Description: "This CodeSystem defines list of options for HIV status of a Client"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS"
 * ^status = #active
@@ -35,7 +35,7 @@ Description: "This CodeSystem defines list of options for HIV status of a Client
 
 CodeSystem: NGPregnancyStatusCS
 Id: nigeria-pregnancy-status
-Title: "NGImm Client Pregnancy status CS"
+Title: "NG-Imm Client Pregnancy status CS"
 Description: "This CodeSystem defines list of options for Pregnancy status of a Client"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
 * ^status = #active
@@ -51,7 +51,7 @@ Description: "This CodeSystem defines list of options for Pregnancy status of a 
 
 CodeSystem: NGFacilityTypeCS
 Id: nigeria-facility-type
-Title: "NGImm Facility Type CS"
+Title: "NG-Imm Facility Type CS"
 Description: "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"
 * ^status = #active

@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Nigeria Immunization Client CapabilityStatement",
+    "title": "NG-Imm Client CapabilityStatement",
     "description": "Describes expected behavior of clients consuming immunization services using the Nigerian profiles.",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",

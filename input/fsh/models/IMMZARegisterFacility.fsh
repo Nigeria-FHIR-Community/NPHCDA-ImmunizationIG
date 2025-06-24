@@ -1,6 +1,6 @@
 Logical: RegisterFacilityModel
 Id: register-facility-model
-Title: "NGImm-A RegisterFacility[information only]"
+Title: "NG-Imm-A RegisterFacility[information only]"
 Description: "IMMZ.A - A logical model representing a health facility being registered in the immunization system."
 
 * identifier 1..1 string "Unique identifier for health facilities including the master facility list."
