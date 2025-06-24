@@ -16,9 +16,9 @@
   fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.4.0"] ; # 
   fhir:name [ fhir:v "NGClinicalStatusCS"] ; # 
-  fhir:title [ fhir:v "NG Adverse Event Clinical Status"] ; # 
+  fhir:title [ fhir:v "NG-Imm Adverse Event Clinical Status CS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-23T13:45:54+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-24T09:13:37+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;

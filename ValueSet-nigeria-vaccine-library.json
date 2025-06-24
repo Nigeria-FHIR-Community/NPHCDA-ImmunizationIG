@@ -8,9 +8,9 @@
   "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library",
   "version" : "0.4.0",
   "name" : "NGVaccineLibraryVS",
-  "title" : "Vaccines",
+  "title" : "NG-Imm VaccineLibrary VS",
   "status" : "active",
-  "date" : "2025-06-23T13:45:54+01:00",
+  "date" : "2025-06-24T09:13:37+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -27,7 +27,7 @@
       "use" : "work"
     }]
   }],
-  "description" : " .",
+  "description" : "A curated list of vaccines recognized under Nigeria's national immunization program",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

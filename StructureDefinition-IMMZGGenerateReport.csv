@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "IMMZGGenerateReport","IMMZGGenerateReport","","","",0,*,"","","","null {[]} {[]}
-","H - Generate Report [information only]","IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-H GenerateReport[information only]","IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "IMMZGGenerateReport.reportIdentification","IMMZGGenerateReport.reportIdentification","","","",1,1,"","","Y","string {[]} {[]}
 ","Report Identification","A unique identifier for the instance of the report that has been generated","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportIdentification",1,1,"",""
 "IMMZGGenerateReport.reportStatus","IMMZGGenerateReport.reportStatus","","","",1,1,"","","Y","CodeableConcept {[]} {[]}

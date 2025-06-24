@@ -19,8 +19,6 @@
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:lotNumber) &gt;= 1">lotNumber: minimum cardinality of 'lotNumber' is 1</sch:assert>
       <sch:assert test="count(f:expirationDate) &gt;= 1">expirationDate: minimum cardinality of 'expirationDate' is 1</sch:assert>
-      <sch:assert test="count(f:site) &gt;= 1">site: minimum cardinality of 'site' is 1</sch:assert>
-      <sch:assert test="count(f:route) &gt;= 1">route: minimum cardinality of 'route' is 1</sch:assert>
       <sch:assert test="count(f:doseQuantity) &gt;= 1">doseQuantity: minimum cardinality of 'doseQuantity' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

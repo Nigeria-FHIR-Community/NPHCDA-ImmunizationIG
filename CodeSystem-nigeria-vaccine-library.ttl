@@ -16,9 +16,9 @@
   fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.4.0"] ; # 
   fhir:name [ fhir:v "NGVaccineLibraryCS"] ; # 
-  fhir:title [ fhir:v "NG Vaccine Library with SNOMED CT codes"] ; # 
+  fhir:title [ fhir:v "NG-Imm Vaccine Library with SNOMED CT codes"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-23T13:45:54+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-24T09:13:37+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;

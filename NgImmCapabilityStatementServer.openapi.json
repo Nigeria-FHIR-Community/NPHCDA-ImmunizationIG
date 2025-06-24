@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Nigeria Immunization Server CapabilityStatement",
+    "title": "NG-Imm Server CapabilityStatement",
     "description": "Describes the expected behavior of systems serving immunization data based on the NgImmPatient and NgImmImmunization profiles.",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",

@@ -14,7 +14,6 @@
     <sch:rule context="f:AllergyIntolerance">
       <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:clinicalStatus) &gt;= 1">clinicalStatus: minimum cardinality of 'clinicalStatus' is 1</sch:assert>
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:recordedDate) &gt;= 1">recordedDate: minimum cardinality of 'recordedDate' is 1</sch:assert>

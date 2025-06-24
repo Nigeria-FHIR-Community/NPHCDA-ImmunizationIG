@@ -8,9 +8,9 @@
   "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site",
   "version" : "0.4.0",
   "name" : "NGImmunizationSiteVS",
-  "title" : "Vaccine Site",
+  "title" : "NG-Imm Vaccine Site VS",
   "status" : "active",
-  "date" : "2025-06-23T13:45:54+01:00",
+  "date" : "2025-06-24T09:13:37+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

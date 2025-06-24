@@ -1,6 +1,6 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "AdministerVaccine","AdministerVaccine","AdministerVaccine","","","",0,*,"","","","null {[]} {[]}
-","D - Administer Vaccine [information only]","IMMZ.D - A logical model for capturing vaccine administration details","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-D AdministerVaccine[information only]","IMMZ.D - A logical model for capturing vaccine administration details","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "AdministerVaccine","AdministerVaccine.nameOfHealthFacility","AdministerVaccine.nameOfHealthFacility","","","",1,1,"","","","string {[]} {[]}
 ","Name of health facility","Name of the facility where the vaccination is taking place.","","","","","","","","","",,,,,"",,,,"AdministerVaccine.nameOfHealthFacility",1,1,"",""
 "AdministerVaccine","AdministerVaccine.facilityType","AdministerVaccine.facilityType","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -36,7 +36,7 @@
 "AdministerVaccine","AdministerVaccine.healthWorkerIdentifier","AdministerVaccine.healthWorkerIdentifier","","","",1,1,"","","","string {[]} {[]}
 ","Health worker identifier","Person, organization, or role of the vaccinator. Can be populated from a Health Worker Registry.","","","","","","","","","",,,,,"",,,,"AdministerVaccine.healthWorkerIdentifier",1,1,"",""
 "DefaulterTracking","DefaulterTracking","DefaulterTracking","","","",0,*,"","","","null {[]} {[]}
-","G - Defaulter Tracking [information only]","IMMZ.G - A logical model for tracking immunization defaulters.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-G DefaulterTracking[information only]","IMMZ.G - A logical model for tracking immunization defaulters.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "DefaulterTracking","DefaulterTracking.clientName","DefaulterTracking.clientName","","","",1,1,"","","","string {[]} {[]}
 ","Client's name","The first and last name of the client.","","","","","","","","","",,,,,"",,,,"DefaulterTracking.clientName",1,1,"",""
 "DefaulterTracking","DefaulterTracking.clientSex","DefaulterTracking.clientSex","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -56,7 +56,7 @@
 "DefaulterTracking","DefaulterTracking.missedReason","DefaulterTracking.missedReason","","","",0,1,"","","","string {[]} {[]}
 ","Reason","Capture's the reason(s) for a missed vaccination appointment.","","","","","","","","","",,,,,"",,,,"DefaulterTracking.missedReason",0,1,"",""
 "IMMZGGenerateReport","IMMZGGenerateReport","IMMZGGenerateReport","","","",0,*,"","","","null {[]} {[]}
-","H - Generate Report [information only]","IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-H GenerateReport[information only]","IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "IMMZGGenerateReport","IMMZGGenerateReport.reportIdentification","IMMZGGenerateReport.reportIdentification","","","",1,1,"","","Y","string {[]} {[]}
 ","Report Identification","A unique identifier for the instance of the report that has been generated","","","","","","","","","",,,,,"",,,,"IMMZGGenerateReport.reportIdentification",1,1,"",""
 "IMMZGGenerateReport","IMMZGGenerateReport.reportStatus","IMMZGGenerateReport.reportStatus","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
@@ -162,19 +162,23 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmImmunization","Immunization.extension:primaryVaccineStatus","Immunization.extension","primaryVaccineStatus","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status]]} {[]}
-","Primary Vaccine Status","Indicates whether the immunization patient has completed the full primary vaccine series","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Primary VaccineStatus","Indicates whether the immunization patient has completed the full primary vaccine series","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmImmunization","Immunization.extension:signature","Immunization.extension","signature","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature]]} {[]}
-","Digital Signature","A digital or electronic signature capturing who signed, when, type, and signature data.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Digital Signature","A digital or electronic signature capturing who signed, when, type, and signature data.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmImmunization","Immunization.extension:sessionType","Immunization.extension","sessionType","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type]]} {[]}
-","Session Type","Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Session Type","Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmImmunization","Immunization.extension:contraindications","Immunization.extension","contraindications","","",0,*,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications]]} {[]}
-","Contraindications","Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Vaccine Contraindications","Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgImmImmunization","Immunization.extension:contraindicated","Immunization.extension","contraindicated","","",0,*,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated]]} {[]}
+","NG-Imm Immunization Contraindicated","Indicates whether the immunization was contraindicated","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmImmunization","Immunization.modifierExtension","Immunization.modifierExtension","","extensions
@@ -266,11 +270,11 @@ Reference is intended to point to a structure that can potentially be expressed 
 "NgImmImmunization","Immunization.expirationDate","Immunization.expirationDate","","","",1,1,"Y","","","date {[]} {[]}
 ","Vaccine expiration date","Date vaccine batch expires.","","","","","","","","","",,,,,"",,,,"Immunization.expirationDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"NgImmImmunization","Immunization.site","Immunization.site","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Body site vaccine was administered","Body site where vaccine was administered.","","","","","","","","","",,"example","The site at which the vaccine was administered.","http://hl7.org/fhir/ValueSet/immunization-site","",,,,"Immunization.site",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"NgImmImmunization","Immunization.site","Immunization.site","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Body site vaccine was administered","Body site where vaccine was administered.","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site","",,,,"Immunization.site",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"NgImmImmunization","Immunization.route","Immunization.route","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","How vaccine entered body","The path by which the vaccine product is taken into the body.","","","","","","","","","",,"example","The route by which the vaccine was administered.","http://hl7.org/fhir/ValueSet/immunization-route","",,,,"Immunization.route",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"NgImmImmunization","Immunization.route","Immunization.route","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","How vaccine entered body","The path by which the vaccine product is taken into the body.","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route","",,,,"Immunization.route",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgImmImmunization","Immunization.doseQuantity","Immunization.doseQuantity","","","",1,1,"Y","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
 ","Amount of vaccine administered","The quantity of vaccine product that was administered.","","","","","","","","","",,,,,"",,,,"Immunization.doseQuantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -378,7 +382,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmImmunization","Immunization.protocolApplied.extension:nextDoseDate","Immunization.protocolApplied.extension","nextDoseDate","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date]]} {[]}
-","Next Dose Date","The recommended due date for the next vaccine dose in the schedule.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","NG-Imm Next Dose Date","The recommended due date for the next vaccine dose in the schedule.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmImmunization","Immunization.protocolApplied.modifierExtension","Immunization.protocolApplied.modifierExtension","","extensions
@@ -429,27 +433,27 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.extension:birthWeight","Patient.extension","birthWeight","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/birth-weight]]} {[]}
-","Weight at birth","Weight  of the Immunization Client at birth","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Weight at birth","Weight  of the Immunization Client at birth","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.extension:pregnancyStatus","Patient.extension","pregnancyStatus","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/pregnancy-status]]} {[]}
-","Client's Pregnancy status","The Pregnancy status (pregnant or not-pregnant) of the Immunization Client","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Client's Pregnancy status","The Pregnancy status (pregnant or not-pregnant) of the Immunization Client","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.extension:ageInWeeks","Patient.extension","ageInWeeks","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-weeks]]} {[]}
-","Client Age in Weeks","Age of the Immunization Client recorded in weeks","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Client Age in Weeks","Age of the Immunization Client recorded in weeks","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.extension:ageInMonths","Patient.extension","ageInMonths","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-months]]} {[]}
-","Client Age in Months","Age of the Immunization Client recorded in months","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Client Age in Months","Age of the Immunization Client recorded in months","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.extension:ageInYears","Patient.extension","ageInYears","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-years]]} {[]}
-","Client Age in Years","Age of the Immunization Client recorded in years","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Client Age in Years","Age of the Immunization Client recorded in years","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.extension:createdDate","Patient.extension","createdDate","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created]]} {[]}
-","Date client record was created","Date the client record was first created","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Date client record was created","Date the client record was first created","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.modifierExtension","Patient.modifierExtension","","","",0,0,"","Y","","Extension {[]} {[]}
@@ -547,7 +551,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.address.extension:administrativeWard","Patient.address.extension","administrativeWard","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward]]} {[]}
-","Nigeria Administrative Wards ","Captures the administrative ward within a geographic address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NG-Imm Administrative Wards ","Captures the administrative ward within a geographic address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.address.use","Patient.address.use","","","",0,0,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -696,7 +700,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.contact.address.extension:administrativeWard","Patient.contact.address.extension","administrativeWard","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward]]} {[]}
-","Nigeria Administrative Wards ","Captures the administrative ward within a geographic address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NG-Imm Administrative Wards ","Captures the administrative ward within a geographic address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgImmPatient","Patient.contact.address.use","Patient.contact.address.use","","","",0,0,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -974,7 +978,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","A language the practitioner can use in patient communication","A language the practitioner can use in patient communication.","The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.","Knowing which language a practitioner speaks can help in facilitating communication with patients.","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Practitioner.communication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "UpdateClientHistory","UpdateClientHistory","UpdateClientHistory","","","",0,*,"","","","null {[]} {[]}
-","C6 - Update Client History [information only]","IMMZ.C6 - A logical model for tracking client immunization history updates.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-C6 UpdateClientHistory[information only]","IMMZ.C6 - A logical model for tracking client immunization history updates.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "UpdateClientHistory","UpdateClientHistory.clientCompletedPrimarySeries","UpdateClientHistory.clientCompletedPrimarySeries","","","",1,1,"","","","boolean {[]} {[]}
 ","Client has completed vaccine primary series","Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen.","","","","","","","","","",,,,,"",,,,"UpdateClientHistory.clientCompletedPrimarySeries",1,1,"",""
 "UpdateClientHistory","UpdateClientHistory.hivStatus","UpdateClientHistory.hivStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -1095,7 +1099,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Signature","The signature of the reporting officer.","","","","","","","","","",,,,,"#IMMZ.C1.DE43
 ",,,,"UpdateClientHistory.signature",0,1,"",""
 "age-in-months","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Client Age in Months","Age of the Immunization Client recorded in months","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Client Age in Months","Age of the Immunization Client recorded in months","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "age-in-months","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1110,7 +1114,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Age of the Immunization Client recorded in months","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "age-in-weeks","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Client Age in Weeks","Age of the Immunization Client recorded in weeks","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Client Age in Weeks","Age of the Immunization Client recorded in weeks","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "age-in-weeks","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1125,7 +1129,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Age of the Immunization Client recorded in weeks","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "age-in-years","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Client Age in Years","Age of the Immunization Client recorded in years","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Client Age in Years","Age of the Immunization Client recorded in years","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "age-in-years","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1166,11 +1170,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "allergy-intolerance-profile","AllergyIntolerance.extension:allergyReferenceDoseNumber","AllergyIntolerance.extension","allergyReferenceDoseNumber","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number]]} {[]}
-","Reference Dose Number","Reference immunization dose number for this AllergyIntolerance.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Allergy Dose Number","Reference immunization dose number for this AllergyIntolerance.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "allergy-intolerance-profile","AllergyIntolerance.extension:allergyReferenceDoseSeries","AllergyIntolerance.extension","allergyReferenceDoseSeries","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series]]} {[]}
-","Reference Dose Series","Dose series number from the referenced Immunization.protocolApplied.doseNumber.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Dose Series","Dose series number from the referenced Immunization.protocolApplied.doseNumber.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "allergy-intolerance-profile","AllergyIntolerance.modifierExtension","AllergyIntolerance.modifierExtension","","extensions
@@ -1182,9 +1186,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "allergy-intolerance-profile","AllergyIntolerance.identifier","AllergyIntolerance.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","External ids for this item","Business identifiers assigned to this AllergyIntolerance by the performer or other systems which remain constant as the resource is updated and propagates from server to server.","This is a business identifier, not a resource identifier (see [discussion](http://hl7.org/fhir/R4/resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.","Allows identification of the AllergyIntolerance as it is known by various participating systems and in a way that remains consistent across servers.","","","","","","","",,,,,"",,,,"AllergyIntolerance.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"allergy-intolerance-profile","AllergyIntolerance.clinicalStatus","AllergyIntolerance.clinicalStatus","","","",1,1,"Y","Y","Y","CodeableConcept {[]} {[]}
+"allergy-intolerance-profile","AllergyIntolerance.clinicalStatus","AllergyIntolerance.clinicalStatus","","","",0,1,"","Y","Y","CodeableConcept {[]} {[]}
 ","active | inactive | resolved","The clinical status of the allergy or intolerance.","Refer to [discussion](http://hl7.org/fhir/R4/extensibility.html#Special-Case) if clincalStatus is missing data.
-The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","The clinical status of the allergy or intolerance.","http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1","",,,,"AllergyIntolerance.clinicalStatus",0,1,"ait-1
+The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status","",,,,"AllergyIntolerance.clinicalStatus",0,1,"ait-1
 ait-2","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "allergy-intolerance-profile","AllergyIntolerance.clinicalStatus.id","AllergyIntolerance.clinicalStatus.id","","","",0,1,"","","","string {[]} {[]}
@@ -1201,7 +1205,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "allergy-intolerance-profile","AllergyIntolerance.verificationStatus","AllergyIntolerance.verificationStatus","","","",0,1,"","Y","Y","CodeableConcept {[]} {[]}
-","Assertion about certainty associated with a propensity or potential risk of a reaction to the identified substance","Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).","The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status","",,,,"AllergyIntolerance.verificationStatus",0,1,"ait-1
+","Assertion about certainty associated with a propensity or potential risk of a reaction to the identified substance","Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).","The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status","",,,,"AllergyIntolerance.verificationStatus",0,1,"ait-1
 ait-2","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "allergy-intolerance-profile","AllergyIntolerance.type","AllergyIntolerance.type","","Category
@@ -1277,7 +1281,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "allergy-intolerance-profile","AllergyIntolerance.reaction.manifestation.coding","AllergyIntolerance.reaction.manifestation.coding","","","",0,0,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Clinical symptoms/signs associated with the Event","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "allergy-intolerance-profile","AllergyIntolerance.reaction.manifestation.text","AllergyIntolerance.reaction.manifestation.text","","","",1,1,"Y","","Y","string {[]} {[]}
 ","Clinical symptoms/signs associated with the Event","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1299,7 +1303,7 @@ Text","",0,1,"Y","","","string {[]} {[]}
 ","Text about event not captured in other fields","Additional text about the adverse reaction event not captured in other fields.","Use this field to record information indirectly related to a particular event and not captured in the description. For example: Clinical records are no longer available, recorded based on information provided to the patient by her mother and her mother is deceased.","","","","","","","","",,,,,"",,,,"AllergyIntolerance.reaction.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "allergy-reference-dose-number","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Reference Dose Number","Reference immunization dose number for this AllergyIntolerance.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Allergy Dose Number","Reference immunization dose number for this AllergyIntolerance.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "allergy-reference-dose-number","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1318,7 +1322,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","Lot number or dose number from the referenced immunization","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "allergy-reference-dose-series","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Reference Dose Series","Dose series number from the referenced Immunization.protocolApplied.doseNumber.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Dose Series","Dose series number from the referenced Immunization.protocolApplied.doseNumber.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "allergy-reference-dose-series","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1337,7 +1341,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","Series dose number (e.g., 1, 2) from the referenced immunization","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "birth-weight","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Weight at birth","Weight  of the Immunization Client at birth","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Weight at birth","Weight  of the Immunization Client at birth","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "birth-weight","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1351,8 +1355,23 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "birth-weight","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","decimal {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"contraindicated","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","NG-Imm Immunization Contraindicated","Indicates whether the immunization was contraindicated","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"contraindicated","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"contraindicated","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"contraindicated","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"contraindicated","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
+","Indicates whether the immunization was contraindicated or not","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "contraindications","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Contraindications","Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Vaccine Contraindications","Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "contraindications","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1363,15 +1382,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "contraindications","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"contraindications","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"contraindications","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Contraindications to immunization","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"contraindications","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Contraindications to immunization","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "date-client-created","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Date client record was created","Date the client record was first created","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Date client record was created","Date the client record was first created","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "date-client-created","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1386,7 +1401,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Date the client record was first created","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-status","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Client's HIV status","The HIV status (positive, negative, or unknown) of the Immunization Client","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Client's HIV status","The HIV status (positive, negative, or unknown) of the Immunization Client","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hiv-status","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1401,7 +1416,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "manage-aefi","manage-aefi","manage-aefi","","","",0,*,"","","","null {[]} {[]}
-","E - Manage & Report AEFI [information only]","IMMZ.E - A logical model for recording and managing AEFI treatment.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-E Manage & ReportAEFI[information only]","IMMZ.E - A logical model for recording and managing AEFI treatment.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "manage-aefi","manage-aefi.reactionDate","manage-aefi.reactionDate","","","",1,1,"","","","date {[]} {[]}
 ","Reaction Date","The date when the adverse event or reaction started.","","","","","","","","","",,,,,"",,,,"manage-aefi.reactionDate",1,1,"",""
 "manage-aefi","manage-aefi.observationId","manage-aefi.observationId","","","",1,1,"","","","string {[]} {[]}
@@ -1717,7 +1732,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mother-other-children","RelatedPerson.extension:siblingHealthStatus","RelatedPerson.extension","siblingHealthStatus","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status]]} {[]}
-","Sibling's health status","The health status of the Client's sibling","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Sibling's health status","The health status of the Client's sibling","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "mother-other-children","RelatedPerson.modifierExtension","RelatedPerson.modifierExtension","","","",0,0,"","Y","","Extension {[]} {[]}
@@ -1821,7 +1836,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Language preference indicator","Indicates whether or not the patient prefers this language (over other languages he masters up a certain level).","This language is specifically identified for communicating healthcare information.","People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method.","","","","","","","",,,,,"",,,,"RelatedPerson.communication.preferred",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "next-dose-date","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Next Dose Date","The recommended due date for the next vaccine dose in the schedule.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Next Dose Date","The recommended due date for the next vaccine dose in the schedule.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "next-dose-date","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1832,11 +1847,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "next-dose-date","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"next-dose-date","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","base64Binary {[]} {[]}
-boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"open","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"next-dose-date","Extension.value[x]:valueDate","Extension.value[x]","valueDate","","",0,1,"Y","","","date {[]} {[]}
+"next-dose-date","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","date {[]} {[]}
 ","Recommended date for the next immunization dose","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-imm-organization","Organization","Organization","","","",0,*,"","","","null {[]} {[]}
@@ -2329,7 +2340,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Expression describing additional data to be reported","The criteria for the supplemental data. This is typically the name of a valid expression defined within a referenced library, but it may also be a path to a specific data element. The criteria defines the data to be returned for this element.","","","","","","","","","",,,,,"",,,,"Measure.supplementalData.criteria",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "nigeria-administrative-ward","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Nigeria Administrative Wards ","Captures the administrative ward within a geographic address ","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Administrative Wards ","Captures the administrative ward within a geographic address ","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "nigeria-administrative-ward","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -2344,7 +2355,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "pregnancy-status","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Client's Pregnancy status","The Pregnancy status (pregnant or not-pregnant) of the Immunization Client","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Client's Pregnancy status","The Pregnancy status (pregnant or not-pregnant) of the Immunization Client","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "pregnancy-status","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -2359,7 +2370,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "primary-vaccine-status","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Primary Vaccine Status","Indicates whether the immunization patient has completed the full primary vaccine series","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Primary VaccineStatus","Indicates whether the immunization patient has completed the full primary vaccine series","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "primary-vaccine-status","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -2370,15 +2381,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "primary-vaccine-status","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"primary-vaccine-status","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","base64Binary {[]} {[]}
-boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"open","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"primary-vaccine-status","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"Y","","","CodeableConcept {[]} {[]}
-","Status of primary series (e.g., completed, not completed)","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"primary-vaccine-status","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Status of primary series (e.g., completed, not completed)","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "register-client-model","register-client-model","register-client-model","","","",0,*,"","","","null {[]} {[]}
-","C5 - Register Client [information only]","IMMZ.C5 - A logical model representing a client being registered in the immunization system.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-C5 RegisterClient[information only]","IMMZ.C5 - A logical model representing a client being registered in the immunization system.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "register-client-model","register-client-model.identifier","register-client-model.identifier","","","",1,1,"","","","string {[]} {[]}
 ","Unique identifier for clients including the national identification number, medical records number, immunization information system ID, and others.","Unique identifier for clients including the national identification number, medical records number, immunization information system ID, and others.","","","","","","","","","",,,,,"",,,,"register-client-model.identifier",1,1,"",""
 "register-client-model","register-client-model.name","register-client-model.name","","","",1,1,"","","","BackboneElement {[]} {[]}
@@ -2558,7 +2565,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Confirms whether the client is pregnant or not.","Confirms whether the client is pregnant or not.","","","","","","","","","",,,,,"#NGPregnancyStatusVS
 ",,,,"register-client-model.pregnancyStatus",0,1,"",""
 "register-facility-model","register-facility-model","register-facility-model","","","",0,*,"","","","null {[]} {[]}
-","A - Register Facility [information only]","IMMZ.A - A logical model representing a health facility being registered in the immunization system.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-A RegisterFacility[information only]","IMMZ.A - A logical model representing a health facility being registered in the immunization system.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "register-facility-model","register-facility-model.identifier","register-facility-model.identifier","","","",1,1,"","","","string {[]} {[]}
 ","Unique identifier for health facilities including the master facility list.","Unique identifier for health facilities including the master facility list.","","","","","","","","","",,,,,"",,,,"register-facility-model.identifier",1,1,"",""
 "register-facility-model","register-facility-model.facilityName","register-facility-model.facilityName","","","",1,1,"","","","string {[]} {[]}
@@ -2685,7 +2692,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The state where the primary contact is.","The state where the primary contact is.","","","","","","","","","",,,,,"#NGStatesVS
 ",,,,"register-facility-model.primarycontact.state",0,1,"",""
 "session-type","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Session Type","Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Session Type","Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "session-type","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -2696,15 +2703,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "session-type","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"session-type","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","base64Binary {[]} {[]}
-boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"open","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"session-type","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"Y","","","CodeableConcept {[]} {[]}
-","Type of vaccination session","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"session-type","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type of vaccination session","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "sibling-health-status","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Sibling's health status","The health status of the Client's sibling","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Sibling's health status","The health status of the Client's sibling","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "sibling-health-status","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -2719,7 +2722,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The health status of the Client's sibling","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "signature","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Digital Signature","A digital or electronic signature capturing who signed, when, type, and signature data.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","NG-Imm Digital Signature","A digital or electronic signature capturing who signed, when, type, and signature data.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "signature","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -2730,10 +2733,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "signature","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"signature","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","base64Binary {[]} {[]}
-boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"open","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"signature","Extension.value[x]:valueSignature","Extension.value[x]","valueSignature","","",0,1,"Y","","","Signature {[]} {[]}
+"signature","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
 ","Digital signature of the reporting officer","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

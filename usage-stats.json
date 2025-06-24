@@ -6,28 +6,28 @@
   "extensions": [
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-months",
-      "title": "Client Age in Months",
+      "title": "NG-Imm Client Age in Months",
       "types": [
         "integer"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-weeks",
-      "title": "Client Age in Weeks",
+      "title": "NG-Imm Client Age in Weeks",
       "types": [
         "integer"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-years",
-      "title": "Client Age in Years",
+      "title": "NG-Imm Client Age in Years",
       "types": [
         "integer"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number",
-      "title": "Reference Dose Number",
+      "title": "NG-Imm Allergy Dose Number",
       "types": [
         "base64Binary",
         "boolean",
@@ -84,7 +84,7 @@
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series",
-      "title": "Reference Dose Series",
+      "title": "NG-Imm Dose Series",
       "types": [
         "base64Binary",
         "boolean",
@@ -141,280 +141,86 @@
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/birth-weight",
-      "title": "Weight at birth",
+      "title": "NG-Imm Weight at birth",
       "types": [
         "decimal"
       ]
     },
     {
-      "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications",
-      "title": "Contraindications",
+      "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated",
+      "title": "NG-Imm Immunization Contraindicated",
       "types": [
-        "CodeableConcept",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications",
+      "title": "NG-Imm Vaccine Contraindications",
+      "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created",
-      "title": "Date client record was created",
+      "title": "NG-Imm Date client record was created",
       "types": [
         "date"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/hiv-status",
-      "title": "Client\u0027s HIV status",
+      "title": "NG-Imm Client\u0027s HIV status",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date",
-      "title": "Next Dose Date",
+      "title": "NG-Imm Next Dose Date",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
         "date"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward",
-      "title": "Nigeria Administrative Wards ",
+      "title": "NG-Imm Administrative Wards ",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/pregnancy-status",
-      "title": "Client\u0027s Pregnancy status",
+      "title": "NG-Imm Client\u0027s Pregnancy status",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status",
-      "title": "Primary Vaccine Status",
+      "title": "NG-Imm Primary VaccineStatus",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
         "CodeableConcept"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type",
-      "title": "Session Type",
+      "title": "NG-Imm Session Type",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
         "CodeableConcept"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status",
-      "title": "Sibling\u0027s health status",
+      "title": "NG-Imm Sibling\u0027s health status",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature",
-      "title": "Digital Signature",
+      "title": "NG-Imm Digital Signature",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Signature"
+        "string"
       ]
     }
   ],
@@ -422,49 +228,49 @@
     "Immunization": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization",
-        "title": "NgImmImmunization"
+        "title": "NG-Imm Immunization"
       }
     ],
     "Patient": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient",
-        "title": "NgImmPatient"
+        "title": "NG-Imm Patient"
       }
     ],
     "Practitioner": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPractitioner",
-        "title": "NgImmPractitioner"
+        "title": "NG-Imm Practitioner"
       }
     ],
     "AllergyIntolerance": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile",
-        "title": "NgImmAllergyIntolerance"
+        "title": "NG-Imm AllergyIntolerance"
       }
     ],
     "MeasureReport": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/measure-report-profile",
-        "title": "NgImmMeasureReport"
+        "title": "NG-Imm MeasureReport"
       }
     ],
     "RelatedPerson": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/mother-other-children",
-        "title": "NgImmSiblingRelatedPerson"
+        "title": "NG-Imm RelatedPerson"
       }
     ],
     "Organization": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization",
-        "title": "NgImmOrganization"
+        "title": "NG-Imm Organization"
       }
     ],
     "Measure": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure",
-        "title": "Nigeria Immunization Measure Definition"
+        "title": "NG-Imm Measure"
       }
     ]
   },
@@ -558,6 +364,9 @@
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/birth-weight": [
       "Patient"
+    ],
+    "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated": [
+      "Immunization"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications": [
       "Immunization"

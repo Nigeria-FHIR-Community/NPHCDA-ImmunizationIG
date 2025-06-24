@@ -26,27 +26,27 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:birthWeight","Patient.extension","birthWeight","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/birth-weight]]} {[]}
-","Weight at birth","Weight  of the Immunization Client at birth","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Weight at birth","Weight  of the Immunization Client at birth","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:pregnancyStatus","Patient.extension","pregnancyStatus","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/pregnancy-status]]} {[]}
-","Client's Pregnancy status","The Pregnancy status (pregnant or not-pregnant) of the Immunization Client","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Client's Pregnancy status","The Pregnancy status (pregnant or not-pregnant) of the Immunization Client","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:ageInWeeks","Patient.extension","ageInWeeks","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-weeks]]} {[]}
-","Client Age in Weeks","Age of the Immunization Client recorded in weeks","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Client Age in Weeks","Age of the Immunization Client recorded in weeks","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:ageInMonths","Patient.extension","ageInMonths","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-months]]} {[]}
-","Client Age in Months","Age of the Immunization Client recorded in months","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Client Age in Months","Age of the Immunization Client recorded in months","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:ageInYears","Patient.extension","ageInYears","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-years]]} {[]}
-","Client Age in Years","Age of the Immunization Client recorded in years","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Client Age in Years","Age of the Immunization Client recorded in years","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:createdDate","Patient.extension","createdDate","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created]]} {[]}
-","Date client record was created","Date the client record was first created","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Date client record was created","Date the client record was first created","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.modifierExtension","Patient.modifierExtension","","","",0,0,"","Y","","Extension {[]} {[]}
@@ -144,7 +144,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.address.extension:administrativeWard","Patient.address.extension","administrativeWard","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward]]} {[]}
-","Nigeria Administrative Wards ","Captures the administrative ward within a geographic address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NG-Imm Administrative Wards ","Captures the administrative ward within a geographic address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.use","Patient.address.use","","","",0,0,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -293,7 +293,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.contact.address.extension:administrativeWard","Patient.contact.address.extension","administrativeWard","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward]]} {[]}
-","Nigeria Administrative Wards ","Captures the administrative ward within a geographic address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NG-Imm Administrative Wards ","Captures the administrative ward within a geographic address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.address.use","Patient.contact.address.use","","","",0,0,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

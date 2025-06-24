@@ -16,10 +16,10 @@
   fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/CodeSystem/NGStockReportCS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.4.0"] ; # 
   fhir:name [ fhir:v "NigeriaStockData"] ; # 
-  fhir:title [ fhir:v "NG Stock Management Data Elements"] ; # 
+  fhir:title [ fhir:v "NG-Imm Stock Management Data Elements CS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-06-23T13:45:54+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-24T09:13:37+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;

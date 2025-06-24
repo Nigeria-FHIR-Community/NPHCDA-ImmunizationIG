@@ -26,9 +26,9 @@
   <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure"/>
   <version value="0.4.0"/>
   <name value="NgImmMeasure"/>
-  <title value="Nigeria Immunization Measure Definition"/>
+  <title value="NG-Imm Measure"/>
   <status value="draft"/>
-  <date value="2025-06-23T13:45:54+01:00"/>
+  <date value="2025-06-24T09:13:37+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

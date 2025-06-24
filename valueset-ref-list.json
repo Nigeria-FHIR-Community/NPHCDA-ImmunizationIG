@@ -5,107 +5,108 @@
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGAllergySeverityVS",
-      "title" : "Allergy Severity",
+      "title" : "NG-Imm Allergy Severity VS",
       "description" : "Vaccine reaction Severity",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity"
       ],
       "uses" : {
       },
-      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGHivStatusVS",
-      "title" : "Client HIV Status",
+      "title" : "NG-Imm Client HIV Status VS",
       "description" : "Client HIV Status",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS"],
       "uses" : {
       },
-      "StructureDefinition-hiv-status.html" : "Client's HIV status"
+      "StructureDefinition-hiv-status.html" : "NG-Imm Client's HIV status"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGPregnancyStatusVS",
-      "title" : "Client Preganancy Status",
+      "title" : "NG-Imm Client Preganancy Status VS",
       "description" : "Client Pregnancy Status",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
       ],
       "uses" : {
       },
-      "StructureDefinition-pregnancy-status.html" : "Client's Pregnancy status"
+      "StructureDefinition-pregnancy-status.html" : "NG-Imm Client's Pregnancy status"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGClinicalStatusVS",
-      "title" : "Reaction outcome",
+      "title" : "NG-Imm Reaction Outcome VS",
       "description" : "Reaction outcome clinical Status",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"],
       "uses" : {
       },
-      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGGenderVS",
-      "title" : "Gender or Sex",
+      "title" : "NG-Imm Gender or Sex VS",
       "description" : "The administrative gender of a person.",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGFacilityTypeVS",
-      "title" : "Health Facility Type",
-      "description" : " .",
+      "title" : "NG-Imm HealthFacility Type VS",
+      "description" : "Classification of Nigerian health facilities",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NgImmOrganization"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGLGAsVS",
-      "title" : "Administrative LGAs",
+      "title" : "NG-Imm LGAs VS",
       "description" : "The administrative Local Government Aread where a person or a facility is.",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-lgas"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGPrimaryVaccineStatusVS",
-      "title" : "Primary vaccine Status",
+      "title" : "NG-Imm Primary vaccine Status VS",
       "description" : "Primary Vaccine Status",
       "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status"],
       "uses" : {
       },
-      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization",
+      "StructureDefinition-primary-vaccine-status.html" : "NG-Imm Primary VaccineStatus"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGImmunizationNotDoneReasonsVS",
-      "title" : "Reason for missed Vaccination",
+      "title" : "NG-Imm Reason for missed Vaccination VS",
       "description" : "Reason for a Client missing the last or other vaccinations",
       "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status-reason"]
     },
@@ -114,29 +115,32 @@
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGRelationshipsVS",
-      "title" : "Relationships",
+      "title" : "NG-Imm Relationships VS",
       "description" : "The administrative ward where a person or a facility is.",
       "systems" : ["http://hl7.org/fhir/R4B/valueset-relationship"],
       "uses" : {
       },
-      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGSessionTypeVS",
-      "title" : "Session type",
+      "title" : "NG-Imm Session Type VS",
       "description" : "Session type",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"]
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"],
+      "uses" : {
+      },
+      "StructureDefinition-session-type.html" : "NG-Imm Session Type"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGSiblingHealthStatusVS",
-      "title" : "Sibling Health Status",
+      "title" : "NG-Imm Sibling Health Status VS",
       "description" : "Sibling Health Status",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
@@ -147,31 +151,34 @@
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGStatesVS",
-      "title" : "States",
+      "title" : "NG-Imm States VS",
       "description" : "The administrative ward where a person or a facility is.",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGContraindicationVS",
-      "title" : "Vaccine Contraindication",
+      "title" : "NG-Imm Vaccine Contraindication VS",
       "description" : "Vaccine Contraindication",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-contraindications.html" : "NG-Imm Vaccine Contraindications"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGVaccineLibraryVS",
-      "title" : "Vaccines",
-      "description" : " .",
+      "title" : "NG-Imm VaccineLibrary VS",
+      "description" : "A curated list of vaccines recognized under Nigeria's national immunization program",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
       ]
@@ -181,45 +188,54 @@
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGImmunizationRouteVS",
-      "title" : "Vaccine Route",
+      "title" : "NG-Imm Vaccine Route VS",
       "description" : "Vaccine Route",
-      "systems" : ["https://www.hl7.org/fhir/R4/ng-valueset-immunization-route"]
+      "systems" : ["https://www.hl7.org/fhir/R4/ng-valueset-immunization-route"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGImmunizationSiteVS",
-      "title" : "Vaccine Site",
+      "title" : "NG-Imm Vaccine Site VS",
       "description" : "Vaccine Site",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-immunization-site"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGVerificationStatusVS",
-      "title" : "AEFI Verification Status",
+      "title" : "NG-Imm AEFI VerificationStatus VS",
       "description" : "AEFI Verification Status",
       "systems" : [
         "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGWardsVS",
-      "title" : "Wards",
+      "title" : "NG-Imm Wards VS",
       "description" : "The administrative Ward (within an LGA) where a person or a facility is.",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward"
       ],
       "uses" : {
       },
-      "StructureDefinition-nigeria-administrative-ward.html" : "Nigeria Administrative Wards "
+      "StructureDefinition-nigeria-administrative-ward.html" : "NG-Imm Administrative Wards "
     }
   ]
 }

@@ -8,9 +8,9 @@
   "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure",
   "version" : "0.4.0",
   "name" : "NgImmMeasure",
-  "title" : "Nigeria Immunization Measure Definition",
+  "title" : "NG-Imm Measure",
   "status" : "draft",
-  "date" : "2025-06-23T13:45:54+01:00",
+  "date" : "2025-06-24T09:13:37+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

@@ -25,19 +25,23 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.extension:primaryVaccineStatus","Immunization.extension","primaryVaccineStatus","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status]]} {[]}
-","Primary Vaccine Status","Indicates whether the immunization patient has completed the full primary vaccine series","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Primary VaccineStatus","Indicates whether the immunization patient has completed the full primary vaccine series","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.extension:signature","Immunization.extension","signature","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature]]} {[]}
-","Digital Signature","A digital or electronic signature capturing who signed, when, type, and signature data.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Digital Signature","A digital or electronic signature capturing who signed, when, type, and signature data.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.extension:sessionType","Immunization.extension","sessionType","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type]]} {[]}
-","Session Type","Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Session Type","Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.extension:contraindications","Immunization.extension","contraindications","","",0,*,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications]]} {[]}
-","Contraindications","Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","NG-Imm Vaccine Contraindications","Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Immunization.extension:contraindicated","Immunization.extension","contraindicated","","",0,*,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated]]} {[]}
+","NG-Imm Immunization Contraindicated","Indicates whether the immunization was contraindicated","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.modifierExtension","Immunization.modifierExtension","","extensions
@@ -129,11 +133,11 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Immunization.expirationDate","Immunization.expirationDate","","","",1,1,"Y","","","date {[]} {[]}
 ","Vaccine expiration date","Date vaccine batch expires.","","","","","","","","","",,,,,"",,,,"Immunization.expirationDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","RXA-16",".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].expirationTime"
-"Immunization.site","Immunization.site","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Body site vaccine was administered","Body site where vaccine was administered.","","","","","","","","","",,"example","The site at which the vaccine was administered.","http://hl7.org/fhir/ValueSet/immunization-site","",,,,"Immunization.site",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Immunization.site","Immunization.site","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Body site vaccine was administered","Body site where vaccine was administered.","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site","",,,,"Immunization.site",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","RXR-2","observation.targetSiteCode","ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/approachSiteCode/code"
-"Immunization.route","Immunization.route","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","How vaccine entered body","The path by which the vaccine product is taken into the body.","","","","","","","","","",,"example","The route by which the vaccine was administered.","http://hl7.org/fhir/ValueSet/immunization-route","",,,,"Immunization.route",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Immunization.route","Immunization.route","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","How vaccine entered body","The path by which the vaccine product is taken into the body.","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route","",,,,"Immunization.route",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","RXR-1",".routeCode","ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/routeCode/code"
 "Immunization.doseQuantity","Immunization.doseQuantity","","","",1,1,"Y","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
 ","Amount of vaccine administered","The quantity of vaccine product that was administered.","","","","","","","","","",,,,,"",,,,"Immunization.doseQuantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -241,7 +245,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.protocolApplied.extension:nextDoseDate","Immunization.protocolApplied.extension","nextDoseDate","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date]]} {[]}
-","Next Dose Date","The recommended due date for the next vaccine dose in the schedule.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","NG-Imm Next Dose Date","The recommended due date for the next vaccine dose in the schedule.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.protocolApplied.modifierExtension","Immunization.protocolApplied.modifierExtension","","extensions
