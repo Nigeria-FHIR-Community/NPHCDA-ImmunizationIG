@@ -62,7 +62,8 @@
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
@@ -70,7 +71,7 @@
       "status" : "active",
       "name" : "NGFacilityTypeVS",
       "title" : "Health Facility Type",
-      "description" : " .",
+      "description" : "Classification of Nigerian health facilities",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"],
       "uses" : {
       },
@@ -98,6 +99,7 @@
       "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status"],
       "uses" : {
       },
+      "StructureDefinition-primary-vaccine-status.html" : "Primary Vaccine Status",
       "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
     },
     {
@@ -119,8 +121,8 @@
       "systems" : ["http://hl7.org/fhir/R4B/valueset-relationship"],
       "uses" : {
       },
-      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NgImmPatient"
+      "StructureDefinition-NgImmPatient.html" : "NgImmPatient",
+      "StructureDefinition-mother-other-children.html" : "NgImmSiblingRelatedPerson"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
@@ -129,7 +131,10 @@
       "name" : "NGSessionTypeVS",
       "title" : "Session type",
       "description" : "Session type",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"]
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"],
+      "uses" : {
+      },
+      "StructureDefinition-session-type.html" : "Session Type"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status",
@@ -163,7 +168,10 @@
       "description" : "Vaccine Contraindication",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-contraindications.html" : "Contraindications"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library",
@@ -171,7 +179,7 @@
       "status" : "active",
       "name" : "NGVaccineLibraryVS",
       "title" : "Vaccines",
-      "description" : " .",
+      "description" : "A curated list of vaccines recognized under Nigeria's national immunization program",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
       ]
@@ -183,7 +191,10 @@
       "name" : "NGImmunizationRouteVS",
       "title" : "Vaccine Route",
       "description" : "Vaccine Route",
-      "systems" : ["https://www.hl7.org/fhir/R4/ng-valueset-immunization-route"]
+      "systems" : ["https://www.hl7.org/fhir/R4/ng-valueset-immunization-route"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site",
@@ -194,7 +205,10 @@
       "description" : "Vaccine Site",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-immunization-site"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NgImmImmunization"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status",
@@ -205,7 +219,10 @@
       "description" : "AEFI Verification Status",
       "systems" : [
         "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NgImmAllergyIntolerance"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards",

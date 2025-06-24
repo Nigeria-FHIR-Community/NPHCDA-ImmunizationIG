@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NigeriaimmunizationFHIRIG"] ; # 
   fhir:title [ fhir:v "Nigeria Immunization FHIR IG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-23T13:45:54+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-24T07:35:37+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -1404,7 +1404,25 @@
          fhir:reference [ fhir:v "ValueSet/nigeria-facility-types" ]
        ] ;
        fhir:name [ fhir:v "Health Facility Type" ] ;
-       fhir:description [ fhir:v " ." ] ;
+       fhir:description [ fhir:v "Classification of Nigerian health facilities" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated> ;
+         fhir:reference [ fhir:v "StructureDefinition/contraindicated" ]
+       ] ;
+       fhir:name [ fhir:v "Immunization Contraindicated" ] ;
+       fhir:description [ fhir:v "Indicates whether the immunization was contraindicated" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2548,7 +2566,7 @@
          fhir:reference [ fhir:v "ValueSet/nigeria-vaccine-library" ]
        ] ;
        fhir:name [ fhir:v "Vaccines" ] ;
-       fhir:description [ fhir:v " ." ] ;
+       fhir:description [ fhir:v "A curated list of vaccines recognized under Nigeria's national immunization program" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

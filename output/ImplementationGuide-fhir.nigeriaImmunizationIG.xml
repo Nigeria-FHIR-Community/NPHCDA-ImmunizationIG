@@ -11,7 +11,7 @@
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-06-23T13:45:54+01:00"/>
+  <date value="2025-06-24T07:35:37+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -800,7 +800,18 @@
         <reference value="ValueSet/nigeria-facility-types"/>
       </reference>
       <name value="Health Facility Type"/>
-      <description value=" ."/>
+      <description value="Classification of Nigerian health facilities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contraindicated"/>
+      </reference>
+      <name value="Immunization Contraindicated"/>
+      <description value="Indicates whether the immunization was contraindicated"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1490,7 +1501,7 @@
         <reference value="ValueSet/nigeria-vaccine-library"/>
       </reference>
       <name value="Vaccines"/>
-      <description value=" ."/>
+      <description value="A curated list of vaccines recognized under Nigeria's national immunization program"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

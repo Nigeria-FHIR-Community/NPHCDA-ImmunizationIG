@@ -55,7 +55,7 @@
       "status" : "active",
       "name" : "NGFacilityTypeVS",
       "title" : "Health Facility Type",
-      "description" : " .",
+      "description" : "Classification of Nigerian health facilities",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"]
     },
     {
@@ -140,7 +140,7 @@
       "status" : "active",
       "name" : "NGVaccineLibraryVS",
       "title" : "Vaccines",
-      "description" : " .",
+      "description" : "A curated list of vaccines recognized under Nigeria's national immunization program",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
       ]

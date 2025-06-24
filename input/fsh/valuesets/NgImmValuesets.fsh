@@ -53,7 +53,7 @@ Description: "A curated list of vaccines recognized under Nigeria's national imm
 ValueSet: NGFacilityTypeVS
 Id: nigeria-facility-types
 Title: "Health Facility Type"
-Description: ""Classification of Nigerian health facilities"
+Description: "Classification of Nigerian health facilities"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types"
 * include codes from system NGFacilityTypeCS

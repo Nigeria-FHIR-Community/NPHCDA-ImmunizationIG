@@ -10,7 +10,7 @@
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-06-23T13:45:54+01:00",
+  "date" : "2025-06-24T07:35:37+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -987,7 +987,19 @@
         "reference" : "ValueSet/nigeria-facility-types"
       },
       "name" : "Health Facility Type",
-      "description" : " .",
+      "description" : "Classification of Nigerian health facilities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/contraindicated"
+      },
+      "name" : "Immunization Contraindicated",
+      "description" : "Indicates whether the immunization was contraindicated",
       "exampleBoolean" : false
     },
     {
@@ -1743,7 +1755,7 @@
         "reference" : "ValueSet/nigeria-vaccine-library"
       },
       "name" : "Vaccines",
-      "description" : " .",
+      "description" : "A curated list of vaccines recognized under Nigeria's national immunization program",
       "exampleBoolean" : false
     },
     {
