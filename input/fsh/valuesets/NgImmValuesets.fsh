@@ -1,6 +1,6 @@
 ValueSet: NGGenderVS
 Id: nigeria-gender
-Title: "NGImm Gender_Sex VS"
+Title: "NGImm Gender or Sex VS"
 Description: "The administrative gender of a person."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"

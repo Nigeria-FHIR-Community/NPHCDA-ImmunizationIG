@@ -2,6 +2,7 @@
 Instance: FullExampleNgAllergyIntolerance
 InstanceOf: NgImmAllergyIntolerance
 Title: "NgImm ExampleAllergyIntolerance"
+Description: "A fictional example of a an allergy resulting from Immunization."
 Usage: #example
 
 * clinicalStatus = #active
