@@ -1,8 +1,8 @@
 
-CodeSystem: NigeriaRelationshipsCS
+CodeSystem: NGRelationshipsCS
 Id: nigeria-relationship
 Title: "NG-Imm Relationships CS"
-Description: "This CodeSystem defines list of relationships that a pat"
+Description: "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"
 * ^status = #active
 * ^content = #complete

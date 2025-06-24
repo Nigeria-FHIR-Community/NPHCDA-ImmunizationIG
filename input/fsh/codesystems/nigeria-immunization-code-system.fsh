@@ -7,7 +7,7 @@ Description: "A classification system that represents the current clinical statu
 * ^content = #complete
 * #active "Active" "The clinical condition is currently present, ongoing, or requires active management or monitoring."
 * #inactive "Inactive" "The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment."
-* #resolved "Resolved" "The clinical condition has completely resolved and is no longer impacting the patient’s health or requiring further management."
+* #resolved "Resolved" "The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management."
 * #recovered "Recovered" "The individual has recovered fully from the adverse event without any long-term effects or sequelae."
 * #recovered-with-sequelae "Recovered with sequelae" "The individual has recovered from the adverse event but with lasting effects, complications, or disabilities."
 * #death "Death" "The adverse event resulted in the death of the individual."
@@ -16,7 +16,7 @@ Description: "A classification system that represents the current clinical statu
 CodeSystem: NGImmunizationSessionTypeCS
 Id: nigeria-immunization-session-type
 Title: "NG-Imm Immunization Session types CS"
-Description: "A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR)."
+Description: "Type of session for immunization. Could be in a fixed facility, outreach or mobile."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"
 * ^status = #active
 * ^hierarchyMeaning = #is-a
@@ -24,7 +24,7 @@ Description: "A standardized classification of vaccine types administered for th
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Immunization session types
 * #fixed	"Fixed session" "An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available."
-* #outreach	"Outreach session" "An immunization session conducted outside of fixed sites, typically within a 5–10 km radius of a health facility, aimed at increasing access for underserved populations."
+* #outreach	"Outreach session" "An immunization session conducted outside of fixed sites, typically within a 5-10 km radius of a health facility, aimed at increasing access for underserved populations."
 * #mobile	"Mobile session" "An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport."
 
 
@@ -47,7 +47,7 @@ Description: "A set of standardized codes used to represent clinical conditions,
 CodeSystem: NGImmunizationSiteCS
 Id: nigeria-immunization-site
 Title: "NG-Imm Vaccine Site CS"
-Description: "This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered."
+Description: "This CodeSystem captures the specific anatomical location on the patient's body where a vaccine was administered."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-immunization-site"
 * ^status = #active
 * ^hierarchyMeaning = #is-a
@@ -61,7 +61,7 @@ Description: "This CodeSystem captures the specific anatomical location on the p
 * #antero-lateral-left-thigh "Antero Lateral Aspect of Left Thigh" "The vaccine is administered into the antero-lateral (front-side) part of the left thigh, often used in infants when giving multiple vaccines."
 
 
-/* CodeSystem: NigeriaImmunizationRouteCS
+CodeSystem: NigeriaImmunizationRouteCS
 Id: nigeria-immunization-route
 Title: "NG Vaccine Route"
 Description: "This CodeSystem captures path by which a vaccine or medicinal product is introduced into the body."
@@ -75,11 +75,11 @@ Description: "This CodeSystem captures path by which a vaccine or medicinal prod
 * #Intradermal "Intradermal" "The vaccine is injected into the dermal layer of the skin, just below the surface. This route is commonly used for BCG vaccination."
 * #Intramuscular "Intramuscular" "The vaccine is injected deep into the muscle tissue, allowing for rapid absorption. This is the most common route for many vaccines, such as DTP or hepatitis B."
 * #Subcutaneous "Subcutaneous" "The vaccine is injected into the layer of fat and tissue just under the skin. It is typically used for vaccines like measles or yellow fever."
- */
+ 
 
 CodeSystem: NigeriaAllergySeverityCS
 Id: nigeria-allergy-severity
-Title: "NG-Imm Reaction Severity CS"
+Title: "NG-Imm Allergy Severity CS"
 Description: "This CodeSystem captures the assessed severity of an allergic reaction following immunization."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity"
 * ^status = #active
@@ -92,7 +92,7 @@ Description: "This CodeSystem captures the assessed severity of an allergic reac
 * #severe "Severe" "The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise."
 
 
-/* CodeSystem: NigeriaVerificationStatusCS
+CodeSystem: NigeriaVerificationStatusCS
 Id: nigeria-verification-status 
 Title: "NG Adverse Events Verification Status"
 Description: "This element captures the confirmed clinical outcome or current state of an Adverse Event Following Immunization (AEFI) based on clinical assessment, investigation, or follow-up."
@@ -103,9 +103,9 @@ Description: "This element captures the confirmed clinical outcome or current st
 * #unconfirmed "Unconfirmed" "The reported adverse event is currently under investigation or lacks sufficient evidence to confirm or refute its classification as an AEFI."
 * #refuted "Refuted" "The reported adverse event has been assessed and found not to be related to immunization; it is ruled out as an AEFI."
 * #entered-in-error "Entered in Error" "The report was mistakenly entered or does not constitute a valid AEFI record and has been retracted or marked as invalid."
- */
 
-/* CodeSystem: NigeriaPrimaryVaccineStatusCS
+
+CodeSystem: NigeriaPrimaryVaccineStatusCS
 Id: nigeria-primary-vaccine-status
 Title: "NG Client's primary vaccine status"
 Description: "This CodeSystem defines list of options for Client's primary vaccine status"
@@ -118,4 +118,4 @@ Description: "This CodeSystem defines list of options for Client's primary vacci
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Pregnancy Status
 * #complete	"Complete" "Client has completed all primary vaccines"
-* #notcomplete	"Not Complete" "The Client has not completed all primary vaccines" */
+* #notcomplete	"Not Complete" "The Client has not completed all primary vaccines" 

@@ -7,8 +7,6 @@ Description: "The administrative gender of a person."
 //* include codes from valueset http://hl7.org/fhir/administrative-gender
 * include codes from system NGGenderCS 
 
-
-
 ValueSet: NGWardsVS
 Id: nigeria-wards
 Title: "NG-Imm Wards VS"
@@ -20,7 +18,7 @@ Description: "The administrative Ward (within an LGA) where a person or a facili
 ValueSet: NGLGAsVS
 Id: nigeria-lgas
 Title: "NG-Imm LGAs VS"
-Description: "The administrative Local Government Aread where a person or a facility is."
+Description: "The administrative Local Government Areas where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas"
 * include codes from system NGLGAsCS
@@ -28,7 +26,7 @@ Description: "The administrative Local Government Aread where a person or a faci
 ValueSet: NGStatesVS
 Id: nigeria-states
 Title: "NG-Imm States VS"
-Description: "The administrative ward where a person or a facility is."
+Description: "The state where a person or a facility is."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states"
 * include codes from system NGStatesCS
@@ -37,11 +35,10 @@ Description: "The administrative ward where a person or a facility is."
 ValueSet: NGRelationshipsVS
 Id: nigeria-relationship
 Title: "NG-Imm Relationships VS"
-Description: "The administrative ward where a person or a facility is."
+Description: "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"
-* include codes from system http://hl7.org/fhir/R4B/valueset-relationship
-
+* include codes from system NGRelationshipsCS
 
 ValueSet: NGVaccineLibraryVS
 Id: nigeria-vaccine-library
@@ -61,15 +58,15 @@ Description: "Classification of Nigerian health facilities"
 
 ValueSet: NGClinicalStatusVS
 Id: nigeria-clinical-status
-Title: "NG-Imm Reaction Outcome VS"
-Description: "Reaction outcome clinical Status"
+Title: "NG-Imm Clinical Status VS"
+Description: "The outcome of the reaction"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
 * include codes from system NGClinicalStatusCS
 
 ValueSet: NGVerificationStatusVS
 Id: nigeria-verifiction-status
-Title: "NG-Imm AEFI VerificationStatus VS"
+Title: "NG-Imm AEFI Verification Status VS"
 Description: "AEFI Verification Status"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status"
@@ -78,7 +75,7 @@ Description: "AEFI Verification Status"
 ValueSet: NGSessionTypeVS
 Id: nigeria-session-type
 Title: "NG-Imm Session Type VS"
-Description: "Session type"
+Description: "Type of session for immunization. Could be in a fixed facility, outreach or mobile."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type"
 * include codes from system NGImmunizationSessionTypeCS
@@ -86,7 +83,7 @@ Description: "Session type"
 ValueSet: NGContraindicationVS
 Id: nigeria-vaccine-contraindication
 Title: "NG-Imm Vaccine Contraindication VS"
-Description: "Vaccine Contraindication"
+Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication"
 * include codes from system NGImmunizationContraindicationCS
@@ -118,7 +115,7 @@ Description: "Vaccine reaction Severity"
 ValueSet: NGSiblingHealthStatusVS
 Id: nigeria-sibling-health-status
 Title: "NG-Imm Sibling Health Status VS"
-Description: "Sibling Health Status"
+Description: "This CodeSystem defines the health of the client's sibling"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status"
 * include codes from system NGSiblingHealthStatusCS
