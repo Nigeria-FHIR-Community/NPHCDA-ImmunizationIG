@@ -1,7 +1,7 @@
 CodeSystem: NGSiblingHealthStatusCS
 Id: nigeria-sibling-health-status
 Title: "NG-Imm Sibling Health Status CS"
-Description: "This CodeSystem defines list of relationships that a part of this IG"
+Description: "This CodeSystem defines the health of the client's sibling"
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
 * ^status = #active
 * ^content = #complete
