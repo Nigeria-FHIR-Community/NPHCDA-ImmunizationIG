@@ -1,7 +1,7 @@
 Instance: NgImmCapabilityStatementServer
 InstanceOf: CapabilityStatement
 Usage: #definition
-Title: "Nigeria Immunization Server CapabilityStatement"
+Title: "NGImm Server CapabilityStatement"
 Description: "Describes the expected behavior of systems serving immunization data based on the NgImmPatient and NgImmImmunization profiles."
 * status = #active
 * date = "2025-06-23"

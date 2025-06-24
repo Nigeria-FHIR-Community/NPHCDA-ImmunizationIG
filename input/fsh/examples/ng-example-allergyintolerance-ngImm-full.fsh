@@ -1,6 +1,7 @@
 
 Instance: FullExampleNgAllergyIntolerance
 InstanceOf: NgImmAllergyIntolerance
+Title: "NgImm ExampleAllergyIntolerance"
 Usage: #example
 
 * clinicalStatus = #active

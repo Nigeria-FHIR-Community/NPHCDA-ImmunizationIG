@@ -1,6 +1,6 @@
 
 Logical:      IMMZGGenerateReport
-Title:        "H - Generate Report [information only]"
+Title:        "NGImm-H GenerateReport[information only]"
 Description:  "IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary." 
 * ^name = "IMMZHGenerateReport"
 * ^status = #active

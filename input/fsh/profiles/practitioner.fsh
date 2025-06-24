@@ -1,6 +1,7 @@
 
 Profile: NgImmPractitioner
 Parent: Practitioner
+Title: "NGImm Practitioner"
 Description: "Profile for a Nigerian Practitioner" 
 * identifier 0..* MS
 * identifier.system 1..1

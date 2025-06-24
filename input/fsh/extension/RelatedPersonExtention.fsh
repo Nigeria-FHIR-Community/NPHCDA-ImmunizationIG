@@ -1,6 +1,6 @@
 Extension: SiblingHealthStatus
 Id: sibling-health-status
-Title: "Sibling's health status"
+Title: "NGImm Sibling's health status"
 Description: "The health status of the Client's sibling"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"

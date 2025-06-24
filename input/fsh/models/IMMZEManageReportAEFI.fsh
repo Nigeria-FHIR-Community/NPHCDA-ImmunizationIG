@@ -1,6 +1,6 @@
 Logical: ManageAEFI
 Id: manage-aefi
-Title: "E - Manage & Report AEFI [information only]"
+Title: "NGImm-E Manage & ReportAEFI[information only]"
 Description: "IMMZ.E - A logical model for recording and managing AEFI treatment."
 * reactionDate 1..1 date "Reaction Date" "The date when the adverse event or reaction started."
 * observationId 1..1 string "Reaction Observation ID" "A reference to the observation that recorded the reaction."

@@ -1,6 +1,7 @@
 
 Profile: NgImmPatient
 Parent: Patient
+Title: "NGImm Patient"
 Description: "Nigeria Immunization Patient Profile"
 
 

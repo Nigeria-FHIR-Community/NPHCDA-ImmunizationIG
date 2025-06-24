@@ -1,5 +1,6 @@
 Profile: NgImmImmunization
 Parent: Immunization
+Title: "NGImm Immunization"
 Description: "Nigerian Profile for Immunization resource."
 
 * identifier 1..1

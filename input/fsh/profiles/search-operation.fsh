@@ -1,6 +1,6 @@
 Instance: SearchParameter-ngimm-identifier
 InstanceOf: SearchParameter
-Title: "Search by Patient Identifier"
+Title: "NG Search Patient by Identifier"
 Usage: #definition
 * name = "identifier"
 * status = #active
@@ -13,7 +13,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-firstname
 InstanceOf: SearchParameter
-Title: "Search by Patient firstname"
+Title: "NG Search Patient by firstname"
 Usage: #definition
 * name = "firstname"
 * status = #active
@@ -25,7 +25,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-lastname
 InstanceOf: SearchParameter
-Title: "Search by Patient lastname"
+Title: "NG Search Patient by lastname"
 Usage: #definition
 * name = "lastname"
 * status = #active
@@ -37,7 +37,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-birthdate
 InstanceOf: SearchParameter
-Title: "Search by Patient birth date"
+Title: "NG Search Patient by birth date"
 Usage: #definition
 * name = "birthDate"
 * status = #active
@@ -49,7 +49,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-gender
 InstanceOf: SearchParameter
-Title: "Search by Patient gender"
+Title: "NG Search Patient by gender"
 Usage: #definition
 * name = "gender"
 * status = #active
@@ -61,7 +61,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-createddate
 InstanceOf: SearchParameter
-Title: "Search by Patient's date of creation"
+Title: "NG Search Patient by date of creation"
 Usage: #definition
 * name = "createddate"
 * status = #active
@@ -73,7 +73,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-state
 InstanceOf: SearchParameter
-Title: "Search by Patient's state of residence"
+Title: "NG Search Patient by state"
 Usage: #definition
 * name = "state"
 * status = #active
@@ -85,7 +85,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-lga
 InstanceOf: SearchParameter
-Title: "Search by Patient lga of residence"
+Title: "NG Search by Patient lga of residence"
 Usage: #definition
 * name = "lga"
 * status = #active
@@ -97,7 +97,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-immpatient
 InstanceOf: SearchParameter
-Title: "Search Immunization records by patient"
+Title: "NG Search Immunization by patient"
 Usage: #definition
 * name = "immpatient"
 * status = #active
@@ -110,7 +110,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-immstatus
 InstanceOf: SearchParameter
-Title: "Search Immunization records by status of immunization"
+Title: "NG Search Immunization by status of immunization"
 Usage: #definition
 * name = "immstatus"
 * status = #active
@@ -122,7 +122,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-immvaccinecode
 InstanceOf: SearchParameter
-Title: "Search Immunization records by vaccine code"
+Title: "NG Search Immunization by vaccine code"
 Usage: #definition
 * name = "immvaccinecode"
 * status = #active
@@ -136,7 +136,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-immdate
 InstanceOf: SearchParameter
-Title: "Search Immunization records by date of vaccination"
+Title: "NG Search Immunization by date of vaccination"
 Usage: #definition
 * name = "immdate"
 * status = #active

@@ -1,5 +1,6 @@
 Instance: ExampleNgPatientAdminWard
 InstanceOf: NgImmPatient
+Title: "NgImm Example Patient with Ward data"
 Usage: #example
 
 * identifier[0].system = "http://neir.org/mrn"

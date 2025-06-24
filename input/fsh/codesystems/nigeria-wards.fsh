@@ -1,6 +1,6 @@
 CodeSystem: NGWardsCS
 Id: nigeria-wards
-Title: "NG Administrative Wards"
+Title: "NGImm Administrative Wards"
 Description: "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward"
 * ^status = #active

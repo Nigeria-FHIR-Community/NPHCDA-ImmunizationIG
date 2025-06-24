@@ -1,6 +1,6 @@
 Logical: RegisterClientModel
 Id: register-client-model
-Title: "C5 - Register Client [information only]"
+Title: "NGImm-C5 RegisterClient[information only]"
 Description: "IMMZ.C5 - A logical model representing a client being registered in the immunization system."
 
 * identifier 1..1 string "Unique identifier for clients including the national identification number, medical records number, immunization information system ID, and others."

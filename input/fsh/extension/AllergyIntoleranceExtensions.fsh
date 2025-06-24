@@ -1,7 +1,7 @@
 
 Extension: AllergyReferenceDoseNumber
 Id: allergy-reference-dose-number
-Title: "Reference Dose Number"
+Title: "NGImm Allergy Dose Number"
 Description: "Reference immunization dose number for this AllergyIntolerance."
 * ^context[0].type = #element
 * ^context[0].expression = "AllergyIntolerance"
@@ -10,7 +10,7 @@ Description: "Reference immunization dose number for this AllergyIntolerance."
 
 Extension: AllergyReferenceDoseSeries
 Id: allergy-reference-dose-series
-Title: "Reference Dose Series"
+Title: "NGImm Dose Series"
 Description: "Dose series number from the referenced Immunization.protocolApplied.doseNumber."
 * ^context[0].type = #element
 * ^context[0].expression = "AllergyIntolerance"

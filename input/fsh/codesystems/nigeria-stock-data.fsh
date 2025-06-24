@@ -1,5 +1,5 @@
 CodeSystem:   NGStockReportCS
-Title:        "NG Stock Management Data Elements"
+Title:        "NGImm Stock Management Data Elements CS"
 Description:  "CodeSystem for Stock Management Data Elements"
 
 * ^experimental = false

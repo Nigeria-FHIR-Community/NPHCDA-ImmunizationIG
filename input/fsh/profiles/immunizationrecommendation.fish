@@ -1,5 +1,6 @@
 Profile: NgImmImmunizationRecommendation
 Parent: ImmunizationRecommendation
+Title: "NGImm ImmunizationRecommendation"
 Description: "A patient's point-in-time set of recommendations (i.e. forecasting) according to a published schedule with optional supporting justification."
 
 * identifier 1..1 MS

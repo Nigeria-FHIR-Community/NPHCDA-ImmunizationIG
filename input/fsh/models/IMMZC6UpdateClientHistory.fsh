@@ -1,5 +1,5 @@
 Logical: UpdateClientHistory
-Title: "C6 - Update Client History [information only]"
+Title: "NGImm-C6 UpdateClientHistory[information only]"
 Description: "IMMZ.C6 - A logical model for tracking client immunization history updates."
 
 * clientCompletedPrimarySeries 1..1 boolean "Client has completed vaccine primary series" "Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen."

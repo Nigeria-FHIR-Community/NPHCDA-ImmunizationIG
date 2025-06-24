@@ -1,6 +1,6 @@
 Instance: ExampleNgImmPatient
 InstanceOf: NgImmPatient
-Title: "Example Nigeria Immunization Patient"
+Title: "NGImm Example Patient"
 Description: "A sample patient conforming to the Nigeria Immunization Patient profile"
 Usage: #example
 

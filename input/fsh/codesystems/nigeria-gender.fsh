@@ -1,6 +1,6 @@
 CodeSystem: NGGenderCS
 Id: nigeria-gender
-Title: "NG Gender or Sex"
+Title: "NGImm Gender or Sex CS"
 Description: "Codes for the administrative gender or sex of a person, used in demographic and administrative contexts."
 * ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"
 * ^status = #active

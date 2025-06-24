@@ -1,7 +1,7 @@
 Instance: organization-example
 InstanceOf: NgImmOrganization
 Usage: #example
-Title: "NG Example Organization"
+Title: "NGImm Example Organization"
 
 * identifier.system = "https://hfr.gov.ng/facility-ids"
 * identifier.value = "LA-989898"

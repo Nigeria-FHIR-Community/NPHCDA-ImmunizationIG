@@ -1,5 +1,6 @@
 Profile: NgImmSiblingRelatedPerson
 Parent: RelatedPerson
+Title: "NGImm RelatedPerson"
 Id: mother-other-children 
 Description: "Sibling that Represents the mother's other children as RelatedPersons."
 

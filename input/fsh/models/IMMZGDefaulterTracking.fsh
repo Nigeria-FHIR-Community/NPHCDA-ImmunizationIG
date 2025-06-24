@@ -1,5 +1,5 @@
 Logical: DefaulterTracking
-Title: "G - Defaulter Tracking [information only]"
+Title: "NGImm-G DefaulterTracking[information only]"
 Description: "IMMZ.G - A logical model for tracking immunization defaulters."
 
 * clientName 1..1 string "Client's name" "The first and last name of the client."
