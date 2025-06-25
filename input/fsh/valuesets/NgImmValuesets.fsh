@@ -70,8 +70,8 @@ Title: "NG-Imm AEFI Verification Status VS"
 Description: "AEFI Verification Status"
 * ^status = #active
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status"
-* ^url = "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
-* include codes from system https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification
+* ^url = "http://hl7.org/fhir/ValueSet/allergyintolerance-verification"
+* include codes from system http://hl7.org/fhir/ValueSet/allergyintolerance-verification
 
 ValueSet: NGSessionTypeVS
 Id: nigeria-session-type
@@ -103,8 +103,8 @@ Title: "NG-Imm Vaccine Route VS"
 Description: "Vaccine Route"
 * ^status = #active
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route"
-* ^url = "https://www.hl7.org/fhir/R4/valueset-immunization-route"
-* include codes from system https://www.hl7.org/fhir/R4/valueset-immunization-route
+* ^url = "http://hl7.org/fhir/ValueSet/immunization-route"
+* include codes from system http://hl7.org/fhir/ValueSet/immunization-route
 
 ValueSet: NGAllergySeverityVS
 Id: nigeria-allergy-severity

@@ -10,6 +10,26 @@
       "systems" : ["http://hl7.org/fhir/R4/valueset-administrative-gender"]
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGVerificationStatusVS",
+      "title" : "NG-Imm AEFI Verification Status VS",
+      "description" : "AEFI Verification Status",
+      "systems" : [
+        "http://hl7.org/fhir/ValueSet/allergyintolerance-verification"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGImmunizationRouteVS",
+      "title" : "NG-Imm Vaccine Route VS",
+      "description" : "Vaccine Route",
+      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-route"]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
       "version" : "0.4.0",
       "status" : "active",
@@ -166,26 +186,6 @@
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward"
       ]
-    },
-    {
-      "url" : "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGVerificationStatusVS",
-      "title" : "NG-Imm AEFI Verification Status VS",
-      "description" : "AEFI Verification Status",
-      "systems" : [
-        "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
-      ]
-    },
-    {
-      "url" : "https://www.hl7.org/fhir/R4/valueset-immunization-route",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationRouteVS",
-      "title" : "NG-Imm Vaccine Route VS",
-      "description" : "Vaccine Route",
-      "systems" : ["https://www.hl7.org/fhir/R4/valueset-immunization-route"]
     }
   ]
 }

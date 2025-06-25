@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="nigeria-verifiction-status"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-verifiction-status</b></p><a name="nigeria-verifiction-status"> </a><a name="hcnigeria-verifiction-status"> </a><ul><li>Include all codes defined in <code>https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification</code></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-verifiction-status</b></p><a name="nigeria-verifiction-status"> </a><a name="hcnigeria-verifiction-status"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/allergyintolerance-verification</code></li></ul></div>
   </text>
-  <url value="https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"/>
+  <url value="http://hl7.org/fhir/ValueSet/allergyintolerance-verification"/>
   <version value="0.4.0"/>
   <name value="NGVerificationStatusVS"/>
   <title value="NG-Imm AEFI Verification Status VS"/>
   <status value="active"/>
-  <date value="2025-06-25T06:29:04+01:00"/>
+  <date value="2025-06-25T15:41:07+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -37,7 +37,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"/>
+      <system value="http://hl7.org/fhir/ValueSet/allergyintolerance-verification"/>
     </include>
   </compose>
 </ValueSet>

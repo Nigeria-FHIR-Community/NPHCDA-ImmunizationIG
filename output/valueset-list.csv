@@ -1,5 +1,7 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
 http://hl7.org/fhir/R4/valueset-administrative-gender,0.4.0,draft,,NGGenderVS,NG-Imm Gender or Sex VS,"Subset of HL7 administrative-gender limited to 'male' and 'female'.",,"FHIR"
+http://hl7.org/fhir/ValueSet/allergyintolerance-verification,0.4.0,active,,NGVerificationStatusVS,NG-Imm AEFI Verification Status VS,"AEFI Verification Status",,"FHIR"
+http://hl7.org/fhir/ValueSet/immunization-route,0.4.0,active,,NGImmunizationRouteVS,NG-Imm Vaccine Route VS,"Vaccine Route",,"FHIR"
 http://hl7.org/fhir/ValueSet/immunization-status,0.4.0,active,,NGPrimaryVaccineStatusVS,NG-Imm Primary vaccine Status VS,"Primary Vaccine Status",,"FHIR"
 http://hl7.org/fhir/ValueSet/immunization-status-reason,0.4.0,active,,NGImmunizationNotDoneReasonsVS,NG-Imm Reason for missed Vaccination VS,"Reason for a Client missing the last or other vaccinations",,"FHIR"
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-allergy-severity,0.4.0,active,,NGAllergySeverityVS,NG-Imm Allergy Severity VS,"Vaccine reaction Severity",,"Internal"
@@ -16,5 +18,3 @@ http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication,0.4.0,active,,
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library,0.4.0,active,,NGVaccineLibraryVS,NG-Imm VaccineLibrary VS,"A curated list of vaccines recognized under Nigeria's national immunization program",,"Internal"
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site,0.4.0,active,,NGImmunizationSiteVS,NG-Imm Vaccine Site VS,"Vaccine Site",,"Internal"
 http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards,0.4.0,active,,NGWardsVS,NG-Imm Wards VS,"The administrative Ward (within an LGA) where a person or a facility is.",,"Internal"
-https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification,0.4.0,active,,NGVerificationStatusVS,NG-Imm AEFI Verification Status VS,"AEFI Verification Status",,"Other"
-https://www.hl7.org/fhir/R4/valueset-immunization-route,0.4.0,active,,NGImmunizationRouteVS,NG-Imm Vaccine Route VS,"Vaccine Route",,"Other"

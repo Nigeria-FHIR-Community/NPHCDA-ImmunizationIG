@@ -1,4 +1,4 @@
-Extension: NGPrimaryVaccineStatus
+/* Extension: NGPrimaryVaccineStatus
 Id: primary-vaccine-status
 Title: "NG-Imm Primary VaccineStatus"
 Description: "Indicates whether the immunization patient has completed the full primary vaccine series"
@@ -6,7 +6,7 @@ Description: "Indicates whether the immunization patient has completed the full 
 * ^context[0].expression = "Immunization"
 * value[x] only CodeableConcept
 * valueCodeableConcept from NGPrimaryVaccineStatusVS (required)
-* valueCodeableConcept ^short = "Status of primary series (e.g., completed, not completed)"
+* valueCodeableConcept ^short = "Status of primary series (e.g., completed, not completed)" */
 
 
 Extension: NGSignature

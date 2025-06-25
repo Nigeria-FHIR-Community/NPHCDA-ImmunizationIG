@@ -51,7 +51,7 @@ Description: "Nigerian Profile for Immunization resource."
 
 // Immunization Extensions
  
-* extension contains NGPrimaryVaccineStatus named primaryVaccineStatus 0..1 MS
+/* * extension contains NGPrimaryVaccineStatus named primaryVaccineStatus 0..1 MS */
 * extension contains NGSignature named signature 0..1 MS
 * extension contains NGSessionType named sessionType 0..1 MS
 * extension contains NGContraindications named contraindications 0..* MS

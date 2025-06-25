@@ -392,7 +392,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div>AL1-4</div></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ao" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-allergy-intolerance-profile-definitions.html#AllergyIntolerance.code" title="Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;), or a negated/excluded code for a specific substance or class (e.g., &quot;No latex allergy&quot;) or a general or categorical negated statement (e.g.,  &quot;No known allergy&quot;, &quot;No known drug allergies&quot;).  Note: the substance for a specific reaction may be different from the substance identified as the cause of the risk, but it must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite product that includes the identified substance. It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'.  If a receiving system is unable to confirm that AllergyIntolerance.reaction.substance falls within the semantic scope of AllergyIntolerance.code, then the receiving system should ignore AllergyIntolerance.reaction.substance.">code</a><a name="AllergyIntolerance.code"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-<div><ul><li>.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT</li><li> determinerCode=KIND</li><li>.participation[typeCode=CAGNT</li><li> negationInd=true].role[classCode=ADMM].player[classCode=MAT</li><li> determinerCode=KIND</li><li>Observation.code=ASSERTION; Observation.value</li></ul></div></td>
+<div><ul><li>
+
+.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT</li><li> determinerCode=KIND</li><li>
+
+.participation[typeCode=CAGNT</li><li> negationInd=true].role[classCode=ADMM].player[classCode=MAT</li><li> determinerCode=KIND</li><li>
+
+Observation.code=ASSERTION; Observation.value</li></ul></div></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
 <div>FiveWs.what[x]</div></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
@@ -586,7 +592,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 06:30+0100">2025-06-25</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 15:44+0100">2025-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

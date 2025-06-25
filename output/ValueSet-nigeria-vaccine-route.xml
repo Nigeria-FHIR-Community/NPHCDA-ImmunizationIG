@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="nigeria-vaccine-route"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-vaccine-route</b></p><a name="nigeria-vaccine-route"> </a><a name="hcnigeria-vaccine-route"> </a><ul><li>Include all codes defined in <code>https://www.hl7.org/fhir/R4/valueset-immunization-route</code></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-vaccine-route</b></p><a name="nigeria-vaccine-route"> </a><a name="hcnigeria-vaccine-route"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/immunization-route</code></li></ul></div>
   </text>
-  <url value="https://www.hl7.org/fhir/R4/valueset-immunization-route"/>
+  <url value="http://hl7.org/fhir/ValueSet/immunization-route"/>
   <version value="0.4.0"/>
   <name value="NGImmunizationRouteVS"/>
   <title value="NG-Imm Vaccine Route VS"/>
   <status value="active"/>
-  <date value="2025-06-25T06:29:04+01:00"/>
+  <date value="2025-06-25T15:41:07+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -37,7 +37,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://www.hl7.org/fhir/R4/valueset-immunization-route"/>
+      <system value="http://hl7.org/fhir/ValueSet/immunization-route"/>
     </include>
   </compose>
 </ValueSet>

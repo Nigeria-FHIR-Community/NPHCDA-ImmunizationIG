@@ -7,6 +7,20 @@
     "name" : "NGGenderVS"
   },
   {
+    "id" : "nigeria-verifiction-status",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+    "version" : "0.4.0",
+    "name" : "NGVerificationStatusVS"
+  },
+  {
+    "id" : "nigeria-vaccine-route",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+    "version" : "0.4.0",
+    "name" : "NGImmunizationRouteVS"
+  },
+  {
     "id" : "nigeria-primary-vaccine-status",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
@@ -509,13 +523,6 @@
     "name" : "NGPregnancyStatus"
   },
   {
-    "id" : "primary-vaccine-status",
-    "type" : "StructureDefinition",
-    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status",
-    "version" : "0.4.0",
-    "name" : "NGPrimaryVaccineStatus"
-  },
-  {
     "id" : "register-client-model",
     "type" : "StructureDefinition",
     "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model",
@@ -549,19 +556,5 @@
     "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature",
     "version" : "0.4.0",
     "name" : "NGSignature"
-  },
-  {
-    "id" : "nigeria-verifiction-status",
-    "type" : "ValueSet",
-    "url" : "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification",
-    "version" : "0.4.0",
-    "name" : "NGVerificationStatusVS"
-  },
-  {
-    "id" : "nigeria-vaccine-route",
-    "type" : "ValueSet",
-    "url" : "https://www.hl7.org/fhir/R4/valueset-immunization-route",
-    "version" : "0.4.0",
-    "name" : "NGImmunizationRouteVS"
   }
 ]

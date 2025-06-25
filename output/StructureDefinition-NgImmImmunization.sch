@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:Immunization</sch:title>
     <sch:rule context="f:Immunization">
-      <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>

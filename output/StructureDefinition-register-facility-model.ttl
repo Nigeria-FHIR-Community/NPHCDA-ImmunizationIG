@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "RegisterFacilityModel"] ; # 
   fhir:title [ fhir:v "NG-Imm-A RegisterFacility[information only]"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-25T06:29:04+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-25T15:41:07+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;

@@ -24,7 +24,7 @@ Usage: #example
 * performer[0].actor.reference = "Practitioner/nurse-aisha"
 * performer[0].actor.display = "Nurse Aisha Bello"
 * performer[0].function.text = "Vaccinator"
-* extension[NGPrimaryVaccineStatus].valueCodeableConcept = http://nphcda.gov.ng/fhir/CodeSystem/ng-vaccine-status#primary-series
+/* * extension[NGPrimaryVaccineStatus].valueCodeableConcept = http://hl7.org/fhir/ValueSet/immunization-status#primary-series */
 * extension[NGSignature].valueString = "signed-by-nurse-aisha"
 * extension[NGSessionType].valueCodeableConcept = http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type#fixed
 
@@ -59,7 +59,7 @@ Usage: #example
 * performer[0].actor.reference = "Practitioner/nurse-chinedu"
 * performer[0].actor.display = "Nurse Chinedu Umeh"
 * performer[0].function.text = "Vaccination Supervisor"
-* extension[NGPrimaryVaccineStatus].valueCodeableConcept = http://nphcda.gov.ng/fhir/CodeSystem/ng-vaccine-status#not-given
+/* * extension[NGPrimaryVaccineStatus].valueCodeableConcept = http://nphcda.gov.ng/fhir/CodeSystem/ng-vaccine-status#not-given */
 * extension[NGSignature].valueString = "signed-by-nurse-chinedu"
 * extension[NGSessionType].valueCodeableConcept = http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type#outreach
 * extension[NGContraindications][0].valueCodeableConcept = http://snomed.info/sct#386661006 "Fever"

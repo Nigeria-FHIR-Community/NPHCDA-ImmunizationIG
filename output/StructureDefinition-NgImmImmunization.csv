@@ -24,10 +24,6 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.extension:primaryVaccineStatus","Immunization.extension","primaryVaccineStatus","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status]]} {[]}
-","NG-Imm Primary VaccineStatus","Indicates whether the immunization patient has completed the full primary vaccine series","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.extension:signature","Immunization.extension","signature","","",0,1,"Y","","","Extension {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature]]} {[]}
 ","NG-Imm Digital Signature","A digital or electronic signature capturing who signed, when, type, and signature data.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -137,7 +133,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Body site vaccine was administered","Body site where vaccine was administered.","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site","",,,,"Immunization.site",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","RXR-2","observation.targetSiteCode","ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/approachSiteCode/code"
 "Immunization.route","Immunization.route","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","How vaccine entered body","The path by which the vaccine product is taken into the body.","","","","","","","","","",,"required","","https://www.hl7.org/fhir/R4/valueset-immunization-route","",,,,"Immunization.route",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","How vaccine entered body","The path by which the vaccine product is taken into the body.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/immunization-route","",,,,"Immunization.route",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","RXR-1",".routeCode","ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/routeCode/code"
 "Immunization.doseQuantity","Immunization.doseQuantity","","","",1,1,"Y","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
 ","Amount of vaccine administered","The quantity of vaccine product that was administered.","","","","","","","","","",,,,,"",,,,"Immunization.doseQuantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
