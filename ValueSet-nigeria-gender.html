@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.51"}
-    h3,h4,h5,h6{--heading-prefix:"10.51"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.52"}
+    h3,h4,h5,h6{--heading-prefix:"10.52"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -178,13 +178,13 @@
   <h2 id="root">ValueSet: NG-Imm Gender or Sex VS
 
   </h2>
-  <table class="colsi">
+  <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/R4/valueset-administrative-gender<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/R4/valueset-administrative-gender"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender|0.4.0"/></span>
+      <span class="copy-text">0.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/R4/valueset-administrative-gender|0.4.0"/></span>
       </td>
     </tr>
 
@@ -198,9 +198,9 @@
 
       <td colspan="4">
         
-          Active
+          Draft
           
-            as of 2025-06-24
+            as of 2025-06-25
           
         
       </td>
@@ -216,7 +216,7 @@
   </table>
 
 <p>
-<p>The administrative gender of a person.</p>
+<p>Subset of HL7 administrative-gender limited to ‘male’ and ‘female’.</p>
 
 </p>
 
@@ -227,6 +227,7 @@
   
 <ul>
  <li><a href="StructureDefinition-NgImmPatient.html">NG-Imm Patient</a></li>
+ <li><a href="StructureDefinition-mother-other-children.html">NG-Imm RelatedPerson</a></li>
 </ul>
 
 
@@ -239,14 +240,15 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p>
-<ul><li>Include all codes defined in <a href="CodeSystem-nigeria-gender.html"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</code></a></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="nigeria-gender"> </a><a name="hcnigeria-gender"> </a>
+<ul><li>Include all codes defined in <code>http://hl7.org/fhir/R4/valueset-administrative-gender</code></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-nigeria-gender.html">codesystem NG-Imm Gender or Sex CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-male"> </a>  <a href="CodeSystem-nigeria-gender.html#nigeria-gender-male">male</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td><td>Male</td><td>Male sex</td></tr><tr><td style="white-space:nowrap"><a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-female"> </a>  <a href="CodeSystem-nigeria-gender.html#nigeria-gender-female">female</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td><td>Female</td><td>Female sex</td></tr></table></div>
+  <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px" title="No Expansion for this valueset (not supported by Publication Tooling&lt;!-- [Error from https://tx.fhir.org/r4: Attempt to reference http://hl7.org/fhir/R4/valueset-administrative-gender as a CodeSystem when it's a ValueSet] --&gt;)">No Expansion for this valueset (not supported by Publication Tooling<!-- [Error from https://tx.fhir.org/r4: Attempt to reference http://hl7.org/fhir/R4/valueset-administrative-gender as a CodeSystem when it's a ValueSet] -->)</p>
+
 
   <hr/>
   <p>
@@ -305,7 +307,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 24, 2025 09:14+0100">2025-06-24</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 06:30+0100">2025-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

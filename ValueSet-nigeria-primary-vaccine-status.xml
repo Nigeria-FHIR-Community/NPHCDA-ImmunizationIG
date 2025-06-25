@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-primary-vaccine-status</b></p><a name="nigeria-primary-vaccine-status"> </a><a name="hcnigeria-primary-vaccine-status"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/immunization-status</code></li></ul></div>
   </text>
-  <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"/>
+  <url value="http://hl7.org/fhir/ValueSet/immunization-status"/>
   <version value="0.4.0"/>
   <name value="NGPrimaryVaccineStatusVS"/>
   <title value="NG-Imm Primary vaccine Status VS"/>
   <status value="active"/>
-  <date value="2025-06-24T09:13:37+01:00"/>
+  <date value="2025-06-25T06:29:04+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

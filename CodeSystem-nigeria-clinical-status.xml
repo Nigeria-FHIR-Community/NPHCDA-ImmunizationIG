@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="nigeria-clinical-status"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-clinical-status</b></p><a name="nigeria-clinical-status"> </a><a name="hcnigeria-clinical-status"> </a><p>This  code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">active<a name="nigeria-clinical-status-active"> </a></td><td>Active</td><td>The clinical condition is currently present, ongoing, or requires active management or monitoring.</td></tr><tr><td style="white-space:nowrap">inactive<a name="nigeria-clinical-status-inactive"> </a></td><td>Inactive</td><td>The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment.</td></tr><tr><td style="white-space:nowrap">resolved<a name="nigeria-clinical-status-resolved"> </a></td><td>Resolved</td><td>The clinical condition has completely resolved and is no longer impacting the patient’s health or requiring further management.</td></tr><tr><td style="white-space:nowrap">recovered<a name="nigeria-clinical-status-recovered"> </a></td><td>Recovered</td><td>The individual has recovered fully from the adverse event without any long-term effects or sequelae.</td></tr><tr><td style="white-space:nowrap">recovered-with-sequelae<a name="nigeria-clinical-status-recovered-with-sequelae"> </a></td><td>Recovered with sequelae</td><td>The individual has recovered from the adverse event but with lasting effects, complications, or disabilities.</td></tr><tr><td style="white-space:nowrap">death<a name="nigeria-clinical-status-death"> </a></td><td>Death</td><td>The adverse event resulted in the death of the individual.</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-clinical-status</b></p><a name="nigeria-clinical-status"> </a><a name="hcnigeria-clinical-status"> </a><p>This  code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">active<a name="nigeria-clinical-status-active"> </a></td><td>Active</td><td>The clinical condition is currently present, ongoing, or requires active management or monitoring.</td></tr><tr><td style="white-space:nowrap">inactive<a name="nigeria-clinical-status-inactive"> </a></td><td>Inactive</td><td>The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment.</td></tr><tr><td style="white-space:nowrap">resolved<a name="nigeria-clinical-status-resolved"> </a></td><td>Resolved</td><td>The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management.</td></tr><tr><td style="white-space:nowrap">recovered<a name="nigeria-clinical-status-recovered"> </a></td><td>Recovered</td><td>The individual has recovered fully from the adverse event without any long-term effects or sequelae.</td></tr><tr><td style="white-space:nowrap">recovered-with-sequelae<a name="nigeria-clinical-status-recovered-with-sequelae"> </a></td><td>Recovered with sequelae</td><td>The individual has recovered from the adverse event but with lasting effects, complications, or disabilities.</td></tr><tr><td style="white-space:nowrap">death<a name="nigeria-clinical-status-death"> </a></td><td>Death</td><td>The adverse event resulted in the death of the individual.</td></tr></table></div>
   </text>
   <url value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"/>
   <version value="0.4.0"/>
   <name value="NGClinicalStatusCS"/>
   <title value="NG-Imm Adverse Event Clinical Status CS"/>
   <status value="active"/>
-  <date value="2025-06-24T09:13:37+01:00"/>
+  <date value="2025-06-25T06:29:04+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -64,7 +64,7 @@
   <concept>
     <code value="resolved"/>
     <display value="Resolved"/>
-    <definition value="The clinical condition has completely resolved and is no longer impacting the patient’s health or requiring further management."/>
+    <definition value="The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management."/>
     <designation>
       <use>
         <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>

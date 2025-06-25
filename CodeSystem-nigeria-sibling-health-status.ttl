@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NGSiblingHealthStatusCS"] ; # 
   fhir:title [ fhir:v "NG-Imm Sibling Health Status CS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-24T09:13:37+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-25T06:29:04+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -34,7 +34,7 @@
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "This CodeSystem defines list of relationships that a part of this IG"] ; # 
+  fhir:description [ fhir:v "This CodeSystem defines the health of the client's sibling"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;

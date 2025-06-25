@@ -1,5 +1,26 @@
 [
   {
+    "id" : "nigeria-gender",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/R4/valueset-administrative-gender",
+    "version" : "0.4.0",
+    "name" : "NGGenderVS"
+  },
+  {
+    "id" : "nigeria-primary-vaccine-status",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+    "version" : "0.4.0",
+    "name" : "NGPrimaryVaccineStatusVS"
+  },
+  {
+    "id" : "nigeria-Immunization-status-reason",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+    "version" : "0.4.0",
+    "name" : "NGImmunizationNotDoneReasonsVS"
+  },
+  {
     "id" : "nigeria-wards",
     "type" : "CodeSystem",
     "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward",
@@ -11,7 +32,7 @@
     "type" : "CodeSystem",
     "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity",
     "version" : "0.4.0",
-    "name" : "NigeriaAllergySeverityCS"
+    "name" : "NGAllergySeverityCS"
   },
   {
     "id" : "nigeria-clinical-status",
@@ -33,13 +54,6 @@
     "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS",
     "version" : "0.4.0",
     "name" : "NGFacilityTypeCS"
-  },
-  {
-    "id" : "nigeria-gender",
-    "type" : "CodeSystem",
-    "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender",
-    "version" : "0.4.0",
-    "name" : "NGGenderCS"
   },
   {
     "id" : "nigeria-hiv-status",
@@ -68,6 +82,13 @@
     "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS",
     "version" : "0.4.0",
     "name" : "NGPregnancyStatusCS"
+  },
+  {
+    "id" : "nigeria-relationship",
+    "type" : "CodeSystem",
+    "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+    "version" : "0.4.0",
+    "name" : "NGRelationshipsCS"
   },
   {
     "id" : "nigeria-immunization-session-type",
@@ -126,13 +147,6 @@
     "name" : "NGClinicalStatusVS"
   },
   {
-    "id" : "nigeria-gender",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
-    "version" : "0.4.0",
-    "name" : "NGGenderVS"
-  },
-  {
     "id" : "nigeria-facility-types",
     "type" : "ValueSet",
     "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
@@ -145,20 +159,6 @@
     "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas",
     "version" : "0.4.0",
     "name" : "NGLGAsVS"
-  },
-  {
-    "id" : "nigeria-Immunization-status-reason",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
-    "version" : "0.4.0",
-    "name" : "NGImmunizationNotDoneReasonsVS"
-  },
-  {
-    "id" : "nigeria-primary-vaccine-status",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
-    "version" : "0.4.0",
-    "name" : "NGPrimaryVaccineStatusVS"
   },
   {
     "id" : "nigeria-relationship",
@@ -203,25 +203,11 @@
     "name" : "NGVaccineLibraryVS"
   },
   {
-    "id" : "nigeria-vaccine-route",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route",
-    "version" : "0.4.0",
-    "name" : "NGImmunizationRouteVS"
-  },
-  {
     "id" : "nigeria-vaccine-site",
     "type" : "ValueSet",
     "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site",
     "version" : "0.4.0",
     "name" : "NGImmunizationSiteVS"
-  },
-  {
-    "id" : "nigeria-verifiction-status",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status",
-    "version" : "0.4.0",
-    "name" : "NGVerificationStatusVS"
   },
   {
     "id" : "nigeria-wards",
@@ -563,5 +549,19 @@
     "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature",
     "version" : "0.4.0",
     "name" : "NGSignature"
+  },
+  {
+    "id" : "nigeria-verifiction-status",
+    "type" : "ValueSet",
+    "url" : "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification",
+    "version" : "0.4.0",
+    "name" : "NGVerificationStatusVS"
+  },
+  {
+    "id" : "nigeria-vaccine-route",
+    "type" : "ValueSet",
+    "url" : "https://www.hl7.org/fhir/R4/valueset-immunization-route",
+    "version" : "0.4.0",
+    "name" : "NGImmunizationRouteVS"
   }
 ]

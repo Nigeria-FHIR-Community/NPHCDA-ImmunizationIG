@@ -5,12 +5,12 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-verifiction-status</b></p><a name=\"nigeria-verifiction-status\"> </a><a name=\"hcnigeria-verifiction-status\"> </a><ul><li>Include all codes defined in <code>https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification</code></li></ul></div>"
   },
-  "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status",
+  "url" : "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification",
   "version" : "0.4.0",
   "name" : "NGVerificationStatusVS",
-  "title" : "NG-Imm AEFI VerificationStatus VS",
+  "title" : "NG-Imm AEFI Verification Status VS",
   "status" : "active",
-  "date" : "2025-06-24T09:13:37+01:00",
+  "date" : "2025-06-25T06:29:04+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

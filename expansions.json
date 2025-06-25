@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "19373cd1-8fca-4c1c-b60c-4f43d76149b8",
+  "id" : "c4f494ca-3fd0-44d7-aa66-24234f751cb8",
   "meta" : {
-    "lastUpdated" : "2025-06-24T09:14:33.225+01:00"
+    "lastUpdated" : "2025-06-25T06:30:12.149+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,14 +11,14 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-allergy-severity.html\">codesystem NG-Imm Reaction Severity CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity-mild\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-allergy-severity.html#nigeria-allergy-severity-mild\">mild</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity</td><td>Mild</td><td>The allergic reaction involves mild symptoms such as localized redness, itching, or rash, without systemic involvement or need for significant medical intervention.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity-moderate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-allergy-severity.html#nigeria-allergy-severity-moderate\">moderate</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity</td><td>Moderate</td><td>The reaction includes more pronounced symptoms like widespread hives, mild breathing difficulty, or swelling that requires medical observation or treatment but is not life-threatening.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity-severe\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-allergy-severity.html#nigeria-allergy-severity-severe\">severe</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity</td><td>Severe</td><td>The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-allergy-severity.html\">codesystem NG-Imm Allergy Severity CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity-mild\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-allergy-severity.html#nigeria-allergy-severity-mild\">mild</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity</td><td>Mild</td><td>The allergic reaction involves mild symptoms such as localized redness, itching, or rash, without systemic involvement or need for significant medical intervention.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity-moderate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-allergy-severity.html#nigeria-allergy-severity-moderate\">moderate</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity</td><td>Moderate</td><td>The reaction includes more pronounced symptoms like widespread hives, mild breathing difficulty, or swelling that requires medical observation or treatment but is not life-threatening.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity-severe\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-allergy-severity.html#nigeria-allergy-severity-severe\">severe</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity</td><td>Severe</td><td>The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise.</td></tr></table></div>"
       },
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-allergy-severity",
       "version" : "0.4.0",
       "name" : "NGAllergySeverityVS",
       "title" : "NG-Imm Allergy Severity VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e6548cd7-ee0d-4fdc-95c7-0518ffcb0458",
-        "timestamp" : "2025-06-24T09:15:35+01:00",
+        "identifier" : "urn:uuid:37a9e086-41a5-4451-ba22-8fa07a22db4c",
+        "timestamp" : "2025-06-25T06:31:42+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -75,14 +75,14 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-clinical-status.html\">codesystem NG-Imm Adverse Event Clinical Status CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-active\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-active\">active</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Active</td><td>The clinical condition is currently present, ongoing, or requires active management or monitoring.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-inactive\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-inactive\">inactive</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Inactive</td><td>The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-resolved\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-resolved\">resolved</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Resolved</td><td>The clinical condition has completely resolved and is no longer impacting the patient’s health or requiring further management.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-recovered\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-recovered\">recovered</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Recovered</td><td>The individual has recovered fully from the adverse event without any long-term effects or sequelae.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-recovered-with-sequelae\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-recovered-with-sequelae\">recovered-with-sequelae</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Recovered with sequelae</td><td>The individual has recovered from the adverse event but with lasting effects, complications, or disabilities.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-death\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-death\">death</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Death</td><td>The adverse event resulted in the death of the individual.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-clinical-status.html\">codesystem NG-Imm Adverse Event Clinical Status CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-active\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-active\">active</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Active</td><td>The clinical condition is currently present, ongoing, or requires active management or monitoring.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-inactive\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-inactive\">inactive</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Inactive</td><td>The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-resolved\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-resolved\">resolved</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Resolved</td><td>The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-recovered\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-recovered\">recovered</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Recovered</td><td>The individual has recovered fully from the adverse event without any long-term effects or sequelae.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-recovered-with-sequelae\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-recovered-with-sequelae\">recovered-with-sequelae</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Recovered with sequelae</td><td>The individual has recovered from the adverse event but with lasting effects, complications, or disabilities.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status-death\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-clinical-status.html#nigeria-clinical-status-death\">death</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td><td>Death</td><td>The adverse event resulted in the death of the individual.</td></tr></table></div>"
       },
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status",
       "version" : "0.4.0",
       "name" : "NGClinicalStatusVS",
-      "title" : "NG-Imm Reaction Outcome VS",
+      "title" : "NG-Imm Clinical Status VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -91,8 +91,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7c2f0dc2-3be7-436c-aa97-c2ae0348ab3c",
-        "timestamp" : "2025-06-24T09:15:35+01:00",
+        "identifier" : "urn:uuid:202b134f-f48c-400e-a8fc-acb278f5639c",
+        "timestamp" : "2025-06-25T06:31:42+01:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -161,7 +161,7 @@
       "name" : "NGFacilityTypeVS",
       "title" : "NG-Imm HealthFacility Type VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -170,8 +170,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fc01730e-1930-472a-9297-2121bb19e531",
-        "timestamp" : "2025-06-24T09:15:36+01:00",
+        "identifier" : "urn:uuid:31901ec5-54d7-453e-8ac5-1a0e007ab38f",
+        "timestamp" : "2025-06-25T06:31:42+01:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{
@@ -238,65 +238,6 @@
     }
   },
   {
-    "fullUrl" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-gender.html\">codesystem NG-Imm Gender or Sex CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-male\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-gender.html#nigeria-gender-male\">male</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td><td>Male</td><td>Male sex</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-female\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-gender.html#nigeria-gender-female\">female</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td><td>Female</td><td>Female sex</td></tr></table></div>"
-      },
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
-      "version" : "0.4.0",
-      "name" : "NGGenderVS",
-      "title" : "NG-Imm Gender or Sex VS",
-      "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NG",
-          "display" : "Nigeria"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:4b0e1460-7c8c-47ac-89fe-a3795c83a720",
-        "timestamp" : "2025-06-24T09:15:36+01:00",
-        "total" : 2,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "en-US"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender|0.4.0"
-        }],
-        "contains" : [{
-          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender",
-          "code" : "male",
-          "display" : "Male"
-        },
-        {
-          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender",
-          "code" : "female",
-          "display" : "Female"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -309,7 +250,7 @@
       "name" : "NGHivStatusVS",
       "title" : "NG-Imm Client HIV Status VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -318,8 +259,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a6962f27-5ea1-445f-b9ee-c6f24741f0fa",
-        "timestamp" : "2025-06-24T09:15:36+01:00",
+        "identifier" : "urn:uuid:4464f737-e635-4643-bb0c-5ac27c4b7452",
+        "timestamp" : "2025-06-25T06:31:43+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -373,7 +314,7 @@
       "name" : "NGLGAsVS",
       "title" : "NG-Imm LGAs VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -382,8 +323,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9cfed1c3-0c04-462b-afb7-6b4d8de00e1d",
-        "timestamp" : "2025-06-24T09:15:36+01:00",
+        "identifier" : "urn:uuid:22fae11b-56e7-44e1-8c57-501ae635c954",
+        "timestamp" : "2025-06-25T06:31:43+01:00",
         "total" : 774,
         "offset" : 0,
         "parameter" : [{
@@ -4292,7 +4233,7 @@
       "name" : "NGPregnancyStatusVS",
       "title" : "NG-Imm Client Preganancy Status VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4301,8 +4242,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9a2c5890-cf90-4ba8-807c-6135a0c1a65a",
-        "timestamp" : "2025-06-24T09:15:37+01:00",
+        "identifier" : "urn:uuid:f70f3fad-9b0c-408b-b18e-ebcece329716",
+        "timestamp" : "2025-06-25T06:31:44+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4344,19 +4285,19 @@
     }
   },
   {
-    "fullUrl" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
+    "fullUrl" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-immunization-session-type.html\">codesystem NG-Imm Immunization Session types CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type-fixed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-immunization-session-type.html#nigeria-immunization-session-type-fixed\">fixed</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</td><td>Fixed session</td><td>An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type-outreach\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-immunization-session-type.html#nigeria-immunization-session-type-outreach\">outreach</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</td><td>Outreach session</td><td>An immunization session conducted outside of fixed sites, typically within a 5–10 km radius of a health facility, aimed at increasing access for underserved populations.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type-mobile\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-immunization-session-type.html#nigeria-immunization-session-type-mobile\">mobile</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</td><td>Mobile session</td><td>An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-relationship.html\">codesystem NG-Imm Relationships CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 15 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-BROTHER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-BROTHER\">BROTHER</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Brother</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-SISTER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-SISTER\">SISTER</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Sister</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-SON\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-SON\">SON</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Son</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-DAUGHTER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-DAUGHTER\">DAUGHTER</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Daughter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-MOTHER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-MOTHER\">MOTHER</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Mother</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-FATHER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-FATHER\">FATHER</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Father</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-AUNT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-AUNT\">AUNT</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Aunt</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-COUNSN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-COUNSN\">COUNSN</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Cousin</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-GRDSON\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-GRDSON\">GRDSON</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Grand Son</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-GRDDAU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-GRDDAU\">GRDDAU</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Grand Daughter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-INLAW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-INLAW\">INLAW</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Inlaw</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-NEPHEW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-NEPHEW\">NEPHEW</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Nephew</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-NIECE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-NIECE\">NIECE</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Niece</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-UNCLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-UNCLE\">UNCLE</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Uncle</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-FRND\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-relationship.html#nigeria-relationship-FRND\">FRND</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td><td>Friend</td></tr></table></div>"
       },
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship",
       "version" : "0.4.0",
-      "name" : "NGSessionTypeVS",
-      "title" : "NG-Imm Session Type VS",
+      "name" : "NGRelationshipsVS",
+      "title" : "NG-Imm Relationships VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4365,8 +4306,132 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:de0dd32b-ef5c-4d6c-b164-ecf86f8b52b8",
-        "timestamp" : "2025-06-24T09:15:37+01:00",
+        "identifier" : "urn:uuid:3f7ea622-019a-43a3-9a5b-7cf9ca5848a7",
+        "timestamp" : "2025-06-25T06:31:44+01:00",
+        "total" : 15,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship|0.4.0"
+        }],
+        "contains" : [{
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "BROTHER",
+          "display" : "Brother"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "SISTER",
+          "display" : "Sister"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "SON",
+          "display" : "Son"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "DAUGHTER",
+          "display" : "Daughter"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "MOTHER",
+          "display" : "Mother"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "FATHER",
+          "display" : "Father"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "AUNT",
+          "display" : "Aunt"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "COUNSN",
+          "display" : "Cousin"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "GRDSON",
+          "display" : "Grand Son"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "GRDDAU",
+          "display" : "Grand Daughter"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "INLAW",
+          "display" : "Inlaw"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "NEPHEW",
+          "display" : "Nephew"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "NIECE",
+          "display" : "Niece"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "UNCLE",
+          "display" : "Uncle"
+        },
+        {
+          "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
+          "code" : "FRND",
+          "display" : "Friend"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-immunization-session-type.html\">codesystem NG-Imm Immunization Session types CS v0.4.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type-fixed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-immunization-session-type.html#nigeria-immunization-session-type-fixed\">fixed</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</td><td>Fixed session</td><td>An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type-outreach\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-immunization-session-type.html#nigeria-immunization-session-type-outreach\">outreach</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</td><td>Outreach session</td><td>An immunization session conducted outside of fixed sites, typically within a 5-10 km radius of a health facility, aimed at increasing access for underserved populations.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type-mobile\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-immunization-session-type.html#nigeria-immunization-session-type-mobile\">mobile</a></td><td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</td><td>Mobile session</td><td>An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport.</td></tr></table></div>"
+      },
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
+      "version" : "0.4.0",
+      "name" : "NGSessionTypeVS",
+      "title" : "NG-Imm Session Type VS",
+      "status" : "active",
+      "date" : "2025-06-25T06:29:04+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NG",
+          "display" : "Nigeria"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9a7ae707-02b1-479f-b985-1f2b54fbadd1",
+        "timestamp" : "2025-06-25T06:31:45+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4420,7 +4485,7 @@
       "name" : "NGSiblingHealthStatusVS",
       "title" : "NG-Imm Sibling Health Status VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4429,8 +4494,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ed945723-6b79-4312-a6bb-fbe981675828",
-        "timestamp" : "2025-06-24T09:15:37+01:00",
+        "identifier" : "urn:uuid:0c7eefe4-a398-437f-a35f-c4180fa52b8b",
+        "timestamp" : "2025-06-25T06:31:45+01:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -4489,7 +4554,7 @@
       "name" : "NGStatesVS",
       "title" : "NG-Imm States VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4498,8 +4563,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d1f5cd9b-b6f3-4b3d-819f-f0c2fc9387b3",
-        "timestamp" : "2025-06-24T09:15:37+01:00",
+        "identifier" : "urn:uuid:928b0cb3-7fa2-4d7b-b711-0609f8edbfbc",
+        "timestamp" : "2025-06-25T06:31:45+01:00",
         "total" : 37,
         "offset" : 0,
         "parameter" : [{
@@ -4723,7 +4788,7 @@
       "name" : "NGContraindicationVS",
       "title" : "NG-Imm Vaccine Contraindication VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4732,8 +4797,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:48027be6-aaa9-4c0c-9e6e-166e623d0150",
-        "timestamp" : "2025-06-24T09:15:37+01:00",
+        "identifier" : "urn:uuid:3c8a6677-8af8-46fa-a607-cd939dcd8993",
+        "timestamp" : "2025-06-25T06:31:45+01:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -4792,7 +4857,7 @@
       "name" : "NGVaccineLibraryVS",
       "title" : "NG-Imm VaccineLibrary VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4801,8 +4866,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a783c8bd-e77c-4e40-85c1-6638fadd28ef",
-        "timestamp" : "2025-06-24T09:15:37+01:00",
+        "identifier" : "urn:uuid:0944a9ee-545f-4081-9220-1fa90f07ee29",
+        "timestamp" : "2025-06-25T06:31:45+01:00",
         "total" : 29,
         "offset" : 0,
         "parameter" : [{
@@ -4986,7 +5051,7 @@
       "name" : "NGImmunizationSiteVS",
       "title" : "NG-Imm Vaccine Site VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4995,8 +5060,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1109de74-3f64-4318-84cc-cdd239ca8e90",
-        "timestamp" : "2025-06-24T09:15:37+01:00",
+        "identifier" : "urn:uuid:8996aeb4-b7ce-4bfe-b892-b099e4d2ea2c",
+        "timestamp" : "2025-06-25T06:31:48+01:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -5060,7 +5125,7 @@
       "name" : "NGWardsVS",
       "title" : "NG-Imm Wards VS",
       "status" : "active",
-      "date" : "2025-06-24T09:13:37+01:00",
+      "date" : "2025-06-25T06:29:04+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -5069,8 +5134,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ce2cfd70-122e-455a-8014-81c1d1ee2179",
-        "timestamp" : "2025-06-24T09:15:37+01:00",
+        "identifier" : "urn:uuid:3464b529-86d0-4325-89ff-4383741ba68c",
+        "timestamp" : "2025-06-25T06:31:48+01:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{

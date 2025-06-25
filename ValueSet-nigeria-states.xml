@@ -10,7 +10,7 @@
   <name value="NGStatesVS"/>
   <title value="NG-Imm States VS"/>
   <status value="active"/>
-  <date value="2025-06-24T09:13:37+01:00"/>
+  <date value="2025-06-25T06:29:04+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -27,7 +27,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="The administrative ward where a person or a facility is."/>
+  <description value="The state where a person or a facility is."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

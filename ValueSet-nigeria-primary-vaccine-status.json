@@ -5,12 +5,12 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-primary-vaccine-status</b></p><a name=\"nigeria-primary-vaccine-status\"> </a><a name=\"hcnigeria-primary-vaccine-status\"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/immunization-status</code></li></ul></div>"
   },
-  "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
+  "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
   "version" : "0.4.0",
   "name" : "NGPrimaryVaccineStatusVS",
   "title" : "NG-Imm Primary vaccine Status VS",
   "status" : "active",
-  "date" : "2025-06-24T09:13:37+01:00",
+  "date" : "2025-06-25T06:29:04+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

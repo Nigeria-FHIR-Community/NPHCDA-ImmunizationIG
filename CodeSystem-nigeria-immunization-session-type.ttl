@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "nigeria-immunization-session-type"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-immunization-session-type</b></p><a name=\"nigeria-immunization-session-type\"> </a><a name=\"hcnigeria-immunization-session-type\"> </a><p>This  code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fixed<a name=\"nigeria-immunization-session-type-fixed\"> </a></td><td>Fixed session</td><td>An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available.</td></tr><tr><td style=\"white-space:nowrap\">outreach<a name=\"nigeria-immunization-session-type-outreach\"> </a></td><td>Outreach session</td><td>An immunization session conducted outside of fixed sites, typically within a 5–10 km radius of a health facility, aimed at increasing access for underserved populations.</td></tr><tr><td style=\"white-space:nowrap\">mobile<a name=\"nigeria-immunization-session-type-mobile\"> </a></td><td>Mobile session</td><td>An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport.</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-immunization-session-type</b></p><a name=\"nigeria-immunization-session-type\"> </a><a name=\"hcnigeria-immunization-session-type\"> </a><p>This  code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fixed<a name=\"nigeria-immunization-session-type-fixed\"> </a></td><td>Fixed session</td><td>An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available.</td></tr><tr><td style=\"white-space:nowrap\">outreach<a name=\"nigeria-immunization-session-type-outreach\"> </a></td><td>Outreach session</td><td>An immunization session conducted outside of fixed sites, typically within a 5-10 km radius of a health facility, aimed at increasing access for underserved populations.</td></tr><tr><td style=\"white-space:nowrap\">mobile<a name=\"nigeria-immunization-session-type-mobile\"> </a></td><td>Mobile session</td><td>An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport.</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.4.0"] ; # 
   fhir:name [ fhir:v "NGImmunizationSessionTypeCS"] ; # 
   fhir:title [ fhir:v "NG-Imm Immunization Session types CS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-24T09:13:37+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-25T06:29:04+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -34,7 +34,7 @@
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR)."] ; # 
+  fhir:description [ fhir:v "Type of session for immunization. Could be in a fixed facility, outreach or mobile."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -52,7 +52,7 @@
   ] [
      fhir:code [ fhir:v "outreach" ] ;
      fhir:display [ fhir:v "Outreach session" ] ;
-     fhir:definition [ fhir:v "An immunization session conducted outside of fixed sites, typically within a 5–10 km radius of a health facility, aimed at increasing access for underserved populations." ]
+     fhir:definition [ fhir:v "An immunization session conducted outside of fixed sites, typically within a 5-10 km radius of a health facility, aimed at increasing access for underserved populations." ]
   ] [
      fhir:code [ fhir:v "mobile" ] ;
      fhir:display [ fhir:v "Mobile session" ] ;

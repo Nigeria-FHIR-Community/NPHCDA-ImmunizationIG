@@ -10,7 +10,7 @@
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-06-24T09:13:37+01:00",
+  "date" : "2025-06-25T06:29:04+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -657,7 +657,7 @@
       "reference" : {
         "reference" : "ValueSet/nigeria-verifiction-status"
       },
-      "name" : "NG-Imm AEFI VerificationStatus VS",
+      "name" : "NG-Imm AEFI Verification Status VS",
       "description" : "AEFI Verification Status",
       "exampleBoolean" : false
     },
@@ -671,6 +671,18 @@
       },
       "name" : "NG-Imm Allergy Dose Number",
       "description" : "Reference immunization dose number for this AllergyIntolerance.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nigeria-allergy-severity"
+      },
+      "name" : "NG-Imm Allergy Severity CS",
+      "description" : "This CodeSystem captures the assessed severity of an allergic reaction following immunization.",
       "exampleBoolean" : false
     },
     {
@@ -815,6 +827,18 @@
       },
       "name" : "NG-Imm Client's Pregnancy status",
       "description" : "The Pregnancy status (pregnant or not-pregnant) of the Immunization Client",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nigeria-clinical-status"
+      },
+      "name" : "NG-Imm Clinical Status VS",
+      "description" : "The outcome of the reaction",
       "exampleBoolean" : false
     },
     {
@@ -1020,25 +1044,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nigeria-gender"
-      },
-      "name" : "NG-Imm Gender or Sex CS",
-      "description" : "Codes for the administrative gender or sex of a person, used in demographic and administrative contexts.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
         "reference" : "ValueSet/nigeria-gender"
       },
       "name" : "NG-Imm Gender or Sex VS",
-      "description" : "The administrative gender of a person.",
+      "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
       "exampleBoolean" : false
     },
     {
@@ -1086,7 +1098,7 @@
         "reference" : "CodeSystem/nigeria-immunization-session-type"
       },
       "name" : "NG-Imm Immunization Session types CS",
-      "description" : "A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR).",
+      "description" : "Type of session for immunization. Could be in a fixed facility, outreach or mobile.",
       "exampleBoolean" : false
     },
     {
@@ -1110,7 +1122,7 @@
         "reference" : "ValueSet/nigeria-lgas"
       },
       "name" : "NG-Imm LGAs VS",
-      "description" : "The administrative Local Government Aread where a person or a facility is.",
+      "description" : "The administrative Local Government Areas where a person or a facility is.",
       "exampleBoolean" : false
     },
     {
@@ -1215,30 +1227,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/nigeria-clinical-status"
-      },
-      "name" : "NG-Imm Reaction Outcome VS",
-      "description" : "Reaction outcome clinical Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nigeria-allergy-severity"
-      },
-      "name" : "NG-Imm Reaction Severity CS",
-      "description" : "This CodeSystem captures the assessed severity of an allergic reaction following immunization.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/nigeria-Immunization-status-reason"
       },
       "name" : "NG-Imm Reason for missed Vaccination VS",
@@ -1260,13 +1248,25 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nigeria-relationship"
+      },
+      "name" : "NG-Imm Relationships CS",
+      "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
         "reference" : "ValueSet/nigeria-relationship"
       },
       "name" : "NG-Imm Relationships VS",
-      "description" : "The administrative ward where a person or a facility is.",
+      "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care.",
       "exampleBoolean" : false
     },
     {
@@ -1474,7 +1474,7 @@
         "reference" : "ValueSet/nigeria-session-type"
       },
       "name" : "NG-Imm Session Type VS",
-      "description" : "Session type",
+      "description" : "Type of session for immunization. Could be in a fixed facility, outreach or mobile.",
       "exampleBoolean" : false
     },
     {
@@ -1486,7 +1486,7 @@
         "reference" : "CodeSystem/nigeria-sibling-health-status"
       },
       "name" : "NG-Imm Sibling Health Status CS",
-      "description" : "This CodeSystem defines list of relationships that a part of this IG",
+      "description" : "This CodeSystem defines the health of the client's sibling",
       "exampleBoolean" : false
     },
     {
@@ -1498,7 +1498,7 @@
         "reference" : "ValueSet/nigeria-sibling-health-status"
       },
       "name" : "NG-Imm Sibling Health Status VS",
-      "description" : "Sibling Health Status",
+      "description" : "This CodeSystem defines the health of the client's sibling",
       "exampleBoolean" : false
     },
     {
@@ -1534,7 +1534,7 @@
         "reference" : "ValueSet/nigeria-states"
       },
       "name" : "NG-Imm States VS",
-      "description" : "The administrative ward where a person or a facility is.",
+      "description" : "The state where a person or a facility is.",
       "exampleBoolean" : false
     },
     {
@@ -1558,7 +1558,7 @@
         "reference" : "ValueSet/nigeria-vaccine-contraindication"
       },
       "name" : "NG-Imm Vaccine Contraindication VS",
-      "description" : "Vaccine Contraindication",
+      "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.",
       "exampleBoolean" : false
     },
     {
@@ -1618,7 +1618,7 @@
         "reference" : "CodeSystem/nigeria-immunization-site"
       },
       "name" : "NG-Imm Vaccine Site CS",
-      "description" : "This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered.",
+      "description" : "This CodeSystem captures the specific anatomical location on the patient's body where a vaccine was administered.",
       "exampleBoolean" : false
     },
     {
