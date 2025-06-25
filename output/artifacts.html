@@ -643,7 +643,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-nigeria-verifiction-status.html"
-                  title="ValueSet/nigeria-verifiction-status">NG-Imm AEFI VerificationStatus VS</a>
+                  title="ValueSet/nigeria-verifiction-status">NG-Imm AEFI Verification Status VS</a>
             </td>
             <td>
 <p>AEFI Verification Status</p>
@@ -678,10 +678,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-nigeria-clinical-status.html"
+                  title="ValueSet/nigeria-clinical-status">NG-Imm Clinical Status VS</a>
+            </td>
+            <td>
+<p>The outcome of the reaction</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-nigeria-gender.html" title="ValueSet/nigeria-gender">NG-Imm Gender or Sex VS</a>
             </td>
             <td>
-<p>The administrative gender of a person.</p>
+<p>Subset of HL7 administrative-gender limited to ‘male’ and ‘female’.</p>
 </td>
          </tr>
          <tr>
@@ -698,7 +707,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="ValueSet-nigeria-lgas.html" title="ValueSet/nigeria-lgas">NG-Imm LGAs VS</a>
             </td>
             <td>
-<p>The administrative Local Government Aread where a person or a facility is.</p>
+<p>The administrative Local Government Areas where a person or a facility is.</p>
 </td>
          </tr>
          <tr>
@@ -708,15 +717,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Primary Vaccine Status</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-nigeria-clinical-status.html"
-                  title="ValueSet/nigeria-clinical-status">NG-Imm Reaction Outcome VS</a>
-            </td>
-            <td>
-<p>Reaction outcome clinical Status</p>
 </td>
          </tr>
          <tr>
@@ -734,7 +734,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/nigeria-relationship">NG-Imm Relationships VS</a>
             </td>
             <td>
-<p>The administrative ward where a person or a facility is.</p>
+<p>This CodeSystem defines list of persons related to a patient, but who is not a direct target of care.</p>
 </td>
          </tr>
          <tr>
@@ -743,7 +743,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/nigeria-session-type">NG-Imm Session Type VS</a>
             </td>
             <td>
-<p>Session type</p>
+<p>Type of session for immunization. Could be in a fixed facility, outreach or mobile.</p>
 </td>
          </tr>
          <tr>
@@ -752,7 +752,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/nigeria-sibling-health-status">NG-Imm Sibling Health Status VS</a>
             </td>
             <td>
-<p>Sibling Health Status</p>
+<p>This CodeSystem defines the health of the client’s sibling</p>
 </td>
          </tr>
          <tr>
@@ -760,7 +760,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="ValueSet-nigeria-states.html" title="ValueSet/nigeria-states">NG-Imm States VS</a>
             </td>
             <td>
-<p>The administrative ward where a person or a facility is.</p>
+<p>The state where a person or a facility is.</p>
 </td>
          </tr>
          <tr>
@@ -769,7 +769,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/nigeria-vaccine-contraindication">NG-Imm Vaccine Contraindication VS</a>
             </td>
             <td>
-<p>Vaccine Contraindication</p>
+<p>A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.</p>
 </td>
          </tr>
          <tr>
@@ -834,6 +834,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-allergy-severity.html"
+                  title="CodeSystem/nigeria-allergy-severity">NG-Imm Allergy Severity CS</a>
+            </td>
+            <td>
+<p>This CodeSystem captures the assessed severity of an allergic reaction following immunization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-nigeria-hiv-status.html"
                   title="CodeSystem/nigeria-hiv-status">NG-Imm Client HIV status CS</a>
             </td>
@@ -861,19 +870,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-nigeria-gender.html" title="CodeSystem/nigeria-gender">NG-Imm Gender or Sex CS</a>
-            </td>
-            <td>
-<p>Codes for the administrative gender or sex of a person, used in demographic and administrative contexts.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-nigeria-immunization-session-type.html"
                   title="CodeSystem/nigeria-immunization-session-type">NG-Imm Immunization Session types CS</a>
             </td>
             <td>
-<p>A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR).</p>
+<p>Type of session for immunization. Could be in a fixed facility, outreach or mobile.</p>
 </td>
          </tr>
          <tr>
@@ -886,11 +887,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-nigeria-allergy-severity.html"
-                  title="CodeSystem/nigeria-allergy-severity">NG-Imm Reaction Severity CS</a>
+               <a href="CodeSystem-nigeria-relationship.html"
+                  title="CodeSystem/nigeria-relationship">NG-Imm Relationships CS</a>
             </td>
             <td>
-<p>This CodeSystem captures the assessed severity of an allergic reaction following immunization.</p>
+<p>This CodeSystem defines list of persons related to a patient, but who is not a direct target of care</p>
 </td>
          </tr>
          <tr>
@@ -899,7 +900,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CodeSystem/nigeria-sibling-health-status">NG-Imm Sibling Health Status CS</a>
             </td>
             <td>
-<p>This CodeSystem defines list of relationships that a part of this IG</p>
+<p>This CodeSystem defines the health of the client’s sibling</p>
 </td>
          </tr>
          <tr>
@@ -1098,7 +1099,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 24, 2025 09:14+0100">2025-06-24</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 06:30+0100">2025-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

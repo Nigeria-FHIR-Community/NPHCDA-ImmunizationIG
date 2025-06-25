@@ -10,7 +10,7 @@
   "name" : "NGLGAsVS",
   "title" : "NG-Imm LGAs VS",
   "status" : "active",
-  "date" : "2025-06-24T09:13:37+01:00",
+  "date" : "2025-06-25T06:29:04+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -27,7 +27,7 @@
       "use" : "work"
     }]
   }],
-  "description" : "The administrative Local Government Aread where a person or a facility is.",
+  "description" : "The administrative Local Government Areas where a person or a facility is.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

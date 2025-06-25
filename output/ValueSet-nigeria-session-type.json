@@ -10,7 +10,7 @@
   "name" : "NGSessionTypeVS",
   "title" : "NG-Imm Session Type VS",
   "status" : "active",
-  "date" : "2025-06-24T09:13:37+01:00",
+  "date" : "2025-06-25T06:29:04+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -27,7 +27,7 @@
       "use" : "work"
     }]
   }],
-  "description" : "Session type",
+  "description" : "Type of session for immunization. Could be in a fixed facility, outreach or mobile.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

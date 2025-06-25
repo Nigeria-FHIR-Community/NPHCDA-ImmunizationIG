@@ -11,7 +11,7 @@
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-06-24T09:13:37+01:00"/>
+  <date value="2025-06-25T06:29:04+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -499,7 +499,7 @@
       <reference>
         <reference value="ValueSet/nigeria-verifiction-status"/>
       </reference>
-      <name value="NG-Imm AEFI VerificationStatus VS"/>
+      <name value="NG-Imm AEFI Verification Status VS"/>
       <description value="AEFI Verification Status"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -512,6 +512,17 @@
       </reference>
       <name value="NG-Imm Allergy Dose Number"/>
       <description value="Reference immunization dose number for this AllergyIntolerance."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-allergy-severity"/>
+      </reference>
+      <name value="NG-Imm Allergy Severity CS"/>
+      <description value="This CodeSystem captures the assessed severity of an allergic reaction following immunization."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -644,6 +655,17 @@
       </reference>
       <name value="NG-Imm Client's Pregnancy status"/>
       <description value="The Pregnancy status (pregnant or not-pregnant) of the Immunization Client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nigeria-clinical-status"/>
+      </reference>
+      <name value="NG-Imm Clinical Status VS"/>
+      <description value="The outcome of the reaction"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -830,24 +852,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-gender"/>
-      </reference>
-      <name value="NG-Imm Gender or Sex CS"/>
-      <description value="Codes for the administrative gender or sex of a person, used in demographic and administrative contexts."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
         <reference value="ValueSet/nigeria-gender"/>
       </reference>
       <name value="NG-Imm Gender or Sex VS"/>
-      <description value="The administrative gender of a person."/>
+      <description value="Subset of HL7 administrative-gender limited to 'male' and 'female'."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -891,7 +902,7 @@
         <reference value="CodeSystem/nigeria-immunization-session-type"/>
       </reference>
       <name value="NG-Imm Immunization Session types CS"/>
-      <description value="A standardized classification of vaccine types administered for the prevention of specific diseases, identified by the antigen or disease target (e.g., BCG, HepB, OPV, Pentavalent, MR)."/>
+      <description value="Type of session for immunization. Could be in a fixed facility, outreach or mobile."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -913,7 +924,7 @@
         <reference value="ValueSet/nigeria-lgas"/>
       </reference>
       <name value="NG-Imm LGAs VS"/>
-      <description value="The administrative Local Government Aread where a person or a facility is."/>
+      <description value="The administrative Local Government Areas where a person or a facility is."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1009,28 +1020,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/nigeria-clinical-status"/>
-      </reference>
-      <name value="NG-Imm Reaction Outcome VS"/>
-      <description value="Reaction outcome clinical Status"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nigeria-allergy-severity"/>
-      </reference>
-      <name value="NG-Imm Reaction Severity CS"/>
-      <description value="This CodeSystem captures the assessed severity of an allergic reaction following immunization."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/nigeria-Immunization-status-reason"/>
       </reference>
       <name value="NG-Imm Reason for missed Vaccination VS"/>
@@ -1050,13 +1039,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nigeria-relationship"/>
+      </reference>
+      <name value="NG-Imm Relationships CS"/>
+      <description value="This CodeSystem defines list of persons related to a patient, but who is not a direct target of care"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
         <reference value="ValueSet/nigeria-relationship"/>
       </reference>
       <name value="NG-Imm Relationships VS"/>
-      <description value="The administrative ward where a person or a facility is."/>
+      <description value="This CodeSystem defines list of persons related to a patient, but who is not a direct target of care."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1246,7 +1246,7 @@
         <reference value="ValueSet/nigeria-session-type"/>
       </reference>
       <name value="NG-Imm Session Type VS"/>
-      <description value="Session type"/>
+      <description value="Type of session for immunization. Could be in a fixed facility, outreach or mobile."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1257,7 +1257,7 @@
         <reference value="CodeSystem/nigeria-sibling-health-status"/>
       </reference>
       <name value="NG-Imm Sibling Health Status CS"/>
-      <description value="This CodeSystem defines list of relationships that a part of this IG"/>
+      <description value="This CodeSystem defines the health of the client's sibling"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1268,7 +1268,7 @@
         <reference value="ValueSet/nigeria-sibling-health-status"/>
       </reference>
       <name value="NG-Imm Sibling Health Status VS"/>
-      <description value="Sibling Health Status"/>
+      <description value="This CodeSystem defines the health of the client's sibling"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1301,7 +1301,7 @@
         <reference value="ValueSet/nigeria-states"/>
       </reference>
       <name value="NG-Imm States VS"/>
-      <description value="The administrative ward where a person or a facility is."/>
+      <description value="The state where a person or a facility is."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1323,7 +1323,7 @@
         <reference value="ValueSet/nigeria-vaccine-contraindication"/>
       </reference>
       <name value="NG-Imm Vaccine Contraindication VS"/>
-      <description value="Vaccine Contraindication"/>
+      <description value="A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1378,7 +1378,7 @@
         <reference value="CodeSystem/nigeria-immunization-site"/>
       </reference>
       <name value="NG-Imm Vaccine Site CS"/>
-      <description value="This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered."/>
+      <description value="This CodeSystem captures the specific anatomical location on the patient's body where a vaccine was administered."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

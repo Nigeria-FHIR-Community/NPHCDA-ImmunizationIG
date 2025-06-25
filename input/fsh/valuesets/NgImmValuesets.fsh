@@ -1,11 +1,11 @@
 ValueSet: NGGenderVS
 Id: nigeria-gender
 Title: "NG-Imm Gender or Sex VS"
-Description: "The administrative gender of a person."
-* ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"
-//* include codes from valueset http://hl7.org/fhir/administrative-gender
-* include codes from system NGGenderCS 
+//Description: "The administrative gender of a person."
+Description: "Subset of HL7 administrative-gender limited to 'male' and 'female'."
+* ^url = "http://hl7.org/fhir/R4/valueset-administrative-gender"
+* include codes from system http://hl7.org/fhir/R4/valueset-administrative-gender
+//* include codes from system NGGenderCS 
 
 ValueSet: NGWardsVS
 Id: nigeria-wards
@@ -69,7 +69,8 @@ Id: nigeria-verifiction-status
 Title: "NG-Imm AEFI Verification Status VS"
 Description: "AEFI Verification Status"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status"
+* ^url = "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
 * include codes from system https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification
 
 ValueSet: NGSessionTypeVS
@@ -101,8 +102,9 @@ Id: nigeria-vaccine-route
 Title: "NG-Imm Vaccine Route VS"
 Description: "Vaccine Route"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route"
-* include codes from system https://www.hl7.org/fhir/R4/ng-valueset-immunization-route
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route"
+* ^url = "https://www.hl7.org/fhir/R4/valueset-immunization-route"
+* include codes from system https://www.hl7.org/fhir/R4/valueset-immunization-route
 
 ValueSet: NGAllergySeverityVS
 Id: nigeria-allergy-severity
@@ -110,7 +112,7 @@ Title: "NG-Imm Allergy Severity VS"
 Description: "Vaccine reaction Severity"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-allergy-severity"
-* include codes from system NigeriaAllergySeverityCS
+* include codes from system NGAllergySeverityCS
 
 ValueSet: NGSiblingHealthStatusVS
 Id: nigeria-sibling-health-status
@@ -141,7 +143,8 @@ Id: nigeria-primary-vaccine-status
 Title: "NG-Imm Primary vaccine Status VS"
 Description: "Primary Vaccine Status"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"
+* ^url = "http://hl7.org/fhir/ValueSet/immunization-status"
 * include codes from system http://hl7.org/fhir/ValueSet/immunization-status
 
 ValueSet: NGImmunizationNotDoneReasonsVS
@@ -149,7 +152,8 @@ Id: nigeria-Immunization-status-reason
 Title: "NG-Imm Reason for missed Vaccination VS"
 Description: "Reason for a Client missing the last or other vaccinations"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"
+* ^url = "http://hl7.org/fhir/ValueSet/immunization-status-reason"
 * include codes from system http://hl7.org/fhir/ValueSet/immunization-status-reason
 
 

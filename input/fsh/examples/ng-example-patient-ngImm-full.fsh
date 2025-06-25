@@ -9,18 +9,14 @@ Usage: #example
 * identifier[0].value = "NEIR-0001"
 * identifier[1].system = "http://nimc.gov.ng/nin"
 * identifier[1].value = "NEIR-0003"
-
 // Name (required)
 * name[0].family = "Abubakar"
 * name[0].given[0] = "Zainab"
 * name[0].given[1] = "Aisha"
-
 // Gender (required)
 * gender = #female
-
 // Birth Date (optional but Must Support)
 * birthDate = "2013-02-14"
-
 // Address (optional)
 * address[0].line[0] = "45 Gombe Road"
 * address[0].city = "Bauchi"

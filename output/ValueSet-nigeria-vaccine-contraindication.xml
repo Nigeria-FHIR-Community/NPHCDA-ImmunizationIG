@@ -10,7 +10,7 @@
   <name value="NGContraindicationVS"/>
   <title value="NG-Imm Vaccine Contraindication VS"/>
   <status value="active"/>
-  <date value="2025-06-24T09:13:37+01:00"/>
+  <date value="2025-06-25T06:29:04+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -27,7 +27,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Vaccine Contraindication"/>
+  <description value="A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

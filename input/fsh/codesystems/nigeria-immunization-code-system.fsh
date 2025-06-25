@@ -61,7 +61,7 @@ Description: "This CodeSystem captures the specific anatomical location on the p
 * #antero-lateral-left-thigh "Antero Lateral Aspect of Left Thigh" "The vaccine is administered into the antero-lateral (front-side) part of the left thigh, often used in infants when giving multiple vaccines."
 
 
-CodeSystem: NigeriaImmunizationRouteCS
+/* CodeSystem: NGImmunizationRouteCS
 Id: nigeria-immunization-route
 Title: "NG Vaccine Route"
 Description: "This CodeSystem captures path by which a vaccine or medicinal product is introduced into the body."
@@ -75,9 +75,9 @@ Description: "This CodeSystem captures path by which a vaccine or medicinal prod
 * #Intradermal "Intradermal" "The vaccine is injected into the dermal layer of the skin, just below the surface. This route is commonly used for BCG vaccination."
 * #Intramuscular "Intramuscular" "The vaccine is injected deep into the muscle tissue, allowing for rapid absorption. This is the most common route for many vaccines, such as DTP or hepatitis B."
 * #Subcutaneous "Subcutaneous" "The vaccine is injected into the layer of fat and tissue just under the skin. It is typically used for vaccines like measles or yellow fever."
- 
+  */
 
-CodeSystem: NigeriaAllergySeverityCS
+CodeSystem: NGAllergySeverityCS
 Id: nigeria-allergy-severity
 Title: "NG-Imm Allergy Severity CS"
 Description: "This CodeSystem captures the assessed severity of an allergic reaction following immunization."
@@ -92,7 +92,7 @@ Description: "This CodeSystem captures the assessed severity of an allergic reac
 * #severe "Severe" "The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise."
 
 
-CodeSystem: NigeriaVerificationStatusCS
+/* CodeSystem: NGVerificationStatusCS
 Id: nigeria-verification-status 
 Title: "NG Adverse Events Verification Status"
 Description: "This element captures the confirmed clinical outcome or current state of an Adverse Event Following Immunization (AEFI) based on clinical assessment, investigation, or follow-up."
@@ -103,9 +103,9 @@ Description: "This element captures the confirmed clinical outcome or current st
 * #unconfirmed "Unconfirmed" "The reported adverse event is currently under investigation or lacks sufficient evidence to confirm or refute its classification as an AEFI."
 * #refuted "Refuted" "The reported adverse event has been assessed and found not to be related to immunization; it is ruled out as an AEFI."
 * #entered-in-error "Entered in Error" "The report was mistakenly entered or does not constitute a valid AEFI record and has been retracted or marked as invalid."
+ */
 
-
-CodeSystem: NigeriaPrimaryVaccineStatusCS
+/* CodeSystem: NGPrimaryVaccineStatusCS
 Id: nigeria-primary-vaccine-status
 Title: "NG Client's primary vaccine status"
 Description: "This CodeSystem defines list of options for Client's primary vaccine status"
@@ -118,4 +118,4 @@ Description: "This CodeSystem defines list of options for Client's primary vacci
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Pregnancy Status
 * #complete	"Complete" "Client has completed all primary vaccines"
-* #notcomplete	"Not Complete" "The Client has not completed all primary vaccines" 
+* #notcomplete	"Not Complete" "The Client has not completed all primary vaccines"  */

@@ -1,6 +1,19 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/R4/valueset-administrative-gender",
+      "version" : "0.4.0",
+      "status" : "draft",
+      "name" : "NGGenderVS",
+      "title" : "NG-Imm Gender or Sex VS",
+      "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
+      "systems" : ["http://hl7.org/fhir/R4/valueset-administrative-gender"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -12,8 +25,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -27,8 +40,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -42,9 +55,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -144,9 +156,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-register-facility-model.html" : "NG-Imm-A RegisterFacility[information only]",
       "StructureDefinition-register-client-model.html" : "NG-Imm-C5 RegisterClient[information only]"
     },
@@ -162,9 +174,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-register-facility-model.html" : "NG-Imm-A RegisterFacility[information only]",
       "StructureDefinition-register-client-model.html" : "NG-Imm-C5 RegisterClient[information only]"
     },
@@ -208,11 +220,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
-      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport"
+      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
+      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -226,11 +238,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
-      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport"
+      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
+      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -307,6 +319,56 @@
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusCodes",
+      "title" : "Immunization Status Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.295"],
+      "sources" : ["2.16.840.1.113883.4.642.3.295"],
+      "uses" : {
+      },
+      "StructureDefinition-primary-vaccine-status.html" : "NG-Imm Primary VaccineStatus",
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGPrimaryVaccineStatusVS",
+      "title" : "NG-Imm Primary vaccine Status VS",
+      "description" : "Primary Vaccine Status",
+      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusReasonCodes",
+      "title" : "Immunization Status Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was not administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.992"],
+      "sources" : ["2.16.840.1.113883.4.642.3.992"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGImmunizationNotDoneReasonsVS",
+      "title" : "NG-Imm Reason for missed Vaccination VS",
+      "description" : "Reason for a Client missing the last or other vaccinations",
+      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status-reason"]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
       "version" : "4.0.1",
       "status" : "draft",
@@ -366,14 +428,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
+      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance",
-      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport"
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -520,9 +582,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -698,24 +760,12 @@
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGClinicalStatusVS",
-      "title" : "NG-Imm Reaction Outcome VS",
-      "description" : "Reaction outcome clinical Status",
+      "title" : "NG-Imm Clinical Status VS",
+      "description" : "The outcome of the reaction",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"],
       "uses" : {
       },
       "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGGenderVS",
-      "title" : "NG-Imm Gender or Sex VS",
-      "description" : "The administrative gender of a person.",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
@@ -735,33 +785,11 @@
       "status" : "active",
       "name" : "NGLGAsVS",
       "title" : "NG-Imm LGAs VS",
-      "description" : "The administrative Local Government Aread where a person or a facility is.",
+      "description" : "The administrative Local Government Areas where a person or a facility is.",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-lgas"],
       "uses" : {
       },
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGPrimaryVaccineStatusVS",
-      "title" : "NG-Imm Primary vaccine Status VS",
-      "description" : "Primary Vaccine Status",
-      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status"],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization",
-      "StructureDefinition-primary-vaccine-status.html" : "NG-Imm Primary VaccineStatus"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationNotDoneReasonsVS",
-      "title" : "NG-Imm Reason for missed Vaccination VS",
-      "description" : "Reason for a Client missing the last or other vaccinations",
-      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status-reason"]
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship",
@@ -769,12 +797,12 @@
       "status" : "active",
       "name" : "NGRelationshipsVS",
       "title" : "NG-Imm Relationships VS",
-      "description" : "The administrative ward where a person or a facility is.",
-      "systems" : ["http://hl7.org/fhir/R4B/valueset-relationship"],
+      "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care.",
+      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"],
       "uses" : {
       },
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
@@ -782,7 +810,7 @@
       "status" : "active",
       "name" : "NGSessionTypeVS",
       "title" : "NG-Imm Session Type VS",
-      "description" : "Session type",
+      "description" : "Type of session for immunization. Could be in a fixed facility, outreach or mobile.",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"],
       "uses" : {
       },
@@ -794,7 +822,7 @@
       "status" : "active",
       "name" : "NGSiblingHealthStatusVS",
       "title" : "NG-Imm Sibling Health Status VS",
-      "description" : "Sibling Health Status",
+      "description" : "This CodeSystem defines the health of the client's sibling",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
       ]
@@ -805,7 +833,7 @@
       "status" : "active",
       "name" : "NGStatesVS",
       "title" : "NG-Imm States VS",
-      "description" : "The administrative ward where a person or a facility is.",
+      "description" : "The state where a person or a facility is.",
       "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states"],
       "uses" : {
       },
@@ -817,7 +845,7 @@
       "status" : "active",
       "name" : "NGContraindicationVS",
       "title" : "NG-Imm Vaccine Contraindication VS",
-      "description" : "Vaccine Contraindication",
+      "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
       ],
@@ -837,18 +865,6 @@
       ]
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationRouteVS",
-      "title" : "NG-Imm Vaccine Route VS",
-      "description" : "Vaccine Route",
-      "systems" : ["https://www.hl7.org/fhir/R4/ng-valueset-immunization-route"],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
-    },
-    {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site",
       "version" : "0.4.0",
       "status" : "active",
@@ -861,20 +877,6 @@
       "uses" : {
       },
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGVerificationStatusVS",
-      "title" : "NG-Imm AEFI VerificationStatus VS",
-      "description" : "AEFI Verification Status",
-      "systems" : [
-        "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards",
@@ -901,6 +903,32 @@
       "uses" : {
       },
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner"
+    },
+    {
+      "url" : "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGVerificationStatusVS",
+      "title" : "NG-Imm AEFI Verification Status VS",
+      "description" : "AEFI Verification Status",
+      "systems" : [
+        "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "https://www.hl7.org/fhir/R4/valueset-immunization-route",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGImmunizationRouteVS",
+      "title" : "NG-Imm Vaccine Route VS",
+      "description" : "Vaccine Route",
+      "systems" : ["https://www.hl7.org/fhir/R4/valueset-immunization-route"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     }
   ]
 }

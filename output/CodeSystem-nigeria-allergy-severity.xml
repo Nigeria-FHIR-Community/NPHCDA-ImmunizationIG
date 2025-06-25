@@ -7,10 +7,10 @@
   </text>
   <url value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity"/>
   <version value="0.4.0"/>
-  <name value="NigeriaAllergySeverityCS"/>
-  <title value="NG-Imm Reaction Severity CS"/>
+  <name value="NGAllergySeverityCS"/>
+  <title value="NG-Imm Allergy Severity CS"/>
   <status value="active"/>
-  <date value="2025-06-24T09:13:37+01:00"/>
+  <date value="2025-06-25T06:29:04+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

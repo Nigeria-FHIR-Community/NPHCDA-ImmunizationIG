@@ -13,12 +13,12 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-verifiction-status</b></p><a name=\"nigeria-verifiction-status\"> </a><a name=\"hcnigeria-verifiction-status\"> </a><ul><li>Include all codes defined in <code>https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification</code></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.4.0"] ; # 
   fhir:name [ fhir:v "NGVerificationStatusVS"] ; # 
-  fhir:title [ fhir:v "NG-Imm AEFI VerificationStatus VS"] ; # 
+  fhir:title [ fhir:v "NG-Imm AEFI Verification Status VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-24T09:13:37+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-25T06:29:04+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;

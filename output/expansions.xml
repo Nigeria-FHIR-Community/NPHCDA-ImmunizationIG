@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="19373cd1-8fca-4c1c-b60c-4f43d76149b8"/>
+  <id value="c4f494ca-3fd0-44d7-aa66-24234f751cb8"/>
   <meta>
-    <lastUpdated value="2025-06-24T09:14:33.225+01:00"/>
+    <lastUpdated value="2025-06-25T06:30:12.149+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-allergy-severity.html">codesystem NG-Imm Reaction Severity CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-allergy-severity.html">codesystem NG-Imm Allergy Severity CS v0.4.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -68,7 +68,7 @@
         <name value="NGAllergySeverityVS"/>
         <title value="NG-Imm Allergy Severity VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -77,8 +77,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e6548cd7-ee0d-4fdc-95c7-0518ffcb0458"/>
-          <timestamp value="2025-06-24T09:15:35+01:00"/>
+          <identifier value="urn:uuid:37a9e086-41a5-4451-ba22-8fa07a22db4c"/>
+          <timestamp value="2025-06-25T06:31:42+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -172,7 +172,7 @@
                 </td>
                 <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</td>
                 <td>Resolved</td>
-                <td>The clinical condition has completely resolved and is no longer impacting the patient’s health or requiring further management.</td>
+                <td>The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -207,9 +207,9 @@
         <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"/>
         <version value="0.4.0"/>
         <name value="NGClinicalStatusVS"/>
-        <title value="NG-Imm Reaction Outcome VS"/>
+        <title value="NG-Imm Clinical Status VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -218,8 +218,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7c2f0dc2-3be7-436c-aa97-c2ae0348ab3c"/>
-          <timestamp value="2025-06-24T09:15:35+01:00"/>
+          <identifier value="urn:uuid:202b134f-f48c-400e-a8fc-acb278f5639c"/>
+          <timestamp value="2025-06-25T06:31:42+01:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -383,7 +383,7 @@
         <name value="NGFacilityTypeVS"/>
         <title value="NG-Imm HealthFacility Type VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -392,8 +392,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fc01730e-1930-472a-9297-2121bb19e531"/>
-          <timestamp value="2025-06-24T09:15:36+01:00"/>
+          <identifier value="urn:uuid:31901ec5-54d7-453e-8ac5-1a0e007ab38f"/>
+          <timestamp value="2025-06-25T06:31:42+01:00"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -461,106 +461,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-gender.html">codesystem NG-Imm Gender or Sex CS v0.4.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 2 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display (en-US)</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-male"> </a>  
-                  <a href="CodeSystem-nigeria-gender.html#nigeria-gender-male">male</a>
-                </td>
-                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td>
-                <td>Male</td>
-                <td>Male sex</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender-female"> </a>  
-                  <a href="CodeSystem-nigeria-gender.html#nigeria-gender-female">female</a>
-                </td>
-                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</td>
-                <td>Female</td>
-                <td>Female sex</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"/>
-        <version value="0.4.0"/>
-        <name value="NGGenderVS"/>
-        <title value="NG-Imm Gender or Sex VS"/>
-        <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="NG"/>
-            <display value="Nigeria"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:4b0e1460-7c8c-47ac-89fe-a3795c83a720"/>
-          <timestamp value="2025-06-24T09:15:36+01:00"/>
-          <total value="2"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en-US"/>
-          </parameter>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender|0.4.0"/>
-          </parameter>
-          <contains>
-            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"/>
-            <code value="male"/>
-            <display value="Male"/>
-          </contains>
-          <contains>
-            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"/>
-            <code value="female"/>
-            <display value="Female"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status"/>
     <resource>
       <ValueSet>
@@ -622,7 +522,7 @@
         <name value="NGHivStatusVS"/>
         <title value="NG-Imm Client HIV Status VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -631,8 +531,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a6962f27-5ea1-445f-b9ee-c6f24741f0fa"/>
-          <timestamp value="2025-06-24T09:15:36+01:00"/>
+          <identifier value="urn:uuid:4464f737-e635-4643-bb0c-5ac27c4b7452"/>
+          <timestamp value="2025-06-25T06:31:43+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -7675,7 +7575,7 @@
         <name value="NGLGAsVS"/>
         <title value="NG-Imm LGAs VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -7684,8 +7584,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9cfed1c3-0c04-462b-afb7-6b4d8de00e1d"/>
-          <timestamp value="2025-06-24T09:15:36+01:00"/>
+          <identifier value="urn:uuid:22fae11b-56e7-44e1-8c57-501ae635c954"/>
+          <timestamp value="2025-06-25T06:31:43+01:00"/>
           <total value="774"/>
           <offset value="0"/>
           <parameter>
@@ -11644,7 +11544,7 @@
         <name value="NGPregnancyStatusVS"/>
         <title value="NG-Imm Client Preganancy Status VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -11653,8 +11553,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9a2c5890-cf90-4ba8-807c-6135a0c1a65a"/>
-          <timestamp value="2025-06-24T09:15:37+01:00"/>
+          <identifier value="urn:uuid:f70f3fad-9b0c-408b-b18e-ebcece329716"/>
+          <timestamp value="2025-06-25T06:31:44+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11691,6 +11591,270 @@
             <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"/>
             <code value="unknown"/>
             <display value="Not known"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nigeria-relationship.html">codesystem NG-Imm Relationships CS v0.4.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 15 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-BROTHER"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-BROTHER">BROTHER</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Brother</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-SISTER"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-SISTER">SISTER</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Sister</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-SON"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-SON">SON</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Son</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-DAUGHTER"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-DAUGHTER">DAUGHTER</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Daughter</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-MOTHER"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-MOTHER">MOTHER</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Mother</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-FATHER"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-FATHER">FATHER</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Father</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-AUNT"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-AUNT">AUNT</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Aunt</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-COUNSN"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-COUNSN">COUNSN</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Cousin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-GRDSON"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-GRDSON">GRDSON</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Grand Son</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-GRDDAU"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-GRDDAU">GRDDAU</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Grand Daughter</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-INLAW"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-INLAW">INLAW</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Inlaw</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-NEPHEW"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-NEPHEW">NEPHEW</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Nephew</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-NIECE"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-NIECE">NIECE</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Niece</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-UNCLE"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-UNCLE">UNCLE</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Uncle</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship-FRND"> </a>  
+                  <a href="CodeSystem-nigeria-relationship.html#nigeria-relationship-FRND">FRND</a>
+                </td>
+                <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship</td>
+                <td>Friend</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"/>
+        <version value="0.4.0"/>
+        <name value="NGRelationshipsVS"/>
+        <title value="NG-Imm Relationships VS"/>
+        <status value="active"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NG"/>
+            <display value="Nigeria"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3f7ea622-019a-43a3-9a5b-7cf9ca5848a7"/>
+          <timestamp value="2025-06-25T06:31:44+01:00"/>
+          <total value="15"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship|0.4.0"/>
+          </parameter>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="BROTHER"/>
+            <display value="Brother"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="SISTER"/>
+            <display value="Sister"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="SON"/>
+            <display value="Son"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="DAUGHTER"/>
+            <display value="Daughter"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="MOTHER"/>
+            <display value="Mother"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="FATHER"/>
+            <display value="Father"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="AUNT"/>
+            <display value="Aunt"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="COUNSN"/>
+            <display value="Cousin"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="GRDSON"/>
+            <display value="Grand Son"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="GRDDAU"/>
+            <display value="Grand Daughter"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="INLAW"/>
+            <display value="Inlaw"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="NEPHEW"/>
+            <display value="Nephew"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="NIECE"/>
+            <display value="Niece"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="UNCLE"/>
+            <display value="Uncle"/>
+          </contains>
+          <contains>
+            <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"/>
+            <code value="FRND"/>
+            <display value="Friend"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -11739,7 +11903,7 @@
                 </td>
                 <td>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type</td>
                 <td>Outreach session</td>
-                <td>An immunization session conducted outside of fixed sites, typically within a 5–10 km radius of a health facility, aimed at increasing access for underserved populations.</td>
+                <td>An immunization session conducted outside of fixed sites, typically within a 5-10 km radius of a health facility, aimed at increasing access for underserved populations.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -11758,7 +11922,7 @@
         <name value="NGSessionTypeVS"/>
         <title value="NG-Imm Session Type VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -11767,8 +11931,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:de0dd32b-ef5c-4d6c-b164-ecf86f8b52b8"/>
-          <timestamp value="2025-06-24T09:15:37+01:00"/>
+          <identifier value="urn:uuid:9a7ae707-02b1-479f-b985-1f2b54fbadd1"/>
+          <timestamp value="2025-06-25T06:31:45+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11881,7 +12045,7 @@
         <name value="NGSiblingHealthStatusVS"/>
         <title value="NG-Imm Sibling Health Status VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -11890,8 +12054,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ed945723-6b79-4312-a6bb-fbe981675828"/>
-          <timestamp value="2025-06-24T09:15:37+01:00"/>
+          <identifier value="urn:uuid:0c7eefe4-a398-437f-a35f-c4180fa52b8b"/>
+          <timestamp value="2025-06-25T06:31:45+01:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -12266,7 +12430,7 @@
         <name value="NGStatesVS"/>
         <title value="NG-Imm States VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12275,8 +12439,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d1f5cd9b-b6f3-4b3d-819f-f0c2fc9387b3"/>
-          <timestamp value="2025-06-24T09:15:37+01:00"/>
+          <identifier value="urn:uuid:928b0cb3-7fa2-4d7b-b711-0609f8edbfbc"/>
+          <timestamp value="2025-06-25T06:31:45+01:00"/>
           <total value="37"/>
           <offset value="0"/>
           <parameter>
@@ -12559,7 +12723,7 @@
         <name value="NGContraindicationVS"/>
         <title value="NG-Imm Vaccine Contraindication VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12568,8 +12732,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:48027be6-aaa9-4c0c-9e6e-166e623d0150"/>
-          <timestamp value="2025-06-24T09:15:37+01:00"/>
+          <identifier value="urn:uuid:3c8a6677-8af8-46fa-a607-cd939dcd8993"/>
+          <timestamp value="2025-06-25T06:31:45+01:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -12912,7 +13076,7 @@
         <name value="NGVaccineLibraryVS"/>
         <title value="NG-Imm VaccineLibrary VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12921,8 +13085,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a783c8bd-e77c-4e40-85c1-6638fadd28ef"/>
-          <timestamp value="2025-06-24T09:15:37+01:00"/>
+          <identifier value="urn:uuid:0944a9ee-545f-4081-9220-1fa90f07ee29"/>
+          <timestamp value="2025-06-25T06:31:45+01:00"/>
           <total value="29"/>
           <offset value="0"/>
           <parameter>
@@ -13174,7 +13338,7 @@
         <name value="NGImmunizationSiteVS"/>
         <title value="NG-Imm Vaccine Site VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13183,8 +13347,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1109de74-3f64-4318-84cc-cdd239ca8e90"/>
-          <timestamp value="2025-06-24T09:15:37+01:00"/>
+          <identifier value="urn:uuid:8996aeb4-b7ce-4bfe-b892-b099e4d2ea2c"/>
+          <timestamp value="2025-06-25T06:31:48+01:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -13361,7 +13525,7 @@
         <name value="NGWardsVS"/>
         <title value="NG-Imm Wards VS"/>
         <status value="active"/>
-        <date value="2025-06-24T09:13:37+01:00"/>
+        <date value="2025-06-25T06:29:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13370,8 +13534,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ce2cfd70-122e-455a-8014-81c1d1ee2179"/>
-          <timestamp value="2025-06-24T09:15:37+01:00"/>
+          <identifier value="urn:uuid:3464b529-86d0-4325-89ff-4383741ba68c"/>
+          <timestamp value="2025-06-25T06:31:48+01:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>

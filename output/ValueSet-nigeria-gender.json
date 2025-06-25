@@ -3,14 +3,14 @@
   "id" : "nigeria-gender",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-gender</b></p><a name=\"nigeria-gender\"> </a><a name=\"hcnigeria-gender\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-gender.html\"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-gender</b></p><a name=\"nigeria-gender\"> </a><a name=\"hcnigeria-gender\"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/R4/valueset-administrative-gender</code></li></ul></div>"
   },
-  "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
+  "url" : "http://hl7.org/fhir/R4/valueset-administrative-gender",
   "version" : "0.4.0",
   "name" : "NGGenderVS",
   "title" : "NG-Imm Gender or Sex VS",
-  "status" : "active",
-  "date" : "2025-06-24T09:13:37+01:00",
+  "status" : "draft",
+  "date" : "2025-06-25T06:29:04+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -27,7 +27,7 @@
       "use" : "work"
     }]
   }],
-  "description" : "The administrative gender of a person.",
+  "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -37,7 +37,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-gender"
+      "system" : "http://hl7.org/fhir/R4/valueset-administrative-gender"
     }]
   }
 }
