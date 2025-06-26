@@ -29,7 +29,7 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
 - [Node.js](https://nodejs.org/) (v18.20.7)
 - [SUSHI](https://fshschool.org/docs/sushi/) (v3.14.0)
 - [Java JDK](https://adoptopenjdk.net/) (v20 and above)
-- VS - Code
+- VS - Code (with HL7 fsh extension)
 
 ### Setup Instructions
 
