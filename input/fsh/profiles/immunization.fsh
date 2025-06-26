@@ -17,7 +17,7 @@ Description: "Nigerian Profile for Immunization resource."
 * manufacturer MS
 * manufacturer.display 1..1
 * manufacturer.display ^short = "Name of the Manufacturer"
-* manufacturer.reference 1..1
+* manufacturer.reference only Reference(NgImmOrganization)
 * manufacturer.reference ^short = "Manufacturer ID"
 * patient only Reference (NgImmPatient)
 * protocolApplied 0..* MS
@@ -36,7 +36,7 @@ Description: "Nigerian Profile for Immunization resource."
 * performer 0..* MS //Who performed event
 * performer.function 0..1
 * performer.function ^short = "Designation of reporting officer" //What type of performance was done
-* performer.actor only Reference (Practitioner)
+* performer.actor only Reference (NgImmPractitioner)
 * performer.actor ^short = "Name of reporting officer" //Individual or organization who was performing
 * occurrence[x] only dateTime
 
