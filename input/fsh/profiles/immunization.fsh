@@ -14,11 +14,8 @@ Description: "Nigerian Profile for Immunization resource."
 * status MS
 * status from NGPrimaryVaccineStatusVS (required)
 * status ^short = "Status of Immunization e.g. completed| entered-in-error | not-done"
-* manufacturer MS
-* manufacturer.display 1..1
-* manufacturer.display ^short = "Name of the Manufacturer"
-* manufacturer.reference only Reference(NgImmOrganization)
-* manufacturer.reference ^short = "Manufacturer ID"
+* manufacturer only Reference(NgImmOrganization)
+* manufacturer ^short = "Manufacturer ID"
 * patient only Reference (NgImmPatient)
 * protocolApplied 0..* MS
 * protocolApplied.targetDisease 0..* MS

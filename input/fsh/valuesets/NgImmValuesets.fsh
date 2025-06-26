@@ -74,7 +74,7 @@ Description: "AEFI Verification Status"
 * include codes from system http://hl7.org/fhir/ValueSet/allergyintolerance-verification
 
 ValueSet: NGSessionTypeVS
-Id: nigeria-session-type
+Id: nigeria-session-type 
 Title: "NG-Imm Session Type VS"
 Description: "Type of session for immunization. Could be in a fixed facility, outreach or mobile."
 * ^status = #active

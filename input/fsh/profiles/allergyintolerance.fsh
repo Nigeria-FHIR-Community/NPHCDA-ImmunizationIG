@@ -15,7 +15,6 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * type ^short = "Identification of the underlying physiological mechanism for a Reaction Risk"
 * category 1..* MS
 * category ^short = "Category of an identified substance associated with allergies or intolerances"
-
 * criticality 0..1
 //* code 1..1
 * patient only Reference(NgImmPatient)
@@ -28,7 +27,6 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 // Reaction Block
 * reaction 0..*
 //* reaction.substance 0..1
-
 * reaction.manifestation 1..*
 * reaction.manifestation.text 1..1 MS
 * reaction.manifestation.text ^short = "Clinical symptoms/signs associated with the Event"
