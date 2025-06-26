@@ -1,4 +1,4 @@
-# 🇳🇬 Nigeria Immunization FHIR Implementation Guide [DRAFT]
+# 🇳🇬 Nigeria Immunization FHIR Implementation Guide [DRAFT 0.4]
 
 **Maintained by:**  National Primary Healthcare Development Agency (NPHCDA)  
 **Project Type:** HL7® FHIR® Implementation Guide  
