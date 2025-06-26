@@ -36,5 +36,5 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/NPHCDA/Nigeria-Immunization-FHIR-IG.git
+git clone https://github.com/Nigeria-FHIR-Community/ImmunizationIG.git
 cd Nigeria-Immunization-FHIR-IG
