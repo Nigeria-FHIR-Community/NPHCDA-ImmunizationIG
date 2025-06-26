@@ -211,7 +211,7 @@ These integrations are essential to achieving the goals of a nationally scalable
     <tr>
       <td>22.</td>
       <td>SIO</td>
-      <td>State Immunization Officer</td>
+      <td>State Immunization Officerr</td>
     </tr>
     <tr>
       <td>23.</td>
