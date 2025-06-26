@@ -9,6 +9,7 @@
 ## Overview
 
 This repository contains the source files for the **Nigeria Immunization FHIR Implementation Guide (IG)** published by the **National Primary Healthcare Development Agency (NPHCDA)**.  
+
 The IG defines how HL7 FHIR standards are applied to immunization use cases in Nigeria, aligning with the **WHO SMART Guidelines**, **Digital Adaptation Kits (DAKs)**, and global best practices in digital health interoperability.
 
 ## Project Structure
