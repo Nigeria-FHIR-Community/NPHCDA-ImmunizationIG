@@ -46,7 +46,7 @@ Description: "This CodeSystem defines list of options for Pregnancy status of a 
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Pregnancy Status
 * #pregnant	"Pregnant" "The Client's pregnanty status is positive"
-* #notpregnant	"Not Pregnany" "The Client's pregnancy status is negative"
+* #notpregnant	"Not Pregnant" "The Client's pregnancy status is negative"
 * #unknown	"Not known" "The Client does not know their Pregnancy status"
 
 CodeSystem: NGFacilityTypeCS
