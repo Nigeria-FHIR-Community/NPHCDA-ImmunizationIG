@@ -25,8 +25,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -40,8 +40,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -115,6 +115,33 @@
       "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatusCodes",
+      "title" : "AllergyIntolerance Verification Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGVerificationStatusVS",
+      "title" : "NG-Imm AEFI Verification Status VS",
+      "description" : "AEFI Verification Status",
+      "systems" : [
+        "http://hl7.org/fhir/ValueSet/allergyintolerance-verification"
+      ]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
       "version" : "4.0.1",
       "status" : "draft",
@@ -156,8 +183,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-register-facility-model.html" : "NG-Imm-A RegisterFacility[information only]",
       "StructureDefinition-register-client-model.html" : "NG-Imm-C5 RegisterClient[information only]"
@@ -174,8 +201,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-register-facility-model.html" : "NG-Imm-A RegisterFacility[information only]",
       "StructureDefinition-register-client-model.html" : "NG-Imm-C5 RegisterClient[information only]"
@@ -220,11 +247,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
-      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner"
+      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -238,11 +265,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
-      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner"
+      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -319,6 +346,31 @@
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRouteCodes",
+      "title" : "Immunization Route Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.289"],
+      "sources" : ["2.16.840.1.113883.4.642.3.289"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGImmunizationRouteVS",
+      "title" : "NG-Imm Vaccine Route VS",
+      "description" : "Vaccine Route",
+      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-route"]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -330,7 +382,6 @@
       "sources" : ["2.16.840.1.113883.4.642.3.295"],
       "uses" : {
       },
-      "StructureDefinition-primary-vaccine-status.html" : "NG-Imm Primary VaccineStatus",
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
@@ -428,14 +479,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance",
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization",
-      "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -496,8 +547,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1236"],
       "uses" : {
       },
-      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
-      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport"
+      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
+      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/measure-population",
@@ -511,8 +562,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.765"],
       "uses" : {
       },
-      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
-      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport"
+      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
+      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/measure-report-status",
@@ -644,20 +695,6 @@
       "uses" : {
       },
       "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "ResourceType",
-      "title" : "ResourceType",
-      "description" : "One of the resource types defined as part of this version of FHIR.",
-      "systems" : ["http://hl7.org/fhir/resource-types"],
-      "oids" : ["2.16.840.1.113883.4.642.3.27"],
-      "sources" : ["2.16.840.1.113883.4.642.3.27"],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -825,7 +862,10 @@
       "description" : "This CodeSystem defines the health of the client's sibling",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sibling-health-status.html" : "NG-Imm Sibling's health status"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states",
@@ -903,32 +943,6 @@
       "uses" : {
       },
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner"
-    },
-    {
-      "url" : "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGVerificationStatusVS",
-      "title" : "NG-Imm AEFI Verification Status VS",
-      "description" : "AEFI Verification Status",
-      "systems" : [
-        "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
-    },
-    {
-      "url" : "https://www.hl7.org/fhir/R4/valueset-immunization-route",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationRouteVS",
-      "title" : "NG-Imm Vaccine Route VS",
-      "description" : "Vaccine Route",
-      "systems" : ["https://www.hl7.org/fhir/R4/valueset-immunization-route"],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     }
   ]
 }

@@ -196,13 +196,6 @@
       ]
     },
     {
-      "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status",
-      "title": "NG-Imm Primary VaccineStatus",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type",
       "title": "NG-Imm Session Type",
       "types": [
@@ -383,9 +376,6 @@
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/pregnancy-status": [
       "Patient"
-    ],
-    "https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status": [
-      "Immunization"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type": [
       "Immunization"

@@ -14,6 +14,58 @@
       "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatusCodes",
+      "title" : "AllergyIntolerance Verification Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGVerificationStatusVS",
+      "title" : "NG-Imm AEFI Verification Status VS",
+      "description" : "AEFI Verification Status",
+      "systems" : [
+        "http://hl7.org/fhir/ValueSet/allergyintolerance-verification"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRouteCodes",
+      "title" : "Immunization Route Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.289"],
+      "sources" : ["2.16.840.1.113883.4.642.3.289"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGImmunizationRouteVS",
+      "title" : "NG-Imm Vaccine Route VS",
+      "description" : "Vaccine Route",
+      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-route"]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -25,7 +77,6 @@
       "sources" : ["2.16.840.1.113883.4.642.3.295"],
       "uses" : {
       },
-      "StructureDefinition-primary-vaccine-status.html" : "NG-Imm Primary VaccineStatus",
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
@@ -173,7 +224,10 @@
       "description" : "This CodeSystem defines the health of the client's sibling",
       "systems" : [
         "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sibling-health-status.html" : "NG-Imm Sibling's health status"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states",
@@ -239,32 +293,6 @@
       "uses" : {
       },
       "StructureDefinition-nigeria-administrative-ward.html" : "NG-Imm Administrative Wards "
-    },
-    {
-      "url" : "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGVerificationStatusVS",
-      "title" : "NG-Imm AEFI Verification Status VS",
-      "description" : "AEFI Verification Status",
-      "systems" : [
-        "https://www.hl7.org/fhir/R4/valueset-allergyintolerance-verification"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
-    },
-    {
-      "url" : "https://www.hl7.org/fhir/R4/valueset-immunization-route",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationRouteVS",
-      "title" : "NG-Imm Vaccine Route VS",
-      "description" : "Vaccine Route",
-      "systems" : ["https://www.hl7.org/fhir/R4/valueset-immunization-route"],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     }
   ]
 }

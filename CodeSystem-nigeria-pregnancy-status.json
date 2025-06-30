@@ -3,14 +3,14 @@
   "id" : "nigeria-pregnancy-status",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-pregnancy-status</b></p><a name=\"nigeria-pregnancy-status\"> </a><a name=\"hcnigeria-pregnancy-status\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pregnant<a name=\"nigeria-pregnancy-status-pregnant\"> </a></td><td>Pregnant</td><td>The Client's pregnanty status is positive</td></tr><tr><td style=\"white-space:nowrap\">notpregnant<a name=\"nigeria-pregnancy-status-notpregnant\"> </a></td><td>Not Pregnany</td><td>The Client's pregnancy status is negative</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"nigeria-pregnancy-status-unknown\"> </a></td><td>Not known</td><td>The Client does not know their Pregnancy status</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-pregnancy-status</b></p><a name=\"nigeria-pregnancy-status\"> </a><a name=\"hcnigeria-pregnancy-status\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pregnant<a name=\"nigeria-pregnancy-status-pregnant\"> </a></td><td>Pregnant</td><td>The Client's pregnancy status is positive</td></tr><tr><td style=\"white-space:nowrap\">notpregnant<a name=\"nigeria-pregnancy-status-notpregnant\"> </a></td><td>Not Pregnant</td><td>The Client's pregnancy status is negative</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"nigeria-pregnancy-status-unknown\"> </a></td><td>Not known</td><td>The Client does not know their Pregnancy status</td></tr></table></div>"
   },
   "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS",
   "version" : "0.4.0",
   "name" : "NGPregnancyStatusCS",
   "title" : "NG-Imm Client Pregnancy status CS",
   "status" : "active",
-  "date" : "2025-06-25T06:29:04+01:00",
+  "date" : "2025-06-30T08:07:26+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -42,11 +42,11 @@
   "concept" : [{
     "code" : "pregnant",
     "display" : "Pregnant",
-    "definition" : "The Client's pregnanty status is positive"
+    "definition" : "The Client's pregnancy status is positive"
   },
   {
     "code" : "notpregnant",
-    "display" : "Not Pregnany",
+    "display" : "Not Pregnant",
     "definition" : "The Client's pregnancy status is negative"
   },
   {

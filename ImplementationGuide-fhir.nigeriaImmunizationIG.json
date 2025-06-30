@@ -10,7 +10,7 @@
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-06-25T06:29:04+01:00",
+  "date" : "2025-06-30T08:07:26+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -1207,18 +1207,6 @@
       },
       "name" : "NG-Imm Primary vaccine Status VS",
       "description" : "Primary Vaccine Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/primary-vaccine-status"
-      },
-      "name" : "NG-Imm Primary VaccineStatus",
-      "description" : "Indicates whether the immunization patient has completed the full primary vaccine series",
       "exampleBoolean" : false
     },
     {

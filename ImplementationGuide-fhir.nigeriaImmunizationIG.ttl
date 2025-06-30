@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NigeriaimmunizationFHIRIG"] ; # 
   fhir:title [ fhir:v "Nigeria Immunization FHIR IG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-25T06:29:04+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-30T08:07:26+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -1736,24 +1736,6 @@
        ] ;
        fhir:name [ fhir:v "NG-Imm Primary vaccine Status VS" ] ;
        fhir:description [ fhir:v "Primary Vaccine Status" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/primary-vaccine-status> ;
-         fhir:reference [ fhir:v "StructureDefinition/primary-vaccine-status" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Primary VaccineStatus" ] ;
-       fhir:description [ fhir:v "Indicates whether the immunization patient has completed the full primary vaccine series" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

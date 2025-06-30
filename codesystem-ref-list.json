@@ -179,6 +179,18 @@
       "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceVerificationStatus",
+      "title" : "AllergyIntolerance Verification Status",
+      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1371"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergyintolerance-verification.html" : "AllergyIntolerance Verification Status Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
       "version" : "3.1.0",
       "status" : "active",
@@ -189,6 +201,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RouteOfAdministration",
+      "title" : "RouteOfAdministration",
+      "description" : "The path the administered medication takes to get into the body or into contact with the body.",
+      "oids" : ["2.16.840.1.113883.5.112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-route.html" : "Immunization Route Codes"
     }
   ]
 }

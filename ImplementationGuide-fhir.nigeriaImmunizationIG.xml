@@ -11,7 +11,7 @@
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-06-25T06:29:04+01:00"/>
+  <date value="2025-06-30T08:07:26+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -1002,17 +1002,6 @@
       </reference>
       <name value="NG-Imm Primary vaccine Status VS"/>
       <description value="Primary Vaccine Status"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/primary-vaccine-status"/>
-      </reference>
-      <name value="NG-Imm Primary VaccineStatus"/>
-      <description value="Indicates whether the immunization patient has completed the full primary vaccine series"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
