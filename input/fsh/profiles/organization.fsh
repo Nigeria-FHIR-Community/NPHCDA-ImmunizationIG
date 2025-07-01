@@ -27,7 +27,7 @@ Description: "An organization profile representing healthcare facilities respons
 * address.line 1..*
 * address.line ^short = "The organization contact address line"
 * address.city 1..1
-* address.city ^short = "The organization contact address city"
+* address.city ^short = "The organization contact address city, town or settlement"
 * address.state 1..1
 * address.state ^short = "The organization contact address state"
 

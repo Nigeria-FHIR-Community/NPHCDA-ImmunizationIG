@@ -5,9 +5,9 @@ Description: "Nigerian Profile for Immunization resource."
 
 * identifier 1..1
 * vaccineCode 1..1 MS
-* vaccineCode.coding 0..*
+* vaccineCode.coding from NGVaccineLibraryVS
 * vaccineCode.coding ^short = "Vaccine Type"
-* vaccineCode.text 0..1
+* vaccineCode.text from NGVaccineLibraryVS
 * vaccineCode.text ^short = "Vaccine Administered"
 * statusReason from NGImmunizationNotDoneReasonsVS (required)
 * statusReason ^short = "Reason immunization was not done (or was missed)"
@@ -31,7 +31,7 @@ Description: "Nigerian Profile for Immunization resource."
 * route from NGImmunizationRouteVS (required)
 * route ^short = "How vaccine entered body"
 * performer 0..* MS //Who performed event
-* performer.function 0..1
+* performer.function from NGPerformerFunctionVS (required)
 * performer.function ^short = "Designation of reporting officer" //What type of performance was done
 * performer.actor only Reference (NgImmPractitioner)
 * performer.actor ^short = "Name of reporting officer" //Individual or organization who was performing

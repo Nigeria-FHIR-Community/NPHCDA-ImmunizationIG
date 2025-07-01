@@ -58,7 +58,7 @@ Usage: #example
 * manufacturer.reference = "Organization/gavi-vax-001"
 * performer[0].actor.reference = "Practitioner/nurse-chinedu"
 * performer[0].actor.display = "Nurse Chinedu Umeh"
-* performer[0].function.text = "Vaccination Supervisor"
+* performer[0].function.text = "Adminstering Provider" //Vaccination Supervisor
 /* * extension[NGPrimaryVaccineStatus].valueCodeableConcept = http://nphcda.gov.ng/fhir/CodeSystem/ng-vaccine-status#not-given */
 * extension[NGSignature].valueString = "signed-by-nurse-chinedu"
 * extension[NGSessionType].valueCodeableConcept = http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type#outreach

@@ -44,7 +44,7 @@ Description: "A set of standardized codes used to represent clinical conditions,
 * #hiv "HIV positive" "The individual has symptomatic HIV infection, which may contraindicate live vaccines or require specific vaccine schedules based on immunological status."
 
 
-CodeSystem: NGImmunizationSiteCS
+/* CodeSystem: NGImmunizationSiteCS
 Id: nigeria-immunization-site
 Title: "NG-Imm Vaccine Site CS"
 Description: "This CodeSystem captures the specific anatomical location on the patient's body where a vaccine was administered."
@@ -59,7 +59,7 @@ Description: "This CodeSystem captures the specific anatomical location on the p
 * #mouth "Mouth" "The vaccine is administered orally via the mouth, usually applicable for oral polio vaccine (OPV) or rotavirus vaccine."
 * #antero-lateral-right-thigh "Antero-lateral Aspect of Right Thigh" "The vaccine is administered into the antero-lateral (front-side) part of the right thigh, commonly used in infants for intramuscular injections."
 * #antero-lateral-left-thigh "Antero Lateral Aspect of Left Thigh" "The vaccine is administered into the antero-lateral (front-side) part of the left thigh, often used in infants when giving multiple vaccines."
-
+ */
 
 /* CodeSystem: NGImmunizationRouteCS
 Id: nigeria-immunization-route
@@ -76,7 +76,7 @@ Description: "This CodeSystem captures path by which a vaccine or medicinal prod
 * #Intramuscular "Intramuscular" "The vaccine is injected deep into the muscle tissue, allowing for rapid absorption. This is the most common route for many vaccines, such as DTP or hepatitis B."
 * #Subcutaneous "Subcutaneous" "The vaccine is injected into the layer of fat and tissue just under the skin. It is typically used for vaccines like measles or yellow fever."
   */
-
+/* 
 CodeSystem: NGAllergySeverityCS
 Id: nigeria-allergy-severity
 Title: "NG-Imm Allergy Severity CS"
@@ -90,7 +90,7 @@ Description: "This CodeSystem captures the assessed severity of an allergic reac
 * #mild "Mild" "The allergic reaction involves mild symptoms such as localized redness, itching, or rash, without systemic involvement or need for significant medical intervention."
 * #moderate "Moderate" "The reaction includes more pronounced symptoms like widespread hives, mild breathing difficulty, or swelling that requires medical observation or treatment but is not life-threatening."
 * #severe "Severe" "The reaction is life-threatening or requires urgent medical attention, such as anaphylaxis, severe respiratory distress, or cardiovascular compromise."
-
+ */
 
 /* CodeSystem: NGVerificationStatusCS
 Id: nigeria-verification-status 

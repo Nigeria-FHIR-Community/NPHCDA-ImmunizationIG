@@ -11,7 +11,7 @@ Description: "CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by t
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for For Vaccine Library with SNOMED CT codes
 
-* #1861000221106	"BCG birth dose" "Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)."
+* #1861000221106	"BCG birth dose" "Vaccine terminology codes for Bacillus Calmette-Guérin (BCG)."
 * #871822003	"HepB birth dose" "Vaccine terminology codes for Hepatitis B."
 * #1031000221108-0	"Polio (OPV0) birth dose" "Vaccine terminology codes for Polio."
 * #1162637003-1 "Pentavalent 1" "Vaccine terminology codes for Pentavalent."

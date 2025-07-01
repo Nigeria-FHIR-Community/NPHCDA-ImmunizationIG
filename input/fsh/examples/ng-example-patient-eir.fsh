@@ -27,8 +27,8 @@ Usage: #example
 
 
 // Extensions
-* extension[+].url = "ageInWeeks"
-* extension[=].valueInteger = 104
+//* extension[+].url = "ageInWeeks"
+//* extension[=].valueInteger = 104
 
 * extension[+].url = "ageInMonths"
 * extension[=].valueInteger = 24

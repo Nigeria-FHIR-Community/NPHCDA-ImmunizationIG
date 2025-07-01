@@ -68,3 +68,15 @@ Description: "A standardized classification system used to describe the type or 
 * #faith-hospital	"Faith-based Hospitals" "These are Secondary facilities owned by faith orgnization (eg. mission Hospitals)"
 * #tertiary	"Tertiary facility" "These are Higher level facilities and referal centers)"
 
+CodeSystem: NGGenderCS
+Id: nigeria-gender
+Title: "NG-Imm Gender CS"
+Description: "The administrative gender of a person."
+* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-genderCS"
+* ^status = #active
+* ^hierarchyMeaning = #is-a
+* ^publisher = "NPHCDA"
+* ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
+// The CodeSystem for Gender/sex of a client
+* #male "male" "Client is of the male gender"
+* #female "female" "Client is of the female gender"

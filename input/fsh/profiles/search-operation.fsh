@@ -59,6 +59,19 @@ Usage: #definition
 * expression = "Patient.gender"
 * description = "Search by patient gender"
 
+Instance: SearchParameter-ngimm-telecom
+InstanceOf: SearchParameter
+Title: "NG-Imm Search Immunization by phone number or email address"
+Usage: #definition
+* name = "telecom"
+* status = #active
+* code = #telecom
+* base = #Patient
+* type = #token
+* expression = "Patient.telecom"
+* description = "Search patient records by phone number or email address"
+
+
 Instance: SearchParameter-ngimm-createddate
 InstanceOf: SearchParameter
 Title: "NG-Imm Search Patient by date of creation"
@@ -107,7 +120,6 @@ Usage: #definition
 * expression = "Immunization.patient"
 * description = "Search Immunization records by patient"
 
-
 Instance: SearchParameter-ngimm-immstatus
 InstanceOf: SearchParameter
 Title: "NG-Imm Search Immunization by status of immunization"
@@ -132,8 +144,6 @@ Usage: #definition
 * expression = "Immunization.vaccinecode"
 * description = "Search Immunization records by vaccination code"
 
-
-
 Instance: SearchParameter-ngimm-immdate
 InstanceOf: SearchParameter
 Title: "NG-Imm Search Immunization by date of vaccination"
@@ -145,5 +155,4 @@ Usage: #definition
 * type = #token
 * expression = "Immunization.date"
 * description = "Search Immunization records by date of vaccination"
-
 

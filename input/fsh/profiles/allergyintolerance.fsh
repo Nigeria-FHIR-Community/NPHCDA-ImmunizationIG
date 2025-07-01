@@ -11,12 +11,13 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * clinicalStatus.coding ^short = "The clinical status of the allergy or intolerance"
 * verificationStatus from NGVerificationStatusVS (required)
 * verificationStatus ^short = "Assertion about certainty associated with a propensity or potential risk of a reaction to the identified substance"
-* type 1..1 MS
+* type from NGAllergyIntoleranceTypeVS (required)
 * type ^short = "Identification of the underlying physiological mechanism for a Reaction Risk"
 * category 1..* MS
 * category ^short = "Category of an identified substance associated with allergies or intolerances"
-* criticality 0..1
-//* code 1..1
+* criticality from NGAllergyIntoleranceCriticalityVS
+* criticality ^short = "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance"
+//* code 0 ..1
 * patient only Reference(NgImmPatient)
 * encounter 0..1
 * onset[x] 0..1

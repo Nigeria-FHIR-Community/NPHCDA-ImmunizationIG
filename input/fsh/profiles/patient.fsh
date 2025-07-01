@@ -23,7 +23,7 @@ Description: "Nigeria Immunization Patient Profile"
 * address.line 0..1 MS
 * address.line ^short = "The house number number, stree, village, setttement, and name where the Client lives"
 * address.city 0..1  
-* address.city ^short = "The city used where the client lives in the state"
+* address.city ^short = "The city, town or settlement used where the client lives in the state"
 * address.district from NGLGAsVS (required)
 * address.district ^short = "The FHIR name is district, used as Nigeria LGA in this profile"
 * address.district ^definition = "Full detailed definition for the address district field as Local Government Area"
@@ -42,7 +42,7 @@ Description: "Nigeria Immunization Patient Profile"
 * contact.address.line 0..1 MS
 * contact.address.line ^short = "The line address of the Client's primary Caregiver or Guardian"
 * contact.address.city 0..1
-* contact.address.city ^short = "The city where the Client's primary Caregiver or Guardian lives"
+* contact.address.city ^short = "The city, town or settlement where the Client's primary Caregiver or Guardian lives"
 * contact.address.district from NGLGAsVS (required)
 * contact.address.district ^short = "The LGA where the Client's primary Caregiver or Guardian lives"
 * contact.address.state from NGStatesVS (required)
