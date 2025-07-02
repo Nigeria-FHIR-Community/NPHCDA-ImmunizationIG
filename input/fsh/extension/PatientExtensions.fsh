@@ -77,5 +77,5 @@ Title:  "NG-Imm Date client record was created"
 Description: "Date the client record was first created"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
-* value[x] only date
-* valueDate ^short = "Date the client record was first created"
+* value[x] only dateTime
+* valueDateTime ^short = "Date the client record was first created"

@@ -2,7 +2,7 @@ Profile: NgImmSiblingRelatedPerson
 Parent: RelatedPerson
 Title: "NG-Imm RelatedPerson"
 Id: mother-other-children 
-Description: "Sibling that Represents the mother's other children as RelatedPersons."
+Description: "Sibling that represents the mother's other children as RelatedPersons."
 
 * patient 1..1 MS
 * patient only Reference(NgImmPatient)

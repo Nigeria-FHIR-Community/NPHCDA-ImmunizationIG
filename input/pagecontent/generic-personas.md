@@ -1,8 +1,7 @@
 
  <p>
   A persona is a depiction of a relevant stakeholder, or end-user, of the system. In this section, the goal is to provide a clear depiction of the end-users, supervisors, and related stakeholders who would be interacting with the digital system or involved in the care pathway. 
-  The personas were derived from the Basic Guide on Routine Immunization for Service Providers in Nigeria</p> 
-  and the  <a href="https://iris.who.int/bitstream/handle/10665/380303/9789240099456-eng.pdf?sequence=1" target="_blank"> Digital Adaptation Kit for Immunization</a>. 
+  The personas were derived from the Basic Guide on Routine Immunization for Service Providers in Nigeria and the  <a href="https://iris.who.int/bitstream/handle/10665/380303/9789240099456-eng.pdf?sequence=1" target="_blank"> Digital Adaptation Kit for Immunization</a>. 
   It was further refined to reflect Nigeria by identifying the real user personas during the requirement gathering workshop.
 </p>
 
@@ -45,8 +44,8 @@
   <td></td>
 </tr>
 <tr>
-  <td>SPHCDA health data users</td>
-  <td>State Primary Healthcare Development Agency (SPHCDA) stakeholders. Use insights to make immunization decisions at the state primary healthcare level</td>
+  <td>SPHCDB health data users</td>
+  <td>State Primary Health Care Development Board (SPHCDB) stakeholders. Use insights to make immunization decisions at the state primary healthcare level.</td>
   <td>State M&E officer</td>
   <td></td>
 </tr>
@@ -76,13 +75,13 @@
 </tr>
 <tr>
   <td>Officer In Charge (OIC)</td>
-  <td>Provide oversight and ensure resources are available, and oversee and supervise RI processes. Supervise data harmonization and validation. Facilitate higher level reporting. Attend Technical and harmonization meetings. Lead defaulter tracking and reporting. Responsible for surveillance at the facility. Vaccine management</td>
+  <td>Provide oversight and ensure resources are available, and oversee and supervise RI processes. Supervise data harmonization and validation. Facilitate higher level reporting. Attend technical and harmonization meetings. Lead defaulter tracking and reporting. Responsible for surveillance at the facility. Vaccine management.</td>
   <td>Head of facility</td>
   <td></td>
 </tr>
 <tr>
   <td>Health Information Officer</td>
-  <td>Reviews monthly aggregate data in summary sheets format and ensure submission to LGA M&E. and other data reports</td>
+  <td>Reviews monthly aggregate data in summary sheets format and ensure submission to LGA M&E. and other data reports.</td>
   <td>Medical record officer</td>
   <td></td>
 </tr>
@@ -107,7 +106,7 @@
 <tr>
   <td>Client</td>
   <td>The person who intends to receive vaccination services from the targeted health worker personas. A client who is 17 years of age or younger is considered a child</td>
-  <td>Infant, baby, child</td>
+  <td>Infant, baby, child.</td>
   <td>N/A</td>
 </tr>
 
@@ -130,12 +129,12 @@
   </thead>
   <tbody>
 
-    <tr>
+  <tr>
     <td>Health Facility</td>
     <td>Designated location where vaccinations are administered to individuals. 
 These sites are established and operated by healthcare organizations, government agencies, or other entities involved in public health efforts. 
 Health Facilities can vary in size and setup. A health facility can be public or private, and can be either a primary, Secondary, or Tertiary level health facility. A healthcare facility may have multiple vaccination locations under it. </td>
-    <td>Teaching Hospital, General Hospital, Comprehensive Health Center, Primary Health Clinic, Health post,</td>
+    <td>Teaching Hospital, General Hospital, Comprehensive Health Center, Primary Health Clinic, Health post.</td>
     <td>N/A</td>
 
   </tr>

@@ -18,21 +18,28 @@ Description: "Nigeria Immunization Patient Profile"
 //* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
 * gender from NGGenderVS (required)
 * gender ^short = "The sex of the Immunization client"
+* active 0..1 
+* active ^short = "Whether this patient's record is in active use (0-23 mnths is active)"
 * birthDate 0..1 MS
 * birthDate ^short = "The date of birth of the Immunization client in the form dd-mm-yyy"
+* deceased[x] 0..1
+* deceased[x] ^short = "Indicates if the individual is deceased or not"
+* deceasedBoolean 0..1
+* deceasedDateTime 0..1
 * address.line 0..1 MS
 * address.line ^short = "The house number number, stree, village, setttement, and name where the Client lives"
 * address.city 0..1  
-* address.city ^short = "The city, town or settlement used where the client lives in the state"
+* address.city ^short = "The city, town or settlement where the client lives in the state"
 * address.district from NGLGAsVS (required)
 * address.district ^short = "The FHIR name is district, used as Nigeria LGA in this profile"
 * address.district ^definition = "Full detailed definition for the address district field as Local Government Area"
 * address.state from NGStatesVS (required)
 * address.state ^short = "The name of the state where the client resides in Nigeria"
 * contact.name.given 0..* MS
-* contact.name.given ^short = "The first name of the Client's primary Caregiver, can be a parent or Guardian"
+* contact.name.given ^short = "The first name of the Client's primary Caregiver, can be a Parent or Guardian"
 * contact.name.family 0..1 MS
-* contact.name.family ^short = "The surname (family) name of the Client's primary Caregiver, can be a parent or Guardian"
+* contact.name.family ^short = "The surname (family) name of the Client's primary Caregiver, can be a Parent or Guardian"
+* contact.telecom 0..*
 * contact.telecom.system 0..1 MS
 * contact.telecom.system ^short = "The primary means to contact the Client's primary Caregiver or Guardian"
 * contact.telecom.value 0..1 MS
@@ -47,6 +54,11 @@ Description: "Nigeria Immunization Patient Profile"
 * contact.address.district ^short = "The LGA where the Client's primary Caregiver or Guardian lives"
 * contact.address.state from NGStatesVS (required)
 * contact.address.state ^short = "The State in Nigeria where the Client's primary Caregiver or Guardian lives"
+* communication 0..*
+* communication.language 1..1
+* communication.language ^short = "A language which can be used to communicate with the patient about his or her health"
+* photo 0..*
+* photo ^short = "Image of the patient"
 * link.other only Reference(NgImmSiblingRelatedPerson)
 
 

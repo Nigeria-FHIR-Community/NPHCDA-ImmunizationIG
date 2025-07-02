@@ -164,7 +164,7 @@ Chioma is done with the clinic visit and leaves satisfied to attend to her busin
    <td style="vertical-align: top;">Business Processes </td>
    <td><ul>
     <li>Register</li>
-    <li>Contraindicate</li></ul>
+    <li>Contraindicated</li></ul>
     </td>
 </tr>
 </tbody>

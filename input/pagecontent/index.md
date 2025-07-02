@@ -13,7 +13,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>Nigeria Primary Healthcare Development Agency</td>
+            <td>National Primary Health Care Development Agency</td>
             <td>23rd June 2025</td>
             <td>Fourth Draft</td>
             <td>0.4.0</td>
@@ -24,7 +24,7 @@
 
 ### Purpose
 
-This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country's adoption of the WHO SMART Guidelines approach by presenting the Digital Adaptation Kit (Business Requirments) for Immunization developed from Nigeria Primary Healthcare Development Agency (NPHCDA) immunization guidelines. In addition, this IG presents the minimal Client/Server Capability for software-agnostic immunization systems in Nigeria. It presents the workflow in form of logical models, profiles and extensions, terminology structures (ValueSets and CodeSystems), and examples. Also, key operations necessary for conformance of the priority profiles where also presented. This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions.
+This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country's adoption of the WHO SMART Guidelines approach by presenting the Digital Adaptation Kit (Business Requirments) for Immunization developed from National Primary Health Care Development Agency (NPHCDA) immunization guidelines. In addition, this IG presents the minimal Client/Server Capability for software-agnostic immunization systems in Nigeria. It presents the workflow in form of logical models, profiles and extensions, terminology structures (ValueSets and CodeSystems), and examples. Also, key operations necessary for conformance of the priority profiles where also presented. This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions.
 
 ### Background
 

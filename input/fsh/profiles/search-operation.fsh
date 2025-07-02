@@ -61,7 +61,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-telecom
 InstanceOf: SearchParameter
-Title: "NG-Imm Search Immunization by phone number or email address"
+Title: "NG-Imm Search patient record by phone number or email address"
 Usage: #definition
 * name = "telecom"
 * status = #active
@@ -69,7 +69,7 @@ Usage: #definition
 * base = #Patient
 * type = #token
 * expression = "Patient.telecom"
-* description = "Search patient records by phone number or email address"
+* description = "Search patient record by phone number or email address"
 
 
 Instance: SearchParameter-ngimm-createddate
@@ -107,6 +107,18 @@ Usage: #definition
 * type = #token
 * expression = "Patient.lga"
 * description = "Search by patient LGA of residence"
+
+Instance: SearchParameter-ngimm-city
+InstanceOf: SearchParameter
+Title: "NG-Imm Search patient record by city, town or settlement"
+Usage: #definition
+* name = "city"
+* status = #active
+* code = #city
+* base = #Patient
+* type = #token
+* expression = "Patient.city"
+* description = "Search patient records by city, town or settlement"
 
 Instance: SearchParameter-ngimm-immpatient
 InstanceOf: SearchParameter
