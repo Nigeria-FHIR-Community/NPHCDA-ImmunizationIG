@@ -33,10 +33,19 @@ Description: "The state where a person or a facility is."
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states"
 * include codes from system NGStatesCS
 
+ValueSet: NGLanguagesVS
+Id: nigeria-languages
+Title: "NG-Imm Languages VS"
+Description: "The Patient's preferred language for communication."
+* ^status = #active
+* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages"
+* include codes from system NGLanguagesCS
+
+
 ValueSet: NGRelationshipsVS
 Id: nigeria-relationship
 Title: "NG-Imm Relationships VS"
-Description: "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care."
+Description: "list of persons related to a patient, but who is not a direct target of care."
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"
 * include codes from system NGRelationshipsCS
