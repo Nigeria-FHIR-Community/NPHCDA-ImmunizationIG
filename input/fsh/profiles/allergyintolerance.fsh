@@ -17,6 +17,7 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * category ^short = "Category of an identified substance associated with allergies or intolerances"
 * criticality from NGAllergyIntoleranceCriticalityVS
 * criticality ^short = "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance"
+
 //* code 0 ..1
 * patient only Reference(NgImmPatient)
 * encounter 0..1
@@ -27,6 +28,7 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 
 // Reaction Block
 * reaction 0..*
+
 //* reaction.substance 0..1
 * reaction.manifestation 1..*
 * reaction.manifestation.text 1..1 MS
@@ -38,15 +40,11 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * reaction.severity from NGAllergySeverityVS (required)
 * reaction.severity ^short = "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations"
 
-
-
 // General Notes excluded
 * reaction.note 0..0
 * reaction.manifestation.coding 0..0
 * reaction.manifestation.coding ^short = "Clinical symptoms/signs associated with the Event"
 
-
-// Extensions
-
+// Extensions  
 * extension contains AllergyReferenceDoseNumber named allergyReferenceDoseNumber 0..1 MS
 * extension contains AllergyReferenceDoseSeries named allergyReferenceDoseSeries 0..1 MS

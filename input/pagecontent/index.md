@@ -190,53 +190,53 @@ These integrations are essential to achieving the goals of a nationally scalable
     </tr>
     <tr>
       <td>18.</td>
-      <td>HMIS</td>
-      <td>Health Management Information System</td>
-    </tr>
-    <tr>
-      <td>19.</td>
-      <td>HPVV</td>
-      <td>Human Papilloma Virus Vaccine</td>
-    </tr>
-    <tr>
-      <td>20.</td>
-      <td>HWR</td>
-      <td>Health Workforce Registry</td>
-    </tr>
-    <tr>
-      <td>21.</td>
       <td>HFR</td>
       <td>Health Facility Registry</td>
     </tr>
     <tr>
-      <td>22.</td>
+      <td>19.</td>
       <td>HL7</td>
       <td>Health Level-7</td>
     </tr>
     <tr>
+      <td>20.</td>
+      <td>HMIS</td>
+      <td>Health Management Information System</td>
+    </tr>
+    <tr>
+      <td>21.</td>
+      <td>HPVV</td>
+      <td>Human Papilloma Virus Vaccine</td>
+    </tr>
+    <tr>
+      <td>22.</td>
+      <td>HWR</td>
+      <td>Health Workforce Registry</td>
+    </tr>
+    <tr>
       <td>23.</td>
-      <td>IG</td>
-      <td>Implementation Guide</td>
+      <td>IA2030</td>
+      <td>Immunization Agenda 2030</td>
     </tr>
     <tr>
       <td>24.</td>
-      <td>IA2030</td>
-      <td>Immunization Agenda 2030</td>
+      <td>IG</td>
+      <td>Implementation Guide</td>
     </tr>
     <tr>
       <td>25.</td>
       <td>IPV</td>
       <td>Inactivated Polio Vaccine</td>
     </tr>
-      <tr>
+     <tr>
       <td>26.</td>
-      <td>LIO</td>
-      <td>Logistics Immunization officer</td>
-    </tr>
-    <tr>
-      <td>27.</td>
       <td>LGA</td>
       <td>Local Government Authority</td>
+    </tr>
+      <tr>
+      <td>27.</td>
+      <td>LIO</td>
+      <td>Logistics Immunization officer</td>
     </tr>
     <tr>
       <td>28.</td>
@@ -255,38 +255,38 @@ These integrations are essential to achieving the goals of a nationally scalable
     </tr>
     <tr>
       <td>31.</td>
-      <td>OPV</td>
-      <td>Oral Polio Vaccine</td>
-    </tr>
-    <tr>
-      <td>32.</td>
-      <td>PHC</td>
-      <td>Primary Health Care</td>
-    </tr>
-    <tr>
-      <td>33.</td>
-      <td>SIO</td>
-      <td>State Immunization Officer</td>
-    </tr>
-    <tr>
-      <td>34.</td>
       <td>OIC</td>
       <td>Officer In Charge</td>
     </tr>
     <tr>
+      <td>32.</td>
+      <td>OPV</td>
+      <td>Oral Polio Vaccine</td>
+    </tr>
+    <tr>
+      <td>33.</td>
+      <td>PHC</td>
+      <td>Primary Health Care</td>
+    </tr>
+    <tr>
+      <td>34.</td>
+      <td>SIO</td>
+      <td>State Immunization Officer</td>
+    </tr>
+    <tr>
       <td>35.</td>
+      <td>SMART</td>
+      <td>Standards-based, Machine-readable, Adaptive, Requirements-based, Testable</td>
+    </tr>
+    <tr>
+      <td>36.</td>
       <td>SMoH</td>
       <td>State Ministry of Health</td>
     </tr>
     <tr>
-      <td>36.</td>
+      <td>37.</td>
       <td>SPHCDB</td>
       <td>State Primary Health Care Development Board</td>
-    </tr>
-    <tr>
-      <td>37.</td>
-      <td>SMART</td>
-      <td>Standards-based, Machine-readable, Adaptive, Requirements-based, Testable</td>
     </tr>
     <tr>
       <td>38.</td>
