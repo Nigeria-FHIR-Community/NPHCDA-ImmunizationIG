@@ -22,5 +22,14 @@ Description: "A profile for immunization service locations, including health fac
 * address.state ^short = "The State in Nigeria where the vaccination location"
 * address.country = "NG" (exactly)
 * telecom 0..* MS
+* position 0..1 MS
+* position.altitude 0..1
+* position.longitude 1..1
+* position.latitude 1..1
+* managingOrganization only Reference(NgImmOrganization)
+* managingOrganization ^short = "Organization responsible for provisioning and upkeep of the vaccination location"
+* partOf only Reference(NgImmLocation)
+* partOf ^short = "Another location this organization is physically part of"
+
 
 

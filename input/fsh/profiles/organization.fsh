@@ -22,6 +22,8 @@ Description: "An organization profile representing healthcare facilities respons
 * telecom.system ^short = "The organization type of contact detail"
 * telecom.value 1..1
 * telecom.value ^short = "The organization contact detail"
+* partOf only Reference(NgImmOrganization)
+* partOf ^short = "The Organization which this organization forms a part"
 
 * address 1..* MS
 * address.line 1..*
