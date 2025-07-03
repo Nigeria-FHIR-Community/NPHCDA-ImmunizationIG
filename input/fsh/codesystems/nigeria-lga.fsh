@@ -2,7 +2,7 @@ CodeSystem: NGLGAsCS
 Id: nigeria-lgas
 Title: "NG-Imm LGAs in Nigeria CS"
 Description: "This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria."
-* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-lgas"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-lgas"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

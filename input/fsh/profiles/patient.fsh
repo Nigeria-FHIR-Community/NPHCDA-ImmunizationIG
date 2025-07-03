@@ -23,9 +23,13 @@ Description: "Nigeria Immunization Patient Profile"
 * birthDate 0..1 MS
 * birthDate ^short = "The date of birth of the Immunization client in the form dd-mm-yyy"
 * deceased[x] 0..1
-* deceased[x] ^short = "Indicates if the individual is deceased or not"
+* deceased[x] ^short = "Indicates if an individual client is alive or dead"
 * deceasedBoolean 0..1
+* deceasedBoolean ^short = "Indicates if the individual is deceased (dead) or not"
 * deceasedDateTime 0..1
+* deceasedDateTime ^short = "Indicates when the individual passed away if dead."
+* active 0..1
+* active ^short = "Indicates Whether this patient's record is in active use or not (eg. for Immunization, this flag can be set to true between 0-24 months, and false there after, to optimize searches)"
 * address.line 0..1 MS
 * address.line ^short = "The house number number, stree, village, setttement, and name where the Client lives"
 * address.city 0..1  
@@ -84,6 +88,5 @@ Description: "Nigeria Immunization Patient Profile"
 * contact.address.use 0..0
 * implicitRules 0..0
 * modifierExtension 0..0
-* active 0..0
 * contact.modifierExtension 0..0
 * link.modifierExtension 0..0

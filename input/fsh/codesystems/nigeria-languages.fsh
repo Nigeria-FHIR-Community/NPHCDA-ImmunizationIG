@@ -2,7 +2,7 @@ CodeSystem: NGLanguagesCS
 Id: nigeria-languages
 Title: "NG‑Imm Languages in Nigeria CS"
 Description: "This CodeSystem defines codes for major languages spoken across Nigeria."
-* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-languages"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-languages"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

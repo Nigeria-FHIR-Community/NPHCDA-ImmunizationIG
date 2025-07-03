@@ -9,10 +9,10 @@ Description: "Nigerian Profile for Immunization resource."
 * vaccineCode.coding ^short = "Vaccine Type"
 * vaccineCode.text from NGVaccineLibraryVS
 * vaccineCode.text ^short = "Vaccine Administered"
-* statusReason from NGImmunizationNotDoneReasonsVS (required)
+* statusReason from http://hl7.org/fhir/ValueSet/immunization-status-reason (required)
 * statusReason ^short = "Reason immunization was not done (or was missed)"
 * status MS
-* status from NGPrimaryVaccineStatusVS (required)
+* status from http://hl7.org/fhir/ValueSet/immunization-status (required)
 * status ^short = "Status of Immunization e.g. completed| entered-in-error | not-done"
 * manufacturer only Reference(NgImmOrganization)
 * manufacturer ^short = "Manufacturer ID"
@@ -26,16 +26,19 @@ Description: "Nigerian Profile for Immunization resource."
 * expirationDate ^short = "Vaccine expiration date"
 * doseQuantity 1..1 MS
 * doseQuantity ^short = "Amount of vaccine administered"
-* site from NGImmunizationSiteVS (required)
+* site from http://hl7.org/fhir/ValueSet/immunization-site (required)
 * site ^short = "Body site vaccine was administered"
-* route from NGImmunizationRouteVS (required)
+* route from http://hl7.org/fhir/ValueSet/immunization-route (required)
 * route ^short = "How vaccine entered body"
 * performer 0..* MS //Who performed event
-* performer.function from NGPerformerFunctionVS (required)
+* performer.function from http://hl7.org/fhir/ValueSet/immunization-function (required)
 * performer.function ^short = "Designation of reporting officer" //What type of performance was done
 * performer.actor only Reference (NgImmPractitioner)
 * performer.actor ^short = "Name of reporting officer" //Individual or organization who was performing
 * occurrence[x] only dateTime
+* reaction.date 0..1 
+* reaction.reported 0..1
+* reaction.detail only Reference(Observation)
 
 
 

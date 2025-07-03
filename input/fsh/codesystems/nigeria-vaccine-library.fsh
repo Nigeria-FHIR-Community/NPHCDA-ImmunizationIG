@@ -2,7 +2,7 @@ CodeSystem: NGVaccineLibraryCS
 Id: nigeria-vaccine-library
 Title: "NG-Imm Vaccine Library with SNOMED CT codes"
 Description: "CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG using SNOMED CT codes"
-* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

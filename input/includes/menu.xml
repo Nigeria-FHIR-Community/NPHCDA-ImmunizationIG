@@ -18,11 +18,11 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a>
     <ul class="dropdown-menu">
-      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
-      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
       <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
       <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
       <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
+      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
+      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
     </ul>
   </li>
 

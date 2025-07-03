@@ -4,8 +4,6 @@ Id: nigeria-gender
 Title: "NG-Imm Gender or Sex VS"
 //Description: "The administrative gender of a person."
 Description: "Subset of HL7 administrative-gender limited to 'male' and 'female'."
-//* ^url = http://hl7.org/fhir/ValueSet/administrative-gender
-//* include codes from system http://hl7.org/fhir/ValueSet/administrative-gender
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"
 * include codes from system NGGenderCS 
 
@@ -55,7 +53,7 @@ Id: nigeria-facility-types
 Title: "NG-Imm HealthFacility Type VS"
 Description: "Classification of Nigerian health facilities"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types"
 * include codes from system NGFacilityTypeCS
 
 ValueSet: NGHivStatusVS
@@ -109,48 +107,48 @@ Description: "A curated list of vaccines recognized under Nigeria's national imm
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"
 * include codes from system NGVaccineLibraryCS
 
-ValueSet: NGImmunizationSiteVS
+/* ValueSet: NGImmunizationSiteVS
 Id: nigeria-vaccine-site
 Title: "NG-Imm Vaccine Site VS"
 Description: "Vaccine Site"
 * ^status = #active
 * ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site"
 //* include codes from system NGImmunizationSiteCS
-* include codes from system http://hl7.org/fhir/ValueSet/immunization-site
+* include codes from system http://hl7.org/fhir/ValueSet/immunization-site */
 
-ValueSet: NGImmunizationRouteVS
+/* ValueSet: NGImmunizationRouteVS
 Id: nigeria-vaccine-route
 Title: "NG-Imm Vaccine Route VS"
 Description: "Vaccine Route"
 * ^status = #active
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-route"
 * ^url = "http://hl7.org/fhir/ValueSet/immunization-route"
-* include codes from system http://hl7.org/fhir/ValueSet/immunization-route
+* include codes from system http://hl7.org/fhir/ValueSet/immunization-route */
 
-ValueSet: NGPrimaryVaccineStatusVS
+/* ValueSet: NGPrimaryVaccineStatusVS
 Id: nigeria-primary-vaccine-status
 Title: "NG-Imm Primary vaccine Status VS"
 Description: "Primary Vaccine Status"
 * ^status = #active
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-primary-vaccine-status"
 * ^url = "http://hl7.org/fhir/ValueSet/immunization-status"
-* include codes from system http://hl7.org/fhir/ValueSet/immunization-status
+* include codes from system http://hl7.org/fhir/ValueSet/immunization-status */
 
-ValueSet: NGImmunizationNotDoneReasonsVS
+/* ValueSet: NGImmunizationNotDoneReasonsVS
 Id: nigeria-Immunization-status-reason
 Title: "NG-Imm Reason for missed Vaccination VS"
 Description: "Reason for a Client missing the last or other vaccinations"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/immunization-status-reason"
-* include codes from system http://hl7.org/fhir/ValueSet/immunization-status-reason
+* include codes from system http://hl7.org/fhir/ValueSet/immunization-status-reason */
 
-ValueSet: NGPerformerFunctionVS
+/* ValueSet: NGPerformerFunctionVS
 Id: nigeria-performer-function
 Title: "NG-Imm Performer Function VS"
 Description: "Designation of reporting officer"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/immunization-function"
-* include codes from system http://hl7.org/fhir/ValueSet/immunization-function
+* include codes from system http://hl7.org/fhir/ValueSet/immunization-function */
 
 //Allergy Intolerance Valuesets
 ValueSet: NGClinicalStatusVS
@@ -158,70 +156,82 @@ Id: nigeria-clinical-status
 Title: "NG-Imm Clinical Status VS"
 Description: "The outcome of the reaction"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
 * include codes from system NGClinicalStatusCS
 
-ValueSet: NGVerificationStatusVS
+
+//Allergy Intolerance Valuesets
+ValueSet: NGOrganizationOwnerVS
+Id: nigeria-location-owner
+Title: "NG-Imm Location Owner"
+Description: "The owner of an Immunization location"
+* ^status = #active
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
+* include codes from system NGOrganizationOwnerCS
+
+
+
+/* ValueSet: NGVerificationStatusVS
 Id: nigeria-verifiction-status
 Title: "NG-Imm AEFI Verification Status VS"
 Description: "AEFI Verification Status"
 * ^status = #active
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-verification-status"
 * ^url = "http://hl7.org/fhir/ValueSet/allergyintolerance-verification"
-* include codes from system http://hl7.org/fhir/ValueSet/allergyintolerance-verification
+* include codes from system http://hl7.org/fhir/ValueSet/allergyintolerance-verification */
 
-ValueSet: NGAllergyIntoleranceTypeVS
+/* ValueSet: NGAllergyIntoleranceTypeVS
 Id: nigeria-Allergy-Intolerance-Type
 Title: "NG-Imm Allergy Intolerance Type VS"
 Description: "Identification of the underlying physiological mechanism for a Reaction Risk"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/allergy-intolerance-type"
-* include codes from system http://hl7.org/fhir/ValueSet/allergy-intolerance-type
+* include codes from system http://hl7.org/fhir/ValueSet/allergy-intolerance-type */
 
-ValueSet: NGAllergyIntoleranceCategoryVS
+/* ValueSet: NGAllergyIntoleranceCategoryVS
 Id: nigeria-Allergy-Intolerance-Category
 Title: "NG-Imm Allergy Intolerance Category VS"
 Description: "Category of an identified substance associated with allergies or intolerances"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/allergy-intolerance-category"
-* include codes from system http://hl7.org/fhir/ValueSet/allergy-intolerance-category
+* include codes from system http://hl7.org/fhir/ValueSet/allergy-intolerance-category */
 
-ValueSet: NGAllergyIntoleranceCriticalityVS
+/* ValueSet: NGAllergyIntoleranceCriticalityVS
 Id: nigeria-Allergy-Intolerance-Criticality
 Title: "NG-Imm Allergy Intolerance Criticality VS"
 Description: "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality"
-* include codes from system http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality
+* include codes from system http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality */
 
-ValueSet: NGAllergyIntoleranceCodeVS
+/* ValueSet: NGAllergyIntoleranceCodeVS
 Id: nigeria-Allergy-Intolerance-Code
 Title: "NG-Imm Allergy Intolerance Code VS"
 Description: "Code that identifies the allergy or intolerance"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/allergyintolerance-code"
-* include codes from system http://hl7.org/fhir/ValueSet/allergyintolerance-code
+* include codes from system http://hl7.org/fhir/ValueSet/allergyintolerance-code */
 
-ValueSet: NGReactionSubstanceVS
+/* ValueSet: NGReactionSubstanceVS
 Id: nigeria-Reaction-Substance
 Title: "NG-Imm Reaction Substance VS"
 Description: "Specific substance or pharmaceutical product considered to be responsible for event"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/substance-code"
-* include codes from system http://hl7.org/fhir/ValueSet/substance-code
+* include codes from system http://hl7.org/fhir/ValueSet/substance-code */
 
-ValueSet: NGReactionManifestationVS
+/* ValueSet: NGReactionManifestationVS
 Id: nigeria-Reaction-Manifestation
 Title: "NG-Imm Reaction Manifestation VS"
 Description: "Clinical symptoms/signs associated with the Event"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/clinical-findings"
-* include codes from system http://hl7.org/fhir/ValueSet/clinical-findings
+* include codes from system http://hl7.org/fhir/ValueSet/clinical-findings */
 
-ValueSet: NGAllergySeverityVS
+/* ValueSet: NGAllergySeverityVS
 Id: nigeria-allergy-severity
 Title: "NG-Imm Allergy Severity VS"
 Description: "Vaccine reaction Severity"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/reaction-event-severity"
-* include codes from system http://hl7.org/fhir/ValueSet/reaction-event-severity
+* include codes from system http://hl7.org/fhir/ValueSet/reaction-event-severity */

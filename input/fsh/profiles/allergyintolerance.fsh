@@ -9,18 +9,18 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * clinicalStatus from NGClinicalStatusVS (required)
 * clinicalStatus.coding 1..1
 * clinicalStatus.coding ^short = "The clinical status of the allergy or intolerance"
-* verificationStatus from NGVerificationStatusVS (required)
+* verificationStatus from http://hl7.org/fhir/ValueSet/allergyintolerance-verification (required)
 * verificationStatus ^short = "Assertion about certainty associated with a propensity or potential risk of a reaction to the identified substance"
-* type from NGAllergyIntoleranceTypeVS (required)
+* type from http://hl7.org/fhir/ValueSet/allergy-intolerance-type (required)
 * type ^short = "Identification of the underlying physiological mechanism for a Reaction Risk"
-* category 1..* MS
+* category from http://hl7.org/fhir/ValueSet/allergy-intolerance-category
 * category ^short = "Category of an identified substance associated with allergies or intolerances"
-* criticality from NGAllergyIntoleranceCriticalityVS
+* criticality from http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality
 * criticality ^short = "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance"
 
-//* code 0 ..1
+* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code
 * patient only Reference(NgImmPatient)
-* encounter 0..1
+* encounter only Reference(NgImmEncounter)
 * onset[x] 0..1
 * recordedDate 1..1
 * recorder 0..1
@@ -30,20 +30,19 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * reaction 0..*
 
 //* reaction.substance 0..1
-* reaction.manifestation 1..*
-* reaction.manifestation.text 1..1 MS
-* reaction.manifestation.text ^short = "Clinical symptoms/signs associated with the Event"
+* reaction.manifestation from http://hl7.org/fhir/ValueSet/clinical-findings (required)
+//* reaction.manifestation.text 1..1 MS
+* reaction.manifestation ^short = "Clinical symptoms/signs associated with the Event"
 * reaction.description 0..1 MS
 * reaction.description ^short = "Description of the event as a whole"
 * reaction.onset 0..1 MS
 * reaction.onset ^short = "Date/time when manifestations showed"
-* reaction.severity from NGAllergySeverityVS (required)
+* reaction.severity from http://hl7.org/fhir/ValueSet/reaction-event-severity (required)
 * reaction.severity ^short = "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations"
+* reaction.substance from http://hl7.org/fhir/ValueSet/substance-code
 
 // General Notes excluded
 * reaction.note 0..0
-* reaction.manifestation.coding 0..0
-* reaction.manifestation.coding ^short = "Clinical symptoms/signs associated with the Event"
 
 // Extensions  
 * extension contains AllergyReferenceDoseNumber named allergyReferenceDoseNumber 0..1 MS

@@ -7,7 +7,7 @@ Description: "An organization profile representing healthcare facilities respons
 
 * identifier 1..* MS
 * identifier.system 1..1
-* identifier.system ^short = "The facility type regulator or identifity provider if not health facility"
+* identifier.system ^short = "The facility type regulator or identifity provider if not health facility (E.g. HERFAMA in Lagos State)"
 * identifier.value 1..1
 * identifier.value ^short = "The facility or organization uniqe identifier"
 * active 1..1 MS
@@ -28,10 +28,12 @@ Description: "An organization profile representing healthcare facilities respons
 * address.line ^short = "The organization contact address line"
 * address.city 1..1
 * address.city ^short = "The organization contact address city, town or settlement"
-* address.state 1..1
+* address.district from NGLGAsVS
+* address.district ^short = "The organization contact address LGA"
+* address.state from NGStatesVS
 * address.state ^short = "The organization contact address state"
 
-
+* extension contains NGOrganizationOwner named NGOrganizationOwner 0..1 MS
 
 
 // Hide these
