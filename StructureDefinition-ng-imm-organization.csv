@@ -159,8 +159,8 @@ Territory","",0,1,"","","Y","string {[]} {[]}
   <end value=""2010-07-01""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
-"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","The organization of which this organization forms a part","The organization of which this organization forms a part.","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization]]}
+","The Organization which this organization forms a part","The organization of which this organization forms a part.","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","No equivalent in HL7 v2",".playedBy[classCode=Part].scoper","n/a"
 "Organization.contact","Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Contact for the organization for a certain purpose","Contact for the organization for a certain purpose.","Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.","Need to keep track of assigned contact points within bigger organization.","","","","","","","",,,,,"",,,,"Organization.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

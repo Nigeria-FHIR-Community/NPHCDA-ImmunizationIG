@@ -3,7 +3,7 @@ NigeriaimmunizationFHIRIG : Validation Results
 
 err = 146, warn = 452, info = 33
 IG Publisher Version: 2.0.7 Out of date - current version is 2.0.8
-Generated Thu Jul 03 11:57:41 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.4.0 (canonical = https://nphcda.gov.ng/immunizationIG)
+Generated Thu Jul 03 13:39:26 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.4.0 (canonical = https://nphcda.gov.ng/immunizationIG)
  Build Errors : 7 / 4 / 0
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/AllergyIntolerance-FullExampleNgAllergyIntolerance : 6 / 2 / 3
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CapabilityStatement-NgImmCapabilityStatementClient : 0 / 0 / 1
