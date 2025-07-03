@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nigeria-location-owner",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-location-owner</b></p><a name=\"nigeria-location-owner\"> </a><a name=\"hcnigeria-location-owner\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-location-owner-cs.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs</code></a></li></ul></div>"
+  },
+  "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
+  "version" : "0.4.0",
+  "name" : "NGOrganizationOwnerVS",
+  "title" : "NG-Imm Location Owner",
+  "status" : "active",
+  "date" : "2025-07-03T11:54:34+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The owner of an Immunization location",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs"
+    }]
+  }
+}

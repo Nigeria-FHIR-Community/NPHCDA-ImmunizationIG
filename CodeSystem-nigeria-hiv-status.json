@@ -3,14 +3,14 @@
   "id" : "nigeria-hiv-status",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-hiv-status</b></p><a name=\"nigeria-hiv-status\"> </a><a name=\"hcnigeria-hiv-status\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">positive<a name=\"nigeria-hiv-status-positive\"> </a></td><td>Positive</td><td>The Client is HIV positive</td></tr><tr><td style=\"white-space:nowrap\">negative<a name=\"nigeria-hiv-status-negative\"> </a></td><td>Negative</td><td>The Client is HIV Negative</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"nigeria-hiv-status-unknown\"> </a></td><td>Unknown</td><td>The Client does not know their HIV status</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-hiv-status</b></p><a name=\"nigeria-hiv-status\"> </a><a name=\"hcnigeria-hiv-status\"> </a><p>This case-sensitive code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">positive<a name=\"nigeria-hiv-status-positive\"> </a></td><td>Positive</td><td>The Client is HIV positive</td></tr><tr><td style=\"white-space:nowrap\">negative<a name=\"nigeria-hiv-status-negative\"> </a></td><td>Negative</td><td>The Client is HIV Negative</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"nigeria-hiv-status-unknown\"> </a></td><td>Unknown</td><td>The Client does not know their HIV status</td></tr></table></div>"
   },
-  "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS",
+  "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status",
   "version" : "0.4.0",
   "name" : "NGHivStatusCS",
   "title" : "NG-Imm Client HIV status CS",
   "status" : "active",
-  "date" : "2025-06-30T08:07:26+01:00",
+  "date" : "2025-07-03T11:54:34+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

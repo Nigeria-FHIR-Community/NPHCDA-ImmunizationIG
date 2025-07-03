@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nigeria-location-owner-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-location-owner-cs</b></p><a name=\"nigeria-location-owner-cs\"> </a><a name=\"hcnigeria-location-owner-cs\"> </a><p>This  code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">public<a name=\"nigeria-location-owner-cs-public\"> </a></td><td>Public Health Institution Location</td></tr><tr><td style=\"white-space:nowrap\">private<a name=\"nigeria-location-owner-cs-private\"> </a></td><td>Private Health Institution Location</td></tr><tr><td style=\"white-space:nowrap\">faith-based<a name=\"nigeria-location-owner-cs-faith-based\"> </a></td><td>Faith-based Institution Locations such as churches, musques, and traditional homes</td></tr></table></div>"
+  },
+  "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs",
+  "version" : "0.4.0",
+  "name" : "NGOrganizationOwnerCS",
+  "title" : "NG-Imm Location Owner CS",
+  "status" : "draft",
+  "date" : "2025-07-03T11:54:34+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This CodeSystem defines Immunization Location Owner.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "public",
+    "display" : "Public Health Institution Location"
+  },
+  {
+    "code" : "private",
+    "display" : "Private Health Institution Location"
+  },
+  {
+    "code" : "faith-based",
+    "display" : "Faith-based Institution Locations such as churches, musques, and traditional homes"
+  }]
+}

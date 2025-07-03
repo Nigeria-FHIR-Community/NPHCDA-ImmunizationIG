@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nigeria-languages"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-languages</b></p><a name="nigeria-languages"> </a><a name="hcnigeria-languages"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-languages.html"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages</code></a></li></ul></div>
+  </text>
+  <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages"/>
+  <version value="0.4.0"/>
+  <name value="NGLanguagesVS"/>
+  <title value="NG-Imm Languages VS"/>
+  <status value="active"/>
+  <date value="2025-07-03T11:54:34+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The Patient's preferred language for communication."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages"/>
+    </include>
+  </compose>
+</ValueSet>

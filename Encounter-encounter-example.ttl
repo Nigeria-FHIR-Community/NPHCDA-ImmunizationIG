@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/Encounter/encounter-example> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "encounter-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-example</b></p><a name=\"encounter-example\"> </a><a name=\"hcencounter-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-encounter.html\">NG-Imm Encounter</a></p></div><p><b>status</b>: completed</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode HH</a>: home health</p><p><b>subject</b>: <code>NgImmPatient/patient-example</code></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><code>NgImmPractitioner/practitioner-example</code></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-location-example.html\">Location Kofar Dukayuwa PHC</a></td></tr></table><p><b>serviceProvider</b>: <code>NgImmOrganization/organization-example</code></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://nphcda.gov.ng/immunizationIG/NgImmPatient/patient-example> ;
+     fhir:reference [ fhir:v "NgImmPatient/patient-example" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:individual [
+       fhir:link <https://nphcda.gov.ng/immunizationIG/NgImmPractitioner/practitioner-example> ;
+       fhir:reference [ fhir:v "NgImmPractitioner/practitioner-example" ]
+     ]
+  ] ) ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://nphcda.gov.ng/immunizationIG/Location/location-example> ;
+       fhir:reference [ fhir:v "Location/location-example" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://nphcda.gov.ng/immunizationIG/NgImmOrganization/organization-example> ;
+     fhir:reference [ fhir:v "NgImmOrganization/organization-example" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

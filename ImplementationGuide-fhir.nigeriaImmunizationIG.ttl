@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NigeriaimmunizationFHIRIG"] ; # 
   fhir:title [ fhir:v "Nigeria Immunization FHIR IG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-30T08:07:26+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-03T11:54:34+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -839,6 +839,44 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/Encounter/encounter-example> ;
+         fhir:reference [ fhir:v "Encounter/encounter-example" ]
+       ] ;
+       fhir:name [ fhir:v "encounter-example" ] ;
+       fhir:description [ fhir:v "An example encounter for an outreach immunization visit." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/Location/location-example> ;
+         fhir:reference [ fhir:v "Location/location-example" ]
+       ] ;
+       fhir:name [ fhir:v "location-example" ] ;
+       fhir:description [ fhir:v "An example immunization service location." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -893,24 +931,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-verifiction-status> ;
-         fhir:reference [ fhir:v "ValueSet/nigeria-verifiction-status" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm AEFI Verification Status VS" ] ;
-       fhir:description [ fhir:v "AEFI Verification Status" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -920,42 +940,6 @@
        ] ;
        fhir:name [ fhir:v "NG-Imm Allergy Dose Number" ] ;
        fhir:description [ fhir:v "Reference immunization dose number for this AllergyIntolerance." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-allergy-severity> ;
-         fhir:reference [ fhir:v "CodeSystem/nigeria-allergy-severity" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Allergy Severity CS" ] ;
-       fhir:description [ fhir:v "This CodeSystem captures the assessed severity of an allergic reaction following immunization." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-allergy-severity> ;
-         fhir:reference [ fhir:v "ValueSet/nigeria-allergy-severity" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Allergy Severity VS" ] ;
-       fhir:description [ fhir:v "Vaccine reaction Severity" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1232,6 +1216,24 @@
        ]
      ] [
        fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/ng-imm-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Encounter" ] ;
+       fhir:description [ fhir:v "A profile for encounters in the Nigerian  Immunization guide, used to document immunization visits and related healthcare interactions." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:code ;
@@ -1493,6 +1495,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender> ;
+         fhir:reference [ fhir:v "CodeSystem/nigeria-gender" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Gender CS" ] ;
+       fhir:description [ fhir:v "The administrative gender of a person." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1583,6 +1603,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-languages> ;
+         fhir:reference [ fhir:v "ValueSet/nigeria-languages" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Languages VS" ] ;
+       fhir:description [ fhir:v "The Patient's preferred language for communication." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -1610,6 +1648,60 @@
        ] ;
        fhir:name [ fhir:v "NG-Imm LGAs VS" ] ;
        fhir:description [ fhir:v "The administrative Local Government Areas where a person or a facility is." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/nigeria-location" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Location" ] ;
+       fhir:description [ fhir:v "A profile for immunization service locations, including health facilities, outreach sites, and mobile vaccination units." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner> ;
+         fhir:reference [ fhir:v "ValueSet/nigeria-location-owner" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Location Owner" ] ;
+       fhir:description [ fhir:v "The owner of an Immunization location" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nigeria-location-owner-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Location Owner CS" ] ;
+       fhir:description [ fhir:v "This CodeSystem defines Immunization Location Owner." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1691,6 +1783,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/organozation-owner> ;
+         fhir:reference [ fhir:v "StructureDefinition/organozation-owner" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm owner of health institution" ] ;
+       fhir:description [ fhir:v "An extension to define the owner of the health institution" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1727,42 +1837,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-primary-vaccine-status> ;
-         fhir:reference [ fhir:v "ValueSet/nigeria-primary-vaccine-status" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Primary vaccine Status VS" ] ;
-       fhir:description [ fhir:v "Primary Vaccine Status" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-Immunization-status-reason> ;
-         fhir:reference [ fhir:v "ValueSet/nigeria-Immunization-status-reason" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Reason for missed Vaccination VS" ] ;
-       fhir:description [ fhir:v "Reason for a Client missing the last or other vaccinations" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1771,7 +1845,7 @@
          fhir:reference [ fhir:v "StructureDefinition/mother-other-children" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm RelatedPerson" ] ;
-       fhir:description [ fhir:v "Sibling that Represents the mother's other children as RelatedPersons." ] ;
+       fhir:description [ fhir:v "Sibling that represents the mother's other children as RelatedPersons." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1807,7 +1881,7 @@
          fhir:reference [ fhir:v "ValueSet/nigeria-relationship" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Relationships VS" ] ;
-       fhir:description [ fhir:v "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care." ] ;
+       fhir:description [ fhir:v "list of persons related to a patient, but who is not a direct target of care." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2077,6 +2151,42 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-city> ;
+         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-city" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search patient record by city, town or settlement" ] ;
+       fhir:description [ fhir:v "Search patient records by city, town or settlement" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-telecom> ;
+         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-telecom" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search patient record by phone number or email address" ] ;
+       fhir:description [ fhir:v "Search patient record by phone number or email address" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CapabilityStatement"
          ]
        ] ) ;
@@ -2315,60 +2425,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-route> ;
-         fhir:reference [ fhir:v "ValueSet/nigeria-vaccine-route" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Vaccine Route VS" ] ;
-       fhir:description [ fhir:v "Vaccine Route" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-site> ;
-         fhir:reference [ fhir:v "CodeSystem/nigeria-immunization-site" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Vaccine Site CS" ] ;
-       fhir:description [ fhir:v "This CodeSystem captures the specific anatomical location on the patient's body where a vaccine was administered." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-site> ;
-         fhir:reference [ fhir:v "ValueSet/nigeria-vaccine-site" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Vaccine Site VS" ] ;
-       fhir:description [ fhir:v "Vaccine Site" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-library> ;
          fhir:reference [ fhir:v "ValueSet/nigeria-vaccine-library" ]
        ] ;
@@ -2536,6 +2592,24 @@
        ] ;
        fhir:name [ fhir:v "NG-Imm-H GenerateReport[information only]" ] ;
        fhir:description [ fhir:v "IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages> ;
+         fhir:reference [ fhir:v "CodeSystem/nigeria-languages" ]
+       ] ;
+       fhir:name [ fhir:v "NG‑Imm Languages in Nigeria CS" ] ;
+       fhir:description [ fhir:v "This CodeSystem defines codes for major languages spoken across Nigeria." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

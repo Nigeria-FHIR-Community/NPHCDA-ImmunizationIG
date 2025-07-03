@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location-example"/>
+  <meta>
+    <profile value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location location-example</b></p><a name="location-example"> </a><a name="hclocation-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nigeria-location.html">NG-Imm Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Kofar Dukayuwa PHC</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode AMB}">Ambulatory</span></p><p><b>telecom</b>: <a href="tel:+2348012345678">+2348012345678</a></p><p><b>address</b>: Kofar Dukayuwa PHC, Kano, Nigeria</p></div>
+  </text>
+  <status value="active"/>
+  <name value="Kofar Dukayuwa PHC"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="AMB"/>
+      <display value="Ambulatory"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="+2348012345678"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <extension url="administrativeWard">
+      <valueCodeableConcept>
+        <coding>
+          <code value="alu"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <text value="Kofar Dukayuwa PHC, Kano, Nigeria"/>
+    <city value="Kano"/>
+    <country value="NG"/>
+  </address>
+</Location>

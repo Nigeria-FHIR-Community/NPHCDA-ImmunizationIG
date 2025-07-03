@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "nigeria-sibling-health-status"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-sibling-health-status</b></p><a name=\"nigeria-sibling-health-status\"> </a><a name=\"hcnigeria-sibling-health-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-sibling-health-status.html\"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS</code></a></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-sibling-health-status</b></p><a name=\"nigeria-sibling-health-status\"> </a><a name=\"hcnigeria-sibling-health-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-sibling-health-status.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.4.0"] ; # 
   fhir:name [ fhir:v "NGSiblingHealthStatusVS"] ; # 
   fhir:title [ fhir:v "NG-Imm Sibling Health Status VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-30T08:07:26+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-03T11:54:34+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -44,7 +44,7 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status"^^xsd:anyURI ]
      ] )
   ] . # 
 

@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nigeria-languages",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-languages</b></p><a name=\"nigeria-languages\"> </a><a name=\"hcnigeria-languages\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-languages.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages</code></a></li></ul></div>"
+  },
+  "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages",
+  "version" : "0.4.0",
+  "name" : "NGLanguagesVS",
+  "title" : "NG-Imm Languages VS",
+  "status" : "active",
+  "date" : "2025-07-03T11:54:34+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The Patient's preferred language for communication.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages"
+    }]
+  }
+}

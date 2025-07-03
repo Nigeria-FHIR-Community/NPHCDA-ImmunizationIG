@@ -1,0 +1,118 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nigeria-languages"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-languages</b></p><a name=\"nigeria-languages\"> </a><a name=\"hcnigeria-languages\"> </a><p>This case-sensitive code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">English<a name=\"nigeria-languages-English\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">Pidgin<a name=\"nigeria-languages-Pidgin\"> </a></td><td>Nigerian Pidgin</td></tr><tr><td style=\"white-space:nowrap\">Hausa<a name=\"nigeria-languages-Hausa\"> </a></td><td>Hausa</td></tr><tr><td style=\"white-space:nowrap\">Yoruba<a name=\"nigeria-languages-Yoruba\"> </a></td><td>Yoruba</td></tr><tr><td style=\"white-space:nowrap\">Igbo<a name=\"nigeria-languages-Igbo\"> </a></td><td>Igbo</td></tr><tr><td style=\"white-space:nowrap\">Fulfulde<a name=\"nigeria-languages-Fulfulde\"> </a></td><td>Fulfulde</td></tr><tr><td style=\"white-space:nowrap\">Ibibio<a name=\"nigeria-languages-Ibibio\"> </a></td><td>Ibibio</td></tr><tr><td style=\"white-space:nowrap\">Kanuri<a name=\"nigeria-languages-Kanuri\"> </a></td><td>Kanuri</td></tr><tr><td style=\"white-space:nowrap\">Tiv<a name=\"nigeria-languages-Tiv\"> </a></td><td>Tiv</td></tr><tr><td style=\"white-space:nowrap\">Nupe<a name=\"nigeria-languages-Nupe\"> </a></td><td>Nupe</td></tr><tr><td style=\"white-space:nowrap\">Igala<a name=\"nigeria-languages-Igala\"> </a></td><td>Igala</td></tr><tr><td style=\"white-space:nowrap\">Efik<a name=\"nigeria-languages-Efik\"> </a></td><td>Efik</td></tr><tr><td style=\"white-space:nowrap\">Ijaw<a name=\"nigeria-languages-Ijaw\"> </a></td><td>Ijaw</td></tr><tr><td style=\"white-space:nowrap\">Urhobo<a name=\"nigeria-languages-Urhobo\"> </a></td><td>Urhobo</td></tr><tr><td style=\"white-space:nowrap\">Itsekiri<a name=\"nigeria-languages-Itsekiri\"> </a></td><td>Itsekiri</td></tr><tr><td style=\"white-space:nowrap\">Bini-Edo<a name=\"nigeria-languages-Bini-Edo\"> </a></td><td>Bini (Edo)</td></tr><tr><td style=\"white-space:nowrap\">Ogoni<a name=\"nigeria-languages-Ogoni\"> </a></td><td>Ogoni</td></tr><tr><td style=\"white-space:nowrap\">Esan<a name=\"nigeria-languages-Esan\"> </a></td><td>Esan</td></tr><tr><td style=\"white-space:nowrap\">Ikwerre<a name=\"nigeria-languages-Ikwerre\"> </a></td><td>Ikwerre</td></tr><tr><td style=\"white-space:nowrap\">Idoma<a name=\"nigeria-languages-Idoma\"> </a></td><td>Idoma</td></tr><tr><td style=\"white-space:nowrap\">Ebira<a name=\"nigeria-languages-Ebira\"> </a></td><td>Ebira</td></tr><tr><td style=\"white-space:nowrap\">Hausa-Fulani<a name=\"nigeria-languages-Hausa-Fulani\"> </a></td><td>Hausa-Fulani</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "NGLanguagesCS"] ; # 
+  fhir:title [ fhir:v "NG‑Imm Languages in Nigeria CS"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-07-03T11:54:34+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This CodeSystem defines codes for major languages spoken across Nigeria."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:hierarchyMeaning [ fhir:v "grouped-by"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "22"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "English" ] ;
+     fhir:display [ fhir:v "English" ]
+  ] [
+     fhir:code [ fhir:v "Pidgin" ] ;
+     fhir:display [ fhir:v "Nigerian Pidgin" ]
+  ] [
+     fhir:code [ fhir:v "Hausa" ] ;
+     fhir:display [ fhir:v "Hausa" ]
+  ] [
+     fhir:code [ fhir:v "Yoruba" ] ;
+     fhir:display [ fhir:v "Yoruba" ]
+  ] [
+     fhir:code [ fhir:v "Igbo" ] ;
+     fhir:display [ fhir:v "Igbo" ]
+  ] [
+     fhir:code [ fhir:v "Fulfulde" ] ;
+     fhir:display [ fhir:v "Fulfulde" ]
+  ] [
+     fhir:code [ fhir:v "Ibibio" ] ;
+     fhir:display [ fhir:v "Ibibio" ]
+  ] [
+     fhir:code [ fhir:v "Kanuri" ] ;
+     fhir:display [ fhir:v "Kanuri" ]
+  ] [
+     fhir:code [ fhir:v "Tiv" ] ;
+     fhir:display [ fhir:v "Tiv" ]
+  ] [
+     fhir:code [ fhir:v "Nupe" ] ;
+     fhir:display [ fhir:v "Nupe" ]
+  ] [
+     fhir:code [ fhir:v "Igala" ] ;
+     fhir:display [ fhir:v "Igala" ]
+  ] [
+     fhir:code [ fhir:v "Efik" ] ;
+     fhir:display [ fhir:v "Efik" ]
+  ] [
+     fhir:code [ fhir:v "Ijaw" ] ;
+     fhir:display [ fhir:v "Ijaw" ]
+  ] [
+     fhir:code [ fhir:v "Urhobo" ] ;
+     fhir:display [ fhir:v "Urhobo" ]
+  ] [
+     fhir:code [ fhir:v "Itsekiri" ] ;
+     fhir:display [ fhir:v "Itsekiri" ]
+  ] [
+     fhir:code [ fhir:v "Bini-Edo" ] ;
+     fhir:display [ fhir:v "Bini (Edo)" ]
+  ] [
+     fhir:code [ fhir:v "Ogoni" ] ;
+     fhir:display [ fhir:v "Ogoni" ]
+  ] [
+     fhir:code [ fhir:v "Esan" ] ;
+     fhir:display [ fhir:v "Esan" ]
+  ] [
+     fhir:code [ fhir:v "Ikwerre" ] ;
+     fhir:display [ fhir:v "Ikwerre" ]
+  ] [
+     fhir:code [ fhir:v "Idoma" ] ;
+     fhir:display [ fhir:v "Idoma" ]
+  ] [
+     fhir:code [ fhir:v "Ebira" ] ;
+     fhir:display [ fhir:v "Ebira" ]
+  ] [
+     fhir:code [ fhir:v "Hausa-Fulani" ] ;
+     fhir:display [ fhir:v "Hausa-Fulani" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

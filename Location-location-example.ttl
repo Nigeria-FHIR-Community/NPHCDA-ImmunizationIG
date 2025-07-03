@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/Location/location-example> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "location-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location location-example</b></p><a name=\"location-example\"> </a><a name=\"hclocation-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nigeria-location.html\">NG-Imm Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Kofar Dukayuwa PHC</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode AMB}\">Ambulatory</span></p><p><b>telecom</b>: <a href=\"tel:+2348012345678\">+2348012345678</a></p><p><b>address</b>: Kofar Dukayuwa PHC, Kano, Nigeria</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Kofar Dukayuwa PHC"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AMB" ] ;
+       fhir:display [ fhir:v "Ambulatory" ]
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+2348012345678" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address [
+     fhir:extension ( [
+       fhir:url [ fhir:v "administrativeWard"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:code [ fhir:v "alu" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "Kofar Dukayuwa PHC, Kano, Nigeria" ] ;
+     fhir:city [ fhir:v "Kano" ] ;
+     fhir:country [ fhir:v "NG" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -3,14 +3,14 @@
   "id" : "nigeria-sibling-health-status",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-sibling-health-status</b></p><a name=\"nigeria-sibling-health-status\"> </a><a name=\"hcnigeria-sibling-health-status\"> </a><p>This case-sensitive code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">alive<a name=\"nigeria-sibling-health-status-alive\"> </a></td><td>Alive</td><td>Sibling referenced is still alive</td></tr><tr><td style=\"white-space:nowrap\">dead<a name=\"nigeria-sibling-health-status-dead\"> </a></td><td>Dead</td><td>Sibling referenced is dead</td></tr><tr><td style=\"white-space:nowrap\">well<a name=\"nigeria-sibling-health-status-well\"> </a></td><td>well</td><td>Sibling reference is alive and well</td></tr><tr><td style=\"white-space:nowrap\">diseased<a name=\"nigeria-sibling-health-status-diseased\"> </a></td><td>underlying disease</td><td>Referenced Sibling has an underlying disease</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-sibling-health-status</b></p><a name=\"nigeria-sibling-health-status\"> </a><a name=\"hcnigeria-sibling-health-status\"> </a><p>This case-sensitive code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">alive<a name=\"nigeria-sibling-health-status-alive\"> </a></td><td>Alive</td><td>Sibling referenced is still alive</td></tr><tr><td style=\"white-space:nowrap\">dead<a name=\"nigeria-sibling-health-status-dead\"> </a></td><td>Dead</td><td>Sibling referenced is dead</td></tr><tr><td style=\"white-space:nowrap\">well<a name=\"nigeria-sibling-health-status-well\"> </a></td><td>well</td><td>Sibling reference is alive and well</td></tr><tr><td style=\"white-space:nowrap\">diseased<a name=\"nigeria-sibling-health-status-diseased\"> </a></td><td>underlying disease</td><td>Referenced Sibling has an underlying disease</td></tr></table></div>"
   },
-  "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS",
+  "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status",
   "version" : "0.4.0",
   "name" : "NGSiblingHealthStatusCS",
   "title" : "NG-Imm Sibling Health Status CS",
   "status" : "active",
-  "date" : "2025-06-30T08:07:26+01:00",
+  "date" : "2025-07-03T11:54:34+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

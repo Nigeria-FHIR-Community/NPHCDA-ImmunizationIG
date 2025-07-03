@@ -1,23 +1,15 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/NGStockReportCS",
       "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGWardsCS",
-      "title" : "NG-Imm Administrative Wards CS",
-      "description" : "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."
+      "status" : "draft",
+      "name" : "NigeriaStockData",
+      "title" : "NG-Imm Stock Management Data Elements CS",
+      "description" : "CodeSystem for Stock Management Data Elements"
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGAllergySeverityCS",
-      "title" : "NG-Imm Allergy Severity CS",
-      "description" : "This CodeSystem captures the assessed severity of an allergic reaction following immunization."
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGClinicalStatusCS",
@@ -25,15 +17,7 @@
       "description" : "A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationContraindicationCS",
-      "title" : "NG-Imm Vaccine contraindications CS",
-      "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGFacilityTypeCS",
@@ -41,7 +25,15 @@
       "description" : "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGGenderCS",
+      "title" : "NG-Imm Gender CS",
+      "description" : "The administrative gender of a person."
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGHivStatusCS",
@@ -49,39 +41,15 @@
       "description" : "This CodeSystem defines list of options for HIV status of a Client"
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-immunization-site",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication",
       "version" : "0.4.0",
       "status" : "active",
-      "name" : "NGImmunizationSiteCS",
-      "title" : "NG-Imm Vaccine Site CS",
-      "description" : "This CodeSystem captures the specific anatomical location on the patient's body where a vaccine was administered."
+      "name" : "NGImmunizationContraindicationCS",
+      "title" : "NG-Imm Vaccine contraindications CS",
+      "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-lgas",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGLGAsCS",
-      "title" : "NG-Imm LGAs in Nigeria CS",
-      "description" : "This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria."
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGPregnancyStatusCS",
-      "title" : "NG-Imm Client Pregnancy status CS",
-      "description" : "This CodeSystem defines list of options for Pregnancy status of a Client"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGRelationshipsCS",
-      "title" : "NG-Imm Relationships CS",
-      "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-session-type",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGImmunizationSessionTypeCS",
@@ -89,7 +57,47 @@
       "description" : "Type of session for immunization. Could be in a fixed facility, outreach or mobile."
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGLanguagesCS",
+      "title" : "NG‑Imm Languages in Nigeria CS",
+      "description" : "This CodeSystem defines codes for major languages spoken across Nigeria."
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGLGAsCS",
+      "title" : "NG-Imm LGAs in Nigeria CS",
+      "description" : "This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria."
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs",
+      "version" : "0.4.0",
+      "status" : "draft",
+      "name" : "NGOrganizationOwnerCS",
+      "title" : "NG-Imm Location Owner CS",
+      "description" : "This CodeSystem defines Immunization Location Owner."
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGPregnancyStatusCS",
+      "title" : "NG-Imm Client Pregnancy status CS",
+      "description" : "This CodeSystem defines list of options for Pregnancy status of a Client"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGRelationshipsCS",
+      "title" : "NG-Imm Relationships CS",
+      "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGSiblingHealthStatusCS",
@@ -97,7 +105,7 @@
       "description" : "This CodeSystem defines the health of the client's sibling"
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGStatesCS",
@@ -105,7 +113,7 @@
       "description" : "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library",
       "version" : "0.4.0",
       "status" : "active",
       "name" : "NGVaccineLibraryCS",
@@ -113,12 +121,12 @@
       "description" : "CodeSystem for IMMZ.Z Vaccine Library Data Elements supported by this IG using SNOMED CT codes"
     },
     {
-      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/NGStockReportCS",
+      "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards",
       "version" : "0.4.0",
-      "status" : "draft",
-      "name" : "NigeriaStockData",
-      "title" : "NG-Imm Stock Management Data Elements CS",
-      "description" : "CodeSystem for Stock Management Data Elements"
+      "status" : "active",
+      "name" : "NGWardsCS",
+      "title" : "NG-Imm Administrative Wards CS",
+      "description" : "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."
     }
   ]
 }

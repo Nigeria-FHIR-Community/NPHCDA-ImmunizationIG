@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="nigeria-gender"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-gender</b></p><a name="nigeria-gender"> </a><a name="hcnigeria-gender"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/R4/valueset-administrative-gender</code></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-gender</b></p><a name="nigeria-gender"> </a><a name="hcnigeria-gender"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-gender.html"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender</code></a></li></ul></div>
   </text>
-  <url value="http://hl7.org/fhir/R4/valueset-administrative-gender"/>
+  <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"/>
   <version value="0.4.0"/>
   <name value="NGGenderVS"/>
   <title value="NG-Imm Gender or Sex VS"/>
   <status value="draft"/>
-  <date value="2025-06-30T08:07:26+01:00"/>
+  <date value="2025-07-03T11:54:34+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -37,7 +37,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/R4/valueset-administrative-gender"/>
+      <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender"/>
     </include>
   </compose>
 </ValueSet>

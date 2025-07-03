@@ -97,11 +97,11 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a>
     <ul class="dropdown-menu">
-      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
-      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
       <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
       <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
       <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
+      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
+      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
     </ul>
   </li>
 
@@ -320,6 +320,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Search by patient LGA of residence</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-city.html"
+                  title="SearchParameter/SearchParameter-ngimm-city">NG-Imm Search patient record by city, town or settlement</a>
+            </td>
+            <td>
+<p>Search patient records by city, town or settlement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-telecom.html"
+                  title="SearchParameter/SearchParameter-ngimm-telecom">NG-Imm Search patient record by phone number or email address</a>
+            </td>
+            <td>
+<p>Search patient record by phone number or email address</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="3"> </a>
@@ -410,11 +428,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ng-imm-encounter.html"
+                  title="StructureDefinition/ng-imm-encounter">NG-Imm Encounter</a>
+            </td>
+            <td>
+<p>A profile for encounters in the Nigerian  Immunization guide, used to document immunization visits and related healthcare interactions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-NgImmImmunization.html"
                   title="StructureDefinition/NgImmImmunization">NG-Imm Immunization</a>
             </td>
             <td>
 <p>Nigerian Profile for Immunization resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-nigeria-location.html"
+                  title="StructureDefinition/nigeria-location">NG-Imm Location</a>
+            </td>
+            <td>
+<p>A profile for immunization service locations, including health facilities, outreach sites, and mobile vaccination units.</p>
 </td>
          </tr>
          <tr>
@@ -468,7 +504,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/mother-other-children">NG-Imm RelatedPerson</a>
             </td>
             <td>
-<p>Sibling that Represents the mother’s other children as RelatedPersons.</p>
+<p>Sibling that represents the mother’s other children as RelatedPersons.</p>
 </td>
          </tr>
       </tbody>
@@ -623,6 +659,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Weight  of the Immunization Client at birth</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-organozation-owner.html"
+                  title="StructureDefinition/organozation-owner">NG-Imm owner of health institution</a>
+            </td>
+            <td>
+<p>An extension to define the owner of the health institution</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="6"> </a>
@@ -631,24 +676,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-nigeria-verifiction-status.html"
-                  title="ValueSet/nigeria-verifiction-status">NG-Imm AEFI Verification Status VS</a>
-            </td>
-            <td>
-<p>AEFI Verification Status</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-nigeria-allergy-severity.html"
-                  title="ValueSet/nigeria-allergy-severity">NG-Imm Allergy Severity VS</a>
-            </td>
-            <td>
-<p>Vaccine reaction Severity</p>
-</td>
-         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-nigeria-hiv-status.html"
@@ -703,20 +730,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-nigeria-primary-vaccine-status.html"
-                  title="ValueSet/nigeria-primary-vaccine-status">NG-Imm Primary vaccine Status VS</a>
+               <a href="ValueSet-nigeria-languages.html"
+                  title="ValueSet/nigeria-languages">NG-Imm Languages VS</a>
             </td>
             <td>
-<p>Primary Vaccine Status</p>
+<p>The Patient’s preferred language for communication.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-nigeria-Immunization-status-reason.html"
-                  title="ValueSet/nigeria-Immunization-status-reason">NG-Imm Reason for missed Vaccination VS</a>
+               <a href="ValueSet-nigeria-location-owner.html"
+                  title="ValueSet/nigeria-location-owner">NG-Imm Location Owner</a>
             </td>
             <td>
-<p>Reason for a Client missing the last or other vaccinations</p>
+<p>The owner of an Immunization location</p>
 </td>
          </tr>
          <tr>
@@ -725,7 +752,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/nigeria-relationship">NG-Imm Relationships VS</a>
             </td>
             <td>
-<p>This CodeSystem defines list of persons related to a patient, but who is not a direct target of care.</p>
+<p>list of persons related to a patient, but who is not a direct target of care.</p>
 </td>
          </tr>
          <tr>
@@ -761,24 +788,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-nigeria-vaccine-route.html"
-                  title="ValueSet/nigeria-vaccine-route">NG-Imm Vaccine Route VS</a>
-            </td>
-            <td>
-<p>Vaccine Route</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-nigeria-vaccine-site.html"
-                  title="ValueSet/nigeria-vaccine-site">NG-Imm Vaccine Site VS</a>
-            </td>
-            <td>
-<p>Vaccine Site</p>
 </td>
          </tr>
          <tr>
@@ -825,15 +834,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-nigeria-allergy-severity.html"
-                  title="CodeSystem/nigeria-allergy-severity">NG-Imm Allergy Severity CS</a>
-            </td>
-            <td>
-<p>This CodeSystem captures the assessed severity of an allergic reaction following immunization.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-nigeria-hiv-status.html"
                   title="CodeSystem/nigeria-hiv-status">NG-Imm Client HIV status CS</a>
             </td>
@@ -861,6 +861,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-gender.html" title="CodeSystem/nigeria-gender">NG-Imm Gender CS</a>
+            </td>
+            <td>
+<p>The administrative gender of a person.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-nigeria-immunization-session-type.html"
                   title="CodeSystem/nigeria-immunization-session-type">NG-Imm Immunization Session types CS</a>
             </td>
@@ -874,6 +882,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-location-owner-cs.html"
+                  title="CodeSystem/nigeria-location-owner-cs">NG-Imm Location Owner CS</a>
+            </td>
+            <td>
+<p>This CodeSystem defines Immunization Location Owner.</p>
 </td>
          </tr>
          <tr>
@@ -922,20 +939,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-nigeria-immunization-site.html"
-                  title="CodeSystem/nigeria-immunization-site">NG-Imm Vaccine Site CS</a>
-            </td>
-            <td>
-<p>This CodeSystem captures the specific anatomical location on the patient’s body where a vaccine was administered.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-nigeria-immunization-contraindication.html"
                   title="CodeSystem/nigeria-immunization-contraindication">NG-Imm Vaccine contraindications CS</a>
             </td>
             <td>
 <p>A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-languages.html"
+                  title="CodeSystem/nigeria-languages">NG‑Imm Languages in Nigeria CS</a>
+            </td>
+            <td>
+<p>This CodeSystem defines codes for major languages spoken across Nigeria.</p>
 </td>
          </tr>
       </tbody>
@@ -1070,6 +1087,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>An example where immunization was not done due to contraindication (fever)</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-encounter-example.html"
+                  title="Encounter/encounter-example">encounter-example</a>
+            </td>
+            <td>
+<p>An example encounter for an outreach immunization visit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-location-example.html" title="Location/location-example">location-example</a>
+            </td>
+            <td>
+<p>An example immunization service location.</p>
+</td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -1090,7 +1124,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 30, 2025 08:08+0100">2025-06-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 3, 2025 11:55+0100">2025-07-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

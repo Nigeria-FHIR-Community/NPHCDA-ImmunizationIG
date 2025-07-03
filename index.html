@@ -97,11 +97,11 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a>
     <ul class="dropdown-menu">
-      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
-      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
       <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
       <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
       <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
+      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
+      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
     </ul>
   </li>
 
@@ -170,7 +170,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-06-30
+            as of 2025-07-03
           
         
       </td>
@@ -222,7 +222,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </thead>
     <tbody>
         <tr>
-            <td>Nigeria Primary Healthcare Development Agency</td>
+            <td>National Primary Health Care Development Agency</td>
             <td>23rd June 2025</td>
             <td>Fourth Draft</td>
             <td>0.4.0</td>
@@ -232,7 +232,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="purpose">Purpose</h3>
 
-<p>This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country’s adoption of the WHO SMART Guidelines approach by presenting the Digital Adaptation Kit (Business Requirments) for Immunization developed from Nigeria Primary Healthcare Development Agency (NPHCDA) immunization guidelines. In addition, this IG presents the minimal Client/Server Capability for software-agnostic immunization systems in Nigeria. It presents the workflow in form of logical models, profiles and extensions, terminology structures (ValueSets and CodeSystems), and examples. Also, key operations necessary for conformance of the priority profiles where also presented. This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions.</p>
+<p>This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country’s adoption of the WHO SMART Guidelines approach by presenting the Digital Adaptation Kit (Business Requirments) for Immunization developed from National Primary Health Care Development Agency (NPHCDA) immunization guidelines. In addition, this IG presents the minimal Client/Server Capability for software-agnostic immunization systems in Nigeria. It presents the workflow in form of logical models, profiles and extensions, terminology structures (ValueSets and CodeSystems), and examples. Also, key operations necessary for conformance of the priority profiles where also presented. This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions.</p>
 
 <h3 id="background">Background</h3>
 
@@ -336,123 +336,186 @@ Provides clean, structured data for integration with data analytics platforms fo
     </tr>
     <tr>
       <td>5.</td>
+      <td>CRVS</td>
+      <td>Civil Registration and Vital Statistics</td>
+    </tr>
+    <tr>
+      <td>6.</td>
       <td>DAK</td>
       <td>Digital Adaptation Kit</td>
     </tr>
     <tr>
-      <td>6.</td>
+      <td>7.</td>
       <td>DHI</td>
       <td>Digital Health Information</td>
     </tr>
     <tr>
-      <td>7.</td>
+      <td>8.</td>
+      <td>DHIS2</td>
+      <td>District Health Information System 2</td>
+    </tr>
+     <tr>
+      <td>9.</td>
+      <td>DPI</td>
+      <td>Digital Public Infrastructure</td>
+    </tr>
+    <tr>
+      <td>10.</td>
       <td>DPT</td>
       <td>Diphtheria, Pertussis, Tetanus</td>
     </tr>
     <tr>
-      <td>8.</td>
+      <td>11.</td>
       <td>eCHIS</td>
       <td>electronic Community Health Information System</td>
     </tr>
     <tr>
-      <td>9.</td>
+      <td>12.</td>
       <td>EIR</td>
       <td>Electronic Immunization Registry</td>
     </tr>
     <tr>
-      <td>10.</td>
+      <td>13.</td>
+      <td>EMR</td>
+      <td>Electronic Medical Record</td>
+    </tr>
+    <tr>
+      <td>14.</td>
       <td>EPI</td>
       <td>Expanded Program on Immunization</td>
     </tr>
     <tr>
-      <td>11.</td>
+      <td>15.</td>
+      <td>FHIR</td>
+      <td>Fast Healthcare Interoperability Resource</td>
+    </tr>
+    <tr>
+      <td>16.</td>
       <td>FMoHSW</td>
       <td>Federal Ministry of Health and Social Welfare</td>
     </tr>
     <tr>
-      <td>12.</td>
+      <td>17.</td>
       <td>Hep B</td>
       <td>Hepatitis B Vaccine</td>
     </tr>
     <tr>
-      <td>13.</td>
-      <td>HPV</td>
-      <td>Human Papilloma Virus</td>
-    </tr>
-    <tr>
-      <td>14.</td>
-      <td>HWR</td>
-      <td>Health Workforce Registry</td>
-    </tr>
-    <tr>
-      <td>15.</td>
+      <td>18.</td>
       <td>HFR</td>
       <td>Health Facility Registry</td>
     </tr>
     <tr>
-      <td>16.</td>
+      <td>19.</td>
+      <td>HL7</td>
+      <td>Health Level-7</td>
+    </tr>
+    <tr>
+      <td>20.</td>
+      <td>HMIS</td>
+      <td>Health Management Information System</td>
+    </tr>
+    <tr>
+      <td>21.</td>
+      <td>HPVV</td>
+      <td>Human Papilloma Virus Vaccine</td>
+    </tr>
+    <tr>
+      <td>22.</td>
+      <td>HWR</td>
+      <td>Health Workforce Registry</td>
+    </tr>
+    <tr>
+      <td>23.</td>
+      <td>IA2030</td>
+      <td>Immunization Agenda 2030</td>
+    </tr>
+    <tr>
+      <td>24.</td>
+      <td>IG</td>
+      <td>Implementation Guide</td>
+    </tr>
+    <tr>
+      <td>25.</td>
       <td>IPV</td>
       <td>Inactivated Polio Vaccine</td>
     </tr>
+     <tr>
+      <td>26.</td>
+      <td>LGA</td>
+      <td>Local Government Authority</td>
+    </tr>
       <tr>
-      <td>17.</td>
+      <td>27.</td>
       <td>LIO</td>
       <td>Logistics Immunization officer</td>
     </tr>
     <tr>
-      <td>18.</td>
-      <td>LGA</td>
-      <td>Local Government Authority</td>
+      <td>28.</td>
+      <td>MDCN</td>
+      <td>Medical and Dental Council of Nigeria</td>
     </tr>
     <tr>
-      <td>19.</td>
+      <td>29.</td>
+      <td>NIS</td>
+      <td>National Immunization Strategy</td>
+    </tr>
+    <tr>
+      <td>30.</td>
       <td>NPHCDA</td>
-      <td>National Primary Healthcare Development Agency</td>
+      <td>National Primary Health Care Development Agency</td>
     </tr>
     <tr>
-      <td>20.</td>
+      <td>31.</td>
+      <td>OIC</td>
+      <td>Officer In Charge</td>
+    </tr>
+    <tr>
+      <td>32.</td>
       <td>OPV</td>
       <td>Oral Polio Vaccine</td>
     </tr>
     <tr>
-      <td>21.</td>
+      <td>33.</td>
       <td>PHC</td>
-      <td>Primary HealthCare</td>
+      <td>Primary Health Care</td>
     </tr>
     <tr>
-      <td>22.</td>
+      <td>34.</td>
       <td>SIO</td>
       <td>State Immunization Officer</td>
     </tr>
     <tr>
-      <td>23.</td>
-      <td>OIC</td>
-      <td>Officer In Charge</td>
-    </tr>
-    
-    <tr>
-      <td>24.</td>
-      <td>SMoH</td>
-      <td>State Ministry of Health</td>
-    </tr>
-    <tr>
-      <td>25.</td>
-      <td>SPHCDA</td>
-      <td>State Primary Healthcare Development Agency</td>
-    </tr>
-
-    <tr>
-      <td>26.</td>
+      <td>35.</td>
       <td>SMART</td>
       <td>Standards-based, Machine-readable, Adaptive, Requirements-based, Testable</td>
     </tr>
     <tr>
-      <td>27.</td>
+      <td>36.</td>
+      <td>SMoH</td>
+      <td>State Ministry of Health</td>
+    </tr>
+    <tr>
+      <td>37.</td>
+      <td>SPHCDB</td>
+      <td>State Primary Health Care Development Board</td>
+    </tr>
+    <tr>
+      <td>38.</td>
       <td>SRS</td>
       <td>Software Requirements Specification</td>
     </tr>
     <tr>
-      <td>28.</td>
+      <td>39.</td>
+      <td>UHC</td>
+      <td>Universal Health Coverage</td>
+    </tr>
+    <tr>
+      <td>40.</td>
+      <td>URG</td>
+      <td>User Requirement Gathering</td>
+    </tr>
+    <tr>
+      <td>41.</td>
       <td>WHO</td>
       <td>World Health Organization</td>
     </tr>
@@ -479,7 +542,7 @@ Provides clean, structured data for integration with data analytics platforms fo
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 30, 2025 08:08+0100">2025-06-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 3, 2025 11:55+0100">2025-07-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

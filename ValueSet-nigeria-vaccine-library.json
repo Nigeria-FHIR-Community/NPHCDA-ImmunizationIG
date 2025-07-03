@@ -3,14 +3,14 @@
   "id" : "nigeria-vaccine-library",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-vaccine-library</b></p><a name=\"nigeria-vaccine-library\"> </a><a name=\"hcnigeria-vaccine-library\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-vaccine-library.html\"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-vaccine-library</b></p><a name=\"nigeria-vaccine-library\"> </a><a name=\"hcnigeria-vaccine-library\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-vaccine-library.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library</code></a></li></ul></div>"
   },
   "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library",
   "version" : "0.4.0",
   "name" : "NGVaccineLibraryVS",
   "title" : "NG-Imm VaccineLibrary VS",
   "status" : "active",
-  "date" : "2025-06-30T08:07:26+01:00",
+  "date" : "2025-07-03T11:54:34+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -37,7 +37,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
+      "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library"
     }]
   }
 }

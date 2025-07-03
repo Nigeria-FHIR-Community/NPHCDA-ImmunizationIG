@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "nigeria-clinical-status"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-clinical-status</b></p><a name=\"nigeria-clinical-status\"> </a><a name=\"hcnigeria-clinical-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-clinical-status.html\"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status</code></a></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-clinical-status</b></p><a name=\"nigeria-clinical-status\"> </a><a name=\"hcnigeria-clinical-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-clinical-status.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.4.0"] ; # 
   fhir:name [ fhir:v "NGClinicalStatusVS"] ; # 
   fhir:title [ fhir:v "NG-Imm Clinical Status VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-30T08:07:26+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-03T11:54:34+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -44,7 +44,7 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status"^^xsd:anyURI ]
      ] )
   ] . # 
 

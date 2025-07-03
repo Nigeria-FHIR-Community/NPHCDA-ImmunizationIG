@@ -3,14 +3,14 @@
   "id" : "nigeria-facility-types",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-facility-types</b></p><a name=\"nigeria-facility-types\"> </a><a name=\"hcnigeria-facility-types\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-facility-type.html\"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-facility-types</b></p><a name=\"nigeria-facility-types\"> </a><a name=\"hcnigeria-facility-types\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-facility-type.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</code></a></li></ul></div>"
   },
-  "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
+  "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types",
   "version" : "0.4.0",
   "name" : "NGFacilityTypeVS",
   "title" : "NG-Imm HealthFacility Type VS",
   "status" : "active",
-  "date" : "2025-06-30T08:07:26+01:00",
+  "date" : "2025-07-03T11:54:34+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -37,7 +37,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"
+      "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type"
     }]
   }
 }

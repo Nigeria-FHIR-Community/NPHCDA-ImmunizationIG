@@ -1,17 +1,60 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/R4/valueset-administrative-gender",
-      "version" : "0.4.0",
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "4.0.1",
       "status" : "draft",
-      "name" : "NGGenderVS",
-      "title" : "NG-Imm Gender or Sex VS",
-      "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
-      "systems" : ["http://hl7.org/fhir/R4/valueset-administrative-gender"],
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.133"],
+      "sources" : ["2.16.840.1.113883.4.642.3.133"],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.129"],
+      "sources" : ["2.16.840.1.113883.4.642.3.129"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.131"],
+      "sources" : ["2.16.840.1.113883.4.642.3.131"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes",
+      "title" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "description" : "This value set includes concept codes for specific substances/pharmaceutical products, allergy or intolerance conditions, and negation/exclusion codes to specify the absence of specific types of allergies or intolerances.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.137"],
+      "sources" : ["2.16.840.1.113883.4.642.3.137"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
@@ -30,15 +73,32 @@
       "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGVerificationStatusVS",
-      "title" : "NG-Imm AEFI Verification Status VS",
-      "description" : "AEFI Verification Status",
-      "systems" : [
-        "http://hl7.org/fhir/ValueSet/allergyintolerance-verification"
-      ]
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFunctionCodes",
+      "title" : "Immunization Function Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the function a practitioner or organization may play in the immunization event. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0443"],
+      "oids" : ["2.16.840.1.113883.4.642.3.995"],
+      "sources" : ["2.16.840.1.113883.4.642.3.995"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
@@ -57,13 +117,18 @@
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationRouteVS",
-      "title" : "NG-Imm Vaccine Route VS",
-      "description" : "Vaccine Route",
-      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-route"]
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CodesForImmunizationSiteOfAdministration",
+      "title" : "Codes for Immunization Site of Administration",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the body site where the vaccination occurred. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActSite"],
+      "oids" : ["2.16.840.1.113883.4.642.3.288"],
+      "sources" : ["2.16.840.1.113883.4.642.3.288"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
@@ -78,15 +143,6 @@
       "uses" : {
       },
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGPrimaryVaccineStatusVS",
-      "title" : "NG-Imm Primary vaccine Status VS",
-      "description" : "Primary Vaccine Status",
-      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status"]
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
@@ -106,24 +162,29 @@
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationNotDoneReasonsVS",
-      "title" : "NG-Imm Reason for missed Vaccination VS",
-      "description" : "Reason for a Client missing the last or other vaccinations",
-      "systems" : ["http://hl7.org/fhir/ValueSet/immunization-status-reason"]
+      "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "AllergyIntoleranceSeverity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.135"],
+      "sources" : ["2.16.840.1.113883.4.642.3.135"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-allergy-severity",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGAllergySeverityVS",
-      "title" : "NG-Imm Allergy Severity VS",
-      "description" : "Vaccine reaction Severity",
-      "systems" : [
-        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-allergy-severity"
-      ],
+      "url" : "http://hl7.org/fhir/ValueSet/substance-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SubstanceCode",
+      "title" : "Substance Code",
+      "description" : "This value set contains concept codes for specific substances. It includes codes from [SNOMED](http://snomed.info/sct) where concept is-a 105590001 (Substance (substance)) and where concept is-a 373873005 (Pharmaceutical / biologic product (product))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.473"],
+      "sources" : ["2.16.840.1.113883.4.642.3.473"],
       "uses" : {
       },
       "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
@@ -135,7 +196,9 @@
       "name" : "NGHivStatusVS",
       "title" : "NG-Imm Client HIV Status VS",
       "description" : "Client HIV Status",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS"],
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status"
+      ],
       "uses" : {
       },
       "StructureDefinition-hiv-status.html" : "NG-Imm Client's HIV status"
@@ -148,35 +211,40 @@
       "title" : "NG-Imm Client Preganancy Status VS",
       "description" : "Client Pregnancy Status",
       "systems" : [
-        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status"
       ],
       "uses" : {
       },
       "StructureDefinition-pregnancy-status.html" : "NG-Imm Client's Pregnancy status"
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status",
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
       "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGClinicalStatusVS",
-      "title" : "NG-Imm Clinical Status VS",
-      "description" : "The outcome of the reaction",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"],
+      "status" : "draft",
+      "name" : "NGGenderVS",
+      "title" : "NG-Imm Gender or Sex VS",
+      "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender"
+      ],
       "uses" : {
       },
-      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types",
+      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages",
       "version" : "0.4.0",
       "status" : "active",
-      "name" : "NGFacilityTypeVS",
-      "title" : "NG-Imm HealthFacility Type VS",
-      "description" : "Classification of Nigerian health facilities",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"],
+      "name" : "NGLanguagesVS",
+      "title" : "NG-Imm Languages VS",
+      "description" : "The Patient's preferred language for communication.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages"
+      ],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas",
@@ -185,10 +253,14 @@
       "name" : "NGLGAsVS",
       "title" : "NG-Imm LGAs VS",
       "description" : "The administrative Local Government Areas where a person or a facility is.",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-lgas"],
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas"
+      ],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship",
@@ -196,12 +268,14 @@
       "status" : "active",
       "name" : "NGRelationshipsVS",
       "title" : "NG-Imm Relationships VS",
-      "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care.",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"],
+      "description" : "list of persons related to a patient, but who is not a direct target of care.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship"
+      ],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
@@ -210,9 +284,12 @@
       "name" : "NGSessionTypeVS",
       "title" : "NG-Imm Session Type VS",
       "description" : "Type of session for immunization. Could be in a fixed facility, outreach or mobile.",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"],
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-session-type"
+      ],
       "uses" : {
       },
+      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter",
       "StructureDefinition-session-type.html" : "NG-Imm Session Type"
     },
     {
@@ -223,7 +300,7 @@
       "title" : "NG-Imm Sibling Health Status VS",
       "description" : "This CodeSystem defines the health of the client's sibling",
       "systems" : [
-        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status"
       ],
       "uses" : {
       },
@@ -236,10 +313,14 @@
       "name" : "NGStatesVS",
       "title" : "NG-Imm States VS",
       "description" : "The state where a person or a facility is.",
-      "systems" : ["http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states"],
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states"
+      ],
       "uses" : {
       },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication",
@@ -249,7 +330,7 @@
       "title" : "NG-Imm Vaccine Contraindication VS",
       "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.",
       "systems" : [
-        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication"
       ],
       "uses" : {
       },
@@ -263,18 +344,7 @@
       "title" : "NG-Imm VaccineLibrary VS",
       "description" : "A curated list of vaccines recognized under Nigeria's national immunization program",
       "systems" : [
-        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-vaccine-libraryCS"
-      ]
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-site",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGImmunizationSiteVS",
-      "title" : "NG-Imm Vaccine Site VS",
-      "description" : "Vaccine Site",
-      "systems" : [
-        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-immunization-site"
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library"
       ],
       "uses" : {
       },
@@ -288,11 +358,54 @@
       "title" : "NG-Imm Wards VS",
       "description" : "The administrative Ward (within an LGA) where a person or a facility is.",
       "systems" : [
-        "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward"
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards"
       ],
       "uses" : {
       },
       "StructureDefinition-nigeria-administrative-ward.html" : "NG-Imm Administrative Wards "
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGClinicalStatusVS",
+      "title" : "NG-Imm Clinical Status VS",
+      "description" : "The outcome of the reaction",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGFacilityTypeVS",
+      "title" : "NG-Imm HealthFacility Type VS",
+      "description" : "Classification of Nigerian health facilities",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGOrganizationOwnerVS",
+      "title" : "NG-Imm Location Owner",
+      "description" : "The owner of an Immunization location",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-organozation-owner.html" : "NG-Imm owner of health institution"
     }
   ]
 }

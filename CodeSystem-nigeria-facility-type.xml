@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="nigeria-facility-type"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-facility-type</b></p><a name="nigeria-facility-type"> </a><a name="hcnigeria-facility-type"> </a><p>This  code system <code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">private-clinic<a name="nigeria-facility-type-private-clinic"> </a></td><td>Private Clinic</td><td>The Health facility is a primary health facility owned by the private sector</td></tr><tr><td style="white-space:nowrap">private-hospital<a name="nigeria-facility-type-private-hospital"> </a></td><td>Private Hospital</td><td>The Health facility is a Secondary health facility owned by the private sector</td></tr><tr><td style="white-space:nowrap">public-health-post<a name="nigeria-facility-type-public-health-post"> </a></td><td>Public Health Post</td><td>The Health facility is a primary health facility owned by the government</td></tr><tr><td style="white-space:nowrap">public-chc<a name="nigeria-facility-type-public-chc"> </a></td><td>Public CHC</td><td>The Health facility is a comprehensive primary health center owned by the government</td></tr><tr><td style="white-space:nowrap">public-general<a name="nigeria-facility-type-public-general"> </a></td><td>General Hospitals</td><td>These are General Hospitals owned by the government</td></tr><tr><td style="white-space:nowrap">faith-clinic<a name="nigeria-facility-type-faith-clinic"> </a></td><td>Faith-based Clinics</td><td>These are PHCs owned by the owned by faith orgnization (eg. mission clinics)</td></tr><tr><td style="white-space:nowrap">faith-hospital<a name="nigeria-facility-type-faith-hospital"> </a></td><td>Faith-based Hospitals</td><td>These are Secondary facilities owned by faith orgnization (eg. mission Hospitals)</td></tr><tr><td style="white-space:nowrap">tertiary<a name="nigeria-facility-type-tertiary"> </a></td><td>Tertiary facility</td><td>These are Higher level facilities and referal centers)</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-facility-type</b></p><a name="nigeria-facility-type"> </a><a name="hcnigeria-facility-type"> </a><p>This  code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">clinic<a name="nigeria-facility-type-clinic"> </a></td><td>Clinic</td><td>The Health facility is a primary health facility</td></tr><tr><td style="white-space:nowrap">hospital<a name="nigeria-facility-type-hospital"> </a></td><td>Hospital</td><td>The Health facility is a Secondary health facilities and General Hospitals</td></tr><tr><td style="white-space:nowrap">health-post<a name="nigeria-facility-type-health-post"> </a></td><td>Health Post</td><td>The Health facility is a primary health facility in category of dispensories</td></tr><tr><td style="white-space:nowrap">chc<a name="nigeria-facility-type-chc"> </a></td><td>Comprehensive Health Centers</td><td>The Health facility is a comprehensive primary health center owned by the government</td></tr><tr><td style="white-space:nowrap">tertiary<a name="nigeria-facility-type-tertiary"> </a></td><td>Tertiary facility</td><td>These are Higher level facilities and referal centers)</td></tr></table></div>
   </text>
-  <url value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"/>
+  <url value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type"/>
   <version value="0.4.0"/>
   <name value="NGFacilityTypeCS"/>
   <title value="NG-Imm Facility Type CS"/>
   <status value="active"/>
-  <date value="2025-06-30T08:07:26+01:00"/>
+  <date value="2025-07-03T11:54:34+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -37,41 +37,26 @@
   </jurisdiction>
   <hierarchyMeaning value="is-a"/>
   <content value="complete"/>
-  <count value="8"/>
+  <count value="5"/>
   <concept>
-    <code value="private-clinic"/>
-    <display value="Private Clinic"/>
-    <definition value="The Health facility is a primary health facility owned by the private sector"/>
+    <code value="clinic"/>
+    <display value="Clinic"/>
+    <definition value="The Health facility is a primary health facility"/>
   </concept>
   <concept>
-    <code value="private-hospital"/>
-    <display value="Private Hospital"/>
-    <definition value="The Health facility is a Secondary health facility owned by the private sector"/>
+    <code value="hospital"/>
+    <display value="Hospital"/>
+    <definition value="The Health facility is a Secondary health facilities and General Hospitals"/>
   </concept>
   <concept>
-    <code value="public-health-post"/>
-    <display value="Public Health Post"/>
-    <definition value="The Health facility is a primary health facility owned by the government"/>
+    <code value="health-post"/>
+    <display value="Health Post"/>
+    <definition value="The Health facility is a primary health facility in category of dispensories"/>
   </concept>
   <concept>
-    <code value="public-chc"/>
-    <display value="Public CHC"/>
+    <code value="chc"/>
+    <display value="Comprehensive Health Centers"/>
     <definition value="The Health facility is a comprehensive primary health center owned by the government"/>
-  </concept>
-  <concept>
-    <code value="public-general"/>
-    <display value="General Hospitals"/>
-    <definition value="These are General Hospitals owned by the government"/>
-  </concept>
-  <concept>
-    <code value="faith-clinic"/>
-    <display value="Faith-based Clinics"/>
-    <definition value="These are PHCs owned by the owned by faith orgnization (eg. mission clinics)"/>
-  </concept>
-  <concept>
-    <code value="faith-hospital"/>
-    <display value="Faith-based Hospitals"/>
-    <definition value="These are Secondary facilities owned by faith orgnization (eg. mission Hospitals)"/>
   </concept>
   <concept>
     <code value="tertiary"/>

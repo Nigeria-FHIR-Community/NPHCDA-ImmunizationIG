@@ -164,7 +164,7 @@
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created",
       "title": "NG-Imm Date client record was created",
       "types": [
-        "date"
+        "dateTime"
       ]
     },
     {
@@ -184,6 +184,13 @@
     {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward",
       "title": "NG-Imm Administrative Wards ",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/organozation-owner",
+      "title": "NG-Imm owner of health institution",
       "types": [
         "CodeableConcept"
       ]
@@ -254,6 +261,12 @@
         "title": "NG-Imm RelatedPerson"
       }
     ],
+    "Encounter": [
+      {
+        "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter",
+        "title": "NG-Imm Encounter"
+      }
+    ],
     "Organization": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization",
@@ -265,6 +278,12 @@
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure",
         "title": "NG-Imm Measure"
       }
+    ],
+    "Location": [
+      {
+        "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location",
+        "title": "NG-Imm Location"
+      }
     ]
   },
   "usage": {
@@ -272,6 +291,7 @@
       "Patient"
     ],
     "administrativeWard": [
+      "Location.address",
       "Patient",
       "Patient.contact.address"
     ],
@@ -371,8 +391,12 @@
       "Immunization.protocolApplied"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward": [
+      "Location.address",
       "Patient.address",
       "Patient.contact.address"
+    ],
+    "https://nphcda.gov.ng/immunizationIG/StructureDefinition/organozation-owner": [
+      "Organization"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/pregnancy-status": [
       "Patient"

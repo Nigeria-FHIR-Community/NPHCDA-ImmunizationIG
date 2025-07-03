@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="nigeria-pregnancy-status"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-pregnancy-status</b></p><a name="nigeria-pregnancy-status"> </a><a name="hcnigeria-pregnancy-status"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-pregnancy-status.html"><code>http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-pregnancy-status</b></p><a name="nigeria-pregnancy-status"> </a><a name="hcnigeria-pregnancy-status"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-pregnancy-status.html"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status</code></a></li></ul></div>
   </text>
   <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status"/>
   <version value="0.4.0"/>
   <name value="NGPregnancyStatusVS"/>
   <title value="NG-Imm Client Preganancy Status VS"/>
   <status value="active"/>
-  <date value="2025-06-30T08:07:26+01:00"/>
+  <date value="2025-07-03T11:54:34+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -37,7 +37,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"/>
+      <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status"/>
     </include>
   </compose>
 </ValueSet>

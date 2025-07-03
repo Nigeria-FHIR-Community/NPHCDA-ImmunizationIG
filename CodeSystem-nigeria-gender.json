@@ -1,0 +1,65 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nigeria-gender",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-gender</b></p><a name=\"nigeria-gender\"> </a><a name=\"hcnigeria-gender\"> </a><p>This  code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"nigeria-gender-male\"> </a></td><td>Client is of the male gender</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"nigeria-gender-female\"> </a></td><td>Client is of the female gender</td></tr></table></div>"
+  },
+  "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender",
+  "version" : "0.4.0",
+  "name" : "NGGenderCS",
+  "title" : "NG-Imm Gender CS",
+  "status" : "active",
+  "date" : "2025-07-03T11:54:34+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The administrative gender of a person.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "hierarchyMeaning" : "is-a",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "male",
+    "display" : "male",
+    "definition" : "Client is of the male gender",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
+        "code" : "display"
+      },
+      "value" : "male"
+    }]
+  },
+  {
+    "code" : "female",
+    "display" : "female",
+    "definition" : "Client is of the female gender",
+    "designation" : [{
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
+        "code" : "display"
+      },
+      "value" : "female"
+    }]
+  }]
+}

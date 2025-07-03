@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nigeria-languages"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-languages</b></p><a name="nigeria-languages"> </a><a name="hcnigeria-languages"> </a><p>This case-sensitive code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages</code> defines the following codes in a Grouped By hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">English<a name="nigeria-languages-English"> </a></td><td>English</td></tr><tr><td style="white-space:nowrap">Pidgin<a name="nigeria-languages-Pidgin"> </a></td><td>Nigerian Pidgin</td></tr><tr><td style="white-space:nowrap">Hausa<a name="nigeria-languages-Hausa"> </a></td><td>Hausa</td></tr><tr><td style="white-space:nowrap">Yoruba<a name="nigeria-languages-Yoruba"> </a></td><td>Yoruba</td></tr><tr><td style="white-space:nowrap">Igbo<a name="nigeria-languages-Igbo"> </a></td><td>Igbo</td></tr><tr><td style="white-space:nowrap">Fulfulde<a name="nigeria-languages-Fulfulde"> </a></td><td>Fulfulde</td></tr><tr><td style="white-space:nowrap">Ibibio<a name="nigeria-languages-Ibibio"> </a></td><td>Ibibio</td></tr><tr><td style="white-space:nowrap">Kanuri<a name="nigeria-languages-Kanuri"> </a></td><td>Kanuri</td></tr><tr><td style="white-space:nowrap">Tiv<a name="nigeria-languages-Tiv"> </a></td><td>Tiv</td></tr><tr><td style="white-space:nowrap">Nupe<a name="nigeria-languages-Nupe"> </a></td><td>Nupe</td></tr><tr><td style="white-space:nowrap">Igala<a name="nigeria-languages-Igala"> </a></td><td>Igala</td></tr><tr><td style="white-space:nowrap">Efik<a name="nigeria-languages-Efik"> </a></td><td>Efik</td></tr><tr><td style="white-space:nowrap">Ijaw<a name="nigeria-languages-Ijaw"> </a></td><td>Ijaw</td></tr><tr><td style="white-space:nowrap">Urhobo<a name="nigeria-languages-Urhobo"> </a></td><td>Urhobo</td></tr><tr><td style="white-space:nowrap">Itsekiri<a name="nigeria-languages-Itsekiri"> </a></td><td>Itsekiri</td></tr><tr><td style="white-space:nowrap">Bini-Edo<a name="nigeria-languages-Bini-Edo"> </a></td><td>Bini (Edo)</td></tr><tr><td style="white-space:nowrap">Ogoni<a name="nigeria-languages-Ogoni"> </a></td><td>Ogoni</td></tr><tr><td style="white-space:nowrap">Esan<a name="nigeria-languages-Esan"> </a></td><td>Esan</td></tr><tr><td style="white-space:nowrap">Ikwerre<a name="nigeria-languages-Ikwerre"> </a></td><td>Ikwerre</td></tr><tr><td style="white-space:nowrap">Idoma<a name="nigeria-languages-Idoma"> </a></td><td>Idoma</td></tr><tr><td style="white-space:nowrap">Ebira<a name="nigeria-languages-Ebira"> </a></td><td>Ebira</td></tr><tr><td style="white-space:nowrap">Hausa-Fulani<a name="nigeria-languages-Hausa-Fulani"> </a></td><td>Hausa-Fulani</td></tr></table></div>
+  </text>
+  <url value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages"/>
+  <version value="0.4.0"/>
+  <name value="NGLanguagesCS"/>
+  <title value="NG‑Imm Languages in Nigeria CS"/>
+  <status value="active"/>
+  <date value="2025-07-03T11:54:34+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem defines codes for major languages spoken across Nigeria."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="grouped-by"/>
+  <content value="complete"/>
+  <count value="22"/>
+  <concept>
+    <code value="English"/>
+    <display value="English"/>
+  </concept>
+  <concept>
+    <code value="Pidgin"/>
+    <display value="Nigerian Pidgin"/>
+  </concept>
+  <concept>
+    <code value="Hausa"/>
+    <display value="Hausa"/>
+  </concept>
+  <concept>
+    <code value="Yoruba"/>
+    <display value="Yoruba"/>
+  </concept>
+  <concept>
+    <code value="Igbo"/>
+    <display value="Igbo"/>
+  </concept>
+  <concept>
+    <code value="Fulfulde"/>
+    <display value="Fulfulde"/>
+  </concept>
+  <concept>
+    <code value="Ibibio"/>
+    <display value="Ibibio"/>
+  </concept>
+  <concept>
+    <code value="Kanuri"/>
+    <display value="Kanuri"/>
+  </concept>
+  <concept>
+    <code value="Tiv"/>
+    <display value="Tiv"/>
+  </concept>
+  <concept>
+    <code value="Nupe"/>
+    <display value="Nupe"/>
+  </concept>
+  <concept>
+    <code value="Igala"/>
+    <display value="Igala"/>
+  </concept>
+  <concept>
+    <code value="Efik"/>
+    <display value="Efik"/>
+  </concept>
+  <concept>
+    <code value="Ijaw"/>
+    <display value="Ijaw"/>
+  </concept>
+  <concept>
+    <code value="Urhobo"/>
+    <display value="Urhobo"/>
+  </concept>
+  <concept>
+    <code value="Itsekiri"/>
+    <display value="Itsekiri"/>
+  </concept>
+  <concept>
+    <code value="Bini-Edo"/>
+    <display value="Bini (Edo)"/>
+  </concept>
+  <concept>
+    <code value="Ogoni"/>
+    <display value="Ogoni"/>
+  </concept>
+  <concept>
+    <code value="Esan"/>
+    <display value="Esan"/>
+  </concept>
+  <concept>
+    <code value="Ikwerre"/>
+    <display value="Ikwerre"/>
+  </concept>
+  <concept>
+    <code value="Idoma"/>
+    <display value="Idoma"/>
+  </concept>
+  <concept>
+    <code value="Ebira"/>
+    <display value="Ebira"/>
+  </concept>
+  <concept>
+    <code value="Hausa-Fulani"/>
+    <display value="Hausa-Fulani"/>
+  </concept>
+</CodeSystem>

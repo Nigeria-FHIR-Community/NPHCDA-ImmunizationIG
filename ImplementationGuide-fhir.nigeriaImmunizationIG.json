@@ -10,7 +10,7 @@
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-06-30T08:07:26+01:00",
+  "date" : "2025-07-03T11:54:34+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -616,6 +616,30 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/encounter-example"
+      },
+      "name" : "encounter-example",
+      "description" : "An example encounter for an outreach immunization visit.",
+      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/location-example"
+      },
+      "name" : "location-example",
+      "description" : "An example immunization service location.",
+      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -652,18 +676,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nigeria-verifiction-status"
-      },
-      "name" : "NG-Imm AEFI Verification Status VS",
-      "description" : "AEFI Verification Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -671,30 +683,6 @@
       },
       "name" : "NG-Imm Allergy Dose Number",
       "description" : "Reference immunization dose number for this AllergyIntolerance.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nigeria-allergy-severity"
-      },
-      "name" : "NG-Imm Allergy Severity CS",
-      "description" : "This CodeSystem captures the assessed severity of an allergic reaction following immunization.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nigeria-allergy-severity"
-      },
-      "name" : "NG-Imm Allergy Severity VS",
-      "description" : "Vaccine reaction Severity",
       "exampleBoolean" : false
     },
     {
@@ -879,6 +867,18 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-imm-encounter"
+      },
+      "name" : "NG-Imm Encounter",
+      "description" : "A profile for encounters in the Nigerian  Immunization guide, used to document immunization visits and related healthcare interactions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
         "valueCode" : "application/fhir+json"
       },
@@ -1044,6 +1044,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nigeria-gender"
+      },
+      "name" : "NG-Imm Gender CS",
+      "description" : "The administrative gender of a person.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1104,6 +1116,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nigeria-languages"
+      },
+      "name" : "NG-Imm Languages VS",
+      "description" : "The Patient's preferred language for communication.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1123,6 +1147,42 @@
       },
       "name" : "NG-Imm LGAs VS",
       "description" : "The administrative Local Government Areas where a person or a facility is.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nigeria-location"
+      },
+      "name" : "NG-Imm Location",
+      "description" : "A profile for immunization service locations, including health facilities, outreach sites, and mobile vaccination units.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nigeria-location-owner"
+      },
+      "name" : "NG-Imm Location Owner",
+      "description" : "The owner of an Immunization location",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nigeria-location-owner-cs"
+      },
+      "name" : "NG-Imm Location Owner CS",
+      "description" : "This CodeSystem defines Immunization Location Owner.",
       "exampleBoolean" : false
     },
     {
@@ -1176,6 +1236,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/organozation-owner"
+      },
+      "name" : "NG-Imm owner of health institution",
+      "description" : "An extension to define the owner of the health institution",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1200,37 +1272,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nigeria-primary-vaccine-status"
-      },
-      "name" : "NG-Imm Primary vaccine Status VS",
-      "description" : "Primary Vaccine Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nigeria-Immunization-status-reason"
-      },
-      "name" : "NG-Imm Reason for missed Vaccination VS",
-      "description" : "Reason for a Client missing the last or other vaccinations",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/mother-other-children"
       },
       "name" : "NG-Imm RelatedPerson",
-      "description" : "Sibling that Represents the mother's other children as RelatedPersons.",
+      "description" : "Sibling that represents the mother's other children as RelatedPersons.",
       "exampleBoolean" : false
     },
     {
@@ -1254,7 +1302,7 @@
         "reference" : "ValueSet/nigeria-relationship"
       },
       "name" : "NG-Imm Relationships VS",
-      "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care.",
+      "description" : "list of persons related to a patient, but who is not a direct target of care.",
       "exampleBoolean" : false
     },
     {
@@ -1432,6 +1480,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/SearchParameter-ngimm-city"
+      },
+      "name" : "NG-Imm Search patient record by city, town or settlement",
+      "description" : "Search patient records by city, town or settlement",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/SearchParameter-ngimm-telecom"
+      },
+      "name" : "NG-Imm Search patient record by phone number or email address",
+      "description" : "Search patient record by phone number or email address",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -1591,42 +1663,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/nigeria-vaccine-route"
-      },
-      "name" : "NG-Imm Vaccine Route VS",
-      "description" : "Vaccine Route",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nigeria-immunization-site"
-      },
-      "name" : "NG-Imm Vaccine Site CS",
-      "description" : "This CodeSystem captures the specific anatomical location on the patient's body where a vaccine was administered.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nigeria-vaccine-site"
-      },
-      "name" : "NG-Imm Vaccine Site VS",
-      "description" : "Vaccine Site",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/nigeria-vaccine-library"
       },
       "name" : "NG-Imm VaccineLibrary VS",
@@ -1739,6 +1775,18 @@
       },
       "name" : "NG-Imm-H GenerateReport[information only]",
       "description" : "IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nigeria-languages"
+      },
+      "name" : "NG‑Imm Languages in Nigeria CS",
+      "description" : "This CodeSystem defines codes for major languages spoken across Nigeria.",
       "exampleBoolean" : false
     }],
     "page" : {
