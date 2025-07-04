@@ -190,181 +190,6 @@
       "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
     },
     {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGHivStatusVS",
-      "title" : "NG-Imm Client HIV Status VS",
-      "description" : "Client HIV Status",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-hiv-status.html" : "NG-Imm Client's HIV status"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGPregnancyStatusVS",
-      "title" : "NG-Imm Client Preganancy Status VS",
-      "description" : "Client Pregnancy Status",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-pregnancy-status.html" : "NG-Imm Client's Pregnancy status"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
-      "version" : "0.4.0",
-      "status" : "draft",
-      "name" : "NGGenderVS",
-      "title" : "NG-Imm Gender or Sex VS",
-      "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGLanguagesVS",
-      "title" : "NG-Imm Languages VS",
-      "description" : "The Patient's preferred language for communication.",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGLGAsVS",
-      "title" : "NG-Imm LGAs VS",
-      "description" : "The administrative Local Government Areas where a person or a facility is.",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGRelationshipsVS",
-      "title" : "NG-Imm Relationships VS",
-      "description" : "list of persons related to a patient, but who is not a direct target of care.",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGSessionTypeVS",
-      "title" : "NG-Imm Session Type VS",
-      "description" : "Type of session for immunization. Could be in a fixed facility, outreach or mobile.",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-session-type"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter",
-      "StructureDefinition-session-type.html" : "NG-Imm Session Type"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGSiblingHealthStatusVS",
-      "title" : "NG-Imm Sibling Health Status VS",
-      "description" : "This CodeSystem defines the health of the client's sibling",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-sibling-health-status.html" : "NG-Imm Sibling's health status"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGStatesVS",
-      "title" : "NG-Imm States VS",
-      "description" : "The state where a person or a facility is.",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGContraindicationVS",
-      "title" : "NG-Imm Vaccine Contraindication VS",
-      "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-contraindications.html" : "NG-Imm Vaccine Contraindications"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGVaccineLibraryVS",
-      "title" : "NG-Imm VaccineLibrary VS",
-      "description" : "A curated list of vaccines recognized under Nigeria's national immunization program",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
-    },
-    {
-      "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards",
-      "version" : "0.4.0",
-      "status" : "active",
-      "name" : "NGWardsVS",
-      "title" : "NG-Imm Wards VS",
-      "description" : "The administrative Ward (within an LGA) where a person or a facility is.",
-      "systems" : [
-        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-nigeria-administrative-ward.html" : "NG-Imm Administrative Wards "
-    },
-    {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status",
       "version" : "0.4.0",
       "status" : "active",
@@ -394,6 +219,65 @@
       "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender",
+      "version" : "0.4.0",
+      "status" : "draft",
+      "name" : "NGGenderVS",
+      "title" : "NG-Imm Gender or Sex VS",
+      "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-hiv-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGHivStatusVS",
+      "title" : "NG-Imm Client HIV Status VS",
+      "description" : "Client HIV Status",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-status.html" : "NG-Imm Client's HIV status"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-languages",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGLanguagesVS",
+      "title" : "NG-Imm Languages VS",
+      "description" : "The Patient's preferred language for communication.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGLGAsVS",
+      "title" : "NG-Imm LGAs VS",
+      "description" : "The administrative Local Government Areas where a person or a facility is.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+    },
+    {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
       "version" : "0.4.0",
       "status" : "active",
@@ -406,6 +290,122 @@
       "uses" : {
       },
       "StructureDefinition-organozation-owner.html" : "NG-Imm owner of health institution"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGPregnancyStatusVS",
+      "title" : "NG-Imm Client Preganancy Status VS",
+      "description" : "Client Pregnancy Status",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-pregnancy-status.html" : "NG-Imm Client's Pregnancy status"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-relationship",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGRelationshipsVS",
+      "title" : "NG-Imm Relationships VS",
+      "description" : "list of persons related to a patient, but who is not a direct target of care.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-session-type",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGSessionTypeVS",
+      "title" : "NG-Imm Session Type VS",
+      "description" : "Type of session for immunization. Could be in a fixed facility, outreach or mobile.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-session-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-session-type.html" : "NG-Imm Session Type",
+      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGSiblingHealthStatusVS",
+      "title" : "NG-Imm Sibling Health Status VS",
+      "description" : "This CodeSystem defines the health of the client's sibling",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sibling-health-status.html" : "NG-Imm Sibling's health status"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGStatesVS",
+      "title" : "NG-Imm States VS",
+      "description" : "The state where a person or a facility is.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-contraindication",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGContraindicationVS",
+      "title" : "NG-Imm Vaccine Contraindication VS",
+      "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-contraindications.html" : "NG-Imm Vaccine Contraindications"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-library",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGVaccineLibraryVS",
+      "title" : "NG-Imm VaccineLibrary VS",
+      "description" : "A curated list of vaccines recognized under Nigeria's national immunization program",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization"
+    },
+    {
+      "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-wards",
+      "version" : "0.4.0",
+      "status" : "active",
+      "name" : "NGWardsVS",
+      "title" : "NG-Imm Wards VS",
+      "description" : "The administrative Ward (within an LGA) where a person or a facility is.",
+      "systems" : [
+        "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nigeria-administrative-ward.html" : "NG-Imm Administrative Wards "
     }
   ]
 }

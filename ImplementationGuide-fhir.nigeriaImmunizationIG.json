@@ -10,7 +10,7 @@
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-07-03T13:36:09+01:00",
+  "date" : "2025-07-04T07:50:29+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -614,18 +614,6 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/encounter-example"
-      },
-      "name" : "encounter-example",
-      "description" : "An example encounter for an outreach immunization visit.",
-      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"
-    },
-    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"

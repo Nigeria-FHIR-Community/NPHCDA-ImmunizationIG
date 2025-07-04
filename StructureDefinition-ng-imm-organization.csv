@@ -140,11 +140,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","XAD.3","AD.part[parttype = CTY]","./Jurisdiction"
 "Organization.address.district","Organization.address.district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","The organization contact address LGA","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The organization contact address LGA","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.9","AD.part[parttype = CNT | CPA]"
 "Organization.address.state","Organization.address.state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
-","The organization contact address state","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The organization contact address state","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.4","AD.part[parttype = STA]","./Region"
 "Organization.address.postalCode","Organization.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}

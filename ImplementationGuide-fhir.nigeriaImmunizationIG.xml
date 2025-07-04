@@ -11,7 +11,7 @@
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-07-03T13:36:09+01:00"/>
+  <date value="2025-07-04T07:50:29+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -459,17 +459,6 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/encounter-example"/>
-      </reference>
-      <name value="encounter-example"/>
-      <description value="An example encounter for an outreach immunization visit."/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"/>
-    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>

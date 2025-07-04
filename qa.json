@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "fhir.nigeriaImmunizationIG",
   "ig-ver" : "0.4.0",
-  "date" : "Thu, 03 Jul, 2025 13:37:04 +0100",
-  "dateISO8601" : "2025-07-03T13:37:04+01:00",
-  "errs" : 146,
-  "warnings" : 452,
+  "date" : "Fri, 04 Jul, 2025 07:51:21 +0100",
+  "dateISO8601" : "2025-07-04T07:51:21+01:00",
+  "errs" : 92,
+  "warnings" : 450,
   "hints" : 33,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 966316312
+  "maxMemory" : 791185608
 }

@@ -1,89 +1,5 @@
 [
   {
-    "id" : "nigeria-hiv-status",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status",
-    "version" : "0.4.0",
-    "name" : "NGHivStatusVS"
-  },
-  {
-    "id" : "nigeria-pregnancy-status",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status",
-    "version" : "0.4.0",
-    "name" : "NGPregnancyStatusVS"
-  },
-  {
-    "id" : "nigeria-gender",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender",
-    "version" : "0.4.0",
-    "name" : "NGGenderVS"
-  },
-  {
-    "id" : "nigeria-languages",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages",
-    "version" : "0.4.0",
-    "name" : "NGLanguagesVS"
-  },
-  {
-    "id" : "nigeria-lgas",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas",
-    "version" : "0.4.0",
-    "name" : "NGLGAsVS"
-  },
-  {
-    "id" : "nigeria-relationship",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship",
-    "version" : "0.4.0",
-    "name" : "NGRelationshipsVS"
-  },
-  {
-    "id" : "nigeria-session-type",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type",
-    "version" : "0.4.0",
-    "name" : "NGSessionTypeVS"
-  },
-  {
-    "id" : "nigeria-sibling-health-status",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status",
-    "version" : "0.4.0",
-    "name" : "NGSiblingHealthStatusVS"
-  },
-  {
-    "id" : "nigeria-states",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states",
-    "version" : "0.4.0",
-    "name" : "NGStatesVS"
-  },
-  {
-    "id" : "nigeria-vaccine-contraindication",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication",
-    "version" : "0.4.0",
-    "name" : "NGContraindicationVS"
-  },
-  {
-    "id" : "nigeria-vaccine-library",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library",
-    "version" : "0.4.0",
-    "name" : "NGVaccineLibraryVS"
-  },
-  {
-    "id" : "nigeria-wards",
-    "type" : "ValueSet",
-    "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards",
-    "version" : "0.4.0",
-    "name" : "NGWardsVS"
-  },
-  {
     "id" : "NgImmCapabilityStatementClient",
     "type" : "CapabilityStatement",
     "url" : "https://nphcda.gov.ng/immunizationIG/CapabilityStatement/NgImmCapabilityStatementClient",
@@ -565,10 +481,94 @@
     "name" : "NGFacilityTypeVS"
   },
   {
+    "id" : "nigeria-gender",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender",
+    "version" : "0.4.0",
+    "name" : "NGGenderVS"
+  },
+  {
+    "id" : "nigeria-hiv-status",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-hiv-status",
+    "version" : "0.4.0",
+    "name" : "NGHivStatusVS"
+  },
+  {
+    "id" : "nigeria-languages",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-languages",
+    "version" : "0.4.0",
+    "name" : "NGLanguagesVS"
+  },
+  {
+    "id" : "nigeria-lgas",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas",
+    "version" : "0.4.0",
+    "name" : "NGLGAsVS"
+  },
+  {
     "id" : "nigeria-location-owner",
     "type" : "ValueSet",
     "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
     "version" : "0.4.0",
     "name" : "NGOrganizationOwnerVS"
+  },
+  {
+    "id" : "nigeria-pregnancy-status",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status",
+    "version" : "0.4.0",
+    "name" : "NGPregnancyStatusVS"
+  },
+  {
+    "id" : "nigeria-relationship",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-relationship",
+    "version" : "0.4.0",
+    "name" : "NGRelationshipsVS"
+  },
+  {
+    "id" : "nigeria-session-type",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-session-type",
+    "version" : "0.4.0",
+    "name" : "NGSessionTypeVS"
+  },
+  {
+    "id" : "nigeria-sibling-health-status",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status",
+    "version" : "0.4.0",
+    "name" : "NGSiblingHealthStatusVS"
+  },
+  {
+    "id" : "nigeria-states",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states",
+    "version" : "0.4.0",
+    "name" : "NGStatesVS"
+  },
+  {
+    "id" : "nigeria-vaccine-contraindication",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-contraindication",
+    "version" : "0.4.0",
+    "name" : "NGContraindicationVS"
+  },
+  {
+    "id" : "nigeria-vaccine-library",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-library",
+    "version" : "0.4.0",
+    "name" : "NGVaccineLibraryVS"
+  },
+  {
+    "id" : "nigeria-wards",
+    "type" : "ValueSet",
+    "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-wards",
+    "version" : "0.4.0",
+    "name" : "NGWardsVS"
   }
 ]

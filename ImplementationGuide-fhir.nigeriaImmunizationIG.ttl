@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NigeriaimmunizationFHIRIG"] ; # 
   fhir:title [ fhir:v "Nigeria Immunization FHIR IG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-03T13:36:09+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-04T07:50:29+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -835,25 +835,6 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] ) ;
      fhir:resource ( [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Encounter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/Encounter/encounter-example> ;
-         fhir:reference [ fhir:v "Encounter/encounter-example" ]
-       ] ;
-       fhir:name [ fhir:v "encounter-example" ] ;
-       fhir:description [ fhir:v "An example encounter for an outreach immunization visit." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"^^xsd:anyURI ;
-         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter>
-       ]
-     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [

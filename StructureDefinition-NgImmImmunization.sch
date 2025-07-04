@@ -22,13 +22,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Immunization/f:vaccineCode</sch:title>
-    <sch:rule context="f:Immunization/f:vaccineCode">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>f:Immunization/f:protocolApplied</sch:title>
     <sch:rule context="f:Immunization/f:protocolApplied">
       <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date': maximum cardinality of 'extension' is 1</sch:assert>

@@ -5,12 +5,12 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-wards</b></p><a name=\"nigeria-wards\"> </a><a name=\"hcnigeria-wards\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-wards.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards</code></a></li></ul></div>"
   },
-  "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards",
+  "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-wards",
   "version" : "0.4.0",
   "name" : "NGWardsVS",
   "title" : "NG-Imm Wards VS",
   "status" : "active",
-  "date" : "2025-07-03T13:36:09+01:00",
+  "date" : "2025-07-04T07:50:29+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

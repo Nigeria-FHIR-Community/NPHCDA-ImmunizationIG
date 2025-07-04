@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-gender</b></p><a name="nigeria-gender"> </a><a name="hcnigeria-gender"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-gender.html"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender</code></a></li></ul></div>
   </text>
-  <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"/>
+  <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender"/>
   <version value="0.4.0"/>
   <name value="NGGenderVS"/>
   <title value="NG-Imm Gender or Sex VS"/>
   <status value="draft"/>
-  <date value="2025-07-03T13:36:09+01:00"/>
+  <date value="2025-07-04T07:50:29+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

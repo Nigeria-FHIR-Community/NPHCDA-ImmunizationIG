@@ -90,11 +90,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","AD.part[parttype = CTY]"
 "Location.address.district","Location.address.district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","The LGA where the vaccination location","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The LGA where the vaccination location","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","AD.part[parttype = CNT | CPA]"
 "Location.address.state","Location.address.state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
-","The State in Nigeria where the vaccination location","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The State in Nigeria where the vaccination location","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","AD.part[parttype = STA]"
 "Location.address.postalCode","Location.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}
@@ -112,7 +112,7 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 "Location.physicalType","Location.physicalType","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Physical form of the location","Physical form of the location, e.g. building, room, vehicle, road.","","For purposes of showing relevant locations in queries, we need to categorize locations.","","","","","","","",,"example","Physical form of the location.","http://hl7.org/fhir/ValueSet/location-physical-type","",,,,"Location.physicalType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playingEntity [classCode=PLC].code","FiveWs.class"
-"Location.position","Location.position","","","",0,1,"Y","","","BackboneElement {[]} {[]}
+"Location.position","Location.position","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","The absolute geographic location","The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).","","For mobile applications and automated route-finding knowing the exact location of the Location is required.","","","","","","","",,,,,"",,,,"Location.position",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playingEntity [classCode=PLC determinerCode=INSTANCE].positionText"
 "Location.position.id","Location.position.id","","","",0,1,"","","","string {[]} {[]}
@@ -127,10 +127,10 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"Location.position.longitude","Location.position.longitude","","","",1,1,"","","","decimal {[]} {[]}
+"Location.position.longitude","Location.position.longitude","","","",1,1,"Y","","","decimal {[]} {[]}
 ","Longitude with WGS84 datum","Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below).","","","","","","","","","",,,,,"",,,,"Location.position.longitude",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
-"Location.position.latitude","Location.position.latitude","","","",1,1,"","","","decimal {[]} {[]}
+"Location.position.latitude","Location.position.latitude","","","",1,1,"Y","","","decimal {[]} {[]}
 ","Latitude with WGS84 datum","Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below).","","","","","","","","","",,,,,"",,,,"Location.position.latitude",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(RIM Opted not to map the sub-elements of GPS location, is now an OBS)"
 "Location.position.altitude","Location.position.altitude","","","",0,1,"","","","decimal {[]} {[]}

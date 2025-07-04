@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-relationship</b></p><a name="nigeria-relationship"> </a><a name="hcnigeria-relationship"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-relationship.html"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship</code></a></li></ul></div>
   </text>
-  <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"/>
+  <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-relationship"/>
   <version value="0.4.0"/>
   <name value="NGRelationshipsVS"/>
   <title value="NG-Imm Relationships VS"/>
   <status value="active"/>
-  <date value="2025-07-03T13:36:09+01:00"/>
+  <date value="2025-07-04T07:50:29+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

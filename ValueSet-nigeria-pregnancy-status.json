@@ -5,12 +5,12 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-pregnancy-status</b></p><a name=\"nigeria-pregnancy-status\"> </a><a name=\"hcnigeria-pregnancy-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-pregnancy-status.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status</code></a></li></ul></div>"
   },
-  "url" : "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status",
+  "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status",
   "version" : "0.4.0",
   "name" : "NGPregnancyStatusVS",
   "title" : "NG-Imm Client Preganancy Status VS",
   "status" : "active",
-  "date" : "2025-07-03T13:36:09+01:00",
+  "date" : "2025-07-04T07:50:29+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-hiv-status</b></p><a name="nigeria-hiv-status"> </a><a name="hcnigeria-hiv-status"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-hiv-status.html"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status</code></a></li></ul></div>
   </text>
-  <url value="http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status"/>
+  <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-hiv-status"/>
   <version value="0.4.0"/>
   <name value="NGHivStatusVS"/>
   <title value="NG-Imm Client HIV Status VS"/>
   <status value="active"/>
-  <date value="2025-07-03T13:36:09+01:00"/>
+  <date value="2025-07-04T07:50:29+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
