@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d7e03c82-27e7-4615-b127-9dbf0a7624f6"/>
+  <id value="936461db-c8e1-4c64-b9f9-eb512d624755"/>
   <meta>
-    <lastUpdated value="2025-07-04T18:57:24.308+01:00"/>
+    <lastUpdated value="2025-07-04T19:34:01.450+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-clinical-status.html">codesystem NG-Imm Adverse Event Clinical Status CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-clinical-status.html">codesystem NG-Imm Adverse Event Clinical Status CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
             <table class="codes">
@@ -91,11 +91,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGClinicalStatusVS"/>
         <title value="NG-Imm Clinical Status VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -104,8 +104,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:27348e49-d086-4616-a1ca-faad61a45519"/>
-          <timestamp value="2025-07-04T18:58:31+01:00"/>
+          <identifier value="urn:uuid:2feb15e4-3c9c-48e8-a308-035af1a1ee33"/>
+          <timestamp value="2025-07-04T19:35:14+01:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -126,7 +126,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status"/>
@@ -171,7 +171,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-facility-type.html">codesystem NG-Imm Facility Type CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-facility-type.html">codesystem NG-Imm Facility Type CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -238,11 +238,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGFacilityTypeVS"/>
         <title value="NG-Imm HealthFacility Type VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -251,8 +251,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:25c42eff-f56d-42f8-9836-042a7abd373a"/>
-          <timestamp value="2025-07-04T18:58:32+01:00"/>
+          <identifier value="urn:uuid:2a2d1d3a-f5e9-4de9-be53-2f15f4cdbdd3"/>
+          <timestamp value="2025-07-04T19:35:14+01:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -273,7 +273,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type"/>
@@ -313,7 +313,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-gender.html">codesystem NG-Imm Gender CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-gender.html">codesystem NG-Imm Gender CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
@@ -353,11 +353,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGGenderVS"/>
         <title value="NG-Imm Gender or Sex VS"/>
         <status value="draft"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -366,8 +366,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b2b30047-cb6d-443b-a1fd-fd1aaac7f011"/>
-          <timestamp value="2025-07-04T18:58:32+01:00"/>
+          <identifier value="urn:uuid:6cb2b869-7c42-4f5b-98c7-83d416c7c396"/>
+          <timestamp value="2025-07-04T19:35:14+01:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -388,7 +388,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender"/>
@@ -413,7 +413,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-hiv-status.html">codesystem NG-Imm Client HIV status CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-hiv-status.html">codesystem NG-Imm Client HIV status CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -462,11 +462,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-hiv-status"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGHivStatusVS"/>
         <title value="NG-Imm Client HIV Status VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -475,8 +475,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a71f9ba7-01f8-4045-b0b9-52d6eb6ca0d1"/>
-          <timestamp value="2025-07-04T18:58:32+01:00"/>
+          <identifier value="urn:uuid:83de3c0b-ac7d-4d86-89c3-023e40126689"/>
+          <timestamp value="2025-07-04T19:35:14+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -497,7 +497,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status"/>
@@ -527,7 +527,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-languages.html">codesystem NG‑Imm Languages in Nigeria CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-languages.html">codesystem NG‑Imm Languages in Nigeria CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 22 concepts</p>
             <table class="codes">
@@ -722,11 +722,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-languages"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGLanguagesVS"/>
         <title value="NG-Imm Languages VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -735,8 +735,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:339442fb-3e34-48b0-9101-d0bd06569279"/>
-          <timestamp value="2025-07-04T18:58:32+01:00"/>
+          <identifier value="urn:uuid:400328fc-7db9-45ea-8224-cc5789e7bcaf"/>
+          <timestamp value="2025-07-04T19:35:15+01:00"/>
           <total value="22"/>
           <offset value="0"/>
           <parameter>
@@ -757,7 +757,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages"/>
@@ -882,7 +882,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-lgas.html">codesystem NG-Imm LGAs in Nigeria CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-lgas.html">codesystem NG-Imm LGAs in Nigeria CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 774 concepts</p>
             <table class="codes">
@@ -7870,11 +7870,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGLGAsVS"/>
         <title value="NG-Imm LGAs VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -7883,8 +7883,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0e57d76b-43f5-40d3-960f-7c82d90a83b4"/>
-          <timestamp value="2025-07-04T18:58:32+01:00"/>
+          <identifier value="urn:uuid:e1cfcfb8-a738-4968-8492-a11ddedd1364"/>
+          <timestamp value="2025-07-04T19:35:15+01:00"/>
           <total value="774"/>
           <offset value="0"/>
           <parameter>
@@ -7905,7 +7905,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas"/>
@@ -11790,7 +11790,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-location-owner-cs.html">codesystem NG-Imm Location Owner CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-location-owner-cs.html">codesystem NG-Imm Location Owner CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -11833,11 +11833,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGOrganizationOwnerVS"/>
         <title value="NG-Imm Location Owner"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -11846,8 +11846,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:44b64c10-fb45-4205-86ba-0e196498c971"/>
-          <timestamp value="2025-07-04T18:58:33+01:00"/>
+          <identifier value="urn:uuid:d3f0abb3-8910-441c-bd26-01dfc84a8576"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11868,11 +11868,11 @@
           </parameter>
           <parameter>
             <name value="warning-draft"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs|0.5.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs"/>
@@ -11902,7 +11902,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-pregnancy-status.html">codesystem NG-Imm Client Pregnancy status CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-pregnancy-status.html">codesystem NG-Imm Client Pregnancy status CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -11951,11 +11951,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGPregnancyStatusVS"/>
         <title value="NG-Imm Client Preganancy Status VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -11964,8 +11964,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f64e1c27-5615-438e-b2d3-b0155aec59f4"/>
-          <timestamp value="2025-07-04T18:58:33+01:00"/>
+          <identifier value="urn:uuid:7093832f-86f7-481a-8b02-43cab3c6c1a3"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11986,7 +11986,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status"/>
@@ -12016,7 +12016,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-relationship.html">codesystem NG-Imm Relationships CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-relationship.html">codesystem NG-Imm Relationships CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 15 concepts</p>
             <table class="codes">
@@ -12155,11 +12155,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-relationship"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGRelationshipsVS"/>
         <title value="NG-Imm Relationships VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12168,8 +12168,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7bd433af-1952-4516-8042-ca8895e14aa0"/>
-          <timestamp value="2025-07-04T18:58:33+01:00"/>
+          <identifier value="urn:uuid:415a0998-c85b-4232-bdbe-9d96776a5987"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="15"/>
           <offset value="0"/>
           <parameter>
@@ -12190,7 +12190,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship"/>
@@ -12280,7 +12280,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-immunization-session-type.html">codesystem NG-Imm Immunization Session types CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-immunization-session-type.html">codesystem NG-Imm Immunization Session types CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -12329,11 +12329,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-session-type"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGSessionTypeVS"/>
         <title value="NG-Imm Session Type VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12342,8 +12342,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ab3684c3-b7d5-49f6-93b6-9214346a16f4"/>
-          <timestamp value="2025-07-04T18:58:33+01:00"/>
+          <identifier value="urn:uuid:3e10d956-a950-4e5b-9e24-527854fd4964"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -12364,7 +12364,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-session-type|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-session-type|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-session-type"/>
@@ -12394,7 +12394,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-sibling-health-status.html">codesystem NG-Imm Sibling Health Status CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-sibling-health-status.html">codesystem NG-Imm Sibling Health Status CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
@@ -12452,11 +12452,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGSiblingHealthStatusVS"/>
         <title value="NG-Imm Sibling Health Status VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12465,8 +12465,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b2a56c5d-34e2-4140-bc8b-a6f4c3d64e57"/>
-          <timestamp value="2025-07-04T18:58:34+01:00"/>
+          <identifier value="urn:uuid:8a9cd558-767f-4482-8b34-b25cd685a9fa"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -12487,7 +12487,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status"/>
@@ -12522,7 +12522,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-states.html">codesystem NG-Imm States in Nigeria CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-states.html">codesystem NG-Imm States in Nigeria CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 37 concepts</p>
             <table class="codes">
@@ -12837,11 +12837,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGStatesVS"/>
         <title value="NG-Imm States VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -12850,8 +12850,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:899f2cd5-a3ec-4f86-9152-55d8bac2b69f"/>
-          <timestamp value="2025-07-04T18:58:34+01:00"/>
+          <identifier value="urn:uuid:d01e600b-e8c7-49a5-b18c-cda977c571ad"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="37"/>
           <offset value="0"/>
           <parameter>
@@ -12872,7 +12872,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states"/>
@@ -13072,7 +13072,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-immunization-contraindication.html">codesystem NG-Imm Vaccine contraindications CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-immunization-contraindication.html">codesystem NG-Imm Vaccine contraindications CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
@@ -13130,11 +13130,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-contraindication"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGContraindicationVS"/>
         <title value="NG-Imm Vaccine Contraindication VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13143,8 +13143,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9a6cb6ac-df98-40a2-8ed2-74ac89217fc5"/>
-          <timestamp value="2025-07-04T18:58:34+01:00"/>
+          <identifier value="urn:uuid:dee20eb6-d8f5-462a-8a9f-36b8381e2a5f"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -13165,7 +13165,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication"/>
@@ -13200,7 +13200,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-vaccine-library.html">codesystem NG-Imm Vaccine Library with SNOMED CT codes v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-vaccine-library.html">codesystem NG-Imm Vaccine Library with SNOMED CT codes v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 29 concepts</p>
             <table class="codes">
@@ -13483,11 +13483,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-library"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGVaccineLibraryVS"/>
         <title value="NG-Imm VaccineLibrary VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13496,8 +13496,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:66fab71f-470d-4722-a9af-e1befad7f61e"/>
-          <timestamp value="2025-07-04T18:58:34+01:00"/>
+          <identifier value="urn:uuid:0b8418cd-1ae4-42a7-a8b5-738b099bd826"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="29"/>
           <offset value="0"/>
           <parameter>
@@ -13518,7 +13518,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library"/>
@@ -13678,7 +13678,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-nigeria-wards.html">codesystem NG-Imm Administrative Wards CS v0.4.0 (CodeSystem)</a>
+              <a href="CodeSystem-nigeria-wards.html">codesystem NG-Imm Administrative Wards CS v0.5.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 10 concepts</p>
             <table class="codes">
@@ -13790,11 +13790,11 @@
           </div>
         </text>
         <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-wards"/>
-        <version value="0.4.0"/>
+        <version value="0.5.0"/>
         <name value="NGWardsVS"/>
         <title value="NG-Imm Wards VS"/>
         <status value="active"/>
-        <date value="2025-07-04T18:56:28+01:00"/>
+        <date value="2025-07-04T19:33:02+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13803,8 +13803,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:450d5bc4-ba75-4eaa-8fde-9bf38074a78f"/>
-          <timestamp value="2025-07-04T18:58:34+01:00"/>
+          <identifier value="urn:uuid:f523cee8-edb8-4fcb-a200-458d04ca1d37"/>
+          <timestamp value="2025-07-04T19:35:16+01:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -13825,7 +13825,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards|0.4.0"/>
+            <valueUri value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards|0.5.0"/>
           </parameter>
           <contains>
             <system value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards"/>

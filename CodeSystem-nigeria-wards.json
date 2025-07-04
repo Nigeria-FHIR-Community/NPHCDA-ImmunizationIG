@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-wards</b></p><a name=\"nigeria-wards\"> </a><a name=\"hcnigeria-wards\"> </a><p>This case-sensitive code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajic<a name=\"nigeria-wards-fc-amac-abajic\"> </a></td><td>Abaji central</td><td>Abaji central</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajine<a name=\"nigeria-wards-fc-amac-abajine\"> </a></td><td>Abaji North East</td><td>Abaji North East</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-abajise<a name=\"nigeria-wards-fc-amac-abajise\"> </a></td><td>Abaji South East</td><td>Abaji South East</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-agyana<a name=\"nigeria-wards-fc-amac-agyana\"> </a></td><td>Agyana/Pandagi</td><td>Agyana/Pandagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-rimba<a name=\"nigeria-wards-fc-amac-rimba\"> </a></td><td>Rimba Ebagi</td><td>Rimba Ebagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-nuku<a name=\"nigeria-wards-fc-amac-nuku\"> </a></td><td>Nuku</td><td>Nuku</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-alu<a name=\"nigeria-wards-fc-amac-alu\"> </a></td><td>Alu Mamagi</td><td>Alu Mamagi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-yaba<a name=\"nigeria-wards-fc-amac-yaba\"> </a></td><td>Yaba</td><td>Yaba</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-gurdi<a name=\"nigeria-wards-fc-amac-gurdi\"> </a></td><td>Gurdi</td><td>Gurdi</td></tr><tr><td style=\"white-space:nowrap\">fc-amac-gawu<a name=\"nigeria-wards-fc-amac-gawu\"> </a></td><td>Gawu</td><td>Gawu</td></tr></table></div>"
   },
   "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards",
-  "version" : "0.4.0",
+  "version" : "0.5.0",
   "name" : "NGWardsCS",
   "title" : "NG-Imm Administrative Wards CS",
   "status" : "active",
-  "date" : "2025-07-04T18:56:28+01:00",
+  "date" : "2025-07-04T19:33:02+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGClinicalStatusVS",
       "title" : "NG-Imm Clinical Status VS",
@@ -13,7 +13,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGFacilityTypeVS",
       "title" : "NG-Imm HealthFacility Type VS",
@@ -24,7 +24,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "NGGenderVS",
       "title" : "NG-Imm Gender or Sex VS",
@@ -35,7 +35,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-hiv-status",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGHivStatusVS",
       "title" : "NG-Imm Client HIV Status VS",
@@ -46,7 +46,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-languages",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGLanguagesVS",
       "title" : "NG-Imm Languages VS",
@@ -57,7 +57,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGLGAsVS",
       "title" : "NG-Imm LGAs VS",
@@ -68,7 +68,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGOrganizationOwnerVS",
       "title" : "NG-Imm Location Owner",
@@ -79,7 +79,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGPregnancyStatusVS",
       "title" : "NG-Imm Client Preganancy Status VS",
@@ -90,7 +90,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-relationship",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGRelationshipsVS",
       "title" : "NG-Imm Relationships VS",
@@ -101,7 +101,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-session-type",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGSessionTypeVS",
       "title" : "NG-Imm Session Type VS",
@@ -112,7 +112,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGSiblingHealthStatusVS",
       "title" : "NG-Imm Sibling Health Status VS",
@@ -123,7 +123,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGStatesVS",
       "title" : "NG-Imm States VS",
@@ -134,7 +134,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-contraindication",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGContraindicationVS",
       "title" : "NG-Imm Vaccine Contraindication VS",
@@ -145,7 +145,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-library",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGVaccineLibraryVS",
       "title" : "NG-Imm VaccineLibrary VS",
@@ -156,7 +156,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-wards",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGWardsVS",
       "title" : "NG-Imm Wards VS",

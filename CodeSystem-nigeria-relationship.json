@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-relationship</b></p><a name=\"nigeria-relationship\"> </a><a name=\"hcnigeria-relationship\"> </a><p>This case-sensitive code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BROTHER<a name=\"nigeria-relationship-BROTHER\"> </a></td><td>Brother</td></tr><tr><td style=\"white-space:nowrap\">SISTER<a name=\"nigeria-relationship-SISTER\"> </a></td><td>Sister</td></tr><tr><td style=\"white-space:nowrap\">SON<a name=\"nigeria-relationship-SON\"> </a></td><td>Son</td></tr><tr><td style=\"white-space:nowrap\">DAUGHTER<a name=\"nigeria-relationship-DAUGHTER\"> </a></td><td>Daughter</td></tr><tr><td style=\"white-space:nowrap\">MOTHER<a name=\"nigeria-relationship-MOTHER\"> </a></td><td>Mother</td></tr><tr><td style=\"white-space:nowrap\">FATHER<a name=\"nigeria-relationship-FATHER\"> </a></td><td>Father</td></tr><tr><td style=\"white-space:nowrap\">AUNT<a name=\"nigeria-relationship-AUNT\"> </a></td><td>Aunt</td></tr><tr><td style=\"white-space:nowrap\">COUNSN<a name=\"nigeria-relationship-COUNSN\"> </a></td><td>Cousin</td></tr><tr><td style=\"white-space:nowrap\">GRDSON<a name=\"nigeria-relationship-GRDSON\"> </a></td><td>Grand Son</td></tr><tr><td style=\"white-space:nowrap\">GRDDAU<a name=\"nigeria-relationship-GRDDAU\"> </a></td><td>Grand Daughter</td></tr><tr><td style=\"white-space:nowrap\">INLAW<a name=\"nigeria-relationship-INLAW\"> </a></td><td>Inlaw</td></tr><tr><td style=\"white-space:nowrap\">NEPHEW<a name=\"nigeria-relationship-NEPHEW\"> </a></td><td>Nephew</td></tr><tr><td style=\"white-space:nowrap\">NIECE<a name=\"nigeria-relationship-NIECE\"> </a></td><td>Niece</td></tr><tr><td style=\"white-space:nowrap\">UNCLE<a name=\"nigeria-relationship-UNCLE\"> </a></td><td>Uncle</td></tr><tr><td style=\"white-space:nowrap\">FRND<a name=\"nigeria-relationship-FRND\"> </a></td><td>Friend</td></tr></table></div>"
   },
   "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship",
-  "version" : "0.4.0",
+  "version" : "0.5.0",
   "name" : "NGRelationshipsCS",
   "title" : "NG-Imm Relationships CS",
   "status" : "active",
-  "date" : "2025-07-04T18:56:28+01:00",
+  "date" : "2025-07-04T19:33:02+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-gender</b></p><a name=\"nigeria-gender\"> </a><a name=\"hcnigeria-gender\"> </a><p>This  code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"nigeria-gender-male\"> </a></td><td>Client is of the male gender</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"nigeria-gender-female\"> </a></td><td>Client is of the female gender</td></tr></table></div>"
   },
   "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender",
-  "version" : "0.4.0",
+  "version" : "0.5.0",
   "name" : "NGGenderCS",
   "title" : "NG-Imm Gender CS",
   "status" : "active",
-  "date" : "2025-07-04T18:56:28+01:00",
+  "date" : "2025-07-04T19:33:02+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

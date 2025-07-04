@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-clinical-status</b></p><a name="nigeria-clinical-status"> </a><a name="hcnigeria-clinical-status"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-clinical-status.html"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status</code></a></li></ul></div>
   </text>
   <url value="https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status"/>
-  <version value="0.4.0"/>
+  <version value="0.5.0"/>
   <name value="NGClinicalStatusVS"/>
   <title value="NG-Imm Clinical Status VS"/>
   <status value="active"/>
-  <date value="2025-07-04T18:56:28+01:00"/>
+  <date value="2025-07-04T19:33:02+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

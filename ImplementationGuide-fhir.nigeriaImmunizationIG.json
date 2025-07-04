@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.nigeriaImmunizationIG</b></p><a name=\"fhir.nigeriaImmunizationIG\"> </a><a name=\"hcfhir.nigeriaImmunizationIG\"> </a><h2>NigeriaimmunizationFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunizationIG</pre><div><p>Nigeria Immunization FHIR IG</p>\n</div></div>"
   },
   "url" : "https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunizationIG",
-  "version" : "0.4.0",
+  "version" : "0.5.0",
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-07-04T18:56:28+01:00",
+  "date" : "2025-07-04T19:33:02+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

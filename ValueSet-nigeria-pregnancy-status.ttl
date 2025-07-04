@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-pregnancy-status</b></p><a name=\"nigeria-pregnancy-status\"> </a><a name=\"hcnigeria-pregnancy-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-pregnancy-status.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
   fhir:name [ fhir:v "NGPregnancyStatusVS"] ; # 
   fhir:title [ fhir:v "NG-Imm Client Preganancy Status VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-04T18:56:28+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-04T19:33:02+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;

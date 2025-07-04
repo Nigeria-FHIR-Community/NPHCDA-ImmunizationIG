@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-hiv-status</b></p><a name="nigeria-hiv-status"> </a><a name="hcnigeria-hiv-status"> </a><p>This case-sensitive code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">positive<a name="nigeria-hiv-status-positive"> </a></td><td>Positive</td><td>The Client is HIV positive</td></tr><tr><td style="white-space:nowrap">negative<a name="nigeria-hiv-status-negative"> </a></td><td>Negative</td><td>The Client is HIV Negative</td></tr><tr><td style="white-space:nowrap">unknown<a name="nigeria-hiv-status-unknown"> </a></td><td>Unknown</td><td>The Client does not know their HIV status</td></tr></table></div>
   </text>
   <url value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status"/>
-  <version value="0.4.0"/>
+  <version value="0.5.0"/>
   <name value="NGHivStatusCS"/>
   <title value="NG-Imm Client HIV status CS"/>
   <status value="active"/>
-  <date value="2025-07-04T18:56:28+01:00"/>
+  <date value="2025-07-04T19:33:02+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

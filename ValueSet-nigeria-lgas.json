@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-lgas</b></p><a name=\"nigeria-lgas\"> </a><a name=\"hcnigeria-lgas\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-lgas.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas</code></a></li></ul></div>"
   },
   "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas",
-  "version" : "0.4.0",
+  "version" : "0.5.0",
   "name" : "NGLGAsVS",
   "title" : "NG-Imm LGAs VS",
   "status" : "active",
-  "date" : "2025-07-04T18:56:28+01:00",
+  "date" : "2025-07-04T19:33:02+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

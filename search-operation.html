@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Search and Operation - Nigeria Immunization FHIR IG v0.4.0</title>
+    <title>Search and Operation - Nigeria Immunization FHIR IG v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Nigeria Immunization FHIR IG</span>
             <br/>
-            <span style="display:inline-block;">0.4.0 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
 
@@ -140,7 +140,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Nigeria Immunization FHIR IG - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://nphcda.gov.ng/immunizationIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Immunization FHIR IG - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://nphcda.gov.ng/immunizationIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Search and Operation</h2>
   
 
@@ -159,25 +159,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#supported-search-parameters-for-nigeria-immunization-patient-profile" id="markdown-toc-supported-search-parameters-for-nigeria-immunization-patient-profile">Supported Search Parameters for Nigeria Immunization Patient Profile</a></li>
-  <li><a href="#supported-restful-operations-for-nigeria-immunization-patient-profile" id="markdown-toc-supported-restful-operations-for-nigeria-immunization-patient-profile">Supported RESTful Operations for Nigeria Immunization Patient Profile</a></li>
-  <li><a href="#supported-search-parameters-on-ngimmbundle" id="markdown-toc-supported-search-parameters-on-ngimmbundle">Supported Search Parameters on <strong>NgImmBundle</strong></a>    <ul>
-      <li><a href="#supported-bundle-operations" id="markdown-toc-supported-bundle-operations">Supported Bundle Operations</a></li>
-    </ul>
-  </li>
-  <li><a href="#️-supported-operations-on-ngimmbundle" id="markdown-toc-️-supported-operations-on-ngimmbundle">⚙️ Supported Operations on <code class="language-plaintext highlighter-rouge">NgImmBundle</code></a></li>
+  <li><a href="#supported-restful-operations-for-nigeria-immunization-profiles" id="markdown-toc-supported-restful-operations-for-nigeria-immunization-profiles">Supported RESTful Operations for Nigeria Immunization Profiles</a></li>
+  <li><a href="#️-important-implementation-notes" id="markdown-toc-️-important-implementation-notes">⚠️ Important Implementation Notes</a></li>
 </ul>
 
 </div>
 
 <h3 id="supported-search-parameters-for-nigeria-immunization-patient-profile">Supported Search Parameters for Nigeria Immunization Patient Profile</h3>
 
-<p>This page outlines the supported FHIR <a href="https://www.hl7.org/fhir/search.html">Search Parameters</a> for the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles in the Nigeria Immunization Implementation Guide. These parameters enable efficient querying of patient records in systems that implement this guide.</p>
+<p>This page outlines the supported FHIR <a href="https://www.hl7.org/fhir/search.html">Search Parameters</a> for the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles in the Nigeria Immunization Implementation Guide. In addition search parameters for <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> are also supported. These parameters enable efficient querying of patient records in systems that implement this guide.</p>
 
 <p>The listed search parameters are derived from standard FHIR-defined parameters, with custom additions where relevant to local immunization use cases in Nigeria.</p>
 
 <hr />
 
-<h4 id="list-of-supported-search-parameters-for-patient-profile">List of Supported Search Parameters for Patient profile</h4>
+<h4 id="list-of-supported-search-parameters-for-ngimmpatient-ngimmimmunization-and-ngimmbundle-profiles">List of Supported Search Parameters for <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a>, <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a>, and <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> profiles</h4>
 
 <table>
   <thead>
@@ -260,7 +256,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?address-state=Benue
 </code></pre></div></div>
 
-<h4 id="list-of-supported-search-for-ngimmimmunization-profile">List of supported search for <a href="StructureDefinition-NgImmImmunization.html">NgImmImmunization</a> Profile:</h4>
+<h4 id="list-of-supported-search-for-ngimmimmunization-profile">List of supported search for <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> Profile:</h4>
 
 <table>
   <thead>
@@ -301,6 +297,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
+<h4 id="supported-search-parameters-on-ngimmbundle">Supported Search Parameters on <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Search Parameter</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>FHIRPath Expression</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient.identifier</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Search for bundles containing a patient with a specific identifier (e.g. NIN)</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).identifier</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vaccine-code</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Search for bundles containing an immunization with a specific vaccine code</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Immunization).vaccineCode</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient-address-state</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Search for bundles where the patient resides in a specific Nigerian state</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).address.state</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">organization-identifier</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Search for bundles referencing a healthcare facility with a specific ID</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Organization).identifier</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient-birthdate</code></td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>Search for bundles containing patients born on a specific date</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).birthDate</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_lastUpdated</code></td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>Search for bundles that were last updated on or after a specific timestamp</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.meta.lastUpdated</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
 <h4 id="notes">Notes</h4>
 <ul>
   <li>All search parameters comply with FHIR R4 standards and SMART Guidelines principles.</li>
@@ -312,13 +361,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>For a complete list of FHIR search parameter types and modifiers, refer to the <a href="https://www.hl7.org/fhir/search.html">FHIR Search documentation</a>.</p>
 
-<h3 id="supported-restful-operations-for-nigeria-immunization-patient-profile">Supported RESTful Operations for Nigeria Immunization Patient Profile</h3>
+<h3 id="supported-restful-operations-for-nigeria-immunization-profiles">Supported RESTful Operations for Nigeria Immunization Profiles</h3>
 
-<p>This page describes the RESTful interactions supported for systems implementing the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles, aligned with FHIR R4 and SMART Guidelines principles. These operations define how client systems (e.g., EMRs, registries, mobile apps) can interact with immunization-related patient data.</p>
+<p>This page describes the RESTful interactions supported for systems implementing the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles, aligned with FHIR R4 and SMART Guidelines principles. These operations define how client systems (e.g., EMRs, registries, mobile apps) can interact with immunization-related patient data. In addition, operations on <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> is also presented.</p>
 
 <hr />
 
-<h4 id="overview-of-supported-restful-interactions">Overview of Supported RESTful Interactions</h4>
+<h4 id="overview-of-supported-restful-patient-interactions">Overview of Supported RESTful Patient Interactions</h4>
 
 <table>
   <thead>
@@ -412,60 +461,7 @@ Content-Type: application/fhir+json
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h2 id="supported-search-parameters-on-ngimmbundle">Supported Search Parameters on <strong>NgImmBundle</strong></h2>
-
-<table>
-  <thead>
-    <tr>
-      <th><strong>Search Parameter</strong></th>
-      <th><strong>Type</strong></th>
-      <th><strong>Description</strong></th>
-      <th><strong>FHIRPath Expression</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">patient.identifier</code></td>
-      <td><code class="language-plaintext highlighter-rouge">token</code></td>
-      <td>Search for bundles containing a patient with a specific identifier (e.g. NIN)</td>
-      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).identifier</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">vaccine-code</code></td>
-      <td><code class="language-plaintext highlighter-rouge">token</code></td>
-      <td>Search for bundles containing an immunization with a specific vaccine code</td>
-      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Immunization).vaccineCode</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">patient-address-state</code></td>
-      <td><code class="language-plaintext highlighter-rouge">token</code></td>
-      <td>Search for bundles where the patient resides in a specific Nigerian state</td>
-      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).address.state</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">organization-identifier</code></td>
-      <td><code class="language-plaintext highlighter-rouge">token</code></td>
-      <td>Search for bundles referencing a healthcare facility with a specific ID</td>
-      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Organization).identifier</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">patient-birthdate</code></td>
-      <td><code class="language-plaintext highlighter-rouge">date</code></td>
-      <td>Search for bundles containing patients born on a specific date</td>
-      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).birthDate</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">_lastUpdated</code></td>
-      <td><code class="language-plaintext highlighter-rouge">date</code></td>
-      <td>Search for bundles that were last updated on or after a specific timestamp</td>
-      <td><code class="language-plaintext highlighter-rouge">Bundle.meta.lastUpdated</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="supported-bundle-operations">Supported Bundle Operations</h3>
-
-<h2 id="️-supported-operations-on-ngimmbundle">⚙️ Supported Operations on <code class="language-plaintext highlighter-rouge">NgImmBundle</code></h2>
+<h4 id="supported-bundle-operations-on-ngimmbundle">Supported Bundle Operations on <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a></h4>
 
 <table>
   <thead>
@@ -551,15 +547,13 @@ Content-Type: application/fhir+json
   </tbody>
 </table>
 
-<h5 id="️-important-implementation-notes">⚠️ Important Implementation Notes</h5>
+<h3 id="️-important-implementation-notes">⚠️ Important Implementation Notes</h3>
 
-<p>All create and update operations must conform to the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles.
+<p>All create and update operations must conform to the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles. Ten operations can be carried out on <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a>
 Use validation tools to ensure submitted resources are profile-conformant.
 Delete operation is disabled to avoid accidental removal of patient records; use status or metadata flags if deactivation is needed.
-All RESTful interactions must be secured and comply with Nigeria’s health data protection policies.</p>
-
-<p>All operations use standard FHIR OperationDefinition resources and can be extended with implementation-specific behavior.
-Where applicable, operations should respect access control based on organization, LGA, or user role.</p>
+All RESTful interactions must be secured and comply with Nigeria’s health data protection policies.
+All operations use standard FHIR OperationDefinition resources and can be extended with implementation-specific behavior. Where applicable, operations should respect access control based on organization, LGA, or user role.</p>
 
 
 
@@ -579,7 +573,7 @@ Where applicable, operations should respect access control based on organization
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 4, 2025 18:57+0100">2025-07-04</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 4, 2025 19:34+0100">2025-07-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

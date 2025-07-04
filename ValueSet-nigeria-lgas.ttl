@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-lgas</b></p><a name=\"nigeria-lgas\"> </a><a name=\"hcnigeria-lgas\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-lgas.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
   fhir:name [ fhir:v "NGLGAsVS"] ; # 
   fhir:title [ fhir:v "NG-Imm LGAs VS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-04T18:56:28+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-04T19:33:02+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;

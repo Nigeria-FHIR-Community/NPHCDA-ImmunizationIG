@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-gender</b></p><a name=\"nigeria-gender\"> </a><a name=\"hcnigeria-gender\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-gender.html\"><code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender</code></a></li></ul></div>"
   },
   "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender",
-  "version" : "0.4.0",
+  "version" : "0.5.0",
   "name" : "NGGenderVS",
   "title" : "NG-Imm Gender or Sex VS",
   "status" : "draft",
-  "date" : "2025-07-04T18:56:28+01:00",
+  "date" : "2025-07-04T19:33:02+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",

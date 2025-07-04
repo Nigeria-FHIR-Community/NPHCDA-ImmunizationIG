@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://nphcda.gov.ng/immunizationIG/ImplementationGuide/fhir.nigeriaImmunizationIG"/>
-  <version value="0.4.0"/>
+  <version value="0.5.0"/>
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-07-04T18:56:28+01:00"/>
+  <date value="2025-07-04T19:33:02+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>

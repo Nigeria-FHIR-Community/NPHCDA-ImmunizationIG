@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/NGStockReportCS",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "NigeriaStockData",
       "title" : "NG-Imm Stock Management Data Elements CS",
@@ -10,7 +10,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGClinicalStatusCS",
       "title" : "NG-Imm Adverse Event Clinical Status CS",
@@ -18,7 +18,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGFacilityTypeCS",
       "title" : "NG-Imm Facility Type CS",
@@ -26,7 +26,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGGenderCS",
       "title" : "NG-Imm Gender CS",
@@ -34,7 +34,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-hiv-status",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGHivStatusCS",
       "title" : "NG-Imm Client HIV status CS",
@@ -42,7 +42,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-contraindication",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGImmunizationContraindicationCS",
       "title" : "NG-Imm Vaccine contraindications CS",
@@ -50,7 +50,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-immunization-session-type",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGImmunizationSessionTypeCS",
       "title" : "NG-Imm Immunization Session types CS",
@@ -58,7 +58,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-languages",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGLanguagesCS",
       "title" : "NG‑Imm Languages in Nigeria CS",
@@ -66,7 +66,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-lgas",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGLGAsCS",
       "title" : "NG-Imm LGAs in Nigeria CS",
@@ -74,7 +74,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-location-owner-cs",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "NGOrganizationOwnerCS",
       "title" : "NG-Imm Location Owner CS",
@@ -82,7 +82,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-pregnancy-status",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGPregnancyStatusCS",
       "title" : "NG-Imm Client Pregnancy status CS",
@@ -90,7 +90,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-relationship",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGRelationshipsCS",
       "title" : "NG-Imm Relationships CS",
@@ -98,7 +98,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-sibling-health-status",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGSiblingHealthStatusCS",
       "title" : "NG-Imm Sibling Health Status CS",
@@ -106,7 +106,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-states",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGStatesCS",
       "title" : "NG-Imm States in Nigeria CS",
@@ -114,7 +114,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-vaccine-library",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGVaccineLibraryCS",
       "title" : "NG-Imm Vaccine Library with SNOMED CT codes",
@@ -122,7 +122,7 @@
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-wards",
-      "version" : "0.4.0",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "NGWardsCS",
       "title" : "NG-Imm Administrative Wards CS",
