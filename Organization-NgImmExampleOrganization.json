@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Organization",
+  "id" : "NgImmExampleOrganization",
+  "meta" : {
+    "profile" : ["https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization NgImmExampleOrganization</b></p><a name=\"NgImmExampleOrganization\"> </a><a name=\"hcNgImmExampleOrganization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG-Imm Organization</a></p></div><p><b>NG-Imm owner of health institution</b>: <span title=\"Codes:\">Kogi State Primary Health Care Board</span></p><p><b>identifier</b>: <code>https://herfama.kogistate.gov.ng</code>/KOHF-00123</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:\">General Hospital</span></p><p><b>name</b>: Ankpa General Hospital</p><p><b>telecom</b>: <a href=\"tel:+2348031122334\">+2348031122334</a></p><p><b>address</b>: Old Otukpo Road, Opp. Ankpa Market Ankpa KO </p></div>"
+  },
+  "extension" : [{
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/organozation-owner",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "public",
+        "display" : "Kogi State Primary Health Care Board"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://herfama.kogistate.gov.ng",
+    "value" : "KOHF-00123"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "code" : "hospital",
+      "display" : "General Hospital"
+    }]
+  }],
+  "name" : "Ankpa General Hospital",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+2348031122334"
+  }],
+  "address" : [{
+    "line" : ["Old Otukpo Road, Opp. Ankpa Market"],
+    "city" : "Ankpa",
+    "district" : "ko-ankpa",
+    "state" : "KO"
+  }]
+}

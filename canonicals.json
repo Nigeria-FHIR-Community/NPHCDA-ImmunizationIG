@@ -131,6 +131,48 @@
     "name" : "NigeriaimmunizationFHIRIG"
   },
   {
+    "id" : "NgImmBundleSearchByBirthDate",
+    "type" : "SearchParameter",
+    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByBirthDate",
+    "version" : "0.4.0",
+    "name" : "searchBundleByPatientBirthDate"
+  },
+  {
+    "id" : "NgImmBundleSearchByFacilityIdentifier",
+    "type" : "SearchParameter",
+    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByFacilityIdentifier",
+    "version" : "0.4.0",
+    "name" : "searchBundleByOrganizationIdentifier"
+  },
+  {
+    "id" : "NgImmBundleSearchByLastUpdated",
+    "type" : "SearchParameter",
+    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByLastUpdated",
+    "version" : "0.4.0",
+    "name" : "searchBundleByLastUpdated"
+  },
+  {
+    "id" : "NgImmBundleSearchByPatientIdentifier",
+    "type" : "SearchParameter",
+    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByPatientIdentifier",
+    "version" : "0.4.0",
+    "name" : "searchBundleByPatientIdentifier"
+  },
+  {
+    "id" : "NgImmBundleSearchByState",
+    "type" : "SearchParameter",
+    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByState",
+    "version" : "0.4.0",
+    "name" : "searchBundleByPatientState"
+  },
+  {
+    "id" : "NgImmBundleSearchByVaccineCode",
+    "type" : "SearchParameter",
+    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByVaccineCode",
+    "version" : "0.4.0",
+    "name" : "searchBundleByVaccineCode"
+  },
+  {
     "id" : "SearchParameter-ngimm-birthdate",
     "type" : "SearchParameter",
     "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-birthdate",
@@ -346,13 +388,6 @@
     "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications",
     "version" : "0.4.0",
     "name" : "NGContraindications"
-  },
-  {
-    "id" : "date-client-created",
-    "type" : "StructureDefinition",
-    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created",
-    "version" : "0.4.0",
-    "name" : "NGCreatedDate"
   },
   {
     "id" : "hiv-status",

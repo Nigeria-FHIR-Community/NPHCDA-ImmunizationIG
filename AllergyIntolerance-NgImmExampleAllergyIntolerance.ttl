@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/AllergyIntolerance/NgImmExampleAllergyIntolerance> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NgImmExampleAllergyIntolerance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance NgImmExampleAllergyIntolerance</b></p><a name=\"NgImmExampleAllergyIntolerance\"> </a><a name=\"hcNgImmExampleAllergyIntolerance\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-allergy-intolerance-profile.html\">NG-Imm AllergyIntolerance</a></p></div><p><b>NG-Imm Allergy Dose Number</b>: 1</p><p><b>NG-Imm Dose Series</b>: Childhood Routine Series</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://nphcda.gov.ng/ig/CodeSystem/clinical-status active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:\">confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Medication</p><p><b>criticality</b>: High Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91936005}\">Allergy to penicillin</span></p><p><b>patient</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-patient-001\">Bundle: type = collection</a></p><p><b>encounter</b>: <code>urn:uuid:encounter-001</code></p><p><b>onset</b>: 2024-10-05</p><p><b>recordedDate</b>: 2024-10-06</p><p><b>recorder</b>: Nurse Musa</p><p><b>lastOccurrence</b>: 2024-10-07</p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 372729009}\">Penicillin</span></td><td><span title=\"Codes:{http://snomed.info/sct 271807003}\">Rash</span></td><td>Patient developed widespread rash within 12 hours of vaccination</td><td>2024-10-05 22:00:00+0100</td><td>Moderate</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Childhood Routine Series"
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://nphcda.gov.ng/ig/CodeSystem/clinical-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "medication"] ) ; # 
+  fhir:criticality [ fhir:v "high"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:91936005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "91936005" ] ;
+       fhir:display [ fhir:v "Allergy to penicillin" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:reference [ fhir:v "urn:uuid:encounter-001" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2024-10-05"^^xsd:date
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2024-10-06"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:display [ fhir:v "Nurse Musa" ]
+  ] ; # 
+  fhir:lastOccurrence [ fhir:v "2024-10-07"^^xsd:date] ; # 
+  fhir:reaction ( [
+     fhir:substance [
+       fhir:coding ( [
+         a sct:372729009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "372729009" ] ;
+         fhir:display [ fhir:v "Penicillin" ]
+       ] )
+     ] ;
+     fhir:manifestation ( [
+       fhir:coding ( [
+         a sct:271807003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271807003" ] ;
+         fhir:display [ fhir:v "Rash" ]
+       ] )
+     ] ) ;
+     fhir:description [ fhir:v "Patient developed widespread rash within 12 hours of vaccination" ] ;
+     fhir:onset [ fhir:v "2024-10-05T22:00:00+01:00"^^xsd:dateTime ] ;
+     fhir:severity [ fhir:v "moderate" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

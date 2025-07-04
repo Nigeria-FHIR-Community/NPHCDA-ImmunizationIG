@@ -107,6 +107,7 @@
 
 
   <li> <a href="search-operation.html" >Search and Operations</a></li> 
+    <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
 
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -159,6 +160,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#supported-search-parameters-for-nigeria-immunization-patient-profile" id="markdown-toc-supported-search-parameters-for-nigeria-immunization-patient-profile">Supported Search Parameters for Nigeria Immunization Patient Profile</a></li>
   <li><a href="#supported-restful-operations-for-nigeria-immunization-patient-profile" id="markdown-toc-supported-restful-operations-for-nigeria-immunization-patient-profile">Supported RESTful Operations for Nigeria Immunization Patient Profile</a></li>
+  <li><a href="#supported-search-parameters-on-ngimmbundle" id="markdown-toc-supported-search-parameters-on-ngimmbundle">Supported Search Parameters on <strong>NgImmBundle</strong></a>    <ul>
+      <li><a href="#supported-bundle-operations" id="markdown-toc-supported-bundle-operations">Supported Bundle Operations</a></li>
+    </ul>
+  </li>
+  <li><a href="#️-supported-operations-on-ngimmbundle" id="markdown-toc-️-supported-operations-on-ngimmbundle">⚙️ Supported Operations on <code class="language-plaintext highlighter-rouge">NgImmBundle</code></a></li>
 </ul>
 
 </div>
@@ -406,12 +412,154 @@ Content-Type: application/fhir+json
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
+<h2 id="supported-search-parameters-on-ngimmbundle">Supported Search Parameters on <strong>NgImmBundle</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Search Parameter</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>FHIRPath Expression</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient.identifier</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Search for bundles containing a patient with a specific identifier (e.g. NIN)</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).identifier</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vaccine-code</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Search for bundles containing an immunization with a specific vaccine code</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Immunization).vaccineCode</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient-address-state</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Search for bundles where the patient resides in a specific Nigerian state</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).address.state</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">organization-identifier</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>Search for bundles referencing a healthcare facility with a specific ID</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Organization).identifier</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient-birthdate</code></td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>Search for bundles containing patients born on a specific date</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.entry.resource.ofType(Patient).birthDate</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_lastUpdated</code></td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>Search for bundles that were last updated on or after a specific timestamp</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle.meta.lastUpdated</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="supported-bundle-operations">Supported Bundle Operations</h3>
+
+<h2 id="️-supported-operations-on-ngimmbundle">⚙️ Supported Operations on <code class="language-plaintext highlighter-rouge">NgImmBundle</code></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Operation Name</strong></th>
+      <th><strong>Operation Code</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Input</strong></th>
+      <th><strong>Output</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Validate NgImm Bundle</td>
+      <td><code class="language-plaintext highlighter-rouge">$validate-ngimm-bundle</code></td>
+      <td>Validates a submitted bundle against Nigeria Immunization profiles</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OperationOutcome</code></td>
+    </tr>
+    <tr>
+      <td>Submit NgImm Bundle</td>
+      <td><code class="language-plaintext highlighter-rouge">$submit-ngimm-bundle</code></td>
+      <td>Submits a bundle to the national immunization registry</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+      <td>Success Acknowledgement</td>
+    </tr>
+    <tr>
+      <td>Export NgImm Bundle</td>
+      <td><code class="language-plaintext highlighter-rouge">$export-ngimm-bundle</code></td>
+      <td>Exports bundles by facility, district, or date</td>
+      <td><code class="language-plaintext highlighter-rouge">Reference</code>, <code class="language-plaintext highlighter-rouge">dateTime</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+    </tr>
+    <tr>
+      <td>Get Patient History</td>
+      <td><code class="language-plaintext highlighter-rouge">$get-patient-history</code></td>
+      <td>Returns all immunization bundles related to a specific patient</td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+    </tr>
+    <tr>
+      <td>Sync NgImm Bundle</td>
+      <td><code class="language-plaintext highlighter-rouge">$sync-ngimm-bundle</code></td>
+      <td>Returns all bundles updated since a specified timestamp</td>
+      <td><code class="language-plaintext highlighter-rouge">dateTime</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+    </tr>
+    <tr>
+      <td>Evaluate Completeness</td>
+      <td><code class="language-plaintext highlighter-rouge">$evaluate-completeness</code></td>
+      <td>Checks if all Must Support fields are populated in the submitted bundle</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OperationOutcome</code></td>
+    </tr>
+    <tr>
+      <td>Resolve Conflicts</td>
+      <td><code class="language-plaintext highlighter-rouge">$resolve-conflicts</code></td>
+      <td>Identifies and resolves duplicate/conflicting bundles for the same patient</td>
+      <td><code class="language-plaintext highlighter-rouge">Reference</code>, <code class="language-plaintext highlighter-rouge">code</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OperationOutcome</code></td>
+    </tr>
+    <tr>
+      <td>Generate Immunization Summary</td>
+      <td><code class="language-plaintext highlighter-rouge">$generate-summary</code></td>
+      <td>Produces a readable summary (e.g., printable immunization card) from a bundle</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code> (HTML/Text)</td>
+    </tr>
+    <tr>
+      <td>Get Next Dose Schedule</td>
+      <td><code class="language-plaintext highlighter-rouge">$get-next-dose-schedule</code></td>
+      <td>Retrieves next scheduled dose date from <code class="language-plaintext highlighter-rouge">protocolApplied.nextDoseDate</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+      <td><code class="language-plaintext highlighter-rouge">dateTime</code></td>
+    </tr>
+    <tr>
+      <td>Remove Obsolete Bundles</td>
+      <td><code class="language-plaintext highlighter-rouge">$remove-obsolete-bundles</code></td>
+      <td>Deletes bundles of patients older than 24 months and marked inactive</td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td><code class="language-plaintext highlighter-rouge">integer</code> (count)</td>
+    </tr>
+  </tbody>
+</table>
+
 <h5 id="️-important-implementation-notes">⚠️ Important Implementation Notes</h5>
 
 <p>All create and update operations must conform to the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles.
 Use validation tools to ensure submitted resources are profile-conformant.
 Delete operation is disabled to avoid accidental removal of patient records; use status or metadata flags if deactivation is needed.
 All RESTful interactions must be secured and comply with Nigeria’s health data protection policies.</p>
+
+<p>All operations use standard FHIR OperationDefinition resources and can be extended with implementation-specific behavior.
+Where applicable, operations should respect access control based on organization, LGA, or user role.</p>
 
 
 
@@ -431,7 +579,7 @@ All RESTful interactions must be secured and comply with Nigeria’s health data
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 4, 2025 16:59+0100">2025-07-04</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 4, 2025 18:57+0100">2025-07-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

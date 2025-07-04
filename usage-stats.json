@@ -161,13 +161,6 @@
       ]
     },
     {
-      "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created",
-      "title": "NG-Imm Date client record was created",
-      "types": [
-        "dateTime"
-      ]
-    },
-    {
       "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/hiv-status",
       "title": "NG-Imm Client\u0027s HIV status",
       "types": [
@@ -367,50 +360,65 @@
       "StructureDefinition.snapshot"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-months": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-weeks": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-years": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number": [
-      "AllergyIntolerance"
+      "AllergyIntolerance",
+      "Bundle.entry.resource"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series": [
-      "AllergyIntolerance"
+      "AllergyIntolerance",
+      "Bundle.entry.resource"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/birth-weight": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated": [
+      "Bundle.entry.resource",
       "Immunization"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications": [
+      "Bundle.entry.resource",
       "Immunization"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date": [
       "Immunization.protocolApplied"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward": [
+      "Bundle.entry.resource.address",
+      "Bundle.entry.resource.contact.address",
       "Location.address",
       "Patient.address",
       "Patient.contact.address"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/organozation-owner": [
+      "Bundle.entry.resource",
       "Organization"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/pregnancy-status": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type": [
+      "Bundle.entry.resource",
       "Immunization"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status": [
+      "Bundle.entry.resource",
       "RelatedPerson"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature": [
+      "Bundle.entry.resource",
       "Immunization"
     ],
     "pregnancyStatus": [

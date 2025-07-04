@@ -1,0 +1,72 @@
+{
+  "resourceType" : "AllergyIntolerance",
+  "id" : "NgImmExampleAllergyIntolerance",
+  "meta" : {
+    "profile" : ["https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance NgImmExampleAllergyIntolerance</b></p><a name=\"NgImmExampleAllergyIntolerance\"> </a><a name=\"hcNgImmExampleAllergyIntolerance\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-allergy-intolerance-profile.html\">NG-Imm AllergyIntolerance</a></p></div><p><b>NG-Imm Allergy Dose Number</b>: 1</p><p><b>NG-Imm Dose Series</b>: Childhood Routine Series</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://nphcda.gov.ng/ig/CodeSystem/clinical-status active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:\">confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Medication</p><p><b>criticality</b>: High Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91936005}\">Allergy to penicillin</span></p><p><b>patient</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-patient-001\">Bundle: type = collection</a></p><p><b>encounter</b>: <code>urn:uuid:encounter-001</code></p><p><b>onset</b>: 2024-10-05</p><p><b>recordedDate</b>: 2024-10-06</p><p><b>recorder</b>: Nurse Musa</p><p><b>lastOccurrence</b>: 2024-10-07</p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 372729009}\">Penicillin</span></td><td><span title=\"Codes:{http://snomed.info/sct 271807003}\">Rash</span></td><td>Patient developed widespread rash within 12 hours of vaccination</td><td>2024-10-05 22:00:00+0100</td><td>Moderate</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series",
+    "valueString" : "Childhood Routine Series"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://nphcda.gov.ng/ig/CodeSystem/clinical-status",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "code" : "confirmed"
+    }]
+  },
+  "type" : "allergy",
+  "category" : ["medication"],
+  "criticality" : "high",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "91936005",
+      "display" : "Allergy to penicillin"
+    }]
+  },
+  "patient" : {
+    "reference" : "urn:uuid:patient-001"
+  },
+  "encounter" : {
+    "reference" : "urn:uuid:encounter-001"
+  },
+  "onsetDateTime" : "2024-10-05",
+  "recordedDate" : "2024-10-06",
+  "recorder" : {
+    "display" : "Nurse Musa"
+  },
+  "lastOccurrence" : "2024-10-07",
+  "reaction" : [{
+    "substance" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "372729009",
+        "display" : "Penicillin"
+      }]
+    },
+    "manifestation" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "271807003",
+        "display" : "Rash"
+      }]
+    }],
+    "description" : "Patient developed widespread rash within 12 hours of vaccination",
+    "onset" : "2024-10-05T22:00:00+01:00",
+    "severity" : "moderate"
+  }]
+}

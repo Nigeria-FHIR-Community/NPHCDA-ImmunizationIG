@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Privacy and Security Considerations - Nigeria Immunization FHIR IG v0.4.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Immunization FHIR IG</span>
+            <br/>
+            <span style="display:inline-block;">0.4.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+
+ <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
+  
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements (DAKs)-(L2)<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="generic-personas.html">Generic Personas</a></li>
+      <li><a href="user-scenarios.html">User Scenarios</a></li>
+      <li><a href="business-processes.html">Business Processes &amp; Workflows</a></li>
+      <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
+       <li><a href="functional-requirements.html">Functional Requirements</a></li>
+       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
+      <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
+      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
+      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
+    </ul>
+  </li>
+
+
+  <li> <a href="search-operation.html" >Search and Operations</a></li> 
+    <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Privacy and Security Considerations</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Immunization FHIR IG - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://nphcda.gov.ng/immunizationIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Privacy and Security Considerations</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#security-and-access-control-for-bundle-operations-work-in-progress" id="markdown-toc-security-and-access-control-for-bundle-operations-work-in-progress">Security and Access Control for Bundle Operations [work in progress]</a>    <ul>
+      <li><a href="#access-control-principles" id="markdown-toc-access-control-principles">Access Control Principles</a></li>
+      <li><a href="#authentication--authorization" id="markdown-toc-authentication--authorization">Authentication &amp; Authorization</a></li>
+      <li><a href="#data-privacy--filtering" id="markdown-toc-data-privacy--filtering">Data Privacy &amp; Filtering</a></li>
+      <li><a href="#operation-specific-safeguards" id="markdown-toc-operation-specific-safeguards">Operation-Specific Safeguards</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="security-and-access-control-for-bundle-operations-work-in-progress">Security and Access Control for Bundle Operations [work in progress]</h2>
+
+<p>To ensure the integrity, privacy, and appropriate use of immunization data, all operations on the <code class="language-plaintext highlighter-rouge">NgImmBundle</code> resource must comply with Nigeria’s national health data governance principles and security standards.</p>
+
+<h3 id="access-control-principles">Access Control Principles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Access Level</strong></th>
+      <th><strong>User Role</strong></th>
+      <th><strong>Allowed Operations</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>National Admin</td>
+      <td>NDHI, NPHCDA Data Steward</td>
+      <td>All operations including <code class="language-plaintext highlighter-rouge">$remove-obsolete-bundles</code>, <code class="language-plaintext highlighter-rouge">$resolve-conflicts</code></td>
+    </tr>
+    <tr>
+      <td>State Immunization Officer</td>
+      <td>State Primary Health Care Board (SPHCB)</td>
+      <td><code class="language-plaintext highlighter-rouge">$submit-ngimm-bundle</code>, <code class="language-plaintext highlighter-rouge">$export-ngimm-bundle</code>, <code class="language-plaintext highlighter-rouge">$validate-ngimm-bundle</code></td>
+    </tr>
+    <tr>
+      <td>LGA Immunization Officer</td>
+      <td>LGA Immunization Desk</td>
+      <td><code class="language-plaintext highlighter-rouge">$submit-ngimm-bundle</code>, <code class="language-plaintext highlighter-rouge">$get-patient-history</code>, <code class="language-plaintext highlighter-rouge">$generate-summary</code></td>
+    </tr>
+    <tr>
+      <td>Facility Immunization Staff</td>
+      <td>PHC/Health Facility EMR User</td>
+      <td><code class="language-plaintext highlighter-rouge">$submit-ngimm-bundle</code>, <code class="language-plaintext highlighter-rouge">$validate-ngimm-bundle</code>, <code class="language-plaintext highlighter-rouge">$get-next-dose-schedule</code></td>
+    </tr>
+    <tr>
+      <td>Mobile Outreach Team</td>
+      <td>Verified Field Devices (Online/Offline)</td>
+      <td><code class="language-plaintext highlighter-rouge">$submit-ngimm-bundle</code>, <code class="language-plaintext highlighter-rouge">$generate-summary</code>, <code class="language-plaintext highlighter-rouge">$sync-ngimm-bundle</code></td>
+    </tr>
+    <tr>
+      <td>System Integration API</td>
+      <td>Trusted System Clients</td>
+      <td><code class="language-plaintext highlighter-rouge">$validate-ngimm-bundle</code>, <code class="language-plaintext highlighter-rouge">$submit-ngimm-bundle</code>, <code class="language-plaintext highlighter-rouge">$export-ngimm-bundle</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="authentication--authorization">Authentication &amp; Authorization</h3>
+
+<ul>
+  <li><strong>Authentication:</strong> All clients MUST be authenticated using OAuth2.0 with client credentials or SMART-on-FHIR tokens.</li>
+  <li><strong>Authorization:</strong> Role-based access control (RBAC) MUST be enforced by the FHIR server based on user claims or scopes:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">bundle.submit</code></li>
+      <li><code class="language-plaintext highlighter-rouge">bundle.read</code></li>
+      <li><code class="language-plaintext highlighter-rouge">bundle.write</code></li>
+      <li><code class="language-plaintext highlighter-rouge">bundle.sync</code></li>
+      <li><code class="language-plaintext highlighter-rouge">bundle.admin</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="data-privacy--filtering">Data Privacy &amp; Filtering</h3>
+
+<ul>
+  <li>Bundles are scoped to <strong>organization units</strong> (facility, LGA, state) using associated <code class="language-plaintext highlighter-rouge">Organization.identifier</code>.</li>
+  <li>Systems MUST not return bundles beyond the requestor’s scope (e.g., a facility user must not see state-wide data).</li>
+  <li>Sensitive elements such as <code class="language-plaintext highlighter-rouge">deceasedDateTime</code>, <code class="language-plaintext highlighter-rouge">HIV status</code>, or sibling records must follow data minimization principles when returned to mobile apps or public dashboards.</li>
+</ul>
+
+<h3 id="operation-specific-safeguards">Operation-Specific Safeguards</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">$submit-ngimm-bundle</code>: MUST validate using <code class="language-plaintext highlighter-rouge">$validate-ngimm-bundle</code> before committing to the server.</li>
+  <li><code class="language-plaintext highlighter-rouge">$remove-obsolete-bundles</code>: REQUIRES elevated privileges (admin role) to execute.</li>
+  <li><code class="language-plaintext highlighter-rouge">$resolve-conflicts</code>: SHOULD trigger a manual review workflow or return a conflict report before automated resolution.</li>
+  <li><code class="language-plaintext highlighter-rouge">$export-ngimm-bundle</code>: SHOULD support export logging, throttling, and encryption of large payloads.</li>
+</ul>
+
+<hr />
+
+<p><em>These access rules aim to balance data utility with privacy and compliance, in line with the Nigeria Data Protection Act (NDPA) and WHO SMART Guidelines.</em></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 4, 2025 18:57+0100">2025-07-04</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

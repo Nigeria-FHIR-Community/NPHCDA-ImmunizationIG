@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="NgImmExampleSiblingRelatedPerson"/>
+  <meta>
+    <profile value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/mother-other-children"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson NgImmExampleSiblingRelatedPerson</b></p><a name="NgImmExampleSiblingRelatedPerson"> </a><a name="hcNgImmExampleSiblingRelatedPerson"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mother-other-children.html">NG-Imm RelatedPerson</a></p></div><p><b>NG-Imm Sibling's health status</b>: <span title="Codes:">Healthy</span></p><p><b>patient</b>: <a href="Bundle-NgImmExampleBundle.html#urn-uuid-patient-001">Bundle: type = collection</a></p><p><b>relationship</b>: <span title="Codes:">brother</span></p><p><b>name</b>: Suleiman Ayodele Abdulraheem </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 2020-03-10</p></div>
+  </text>
+  <extension url="https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status">
+    <valueCodeableConcept>
+      <coding>
+        <code value="healthy"/>
+        <display value="Healthy"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <patient>
+    <reference value="urn:uuid:patient-001"/>
+  </patient>
+  <relationship>
+    <text value="brother"/>
+  </relationship>
+  <name>
+    <family value="Abdulraheem"/>
+    <given value="Suleiman"/>
+    <given value="Ayodele"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="2020-03-10"/>
+</RelatedPerson>

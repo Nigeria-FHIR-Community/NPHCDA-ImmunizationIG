@@ -1,0 +1,489 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/Bundle/NgImmExampleBundle> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NgImmExampleBundle"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-07-04T08:30:00+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:patient-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:patient-001> ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "match" ]
+     ] ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Patient"^^xsd:anyURI ]
+     ] ;
+     fhir:response [
+       fhir:status [ fhir:v "201 Created" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:imm-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:imm-001> ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ] ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Immunization"^^xsd:anyURI ]
+     ] ;
+     fhir:response [
+       fhir:status [ fhir:v "201 Created" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:allergy-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:allergy-001> ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ] ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "AllergyIntolerance"^^xsd:anyURI ]
+     ] ;
+     fhir:response [
+       fhir:status [ fhir:v "201 Created" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:sibling-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:sibling-001> ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ] ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "RelatedPerson"^^xsd:anyURI ]
+     ] ;
+     fhir:response [
+       fhir:status [ fhir:v "201 Created" ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:org-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:org-001> ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ] ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Organization"^^xsd:anyURI ]
+     ] ;
+     fhir:response [
+       fhir:status [ fhir:v "201 Created" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:patient-001> a fhir:Patient ;
+  fhir:id [ fhir:v "NgImmExamplePatient"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-07-04T08:30:00+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_NgImmExamplePatient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient NgImmExamplePatient</b></p><a name=\"NgImmExamplePatient\"> </a><a name=\"hcNgImmExamplePatient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-07-04 08:30:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmPatient.html\">NG-Imm Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Zainab Abdulraheem  Female, DoB: 2024-02-20 ( https://nimc.gov.ng#NIN98765432100)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">No. 10, Igalamela Compound, Ankpa Ankpa KO </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Language spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes:\">Igbo</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: \">:</td><td colspan=\"3\"><ul><li>Aisha Abdulraheem </li><li>No. 10, Igalamela Compound Ankpa KO </li><li><a href=\"tel:+2348031234567\">+2348031234567</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Age of the Immunization Client recorded in weeks\"><a href=\"StructureDefinition-age-in-weeks.html\">NG-Imm Client Age in Weeks</a></td><td colspan=\"3\">20</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Age of the Immunization Client recorded in months\"><a href=\"StructureDefinition-age-in-months.html\">NG-Imm Client Age in Months</a></td><td colspan=\"3\">5</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Age of the Immunization Client recorded in years\"><a href=\"StructureDefinition-age-in-years.html\">NG-Imm Client Age in Years</a></td><td colspan=\"3\">0</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Weight  of the Immunization Client at birth\"><a href=\"StructureDefinition-birth-weight.html\">NG-Imm Weight at birth</a></td><td colspan=\"3\">3.1</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The Pregnancy status (pregnant or not-pregnant) of the Immunization Client\"><a href=\"StructureDefinition-pregnancy-status.html\">NG-Imm Client's Pregnancy status</a></td><td colspan=\"3\"><span title=\"Codes:\">Not Pregnant</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/birth-weight"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:decimal ;
+       fhir:v 3.1
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/pregnancy-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "notpregnant" ] ;
+         fhir:display [ fhir:v "Not Pregnant" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-weeks"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 20
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-months"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 5
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-years"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nimc.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NIN98765432100" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Abdulraheem" ] ;
+     fhir:given ( [ fhir:v "Zainab" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2024-02-20"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:code [ fhir:v "amac-01" ] ;
+           fhir:display [ fhir:v "Enjema" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:line ( [ fhir:v "No. 10, Igalamela Compound, Ankpa" ] ) ;
+     fhir:city [ fhir:v "Ankpa" ] ;
+     fhir:district [ fhir:v "ko-ankpa" ] ;
+     fhir:state [ fhir:v "KO" ]
+  ] ) ; # 
+  fhir:photo ( [
+     fhir:url [ fhir:v "https://personal_server.org/photos/zainab-abdulraheem.jpg"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:text [ fhir:v "mother" ]
+     ] ) ;
+     fhir:name [
+       fhir:family [ fhir:v "Abdulraheem" ] ;
+       fhir:given ( [ fhir:v "Aisha" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+2348031234567" ]
+     ] ) ;
+     fhir:address [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:code [ fhir:v "KO0802" ] ;
+             fhir:display [ fhir:v "Enjema" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:line ( [ fhir:v "No. 10, Igalamela Compound" ] ) ;
+       fhir:city [ fhir:v "Ankpa" ] ;
+       fhir:district [ fhir:v "ko-ankpa" ] ;
+       fhir:state [ fhir:v "KO" ]
+     ]
+  ] ) ; # 
+  fhir:communication ( [
+     fhir:language [
+       fhir:coding ( [
+         fhir:code [ fhir:v "ibo" ] ;
+         fhir:display [ fhir:v "Igbo" ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:imm-001> a fhir:Immunization ;
+  fhir:id [ fhir:v "NgImmExampleImmunization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_NgImmExampleImmunization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization NgImmExampleImmunization</b></p><a name=\"NgImmExampleImmunization\"> </a><a name=\"hcNgImmExampleImmunization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmImmunization.html\">NG-Imm Immunization</a></p></div><p><b>NG-Imm Digital Signature</b>: Digitally signed by Nurse Joy (ID: PRAC001)</p><p><b>NG-Imm Session Type</b>: <span title=\"Codes:\">Outreach</span></p><p><b>NG-Imm Vaccine Contraindications</b>: <span title=\"Codes:\">Previous adverse reaction to similar vaccine</span></p><p><b>NG-Imm Immunization Contraindicated</b>: false</p><p><b>identifier</b>: <code>https://nphcda.gov.ng/vaccine/ids</code>/IMMUN123456</p><p><b>status</b>: Completed</p><p><b>statusReason</b>: <span title=\"Codes:\">Immunity</span></p><p><b>vaccineCode</b>: <span title=\"Codes:\">BCG Vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-patient-001\">Bundle: type = collection</a></p><p><b>occurrence</b>: 2025-06-20 09:30:00+0100</p><p><b>manufacturer</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-org-001\">Bundle: type = collection</a></p><p><b>lotNumber</b>: BCG2025A</p><p><b>expirationDate</b>: 2025-12-31</p><p><b>site</b>: <span title=\"Codes:\">Left Arm</span></p><p><b>route</b>: <span title=\"Codes:\">Intramuscular injection</span></p><p><b>doseQuantity</b>: 0.05 mL</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Administering Provider</span></td><td><code>urn:uuid:prac-001</code></td></tr></table><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Date</b></td><td><b>Detail</b></td><td><b>Reported</b></td></tr><tr><td style=\"display: none\">*</td><td>2025-06-21</td><td><code>urn:uuid:reaction-obs-001</code></td><td>true</td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Series</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Childhood Routine Immunization</td><td><span title=\"Codes:\">Tuberculosis</span></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Digitally signed by Nurse Joy (ID: PRAC001)"
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "outreach" ] ;
+         fhir:display [ fhir:v "Outreach" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "headache" ] ;
+         fhir:display [ fhir:v "Previous adverse reaction to similar vaccine" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v false
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nphcda.gov.ng/vaccine/ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "IMMUN123456" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:statusReason [
+     fhir:coding ( [
+       fhir:code [ fhir:v "immune" ] ;
+       fhir:display [ fhir:v "Immunity" ]
+     ] )
+  ] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:code [ fhir:v "bcg" ] ;
+       fhir:display [ fhir:v "BCG Vaccine" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-06-20T09:30:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:manufacturer [
+     fhir:reference [ fhir:v "urn:uuid:org-001" ]
+  ] ; # 
+  fhir:lotNumber [ fhir:v "BCG2025A"] ; # 
+  fhir:expirationDate [ fhir:v "2025-12-31"^^xsd:date] ; # 
+  fhir:site [
+     fhir:coding ( [
+       fhir:code [ fhir:v "LA" ] ;
+       fhir:display [ fhir:v "Left Arm" ]
+     ] )
+  ] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:code [ fhir:v "IM" ] ;
+       fhir:display [ fhir:v "Intramuscular injection" ]
+     ] )
+  ] ; # 
+  fhir:doseQuantity [
+     fhir:value [ fhir:v 0.05 ] ;
+     fhir:unit [ fhir:v "mL" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:function [
+       fhir:coding ( [
+         fhir:code [ fhir:v "administering-provider" ] ;
+         fhir:display [ fhir:v "Administering Provider" ]
+       ] )
+     ] ;
+     fhir:actor [
+       fhir:reference [ fhir:v "urn:uuid:prac-001" ]
+     ]
+  ] ) ; # 
+  fhir:reaction ( [
+     fhir:date [ fhir:v "2025-06-21"^^xsd:date ] ;
+     fhir:detail [
+       fhir:reference [ fhir:v "urn:uuid:reaction-obs-001" ]
+     ] ;
+     fhir:reported [ fhir:v true ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:series [ fhir:v "Childhood Routine Immunization" ] ;
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         fhir:code [ fhir:v "18853004" ] ;
+         fhir:display [ fhir:v "Tuberculosis" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<urn:uuid:allergy-001> a fhir:AllergyIntolerance ;
+  fhir:id [ fhir:v "NgImmExampleAllergyIntolerance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_NgImmExampleAllergyIntolerance\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance NgImmExampleAllergyIntolerance</b></p><a name=\"NgImmExampleAllergyIntolerance\"> </a><a name=\"hcNgImmExampleAllergyIntolerance\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-allergy-intolerance-profile.html\">NG-Imm AllergyIntolerance</a></p></div><p><b>NG-Imm Allergy Dose Number</b>: 1</p><p><b>NG-Imm Dose Series</b>: Childhood Routine Series</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://nphcda.gov.ng/ig/CodeSystem/clinical-status active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:\">confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Medication</p><p><b>criticality</b>: High Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91936005}\">Allergy to penicillin</span></p><p><b>patient</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-patient-001\">Bundle: type = collection</a></p><p><b>encounter</b>: <code>urn:uuid:encounter-001</code></p><p><b>onset</b>: 2024-10-05</p><p><b>recordedDate</b>: 2024-10-06</p><p><b>recorder</b>: Nurse Musa</p><p><b>lastOccurrence</b>: 2024-10-07</p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 372729009}\">Penicillin</span></td><td><span title=\"Codes:{http://snomed.info/sct 271807003}\">Rash</span></td><td>Patient developed widespread rash within 12 hours of vaccination</td><td>2024-10-05 22:00:00+0100</td><td>Moderate</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Childhood Routine Series"
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://nphcda.gov.ng/ig/CodeSystem/clinical-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "medication"] ) ; # 
+  fhir:criticality [ fhir:v "high"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:91936005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "91936005" ] ;
+       fhir:display [ fhir:v "Allergy to penicillin" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:reference [ fhir:v "urn:uuid:encounter-001" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2024-10-05"^^xsd:date
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2024-10-06"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:display [ fhir:v "Nurse Musa" ]
+  ] ; # 
+  fhir:lastOccurrence [ fhir:v "2024-10-07"^^xsd:date] ; # 
+  fhir:reaction ( [
+     fhir:substance [
+       fhir:coding ( [
+         a sct:372729009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "372729009" ] ;
+         fhir:display [ fhir:v "Penicillin" ]
+       ] )
+     ] ;
+     fhir:manifestation ( [
+       fhir:coding ( [
+         a sct:271807003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271807003" ] ;
+         fhir:display [ fhir:v "Rash" ]
+       ] )
+     ] ) ;
+     fhir:description [ fhir:v "Patient developed widespread rash within 12 hours of vaccination" ] ;
+     fhir:onset [ fhir:v "2024-10-05T22:00:00+01:00"^^xsd:dateTime ] ;
+     fhir:severity [ fhir:v "moderate" ]
+  ] ) . # 
+
+<urn:uuid:sibling-001> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "NgImmExampleSiblingRelatedPerson"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/mother-other-children"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/mother-other-children>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_NgImmExampleSiblingRelatedPerson\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson NgImmExampleSiblingRelatedPerson</b></p><a name=\"NgImmExampleSiblingRelatedPerson\"> </a><a name=\"hcNgImmExampleSiblingRelatedPerson\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mother-other-children.html\">NG-Imm RelatedPerson</a></p></div><p><b>NG-Imm Sibling's health status</b>: <span title=\"Codes:\">Healthy</span></p><p><b>patient</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-patient-001\">Bundle: type = collection</a></p><p><b>relationship</b>: <span title=\"Codes:\">brother</span></p><p><b>name</b>: Suleiman Ayodele Abdulraheem </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 2020-03-10</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "healthy" ] ;
+         fhir:display [ fhir:v "Healthy" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:text [ fhir:v "brother" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Abdulraheem" ] ;
+     fhir:given ( [ fhir:v "Suleiman" ] [ fhir:v "Ayodele" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "2020-03-10"^^xsd:date] . # 
+
+<urn:uuid:org-001> a fhir:Organization ;
+  fhir:id [ fhir:v "NgImmExampleOrganization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_NgImmExampleOrganization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization NgImmExampleOrganization</b></p><a name=\"NgImmExampleOrganization\"> </a><a name=\"hcNgImmExampleOrganization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG-Imm Organization</a></p></div><p><b>NG-Imm owner of health institution</b>: <span title=\"Codes:\">Kogi State Primary Health Care Board</span></p><p><b>identifier</b>: <code>https://herfama.kogistate.gov.ng</code>/KOHF-00123</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:\">General Hospital</span></p><p><b>name</b>: Ankpa General Hospital</p><p><b>telecom</b>: <a href=\"tel:+2348031122334\">+2348031122334</a></p><p><b>address</b>: Old Otukpo Road, Opp. Ankpa Market Ankpa KO </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/organozation-owner"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "public" ] ;
+         fhir:display [ fhir:v "Kogi State Primary Health Care Board" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://herfama.kogistate.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "KOHF-00123" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "hospital" ] ;
+       fhir:display [ fhir:v "General Hospital" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Ankpa General Hospital"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+2348031122334" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Old Otukpo Road, Opp. Ankpa Market" ] ) ;
+     fhir:city [ fhir:v "Ankpa" ] ;
+     fhir:district [ fhir:v "ko-ankpa" ] ;
+     fhir:state [ fhir:v "KO" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

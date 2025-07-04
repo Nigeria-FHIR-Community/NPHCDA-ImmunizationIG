@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="NgImmExampleOrganization"/>
+  <meta>
+    <profile value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization NgImmExampleOrganization</b></p><a name="NgImmExampleOrganization"> </a><a name="hcNgImmExampleOrganization"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG-Imm Organization</a></p></div><p><b>NG-Imm owner of health institution</b>: <span title="Codes:">Kogi State Primary Health Care Board</span></p><p><b>identifier</b>: <code>https://herfama.kogistate.gov.ng</code>/KOHF-00123</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:">General Hospital</span></p><p><b>name</b>: Ankpa General Hospital</p><p><b>telecom</b>: <a href="tel:+2348031122334">+2348031122334</a></p><p><b>address</b>: Old Otukpo Road, Opp. Ankpa Market Ankpa KO </p></div>
+  </text>
+  <extension url="https://nphcda.gov.ng/immunizationIG/StructureDefinition/organozation-owner">
+    <valueCodeableConcept>
+      <coding>
+        <code value="public"/>
+        <display value="Kogi State Primary Health Care Board"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://herfama.kogistate.gov.ng"/>
+    <value value="KOHF-00123"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <code value="hospital"/>
+      <display value="General Hospital"/>
+    </coding>
+  </type>
+  <name value="Ankpa General Hospital"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+2348031122334"/>
+  </telecom>
+  <address>
+    <line value="Old Otukpo Road, Opp. Ankpa Market"/>
+    <city value="Ankpa"/>
+    <district value="ko-ankpa"/>
+    <state value="KO"/>
+  </address>
+</Organization>

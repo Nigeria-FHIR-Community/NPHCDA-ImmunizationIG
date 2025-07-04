@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/Immunization/NgImmExampleImmunization> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NgImmExampleImmunization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization NgImmExampleImmunization</b></p><a name=\"NgImmExampleImmunization\"> </a><a name=\"hcNgImmExampleImmunization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmImmunization.html\">NG-Imm Immunization</a></p></div><p><b>NG-Imm Digital Signature</b>: Digitally signed by Nurse Joy (ID: PRAC001)</p><p><b>NG-Imm Session Type</b>: <span title=\"Codes:\">Outreach</span></p><p><b>NG-Imm Vaccine Contraindications</b>: <span title=\"Codes:\">Previous adverse reaction to similar vaccine</span></p><p><b>NG-Imm Immunization Contraindicated</b>: false</p><p><b>identifier</b>: <code>https://nphcda.gov.ng/vaccine/ids</code>/IMMUN123456</p><p><b>status</b>: Completed</p><p><b>statusReason</b>: <span title=\"Codes:\">Immunity</span></p><p><b>vaccineCode</b>: <span title=\"Codes:\">BCG Vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-patient-001\">Bundle: type = collection</a></p><p><b>occurrence</b>: 2025-06-20 09:30:00+0100</p><p><b>manufacturer</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-org-001\">Bundle: type = collection</a></p><p><b>lotNumber</b>: BCG2025A</p><p><b>expirationDate</b>: 2025-12-31</p><p><b>site</b>: <span title=\"Codes:\">Left Arm</span></p><p><b>route</b>: <span title=\"Codes:\">Intramuscular injection</span></p><p><b>doseQuantity</b>: 0.05 mL</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Administering Provider</span></td><td><code>urn:uuid:prac-001</code></td></tr></table><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Date</b></td><td><b>Detail</b></td><td><b>Reported</b></td></tr><tr><td style=\"display: none\">*</td><td>2025-06-21</td><td><code>urn:uuid:reaction-obs-001</code></td><td>true</td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Series</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Childhood Routine Immunization</td><td><span title=\"Codes:\">Tuberculosis</span></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Digitally signed by Nurse Joy (ID: PRAC001)"
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "outreach" ] ;
+         fhir:display [ fhir:v "Outreach" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "headache" ] ;
+         fhir:display [ fhir:v "Previous adverse reaction to similar vaccine" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v false
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nphcda.gov.ng/vaccine/ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "IMMUN123456" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:statusReason [
+     fhir:coding ( [
+       fhir:code [ fhir:v "immune" ] ;
+       fhir:display [ fhir:v "Immunity" ]
+     ] )
+  ] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:code [ fhir:v "bcg" ] ;
+       fhir:display [ fhir:v "BCG Vaccine" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-06-20T09:30:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:manufacturer [
+     fhir:reference [ fhir:v "urn:uuid:org-001" ]
+  ] ; # 
+  fhir:lotNumber [ fhir:v "BCG2025A"] ; # 
+  fhir:expirationDate [ fhir:v "2025-12-31"^^xsd:date] ; # 
+  fhir:site [
+     fhir:coding ( [
+       fhir:code [ fhir:v "LA" ] ;
+       fhir:display [ fhir:v "Left Arm" ]
+     ] )
+  ] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:code [ fhir:v "IM" ] ;
+       fhir:display [ fhir:v "Intramuscular injection" ]
+     ] )
+  ] ; # 
+  fhir:doseQuantity [
+     fhir:value [ fhir:v 0.05 ] ;
+     fhir:unit [ fhir:v "mL" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:function [
+       fhir:coding ( [
+         fhir:code [ fhir:v "administering-provider" ] ;
+         fhir:display [ fhir:v "Administering Provider" ]
+       ] )
+     ] ;
+     fhir:actor [
+       fhir:reference [ fhir:v "urn:uuid:prac-001" ]
+     ]
+  ] ) ; # 
+  fhir:reaction ( [
+     fhir:date [ fhir:v "2025-06-21"^^xsd:date ] ;
+     fhir:detail [
+       fhir:reference [ fhir:v "urn:uuid:reaction-obs-001" ]
+     ] ;
+     fhir:reported [ fhir:v true ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:series [ fhir:v "Childhood Routine Immunization" ] ;
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         fhir:code [ fhir:v "18853004" ] ;
+         fhir:display [ fhir:v "Tuberculosis" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

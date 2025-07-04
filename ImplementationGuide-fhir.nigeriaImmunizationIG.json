@@ -10,7 +10,7 @@
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-07-04T16:58:52+01:00",
+  "date" : "2025-07-04T18:56:28+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -823,18 +823,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/date-client-created"
-      },
-      "name" : "NG-Imm Date client record was created",
-      "description" : "Date the client record was first created",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/signature"
       },
       "name" : "NG-Imm Digital Signature",
@@ -916,6 +904,18 @@
       "name" : "NG-Imm Example MeasureReport Monthly Immunization Coverage Summary - BCG",
       "description" : "An example of a summary MeasureReport generated for BCG coverage at a facility",
       "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/measure-report-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/NgImmExampleOrganization"
+      },
+      "name" : "NG-Imm Example Organization",
+      "description" : "Represents a health facility in Kogi State providing immunization services for use in Bundle",
+      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization"
     },
     {
       "extension" : [{
@@ -1768,6 +1768,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/NgImmExampleAllergyIntolerance"
+      },
+      "name" : "NGImm Example AllergyIntolerance",
+      "description" : "Example allergy or intolerance record using use in Bundle example AllergyIntolerance profile",
+      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      }],
+      "reference" : {
+        "reference" : "Immunization/NgImmExampleImmunization"
+      },
+      "name" : "NGImm Example Immunization Record",
+      "description" : "Example Immunization record using NG-Imm Immunization profile with 90% data populated",
+      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/NgImmExamplePatient"
+      },
+      "name" : "NGImm Example Patient used in Bundle",
+      "description" : "Sample patient for use with Bunlde and resident in Kogi State",
+      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NgImmExampleSiblingRelatedPerson"
+      },
+      "name" : "NGImm Example Sibling used in bundle",
+      "description" : "Represents a sibling (mother's other child) related to the immunization client for use in Bundle",
+      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/mother-other-children"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1787,6 +1835,90 @@
       },
       "name" : "Nigeria Immunization Bundle",
       "description" : "FHIR Bundle profile for grouping Nigeria Immunization resources including Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization. Supports request/response/search metadata for interoperability.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/NgImmExampleBundle"
+      },
+      "name" : "Nigeria Immunization Example Bundle",
+      "description" : "Example bundle containing Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization with request, response, and search metadata.",
+      "exampleCanonical" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/NgImmBundleSearchByLastUpdated"
+      },
+      "name" : "Search Bundle by Last Updated Date",
+      "description" : "Retrieve bundles based on last updated timestamp",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/NgImmBundleSearchByFacilityIdentifier"
+      },
+      "name" : "Search Bundle by Organization Identifier",
+      "description" : "Retrieve bundles that reference a specific healthcare organization/facility",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/NgImmBundleSearchByBirthDate"
+      },
+      "name" : "Search Bundle by Patient BirthDate",
+      "description" : "Retrieve bundles where the Patient has a specific birth date",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/NgImmBundleSearchByPatientIdentifier"
+      },
+      "name" : "Search Bundle by Patient Identifier",
+      "description" : "Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/NgImmBundleSearchByState"
+      },
+      "name" : "Search Bundle by Patient State",
+      "description" : "Retrieve bundles where the Patient resides in a specific Nigerian State",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/NgImmBundleSearchByVaccineCode"
+      },
+      "name" : "Search Bundle by Vaccine Code",
+      "description" : "Searches bundles containing a specific vaccine code in Immunization",
       "exampleBoolean" : false
     }],
     "page" : {
@@ -1876,6 +2008,15 @@
         }],
         "nameUrl" : "search-operation.html",
         "title" : "Search and Operation",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "privacy-security.html"
+        }],
+        "nameUrl" : "privacy-security.html",
+        "title" : "Privacy and Security Considerations",
         "generation" : "markdown"
       }]
     },

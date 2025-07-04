@@ -1,11 +1,13 @@
 NigeriaimmunizationFHIRIG : Validation Results
 =========================================
 
-err = 92, warn = 451, info = 33
+err = 144, warn = 513, info = 49
 IG Publisher Version: 2.0.7 Out of date - current version is 2.0.8
-Generated Fri Jul 04 17:02:09 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.4.0 (canonical = https://nphcda.gov.ng/immunizationIG)
+Generated Fri Jul 04 18:59:43 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.4.0 (canonical = https://nphcda.gov.ng/immunizationIG)
  Build Errors : 6 / 4 / 0
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/AllergyIntolerance-FullExampleNgAllergyIntolerance : 5 / 2 / 3
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/AllergyIntolerance-NgImmExampleAllergyIntolerance : 4 / 3 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Bundle-NgImmExampleBundle : 38 / 46 / 26
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CapabilityStatement-NgImmCapabilityStatementClient : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CapabilityStatement-NgImmCapabilityStatementServer : 10 / 10 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-NGStockReportCS : 0 / 0 / 1
@@ -26,16 +28,26 @@ Generated Fri Jul 04 17:02:09 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CodeSystem-nigeria-wards : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Immunization-ExampleNgImmImmunizationCompleted : 8 / 6 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Immunization-ExampleNgImmImmunizationNotDone : 9 / 7 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Immunization-NgImmExampleImmunization : 4 / 10 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ImplementationGuide-fhir.nigeriaImmunizationIG : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Location-location-example : 2 / 1 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/MeasureReport-ExampleNgImmMeasureReport : 1 / 3 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Organization-NgImmExampleOrganization : 2 / 3 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Organization-organization-example : 2 / 3 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Patient-ExampleNgImmPatient : 14 / 2 / 11
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Patient-ExampleNgPatientAdminWard : 2 / 2 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Patient-FullExampleNgImmPatient : 16 / 3 / 13
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Patient-NgImmExamplePatient : 2 / 5 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/Practitioner-ng-practitioner-example : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/RelatedPerson-Child1 : 1 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/RelatedPerson-NgImmExampleSiblingRelatedPerson : 2 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/RelatedPerson-Sister2 : 1 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-NgImmBundleSearchByBirthDate : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-NgImmBundleSearchByFacilityIdentifier : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-NgImmBundleSearchByLastUpdated : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-NgImmBundleSearchByPatientIdentifier : 0 / 2 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-NgImmBundleSearchByState : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-NgImmBundleSearchByVaccineCode : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-SearchParameter-ngimm-birthdate : 1 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-SearchParameter-ngimm-city : 1 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/SearchParameter-SearchParameter-ngimm-createddate : 1 / 1 / 1
@@ -53,21 +65,20 @@ Generated Fri Jul 04 17:02:09 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-AdministerVaccine : 0 / 12 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-DefaulterTracking : 0 / 4 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-IMMZGGenerateReport : 0 / 2 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmBundle : 0 / 1 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmBundle : 0 / 0 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmImmunization : 0 / 2 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmPatient : 1 / 2 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmPractitioner : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-UpdateClientHistory : 0 / 78 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-age-in-months : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-age-in-weeks : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-age-in-years : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-age-in-months : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-age-in-weeks : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-age-in-years : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-allergy-intolerance-profile : 1 / 0 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-allergy-reference-dose-number : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-allergy-reference-dose-series : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-birth-weight : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-contraindicated : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-allergy-reference-dose-number : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-allergy-reference-dose-series : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-birth-weight : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-contraindicated : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-contraindications : 0 / 0 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-date-client-created : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-hiv-status : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-manage-aefi : 0 / 36 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-measure-report-profile : 0 / 0 / 1
@@ -76,14 +87,14 @@ Generated Fri Jul 04 17:02:09 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-ng-imm-encounter : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-ng-imm-organization : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-ngimm-measure : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-nigeria-administrative-ward : 0 / 4 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-nigeria-administrative-ward : 0 / 3 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-nigeria-location : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-organozation-owner : 0 / 1 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-organozation-owner : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-register-client-model : 1 / 109 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-register-facility-model : 0 / 86 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-session-type : 0 / 0 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-sibling-health-status : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-sibling-health-status : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-signature : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-clinical-status : 0 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/ValueSet-nigeria-facility-types : 0 / 1 / 1
@@ -105,12 +116,12 @@ Generated Fri Jul 04 17:02:09 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/binary-Vaccine-Stock-Report-202503 : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: Immunization-ExampleNgImmImmunizationCompleted.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/p/a at Line 192, column 880: The link 'Patient/NgImmPatient-001' for "Patient/NgImmPatient-001" cannot be resolved
-ERROR: Immunization-ExampleNgImmImmunizationCompleted.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/p/a at Line 192, column 1021: The link 'Organization/biovax-ng' for "BIOVAX Nigeria Ltd" cannot be resolved
-ERROR: Immunization-ExampleNgImmImmunizationCompleted.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/table/tr/td/a at Line 192, column 1516: The link 'Practitioner/nurse-aisha' for "Nurse Aisha Bello" cannot be resolved
-ERROR: Immunization-ExampleNgImmImmunizationNotDone.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/p/a at Line 192, column 1142: The link 'Patient/NgImmPatient-004' for "Patient/NgImmPatient-004" cannot be resolved
-ERROR: Immunization-ExampleNgImmImmunizationNotDone.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/p/a at Line 192, column 1283: The link 'Organization/gavi-vax-001' for "GAVI Partner Vax Ltd" cannot be resolved
-ERROR: Immunization-ExampleNgImmImmunizationNotDone.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/table/tr/td/a at Line 192, column 1799: The link 'Practitioner/nurse-chinedu' for "Nurse Chinedu Umeh" cannot be resolved
+ERROR: Immunization-ExampleNgImmImmunizationCompleted.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/p/a at Line 193, column 880: The link 'Patient/NgImmPatient-001' for "Patient/NgImmPatient-001" cannot be resolved
+ERROR: Immunization-ExampleNgImmImmunizationCompleted.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/p/a at Line 193, column 1021: The link 'Organization/biovax-ng' for "BIOVAX Nigeria Ltd" cannot be resolved
+ERROR: Immunization-ExampleNgImmImmunizationCompleted.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/table/tr/td/a at Line 193, column 1516: The link 'Practitioner/nurse-aisha' for "Nurse Aisha Bello" cannot be resolved
+ERROR: Immunization-ExampleNgImmImmunizationNotDone.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/p/a at Line 193, column 1142: The link 'Patient/NgImmPatient-004' for "Patient/NgImmPatient-004" cannot be resolved
+ERROR: Immunization-ExampleNgImmImmunizationNotDone.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/p/a at Line 193, column 1283: The link 'Organization/gavi-vax-001' for "GAVI Partner Vax Ltd" cannot be resolved
+ERROR: Immunization-ExampleNgImmImmunizationNotDone.html#/html/body/div/div/nav/div/div/ul/div/div/div/div/div/div/table/tr/td/a at Line 193, column 1799: The link 'Practitioner/nurse-chinedu' for "Nurse Chinedu Umeh" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -125,6 +136,115 @@ ERROR: AllergyIntolerance/FullExampleNgAllergyIntolerance: AllergyIntolerance.cl
 WARNING: AllergyIntolerance/FullExampleNgAllergyIntolerance: AllergyIntolerance.verificationStatus.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 ERROR: AllergyIntolerance/FullExampleNgAllergyIntolerance: AllergyIntolerance.verificationStatus: None of the codings provided are in the value set 'AllergyIntolerance Verification Status Codes' (http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1), and a coding from this value set is required) (codes = null#confirmed)
 ERROR: AllergyIntolerance/FullExampleNgAllergyIntolerance: AllergyIntolerance.patient: Unable to resolve resource with reference 'NgImmPatient/ExampleNgImmPatient'
+== fsh-generated/resources/AllergyIntolerance-NgImmExampleAllergyIntolerance.json ==
+INFORMATION: AllergyIntolerance/NgImmExampleAllergyIntolerance: AllergyIntolerance.extension[0].value.ofType(integer): This element does not match any known slice defined in the profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number|0.4.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: AllergyIntolerance/NgImmExampleAllergyIntolerance: AllergyIntolerance.clinicalStatus.coding[0].system: A definition for CodeSystem 'http://nphcda.gov.ng/ig/CodeSystem/clinical-status' could not be found, so the code cannot be validated
+ERROR: AllergyIntolerance/NgImmExampleAllergyIntolerance: AllergyIntolerance.clinicalStatus: None of the codings provided are in the value set 'NG-Imm Clinical Status VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status|0.4.0), and a coding from this value set is required) (codes = http://nphcda.gov.ng/ig/CodeSystem/clinical-status#active)
+WARNING: AllergyIntolerance/NgImmExampleAllergyIntolerance: AllergyIntolerance.clinicalStatus.coding[0].system: No definition could be found for URL value 'http://nphcda.gov.ng/ig/CodeSystem/clinical-status'
+WARNING: AllergyIntolerance/NgImmExampleAllergyIntolerance: AllergyIntolerance.verificationStatus.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: AllergyIntolerance/NgImmExampleAllergyIntolerance: AllergyIntolerance.verificationStatus: None of the codings provided are in the value set 'AllergyIntolerance Verification Status Codes' (http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1), and a coding from this value set is required) (codes = null#confirmed)
+ERROR: AllergyIntolerance/NgImmExampleAllergyIntolerance: AllergyIntolerance.encounter: Unable to resolve resource with reference 'urn:uuid:encounter-001'
+ERROR: AllergyIntolerance/NgImmExampleAllergyIntolerance: AllergyIntolerance.reaction[0].substance.coding[0].display: Wrong Display Name 'Penicillin' for http://snomed.info/sct#372729009. There are no valid display names found for language(s) 'en-US'. Default display is 'Acyclovir'
+== fsh-generated/resources/Bundle-NgImmExampleBundle.json ==
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[0]: This element does not match any known slice defined in the profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle|0.4.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[1]: This element does not match any known slice defined in the profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle|0.4.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[2]: This element does not match any known slice defined in the profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle|0.4.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[3]: This element does not match any known slice defined in the profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle|0.4.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[4]: This element does not match any known slice defined in the profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle|0.4.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/NgImmExampleBundle: Bundle: Slice 'Bundle.entry:patient': a matching slice is required, but not found (from https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle|0.4.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/NgImmExampleBundle: Bundle: Slice 'Bundle.entry:immunization': a matching slice is required, but not found (from https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle|0.4.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[0].fullUrl: UUIDs must be valid and lowercase (patient-001)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource/*Patient/NgImmExamplePatient*/.extension[1].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[0].resource/*Patient/NgImmExamplePatient*/.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Client Preganancy Status VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status|0.4.0), and a coding from this value set is required) (codes = null#notpregnant)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource/*Patient/NgImmExamplePatient*/.identifier[0].system: No definition could be found for URL value 'https://nimc.gov.ng'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource/*Patient/NgImmExamplePatient*/.address[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource/*Patient/NgImmExamplePatient*/.contact[0].address.extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource/*Patient/NgImmExamplePatient*/.communication[0].language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource.extension[1].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[0].resource.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Client Preganancy Status VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status|0.4.0), and a coding from this value set is required) (codes = null#notpregnant)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'https://nimc.gov.ng'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource.address[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource.contact[0].address.extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[0].resource.communication[0].language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[0].resource.communication[0].language: None of the codings provided are in the value set 'NG-Imm Languages VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-languages|0.4.0), and a coding from this value set is required) (codes = null#ibo)
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].fullUrl: UUIDs must be valid and lowercase (imm-001)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.extension[1].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Session Type VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-session-type|0.4.0), and a coding from this value set is required) (codes = null#outreach)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.extension[2].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.identifier[0].system: No definition could be found for URL value 'https://nphcda.gov.ng/vaccine/ids'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.statusReason.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.vaccineCode.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.patient: Details for urn:uuid:patient-001 matching against profile http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.manufacturer: Details for urn:uuid:org-001 matching against profile http://hl7.org/fhir/StructureDefinition/Organization|4.0.1
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.performer[0].function.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.performer[0].actor: URN reference is not locally contained within the bundle urn:uuid:prac-001
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.performer[0].actor: Unable to resolve resource with reference 'urn:uuid:prac-001'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.reaction[0].detail: URN reference is not locally contained within the bundle urn:uuid:reaction-obs-001
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.reaction[0].detail: Unable to resolve resource with reference 'urn:uuid:reaction-obs-001'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource/*Immunization/NgImmExampleImmunization*/.protocolApplied[0].targetDisease[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.extension[1].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Session Type VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-session-type|0.4.0), and a coding from this value set is required) (codes = null#outreach)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.extension[2].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.identifier[0].system: No definition could be found for URL value 'https://nphcda.gov.ng/vaccine/ids'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.statusReason.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.vaccineCode.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.vaccineCode: None of the codings provided are in the value set 'NG-Imm VaccineLibrary VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-library|0.4.0), and a coding from this value set is required) (codes = null#bcg)
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.patient: Unable to find a profile match for urn:uuid:patient-001 among choices: https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.patient: Details for urn:uuid:patient-001 matching against profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient|0.4.0
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.manufacturer: Unable to find a profile match for urn:uuid:org-001 among choices: https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.manufacturer: Details for urn:uuid:org-001 matching against profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization|0.4.0
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.performer[0].function.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.performer[0].actor: URN reference is not locally contained within the bundle urn:uuid:prac-001
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.performer[0].actor: Unable to resolve resource with reference 'urn:uuid:prac-001'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.reaction[0].detail: URN reference is not locally contained within the bundle urn:uuid:reaction-obs-001
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.reaction[0].detail: Unable to resolve resource with reference 'urn:uuid:reaction-obs-001'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.protocolApplied[0].targetDisease[0]: ValueSet 'https://www.hl7.org/fhir/R4/valueset-immunization-target-disease' not found
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[1].resource.protocolApplied[0].targetDisease[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].fullUrl: UUIDs must be valid and lowercase (allergy-001)
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.extension[0].value.ofType(integer): This element does not match any known slice defined in the profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number|0.4.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.clinicalStatus.coding[0]: A definition for CodeSystem 'http://nphcda.gov.ng/ig/CodeSystem/clinical-status' could not be found, so the code cannot be validated
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.clinicalStatus: None of the codings provided are in the value set 'AllergyIntolerance Clinical Status Codes' (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1), and a coding from this value set is required) (codes = http://nphcda.gov.ng/ig/CodeSystem/clinical-status#active)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.clinicalStatus.coding[0].system: No definition could be found for URL value 'http://nphcda.gov.ng/ig/CodeSystem/clinical-status'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.verificationStatus.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.verificationStatus: None of the codings provided are in the value set 'AllergyIntolerance Verification Status Codes' (http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1), and a coding from this value set is required) (codes = null#confirmed)
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.patient: Details for urn:uuid:patient-001 matching against profile http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.encounter: URN reference is not locally contained within the bundle urn:uuid:encounter-001
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.encounter: Unable to resolve resource with reference 'urn:uuid:encounter-001'
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource/*AllergyIntolerance/NgImmExampleAllergyIntolerance*/.reaction[0].substance.coding[0].display: Wrong Display Name 'Penicillin' for http://snomed.info/sct#372729009. There are no valid display names found for language(s) 'en-US'. Default display is 'Acyclovir'
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.extension[0].value.ofType(integer): This element does not match any known slice defined in the profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number|0.4.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.clinicalStatus.coding[0].system: A definition for CodeSystem 'http://nphcda.gov.ng/ig/CodeSystem/clinical-status' could not be found, so the code cannot be validated
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.clinicalStatus: None of the codings provided are in the value set 'NG-Imm Clinical Status VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status|0.4.0), and a coding from this value set is required) (codes = http://nphcda.gov.ng/ig/CodeSystem/clinical-status#active)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.clinicalStatus.coding[0].system: No definition could be found for URL value 'http://nphcda.gov.ng/ig/CodeSystem/clinical-status'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.verificationStatus.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.verificationStatus: None of the codings provided are in the value set 'AllergyIntolerance Verification Status Codes' (http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1), and a coding from this value set is required) (codes = null#confirmed)
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.patient: Unable to find a profile match for urn:uuid:patient-001 among choices: https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.patient: Details for urn:uuid:patient-001 matching against profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient|0.4.0
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.encounter: URN reference is not locally contained within the bundle urn:uuid:encounter-001
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.encounter: Unable to resolve resource with reference 'urn:uuid:encounter-001'
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[2].resource.reaction[0].substance.coding[0].display: Wrong Display Name 'Penicillin' for http://snomed.info/sct#372729009. There are no valid display names found for language(s) 'en-US'. Default display is 'Acyclovir'
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[3].fullUrl: UUIDs must be valid and lowercase (sibling-001)
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[3].resource/*RelatedPerson/NgImmExampleSiblingRelatedPerson*/: The extension https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status is not allowed to be used at this point (allowed = e:Patient; this element is [Bundle.entry.resource, Bundle.entry.resource/*RelatedPerson/NgImmExampleSiblingRelatedPerson*/, RelatedPerson])
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[3].resource/*RelatedPerson/NgImmExampleSiblingRelatedPerson*/.extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[3].resource/*RelatedPerson/NgImmExampleSiblingRelatedPerson*/.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Sibling Health Status VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status|0.4.0), and a coding from this value set is required) (codes = null#healthy)
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[3].resource/*RelatedPerson/NgImmExampleSiblingRelatedPerson*/.patient: Details for urn:uuid:patient-001 matching against profile http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[3].resource: The extension https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status is not allowed to be used at this point (allowed = e:Patient; this element is [Bundle.entry.resource, RelatedPerson])
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[3].resource.extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[3].resource.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Sibling Health Status VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status|0.4.0), and a coding from this value set is required) (codes = null#healthy)
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[3].resource.patient: Unable to find a profile match for urn:uuid:patient-001 among choices: https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient
+INFORMATION: Bundle/NgImmExampleBundle: Bundle.entry[3].resource.patient: Details for urn:uuid:patient-001 matching against profile https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient|0.4.0
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[4].fullUrl: UUIDs must be valid and lowercase (org-001)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[4].resource/*Organization/NgImmExampleOrganization*/.extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[4].resource/*Organization/NgImmExampleOrganization*/.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Location Owner' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner|0.4.0), and a coding from this value set is required) (codes = null#public)
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[4].resource/*Organization/NgImmExampleOrganization*/.identifier[0].system: No definition could be found for URL value 'https://herfama.kogistate.gov.ng'
+WARNING: Bundle/NgImmExampleBundle: Bundle.entry[4].resource/*Organization/NgImmExampleOrganization*/.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/NgImmExampleBundle: Bundle.entry[4].resource/*Organization/NgImmExampleOrganization*/.type[0]: None of the codings provided are in the value set 'NG-Imm HealthFacility Type VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types|0.4.0), and a coding from this value set is required) (codes = null#hospital)
+ERROR: Bundle/NgImmExampleBundle: Bundle: Constraint failed: bdl-2: 'entry.search only when a search' (defined in http://hl7.org/fhir/StructureDefinition/Bundle)
+ERROR: Bundle/NgImmExampleBundle: Bundle: Constraint failed: bdl-3: 'entry.request mandatory for batch/transaction/history, otherwise prohibited' (defined in http://hl7.org/fhir/StructureDefinition/Bundle)
+ERROR: Bundle/NgImmExampleBundle: Bundle: Constraint failed: bdl-4: 'entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited' (defined in http://hl7.org/fhir/StructureDefinition/Bundle)
 == fsh-generated/resources/CapabilityStatement-NgImmCapabilityStatementClient.json ==
 == fsh-generated/resources/CapabilityStatement-NgImmCapabilityStatementServer.json ==
 ERROR: CapabilityStatement/NgImmCapabilityStatementServer: CapabilityStatement.rest[0].resource[0].searchParam[0].definition: Canonical URLs must be absolute URLs if they are not fragment references (SearchParameter/Patient-identifier)
@@ -231,6 +351,21 @@ ERROR: Immunization/ExampleNgImmImmunizationNotDone: Immunization.performer[0].a
 ERROR: Immunization.text.div: Hyperlink 'Patient/NgImmPatient-004' at 'div/p/a' for 'Patient/NgImmPatient-004' does not resolve
 ERROR: Immunization.text.div: Hyperlink 'Organization/gavi-vax-001' at 'div/p/a' for 'GAVI Partner Vax Ltd' does not resolve
 ERROR: Immunization.text.div: Hyperlink 'Practitioner/nurse-chinedu' at 'div/table/tr/td/a' for 'Nurse Chinedu Umeh' does not resolve
+== fsh-generated/resources/Immunization-NgImmExampleImmunization.json ==
+WARNING: Immunization/NgImmExampleImmunization: Immunization.extension[1].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Immunization/NgImmExampleImmunization: Immunization.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Session Type VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-session-type|0.4.0), and a coding from this value set is required) (codes = null#outreach)
+WARNING: Immunization/NgImmExampleImmunization: Immunization.extension[2].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Immunization/NgImmExampleImmunization: Immunization.identifier[0].system: No definition could be found for URL value 'https://nphcda.gov.ng/vaccine/ids'
+WARNING: Immunization/NgImmExampleImmunization: Immunization.statusReason.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Immunization/NgImmExampleImmunization: Immunization.vaccineCode.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Immunization/NgImmExampleImmunization: Immunization.vaccineCode: None of the codings provided are in the value set 'NG-Imm VaccineLibrary VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-library|0.4.0), and a coding from this value set is required) (codes = null#bcg)
+WARNING: Immunization/NgImmExampleImmunization: Immunization.site.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Immunization/NgImmExampleImmunization: Immunization.route.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Immunization/NgImmExampleImmunization: Immunization.performer[0].function.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Immunization/NgImmExampleImmunization: Immunization.performer[0].actor: Unable to resolve resource with reference 'urn:uuid:prac-001'
+ERROR: Immunization/NgImmExampleImmunization: Immunization.reaction[0].detail: Unable to resolve resource with reference 'urn:uuid:reaction-obs-001'
+WARNING: Immunization/NgImmExampleImmunization: Immunization.protocolApplied[0].targetDisease[0]: ValueSet 'https://www.hl7.org/fhir/R4/valueset-immunization-target-disease' not found
+WARNING: Immunization/NgImmExampleImmunization: Immunization.protocolApplied[0].targetDisease[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ImplementationGuide-fhir.nigeriaImmunizationIG.json ==
 WARNING: ImplementationGuide/fhir.nigeriaImmunizationIG: ImplementationGuide.definition.resource[1].name: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
 == fsh-generated/resources/Location-location-example.json ==
@@ -243,6 +378,12 @@ WARNING: MeasureReport/ExampleNgImmMeasureReport: MeasureReport.identifier[0].sy
 WARNING: MeasureReport/ExampleNgImmMeasureReport: MeasureReport.measure: A definition could not be found for Canonical URL 'https://nphcda.gov.ng/report-ids/4565'
 ERROR: MeasureReport/ExampleNgImmMeasureReport: MeasureReport.reporter: Unable to resolve resource with reference 'NgImmPractitioner/nurse-ade'
 WARNING: MeasureReport/ExampleNgImmMeasureReport: MeasureReport: The Measure 'https://nphcda.gov.ng/report-ids/4565' could not be resolved, so no validation can be performed against the Measure
+== fsh-generated/resources/Organization-NgImmExampleOrganization.json ==
+WARNING: Organization/NgImmExampleOrganization: Organization.extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Organization/NgImmExampleOrganization: Organization.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Location Owner' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner|0.4.0), and a coding from this value set is required) (codes = null#public)
+WARNING: Organization/NgImmExampleOrganization: Organization.identifier[0].system: No definition could be found for URL value 'https://herfama.kogistate.gov.ng'
+WARNING: Organization/NgImmExampleOrganization: Organization.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Organization/NgImmExampleOrganization: Organization.type[0]: None of the codings provided are in the value set 'NG-Imm HealthFacility Type VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types|0.4.0), and a coding from this value set is required) (codes = null#hospital)
 == fsh-generated/resources/Organization-organization-example.json ==
 WARNING: Organization/organization-example: Organization.identifier[0].system: No definition could be found for URL value 'https://hfr.gov.ng/facility-ids'
 WARNING: Organization/organization-example: Organization.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -314,12 +455,37 @@ ERROR: Patient/FullExampleNgImmPatient: Patient.address[0].district: The value p
 ERROR: Patient/FullExampleNgImmPatient: Patient.address[0].state: The value provided ('Bauchi') was not found in the value set 'NG-Imm States VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states|0.4.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'Bauchi' in the ValueSet 'https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states|0.4.0'; The provided code '#Bauchi' was not found in the value set 'https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states|0.4.0')
 ERROR: Patient/FullExampleNgImmPatient: Patient.contact[0].address.district: The value provided ('Tudun Wada') was not found in the value set 'NG-Imm LGAs VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas|0.4.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'Tudun Wada' in the ValueSet 'https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas|0.4.0'; The provided code '#Tudun Wada' was not found in the value set 'https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-lgas|0.4.0')
 ERROR: Patient/FullExampleNgImmPatient: Patient.contact[0].address.state: The value provided ('Bauchi') was not found in the value set 'NG-Imm States VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states|0.4.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'Bauchi' in the ValueSet 'https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states|0.4.0'; The provided code '#Bauchi' was not found in the value set 'https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-states|0.4.0')
+== fsh-generated/resources/Patient-NgImmExamplePatient.json ==
+WARNING: Patient/NgImmExamplePatient: Patient.extension[1].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Patient/NgImmExamplePatient: Patient.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Client Preganancy Status VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-pregnancy-status|0.4.0), and a coding from this value set is required) (codes = null#notpregnant)
+WARNING: Patient/NgImmExamplePatient: Patient.identifier[0].system: No definition could be found for URL value 'https://nimc.gov.ng'
+WARNING: Patient/NgImmExamplePatient: Patient.address[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Patient/NgImmExamplePatient: Patient.contact[0].address.extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Patient/NgImmExamplePatient: Patient.communication[0].language.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Patient/NgImmExamplePatient: Patient.communication[0].language: None of the codings provided are in the value set 'NG-Imm Languages VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-languages|0.4.0), and a coding from this value set is required) (codes = null#ibo)
 == fsh-generated/resources/Practitioner-ng-practitioner-example.json ==
 WARNING: Practitioner/ng-practitioner-example: Practitioner.identifier[0].system: No definition could be found for URL value 'http://nursing-midwifery-council/'
 == fsh-generated/resources/RelatedPerson-Child1.json ==
 ERROR: RelatedPerson/Child1: RelatedPerson.patient: Unable to resolve resource with reference 'NgImmPatient/ExampleNgImmPatient'
+== fsh-generated/resources/RelatedPerson-NgImmExampleSiblingRelatedPerson.json ==
+ERROR: RelatedPerson/NgImmExampleSiblingRelatedPerson: RelatedPerson: The extension https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status is not allowed to be used at this point (allowed = e:Patient; this element is [RelatedPerson])
+WARNING: RelatedPerson/NgImmExampleSiblingRelatedPerson: RelatedPerson.extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: RelatedPerson/NgImmExampleSiblingRelatedPerson: RelatedPerson.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'NG-Imm Sibling Health Status VS' (https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status|0.4.0), and a coding from this value set is required) (codes = null#healthy)
 == fsh-generated/resources/RelatedPerson-Sister2.json ==
 ERROR: RelatedPerson/Sister2: RelatedPerson.patient: Unable to resolve resource with reference 'NgImmPatient/ExampleNgImmPatient'
+== fsh-generated/resources/SearchParameter-NgImmBundleSearchByBirthDate.json ==
+WARNING: SearchParameter/NgImmBundleSearchByBirthDate: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== fsh-generated/resources/SearchParameter-NgImmBundleSearchByFacilityIdentifier.json ==
+WARNING: SearchParameter/NgImmBundleSearchByFacilityIdentifier: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== fsh-generated/resources/SearchParameter-NgImmBundleSearchByLastUpdated.json ==
+WARNING: SearchParameter/NgImmBundleSearchByLastUpdated: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== fsh-generated/resources/SearchParameter-NgImmBundleSearchByPatientIdentifier.json ==
+WARNING: SearchParameter/NgImmBundleSearchByPatientIdentifier: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: SearchParameter/NgImmBundleSearchByPatientIdentifier: SearchParameter: The Search Parameter code includes 'patient.identifier' which has special meaning in the RESTful API, and so this will be a problem
+== fsh-generated/resources/SearchParameter-NgImmBundleSearchByState.json ==
+WARNING: SearchParameter/NgImmBundleSearchByState: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== fsh-generated/resources/SearchParameter-NgImmBundleSearchByVaccineCode.json ==
+WARNING: SearchParameter/NgImmBundleSearchByVaccineCode: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/SearchParameter-SearchParameter-ngimm-birthdate.json ==
 WARNING: SearchParameter/SearchParameter-ngimm-birthdate: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 ERROR: SearchParameter/SearchParameter-ngimm-birthdate: SearchParameter.expression: Error in search expression 'Patient.birthdate': Error evaluating FHIRPath expression: The name 'birthdate' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Patient] (@char 9)
@@ -380,7 +546,6 @@ WARNING: StructureDefinition/IMMZGGenerateReport: StructureDefinition.snapshot.e
 WARNING: StructureDefinition/IMMZGGenerateReport: StructureDefinition.differential.element[2].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-NgImmBundle.json ==
 INFORMATION: StructureDefinition/NgImmBundle: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-NgImmImmunization.json ==
 WARNING: StructureDefinition/NgImmImmunization: StructureDefinition.snapshot.element[65].binding.valueSet: A definition could not be found for Canonical URL 'https://www.hl7.org/fhir/R4/valueset-immunization-target-disease'
 WARNING: StructureDefinition/NgImmImmunization: StructureDefinition.differential.element[23].binding.valueSet: A definition could not be found for Canonical URL 'https://www.hl7.org/fhir/R4/valueset-immunization-target-disease'
@@ -469,24 +634,15 @@ WARNING: StructureDefinition/UpdateClientHistory: StructureDefinition.differenti
 WARNING: StructureDefinition/UpdateClientHistory: StructureDefinition.differential.element[39].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/UpdateClientHistory: StructureDefinition.differential.element[40].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-age-in-months.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-months'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-age-in-weeks.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-weeks'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-age-in-years.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-years'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-allergy-intolerance-profile.json ==
 ERROR: NG-Imm AllergyIntolerance.AllergyIntolerance.clinicalStatus: Binding https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status is not a subset of binding http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1 because The codes 'recovered,inactive,recovered-with-sequelae,death,active,resolved' are not in the base valueset
 == fsh-generated/resources/StructureDefinition-allergy-reference-dose-number.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-number'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-allergy-reference-dose-series.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-reference-dose-series'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-birth-weight.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/birth-weight'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-contraindicated.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-contraindications.json ==
-== fsh-generated/resources/StructureDefinition-date-client-created.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-hiv-status.json ==
 WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/hiv-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-manage-aefi.json ==
@@ -540,13 +696,10 @@ WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/S
 WARNING: StructureDefinition/nigeria-administrative-ward: StructureDefinition.title: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
 WARNING: StructureDefinition/nigeria-administrative-ward: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
 WARNING: StructureDefinition/nigeria-administrative-ward: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-administrative-ward'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-nigeria-location.json ==
 WARNING: StructureDefinition/nigeria-location: StructureDefinition.snapshot.element[21].short: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
 == fsh-generated/resources/StructureDefinition-organozation-owner.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/organozation-owner'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-pregnancy-status.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/pregnancy-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-register-client-model.json ==
 ERROR: RegisterClientModel.register-client-model.contact.relationship.text: Element register-client-model.contact.relationship.text: derived max (*) cannot be greater than the base max (1)
 WARNING: StructureDefinition/register-client-model: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
@@ -747,7 +900,6 @@ WARNING: StructureDefinition/register-facility-model: StructureDefinition.differ
 WARNING: StructureDefinition/register-facility-model: StructureDefinition.differential.element[28]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 == fsh-generated/resources/StructureDefinition-session-type.json ==
 == fsh-generated/resources/StructureDefinition-sibling-health-status.json ==
-WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/sibling-health-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-signature.json ==
 == fsh-generated/resources/ValueSet-nigeria-clinical-status.json ==
 WARNING: ValueSet/nigeria-clinical-status: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

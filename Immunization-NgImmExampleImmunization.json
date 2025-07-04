@@ -1,0 +1,107 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "NgImmExampleImmunization",
+  "meta" : {
+    "profile" : ["https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization NgImmExampleImmunization</b></p><a name=\"NgImmExampleImmunization\"> </a><a name=\"hcNgImmExampleImmunization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgImmImmunization.html\">NG-Imm Immunization</a></p></div><p><b>NG-Imm Digital Signature</b>: Digitally signed by Nurse Joy (ID: PRAC001)</p><p><b>NG-Imm Session Type</b>: <span title=\"Codes:\">Outreach</span></p><p><b>NG-Imm Vaccine Contraindications</b>: <span title=\"Codes:\">Previous adverse reaction to similar vaccine</span></p><p><b>NG-Imm Immunization Contraindicated</b>: false</p><p><b>identifier</b>: <code>https://nphcda.gov.ng/vaccine/ids</code>/IMMUN123456</p><p><b>status</b>: Completed</p><p><b>statusReason</b>: <span title=\"Codes:\">Immunity</span></p><p><b>vaccineCode</b>: <span title=\"Codes:\">BCG Vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-patient-001\">Bundle: type = collection</a></p><p><b>occurrence</b>: 2025-06-20 09:30:00+0100</p><p><b>manufacturer</b>: <a href=\"Bundle-NgImmExampleBundle.html#urn-uuid-org-001\">Bundle: type = collection</a></p><p><b>lotNumber</b>: BCG2025A</p><p><b>expirationDate</b>: 2025-12-31</p><p><b>site</b>: <span title=\"Codes:\">Left Arm</span></p><p><b>route</b>: <span title=\"Codes:\">Intramuscular injection</span></p><p><b>doseQuantity</b>: 0.05 mL</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Administering Provider</span></td><td><code>urn:uuid:prac-001</code></td></tr></table><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Date</b></td><td><b>Detail</b></td><td><b>Reported</b></td></tr><tr><td style=\"display: none\">*</td><td>2025-06-21</td><td><code>urn:uuid:reaction-obs-001</code></td><td>true</td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Series</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Childhood Routine Immunization</td><td><span title=\"Codes:\">Tuberculosis</span></td><td>1</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature",
+    "valueString" : "Digitally signed by Nurse Joy (ID: PRAC001)"
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/session-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "outreach",
+        "display" : "Outreach"
+      }]
+    }
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "headache",
+        "display" : "Previous adverse reaction to similar vaccine"
+      }]
+    }
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindicated",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "system" : "https://nphcda.gov.ng/vaccine/ids",
+    "value" : "IMMUN123456"
+  }],
+  "status" : "completed",
+  "statusReason" : {
+    "coding" : [{
+      "code" : "immune",
+      "display" : "Immunity"
+    }]
+  },
+  "vaccineCode" : {
+    "coding" : [{
+      "code" : "bcg",
+      "display" : "BCG Vaccine"
+    }]
+  },
+  "patient" : {
+    "reference" : "urn:uuid:patient-001"
+  },
+  "occurrenceDateTime" : "2025-06-20T09:30:00+01:00",
+  "manufacturer" : {
+    "reference" : "urn:uuid:org-001"
+  },
+  "lotNumber" : "BCG2025A",
+  "expirationDate" : "2025-12-31",
+  "site" : {
+    "coding" : [{
+      "code" : "LA",
+      "display" : "Left Arm"
+    }]
+  },
+  "route" : {
+    "coding" : [{
+      "code" : "IM",
+      "display" : "Intramuscular injection"
+    }]
+  },
+  "doseQuantity" : {
+    "value" : 0.05,
+    "unit" : "mL"
+  },
+  "performer" : [{
+    "function" : {
+      "coding" : [{
+        "code" : "administering-provider",
+        "display" : "Administering Provider"
+      }]
+    },
+    "actor" : {
+      "reference" : "urn:uuid:prac-001"
+    }
+  }],
+  "reaction" : [{
+    "date" : "2025-06-21",
+    "detail" : {
+      "reference" : "urn:uuid:reaction-obs-001"
+    },
+    "reported" : true
+  }],
+  "protocolApplied" : [{
+    "series" : "Childhood Routine Immunization",
+    "targetDisease" : [{
+      "coding" : [{
+        "code" : "18853004",
+        "display" : "Tuberculosis"
+      }]
+    }],
+    "doseNumberPositiveInt" : 1
+  }]
+}
