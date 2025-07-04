@@ -215,8 +215,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender",
@@ -230,8 +230,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-hiv-status",
@@ -273,9 +273,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
@@ -317,8 +317,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-session-type",
@@ -361,9 +361,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-contraindication",

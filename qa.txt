@@ -1,9 +1,9 @@
 NigeriaimmunizationFHIRIG : Validation Results
 =========================================
 
-err = 92, warn = 450, info = 33
+err = 92, warn = 451, info = 33
 IG Publisher Version: 2.0.7 Out of date - current version is 2.0.8
-Generated Fri Jul 04 07:53:35 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.4.0 (canonical = https://nphcda.gov.ng/immunizationIG)
+Generated Fri Jul 04 17:02:09 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.4.0 (canonical = https://nphcda.gov.ng/immunizationIG)
  Build Errors : 6 / 4 / 0
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/AllergyIntolerance-FullExampleNgAllergyIntolerance : 5 / 2 / 3
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/CapabilityStatement-NgImmCapabilityStatementClient : 0 / 0 / 1
@@ -53,7 +53,8 @@ Generated Fri Jul 04 07:53:35 WAT 2025. FHIR version 4.0.1 for fhir.nigeriaImmun
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-AdministerVaccine : 0 / 12 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-DefaulterTracking : 0 / 4 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-IMMZGGenerateReport : 0 / 2 / 1
- /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmImmunization : 0 / 2 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmBundle : 0 / 1 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmImmunization : 0 / 2 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmPatient : 1 / 2 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-NgImmPractitioner : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NPHCDA/ImmunizationIG/fsh-generated/resources/StructureDefinition-UpdateClientHistory : 0 / 78 / 1
@@ -377,14 +378,16 @@ WARNING: StructureDefinition/DefaulterTracking: StructureDefinition.differential
 == fsh-generated/resources/StructureDefinition-IMMZGGenerateReport.json ==
 WARNING: StructureDefinition/IMMZGGenerateReport: StructureDefinition.snapshot.element[2].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/IMMZGGenerateReport: StructureDefinition.differential.element[2].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-NgImmBundle.json ==
+INFORMATION: StructureDefinition/NgImmBundle: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+WARNING: StructureDefinition.where(url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-NgImmImmunization.json ==
-INFORMATION: StructureDefinition/NgImmImmunization: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 WARNING: StructureDefinition/NgImmImmunization: StructureDefinition.snapshot.element[65].binding.valueSet: A definition could not be found for Canonical URL 'https://www.hl7.org/fhir/R4/valueset-immunization-target-disease'
-WARNING: StructureDefinition/NgImmImmunization: StructureDefinition.differential.element[24].binding.valueSet: A definition could not be found for Canonical URL 'https://www.hl7.org/fhir/R4/valueset-immunization-target-disease'
+WARNING: StructureDefinition/NgImmImmunization: StructureDefinition.differential.element[23].binding.valueSet: A definition could not be found for Canonical URL 'https://www.hl7.org/fhir/R4/valueset-immunization-target-disease'
 == fsh-generated/resources/StructureDefinition-NgImmPatient.json ==
 ERROR: NG-Imm Patient.Patient.gender: Binding https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender is not a subset of binding http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 because The codes 'female,male' are not in the base valueset
-WARNING: StructureDefinition/NgImmPatient: StructureDefinition.snapshot.element[44].short: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
-WARNING: StructureDefinition/NgImmPatient: StructureDefinition.snapshot.element[88].short: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
+WARNING: StructureDefinition/NgImmPatient: StructureDefinition.snapshot.element[51].short: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
+WARNING: StructureDefinition/NgImmPatient: StructureDefinition.snapshot.element[95].short: value should not start or finish with whitespace 'NG-Imm Administrative Wards '
 == fsh-generated/resources/StructureDefinition-NgImmPractitioner.json ==
 == fsh-generated/resources/StructureDefinition-UpdateClientHistory.json ==
 WARNING: StructureDefinition/UpdateClientHistory: StructureDefinition.snapshot.element[2].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided

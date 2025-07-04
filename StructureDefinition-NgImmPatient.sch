@@ -18,9 +18,18 @@
       <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-weeks']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-weeks': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-months']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-months': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-years']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/age-in-years': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created']) &lt;= 1">extension with URL = 'https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:modifierExtension) &lt;= 0">modifierExtension: maximum cardinality of 'modifierExtension' is 0</sch:assert>
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Patient/f:meta</sch:title>
+    <sch:rule context="f:Patient/f:meta">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:versionId) &lt;= 1">versionId: maximum cardinality of 'versionId' is 1</sch:assert>
+      <sch:assert test="count(f:lastUpdated) &gt;= 1">lastUpdated: minimum cardinality of 'lastUpdated' is 1</sch:assert>
+      <sch:assert test="count(f:lastUpdated) &lt;= 1">lastUpdated: maximum cardinality of 'lastUpdated' is 1</sch:assert>
+      <sch:assert test="count(f:source) &lt;= 1">source: maximum cardinality of 'source' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

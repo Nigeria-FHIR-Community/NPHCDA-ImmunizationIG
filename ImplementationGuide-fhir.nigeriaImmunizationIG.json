@@ -10,7 +10,7 @@
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-07-04T07:50:29+01:00",
+  "date" : "2025-07-04T16:58:52+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -1775,6 +1775,18 @@
       },
       "name" : "NG‑Imm Languages in Nigeria CS",
       "description" : "This CodeSystem defines codes for major languages spoken across Nigeria.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NgImmBundle"
+      },
+      "name" : "Nigeria Immunization Bundle",
+      "description" : "FHIR Bundle profile for grouping Nigeria Immunization resources including Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization. Supports request/response/search metadata for interoperability.",
       "exampleBoolean" : false
     }],
     "page" : {

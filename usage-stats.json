@@ -225,6 +225,12 @@
     }
   ],
   "profiles": {
+    "Bundle": [
+      {
+        "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle",
+        "title": "Nigeria Immunization Bundle"
+      }
+    ],
     "Immunization": [
       {
         "url": "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization",
@@ -383,9 +389,6 @@
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/contraindications": [
       "Immunization"
-    ],
-    "https://nphcda.gov.ng/immunizationIG/StructureDefinition/date-client-created": [
-      "Patient"
     ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date": [
       "Immunization.protocolApplied"

@@ -250,6 +250,13 @@
     "name" : "IMMZHGenerateReport"
   },
   {
+    "id" : "NgImmBundle",
+    "type" : "StructureDefinition",
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle",
+    "version" : "0.4.0",
+    "name" : "NgImmBundle"
+  },
+  {
     "id" : "NgImmImmunization",
     "type" : "StructureDefinition",
     "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization",
