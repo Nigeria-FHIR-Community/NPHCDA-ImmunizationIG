@@ -168,3 +168,84 @@ Usage: #definition
 * expression = "Immunization.date"
 * description = "Search Immunization records by date of vaccination"
 
+
+Instance: NgImmBundleSearchByBirthDate
+InstanceOf: SearchParameter
+Title: "Search Bundle by Patient BirthDate"
+Description: "Retrieve bundles where the Patient has a specific birth date"
+Usage: #definition
+* name = "searchBundleByPatientBirthDate"
+* status = #active
+* description = "Search for a bundle based on Patient.birthDate"
+* code = #patient-birthdate
+* base = #Bundle
+* type = #date
+* expression = "Bundle.entry.resource.ofType(Patient).birthDate"
+
+Instance: NgImmBundleSearchByPatientIdentifier
+InstanceOf: SearchParameter
+Title: "Search Bundle by Patient Identifier"
+Description: "Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)"
+Usage: #definition
+* name = "searchBundleByPatientIdentifier"
+* status = #active
+* description = "Search for a bundle containing a patient with a specific identifier"
+* code = #patient.identifier
+* base = #Bundle
+* type = #token
+* expression = "Bundle.entry.resource.ofType(Patient).identifier"
+* xpathUsage = #normal
+
+
+Instance: NgImmBundleSearchByVaccineCode
+InstanceOf: SearchParameter
+Title: "Search Bundle by Vaccine Code"
+Description: "Searches bundles containing a specific vaccine code in Immunization"
+Usage: #definition
+* name = "searchBundleByVaccineCode"
+* status = #active
+* description = "Search for a bundle containing Immunization resource with specified vaccineCode"
+* code = #vaccine-code
+* base = #Bundle
+* type = #token
+* expression = "Bundle.entry.resource.ofType(Immunization).vaccineCode"
+
+Instance: NgImmBundleSearchByState
+InstanceOf: SearchParameter
+Title: "Search Bundle by Patient State"
+Description: "Retrieve bundles where the Patient resides in a specific Nigerian State"
+Usage: #definition
+* name = "searchBundleByPatientState"
+* status = #active
+* description = "Search for a bundle based on Patient address.state"
+* code = #patient-address-state
+* base = #Bundle
+* type = #token
+* expression = "Bundle.entry.resource.ofType(Patient).address.state"
+
+Instance: NgImmBundleSearchByFacilityIdentifier
+InstanceOf: SearchParameter
+Title: "Search Bundle by Organization Identifier"
+Description: "Retrieve bundles that reference a specific healthcare organization/facility"
+Usage: #definition
+* name = "searchBundleByOrganizationIdentifier"
+* status = #active
+* description = "Search for a bundle based on Organization.identifier"
+* code = #organization-identifier
+* base = #Bundle
+* type = #token
+* expression = "Bundle.entry.resource.ofType(Organization).identifier"
+
+
+Instance: NgImmBundleSearchByLastUpdated
+InstanceOf: SearchParameter
+Title: "Search Bundle by Last Updated Date"
+Description: "Retrieve bundles based on last updated timestamp"
+Usage: #definition
+* name = "searchBundleByLastUpdated"
+* status = #active
+* description = "Search for bundles that were last updated on or after a given date"
+* code = #_lastUpdated
+* base = #Bundle
+* type = #date
+* expression = "Bundle.meta.lastUpdated"

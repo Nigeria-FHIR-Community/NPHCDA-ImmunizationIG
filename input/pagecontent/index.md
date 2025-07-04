@@ -14,9 +14,9 @@
     <tbody>
         <tr>
             <td>National Primary Health Care Development Agency</td>
-            <td>23rd June 2025</td>
-            <td>Fourth Draft</td>
-            <td>0.4.0</td>
+            <td>4th July 2025</td>
+            <td>Fifth Draft</td>
+            <td>0.5.0</td>
         </tr>
     </tbody>
 </table>

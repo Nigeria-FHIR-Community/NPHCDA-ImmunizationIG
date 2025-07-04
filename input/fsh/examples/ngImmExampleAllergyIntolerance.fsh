@@ -1,7 +1,9 @@
+Alias: $sct = http://snomed.info/sct
+
 Instance: NgImmExampleAllergyIntolerance
 InstanceOf: NgImmAllergyIntolerance
-Title: "Example Nigeria Immunization AllergyIntolerance"
-Description: "Example allergy or intolerance record using NG-Imm AllergyIntolerance profile"
+Title: "NGImm Example AllergyIntolerance"
+Description: "Example allergy or intolerance record using use in Bundle example AllergyIntolerance profile"
 Usage: #example
 
 * clinicalStatus.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/clinical-status"

@@ -29,7 +29,7 @@ Usage: #example
 * entry[2].response.status = "201 Created"
 
 * entry[3].fullUrl = "urn:uuid:sibling-001"
-* entry[3].resource = NgImmExampleSibling
+* entry[3].resource = NgImmExampleSiblingRelatedPerson
 * entry[3].search.mode = #include
 * entry[3].request.method = #POST
 * entry[3].request.url = "RelatedPerson"

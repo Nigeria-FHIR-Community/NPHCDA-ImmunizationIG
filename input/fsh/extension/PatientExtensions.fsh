@@ -71,11 +71,11 @@ Description: "Age of the Immunization Client recorded in years"
 * valueInteger ^short = "Age of the Immunization Client recorded in years"
 
 
-Extension: NGCreatedDate
+/* Extension: NGCreatedDate
 Id:  date-client-created
 Title:  "NG-Imm Date client record was created"
 Description: "Date the client record was first created"
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
 * value[x] only dateTime
-* valueDateTime ^short = "Date the client record was first created"
+* valueDateTime ^short = "Date the client record was first created" */
