@@ -13,12 +13,12 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * verificationStatus ^short = "Assertion about certainty associated with a propensity or potential risk of a reaction to the identified substance"
 * type from http://hl7.org/fhir/ValueSet/allergy-intolerance-type (required)
 * type ^short = "Identification of the underlying physiological mechanism for a Reaction Risk"
-* category from http://hl7.org/fhir/ValueSet/allergy-intolerance-category
+* category from http://hl7.org/fhir/ValueSet/allergy-intolerance-category (required)
 * category ^short = "Category of an identified substance associated with allergies or intolerances"
-* criticality from http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality
+* criticality from http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality (required)
 * criticality ^short = "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance"
 
-* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code
+* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code (preferred)
 * patient only Reference(NgImmPatient)
 * encounter only Reference(NgImmEncounter)
 * onset[x] 0..1
@@ -30,7 +30,7 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * reaction 0..*
 
 //* reaction.substance 0..1
-* reaction.manifestation from http://hl7.org/fhir/ValueSet/clinical-findings (required)
+* reaction.manifestation from http://hl7.org/fhir/ValueSet/clinical-findings (extensible)
 //* reaction.manifestation.text 1..1 MS
 * reaction.manifestation ^short = "Clinical symptoms/signs associated with the Event"
 * reaction.description 0..1 MS
@@ -39,7 +39,7 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * reaction.onset ^short = "Date/time when manifestations showed"
 * reaction.severity from http://hl7.org/fhir/ValueSet/reaction-event-severity (required)
 * reaction.severity ^short = "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations"
-* reaction.substance from http://hl7.org/fhir/ValueSet/substance-code
+* reaction.substance from http://hl7.org/fhir/ValueSet/substance-code (preferred)
 
 // General Notes excluded
 * reaction.note 0..0

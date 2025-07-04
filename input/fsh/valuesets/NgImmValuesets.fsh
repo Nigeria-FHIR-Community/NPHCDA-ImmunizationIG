@@ -4,7 +4,7 @@ Id: nigeria-gender
 Title: "NG-Imm Gender or Sex VS"
 //Description: "The administrative gender of a person."
 Description: "Subset of HL7 administrative-gender limited to 'male' and 'female'."
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"
 * include codes from system NGGenderCS 
 
 ValueSet: NGWardsVS
@@ -12,7 +12,7 @@ Id: nigeria-wards
 Title: "NG-Imm Wards VS"
 Description: "The administrative Ward (within an LGA) where a person or a facility is."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-wards"
 * include codes from system NGWardsCS
 
 ValueSet: NGLGAsVS
@@ -20,7 +20,7 @@ Id: nigeria-lgas
 Title: "NG-Imm LGAs VS"
 Description: "The administrative Local Government Areas where a person or a facility is."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-lgas"
 * include codes from system NGLGAsCS
 
 ValueSet: NGStatesVS
@@ -28,7 +28,7 @@ Id: nigeria-states
 Title: "NG-Imm States VS"
 Description: "The state where a person or a facility is."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states"
 * include codes from system NGStatesCS
 
 ValueSet: NGLanguagesVS
@@ -36,7 +36,7 @@ Id: nigeria-languages
 Title: "NG-Imm Languages VS"
 Description: "The Patient's preferred language for communication."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages"
 * include codes from system NGLanguagesCS
 
 
@@ -45,7 +45,7 @@ Id: nigeria-relationship
 Title: "NG-Imm Relationships VS"
 Description: "list of persons related to a patient, but who is not a direct target of care."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"
 * include codes from system NGRelationshipsCS
 
 ValueSet: NGFacilityTypeVS
@@ -61,7 +61,7 @@ Id: nigeria-hiv-status
 Title: "NG-Imm Client HIV Status VS"
 Description: "Client HIV Status"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-hiv-status"
 * include codes from system NGHivStatusCS
 
 ValueSet: NGPregnancyStatusVS
@@ -69,7 +69,7 @@ Id: nigeria-pregnancy-status
 Title: "NG-Imm Client Preganancy Status VS"
 Description: "Client Pregnancy Status"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status"
 * include codes from system NGPregnancyStatusCS
 
 
@@ -79,7 +79,7 @@ Id: nigeria-sibling-health-status
 Title: "NG-Imm Sibling Health Status VS"
 Description: "This CodeSystem defines the health of the client's sibling"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status"
 * include codes from system NGSiblingHealthStatusCS
 
 //Immunization Valuesets
@@ -88,7 +88,7 @@ Id: nigeria-session-type
 Title: "NG-Imm Session Type VS"
 Description: "Type of session for immunization. Could be in a fixed facility, outreach or mobile."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-session-type"
 * include codes from system NGImmunizationSessionTypeCS
 
 ValueSet: NGContraindicationVS
@@ -96,7 +96,7 @@ Id: nigeria-vaccine-contraindication
 Title: "NG-Imm Vaccine Contraindication VS"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication"
 * include codes from system NGImmunizationContraindicationCS
 
 ValueSet: NGVaccineLibraryVS
@@ -104,7 +104,7 @@ Id: nigeria-vaccine-library
 Title: "NG-Imm VaccineLibrary VS"
 Description: "A curated list of vaccines recognized under Nigeria's national immunization program"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"
 * include codes from system NGVaccineLibraryCS
 
 /* ValueSet: NGImmunizationSiteVS

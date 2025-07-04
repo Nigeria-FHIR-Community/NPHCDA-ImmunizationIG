@@ -1,5 +1,3 @@
-Alias: V3ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
-
 Profile: NgImmEncounter
 Parent: Encounter
 Title: "NG-Imm Encounter"
@@ -9,7 +7,7 @@ Description: "A profile for encounters in the Nigerian  Immunization guide, used
 * ^status = #active
 * ^publisher = "National Primary Healthcare Development Agency"
 * status ^short = "Status of the immunization encounter"
-* class ^short = "Type of encounter (e.g., ambulatory, home visit)"
+* class ^short = "Type of encounter (e.g. Facility encounter, Outreach, or Home visit)"
 * class from NGSessionTypeVS (required)
 * subject 1..1 MS
 * subject only Reference(NgImmPatient)

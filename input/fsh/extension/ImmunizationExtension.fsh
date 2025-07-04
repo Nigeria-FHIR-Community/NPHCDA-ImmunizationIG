@@ -47,7 +47,7 @@ Description: "Indicates specific situations in which it is not recommended to ad
 * ^context[0].type = #element
 * ^context[0].expression = "Immunization"
 * value[x] only CodeableConcept
-* valueCodeableConcept from NGContraindicationVS (required)
+* valueCodeableConcept from NGContraindicationVS (extensible)
 * valueCodeableConcept ^short = "Contraindications to immunization"
 
 

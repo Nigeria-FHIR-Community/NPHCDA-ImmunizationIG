@@ -12,7 +12,7 @@ Description: "Captures the administrative ward within a geographic address "
 * ^status = #active
 * ^publisher = "NPHCDA"
 * value[x] only CodeableConcept
-* valueCodeableConcept from NGWardsVS (required)
+* valueCodeableConcept from NGWardsVS (example)
 
 
 

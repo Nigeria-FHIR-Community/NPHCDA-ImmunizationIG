@@ -48,7 +48,7 @@ Description: "Nigeria Immunization Patient Profile"
 * contact.telecom.system ^short = "The primary means to contact the Client's primary Caregiver or Guardian"
 * contact.telecom.value 0..1 MS
 * contact.telecom.value ^short = "The primary means to value(phone no. or email address) the Client's primary Caregiver or Guardian"
-* contact.relationship.text from NGRelationshipsVS (required)
+* contact.relationship.text from NGRelationshipsVS (extensible)
 * contact.relationship.text ^short = "The relationship of the Client with the primary Caregiver or Guardian (eg. Parent)"
 * contact.address.line 0..1 MS
 * contact.address.line ^short = "The line address of the Client's primary Caregiver or Guardian"
