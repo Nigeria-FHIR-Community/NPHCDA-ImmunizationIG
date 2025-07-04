@@ -5,6 +5,7 @@ Description: "A Nigeria Immunization Patient instance with all required and opti
 Usage: #example
 
 // Identifier (required)
+* meta.lastUpdated = "2020-09-02T11:20:10Z"
 * identifier[0].system = "http://asokoro.hospital.org/mrn"
 * identifier[0].value = "NEIR-0001"
 * identifier[1].system = "http://nimc.gov.ng/nin"

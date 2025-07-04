@@ -4,6 +4,8 @@ Parent: Patient
 Title: "NG-Imm Patient"
 Description: "Nigeria Immunization Patient Profile"
 
+* meta.lastUpdated 1..1 MS
+* meta.lastUpdated ^short = "The date and time when the client record was created or last updated."
 
 * identifier.value 1..1 MS
 * identifier.value ^short = "The actual ID value (eg. NIN35635556)"
@@ -76,7 +78,7 @@ Description: "Nigeria Immunization Patient Profile"
 * extension contains NGAgeInWeeks named ageInWeeks 0..1 MS
 * extension contains NGAgeInMonths named ageInMonths 0..1 MS
 * extension contains NGAgeInYears named ageInYears 0..1 MS
-* extension contains NGCreatedDate named createdDate 0..1 MS
+//* extension contains NGCreatedDate named createdDate 0..1 MS
 
 // Hide dataelements
 

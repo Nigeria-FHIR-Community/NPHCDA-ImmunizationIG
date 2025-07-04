@@ -5,6 +5,7 @@ Description: "A sample patient conforming to the Nigeria Immunization Patient pr
 Usage: #example
 
 //base elements
+* meta.lastUpdated = "2025-05-29T14:30:00Z"
 * identifier[0].system = "http://hospital.org/mrn"
 * identifier[0].value = "123456"
 * name[0].family = "Okonkwo"

@@ -4,6 +4,7 @@ Title: "NG-Imm Example Patient with Ward data"
 Description: "A fictional example of a patient with information on administrative ward"
 Usage: #example
 
+* meta.lastUpdated = "2018-07-09T11:11:11Z"
 * identifier[0].system = "http://neir.org/mrn"
 * identifier[0].value = "12345"
 * name[0].family = "Hakeem"
