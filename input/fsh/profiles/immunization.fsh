@@ -4,15 +4,9 @@ Title: "NG-Imm Immunization"
 Description: "Nigerian Profile for Immunization resource."
 
 * identifier 1..1
-<<<<<<< Updated upstream
-* vaccineCode from NGVaccineLibraryVS (required)
-* vaccineCode ^short = "The code of the Vaccine Administered"
-* statusReason from http://hl7.org/fhir/ValueSet/immunization-status-reason (extensible)
-=======
 * vaccineCode from NGVaccineLibraryVS 
 * vaccineCode ^short = "Vaccine Product Administered"
 * statusReason from http://hl7.org/fhir/ValueSet/immunization-status-reason (required)
->>>>>>> Stashed changes
 * statusReason ^short = "Reason immunization was not done (or was missed)"
 * status MS
 * status from http://hl7.org/fhir/ValueSet/immunization-status (required)
