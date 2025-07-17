@@ -107,7 +107,7 @@
 
 
   <li> <a href="search-operation.html" >Search and Operations</a></li> 
-    <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
+  <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
 
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -215,6 +215,60 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="SearchParameter-NgImmBundleSearchByLastUpdated.html"
+                  title="SearchParameter/NgImmBundleSearchByLastUpdated">NG-Imm Search Bundle by Last Updated Date</a>
+            </td>
+            <td>
+<p>Retrieve bundles based on last updated timestamp</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-NgImmBundleSearchByFacilityIdentifier.html"
+                  title="SearchParameter/NgImmBundleSearchByFacilityIdentifier">NG-Imm Search Bundle by Organization Identifier</a>
+            </td>
+            <td>
+<p>Retrieve bundles that reference a specific healthcare organization/facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-NgImmBundleSearchByBirthDate.html"
+                  title="SearchParameter/NgImmBundleSearchByBirthDate">NG-Imm Search Bundle by Patient BirthDate</a>
+            </td>
+            <td>
+<p>Retrieve bundles where the Patient has a specific birth date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-NgImmBundleSearchByPatientIdentifier.html"
+                  title="SearchParameter/NgImmBundleSearchByPatientIdentifier">NG-Imm Search Bundle by Patient Identifier</a>
+            </td>
+            <td>
+<p>Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-NgImmBundleSearchByState.html"
+                  title="SearchParameter/NgImmBundleSearchByState">NG-Imm Search Bundle by Patient State</a>
+            </td>
+            <td>
+<p>Retrieve bundles where the Patient resides in a specific Nigerian State</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-NgImmBundleSearchByVaccineCode.html"
+                  title="SearchParameter/NgImmBundleSearchByVaccineCode">NG-Imm Search Bundle by Vaccine Code</a>
+            </td>
+            <td>
+<p>Searches bundles containing a specific vaccine code in Immunization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="SearchParameter-SearchParameter-ngimm-immdate.html"
                   title="SearchParameter/SearchParameter-ngimm-immdate">NG-Imm Search Immunization by date of vaccination</a>
             </td>
@@ -224,20 +278,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-immstatus.html"
+                  title="SearchParameter/SearchParameter-ngimm-immstatus">NG-Imm Search Immunization by immunization status</a>
+            </td>
+            <td>
+<p>Search Immunization records by status (eg. completed, or not done)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="SearchParameter-SearchParameter-ngimm-immpatient.html"
                   title="SearchParameter/SearchParameter-ngimm-immpatient">NG-Imm Search Immunization by patient</a>
             </td>
             <td>
 <p>Search Immunization records by patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-immstatus.html"
-                  title="SearchParameter/SearchParameter-ngimm-immstatus">NG-Imm Search Immunization by status of immunization</a>
-            </td>
-            <td>
-<p>Search Immunization records by status (eg. completed, or not done)</p>
 </td>
          </tr>
          <tr>
@@ -269,11 +323,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-createddate.html"
-                  title="SearchParameter/SearchParameter-ngimm-createddate">NG-Imm Search Patient by date of creation</a>
+               <a href="SearchParameter-SearchParameter-ngimm-city.html"
+                  title="SearchParameter/SearchParameter-ngimm-city">NG-Imm Search Patient by city</a>
             </td>
             <td>
-<p>Search by patient’s date of creation</p>
+<p>Search patient records by city, town or settlement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-SearchParameter-ngimm-createddate.html"
+                  title="SearchParameter/SearchParameter-ngimm-createddate">NG-Imm Search Patient by date of creation or update</a>
+            </td>
+            <td>
+<p>Search by patient’s creation or last updated date (range supported)</p>
 </td>
          </tr>
          <tr>
@@ -315,7 +378,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="SearchParameter-SearchParameter-ngimm-lga.html"
-                  title="SearchParameter/SearchParameter-ngimm-lga">NG-Imm Search by Patient lga of residence</a>
+                  title="SearchParameter/SearchParameter-ngimm-lga">NG-Imm Search by Patient LGA</a>
             </td>
             <td>
 <p>Search by patient LGA of residence</p>
@@ -323,74 +386,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-city.html"
-                  title="SearchParameter/SearchParameter-ngimm-city">NG-Imm Search patient record by city, town or settlement</a>
-            </td>
-            <td>
-<p>Search patient records by city, town or settlement</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="SearchParameter-SearchParameter-ngimm-telecom.html"
-                  title="SearchParameter/SearchParameter-ngimm-telecom">NG-Imm Search patient record by phone number or email address</a>
+                  title="SearchParameter/SearchParameter-ngimm-telecom">NG-Imm Search patient by phone or email</a>
             </td>
             <td>
 <p>Search patient record by phone number or email address</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByLastUpdated.html"
-                  title="SearchParameter/NgImmBundleSearchByLastUpdated">Search Bundle by Last Updated Date</a>
-            </td>
-            <td>
-<p>Retrieve bundles based on last updated timestamp</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByFacilityIdentifier.html"
-                  title="SearchParameter/NgImmBundleSearchByFacilityIdentifier">Search Bundle by Organization Identifier</a>
-            </td>
-            <td>
-<p>Retrieve bundles that reference a specific healthcare organization/facility</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByBirthDate.html"
-                  title="SearchParameter/NgImmBundleSearchByBirthDate">Search Bundle by Patient BirthDate</a>
-            </td>
-            <td>
-<p>Retrieve bundles where the Patient has a specific birth date</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByPatientIdentifier.html"
-                  title="SearchParameter/NgImmBundleSearchByPatientIdentifier">Search Bundle by Patient Identifier</a>
-            </td>
-            <td>
-<p>Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByState.html"
-                  title="SearchParameter/NgImmBundleSearchByState">Search Bundle by Patient State</a>
-            </td>
-            <td>
-<p>Retrieve bundles where the Patient resides in a specific Nigerian State</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByVaccineCode.html"
-                  title="SearchParameter/NgImmBundleSearchByVaccineCode">Search Bundle by Vaccine Code</a>
-            </td>
-            <td>
-<p>Searches bundles containing a specific vaccine code in Immunization</p>
 </td>
          </tr>
       </tbody>
@@ -1029,6 +1029,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="AllergyIntolerance-FullExampleNgAllergyIntolerance.html"
+                  title="AllergyIntolerance/FullExampleNgAllergyIntolerance">NG-Imm Example AllergyIntolerance</a>
+            </td>
+            <td>
+<p>A fictional example of a an allergy resulting from Immunization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-ExampleNgImmImmunizationCompleted.html"
+                  title="Immunization/ExampleNgImmImmunizationCompleted">NG-Imm Example BCG Immunization</a>
+            </td>
+            <td>
+<p>An example of a completed BCG immunization event</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Patient-FullExampleNgImmPatient.html"
                   title="Patient/FullExampleNgImmPatient">NG-Imm Example Full Immunization Patient</a>
             </td>
@@ -1038,17 +1056,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Immunization-ExampleNgImmImmunizationCompleted.html"
-                  title="Immunization/ExampleNgImmImmunizationCompleted">NG-Imm Example Immunization-Completed BCG Vaccination</a>
-            </td>
-            <td>
-<p>An example of a completed BCG immunization event</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="MeasureReport-ExampleNgImmMeasureReport.html"
-                  title="MeasureReport/ExampleNgImmMeasureReport">NG-Imm Example MeasureReport Monthly Immunization Coverage Summary - BCG</a>
+                  title="MeasureReport/ExampleNgImmMeasureReport">NG-Imm Example MeasureReport Monthly Immunization Coverage</a>
             </td>
             <td>
 <p>An example of a summary MeasureReport generated for BCG coverage at a facility</p>
@@ -1126,15 +1135,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="AllergyIntolerance-FullExampleNgAllergyIntolerance.html"
-                  title="AllergyIntolerance/FullExampleNgAllergyIntolerance">NG-Imm ExampleAllergyIntolerance</a>
-            </td>
-            <td>
-<p>A fictional example of a an allergy resulting from Immunization.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Binary-RoutineImmunizationReport.html"
                   title="Binary/RoutineImmunizationReport">NG-Imm Routine Immunization Report - Facility A</a>
             </td>
@@ -1162,11 +1162,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Bundle-NgImmExampleBundle.html" title="Bundle/NgImmExampleBundle">NGImm Example Immunization Bundle</a>
+            </td>
+            <td>
+<p>Example bundle containing Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization with request, response, and search metadata.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Immunization-NgImmExampleImmunization.html"
                   title="Immunization/NgImmExampleImmunization">NGImm Example Immunization Record</a>
             </td>
             <td>
 <p>Example Immunization record using NG-Imm Immunization profile with 90% data populated</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-location-example.html" title="Location/location-example">NGImm Example Location</a>
+            </td>
+            <td>
+<p>An example immunization service location.</p>
 </td>
          </tr>
          <tr>
@@ -1185,22 +1201,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Represents a sibling (mother’s other child) related to the immunization client for use in Bundle</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-NgImmExampleBundle.html" title="Bundle/NgImmExampleBundle">Nigeria Immunization Example Bundle</a>
-            </td>
-            <td>
-<p>Example bundle containing Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization with request, response, and search metadata.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-location-example.html" title="Location/location-example">location-example</a>
-            </td>
-            <td>
-<p>An example immunization service location.</p>
 </td>
          </tr>
       </tbody>
@@ -1223,7 +1223,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 4, 2025 19:34+0100">2025-07-04</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 17, 2025 18:58+0100">2025-07-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

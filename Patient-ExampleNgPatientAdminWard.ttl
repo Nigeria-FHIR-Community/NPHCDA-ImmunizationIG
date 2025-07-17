@@ -29,6 +29,11 @@
      fhir:given ( [ fhir:v "Bisola" ] )
   ] ) ; # 
   fhir:gender [ fhir:v "male"] ; # 
+  fhir:photo ( [
+     fhir:data [ fhir:v "VGhpcyBpcyBhIHNhbXBsZSBpbWFnZSBkYXRh"^^xsd:base64Binary ] ;
+     fhir:size [ fhir:v "5"^^xsd:nonNegativeInteger ] ;
+     fhir:title [ fhir:v "Elephant health image data for maitama" ]
+  ] ) ; # 
   fhir:contact ( [
      fhir:relationship ( [
        fhir:text [ fhir:v "Parent" ]

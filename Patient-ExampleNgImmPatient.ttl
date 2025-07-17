@@ -99,6 +99,12 @@
      fhir:district [ fhir:v "Enugu North" ] ;
      fhir:state [ fhir:v "Enugu" ]
   ] ) ; # 
+  fhir:photo ( [
+     fhir:contentType [ fhir:v "png" ] ;
+     fhir:url [ fhir:v "https://elephant.org/images/emmy.jpg"^^xsd:anyURI ] ;
+     fhir:size [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+     fhir:title [ fhir:v "emmy.jpg" ]
+  ] ) ; # 
   fhir:contact ( [
      fhir:relationship ( [
        fhir:text [ fhir:v "mother" ]

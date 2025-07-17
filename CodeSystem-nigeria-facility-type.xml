@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="nigeria-facility-type"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-facility-type</b></p><a name="nigeria-facility-type"> </a><a name="hcnigeria-facility-type"> </a><p>This  code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">clinic<a name="nigeria-facility-type-clinic"> </a></td><td>Clinic</td><td>The Health facility is a primary health facility</td></tr><tr><td style="white-space:nowrap">hospital<a name="nigeria-facility-type-hospital"> </a></td><td>Hospital</td><td>The Health facility is a Secondary health facilities and General Hospitals</td></tr><tr><td style="white-space:nowrap">health-post<a name="nigeria-facility-type-health-post"> </a></td><td>Health Post</td><td>The Health facility is a primary health facility in category of dispensories</td></tr><tr><td style="white-space:nowrap">chc<a name="nigeria-facility-type-chc"> </a></td><td>Comprehensive Health Centers</td><td>The Health facility is a comprehensive primary health center owned by the government</td></tr><tr><td style="white-space:nowrap">tertiary<a name="nigeria-facility-type-tertiary"> </a></td><td>Tertiary facility</td><td>These are Higher level facilities and referal centers)</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-facility-type</b></p><a name="nigeria-facility-type"> </a><a name="hcnigeria-facility-type"> </a><p>This  code system <code>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">outreach-post<a name="nigeria-facility-type-outreach-post"> </a></td><td>Outreach Post</td><td>A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations.</td></tr><tr><td style="white-space:nowrap">phc-center-l1<a name="nigeria-facility-type-phc-center-l1"> </a></td><td>PHC Center Level 1</td><td>A basic primary healthcare facility providing preventive and promotive services, often staffed by community health workers.</td></tr><tr><td style="white-space:nowrap">phc-center-l2<a name="nigeria-facility-type-phc-center-l2"> </a></td><td>PHC Center Level 2</td><td>A primary healthcare facility with limited diagnostic and treatment services, typically staffed by nurses, CHEWs, or junior medical personnel.</td></tr><tr><td style="white-space:nowrap">phc-center-l3<a name="nigeria-facility-type-phc-center-l3"> </a></td><td>PHC Center Level 3</td><td>An advanced primary healthcare facility offering comprehensive outpatient care, minor/light procedures, and referral support, often with a resident medical officer.</td></tr><tr><td style="white-space:nowrap">hospital<a name="nigeria-facility-type-hospital"> </a></td><td>Secondary Hospital</td><td>A referral facility providing specialized care, inpatient services, and emergency response, staffed by medical officers and specialists.</td></tr><tr><td style="white-space:nowrap">tertiary<a name="nigeria-facility-type-tertiary"> </a></td><td>Tertiary Facility</td><td>A highly specialized hospital offering advanced diagnostic, therapeutic, and surgical care, often affiliated with teaching or research institutions.</td></tr></table></div>
   </text>
   <url value="https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type"/>
   <version value="0.5.0"/>
   <name value="NGFacilityTypeCS"/>
   <title value="NG-Imm Facility Type CS"/>
   <status value="active"/>
-  <date value="2025-07-04T19:33:02+01:00"/>
+  <date value="2025-07-17T18:57:38+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -37,30 +37,35 @@
   </jurisdiction>
   <hierarchyMeaning value="is-a"/>
   <content value="complete"/>
-  <count value="5"/>
+  <count value="6"/>
   <concept>
-    <code value="clinic"/>
-    <display value="Clinic"/>
-    <definition value="The Health facility is a primary health facility"/>
+    <code value="outreach-post"/>
+    <display value="Outreach Post"/>
+    <definition value="A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations."/>
+  </concept>
+  <concept>
+    <code value="phc-center-l1"/>
+    <display value="PHC Center Level 1"/>
+    <definition value="A basic primary healthcare facility providing preventive and promotive services, often staffed by community health workers."/>
+  </concept>
+  <concept>
+    <code value="phc-center-l2"/>
+    <display value="PHC Center Level 2"/>
+    <definition value="A primary healthcare facility with limited diagnostic and treatment services, typically staffed by nurses, CHEWs, or junior medical personnel."/>
+  </concept>
+  <concept>
+    <code value="phc-center-l3"/>
+    <display value="PHC Center Level 3"/>
+    <definition value="An advanced primary healthcare facility offering comprehensive outpatient care, minor/light procedures, and referral support, often with a resident medical officer."/>
   </concept>
   <concept>
     <code value="hospital"/>
-    <display value="Hospital"/>
-    <definition value="The Health facility is a Secondary health facilities and General Hospitals"/>
-  </concept>
-  <concept>
-    <code value="health-post"/>
-    <display value="Health Post"/>
-    <definition value="The Health facility is a primary health facility in category of dispensories"/>
-  </concept>
-  <concept>
-    <code value="chc"/>
-    <display value="Comprehensive Health Centers"/>
-    <definition value="The Health facility is a comprehensive primary health center owned by the government"/>
+    <display value="Secondary Hospital"/>
+    <definition value="A referral facility providing specialized care, inpatient services, and emergency response, staffed by medical officers and specialists."/>
   </concept>
   <concept>
     <code value="tertiary"/>
-    <display value="Tertiary facility"/>
-    <definition value="These are Higher level facilities and referal centers)"/>
+    <display value="Tertiary Facility"/>
+    <definition value="A highly specialized hospital offering advanced diagnostic, therapeutic, and surgical care, often affiliated with teaching or research institutions."/>
   </concept>
 </CodeSystem>

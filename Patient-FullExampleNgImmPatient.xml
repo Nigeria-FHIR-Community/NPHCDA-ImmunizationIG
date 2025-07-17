@@ -70,6 +70,12 @@
     <district value="Bauchi Central LGA"/>
     <state value="Bauchi"/>
   </address>
+  <photo>
+    <contentType value="jpeg"/>
+    <url value="https://hellium.org/photos/aliyu.jpg"/>
+    <size value="5"/>
+    <title value="aliyu.jpg"/>
+  </photo>
   <contact>
     <relationship>
       <text value="Father"/>

@@ -82,6 +82,12 @@
     "district" : "Bauchi Central LGA",
     "state" : "Bauchi"
   }],
+  "photo" : [{
+    "contentType" : "jpeg",
+    "url" : "https://hellium.org/photos/aliyu.jpg",
+    "size" : 5,
+    "title" : "aliyu.jpg"
+  }],
   "contact" : [{
     "relationship" : [{
       "text" : "Father"

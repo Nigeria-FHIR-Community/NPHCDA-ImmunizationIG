@@ -59,6 +59,12 @@
     <district value="Enugu North"/>
     <state value="Enugu"/>
   </address>
+  <photo>
+    <contentType value="png"/>
+    <url value="https://elephant.org/images/emmy.jpg"/>
+    <size value="1"/>
+    <title value="emmy.jpg"/>
+  </photo>
   <contact>
     <relationship>
       <text value="mother"/>

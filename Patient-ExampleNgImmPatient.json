@@ -69,6 +69,12 @@
     "district" : "Enugu North",
     "state" : "Enugu"
   }],
+  "photo" : [{
+    "contentType" : "png",
+    "url" : "https://elephant.org/images/emmy.jpg",
+    "size" : 1,
+    "title" : "emmy.jpg"
+  }],
   "contact" : [{
     "relationship" : [{
       "text" : "mother"

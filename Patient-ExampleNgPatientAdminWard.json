@@ -18,6 +18,11 @@
     "given" : ["Bisola"]
   }],
   "gender" : "male",
+  "photo" : [{
+    "data" : "VGhpcyBpcyBhIHNhbXBsZSBpbWFnZSBkYXRh",
+    "size" : 5,
+    "title" : "Elephant health image data for maitama"
+  }],
   "contact" : [{
     "relationship" : [{
       "text" : "Parent"

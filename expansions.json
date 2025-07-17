@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "936461db-c8e1-4c64-b9f9-eb512d624755",
+  "id" : "1e0b84e5-43f5-43f4-a33d-aefb41c9029d",
   "meta" : {
-    "lastUpdated" : "2025-07-04T19:34:01.450+01:00"
+    "lastUpdated" : "2025-07-17T18:58:28.160+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "NGClinicalStatusVS",
       "title" : "NG-Imm Clinical Status VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2feb15e4-3c9c-48e8-a308-035af1a1ee33",
-        "timestamp" : "2025-07-04T19:35:14+01:00",
+        "identifier" : "urn:uuid:66a7be58-6a48-4c38-a23e-3a6764902a90",
+        "timestamp" : "2025-07-17T18:59:37+01:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -90,14 +90,14 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-facility-type.html\">codesystem NG-Imm Facility Type CS v0.5.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-clinic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-clinic\">clinic</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>Clinic</td><td>The Health facility is a primary health facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-hospital\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-hospital\">hospital</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>Hospital</td><td>The Health facility is a Secondary health facilities and General Hospitals</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-health-post\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-health-post\">health-post</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>Health Post</td><td>The Health facility is a primary health facility in category of dispensories</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-chc\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-chc\">chc</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>Comprehensive Health Centers</td><td>The Health facility is a comprehensive primary health center owned by the government</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-tertiary\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-tertiary\">tertiary</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>Tertiary facility</td><td>These are Higher level facilities and referal centers)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-nigeria-facility-type.html\">codesystem NG-Imm Facility Type CS v0.5.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-outreach-post\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-outreach-post\">outreach-post</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>Outreach Post</td><td>A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-phc-center-l1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-phc-center-l1\">phc-center-l1</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>PHC Center Level 1</td><td>A basic primary healthcare facility providing preventive and promotive services, often staffed by community health workers.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-phc-center-l2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-phc-center-l2\">phc-center-l2</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>PHC Center Level 2</td><td>A primary healthcare facility with limited diagnostic and treatment services, typically staffed by nurses, CHEWs, or junior medical personnel.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-phc-center-l3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-phc-center-l3\">phc-center-l3</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>PHC Center Level 3</td><td>An advanced primary healthcare facility offering comprehensive outpatient care, minor/light procedures, and referral support, often with a resident medical officer.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-hospital\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-hospital\">hospital</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>Secondary Hospital</td><td>A referral facility providing specialized care, inpatient services, and emergency response, staffed by medical officers and specialists.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type-tertiary\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nigeria-facility-type.html#nigeria-facility-type-tertiary\">tertiary</a></td><td>https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type</td><td>Tertiary Facility</td><td>A highly specialized hospital offering advanced diagnostic, therapeutic, and surgical care, often affiliated with teaching or research institutions.</td></tr></table></div>"
       },
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types",
       "version" : "0.5.0",
       "name" : "NGFacilityTypeVS",
       "title" : "NG-Imm HealthFacility Type VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -106,9 +106,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2a2d1d3a-f5e9-4de9-be53-2f15f4cdbdd3",
-        "timestamp" : "2025-07-04T19:35:14+01:00",
-        "total" : 5,
+        "identifier" : "urn:uuid:078b59bc-28fb-4c43-a3f0-695b000030ca",
+        "timestamp" : "2025-07-17T18:59:37+01:00",
+        "total" : 6,
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -132,28 +132,33 @@
         }],
         "contains" : [{
           "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
-          "code" : "clinic",
-          "display" : "Clinic"
+          "code" : "outreach-post",
+          "display" : "Outreach Post"
+        },
+        {
+          "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
+          "code" : "phc-center-l1",
+          "display" : "PHC Center Level 1"
+        },
+        {
+          "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
+          "code" : "phc-center-l2",
+          "display" : "PHC Center Level 2"
+        },
+        {
+          "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
+          "code" : "phc-center-l3",
+          "display" : "PHC Center Level 3"
         },
         {
           "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
           "code" : "hospital",
-          "display" : "Hospital"
-        },
-        {
-          "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
-          "code" : "health-post",
-          "display" : "Health Post"
-        },
-        {
-          "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
-          "code" : "chc",
-          "display" : "Comprehensive Health Centers"
+          "display" : "Secondary Hospital"
         },
         {
           "system" : "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-facility-type",
           "code" : "tertiary",
-          "display" : "Tertiary facility"
+          "display" : "Tertiary Facility"
         }]
       }
     }
@@ -171,7 +176,7 @@
       "name" : "NGGenderVS",
       "title" : "NG-Imm Gender or Sex VS",
       "status" : "draft",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -180,8 +185,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6cb2b869-7c42-4f5b-98c7-83d416c7c396",
-        "timestamp" : "2025-07-04T19:35:14+01:00",
+        "identifier" : "urn:uuid:878fc98f-2dc5-45aa-b899-2dbfeb31b1bc",
+        "timestamp" : "2025-07-17T18:59:37+01:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -230,7 +235,7 @@
       "name" : "NGHivStatusVS",
       "title" : "NG-Imm Client HIV Status VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -239,8 +244,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:83de3c0b-ac7d-4d86-89c3-023e40126689",
-        "timestamp" : "2025-07-04T19:35:14+01:00",
+        "identifier" : "urn:uuid:a6d3dad0-7b73-46e5-aa4d-3454381b8e6b",
+        "timestamp" : "2025-07-17T18:59:37+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -294,7 +299,7 @@
       "name" : "NGLanguagesVS",
       "title" : "NG-Imm Languages VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -303,8 +308,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:400328fc-7db9-45ea-8224-cc5789e7bcaf",
-        "timestamp" : "2025-07-04T19:35:15+01:00",
+        "identifier" : "urn:uuid:39683061-8951-4fed-ba9d-5bee9b8540ba",
+        "timestamp" : "2025-07-17T18:59:37+01:00",
         "total" : 22,
         "offset" : 0,
         "parameter" : [{
@@ -453,7 +458,7 @@
       "name" : "NGLGAsVS",
       "title" : "NG-Imm LGAs VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -462,8 +467,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e1cfcfb8-a738-4968-8492-a11ddedd1364",
-        "timestamp" : "2025-07-04T19:35:15+01:00",
+        "identifier" : "urn:uuid:214a4b8b-0731-46dc-9453-dc632a3ae8e6",
+        "timestamp" : "2025-07-17T18:59:37+01:00",
         "total" : 774,
         "offset" : 0,
         "parameter" : [{
@@ -4372,7 +4377,7 @@
       "name" : "NGOrganizationOwnerVS",
       "title" : "NG-Imm Location Owner",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4381,8 +4386,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d3f0abb3-8910-441c-bd26-01dfc84a8576",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:e36311f5-682f-4dea-8263-04ab5264b5a8",
+        "timestamp" : "2025-07-17T18:59:38+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4440,7 +4445,7 @@
       "name" : "NGPregnancyStatusVS",
       "title" : "NG-Imm Client Preganancy Status VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4449,8 +4454,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7093832f-86f7-481a-8b02-43cab3c6c1a3",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:8b5c3344-c02f-40ba-a940-cf18b483685e",
+        "timestamp" : "2025-07-17T18:59:39+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4504,7 +4509,7 @@
       "name" : "NGRelationshipsVS",
       "title" : "NG-Imm Relationships VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4513,8 +4518,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:415a0998-c85b-4232-bdbe-9d96776a5987",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:5afc0b48-8cc8-41b4-aa4b-357c02d49801",
+        "timestamp" : "2025-07-17T18:59:39+01:00",
         "total" : 15,
         "offset" : 0,
         "parameter" : [{
@@ -4628,7 +4633,7 @@
       "name" : "NGSessionTypeVS",
       "title" : "NG-Imm Session Type VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4637,8 +4642,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3e10d956-a950-4e5b-9e24-527854fd4964",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:14df43c8-9576-4b2b-affb-0a8a7c97a99c",
+        "timestamp" : "2025-07-17T18:59:39+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4692,7 +4697,7 @@
       "name" : "NGSiblingHealthStatusVS",
       "title" : "NG-Imm Sibling Health Status VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4701,8 +4706,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8a9cd558-767f-4482-8b34-b25cd685a9fa",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:a9106393-a0b1-4edb-a732-1bf4276ecd17",
+        "timestamp" : "2025-07-17T18:59:39+01:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -4761,7 +4766,7 @@
       "name" : "NGStatesVS",
       "title" : "NG-Imm States VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -4770,8 +4775,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d01e600b-e8c7-49a5-b18c-cda977c571ad",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:4c02c2b3-7373-43d0-a5fb-19a3026930dc",
+        "timestamp" : "2025-07-17T18:59:39+01:00",
         "total" : 37,
         "offset" : 0,
         "parameter" : [{
@@ -4995,7 +5000,7 @@
       "name" : "NGContraindicationVS",
       "title" : "NG-Imm Vaccine Contraindication VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -5004,8 +5009,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dee20eb6-d8f5-462a-8a9f-36b8381e2a5f",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:6fc41f05-8a14-4958-b042-55b63f75684a",
+        "timestamp" : "2025-07-17T18:59:39+01:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -5064,7 +5069,7 @@
       "name" : "NGVaccineLibraryVS",
       "title" : "NG-Imm VaccineLibrary VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -5073,8 +5078,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0b8418cd-1ae4-42a7-a8b5-738b099bd826",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:2fb6e171-980f-4d90-ad33-5fd4f2028666",
+        "timestamp" : "2025-07-17T18:59:39+01:00",
         "total" : 29,
         "offset" : 0,
         "parameter" : [{
@@ -5258,7 +5263,7 @@
       "name" : "NGWardsVS",
       "title" : "NG-Imm Wards VS",
       "status" : "active",
-      "date" : "2025-07-04T19:33:02+01:00",
+      "date" : "2025-07-17T18:57:38+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -5267,8 +5272,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f523cee8-edb8-4fcb-a200-458d04ca1d37",
-        "timestamp" : "2025-07-04T19:35:16+01:00",
+        "identifier" : "urn:uuid:c2790e05-72d4-4fa6-b58b-0909b4b45cd7",
+        "timestamp" : "2025-07-17T18:59:39+01:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{

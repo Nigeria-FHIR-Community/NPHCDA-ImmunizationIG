@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NigeriaimmunizationFHIRIG"] ; # 
   fhir:title [ fhir:v "Nigeria Immunization FHIR IG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-04T19:33:02+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-17T18:57:38+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -59,7 +59,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -839,25 +839,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Location"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/Location/location-example> ;
-         fhir:reference [ fhir:v "Location/location-example" ]
-       ] ;
-       fhir:name [ fhir:v "location-example" ] ;
-       fhir:description [ fhir:v "An example immunization service location." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"^^xsd:anyURI ;
-         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1225,6 +1206,44 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "AllergyIntolerance"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/AllergyIntolerance/FullExampleNgAllergyIntolerance> ;
+         fhir:reference [ fhir:v "AllergyIntolerance/FullExampleNgAllergyIntolerance" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Example AllergyIntolerance" ] ;
+       fhir:description [ fhir:v "A fictional example of a an allergy resulting from Immunization." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Immunization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/Immunization/ExampleNgImmImmunizationCompleted> ;
+         fhir:reference [ fhir:v "Immunization/ExampleNgImmImmunizationCompleted" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Example BCG Immunization" ] ;
+       fhir:description [ fhir:v "An example of a completed BCG immunization event" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Patient"
          ]
        ] ) ;
@@ -1244,25 +1263,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Immunization"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/Immunization/ExampleNgImmImmunizationCompleted> ;
-         fhir:reference [ fhir:v "Immunization/ExampleNgImmImmunizationCompleted" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Example Immunization-Completed BCG Vaccination" ] ;
-       fhir:description [ fhir:v "An example of a completed BCG immunization event" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"^^xsd:anyURI ;
-         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "MeasureReport"
          ]
        ] ) ;
@@ -1270,7 +1270,7 @@
          fhir:link <https://nphcda.gov.ng/immunizationIG/MeasureReport/ExampleNgImmMeasureReport> ;
          fhir:reference [ fhir:v "MeasureReport/ExampleNgImmMeasureReport" ]
        ] ;
-       fhir:name [ fhir:v "NG-Imm Example MeasureReport Monthly Immunization Coverage Summary - BCG" ] ;
+       fhir:name [ fhir:v "NG-Imm Example MeasureReport Monthly Immunization Coverage" ] ;
        fhir:description [ fhir:v "An example of a summary MeasureReport generated for BCG coverage at a facility" ] ;
        fhir:example [
          a fhir:canonical ;
@@ -1434,25 +1434,6 @@
          a fhir:canonical ;
          fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/IMMZGGenerateReport"^^xsd:anyURI ;
          fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/IMMZGGenerateReport>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "AllergyIntolerance"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/AllergyIntolerance/FullExampleNgAllergyIntolerance> ;
-         fhir:reference [ fhir:v "AllergyIntolerance/FullExampleNgAllergyIntolerance" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm ExampleAllergyIntolerance" ] ;
-       fhir:description [ fhir:v "A fictional example of a an allergy resulting from Immunization." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"^^xsd:anyURI ;
-         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile>
        ]
      ] [
        fhir:extension ( [
@@ -1921,10 +1902,118 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByLastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByLastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search Bundle by Last Updated Date" ] ;
+       fhir:description [ fhir:v "Retrieve bundles based on last updated timestamp" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByFacilityIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByFacilityIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search Bundle by Organization Identifier" ] ;
+       fhir:description [ fhir:v "Retrieve bundles that reference a specific healthcare organization/facility" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByBirthDate> ;
+         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByBirthDate" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search Bundle by Patient BirthDate" ] ;
+       fhir:description [ fhir:v "Retrieve bundles where the Patient has a specific birth date" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByPatientIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByPatientIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search Bundle by Patient Identifier" ] ;
+       fhir:description [ fhir:v "Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByState> ;
+         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByState" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search Bundle by Patient State" ] ;
+       fhir:description [ fhir:v "Retrieve bundles where the Patient resides in a specific Nigerian State" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByVaccineCode> ;
+         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByVaccineCode" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search Bundle by Vaccine Code" ] ;
+       fhir:description [ fhir:v "Searches bundles containing a specific vaccine code in Immunization" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-lga> ;
          fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-lga" ]
        ] ;
-       fhir:name [ fhir:v "NG-Imm Search by Patient lga of residence" ] ;
+       fhir:name [ fhir:v "NG-Imm Search by Patient LGA" ] ;
        fhir:description [ fhir:v "Search by patient LGA of residence" ] ;
        fhir:example [
          a fhir:boolean ;
@@ -1957,11 +2046,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-immpatient> ;
-         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-immpatient" ]
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-immstatus> ;
+         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-immstatus" ]
        ] ;
-       fhir:name [ fhir:v "NG-Imm Search Immunization by patient" ] ;
-       fhir:description [ fhir:v "Search Immunization records by patient" ] ;
+       fhir:name [ fhir:v "NG-Imm Search Immunization by immunization status" ] ;
+       fhir:description [ fhir:v "Search Immunization records by status (eg. completed, or not done)" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1975,11 +2064,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-immstatus> ;
-         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-immstatus" ]
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-immpatient> ;
+         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-immpatient" ]
        ] ;
-       fhir:name [ fhir:v "NG-Imm Search Immunization by status of immunization" ] ;
-       fhir:description [ fhir:v "Search Immunization records by status (eg. completed, or not done)" ] ;
+       fhir:name [ fhir:v "NG-Imm Search Immunization by patient" ] ;
+       fhir:description [ fhir:v "Search Immunization records by patient" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2029,11 +2118,29 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-city> ;
+         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-city" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search Patient by city" ] ;
+       fhir:description [ fhir:v "Search patient records by city, town or settlement" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-createddate> ;
          fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-createddate" ]
        ] ;
-       fhir:name [ fhir:v "NG-Imm Search Patient by date of creation" ] ;
-       fhir:description [ fhir:v "Search by patient's date of creation" ] ;
+       fhir:name [ fhir:v "NG-Imm Search Patient by date of creation or update" ] ;
+       fhir:description [ fhir:v "Search by patient's creation or last updated date (range supported)" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2119,47 +2226,29 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-telecom> ;
+         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-telecom" ]
+       ] ;
+       fhir:name [ fhir:v "NG-Imm Search patient by phone or email" ] ;
+       fhir:description [ fhir:v "Search patient record by phone number or email address" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-state> ;
          fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-state" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Search Patient by state" ] ;
        fhir:description [ fhir:v "Search by patient's State of residence" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "SearchParameter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-city> ;
-         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-city" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Search patient record by city, town or settlement" ] ;
-       fhir:description [ fhir:v "Search patient records by city, town or settlement" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "SearchParameter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-telecom> ;
-         fhir:reference [ fhir:v "SearchParameter/SearchParameter-ngimm-telecom" ]
-       ] ;
-       fhir:name [ fhir:v "NG-Imm Search patient record by phone number or email address" ] ;
-       fhir:description [ fhir:v "Search patient record by phone number or email address" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2602,6 +2691,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/Bundle/NgImmExampleBundle> ;
+         fhir:reference [ fhir:v "Bundle/NgImmExampleBundle" ]
+       ] ;
+       fhir:name [ fhir:v "NGImm Example Immunization Bundle" ] ;
+       fhir:description [ fhir:v "Example bundle containing Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization with request, response, and search metadata." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Immunization"
          ]
        ] ) ;
@@ -2615,6 +2723,25 @@
          a fhir:canonical ;
          fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"^^xsd:anyURI ;
          fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nphcda.gov.ng/immunizationIG/Location/location-example> ;
+         fhir:reference [ fhir:v "Location/location-example" ]
+       ] ;
+       fhir:name [ fhir:v "NGImm Example Location" ] ;
+       fhir:description [ fhir:v "An example immunization service location." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location>
        ]
      ] [
        fhir:extension ( [
@@ -2686,133 +2813,6 @@
        ] ;
        fhir:name [ fhir:v "Nigeria Immunization Bundle" ] ;
        fhir:description [ fhir:v "FHIR Bundle profile for grouping Nigeria Immunization resources including Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization. Supports request/response/search metadata for interoperability." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Bundle"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/Bundle/NgImmExampleBundle> ;
-         fhir:reference [ fhir:v "Bundle/NgImmExampleBundle" ]
-       ] ;
-       fhir:name [ fhir:v "Nigeria Immunization Example Bundle" ] ;
-       fhir:description [ fhir:v "Example bundle containing Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization with request, response, and search metadata." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle"^^xsd:anyURI ;
-         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "SearchParameter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByLastUpdated> ;
-         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByLastUpdated" ]
-       ] ;
-       fhir:name [ fhir:v "Search Bundle by Last Updated Date" ] ;
-       fhir:description [ fhir:v "Retrieve bundles based on last updated timestamp" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "SearchParameter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByFacilityIdentifier> ;
-         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByFacilityIdentifier" ]
-       ] ;
-       fhir:name [ fhir:v "Search Bundle by Organization Identifier" ] ;
-       fhir:description [ fhir:v "Retrieve bundles that reference a specific healthcare organization/facility" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "SearchParameter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByBirthDate> ;
-         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByBirthDate" ]
-       ] ;
-       fhir:name [ fhir:v "Search Bundle by Patient BirthDate" ] ;
-       fhir:description [ fhir:v "Retrieve bundles where the Patient has a specific birth date" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "SearchParameter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByPatientIdentifier> ;
-         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByPatientIdentifier" ]
-       ] ;
-       fhir:name [ fhir:v "Search Bundle by Patient Identifier" ] ;
-       fhir:description [ fhir:v "Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "SearchParameter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByState> ;
-         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByState" ]
-       ] ;
-       fhir:name [ fhir:v "Search Bundle by Patient State" ] ;
-       fhir:description [ fhir:v "Retrieve bundles where the Patient resides in a specific Nigerian State" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "SearchParameter"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByVaccineCode> ;
-         fhir:reference [ fhir:v "SearchParameter/NgImmBundleSearchByVaccineCode" ]
-       ] ;
-       fhir:name [ fhir:v "Search Bundle by Vaccine Code" ] ;
-       fhir:description [ fhir:v "Searches bundles containing a specific vaccine code in Immunization" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

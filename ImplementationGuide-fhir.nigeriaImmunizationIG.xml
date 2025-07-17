@@ -11,7 +11,7 @@
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-07-04T19:33:02+01:00"/>
+  <date value="2025-07-17T18:57:38+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -45,7 +45,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.4.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -461,17 +461,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/location-example"/>
-      </reference>
-      <name value="location-example"/>
-      <description value="An example immunization service location."/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -695,6 +684,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/FullExampleNgAllergyIntolerance"/>
+      </reference>
+      <name value="NG-Imm Example AllergyIntolerance"/>
+      <description value="A fictional example of a an allergy resulting from Immunization."/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/ExampleNgImmImmunizationCompleted"/>
+      </reference>
+      <name value="NG-Imm Example BCG Immunization"/>
+      <description value="An example of a completed BCG immunization event"/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -706,23 +717,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/ExampleNgImmImmunizationCompleted"/>
-      </reference>
-      <name value="NG-Imm Example Immunization-Completed BCG Vaccination"/>
-      <description value="An example of a completed BCG immunization event"/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MeasureReport"/>
       </extension>
       <reference>
         <reference value="MeasureReport/ExampleNgImmMeasureReport"/>
       </reference>
-      <name value="NG-Imm Example MeasureReport Monthly Immunization Coverage Summary - BCG"/>
+      <name value="NG-Imm Example MeasureReport Monthly Immunization Coverage"/>
       <description value="An example of a summary MeasureReport generated for BCG coverage at a facility"/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/measure-report-profile"/>
     </resource>
@@ -816,17 +816,6 @@
       <name value="NG-Imm Example Stock report"/>
       <description value="An example Stock management report"/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/IMMZGGenerateReport"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/FullExampleNgAllergyIntolerance"/>
-      </reference>
-      <name value="NG-Imm ExampleAllergyIntolerance"/>
-      <description value="A fictional example of a an allergy resulting from Immunization."/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1111,9 +1100,75 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/NgImmBundleSearchByLastUpdated"/>
+      </reference>
+      <name value="NG-Imm Search Bundle by Last Updated Date"/>
+      <description value="Retrieve bundles based on last updated timestamp"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/NgImmBundleSearchByFacilityIdentifier"/>
+      </reference>
+      <name value="NG-Imm Search Bundle by Organization Identifier"/>
+      <description value="Retrieve bundles that reference a specific healthcare organization/facility"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/NgImmBundleSearchByBirthDate"/>
+      </reference>
+      <name value="NG-Imm Search Bundle by Patient BirthDate"/>
+      <description value="Retrieve bundles where the Patient has a specific birth date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/NgImmBundleSearchByPatientIdentifier"/>
+      </reference>
+      <name value="NG-Imm Search Bundle by Patient Identifier"/>
+      <description value="Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/NgImmBundleSearchByState"/>
+      </reference>
+      <name value="NG-Imm Search Bundle by Patient State"/>
+      <description value="Retrieve bundles where the Patient resides in a specific Nigerian State"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/NgImmBundleSearchByVaccineCode"/>
+      </reference>
+      <name value="NG-Imm Search Bundle by Vaccine Code"/>
+      <description value="Searches bundles containing a specific vaccine code in Immunization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/SearchParameter-ngimm-lga"/>
       </reference>
-      <name value="NG-Imm Search by Patient lga of residence"/>
+      <name value="NG-Imm Search by Patient LGA"/>
       <description value="Search by patient LGA of residence"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1133,10 +1188,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-immpatient"/>
+        <reference value="SearchParameter/SearchParameter-ngimm-immstatus"/>
       </reference>
-      <name value="NG-Imm Search Immunization by patient"/>
-      <description value="Search Immunization records by patient"/>
+      <name value="NG-Imm Search Immunization by immunization status"/>
+      <description value="Search Immunization records by status (eg. completed, or not done)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1144,10 +1199,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-immstatus"/>
+        <reference value="SearchParameter/SearchParameter-ngimm-immpatient"/>
       </reference>
-      <name value="NG-Imm Search Immunization by status of immunization"/>
-      <description value="Search Immunization records by status (eg. completed, or not done)"/>
+      <name value="NG-Imm Search Immunization by patient"/>
+      <description value="Search Immunization records by patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1177,10 +1232,21 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-city"/>
+      </reference>
+      <name value="NG-Imm Search Patient by city"/>
+      <description value="Search patient records by city, town or settlement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/SearchParameter-ngimm-createddate"/>
       </reference>
-      <name value="NG-Imm Search Patient by date of creation"/>
-      <description value="Search by patient's date of creation"/>
+      <name value="NG-Imm Search Patient by date of creation or update"/>
+      <description value="Search by patient's creation or last updated date (range supported)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1232,32 +1298,21 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/SearchParameter-ngimm-telecom"/>
+      </reference>
+      <name value="NG-Imm Search patient by phone or email"/>
+      <description value="Search patient record by phone number or email address"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/SearchParameter-ngimm-state"/>
       </reference>
       <name value="NG-Imm Search Patient by state"/>
       <description value="Search by patient's State of residence"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-city"/>
-      </reference>
-      <name value="NG-Imm Search patient record by city, town or settlement"/>
-      <description value="Search patient records by city, town or settlement"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/SearchParameter-ngimm-telecom"/>
-      </reference>
-      <name value="NG-Imm Search patient record by phone number or email address"/>
-      <description value="Search patient record by phone number or email address"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1526,6 +1581,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/NgImmExampleBundle"/>
+      </reference>
+      <name value="NGImm Example Immunization Bundle"/>
+      <description value="Example bundle containing Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization with request, response, and search metadata."/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Immunization"/>
       </extension>
       <reference>
@@ -1534,6 +1600,17 @@
       <name value="NGImm Example Immunization Record"/>
       <description value="Example Immunization record using NG-Imm Immunization profile with 90% data populated"/>
       <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/location-example"/>
+      </reference>
+      <name value="NGImm Example Location"/>
+      <description value="An example immunization service location."/>
+      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1577,83 +1654,6 @@
       </reference>
       <name value="Nigeria Immunization Bundle"/>
       <description value="FHIR Bundle profile for grouping Nigeria Immunization resources including Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization. Supports request/response/search metadata for interoperability."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/NgImmExampleBundle"/>
-      </reference>
-      <name value="Nigeria Immunization Example Bundle"/>
-      <description value="Example bundle containing Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization with request, response, and search metadata."/>
-      <exampleCanonical value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/NgImmBundleSearchByLastUpdated"/>
-      </reference>
-      <name value="Search Bundle by Last Updated Date"/>
-      <description value="Retrieve bundles based on last updated timestamp"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/NgImmBundleSearchByFacilityIdentifier"/>
-      </reference>
-      <name value="Search Bundle by Organization Identifier"/>
-      <description value="Retrieve bundles that reference a specific healthcare organization/facility"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/NgImmBundleSearchByBirthDate"/>
-      </reference>
-      <name value="Search Bundle by Patient BirthDate"/>
-      <description value="Retrieve bundles where the Patient has a specific birth date"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/NgImmBundleSearchByPatientIdentifier"/>
-      </reference>
-      <name value="Search Bundle by Patient Identifier"/>
-      <description value="Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/NgImmBundleSearchByState"/>
-      </reference>
-      <name value="Search Bundle by Patient State"/>
-      <description value="Retrieve bundles where the Patient resides in a specific Nigerian State"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/NgImmBundleSearchByVaccineCode"/>
-      </reference>
-      <name value="Search Bundle by Vaccine Code"/>
-      <description value="Searches bundles containing a specific vaccine code in Immunization"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

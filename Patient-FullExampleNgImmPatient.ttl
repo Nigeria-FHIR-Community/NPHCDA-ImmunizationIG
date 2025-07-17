@@ -114,6 +114,12 @@
      fhir:district [ fhir:v "Bauchi Central LGA" ] ;
      fhir:state [ fhir:v "Bauchi" ]
   ] ) ; # 
+  fhir:photo ( [
+     fhir:contentType [ fhir:v "jpeg" ] ;
+     fhir:url [ fhir:v "https://hellium.org/photos/aliyu.jpg"^^xsd:anyURI ] ;
+     fhir:size [ fhir:v "5"^^xsd:nonNegativeInteger ] ;
+     fhir:title [ fhir:v "aliyu.jpg" ]
+  ] ) ; # 
   fhir:contact ( [
      fhir:relationship ( [
        fhir:text [ fhir:v "Father" ]

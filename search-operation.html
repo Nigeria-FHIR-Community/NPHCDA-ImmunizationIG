@@ -107,7 +107,7 @@
 
 
   <li> <a href="search-operation.html" >Search and Operations</a></li> 
-    <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
+  <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
 
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -158,22 +158,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#supported-search-parameters-for-nigeria-immunization-patient-profile" id="markdown-toc-supported-search-parameters-for-nigeria-immunization-patient-profile">Supported Search Parameters for Nigeria Immunization Patient Profile</a></li>
+  <li><a href="#supported-search-parameters-for-nigeria-immunization-profile" id="markdown-toc-supported-search-parameters-for-nigeria-immunization-profile">Supported Search Parameters for Nigeria Immunization Profile</a></li>
   <li><a href="#supported-restful-operations-for-nigeria-immunization-profiles" id="markdown-toc-supported-restful-operations-for-nigeria-immunization-profiles">Supported RESTful Operations for Nigeria Immunization Profiles</a></li>
   <li><a href="#️-important-implementation-notes" id="markdown-toc-️-important-implementation-notes">⚠️ Important Implementation Notes</a></li>
 </ul>
 
 </div>
 
-<h3 id="supported-search-parameters-for-nigeria-immunization-patient-profile">Supported Search Parameters for Nigeria Immunization Patient Profile</h3>
+<h3 id="supported-search-parameters-for-nigeria-immunization-profile">Supported Search Parameters for Nigeria Immunization Profile</h3>
 
-<p>This page outlines the supported FHIR <a href="https://www.hl7.org/fhir/search.html">Search Parameters</a> for the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles in the Nigeria Immunization Implementation Guide. In addition search parameters for <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> are also supported. These parameters enable efficient querying of patient records in systems that implement this guide.</p>
+<p>This page outlines the supported FHIR Search Parameters for the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a>, <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a>, and <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> profiles in the Nigeria Immunization Implementation Guide. These parameters enable efficient querying of patient records in systems that implement this guide.</p>
 
 <p>The listed search parameters are derived from standard FHIR-defined parameters, with custom additions where relevant to local immunization use cases in Nigeria.</p>
 
 <hr />
 
-<h4 id="list-of-supported-search-parameters-for-ngimmpatient-ngimmimmunization-and-ngimmbundle-profiles">List of Supported Search Parameters for <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a>, <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a>, and <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> profiles</h4>
+<h4 id="list-of-supported-search-parameters-for-ngimmpatient-profile">List of Supported Search Parameters for <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> profile</h4>
 
 <table>
   <thead>
@@ -216,6 +216,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Filter patients by date of record creation. Format: YYYY-MM-DD.</td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">email</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.telecom</code></td>
+      <td>Search by all telecome options (email or phone).</td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">gender</code></td>
       <td><code class="language-plaintext highlighter-rouge">token</code></td>
       <td><code class="language-plaintext highlighter-rouge">Patient.gender</code></td>
@@ -252,8 +258,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?birthdate=2022-07-15
 </code></pre></div></div>
 
-<h5 id="4-search-by-state-of-residence">4. Search by State of Residence</h5>
+<h5 id="4-search-by-state-of-residence-including-ascending-and-descending-order-sorting">4. Search by State of Residence (including ascending and descending order sorting)</h5>
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?address-state=Benue
+</code></pre></div></div>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?address-state=Benue&amp;_sort=createddate
+</code></pre></div></div>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?address-state=Benue&amp;_sort=-createddate
+</code></pre></div></div>
+
+<h5 id="5-search-by-state-of-creation-date-or-last-updated-range-supported">5. Search by State of creation date or last updated (range supported)</h5>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?createddate=ge2024-01-01&amp;createddate=le2024-12-31
 </code></pre></div></div>
 
 <h4 id="list-of-supported-search-for-ngimmimmunization-profile">List of supported search for <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> Profile:</h4>
@@ -297,7 +313,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h4 id="supported-search-parameters-on-ngimmbundle">Supported Search Parameters on <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a></h4>
+<h4 id="supported-search-parameters-on-ngimmbundle-profile">Supported Search Parameters on <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> Profile:</h4>
 
 <table>
   <thead>
@@ -363,11 +379,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="supported-restful-operations-for-nigeria-immunization-profiles">Supported RESTful Operations for Nigeria Immunization Profiles</h3>
 
-<p>This page describes the RESTful interactions supported for systems implementing the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> and <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a> profiles, aligned with FHIR R4 and SMART Guidelines principles. These operations define how client systems (e.g., EMRs, registries, mobile apps) can interact with immunization-related patient data. In addition, operations on <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> is also presented.</p>
+<p>This page describes the RESTful interactions supported for systems implementing the <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a>, <a href="StructureDefinition-NgImmImmunization.html"><strong>NgImmImmunization</strong></a>, and <a href="StructureDefinition-NgImmBundle.html"><strong>NgImmBundle</strong></a> profiles, aligned with FHIR R4 and SMART Guidelines principles. These operations define how client systems (e.g., EMRs, registries, mobile apps) can interact with immunization-related patient data.</p>
 
 <hr />
 
-<h4 id="overview-of-supported-restful-patient-interactions">Overview of Supported RESTful Patient Interactions</h4>
+<h4 id="overview-of-supported-restful-ngimmpatient-interactions">Overview of Supported RESTful <a href="StructureDefinition-NgImmPatient.html"><strong>NgImmPatient</strong></a> Interactions</h4>
 
 <table>
   <thead>
@@ -573,7 +589,7 @@ All operations use standard FHIR OperationDefinition resources and can be extend
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 4, 2025 19:34+0100">2025-07-04</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 17, 2025 18:58+0100">2025-07-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -842,6 +842,20 @@
       "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Mime Types",
+      "title" : "MimeType",
+      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
+      "systems" : ["urn:ietf:bcp:13"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
       "version" : "4.0.1",
       "status" : "active",

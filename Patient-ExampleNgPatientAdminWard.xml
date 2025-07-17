@@ -18,6 +18,11 @@
     <given value="Bisola"/>
   </name>
   <gender value="male"/>
+  <photo>
+    <data value="VGhpcyBpcyBhIHNhbXBsZSBpbWFnZSBkYXRh"/>
+    <size value="5"/>
+    <title value="Elephant health image data for maitama"/>
+  </photo>
   <contact>
     <relationship>
       <text value="Parent"/>
