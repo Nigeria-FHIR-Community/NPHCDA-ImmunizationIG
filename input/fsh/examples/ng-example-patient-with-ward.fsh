@@ -18,3 +18,9 @@ Usage: #example
 * contact[0].address.state = "FCT"
 * contact[0].address.extension[+].url = "administrativeWard"
 * contact[0].address.extension[=].valueCodeableConcept = #alu
+
+// Image
+
+* photo[0].data = "VGhpcyBpcyBhIHNhbXBsZSBpbWFnZSBkYXRh" // Base64 image data
+* photo[0].size = 5
+* photo[0].title = "Elephant health image data for maitama"

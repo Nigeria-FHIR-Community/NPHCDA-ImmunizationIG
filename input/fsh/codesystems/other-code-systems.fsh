@@ -59,11 +59,12 @@ Description: "A standardized classification system used to describe the type or 
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Grouping different Facility types
-* #clinic	"Clinic" "The Health facility is a primary health facility"
-* #hospital	"Hospital" "The Health facility is a Secondary health facilities and General Hospitals"
-* #health-post	"Health Post" "The Health facility is a primary health facility in category of dispensories"
-* #chc	"Comprehensive Health Centers" "The Health facility is a comprehensive primary health center owned by the government"
-* #tertiary	"Tertiary facility" "These are Higher level facilities and referal centers)"
+* #outreach-post	"Outreach Post" "A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations."
+* #phc-center-l1	"PHC Center Level 1" "A basic primary healthcare facility providing preventive and promotive services, often staffed by community health workers."
+* #phc-center-l2    "PHC Center Level 2" "A primary healthcare facility with limited diagnostic and treatment services, typically staffed by nurses, CHEWs, or junior medical personnel."
+* #phc-center-l3    "PHC Center Level 3" "An advanced primary healthcare facility offering comprehensive outpatient care, minor/light procedures, and referral support, often with a resident medical officer."
+* #hospital	"Secondary Hospital" "A referral facility providing specialized care, inpatient services, and emergency response, staffed by medical officers and specialists."
+* #tertiary	"Tertiary Facility" "A highly specialized hospital offering advanced diagnostic, therapeutic, and surgical care, often affiliated with teaching or research institutions."
 
 CodeSystem: NGGenderCS
 Id: nigeria-gender

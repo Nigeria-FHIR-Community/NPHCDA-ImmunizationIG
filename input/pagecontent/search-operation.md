@@ -1,13 +1,13 @@
 
-### Supported Search Parameters for Nigeria Immunization Patient Profile
+### Supported Search Parameters for Nigeria Immunization Profile
 
-This page outlines the supported FHIR [Search Parameters](https://www.hl7.org/fhir/search.html) for the [**NgImmPatient**](StructureDefinition-NgImmPatient.html) and [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profiles in the Nigeria Immunization Implementation Guide. In addition search parameters for [**NgImmBundle**](StructureDefinition-NgImmBundle.html) are also supported. These parameters enable efficient querying of patient records in systems that implement this guide.
+This page outlines the supported FHIR Search Parameters for the [**NgImmPatient**](StructureDefinition-NgImmPatient.html), [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html), and [**NgImmBundle**](StructureDefinition-NgImmBundle.html) profiles in the Nigeria Immunization Implementation Guide. These parameters enable efficient querying of patient records in systems that implement this guide.
 
 The listed search parameters are derived from standard FHIR-defined parameters, with custom additions where relevant to local immunization use cases in Nigeria.
 
 ---
 
-#### List of Supported Search Parameters for [**NgImmPatient**](StructureDefinition-NgImmPatient.html), [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html), and [**NgImmBundle**](StructureDefinition-NgImmBundle.html) profiles
+#### List of Supported Search Parameters for [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile
 
 | **Name**        | **Type** | **FHIR Path**            | **Description**                                                                 |
 |----------------|----------|--------------------------|---------------------------------------------------------------------------------|
@@ -16,9 +16,11 @@ The listed search parameters are derived from standard FHIR-defined parameters, 
 | `lastname`         | `string` | `Patient.lastname`       | Search by patient’s family name.                                      |
 | `birthdate`    | `date`   | `Patient.birthDate`      | Filter patients by date of birth. Format: YYYY-MM-DD.                          |
 | `createdate`    | `createdate`   | `Patient.createDate`      | Filter patients by date of record creation. Format: YYYY-MM-DD.        |
+| `email` | `string` | `Patient.telecom` | Search by all telecome options (email or phone). |
 | `gender`       | `token`  | `Patient.gender`         | Filter patients by sex (Male, Female). Bound to [**NGGenderVS**](ValueSet-nigeria-gender.html).                  |
 | `address-state`| `string` | `Patient.address.state`  | Search by the state of residence. Bound to [**NGStatesVS**](ValueSet-nigeria-states.html).                       |
 | `address-lgas` | `string` | `Patient.address.district` | Search by Local Government Area (LGA). Bound to [**NGLGAsVS**](ValueSet-nigeria-lgas.html). |
+
 
 ---
 
@@ -39,9 +41,23 @@ GET [base]/Patient?name=Chukwu
 GET [base]/Patient?birthdate=2022-07-15
 ```
 
-##### 4. Search by State of Residence
+##### 4. Search by State of Residence (including ascending and descending order sorting)
 ```markdown
 GET [base]/Patient?address-state=Benue
+```
+
+```markdown
+GET [base]/Patient?address-state=Benue&_sort=createddate
+```
+
+```markdown
+GET [base]/Patient?address-state=Benue&_sort=-createddate
+```
+
+
+##### 5. Search by State of creation date or last updated (range supported)
+```markdown
+GET [base]/Patient?createddate=ge2024-01-01&createddate=le2024-12-31
 ```
 
 
@@ -59,7 +75,7 @@ GET [base]/Patient?address-state=Benue
 
 
 
-#### Supported Search Parameters on [**NgImmBundle**](StructureDefinition-NgImmBundle.html)
+#### Supported Search Parameters on [**NgImmBundle**](StructureDefinition-NgImmBundle.html) Profile:
 
 | **Search Parameter**         | **Type** | **Description**                                                             | **FHIRPath Expression**                                                       |
 |-----------------------------|----------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|
@@ -88,11 +104,11 @@ For a complete list of FHIR search parameter types and modifiers, refer to the [
 
 ### Supported RESTful Operations for Nigeria Immunization Profiles
 
-This page describes the RESTful interactions supported for systems implementing the [**NgImmPatient**](StructureDefinition-NgImmPatient.html) and [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profiles, aligned with FHIR R4 and SMART Guidelines principles. These operations define how client systems (e.g., EMRs, registries, mobile apps) can interact with immunization-related patient data. In addition, operations on [**NgImmBundle**](StructureDefinition-NgImmBundle.html) is also presented.
+This page describes the RESTful interactions supported for systems implementing the [**NgImmPatient**](StructureDefinition-NgImmPatient.html), [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html), and [**NgImmBundle**](StructureDefinition-NgImmBundle.html) profiles, aligned with FHIR R4 and SMART Guidelines principles. These operations define how client systems (e.g., EMRs, registries, mobile apps) can interact with immunization-related patient data.
 
 ---
 
-#### Overview of Supported RESTful Patient Interactions
+#### Overview of Supported RESTful [**NgImmPatient**](StructureDefinition-NgImmPatient.html) Interactions
 
 | **Operation** | **FHIR Verb** | **Description**                                                                 |
 |---------------|---------------|---------------------------------------------------------------------------------|

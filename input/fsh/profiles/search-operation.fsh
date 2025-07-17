@@ -61,7 +61,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-telecom
 InstanceOf: SearchParameter
-Title: "NG-Imm Search patient record by phone number or email address"
+Title: "NG-Imm Search patient by phone or email"
 Usage: #definition
 * name = "telecom"
 * status = #active
@@ -74,15 +74,18 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-createddate
 InstanceOf: SearchParameter
-Title: "NG-Imm Search Patient by date of creation"
+Title: "NG-Imm Search Patient by date of creation or update"
 Usage: #definition
+
 * name = "createddate"
 * status = #active
 * code = #createddate
 * base = #Patient
-* type = #token
-* expression = "Patient.createddate"
-* description = "Search by patient's date of creation"
+* type = #date
+* expression = "Patient.meta.lastUpdated"
+* description = "Search by patient's creation or last updated date (range supported)"
+
+
 
 Instance: SearchParameter-ngimm-state
 InstanceOf: SearchParameter
@@ -98,19 +101,19 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-lga
 InstanceOf: SearchParameter
-Title: "NG-Imm Search by Patient lga of residence"
+Title: "NG-Imm Search by Patient LGA"
 Usage: #definition
 * name = "lga"
 * status = #active
-* code = #lga
+* code = #district
 * base = #Patient
 * type = #token
-* expression = "Patient.lga"
+* expression = "Patient.district"
 * description = "Search by patient LGA of residence"
 
 Instance: SearchParameter-ngimm-city
 InstanceOf: SearchParameter
-Title: "NG-Imm Search patient record by city, town or settlement"
+Title: "NG-Imm Search Patient by city"
 Usage: #definition
 * name = "city"
 * status = #active
@@ -134,7 +137,7 @@ Usage: #definition
 
 Instance: SearchParameter-ngimm-immstatus
 InstanceOf: SearchParameter
-Title: "NG-Imm Search Immunization by status of immunization"
+Title: "NG-Imm Search Immunization by immunization status"
 Usage: #definition
 * name = "immstatus"
 * status = #active
@@ -171,7 +174,7 @@ Usage: #definition
 
 Instance: NgImmBundleSearchByBirthDate
 InstanceOf: SearchParameter
-Title: "Search Bundle by Patient BirthDate"
+Title: "NG-Imm Search Bundle by Patient BirthDate"
 Description: "Retrieve bundles where the Patient has a specific birth date"
 Usage: #definition
 * name = "searchBundleByPatientBirthDate"
@@ -184,7 +187,7 @@ Usage: #definition
 
 Instance: NgImmBundleSearchByPatientIdentifier
 InstanceOf: SearchParameter
-Title: "Search Bundle by Patient Identifier"
+Title: "NG-Imm Search Bundle by Patient Identifier"
 Description: "Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)"
 Usage: #definition
 * name = "searchBundleByPatientIdentifier"
@@ -199,7 +202,7 @@ Usage: #definition
 
 Instance: NgImmBundleSearchByVaccineCode
 InstanceOf: SearchParameter
-Title: "Search Bundle by Vaccine Code"
+Title: "NG-Imm Search Bundle by Vaccine Code"
 Description: "Searches bundles containing a specific vaccine code in Immunization"
 Usage: #definition
 * name = "searchBundleByVaccineCode"
@@ -212,7 +215,7 @@ Usage: #definition
 
 Instance: NgImmBundleSearchByState
 InstanceOf: SearchParameter
-Title: "Search Bundle by Patient State"
+Title: "NG-Imm Search Bundle by Patient State"
 Description: "Retrieve bundles where the Patient resides in a specific Nigerian State"
 Usage: #definition
 * name = "searchBundleByPatientState"
@@ -225,7 +228,7 @@ Usage: #definition
 
 Instance: NgImmBundleSearchByFacilityIdentifier
 InstanceOf: SearchParameter
-Title: "Search Bundle by Organization Identifier"
+Title: "NG-Imm Search Bundle by Organization Identifier"
 Description: "Retrieve bundles that reference a specific healthcare organization/facility"
 Usage: #definition
 * name = "searchBundleByOrganizationIdentifier"
@@ -239,7 +242,7 @@ Usage: #definition
 
 Instance: NgImmBundleSearchByLastUpdated
 InstanceOf: SearchParameter
-Title: "Search Bundle by Last Updated Date"
+Title: "NG-Imm Search Bundle by Last Updated Date"
 Description: "Retrieve bundles based on last updated timestamp"
 Usage: #definition
 * name = "searchBundleByLastUpdated"

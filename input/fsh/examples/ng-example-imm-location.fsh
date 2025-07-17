@@ -1,6 +1,7 @@
 Instance: location-example
 InstanceOf: NgImmLocation
 Usage: #example
+Title: "NGImm Example Location"
 Description: "An example immunization service location."
 * status = #active
 * name = "Kofar Dukayuwa PHC"

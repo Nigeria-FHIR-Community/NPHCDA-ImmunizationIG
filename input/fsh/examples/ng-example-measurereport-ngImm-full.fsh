@@ -1,6 +1,6 @@
 Instance: ExampleNgImmMeasureReport
 InstanceOf: NgImmMeasureReport
-Title: "NG-Imm Example MeasureReport Monthly Immunization Coverage Summary - BCG"
+Title: "NG-Imm Example MeasureReport Monthly Immunization Coverage"
 Description: "An example of a summary MeasureReport generated for BCG coverage at a facility"
 Usage: #example
 

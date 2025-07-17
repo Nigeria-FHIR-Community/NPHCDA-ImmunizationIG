@@ -33,9 +33,9 @@ Description: "Nigeria Immunization Patient Profile"
 * active 0..1
 * active ^short = "Indicates Whether this patient's record is in active use or not (eg. for Immunization, this flag can be set to true between 0-24 months, and false there after, to optimize searches)"
 * address.line 0..1 MS
-* address.line ^short = "The house number number, stree, village, setttement, and name where the Client lives"
+* address.line ^short = "The house number number, stree, and name where the Client lives"
 * address.city 0..1  
-* address.city ^short = "The city, town or settlement where the client lives in the state"
+* address.city ^short = "The city, village, town or settlement where the client lives in the state"
 * address.district from NGLGAsVS (required)
 * address.district ^short = "The FHIR name is district, used as Nigeria LGA in this profile"
 * address.district ^definition = "Full detailed definition for the address district field as Local Government Area"
@@ -63,8 +63,18 @@ Description: "Nigeria Immunization Patient Profile"
 * communication 0..*
 * communication.language from NGLanguagesVS (extensible)
 * communication.language ^short = "Preferred language which can be used to communicate with the patient about his or her health"
-* photo 0..*
+* photo 0..* MS
 * photo ^short = "Image of the patient"
+* photo.data 0..1
+* photo.data ^short = "Base64 encoded image data"
+* photo.title 0..1
+* photo.title ^short = "The label of the image"
+* photo.url 0..1
+* photo.url ^short = "Public URL or internal endpoint to the patient's photo"
+* photo.size 0..1
+* photo.size ^short = "The size of the image in mega bytes MB"
+* photo.contentType 0..1
+* photo.contentType ^short = "Type of image (e.g., image/jpeg)"
 * link.other only Reference(NgImmSiblingRelatedPerson)
 
 

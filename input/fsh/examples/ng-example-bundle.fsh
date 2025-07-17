@@ -1,6 +1,6 @@
 Instance: NgImmExampleBundle
 InstanceOf: NgImmBundle
-Title: "Nigeria Immunization Example Bundle"
+Title: "NGImm Example Immunization Bundle"
 Description: "Example bundle containing Patient, Immunization, AllergyIntolerance, RelatedPerson, and Organization with request, response, and search metadata."
 Usage: #example
 

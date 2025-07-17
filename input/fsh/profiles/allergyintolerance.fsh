@@ -18,7 +18,7 @@ Description: "Nigeria Immunization Allergy Intolerance Profile"
 * criticality from http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality (required)
 * criticality ^short = "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance"
 
-* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code (preferred)
+* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code (extensible)
 * patient only Reference(NgImmPatient)
 * encounter only Reference(NgImmEncounter)
 * onset[x] 0..1

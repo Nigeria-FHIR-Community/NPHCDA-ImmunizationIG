@@ -35,6 +35,12 @@ Usage: #example
 * contact[0].address.district = "Tudun Wada"
 * contact[0].address.state = "Bauchi"
 
+// Image
+* photo[0].contentType = #jpeg
+* photo[0].url = "https://hellium.org/photos/aliyu.jpg"
+* photo[0].size = 5
+* photo[0].title = "aliyu.jpg"
+
 // Extensions
 * extension[+].url = "ageInWeeks"
 * extension[=].valueInteger = 8

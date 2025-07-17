@@ -26,6 +26,12 @@ Usage: #example
 * contact[0].address.district = "Enugu Central"
 * contact[0].address.state = "Enugu"
 
+// Image
+* photo[0].contentType = #png
+* photo[0].url = "https://elephant.org/images/emmy.jpg"
+* photo[0].size = 1
+* photo[0].title = "emmy.jpg"
+
 
 // Extensions
 //* extension[+].url = "ageInWeeks"

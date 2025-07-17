@@ -1,6 +1,6 @@
 Instance: ExampleNgImmImmunizationCompleted
 InstanceOf: NgImmImmunization
-Title: "NG-Imm Example Immunization-Completed BCG Vaccination"
+Title: "NG-Imm Example BCG Immunization"
 Description: "An example of a completed BCG immunization event"
 Usage: #example
 

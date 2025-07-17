@@ -1,7 +1,7 @@
 
 Instance: FullExampleNgAllergyIntolerance
 InstanceOf: NgImmAllergyIntolerance
-Title: "NG-Imm ExampleAllergyIntolerance"
+Title: "NG-Imm Example AllergyIntolerance"
 Description: "A fictional example of a an allergy resulting from Immunization."
 Usage: #example
 
