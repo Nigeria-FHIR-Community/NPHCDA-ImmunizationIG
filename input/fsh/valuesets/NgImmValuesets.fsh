@@ -48,13 +48,6 @@ Description: "list of persons related to a patient, but who is not a direct targ
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"
 * include codes from system NGRelationshipsCS
 
-ValueSet: NGFacilityTypeVS
-Id: nigeria-facility-types
-Title: "NG-Imm HealthFacility Type VS"
-Description: "Classification of Nigerian health facilities"
-* ^status = #active
-//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types"
-* include codes from system NGFacilityTypeCS
 
 ValueSet: NGHivStatusVS
 Id: nigeria-hiv-status
@@ -71,7 +64,6 @@ Description: "Client Pregnancy Status"
 * ^status = #active
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-client-pregnancy-status"
 * include codes from system NGPregnancyStatusCS
-
 
 //Related Person Valueset
 ValueSet: NGSiblingHealthStatusVS
@@ -106,6 +98,37 @@ Description: "A curated list of vaccines recognized under Nigeria's national imm
 * ^status = #active
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"
 * include codes from system NGVaccineLibraryCS
+
+
+//Location & Organisation VS
+
+ValueSet: NGFacilityTypeVS
+Id: nigeria-facility-types
+Title: "NG-Imm HealthFacility Type VS"
+Description: "Classification of Nigerian health facilities"
+* ^status = #active
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-health-facility-types"
+* include codes from system NGFacilityTypeCS
+
+ValueSet: NGOrganizationOwnerVS
+Id: nigeria-location-owner
+Title: "NG-Imm Location Owner"
+Description: "The owner of an Immunization location"
+* ^status = #active
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
+* include codes from system NGOrganizationOwnerCS
+
+//Allergy Intolerance Valuesets
+ValueSet: NGClinicalStatusVS
+Id: nigeria-clinical-status
+Title: "NG-Imm Clinical Status VS"
+Description: "The outcome of the reaction"
+* ^status = #active
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
+* include codes from system NGClinicalStatusCS
+
+
+
 
 /* ValueSet: NGImmunizationSiteVS
 Id: nigeria-vaccine-site
@@ -150,24 +173,6 @@ Description: "Designation of reporting officer"
 * ^url = "http://hl7.org/fhir/ValueSet/immunization-function"
 * include codes from system http://hl7.org/fhir/ValueSet/immunization-function */
 
-//Allergy Intolerance Valuesets
-ValueSet: NGClinicalStatusVS
-Id: nigeria-clinical-status
-Title: "NG-Imm Clinical Status VS"
-Description: "The outcome of the reaction"
-* ^status = #active
-//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
-* include codes from system NGClinicalStatusCS
-
-
-//Allergy Intolerance Valuesets
-ValueSet: NGOrganizationOwnerVS
-Id: nigeria-location-owner
-Title: "NG-Imm Location Owner"
-Description: "The owner of an Immunization location"
-* ^status = #active
-//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-clinical-status"
-* include codes from system NGOrganizationOwnerCS
 
 
 

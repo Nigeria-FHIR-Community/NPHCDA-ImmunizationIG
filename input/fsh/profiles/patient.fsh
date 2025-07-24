@@ -7,6 +7,7 @@ Description: "Nigeria Immunization Patient Profile"
 * meta.lastUpdated 1..1 MS
 * meta.lastUpdated ^short = "The date and time when the client record was created or last updated."
 
+* identifier 1..* MS
 * identifier.value 1..1 MS
 * identifier.value ^short = "The actual ID value (eg. NIN35635556)"
 * identifier.system 1..1 MS
@@ -32,7 +33,8 @@ Description: "Nigeria Immunization Patient Profile"
 * deceasedDateTime ^short = "Indicates when the individual passed away if dead."
 * active 0..1
 * active ^short = "Indicates Whether this patient's record is in active use or not (eg. for Immunization, this flag can be set to true between 0-24 months, and false there after, to optimize searches)"
-* address.line 0..1 MS
+* address 0..* MS
+* address.line 0..1 
 * address.line ^short = "The house number number, stree, and name where the Client lives"
 * address.city 0..1  
 * address.city ^short = "The city, village, town or settlement where the client lives in the state"
@@ -41,14 +43,15 @@ Description: "Nigeria Immunization Patient Profile"
 * address.district ^definition = "Full detailed definition for the address district field as Local Government Area"
 * address.state from NGStatesVS (required)
 * address.state ^short = "The name of the state where the client resides in Nigeria"
-* contact.name.given 0..* MS
+* contact 0..* MS
+* contact.name.given 0..* 
 * contact.name.given ^short = "The first name of the Client's primary Caregiver, can be a Parent or Guardian"
-* contact.name.family 0..1 MS
+* contact.name.family 0..1 
 * contact.name.family ^short = "The surname (family) name of the Client's primary Caregiver, can be a Parent or Guardian"
-* contact.telecom 0..*
-* contact.telecom.system 0..1 MS
+* contact.telecom 0..* MS
+* contact.telecom.system 0..1 
 * contact.telecom.system ^short = "The primary means to contact the Client's primary Caregiver or Guardian"
-* contact.telecom.value 0..1 MS
+* contact.telecom.value 0..1 
 * contact.telecom.value ^short = "The primary means to value(phone no. or email address) the Client's primary Caregiver or Guardian"
 * contact.relationship.text from NGRelationshipsVS (extensible)
 * contact.relationship.text ^short = "The relationship of the Client with the primary Caregiver or Guardian (eg. Parent)"
@@ -83,7 +86,7 @@ Description: "Nigeria Immunization Patient Profile"
 //* contact.address.extension[NigeriaAdministrativeWard].valueCodeableConcept from NigeriaWardsVS (required)
 * contact.address.extension contains NGAdministrativeWard named administrativeWard 0..1 MS
 * extension contains NGBirthWeight named birthWeight 0..1 MS
-//* extension contains NGHivStatus named hivStatus 0..1 MS
+* extension contains NGHIVStatus named hivStatus 0..1 MS
 * extension contains NGPregnancyStatus named pregnancyStatus 0..1 MS
 * extension contains NGAgeInWeeks named ageInWeeks 0..1 MS
 * extension contains NGAgeInMonths named ageInMonths 0..1 MS
