@@ -47,7 +47,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.&#xA;&#xA;Clients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. &#xA;They are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.&#xA;&#xA;### Use of HTTP Methods:&#xA;- **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.&#xA;- **PUT**: Used to fully replace an existing resource with updated data.&#xA;- **PATCH**: Used to update only specific elements of a resource."/>
+  <description value="This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.&#xA;&#xA;Clients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. &#xA;They are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.&#xA;&#xA;#### Use of HTTP Methods:&#xA;- **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.&#xA;- **PUT**: Used to fully replace an existing resource with updated data.&#xA;- **PATCH**: Used to update only specific elements of a resource."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

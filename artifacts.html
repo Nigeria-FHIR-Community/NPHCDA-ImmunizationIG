@@ -197,7 +197,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Clients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. 
 They are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using <code class="language-plaintext highlighter-rouge">$transform</code>.</p>
 
-<h3 id="use-of-http-methods">Use of HTTP Methods:</h3>
+<h4 id="use-of-http-methods">Use of HTTP Methods:</h4>
 <ul>
   <li><strong>POST</strong>: Used by clients to create new Patient, Immunization, or Bundle resources.</li>
   <li><strong>PUT</strong>: Used to fully replace an existing resource with updated data.</li>
@@ -215,15 +215,15 @@ They are also expected to initiate transformation of logical models (e.g. Regist
 
 <p>It includes full RESTful support for key profiles (<code class="language-plaintext highlighter-rouge">NgImmPatient</code>, <code class="language-plaintext highlighter-rouge">NgImmImmunization</code>, and <code class="language-plaintext highlighter-rouge">NgImmBundle</code>) and logical model transformations. The server also supports data submission, export, and validation via custom operations, as well as tracking updates through <code class="language-plaintext highlighter-rouge">Provenance</code>.</p>
 
-<h3 id="use-of-http-methods">Use of HTTP Methods:</h3>
+<h4 id="use-of-http-methods">Use of HTTP Methods:</h4>
 <ul>
   <li><strong>POST</strong>: Used to create a new resource. The server assigns the resource ID.</li>
   <li><strong>PUT</strong>: Used to fully replace an existing resource identified by a known ID.</li>
   <li><strong>PATCH</strong>: Used for partial updates to existing resources.</li>
 </ul>
 
-<h3 id="provenance">Provenance:</h3>
-<p>Clients MUST include a <code class="language-plaintext highlighter-rouge">Provenance</code> resource when performing PUT or PATCH on <code class="language-plaintext highlighter-rouge">Patient</code> to ensure traceability and support audit trails.</p>
+<h4 id="provenance">Provenance:</h4>
+<p>Clients MUST include a <code class="language-plaintext highlighter-rouge">Provenance</code> resource when performing GET, PUT, or PATCH on Server Resources (<code class="language-plaintext highlighter-rouge">NgImmPatient</code>, <code class="language-plaintext highlighter-rouge">NgImmImmunization</code>, and <code class="language-plaintext highlighter-rouge">NgImmBundle</code>) to ensure traceability and support audit trails.</p>
 </td>
          </tr>
       </tbody>
@@ -1118,7 +1118,7 @@ They are also expected to initiate transformation of logical models (e.g. Regist
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 3, 2025 02:36+0100">2025-08-03</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 3, 2025 02:51+0100">2025-08-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

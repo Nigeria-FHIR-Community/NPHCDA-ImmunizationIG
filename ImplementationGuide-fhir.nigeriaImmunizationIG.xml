@@ -11,7 +11,7 @@
   <name value="NigeriaimmunizationFHIRIG"/>
   <title value="Nigeria Immunization FHIR IG"/>
   <status value="draft"/>
-  <date value="2025-08-03T02:35:31+01:00"/>
+  <date value="2025-08-03T02:50:50+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -555,7 +555,7 @@
         <reference value="CapabilityStatement/NgImmCapabilityStatementClient"/>
       </reference>
       <name value="NG-Imm Client CapabilityStatement"/>
-      <description value="This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.&#xA;&#xA;Clients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. &#xA;They are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.&#xA;&#xA;### Use of HTTP Methods:&#xA;- **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.&#xA;- **PUT**: Used to fully replace an existing resource with updated data.&#xA;- **PATCH**: Used to update only specific elements of a resource."/>
+      <description value="This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.&#xA;&#xA;Clients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. &#xA;They are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.&#xA;&#xA;#### Use of HTTP Methods:&#xA;- **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.&#xA;- **PUT**: Used to fully replace an existing resource with updated data.&#xA;- **PATCH**: Used to update only specific elements of a resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1103,7 +1103,7 @@
         <reference value="CapabilityStatement/NgImmCapabilityStatementServer"/>
       </reference>
       <name value="NG-Imm Server CapabilityStatement"/>
-      <description value="This CapabilityStatement describes the expected behavior of FHIR servers implementing Nigeria’s Immunization Implementation Guide (NG-IMM).&#xA;&#xA;It includes full RESTful support for key profiles (`NgImmPatient`, `NgImmImmunization`, and `NgImmBundle`) and logical model transformations. The server also supports data submission, export, and validation via custom operations, as well as tracking updates through `Provenance`.&#xA;&#xA;### Use of HTTP Methods:&#xA;- **POST**: Used to create a new resource. The server assigns the resource ID.&#xA;- **PUT**: Used to fully replace an existing resource identified by a known ID.&#xA;- **PATCH**: Used for partial updates to existing resources.&#xA;&#xA;### Provenance:&#xA;Clients MUST include a `Provenance` resource when performing PUT or PATCH on `Patient` to ensure traceability and support audit trails."/>
+      <description value="This CapabilityStatement describes the expected behavior of FHIR servers implementing Nigeria’s Immunization Implementation Guide (NG-IMM).&#xA;&#xA;It includes full RESTful support for key profiles (`NgImmPatient`, `NgImmImmunization`, and `NgImmBundle`) and logical model transformations. The server also supports data submission, export, and validation via custom operations, as well as tracking updates through `Provenance`.&#xA;&#xA;#### Use of HTTP Methods:&#xA;- **POST**: Used to create a new resource. The server assigns the resource ID.&#xA;- **PUT**: Used to fully replace an existing resource identified by a known ID.&#xA;- **PATCH**: Used for partial updates to existing resources.&#xA;&#xA;#### Provenance:&#xA;Clients MUST include a `Provenance` resource when performing GET, PUT, or PATCH on Server Resources (`NgImmPatient`, `NgImmImmunization`, and `NgImmBundle`) to ensure traceability and support audit trails."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

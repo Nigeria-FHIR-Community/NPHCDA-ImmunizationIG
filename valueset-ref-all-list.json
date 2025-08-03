@@ -12,9 +12,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -28,9 +28,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -176,8 +176,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-NgImmBundle.html" : "Nigeria Immunization Bundle",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-NgImmBundle.html" : "Nigeria Immunization Bundle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composite-measure-scoring",
@@ -207,10 +207,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-register-client-model.html" : "NG-Imm-C5 RegisterClient",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-register-facility-model.html" : "NG-Imm-A RegisterFacility"
     },
     {
@@ -225,10 +225,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-register-client-model.html" : "NG-Imm-C5 RegisterClient",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-register-facility-model.html" : "NG-Imm-A RegisterFacility"
     },
     {
@@ -463,10 +463,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
@@ -481,10 +481,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
@@ -668,17 +668,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
-      "StructureDefinition-NgImmBundle.html" : "Nigeria Immunization Bundle",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
       "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter",
+      "StructureDefinition-NgImmBundle.html" : "Nigeria Immunization Bundle",
+      "StructureDefinition-measure-report-profile.html" : "NG-Imm MeasureReport",
       "StructureDefinition-NgImmPractitioner.html" : "NG-Imm Practitioner",
       "StructureDefinition-NgImmImmunization.html" : "NG-Imm Immunization",
-      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure",
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
       "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-ngimm-measure.html" : "NG-Imm Measure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -722,8 +722,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -1007,8 +1007,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-NgImmBundle.html" : "Nigeria Immunization Bundle",
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient"
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-NgImmBundle.html" : "Nigeria Immunization Bundle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -1143,8 +1143,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender",
@@ -1197,9 +1197,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
@@ -1256,8 +1256,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-session-type.html" : "NG-Imm Session Type",
-      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter"
+      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter",
+      "StructureDefinition-session-type.html" : "NG-Imm Session Type"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status",
@@ -1285,9 +1285,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-contraindication",

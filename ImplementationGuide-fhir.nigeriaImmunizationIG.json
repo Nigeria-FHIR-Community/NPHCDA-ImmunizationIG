@@ -10,7 +10,7 @@
   "name" : "NigeriaimmunizationFHIRIG",
   "title" : "Nigeria Immunization FHIR IG",
   "status" : "draft",
-  "date" : "2025-08-03T02:35:31+01:00",
+  "date" : "2025-08-03T02:50:50+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -718,7 +718,7 @@
         "reference" : "CapabilityStatement/NgImmCapabilityStatementClient"
       },
       "name" : "NG-Imm Client CapabilityStatement",
-      "description" : "This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.\n\nClients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. \nThey are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.\n\n### Use of HTTP Methods:\n- **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.\n- **PUT**: Used to fully replace an existing resource with updated data.\n- **PATCH**: Used to update only specific elements of a resource.",
+      "description" : "This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.\n\nClients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. \nThey are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.\n\n#### Use of HTTP Methods:\n- **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.\n- **PUT**: Used to fully replace an existing resource with updated data.\n- **PATCH**: Used to update only specific elements of a resource.",
       "exampleBoolean" : false
     },
     {
@@ -1318,7 +1318,7 @@
         "reference" : "CapabilityStatement/NgImmCapabilityStatementServer"
       },
       "name" : "NG-Imm Server CapabilityStatement",
-      "description" : "This CapabilityStatement describes the expected behavior of FHIR servers implementing Nigeria’s Immunization Implementation Guide (NG-IMM).\n\nIt includes full RESTful support for key profiles (`NgImmPatient`, `NgImmImmunization`, and `NgImmBundle`) and logical model transformations. The server also supports data submission, export, and validation via custom operations, as well as tracking updates through `Provenance`.\n\n### Use of HTTP Methods:\n- **POST**: Used to create a new resource. The server assigns the resource ID.\n- **PUT**: Used to fully replace an existing resource identified by a known ID.\n- **PATCH**: Used for partial updates to existing resources.\n\n### Provenance:\nClients MUST include a `Provenance` resource when performing PUT or PATCH on `Patient` to ensure traceability and support audit trails.",
+      "description" : "This CapabilityStatement describes the expected behavior of FHIR servers implementing Nigeria’s Immunization Implementation Guide (NG-IMM).\n\nIt includes full RESTful support for key profiles (`NgImmPatient`, `NgImmImmunization`, and `NgImmBundle`) and logical model transformations. The server also supports data submission, export, and validation via custom operations, as well as tracking updates through `Provenance`.\n\n#### Use of HTTP Methods:\n- **POST**: Used to create a new resource. The server assigns the resource ID.\n- **PUT**: Used to fully replace an existing resource identified by a known ID.\n- **PATCH**: Used for partial updates to existing resources.\n\n#### Provenance:\nClients MUST include a `Provenance` resource when performing GET, PUT, or PATCH on Server Resources (`NgImmPatient`, `NgImmImmunization`, and `NgImmBundle`) to ensure traceability and support audit trails.",
       "exampleBoolean" : false
     },
     {

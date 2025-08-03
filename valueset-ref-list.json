@@ -243,8 +243,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender",
@@ -297,9 +297,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
@@ -356,8 +356,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-session-type.html" : "NG-Imm Session Type",
-      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter"
+      "StructureDefinition-ng-imm-encounter.html" : "NG-Imm Encounter",
+      "StructureDefinition-session-type.html" : "NG-Imm Session Type"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-sibling-health-status",
@@ -385,9 +385,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-contraindication",
