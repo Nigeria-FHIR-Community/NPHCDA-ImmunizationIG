@@ -7,13 +7,13 @@ This CapabilityStatement describes the expected behavior of FHIR servers impleme
 
 It includes full RESTful support for key profiles (`NgImmPatient`, `NgImmImmunization`, and `NgImmBundle`) and logical model transformations. The server also supports data submission, export, and validation via custom operations, as well as tracking updates through `Provenance`.
 
-### Use of HTTP Methods:
+#### Use of HTTP Methods:
 - **POST**: Used to create a new resource. The server assigns the resource ID.
 - **PUT**: Used to fully replace an existing resource identified by a known ID.
 - **PATCH**: Used for partial updates to existing resources.
 
-### Provenance:
-Clients MUST include a `Provenance` resource when performing PUT or PATCH on `Patient` to ensure traceability and support audit trails.
+#### Provenance:
+Clients MUST include a `Provenance` resource when performing GET, PUT, or PATCH on Server Resources (`NgImmPatient`, `NgImmImmunization`, and `NgImmBundle`) to ensure traceability and support audit trails.
 """
 
 * status = #active

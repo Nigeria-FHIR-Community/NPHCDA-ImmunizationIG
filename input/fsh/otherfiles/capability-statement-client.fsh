@@ -8,7 +8,7 @@ This CapabilityStatement defines the expected behavior of client systems that in
 Clients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. 
 They are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.
 
-### Use of HTTP Methods:
+#### Use of HTTP Methods:
 - **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.
 - **PUT**: Used to fully replace an existing resource with updated data.
 - **PATCH**: Used to update only specific elements of a resource.
