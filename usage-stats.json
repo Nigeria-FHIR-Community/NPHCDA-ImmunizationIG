@@ -391,6 +391,9 @@
       "Bundle.entry.resource",
       "Immunization"
     ],
+    "https://nphcda.gov.ng/immunizationIG/StructureDefinition/hiv-status": [
+      "Patient"
+    ],
     "https://nphcda.gov.ng/immunizationIG/StructureDefinition/next-dose-date": [
       "Immunization.protocolApplied"
     ],

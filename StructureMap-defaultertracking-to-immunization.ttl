@@ -1,0 +1,236 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "defaultertracking-to-immunization"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap defaultertracking-to-immunization</b></p><a name=\"defaultertracking-to-immunization\"> </a><a name=\"hcdefaultertracking-to-immunization\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization<span style=\"color: navy\">\" = \"</span>DefaulterTrackingToImmunization<span style=\"color: navy\">\"#xD;\n#xD;\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map logical DefaulterTracking model to NgImmImmunization, NgImmPatient, NgImmEncounter, and NgImmPractitioner profiles</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/defaultertracking<span style=\"color: navy\">\" </span><b>alias </b>DT <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient<span style=\"color: navy\">\" </span><b>alias </b>PAT <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization<span style=\"color: navy\">\" </span><b>alias </b>IMM <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-ng-imm-encounter.html\" title=\"NG-Imm Encounter\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter</a><span style=\"color: navy\">\" </span><b>alias </b>ENC <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style=\"color: navy\">\" </span><b>alias </b>PRAC <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>defaulterTrackingToPatient<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DT</span>, <b>target</b> <span style=\"color: maroon\">PAT</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  DT.clientName<span style=\"color: navy\"><b> -&gt; </b></span>PAT.name[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  DT.clientSex<span style=\"color: navy\"><b> -&gt; </b></span>PAT.gender = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  DT.clientAge<span style=\"color: navy\"><b> -&gt; </b></span>PAT.extension[ageInMonths].valueInteger = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>defaulterTrackingToImmunization<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DT</span>, <b>target</b> <span style=\"color: maroon\">IMM</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  DT.missedVaccine<span style=\"color: navy\"><b> -&gt; </b></span>IMM.vaccineCode = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  DT.missedVaccineDate<span style=\"color: navy\"><b> -&gt; </b></span>IMM.occurrenceDateTime = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  DT.missedReason<span style=\"color: navy\"><b> -&gt; </b></span>IMM.note[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>defaulterTrackingToEncounter<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DT</span>, <b>target</b> <span style=\"color: maroon\">ENC</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  DT.missedVaccineDate<span style=\"color: navy\"><b> -&gt; </b></span>ENC.period.start = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"encounterPeriod\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>defaulterTrackingToPractitioner<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DT</span>, <b>target</b> <span style=\"color: maroon\">PRAC</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  DT.caregiverName<span style=\"color: navy\"><b> -&gt; </b></span>PRAC.name[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  DT.caregiverPhone<span style=\"color: navy\"><b> -&gt; </b></span>PRAC.telecom[0].value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "DefaulterTrackingToImmunization"] ; # 
+  fhir:title [ fhir:v "StructureMap: DefaulterTracking to Immunization and related profiles"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-08-03T02:35:31+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Map logical DefaulterTracking model to NgImmImmunization, NgImmPatient, NgImmEncounter, and NgImmPractitioner profiles"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/defaultertracking"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/defaultertracking>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "DT" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "PAT" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "IMM" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "ENC" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "PRAC" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "defaulterTrackingToPatient" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "DT" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "PAT" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "clientName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "clientName" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "PAT" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name[0].text" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "clientSex" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "clientSex" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "PAT" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "gender" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "clientAge" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "clientAge" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "PAT" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "extension[ageInMonths].valueInteger" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "defaulterTrackingToImmunization" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "DT" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "IMM" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "missedVaccine" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "missedVaccine" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "vaccineCode" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "missedVaccineDate" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "missedVaccineDate" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "occurrenceDateTime" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "missedReason" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "missedReason" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "note[0].text" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "defaulterTrackingToEncounter" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "DT" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "ENC" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "encounterPeriod" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "missedVaccineDate" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "ENC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "period.start" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "defaulterTrackingToPractitioner" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "DT" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "PRAC" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "caregiverName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "caregiverName" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "PRAC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name[0].text" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "caregiverPhone" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "DT" ] ;
+         fhir:element [ fhir:v "caregiverPhone" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "PRAC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "telecom[0].value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

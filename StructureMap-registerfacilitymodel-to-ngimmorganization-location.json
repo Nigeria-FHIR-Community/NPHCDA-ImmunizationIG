@@ -1,0 +1,300 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "registerfacilitymodel-to-ngimmorganization-location",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap registerfacilitymodel-to-ngimmorganization-location</b></p><a name=\"registerfacilitymodel-to-ngimmorganization-location\"> </a><a name=\"hcregisterfacilitymodel-to-ngimmorganization-location\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureMap/registerfacilitymodel-to-ngimmorganization-location<span style=\"color: navy\">&quot; = &quot;</span>RegisterFacilityModelToNgImmOrganizationAndNgImmLocation<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map logical RegisterFacilityModel to NgImmOrganization and NgImmLocation profiles</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-register-facility-model.html\" title=\"NG-Imm-A RegisterFacility\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-facility-model</a><span style=\"color: navy\">&quot; </span><b>alias </b>RFM <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-ng-imm-organization.html\" title=\"NG-Imm Organization\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization</a><span style=\"color: navy\">&quot; </span><b>alias </b>Org <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-nigeria-location.html\" title=\"NG-Imm Location\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location</a><span style=\"color: navy\">&quot; </span><b>alias </b>Loc <b>as </b><b>target</b>\r\n\r\n<b>group </b>registerFacilityToOrganization<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">RFM</span>, <b>target</b> <span style=\"color: maroon\">Org</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  RFM.facilityId<span style=\"color: navy\"><b> -&gt; </b></span>Org.identifier[0].value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;facilityIdToIdentifier&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.regulator<span style=\"color: navy\"><b> -&gt; </b></span>Org.identifier[0].system = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;regulatorToIdentifierSystem&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.facilityName<span style=\"color: navy\"><b> -&gt; </b></span>Org.name = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;facilityNameToName&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.facilityType<span style=\"color: navy\"><b> -&gt; </b></span>Org.type[0] = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;facilityTypeToType&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.facilityStatus<span style=\"color: navy\"><b> -&gt; </b></span>Org.active = <span style=\"color: blue\">true</span> <i>&quot;activeTrue&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><b>group </b>registerFacilityToLocation<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">RFM</span>, <b>target</b> <span style=\"color: maroon\">Loc</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  RFM.facilityName<span style=\"color: navy\"><b> -&gt; </b></span>Loc.name = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;facilityNameToLocationName&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.facilityType<span style=\"color: navy\"><b> -&gt; </b></span>Loc.type[0] = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;facilityTypeToLocationType&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.addressLine<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.line[0] = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;addressLineToLine&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.city<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.city = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;cityToCity&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.lga<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.district = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;lgaToDistrict&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.state<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.state = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;stateToState&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.latitude<span style=\"color: navy\"><b> -&gt; </b></span>Loc.position.latitude = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;latitudeToLatitude&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.longitude<span style=\"color: navy\"><b> -&gt; </b></span>Loc.position.longitude = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;longitudeToLongitude&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.country<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.country = <span style=\"color: blue\">'NG'</span> <i>&quot;countryFixed&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.facilitystatus<span style=\"color: navy\"><b> -&gt; </b></span>Loc.status = <span style=\"color: blue\">'active'</span> <i>&quot;locationStatusActive&quot;</i><span style=\"color: navy\">;</span>\r\n  RFM.facilityId<span style=\"color: navy\"><b> -&gt; </b></span>Loc.managingOrganization.reference = <b>append</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Organization/'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">facilityId</span><span style=\"color: navy\">)</span> <i>&quot;organizationReferenceToManagingOrg&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "https://nphcda.gov.ng/immunizationIG/StructureMap/registerfacilitymodel-to-ngimmorganization-location",
+  "version" : "0.5.0",
+  "name" : "RegisterFacilityModelToNgImmOrganizationAndNgImmLocation",
+  "title" : "StructureMap: RegisterFacilityModel to NgImmOrganization and NgImmLocation",
+  "status" : "active",
+  "date" : "2025-08-03T02:35:31+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Map logical RegisterFacilityModel to NgImmOrganization and NgImmLocation profiles",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "structure" : [{
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-facility-model",
+    "mode" : "source",
+    "alias" : "RFM"
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization",
+    "mode" : "target",
+    "alias" : "Org"
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location",
+    "mode" : "target",
+    "alias" : "Loc"
+  }],
+  "group" : [{
+    "name" : "registerFacilityToOrganization",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "RFM",
+      "mode" : "source"
+    },
+    {
+      "name" : "Org",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "facilityIdToIdentifier",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "facilityId"
+      }],
+      "target" : [{
+        "context" : "Org",
+        "contextType" : "variable",
+        "element" : "identifier[0].value",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "regulatorToIdentifierSystem",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "regulator"
+      }],
+      "target" : [{
+        "context" : "Org",
+        "contextType" : "variable",
+        "element" : "identifier[0].system",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "facilityNameToName",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "facilityName"
+      }],
+      "target" : [{
+        "context" : "Org",
+        "contextType" : "variable",
+        "element" : "name",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "facilityTypeToType",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "facilityType"
+      }],
+      "target" : [{
+        "context" : "Org",
+        "contextType" : "variable",
+        "element" : "type[0]",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "activeTrue",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "facilityStatus"
+      }],
+      "target" : [{
+        "context" : "Org",
+        "contextType" : "variable",
+        "element" : "active",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueBoolean" : true
+        }]
+      }]
+    }]
+  },
+  {
+    "name" : "registerFacilityToLocation",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "RFM",
+      "mode" : "source"
+    },
+    {
+      "name" : "Loc",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "facilityNameToLocationName",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "facilityName"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "name",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "facilityTypeToLocationType",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "facilityType"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "type[0]",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "addressLineToLine",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "addressLine"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "address.line[0]",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "cityToCity",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "city"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "address.city",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "lgaToDistrict",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "lga"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "address.district",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "stateToState",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "state"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "address.state",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "latitudeToLatitude",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "latitude"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "position.latitude",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "longitudeToLongitude",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "longitude"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "position.longitude",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "countryFixed",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "country"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "address.country",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "NG"
+        }]
+      }]
+    },
+    {
+      "name" : "locationStatusActive",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "facilitystatus"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "status",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "active"
+        }]
+      }]
+    },
+    {
+      "name" : "organizationReferenceToManagingOrg",
+      "source" : [{
+        "context" : "RFM",
+        "element" : "facilityId"
+      }],
+      "target" : [{
+        "context" : "Loc",
+        "contextType" : "variable",
+        "element" : "managingOrganization.reference",
+        "transform" : "append",
+        "parameter" : [{
+          "valueString" : "Organization/"
+        },
+        {
+          "valueId" : "facilityId"
+        }]
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="registerfacilitymodel-to-ngimmorganization-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap registerfacilitymodel-to-ngimmorganization-location</b></p><a name="registerfacilitymodel-to-ngimmorganization-location"> </a><a name="hcregisterfacilitymodel-to-ngimmorganization-location"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureMap/registerfacilitymodel-to-ngimmorganization-location<span style="color: navy">&quot; = &quot;</span>RegisterFacilityModelToNgImmOrganizationAndNgImmLocation<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map logical RegisterFacilityModel to NgImmOrganization and NgImmLocation profiles</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-register-facility-model.html" title="NG-Imm-A RegisterFacility">https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-facility-model</a><span style="color: navy">&quot; </span><b>alias </b>RFM <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-ng-imm-organization.html" title="NG-Imm Organization">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization</a><span style="color: navy">&quot; </span><b>alias </b>Org <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-nigeria-location.html" title="NG-Imm Location">https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location</a><span style="color: navy">&quot; </span><b>alias </b>Loc <b>as </b><b>target</b>
+
+<b>group </b>registerFacilityToOrganization<span style="color: navy">(</span><b>source</b> <span style="color: maroon">RFM</span>, <b>target</b> <span style="color: maroon">Org</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  RFM.facilityId<span style="color: navy"><b> -&gt; </b></span>Org.identifier[0].value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;facilityIdToIdentifier&quot;</i><span style="color: navy">;</span>
+  RFM.regulator<span style="color: navy"><b> -&gt; </b></span>Org.identifier[0].system = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;regulatorToIdentifierSystem&quot;</i><span style="color: navy">;</span>
+  RFM.facilityName<span style="color: navy"><b> -&gt; </b></span>Org.name = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;facilityNameToName&quot;</i><span style="color: navy">;</span>
+  RFM.facilityType<span style="color: navy"><b> -&gt; </b></span>Org.type[0] = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;facilityTypeToType&quot;</i><span style="color: navy">;</span>
+  RFM.facilityStatus<span style="color: navy"><b> -&gt; </b></span>Org.active = <span style="color: blue">true</span> <i>&quot;activeTrue&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>registerFacilityToLocation<span style="color: navy">(</span><b>source</b> <span style="color: maroon">RFM</span>, <b>target</b> <span style="color: maroon">Loc</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  RFM.facilityName<span style="color: navy"><b> -&gt; </b></span>Loc.name = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;facilityNameToLocationName&quot;</i><span style="color: navy">;</span>
+  RFM.facilityType<span style="color: navy"><b> -&gt; </b></span>Loc.type[0] = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;facilityTypeToLocationType&quot;</i><span style="color: navy">;</span>
+  RFM.addressLine<span style="color: navy"><b> -&gt; </b></span>Loc.address.line[0] = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;addressLineToLine&quot;</i><span style="color: navy">;</span>
+  RFM.city<span style="color: navy"><b> -&gt; </b></span>Loc.address.city = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;cityToCity&quot;</i><span style="color: navy">;</span>
+  RFM.lga<span style="color: navy"><b> -&gt; </b></span>Loc.address.district = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;lgaToDistrict&quot;</i><span style="color: navy">;</span>
+  RFM.state<span style="color: navy"><b> -&gt; </b></span>Loc.address.state = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;stateToState&quot;</i><span style="color: navy">;</span>
+  RFM.latitude<span style="color: navy"><b> -&gt; </b></span>Loc.position.latitude = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;latitudeToLatitude&quot;</i><span style="color: navy">;</span>
+  RFM.longitude<span style="color: navy"><b> -&gt; </b></span>Loc.position.longitude = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;longitudeToLongitude&quot;</i><span style="color: navy">;</span>
+  RFM.country<span style="color: navy"><b> -&gt; </b></span>Loc.address.country = <span style="color: blue">'NG'</span> <i>&quot;countryFixed&quot;</i><span style="color: navy">;</span>
+  RFM.facilitystatus<span style="color: navy"><b> -&gt; </b></span>Loc.status = <span style="color: blue">'active'</span> <i>&quot;locationStatusActive&quot;</i><span style="color: navy">;</span>
+  RFM.facilityId<span style="color: navy"><b> -&gt; </b></span>Loc.managingOrganization.reference = <b>append</b><span style="color: navy">(</span><span style="color: blue">'Organization/'</span><span style="color: navy">, </span><span style="color: maroon">facilityId</span><span style="color: navy">)</span> <i>&quot;organizationReferenceToManagingOrg&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="https://nphcda.gov.ng/immunizationIG/StructureMap/registerfacilitymodel-to-ngimmorganization-location"/>
+  <version value="0.5.0"/>
+  <name value="RegisterFacilityModelToNgImmOrganizationAndNgImmLocation"/>
+  <title value="StructureMap: RegisterFacilityModel to NgImmOrganization and NgImmLocation"/>
+  <status value="active"/>
+  <date value="2025-08-03T02:35:31+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Map logical RegisterFacilityModel to NgImmOrganization and NgImmLocation profiles"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-facility-model"/>
+    <mode value="source"/>
+    <alias value="RFM"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization"/>
+    <mode value="target"/>
+    <alias value="Org"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"/>
+    <mode value="target"/>
+    <alias value="Loc"/>
+  </structure>
+  <group>
+    <name value="registerFacilityToOrganization"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="RFM"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="Org"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="facilityIdToIdentifier"/>
+      <source>
+        <context value="RFM"/>
+        <element value="facilityId"/>
+      </source>
+      <target>
+        <context value="Org"/>
+        <contextType value="variable"/>
+        <element value="identifier[0].value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="regulatorToIdentifierSystem"/>
+      <source>
+        <context value="RFM"/>
+        <element value="regulator"/>
+      </source>
+      <target>
+        <context value="Org"/>
+        <contextType value="variable"/>
+        <element value="identifier[0].system"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="facilityNameToName"/>
+      <source>
+        <context value="RFM"/>
+        <element value="facilityName"/>
+      </source>
+      <target>
+        <context value="Org"/>
+        <contextType value="variable"/>
+        <element value="name"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="facilityTypeToType"/>
+      <source>
+        <context value="RFM"/>
+        <element value="facilityType"/>
+      </source>
+      <target>
+        <context value="Org"/>
+        <contextType value="variable"/>
+        <element value="type[0]"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="activeTrue"/>
+      <source>
+        <context value="RFM"/>
+        <element value="facilityStatus"/>
+      </source>
+      <target>
+        <context value="Org"/>
+        <contextType value="variable"/>
+        <element value="active"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueBoolean value="true"/>
+        </parameter>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="registerFacilityToLocation"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="RFM"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="Loc"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="facilityNameToLocationName"/>
+      <source>
+        <context value="RFM"/>
+        <element value="facilityName"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="name"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="facilityTypeToLocationType"/>
+      <source>
+        <context value="RFM"/>
+        <element value="facilityType"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="type[0]"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="addressLineToLine"/>
+      <source>
+        <context value="RFM"/>
+        <element value="addressLine"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="address.line[0]"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="cityToCity"/>
+      <source>
+        <context value="RFM"/>
+        <element value="city"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="address.city"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="lgaToDistrict"/>
+      <source>
+        <context value="RFM"/>
+        <element value="lga"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="address.district"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="stateToState"/>
+      <source>
+        <context value="RFM"/>
+        <element value="state"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="address.state"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="latitudeToLatitude"/>
+      <source>
+        <context value="RFM"/>
+        <element value="latitude"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="position.latitude"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="longitudeToLongitude"/>
+      <source>
+        <context value="RFM"/>
+        <element value="longitude"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="position.longitude"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="countryFixed"/>
+      <source>
+        <context value="RFM"/>
+        <element value="country"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="address.country"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="NG"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="locationStatusActive"/>
+      <source>
+        <context value="RFM"/>
+        <element value="facilitystatus"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="status"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="active"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="organizationReferenceToManagingOrg"/>
+      <source>
+        <context value="RFM"/>
+        <element value="facilityId"/>
+      </source>
+      <target>
+        <context value="Loc"/>
+        <contextType value="variable"/>
+        <element value="managingOrganization.reference"/>
+        <transform value="append"/>
+        <parameter>
+          <valueString value="Organization/"/>
+        </parameter>
+        <parameter>
+          <valueId value="facilityId"/>
+        </parameter>
+      </target>
+    </rule>
+  </group>
+</StructureMap>

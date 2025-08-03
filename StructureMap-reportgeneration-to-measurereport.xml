@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="reportgeneration-to-measurereport"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap reportgeneration-to-measurereport</b></p><a name="reportgeneration-to-measurereport"> </a><a name="hcreportgeneration-to-measurereport"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureMap/reportgeneration-to-measurereport<span style="color: navy">&quot; = &quot;</span>ReportGenerationToMeasureReport<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map ReportGeneration logical model to NgImmMeasureReport, NgImmMeasure, and NgImmPractitioner</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/reportgeneration<span style="color: navy">&quot; </span><b>alias </b>RG <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measurereport<span style="color: navy">&quot; </span><b>alias </b>MR <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-ngimm-measure.html" title="NG-Imm Measure">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure</a><span style="color: navy">&quot; </span><b>alias </b>MEASURE <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style="color: navy">&quot; </span><b>alias </b>PRAC <b>as </b><b>target</b>
+
+<b>group </b>reportGenerationToMeasureReport<span style="color: navy">(</span><b>source</b> <span style="color: maroon">RG</span>, <b>target</b> <span style="color: maroon">MR</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  RG.reportId<span style="color: navy"><b> -&gt; </b></span>MR.identifier.value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  RG.generationDate<span style="color: navy"><b> -&gt; </b></span>MR.date = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;reportDate&quot;</i><span style="color: navy">;</span>
+  RG.reportingStart<span style="color: navy"><b> -&gt; </b></span>MR.period.start = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;reportingPeriod&quot;</i><span style="color: navy">;</span>
+  RG.reportingEnd<span style="color: navy"><b> -&gt; </b></span>MR.period.end = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;reportingPeriodEnd&quot;</i><span style="color: navy">;</span>
+  RG.calculatedValue<span style="color: navy"><b> -&gt; </b></span>MR.group[0].measureScore.value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;measureScore&quot;</i><span style="color: navy">;</span>
+  RG.calculatedUnit<span style="color: navy"><b> -&gt; </b></span>MR.group[0].measureScore.unit = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;unit&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>reportGenerationToMeasure<span style="color: navy">(</span><b>source</b> <span style="color: maroon">RG</span>, <b>target</b> <span style="color: maroon">MEASURE</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  RG.indicatorId<span style="color: navy"><b> -&gt; </b></span>MEASURE.identifier.value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;indicatorCode&quot;</i><span style="color: navy">;</span>
+  RG.indicatorName<span style="color: navy"><b> -&gt; </b></span>MEASURE.name = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  RG.indicatorTitle<span style="color: navy"><b> -&gt; </b></span>MEASURE.title = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>reportGenerationToPractitioner<span style="color: navy">(</span><b>source</b> <span style="color: maroon">RG</span>, <b>target</b> <span style="color: maroon">PRAC</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  RG.reporterId<span style="color: navy"><b> -&gt; </b></span>PRAC.identifier.value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  RG.reporterName<span style="color: navy"><b> -&gt; </b></span>PRAC.name[0].text = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="https://nphcda.gov.ng/immunizationIG/StructureMap/reportgeneration-to-measurereport"/>
+  <version value="0.5.0"/>
+  <name value="ReportGenerationToMeasureReport"/>
+  <title value="StructureMap: ReportGeneration to MeasureReport and Related Profiles"/>
+  <status value="active"/>
+  <date value="2025-08-03T02:35:31+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Map ReportGeneration logical model to NgImmMeasureReport, NgImmMeasure, and NgImmPractitioner"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/reportgeneration"/>
+    <mode value="source"/>
+    <alias value="RG"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measurereport"/>
+    <mode value="target"/>
+    <alias value="MR"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure"/>
+    <mode value="target"/>
+    <alias value="MEASURE"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"/>
+    <mode value="target"/>
+    <alias value="PRAC"/>
+  </structure>
+  <group>
+    <name value="reportGenerationToMeasureReport"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="RG"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="MR"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="reportId"/>
+      <source>
+        <context value="RG"/>
+        <element value="reportId"/>
+      </source>
+      <target>
+        <context value="MR"/>
+        <contextType value="variable"/>
+        <element value="identifier.value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="reportDate"/>
+      <source>
+        <context value="RG"/>
+        <element value="generationDate"/>
+      </source>
+      <target>
+        <context value="MR"/>
+        <contextType value="variable"/>
+        <element value="date"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="reportingPeriod"/>
+      <source>
+        <context value="RG"/>
+        <element value="reportingStart"/>
+      </source>
+      <target>
+        <context value="MR"/>
+        <contextType value="variable"/>
+        <element value="period.start"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="reportingPeriodEnd"/>
+      <source>
+        <context value="RG"/>
+        <element value="reportingEnd"/>
+      </source>
+      <target>
+        <context value="MR"/>
+        <contextType value="variable"/>
+        <element value="period.end"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="measureScore"/>
+      <source>
+        <context value="RG"/>
+        <element value="calculatedValue"/>
+      </source>
+      <target>
+        <context value="MR"/>
+        <contextType value="variable"/>
+        <element value="group[0].measureScore.value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="unit"/>
+      <source>
+        <context value="RG"/>
+        <element value="calculatedUnit"/>
+      </source>
+      <target>
+        <context value="MR"/>
+        <contextType value="variable"/>
+        <element value="group[0].measureScore.unit"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="reportGenerationToMeasure"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="RG"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="MEASURE"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="indicatorCode"/>
+      <source>
+        <context value="RG"/>
+        <element value="indicatorId"/>
+      </source>
+      <target>
+        <context value="MEASURE"/>
+        <contextType value="variable"/>
+        <element value="identifier.value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="indicatorName"/>
+      <source>
+        <context value="RG"/>
+        <element value="indicatorName"/>
+      </source>
+      <target>
+        <context value="MEASURE"/>
+        <contextType value="variable"/>
+        <element value="name"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="indicatorTitle"/>
+      <source>
+        <context value="RG"/>
+        <element value="indicatorTitle"/>
+      </source>
+      <target>
+        <context value="MEASURE"/>
+        <contextType value="variable"/>
+        <element value="title"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="reportGenerationToPractitioner"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="RG"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="PRAC"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="reporterId"/>
+      <source>
+        <context value="RG"/>
+        <element value="reporterId"/>
+      </source>
+      <target>
+        <context value="PRAC"/>
+        <contextType value="variable"/>
+        <element value="identifier.value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="reporterName"/>
+      <source>
+        <context value="RG"/>
+        <element value="reporterName"/>
+      </source>
+      <target>
+        <context value="PRAC"/>
+        <contextType value="variable"/>
+        <element value="name[0].text"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+</StructureMap>

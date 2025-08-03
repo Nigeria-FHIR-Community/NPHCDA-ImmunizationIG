@@ -1,0 +1,242 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/StructureMap/reportgeneration-to-measurereport> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "reportgeneration-to-measurereport"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap reportgeneration-to-measurereport</b></p><a name=\"reportgeneration-to-measurereport\"> </a><a name=\"hcreportgeneration-to-measurereport\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureMap/reportgeneration-to-measurereport<span style=\"color: navy\">\" = \"</span>ReportGenerationToMeasureReport<span style=\"color: navy\">\"#xD;\n#xD;\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map ReportGeneration logical model to NgImmMeasureReport, NgImmMeasure, and NgImmPractitioner</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/reportgeneration<span style=\"color: navy\">\" </span><b>alias </b>RG <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measurereport<span style=\"color: navy\">\" </span><b>alias </b>MR <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-ngimm-measure.html\" title=\"NG-Imm Measure\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure</a><span style=\"color: navy\">\" </span><b>alias </b>MEASURE <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style=\"color: navy\">\" </span><b>alias </b>PRAC <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>reportGenerationToMeasureReport<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">RG</span>, <b>target</b> <span style=\"color: maroon\">MR</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  RG.reportId<span style=\"color: navy\"><b> -&gt; </b></span>MR.identifier.value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  RG.generationDate<span style=\"color: navy\"><b> -&gt; </b></span>MR.date = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"reportDate\"</i><span style=\"color: navy\">;</span>#xD;\n  RG.reportingStart<span style=\"color: navy\"><b> -&gt; </b></span>MR.period.start = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"reportingPeriod\"</i><span style=\"color: navy\">;</span>#xD;\n  RG.reportingEnd<span style=\"color: navy\"><b> -&gt; </b></span>MR.period.end = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"reportingPeriodEnd\"</i><span style=\"color: navy\">;</span>#xD;\n  RG.calculatedValue<span style=\"color: navy\"><b> -&gt; </b></span>MR.group[0].measureScore.value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"measureScore\"</i><span style=\"color: navy\">;</span>#xD;\n  RG.calculatedUnit<span style=\"color: navy\"><b> -&gt; </b></span>MR.group[0].measureScore.unit = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"unit\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>reportGenerationToMeasure<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">RG</span>, <b>target</b> <span style=\"color: maroon\">MEASURE</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  RG.indicatorId<span style=\"color: navy\"><b> -&gt; </b></span>MEASURE.identifier.value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"indicatorCode\"</i><span style=\"color: navy\">;</span>#xD;\n  RG.indicatorName<span style=\"color: navy\"><b> -&gt; </b></span>MEASURE.name = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  RG.indicatorTitle<span style=\"color: navy\"><b> -&gt; </b></span>MEASURE.title = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>reportGenerationToPractitioner<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">RG</span>, <b>target</b> <span style=\"color: maroon\">PRAC</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  RG.reporterId<span style=\"color: navy\"><b> -&gt; </b></span>PRAC.identifier.value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  RG.reporterName<span style=\"color: navy\"><b> -&gt; </b></span>PRAC.name[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureMap/reportgeneration-to-measurereport"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "ReportGenerationToMeasureReport"] ; # 
+  fhir:title [ fhir:v "StructureMap: ReportGeneration to MeasureReport and Related Profiles"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-08-03T02:35:31+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Map ReportGeneration logical model to NgImmMeasureReport, NgImmMeasure, and NgImmPractitioner"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/reportgeneration"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/reportgeneration>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "RG" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measurereport"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measurereport>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "MR" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "MEASURE" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "PRAC" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "reportGenerationToMeasureReport" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "RG" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "MR" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "reportId" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "reportId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MR" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier.value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "reportDate" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "generationDate" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MR" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "date" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "reportingPeriod" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "reportingStart" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MR" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "period.start" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "reportingPeriodEnd" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "reportingEnd" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MR" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "period.end" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "measureScore" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "calculatedValue" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MR" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "group[0].measureScore.value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "unit" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "calculatedUnit" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MR" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "group[0].measureScore.unit" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "reportGenerationToMeasure" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "RG" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "MEASURE" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "indicatorCode" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "indicatorId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MEASURE" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier.value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "indicatorName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "indicatorName" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MEASURE" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "indicatorTitle" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "indicatorTitle" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "MEASURE" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "title" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "reportGenerationToPractitioner" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "RG" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "PRAC" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "reporterId" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "reporterId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "PRAC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier.value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "reporterName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RG" ] ;
+         fhir:element [ fhir:v "reporterName" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "PRAC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name[0].text" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

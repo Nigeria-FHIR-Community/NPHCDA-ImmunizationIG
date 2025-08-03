@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="defaultertracking-to-immunization"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap defaultertracking-to-immunization</b></p><a name="defaultertracking-to-immunization"> </a><a name="hcdefaultertracking-to-immunization"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization<span style="color: navy">&quot; = &quot;</span>DefaulterTrackingToImmunization<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map logical DefaulterTracking model to NgImmImmunization, NgImmPatient, NgImmEncounter, and NgImmPractitioner profiles</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/defaultertracking<span style="color: navy">&quot; </span><b>alias </b>DT <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient<span style="color: navy">&quot; </span><b>alias </b>PAT <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization<span style="color: navy">&quot; </span><b>alias </b>IMM <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-ng-imm-encounter.html" title="NG-Imm Encounter">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter</a><span style="color: navy">&quot; </span><b>alias </b>ENC <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style="color: navy">&quot; </span><b>alias </b>PRAC <b>as </b><b>target</b>
+
+<b>group </b>defaulterTrackingToPatient<span style="color: navy">(</span><b>source</b> <span style="color: maroon">DT</span>, <b>target</b> <span style="color: maroon">PAT</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  DT.clientName<span style="color: navy"><b> -&gt; </b></span>PAT.name[0].text = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  DT.clientSex<span style="color: navy"><b> -&gt; </b></span>PAT.gender = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  DT.clientAge<span style="color: navy"><b> -&gt; </b></span>PAT.extension[ageInMonths].valueInteger = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>defaulterTrackingToImmunization<span style="color: navy">(</span><b>source</b> <span style="color: maroon">DT</span>, <b>target</b> <span style="color: maroon">IMM</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  DT.missedVaccine<span style="color: navy"><b> -&gt; </b></span>IMM.vaccineCode = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  DT.missedVaccineDate<span style="color: navy"><b> -&gt; </b></span>IMM.occurrenceDateTime = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  DT.missedReason<span style="color: navy"><b> -&gt; </b></span>IMM.note[0].text = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>defaulterTrackingToEncounter<span style="color: navy">(</span><b>source</b> <span style="color: maroon">DT</span>, <b>target</b> <span style="color: maroon">ENC</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  DT.missedVaccineDate<span style="color: navy"><b> -&gt; </b></span>ENC.period.start = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;encounterPeriod&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>defaulterTrackingToPractitioner<span style="color: navy">(</span><b>source</b> <span style="color: maroon">DT</span>, <b>target</b> <span style="color: maroon">PRAC</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  DT.caregiverName<span style="color: navy"><b> -&gt; </b></span>PRAC.name[0].text = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  DT.caregiverPhone<span style="color: navy"><b> -&gt; </b></span>PRAC.telecom[0].value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization"/>
+  <version value="0.5.0"/>
+  <name value="DefaulterTrackingToImmunization"/>
+  <title value="StructureMap: DefaulterTracking to Immunization and related profiles"/>
+  <status value="active"/>
+  <date value="2025-08-03T02:35:31+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Map logical DefaulterTracking model to NgImmImmunization, NgImmPatient, NgImmEncounter, and NgImmPractitioner profiles"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/defaultertracking"/>
+    <mode value="source"/>
+    <alias value="DT"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient"/>
+    <mode value="target"/>
+    <alias value="PAT"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization"/>
+    <mode value="target"/>
+    <alias value="IMM"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"/>
+    <mode value="target"/>
+    <alias value="ENC"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"/>
+    <mode value="target"/>
+    <alias value="PRAC"/>
+  </structure>
+  <group>
+    <name value="defaulterTrackingToPatient"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="DT"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="PAT"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="clientName"/>
+      <source>
+        <context value="DT"/>
+        <element value="clientName"/>
+      </source>
+      <target>
+        <context value="PAT"/>
+        <contextType value="variable"/>
+        <element value="name[0].text"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="clientSex"/>
+      <source>
+        <context value="DT"/>
+        <element value="clientSex"/>
+      </source>
+      <target>
+        <context value="PAT"/>
+        <contextType value="variable"/>
+        <element value="gender"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="clientAge"/>
+      <source>
+        <context value="DT"/>
+        <element value="clientAge"/>
+      </source>
+      <target>
+        <context value="PAT"/>
+        <contextType value="variable"/>
+        <element value="extension[ageInMonths].valueInteger"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="defaulterTrackingToImmunization"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="DT"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="IMM"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="missedVaccine"/>
+      <source>
+        <context value="DT"/>
+        <element value="missedVaccine"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="vaccineCode"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="missedVaccineDate"/>
+      <source>
+        <context value="DT"/>
+        <element value="missedVaccineDate"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="occurrenceDateTime"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="missedReason"/>
+      <source>
+        <context value="DT"/>
+        <element value="missedReason"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="note[0].text"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="defaulterTrackingToEncounter"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="DT"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="ENC"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="encounterPeriod"/>
+      <source>
+        <context value="DT"/>
+        <element value="missedVaccineDate"/>
+      </source>
+      <target>
+        <context value="ENC"/>
+        <contextType value="variable"/>
+        <element value="period.start"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="defaulterTrackingToPractitioner"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="DT"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="PRAC"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="caregiverName"/>
+      <source>
+        <context value="DT"/>
+        <element value="caregiverName"/>
+      </source>
+      <target>
+        <context value="PRAC"/>
+        <contextType value="variable"/>
+        <element value="name[0].text"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="caregiverPhone"/>
+      <source>
+        <context value="DT"/>
+        <element value="caregiverPhone"/>
+      </source>
+      <target>
+        <context value="PRAC"/>
+        <contextType value="variable"/>
+        <element value="telecom[0].value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+</StructureMap>

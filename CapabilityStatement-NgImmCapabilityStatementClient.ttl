@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "NgImmCapabilityStatementClient"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement NgImmCapabilityStatementClient</b></p><a name=\"NgImmCapabilityStatementClient\"> </a><a name=\"hcNgImmCapabilityStatementClient\"> </a><h2 id=\"title\">NG-Imm Client CapabilityStatement</h2><ul><li>Implementation Guide Version: 0.5.0 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>xml</code></li><li>Supported Patch Formats: </li><li>Published on: 2025-06-22 </li><li>Published by: https://nphcda.gov.ng </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>client</code></h3></div><div class=\"panel-body\"><div><p>Client that searches, retrieves and submits immunization records using Nigerian profiles.</p>\n</div><div class=\"lead\"><em>Summary of System-wide Interactions</em></div></div></div><h3 id=\"resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"PATCH a new resource version (patch interaction)\">P</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#Patient1-1\">Patient</a></td><td><a href=\"StructureDefinition-NgImmPatient.html\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td/><td/><td/><td/></tr><tr><td><a href=\"#Immunization1-2\">Immunization</a></td><td><a href=\"StructureDefinition-NgImmImmunization.html\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td/><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Patient1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: supported </span>Patient</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-NgImmPatient.html\">NG-Imm Patient</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>search-type</code>, <code>create</code>, <code>update</code>, <code>patch</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Immunization1-2\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: supported </span>Immunization</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-NgImmImmunization.html\">NG-Imm Immunization</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>search-type</code>, <code>create</code>, <code>update</code>, <code>patch</code>.</li></ul></div></div><p/></div></div></div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement NgImmCapabilityStatementClient</b></p><a name=\"NgImmCapabilityStatementClient\"> </a><a name=\"hcNgImmCapabilityStatementClient\"> </a><h2 id=\"title\">NG-Imm Client CapabilityStatement</h2><ul><li>Implementation Guide Version: 0.5.0 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>xml</code></li><li>Supported Patch Formats: </li><li>Published on: 2025-08-03 </li><li>Published by: https://nphcda.gov.ng </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>client</code></h3></div><div class=\"panel-body\"><div><p>Client systems consuming NG-IMM immunization APIs must support reading, creating, updating, and transforming immunization-related resources via REST and custom operations.</p>\n</div><div class=\"lead\"><em>Summary of System-wide Interactions</em></div></div></div><h3 id=\"resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"PATCH a new resource version (patch interaction)\">P</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#Patient1-1\">Patient</a></td><td><a href=\"StructureDefinition-NgImmPatient.html\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>identifier, firstname, lastname, birthdate, gender, state</td><td/><td/><td><code>$submit</code>, <code>$export</code>, <code>$validate</code></td></tr><tr><td><a href=\"#Immunization1-2\">Immunization</a></td><td><a href=\"StructureDefinition-NgImmImmunization.html\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>patient, status, vaccine-code, date</td><td/><td/><td><code>$submit</code>, <code>$export</code>, <code>$validate</code></td></tr><tr><td><a href=\"#Bundle1-3\">Bundle</a></td><td><a href=\"StructureDefinition-NgImmBundle.html\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td>type, timestamp, identifier</td><td/><td/><td><code>$submit</code>, <code>$export</code>, <code>$validate</code></td></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Patient1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: supported </span>Patient</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-NgImmPatient.html\">NG-Imm Patient</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>search-type</code>, <code>create</code>, <code>update</code>, <code>patch</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Clients use the <code>NgImmPatient</code> profile to register new patients or update existing records.</p>\n<ul>\n<li><strong>POST</strong>: Create new patient.</li>\n<li><strong>PUT</strong>: Full replacement of a known patient.</li>\n<li><strong>PATCH</strong>: Partial updates (e.g., birthDate, address).</li>\n</ul>\n<p>Clients should also submit <code>Provenance</code> to attribute responsibility for updates.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>firstname</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>lastname</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>birthdate</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>gender</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>state</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Extended Operations</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Operation</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>$submit</td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>$export</td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>$validate</td><td><div/></td></tr></tbody></table></div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Immunization1-2\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: supported </span>Immunization</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-NgImmImmunization.html\">NG-Imm Immunization</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>search-type</code>, <code>create</code>, <code>update</code>, <code>patch</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Clients use <code>NgImmImmunization</code> to record or correct vaccine administration events.</p>\n<ul>\n<li><strong>POST</strong>: Create new immunization record.</li>\n<li><strong>PUT</strong>: Replace an existing immunization resource.</li>\n<li><strong>PATCH</strong>: Targeted update, e.g. status or performer.</li>\n</ul>\n<p>Clients may include <code>Provenance</code> if updates are made on behalf of health workers.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>vaccine-code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>date</td><td><code>date</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Extended Operations</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Operation</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>$submit</td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>$export</td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>$validate</td><td><div/></td></tr></tbody></table></div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Bundle1-3\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: supported </span>Bundle</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-NgImmBundle.html\">Nigeria Immunization Bundle</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>search-type</code>, <code>create</code>, <code>update</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Used by clients for bulk data sync or submission, e.g. client + doses + allergy info.</p>\n<ul>\n<li><strong>POST</strong>: Create and submit new bundled data.</li>\n<li><strong>PUT</strong>: Replace an existing bundle submission.</li>\n<li>PATCH is not supported for bundles.</li>\n</ul>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>type</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>timestamp</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Extended Operations</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Operation</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>$submit</td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>$export</td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>$validate</td><td><div/></td></tr></tbody></table></div></div></div></div></div><h3 id=\"operationsCap1\">Operations</h3><h4 id=\"operationsSummary1\">Use</h4></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/CapabilityStatement/NgImmCapabilityStatementClient"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.5.0"] ; # 
   fhir:title [ fhir:v "NG-Imm Client CapabilityStatement"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-22"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2025-08-03"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -33,7 +33,7 @@
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Describes expected behavior of clients consuming immunization services using the Nigerian profiles."] ; # 
+  fhir:description [ fhir:v "This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.\n\nClients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. \nThey are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.\n\n### Use of HTTP Methods:\n- **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.\n- **PUT**: Used to fully replace an existing resource with updated data.\n- **PATCH**: Used to update only specific elements of a resource."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -46,13 +46,14 @@
   fhir:format ( [ fhir:v "xml"] ) ; # 
   fhir:rest ( [
      fhir:mode [ fhir:v "client" ] ;
-     fhir:documentation [ fhir:v "Client that searches, retrieves and submits immunization records using Nigerian profiles." ] ;
+     fhir:documentation [ fhir:v "Client systems consuming NG-IMM immunization APIs must support reading, creating, updating, and transforming immunization-related resources via REST and custom operations." ] ;
      fhir:resource ( [
        fhir:type [ fhir:v "Patient" ] ;
        fhir:profile [
          fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient"^^xsd:anyURI ;
          fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmPatient>
        ] ;
+       fhir:documentation [ fhir:v "Clients use the `NgImmPatient` profile to register new patients or update existing records.\n\n- **POST**: Create new patient.\n- **PUT**: Full replacement of a known patient.\n- **PATCH**: Partial updates (e.g., birthDate, address).\n\nClients should also submit `Provenance` to attribute responsibility for updates." ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "read" ]
        ] [
@@ -63,6 +64,68 @@
          fhir:code [ fhir:v "update" ]
        ] [
          fhir:code [ fhir:v "patch" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Patient-identifier"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Patient-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:name [ fhir:v "firstname" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Patient-firstname"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Patient-firstname>
+         ] ;
+         fhir:type [ fhir:v "string" ]
+       ] [
+         fhir:name [ fhir:v "lastname" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Patient-lastname"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Patient-lastname>
+         ] ;
+         fhir:type [ fhir:v "string" ]
+       ] [
+         fhir:name [ fhir:v "birthdate" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Patient-birthdate"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Patient-birthdate>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:name [ fhir:v "gender" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Patient-gender"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Patient-gender>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:name [ fhir:v "state" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Patient-state"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Patient-state>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] ) ;
+       fhir:operation ( [
+         fhir:name [ fhir:v "submit" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/submit-ngimm-patient"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/submit-ngimm-patient>
+         ]
+       ] [
+         fhir:name [ fhir:v "export" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/export-ngimm-patient"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/export-ngimm-patient>
+         ]
+       ] [
+         fhir:name [ fhir:v "validate" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/validate-ngimm-patient"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/validate-ngimm-patient>
+         ]
        ] )
      ] [
        fhir:type [ fhir:v "Immunization" ] ;
@@ -70,6 +133,7 @@
          fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization"^^xsd:anyURI ;
          fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmImmunization>
        ] ;
+       fhir:documentation [ fhir:v "Clients use `NgImmImmunization` to record or correct vaccine administration events.\n\n- **POST**: Create new immunization record.\n- **PUT**: Replace an existing immunization resource.\n- **PATCH**: Targeted update, e.g. status or performer.\n\nClients may include `Provenance` if updates are made on behalf of health workers." ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "read" ]
        ] [
@@ -80,7 +144,137 @@
          fhir:code [ fhir:v "update" ]
        ] [
          fhir:code [ fhir:v "patch" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Immunization-patient"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Immunization-patient>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Immunization-status"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Immunization-status>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:name [ fhir:v "vaccine-code" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Immunization-vaccine-code"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Immunization-vaccine-code>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:name [ fhir:v "date" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Immunization-date"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Immunization-date>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] ) ;
+       fhir:operation ( [
+         fhir:name [ fhir:v "submit" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/submit-ngimm-immunization"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/submit-ngimm-immunization>
+         ]
+       ] [
+         fhir:name [ fhir:v "export" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/export-ngimm-immunization"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/export-ngimm-immunization>
+         ]
+       ] [
+         fhir:name [ fhir:v "validate" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/validate-ngimm-immunization"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/validate-ngimm-immunization>
+         ]
        ] )
+     ] [
+       fhir:type [ fhir:v "Bundle" ] ;
+       fhir:profile [
+         fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/NgImmBundle>
+       ] ;
+       fhir:documentation [ fhir:v "Used by clients for bulk data sync or submission, e.g. client + doses + allergy info.\n\n- **POST**: Create and submit new bundled data.\n- **PUT**: Replace an existing bundle submission.\n- PATCH is not supported for bundles." ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] [
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:code [ fhir:v "update" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "type" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Bundle-type"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Bundle-type>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:name [ fhir:v "timestamp" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Bundle-timestamp"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Bundle-timestamp>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:definition [
+           fhir:v "SearchParameter/Bundle-identifier"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/SearchParameter/Bundle-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] ) ;
+       fhir:operation ( [
+         fhir:name [ fhir:v "submit" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/submit-ngimm-bundle"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/submit-ngimm-bundle>
+         ]
+       ] [
+         fhir:name [ fhir:v "export" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/export-ngimm-bundle"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/export-ngimm-bundle>
+         ]
+       ] [
+         fhir:name [ fhir:v "validate" ] ;
+         fhir:definition [
+           fhir:v "OperationDefinition/validate-ngimm-bundle"^^xsd:anyURI ;
+           fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/validate-ngimm-bundle>
+         ]
+       ] )
+     ] ) ;
+     fhir:operation ( [
+       fhir:name [ fhir:v "transformRegisterClientModelToNgImmPatient" ] ;
+       fhir:definition [
+         fhir:v "OperationDefinition/transform-ngimm-patient"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/transform-ngimm-patient>
+       ]
+     ] [
+       fhir:name [ fhir:v "transformAdministerVaccineToImmunization" ] ;
+       fhir:definition [
+         fhir:v "OperationDefinition/transform-administervaccine-to-immunization"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/transform-administervaccine-to-immunization>
+       ]
+     ] [
+       fhir:name [ fhir:v "transformAdministerVaccineToAllergy" ] ;
+       fhir:definition [
+         fhir:v "OperationDefinition/transform-administervaccine-to-allergyintolerance"^^xsd:anyURI ;
+         fhir:link <https://nphcda.gov.ng/immunizationIG/OperationDefinition/transform-administervaccine-to-allergyintolerance>
+       ]
+     ] [
+       fhir:name [ fhir:v "getMetadata" ] ;
+       fhir:definition [
+         fhir:v "http://hl7.org/fhir/OperationDefinition/CapabilityStatement"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/OperationDefinition/CapabilityStatement>
+       ]
      ] )
   ] ) . # 
 

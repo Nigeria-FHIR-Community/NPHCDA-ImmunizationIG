@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "NG-Imm Client CapabilityStatement",
-    "description": "Describes expected behavior of clients consuming immunization services using the Nigerian profiles.",
+    "description": "This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.\n\nClients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. \nThey are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using `$transform`.\n\n### Use of HTTP Methods:\n- **POST**: Used by clients to create new Patient, Immunization, or Bundle resources.\n- **PUT**: Used to fully replace an existing resource with updated data.\n- **PATCH**: Used to update only specific elements of a resource.",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"

@@ -44,7 +44,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","id","FiveWs.identifier","IAM-7"
 "AllergyIntolerance.clinicalStatus","AllergyIntolerance.clinicalStatus","","","",0,1,"","Y","Y","CodeableConcept {[]} {[]}
 ","active | inactive | resolved","The clinical status of the allergy or intolerance.","Refer to [discussion](http://hl7.org/fhir/R4/extensibility.html#Special-Case) if clincalStatus is missing data.
-The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","","https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-clinical-status","",,,,"AllergyIntolerance.clinicalStatus",0,1,"ait-1
+The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/allergyintolerance-clinical","",,,,"AllergyIntolerance.clinicalStatus",0,1,"ait-1
 ait-2","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Observation ACT .inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""clinicalStatus"", moodCode=EVN].value","FiveWs.status"
 "AllergyIntolerance.clinicalStatus.id","AllergyIntolerance.clinicalStatus.id","","","",0,1,"","","","string {[]} {[]}

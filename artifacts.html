@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Nigeria Immunization FHIR IG</span>
             <br/>
-            <span style="display:inline-block;">0.5.0 - ci-build
+            <span style="display:inline-block;">0.5.0 - draft
 
 
 
@@ -100,11 +100,10 @@
       <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
       <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
       <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
-      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
-      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
+      <li><a href="artifacts.html#artifacts-summary">Capability and Logical Models</a></li>
+      <li><a href="artifacts.html#terminology-structure-maps">Model-Profile Map</a></li>
     </ul>
   </li>
-
 
   <li> <a href="search-operation.html" >Search and Operations</a></li> 
   <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
@@ -155,22 +154,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Behavior: Search Parameters</a>
+         <a href="#2">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#3">Structures: Logical Models</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Structures: Resource Profiles</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Structures: Extension Definitions</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Terminology: Value Sets</a>
+         <a href="#6">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#7">Terminology: Code Systems</a>
+         <a href="#7">Terminology: Structure Maps</a>
       </li>
       <li>
          <a href="#8">Example: Example Instances</a>
@@ -193,7 +192,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CapabilityStatement/NgImmCapabilityStatementClient">NG-Imm Client CapabilityStatement</a>
             </td>
             <td>
-<p>Describes expected behavior of clients consuming immunization services using the Nigerian profiles.</p>
+<p>This CapabilityStatement defines the expected behavior of client systems that interact with NG-IMM FHIR servers in Nigeria’s immunization ecosystem.</p>
+
+<p>Clients must support standard RESTful interactions with NG-IMM-compliant FHIR APIs and use appropriate operations to submit, export, and validate structured data. 
+They are also expected to initiate transformation of logical models (e.g. RegisterClientModel, AdministerVaccine) into formal FHIR resources using <code class="language-plaintext highlighter-rouge">$transform</code>.</p>
+
+<h3 id="use-of-http-methods">Use of HTTP Methods:</h3>
+<ul>
+  <li><strong>POST</strong>: Used by clients to create new Patient, Immunization, or Bundle resources.</li>
+  <li><strong>PUT</strong>: Used to fully replace an existing resource with updated data.</li>
+  <li><strong>PATCH</strong>: Used to update only specific elements of a resource.</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -202,200 +211,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CapabilityStatement/NgImmCapabilityStatementServer">NG-Imm Server CapabilityStatement</a>
             </td>
             <td>
-<p>Describes the expected behavior of systems serving immunization data based on the NgImmPatient and NgImmImmunization profiles.</p>
+<p>This CapabilityStatement describes the expected behavior of FHIR servers implementing Nigeria’s Immunization Implementation Guide (NG-IMM).</p>
+
+<p>It includes full RESTful support for key profiles (<code class="language-plaintext highlighter-rouge">NgImmPatient</code>, <code class="language-plaintext highlighter-rouge">NgImmImmunization</code>, and <code class="language-plaintext highlighter-rouge">NgImmBundle</code>) and logical model transformations. The server also supports data submission, export, and validation via custom operations, as well as tracking updates through <code class="language-plaintext highlighter-rouge">Provenance</code>.</p>
+
+<h3 id="use-of-http-methods">Use of HTTP Methods:</h3>
+<ul>
+  <li><strong>POST</strong>: Used to create a new resource. The server assigns the resource ID.</li>
+  <li><strong>PUT</strong>: Used to fully replace an existing resource identified by a known ID.</li>
+  <li><strong>PATCH</strong>: Used for partial updates to existing resources.</li>
+</ul>
+
+<h3 id="provenance">Provenance:</h3>
+<p>Clients MUST include a <code class="language-plaintext highlighter-rouge">Provenance</code> resource when performing PUT or PATCH on <code class="language-plaintext highlighter-rouge">Patient</code> to ensure traceability and support audit trails.</p>
 </td>
          </tr>
       </tbody>
    </table>
    <a name="2"> </a>
-   <h3>Behavior: Search Parameters </h3>
-    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByLastUpdated.html"
-                  title="SearchParameter/NgImmBundleSearchByLastUpdated">NG-Imm Search Bundle by Last Updated Date</a>
-            </td>
-            <td>
-<p>Retrieve bundles based on last updated timestamp</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByFacilityIdentifier.html"
-                  title="SearchParameter/NgImmBundleSearchByFacilityIdentifier">NG-Imm Search Bundle by Organization Identifier</a>
-            </td>
-            <td>
-<p>Retrieve bundles that reference a specific healthcare organization/facility</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByBirthDate.html"
-                  title="SearchParameter/NgImmBundleSearchByBirthDate">NG-Imm Search Bundle by Patient BirthDate</a>
-            </td>
-            <td>
-<p>Retrieve bundles where the Patient has a specific birth date</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByPatientIdentifier.html"
-                  title="SearchParameter/NgImmBundleSearchByPatientIdentifier">NG-Imm Search Bundle by Patient Identifier</a>
-            </td>
-            <td>
-<p>Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByState.html"
-                  title="SearchParameter/NgImmBundleSearchByState">NG-Imm Search Bundle by Patient State</a>
-            </td>
-            <td>
-<p>Retrieve bundles where the Patient resides in a specific Nigerian State</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-NgImmBundleSearchByVaccineCode.html"
-                  title="SearchParameter/NgImmBundleSearchByVaccineCode">NG-Imm Search Bundle by Vaccine Code</a>
-            </td>
-            <td>
-<p>Searches bundles containing a specific vaccine code in Immunization</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-immdate.html"
-                  title="SearchParameter/SearchParameter-ngimm-immdate">NG-Imm Search Immunization by date of vaccination</a>
-            </td>
-            <td>
-<p>Search Immunization records by date of vaccination</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-immstatus.html"
-                  title="SearchParameter/SearchParameter-ngimm-immstatus">NG-Imm Search Immunization by immunization status</a>
-            </td>
-            <td>
-<p>Search Immunization records by status (eg. completed, or not done)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-immpatient.html"
-                  title="SearchParameter/SearchParameter-ngimm-immpatient">NG-Imm Search Immunization by patient</a>
-            </td>
-            <td>
-<p>Search Immunization records by patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-immvaccinecode.html"
-                  title="SearchParameter/SearchParameter-ngimm-immvaccinecode">NG-Imm Search Immunization by vaccine code</a>
-            </td>
-            <td>
-<p>Search Immunization records by vaccination code</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-identifier.html"
-                  title="SearchParameter/SearchParameter-ngimm-identifier">NG-Imm Search Patient by Identifier</a>
-            </td>
-            <td>
-<p>Search by patient identifier</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-birthdate.html"
-                  title="SearchParameter/SearchParameter-ngimm-birthdate">NG-Imm Search Patient by birth date</a>
-            </td>
-            <td>
-<p>Search by patient birth date</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-city.html"
-                  title="SearchParameter/SearchParameter-ngimm-city">NG-Imm Search Patient by city</a>
-            </td>
-            <td>
-<p>Search patient records by city, town or settlement</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-createddate.html"
-                  title="SearchParameter/SearchParameter-ngimm-createddate">NG-Imm Search Patient by date of creation or update</a>
-            </td>
-            <td>
-<p>Search by patient’s creation or last updated date (range supported)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-firstname.html"
-                  title="SearchParameter/SearchParameter-ngimm-firstname">NG-Imm Search Patient by firstname</a>
-            </td>
-            <td>
-<p>Search by patient firstname</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-gender.html"
-                  title="SearchParameter/SearchParameter-ngimm-gender">NG-Imm Search Patient by gender</a>
-            </td>
-            <td>
-<p>Search by patient gender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-lastname.html"
-                  title="SearchParameter/SearchParameter-ngimm-lastname">NG-Imm Search Patient by lastname</a>
-            </td>
-            <td>
-<p>Search by patient lastname</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-state.html"
-                  title="SearchParameter/SearchParameter-ngimm-state">NG-Imm Search Patient by state</a>
-            </td>
-            <td>
-<p>Search by patient’s State of residence</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-lga.html"
-                  title="SearchParameter/SearchParameter-ngimm-lga">NG-Imm Search by Patient LGA</a>
-            </td>
-            <td>
-<p>Search by patient LGA of residence</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="SearchParameter-SearchParameter-ngimm-telecom.html"
-                  title="SearchParameter/SearchParameter-ngimm-telecom">NG-Imm Search patient by phone or email</a>
-            </td>
-            <td>
-<p>Search patient record by phone number or email address</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="3"> </a>
    <h3>Structures: Logical Models </h3>
     <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
 <table class="grid">
@@ -404,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-register-facility-model.html"
-                  title="StructureDefinition/register-facility-model">NG-Imm-A RegisterFacility[information only]</a>
+                  title="StructureDefinition/register-facility-model">NG-Imm-A RegisterFacility</a>
             </td>
             <td>
 <p>IMMZ.A - A logical model representing a health facility being registered in the immunization system.</p>
@@ -413,7 +246,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-register-client-model.html"
-                  title="StructureDefinition/register-client-model">NG-Imm-C5 RegisterClient[information only]</a>
+                  title="StructureDefinition/register-client-model">NG-Imm-C5 RegisterClient</a>
             </td>
             <td>
 <p>IMMZ.C5 - A logical model representing a client being registered in the immunization system.</p>
@@ -422,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-UpdateClientHistory.html"
-                  title="StructureDefinition/UpdateClientHistory">NG-Imm-C6 UpdateClientHistory[information only]</a>
+                  title="StructureDefinition/UpdateClientHistory">NG-Imm-C6 UpdateClientHistory</a>
             </td>
             <td>
 <p>IMMZ.C6 - A logical model for tracking client immunization history updates.</p>
@@ -431,7 +264,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-AdministerVaccine.html"
-                  title="StructureDefinition/AdministerVaccine">NG-Imm-D AdministerVaccine[information only]</a>
+                  title="StructureDefinition/AdministerVaccine">NG-Imm-D AdministerVaccine</a>
             </td>
             <td>
 <p>IMMZ.D - A logical model for capturing vaccine administration details</p>
@@ -440,7 +273,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-manage-aefi.html"
-                  title="StructureDefinition/manage-aefi">NG-Imm-E Manage &amp; ReportAEFI[information only]</a>
+                  title="StructureDefinition/manage-aefi">NG-Imm-E Manage &amp; ReportAEFI</a>
             </td>
             <td>
 <p>IMMZ.E - A logical model for recording and managing AEFI treatment.</p>
@@ -449,7 +282,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-DefaulterTracking.html"
-                  title="StructureDefinition/DefaulterTracking">NG-Imm-G DefaulterTracking[information only]</a>
+                  title="StructureDefinition/DefaulterTracking">NG-Imm-G DefaulterTracking</a>
             </td>
             <td>
 <p>IMMZ.G - A logical model for tracking immunization defaulters.</p>
@@ -458,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-IMMZGGenerateReport.html"
-                  title="StructureDefinition/IMMZGGenerateReport">NG-Imm-H GenerateReport[information only]</a>
+                  title="StructureDefinition/IMMZGGenerateReport">NG-Imm-H GenerateReport</a>
             </td>
             <td>
 <p>IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary.</p>
@@ -466,7 +299,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -573,7 +406,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="4"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -725,7 +558,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -864,7 +697,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1008,6 +841,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>This CodeSystem defines codes for major languages spoken across Nigeria.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Terminology: Structure Maps </h3>
+    <p>These define transformations to convert between data structures used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureMap-adminvaccine-to-immunization.html"
+                  title="StructureMap/adminvaccine-to-immunization">StructureMap: AdministerVaccine to FHIR Resources</a>
+            </td>
+            <td>
+<p>Map logical AdministerVaccine to NgImmImmunization, NgImmLocation, NgImmPractitioner, and NgImmEncounter profiles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureMap-defaultertracking-to-immunization.html"
+                  title="StructureMap/defaultertracking-to-immunization">StructureMap: DefaulterTracking to Immunization and related profiles</a>
+            </td>
+            <td>
+<p>Map logical DefaulterTracking model to NgImmImmunization, NgImmPatient, NgImmEncounter, and NgImmPractitioner profiles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureMap-manageaefi-to-ngimm-aefi-profiles.html"
+                  title="StructureMap/manageaefi-to-ngimm-aefi-profiles">StructureMap: ManageAEFI to AllergyIntolerance, Encounter, Practitioner, and Patient</a>
+            </td>
+            <td>
+<p>Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEncounter, NgImmPractitioner, and NgImmPatient profiles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureMap-registerclientmodel-to-ngimmpatient.html"
+                  title="StructureMap/registerclientmodel-to-ngimmpatient">StructureMap: RegisterClientModel to NgImmPatient</a>
+            </td>
+            <td>
+<p>Map logical RegisterClientModel to NgImmPatient profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureMap-registerfacilitymodel-to-ngimmorganization-location.html"
+                  title="StructureMap/registerfacilitymodel-to-ngimmorganization-location">StructureMap: RegisterFacilityModel to NgImmOrganization and NgImmLocation</a>
+            </td>
+            <td>
+<p>Map logical RegisterFacilityModel to NgImmOrganization and NgImmLocation profiles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureMap-reportgeneration-to-measurereport.html"
+                  title="StructureMap/reportgeneration-to-measurereport">StructureMap: ReportGeneration to MeasureReport and Related Profiles</a>
+            </td>
+            <td>
+<p>Map ReportGeneration logical model to NgImmMeasureReport, NgImmMeasure, and NgImmPractitioner</p>
 </td>
          </tr>
       </tbody>
@@ -1223,7 +1118,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 17, 2025 18:58+0100">2025-07-17</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://nphcda.gov.ng">https://nphcda.gov.ng</a>.  Package fhir.nigeriaImmunizationIG#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 3, 2025 02:36+0100">2025-08-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

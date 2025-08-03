@@ -10,7 +10,7 @@
   <name value="NGGenderCS"/>
   <title value="NG-Imm Gender CS"/>
   <status value="active"/>
-  <date value="2025-07-17T18:57:38+01:00"/>
+  <date value="2025-08-03T02:35:31+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -42,24 +42,10 @@
     <code value="male"/>
     <display value="male"/>
     <definition value="Client is of the male gender"/>
-    <designation>
-      <use>
-        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
-        <code value="display"/>
-      </use>
-      <value value="male"/>
-    </designation>
   </concept>
   <concept>
     <code value="female"/>
     <display value="female"/>
     <definition value="Client is of the female gender"/>
-    <designation>
-      <use>
-        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
-        <code value="display"/>
-      </use>
-      <value value="female"/>
-    </designation>
   </concept>
 </CodeSystem>

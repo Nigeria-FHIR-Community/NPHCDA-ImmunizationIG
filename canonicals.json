@@ -131,146 +131,6 @@
     "name" : "NigeriaimmunizationFHIRIG"
   },
   {
-    "id" : "NgImmBundleSearchByBirthDate",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByBirthDate",
-    "version" : "0.5.0",
-    "name" : "searchBundleByPatientBirthDate"
-  },
-  {
-    "id" : "NgImmBundleSearchByFacilityIdentifier",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByFacilityIdentifier",
-    "version" : "0.5.0",
-    "name" : "searchBundleByOrganizationIdentifier"
-  },
-  {
-    "id" : "NgImmBundleSearchByLastUpdated",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByLastUpdated",
-    "version" : "0.5.0",
-    "name" : "searchBundleByLastUpdated"
-  },
-  {
-    "id" : "NgImmBundleSearchByPatientIdentifier",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByPatientIdentifier",
-    "version" : "0.5.0",
-    "name" : "searchBundleByPatientIdentifier"
-  },
-  {
-    "id" : "NgImmBundleSearchByState",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByState",
-    "version" : "0.5.0",
-    "name" : "searchBundleByPatientState"
-  },
-  {
-    "id" : "NgImmBundleSearchByVaccineCode",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/NgImmBundleSearchByVaccineCode",
-    "version" : "0.5.0",
-    "name" : "searchBundleByVaccineCode"
-  },
-  {
-    "id" : "SearchParameter-ngimm-birthdate",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-birthdate",
-    "version" : "0.5.0",
-    "name" : "birthDate"
-  },
-  {
-    "id" : "SearchParameter-ngimm-city",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-city",
-    "version" : "0.5.0",
-    "name" : "city"
-  },
-  {
-    "id" : "SearchParameter-ngimm-createddate",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-createddate",
-    "version" : "0.5.0",
-    "name" : "createddate"
-  },
-  {
-    "id" : "SearchParameter-ngimm-firstname",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-firstname",
-    "version" : "0.5.0",
-    "name" : "firstname"
-  },
-  {
-    "id" : "SearchParameter-ngimm-gender",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-gender",
-    "version" : "0.5.0",
-    "name" : "gender"
-  },
-  {
-    "id" : "SearchParameter-ngimm-identifier",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-identifier",
-    "version" : "0.5.0",
-    "name" : "identifier"
-  },
-  {
-    "id" : "SearchParameter-ngimm-immdate",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-immdate",
-    "version" : "0.5.0",
-    "name" : "immdate"
-  },
-  {
-    "id" : "SearchParameter-ngimm-immpatient",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-immpatient",
-    "version" : "0.5.0",
-    "name" : "immpatient"
-  },
-  {
-    "id" : "SearchParameter-ngimm-immstatus",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-immstatus",
-    "version" : "0.5.0",
-    "name" : "immstatus"
-  },
-  {
-    "id" : "SearchParameter-ngimm-immvaccinecode",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-immvaccinecode",
-    "version" : "0.5.0",
-    "name" : "immvaccinecode"
-  },
-  {
-    "id" : "SearchParameter-ngimm-lastname",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-lastname",
-    "version" : "0.5.0",
-    "name" : "lastname"
-  },
-  {
-    "id" : "SearchParameter-ngimm-lga",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-lga",
-    "version" : "0.5.0",
-    "name" : "lga"
-  },
-  {
-    "id" : "SearchParameter-ngimm-state",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-state",
-    "version" : "0.5.0",
-    "name" : "state"
-  },
-  {
-    "id" : "SearchParameter-ngimm-telecom",
-    "type" : "SearchParameter",
-    "url" : "https://nphcda.gov.ng/immunizationIG/SearchParameter/SearchParameter-ngimm-telecom",
-    "version" : "0.5.0",
-    "name" : "telecom"
-  },
-  {
     "id" : "AdministerVaccine",
     "type" : "StructureDefinition",
     "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/AdministerVaccine",
@@ -507,6 +367,48 @@
     "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/signature",
     "version" : "0.5.0",
     "name" : "NGSignature"
+  },
+  {
+    "id" : "adminvaccine-to-immunization",
+    "type" : "StructureMap",
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureMap/adminvaccine-to-immunization",
+    "version" : "0.5.0",
+    "name" : "AdministerVaccineToFHIRResources"
+  },
+  {
+    "id" : "defaultertracking-to-immunization",
+    "type" : "StructureMap",
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization",
+    "version" : "0.5.0",
+    "name" : "DefaulterTrackingToImmunization"
+  },
+  {
+    "id" : "manageaefi-to-ngimm-aefi-profiles",
+    "type" : "StructureMap",
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureMap/manageaefi-to-ngimm-aefi-profiles",
+    "version" : "0.5.0",
+    "name" : "ManageAEFIToNgImmAEFIProfiles"
+  },
+  {
+    "id" : "registerclientmodel-to-ngimmpatient",
+    "type" : "StructureMap",
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureMap/registerclientmodel-to-ngimmpatient",
+    "version" : "0.5.0",
+    "name" : "RegisterClientModelToNgImmPatient"
+  },
+  {
+    "id" : "registerfacilitymodel-to-ngimmorganization-location",
+    "type" : "StructureMap",
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureMap/registerfacilitymodel-to-ngimmorganization-location",
+    "version" : "0.5.0",
+    "name" : "RegisterFacilityModelToNgImmOrganizationAndNgImmLocation"
+  },
+  {
+    "id" : "reportgeneration-to-measurereport",
+    "type" : "StructureMap",
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureMap/reportgeneration-to-measurereport",
+    "version" : "0.5.0",
+    "name" : "ReportGenerationToMeasureReport"
   },
   {
     "id" : "nigeria-clinical-status",

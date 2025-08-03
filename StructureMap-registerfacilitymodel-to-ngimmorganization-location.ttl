@@ -1,0 +1,313 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/StructureMap/registerfacilitymodel-to-ngimmorganization-location> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "registerfacilitymodel-to-ngimmorganization-location"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap registerfacilitymodel-to-ngimmorganization-location</b></p><a name=\"registerfacilitymodel-to-ngimmorganization-location\"> </a><a name=\"hcregisterfacilitymodel-to-ngimmorganization-location\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureMap/registerfacilitymodel-to-ngimmorganization-location<span style=\"color: navy\">\" = \"</span>RegisterFacilityModelToNgImmOrganizationAndNgImmLocation<span style=\"color: navy\">\"#xD;\n#xD;\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map logical RegisterFacilityModel to NgImmOrganization and NgImmLocation profiles</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-register-facility-model.html\" title=\"NG-Imm-A RegisterFacility\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-facility-model</a><span style=\"color: navy\">\" </span><b>alias </b>RFM <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-ng-imm-organization.html\" title=\"NG-Imm Organization\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization</a><span style=\"color: navy\">\" </span><b>alias </b>Org <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-nigeria-location.html\" title=\"NG-Imm Location\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location</a><span style=\"color: navy\">\" </span><b>alias </b>Loc <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>registerFacilityToOrganization<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">RFM</span>, <b>target</b> <span style=\"color: maroon\">Org</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  RFM.facilityId<span style=\"color: navy\"><b> -&gt; </b></span>Org.identifier[0].value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"facilityIdToIdentifier\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.regulator<span style=\"color: navy\"><b> -&gt; </b></span>Org.identifier[0].system = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"regulatorToIdentifierSystem\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.facilityName<span style=\"color: navy\"><b> -&gt; </b></span>Org.name = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"facilityNameToName\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.facilityType<span style=\"color: navy\"><b> -&gt; </b></span>Org.type[0] = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"facilityTypeToType\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.facilityStatus<span style=\"color: navy\"><b> -&gt; </b></span>Org.active = <span style=\"color: blue\">true</span> <i>\"activeTrue\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>registerFacilityToLocation<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">RFM</span>, <b>target</b> <span style=\"color: maroon\">Loc</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  RFM.facilityName<span style=\"color: navy\"><b> -&gt; </b></span>Loc.name = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"facilityNameToLocationName\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.facilityType<span style=\"color: navy\"><b> -&gt; </b></span>Loc.type[0] = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"facilityTypeToLocationType\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.addressLine<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.line[0] = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"addressLineToLine\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.city<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.city = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"cityToCity\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.lga<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.district = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"lgaToDistrict\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.state<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.state = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"stateToState\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.latitude<span style=\"color: navy\"><b> -&gt; </b></span>Loc.position.latitude = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"latitudeToLatitude\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.longitude<span style=\"color: navy\"><b> -&gt; </b></span>Loc.position.longitude = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"longitudeToLongitude\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.country<span style=\"color: navy\"><b> -&gt; </b></span>Loc.address.country = <span style=\"color: blue\">'NG'</span> <i>\"countryFixed\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.facilitystatus<span style=\"color: navy\"><b> -&gt; </b></span>Loc.status = <span style=\"color: blue\">'active'</span> <i>\"locationStatusActive\"</i><span style=\"color: navy\">;</span>#xD;\n  RFM.facilityId<span style=\"color: navy\"><b> -&gt; </b></span>Loc.managingOrganization.reference = <b>append</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Organization/'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">facilityId</span><span style=\"color: navy\">)</span> <i>\"organizationReferenceToManagingOrg\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureMap/registerfacilitymodel-to-ngimmorganization-location"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "RegisterFacilityModelToNgImmOrganizationAndNgImmLocation"] ; # 
+  fhir:title [ fhir:v "StructureMap: RegisterFacilityModel to NgImmOrganization and NgImmLocation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-08-03T02:35:31+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Map logical RegisterFacilityModel to NgImmOrganization and NgImmLocation profiles"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-facility-model"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-facility-model>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "RFM" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-organization>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "Org" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/nigeria-location>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "Loc" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "registerFacilityToOrganization" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "RFM" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "Org" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "facilityIdToIdentifier" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "facilityId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Org" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier[0].value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "regulatorToIdentifierSystem" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "regulator" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Org" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier[0].system" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "facilityNameToName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "facilityName" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Org" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "facilityTypeToType" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "facilityType" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Org" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "type[0]" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "activeTrue" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "facilityStatus" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Org" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "active" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:boolean ;
+             fhir:v true
+           ]
+         ] )
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "registerFacilityToLocation" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "RFM" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "Loc" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "facilityNameToLocationName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "facilityName" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "facilityTypeToLocationType" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "facilityType" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "type[0]" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "addressLineToLine" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "addressLine" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.line[0]" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "cityToCity" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "city" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.city" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "lgaToDistrict" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "lga" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.district" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "stateToState" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "state" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.state" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "latitudeToLatitude" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "latitude" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "position.latitude" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "longitudeToLongitude" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "longitude" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "position.longitude" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "countryFixed" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "country" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.country" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "NG"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "locationStatusActive" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "facilitystatus" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "status" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "active"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "organizationReferenceToManagingOrg" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "RFM" ] ;
+         fhir:element [ fhir:v "facilityId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Loc" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "managingOrganization.reference" ] ;
+         fhir:transform [ fhir:v "append" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Organization/"
+           ]
+         ] [
+           fhir:value [
+             a fhir:id ;
+             fhir:v "facilityId"
+           ]
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

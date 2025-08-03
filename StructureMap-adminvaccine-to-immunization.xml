@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="adminvaccine-to-immunization"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap adminvaccine-to-immunization</b></p><a name="adminvaccine-to-immunization"> </a><a name="hcadminvaccine-to-immunization"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureMap/adminvaccine-to-immunization<span style="color: navy">&quot; = &quot;</span>AdministerVaccineToFHIRResources<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map logical AdministerVaccine to NgImmImmunization, NgImmLocation, NgImmPractitioner, and NgImmEncounter profiles</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/administervaccine<span style="color: navy">&quot; </span><b>alias </b>AV <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization<span style="color: navy">&quot; </span><b>alias </b>IMM <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-location<span style="color: navy">&quot; </span><b>alias </b>LOC <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style="color: navy">&quot; </span><b>alias </b>PRAC <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-ng-imm-encounter.html" title="NG-Imm Encounter">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter</a><span style="color: navy">&quot; </span><b>alias </b>ENC <b>as </b><b>target</b>
+
+<b>group </b>administerVaccineToImmunization<span style="color: navy">(</span><b>source</b> <span style="color: maroon">AV</span>, <b>target</b> <span style="color: maroon">IMM</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  AV.vaccineType<span style="color: navy"><b> -&gt; </b></span>IMM.vaccineCode = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;vaccineCode&quot;</i><span style="color: navy">;</span>
+  AV.contraindicated<span style="color: navy"><b> -&gt; </b></span>IMM.doNotPerform = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  AV.contraindications<span style="color: navy"><b> -&gt; </b></span>IMM.reasonCode = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  AV.vaccinationDateTime<span style="color: navy"><b> -&gt; </b></span>IMM.occurrenceDateTime = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;occurrenceDateTime&quot;</i><span style="color: navy">;</span>
+  AV.vaccineBatchNumber<span style="color: navy"><b> -&gt; </b></span>IMM.lotNumber = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;lotNumber&quot;</i><span style="color: navy">;</span>
+  AV.expirationDate<span style="color: navy"><b> -&gt; </b></span>IMM.expirationDate = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  AV.siteAdministered<span style="color: navy"><b> -&gt; </b></span>IMM.site = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;site&quot;</i><span style="color: navy">;</span>
+  AV.routeOfAdministration<span style="color: navy"><b> -&gt; </b></span>IMM.route = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;route&quot;</i><span style="color: navy">;</span>
+  AV.doseQuantity<span style="color: navy"><b> -&gt; </b></span>IMM.doseQuantity = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>administerVaccineToLocation<span style="color: navy">(</span><b>source</b> <span style="color: maroon">AV</span>, <b>target</b> <span style="color: maroon">LOC</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  AV.nameOfHealthFacility<span style="color: navy"><b> -&gt; </b></span>LOC.name = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;locationName&quot;</i><span style="color: navy">;</span>
+  AV.facilityType<span style="color: navy"><b> -&gt; </b></span>LOC.type = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>administerVaccineToPractitioner<span style="color: navy">(</span><b>source</b> <span style="color: maroon">AV</span>, <b>target</b> <span style="color: maroon">PRAC</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  AV.healthWorkerIdentifier<span style="color: navy"><b> -&gt; </b></span>PRAC.identifier.value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;identifier&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>administerVaccineToEncounter<span style="color: navy">(</span><b>source</b> <span style="color: maroon">AV</span>, <b>target</b> <span style="color: maroon">ENC</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  AV.sessionType<span style="color: navy"><b> -&gt; </b></span>ENC.class = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span><span style="color: navy">;</span>
+  AV.vaccinationDateTime<span style="color: navy"><b> -&gt; </b></span>ENC.period.start = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;periodStartEnd&quot;</i><span style="color: navy">;</span>
+  AV.vaccinationDateTime<span style="color: navy"><b> -&gt; </b></span>ENC.period.end = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;periodEnd&quot;</i><span style="color: navy">;</span>
+  AV<span style="color: navy"><b> -&gt; </b></span>ENC.status = <span style="color: blue">'finished'</span> <i>&quot;status&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="https://nphcda.gov.ng/immunizationIG/StructureMap/adminvaccine-to-immunization"/>
+  <version value="0.5.0"/>
+  <name value="AdministerVaccineToFHIRResources"/>
+  <title value="StructureMap: AdministerVaccine to FHIR Resources"/>
+  <status value="active"/>
+  <date value="2025-08-03T02:35:31+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Map logical AdministerVaccine to NgImmImmunization, NgImmLocation, NgImmPractitioner, and NgImmEncounter profiles"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/administervaccine"/>
+    <mode value="source"/>
+    <alias value="AV"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization"/>
+    <mode value="target"/>
+    <alias value="IMM"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-location"/>
+    <mode value="target"/>
+    <alias value="LOC"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"/>
+    <mode value="target"/>
+    <alias value="PRAC"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"/>
+    <mode value="target"/>
+    <alias value="ENC"/>
+  </structure>
+  <group>
+    <name value="administerVaccineToImmunization"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="AV"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="IMM"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="vaccineCode"/>
+      <source>
+        <context value="AV"/>
+        <element value="vaccineType"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="vaccineCode"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="contraindicated"/>
+      <source>
+        <context value="AV"/>
+        <element value="contraindicated"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="doNotPerform"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="contraindications"/>
+      <source>
+        <context value="AV"/>
+        <element value="contraindications"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="reasonCode"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="occurrenceDateTime"/>
+      <source>
+        <context value="AV"/>
+        <element value="vaccinationDateTime"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="occurrenceDateTime"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="lotNumber"/>
+      <source>
+        <context value="AV"/>
+        <element value="vaccineBatchNumber"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="lotNumber"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="expirationDate"/>
+      <source>
+        <context value="AV"/>
+        <element value="expirationDate"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="expirationDate"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="site"/>
+      <source>
+        <context value="AV"/>
+        <element value="siteAdministered"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="site"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="route"/>
+      <source>
+        <context value="AV"/>
+        <element value="routeOfAdministration"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="route"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="doseQuantity"/>
+      <source>
+        <context value="AV"/>
+        <element value="doseQuantity"/>
+      </source>
+      <target>
+        <context value="IMM"/>
+        <contextType value="variable"/>
+        <element value="doseQuantity"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="administerVaccineToLocation"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="AV"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="LOC"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="locationName"/>
+      <source>
+        <context value="AV"/>
+        <element value="nameOfHealthFacility"/>
+      </source>
+      <target>
+        <context value="LOC"/>
+        <contextType value="variable"/>
+        <element value="name"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="facilityType"/>
+      <source>
+        <context value="AV"/>
+        <element value="facilityType"/>
+      </source>
+      <target>
+        <context value="LOC"/>
+        <contextType value="variable"/>
+        <element value="type"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="administerVaccineToPractitioner"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="AV"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="PRAC"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="identifier"/>
+      <source>
+        <context value="AV"/>
+        <element value="healthWorkerIdentifier"/>
+      </source>
+      <target>
+        <context value="PRAC"/>
+        <contextType value="variable"/>
+        <element value="identifier.value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="administerVaccineToEncounter"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="AV"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="ENC"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="sessionType"/>
+      <source>
+        <context value="AV"/>
+        <element value="sessionType"/>
+      </source>
+      <target>
+        <context value="ENC"/>
+        <contextType value="variable"/>
+        <element value="class"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="periodStartEnd"/>
+      <source>
+        <context value="AV"/>
+        <element value="vaccinationDateTime"/>
+      </source>
+      <target>
+        <context value="ENC"/>
+        <contextType value="variable"/>
+        <element value="period.start"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="periodEnd"/>
+      <source>
+        <context value="AV"/>
+        <element value="vaccinationDateTime"/>
+      </source>
+      <target>
+        <context value="ENC"/>
+        <contextType value="variable"/>
+        <element value="period.end"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="status"/>
+      <source>
+        <context value="AV"/>
+      </source>
+      <target>
+        <context value="ENC"/>
+        <contextType value="variable"/>
+        <element value="status"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="finished"/>
+        </parameter>
+      </target>
+    </rule>
+  </group>
+</StructureMap>

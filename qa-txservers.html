@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for NigeriaimmunizationFHIRIG</h1>
- <p>Generated Thu Jul 17 19:00:51 WAT 2025, FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.5.0 (canonical = <a href="https://nphcda.gov.ng/immunizationIG">https://nphcda.gov.ng/immunizationIG</a> (<a href="https://nphcda.gov.ng/immunizationIG/history.html">history</a>))</p>
+ <p>Generated Sun Aug 03 02:38:36 WAT 2025, FHIR version 4.0.1 for fhir.nigeriaImmunizationIG#0.5.0 (canonical = <a href="https://nphcda.gov.ng/immunizationIG">https://nphcda.gov.ng/immunizationIG</a> (<a href="https://nphcda.gov.ng/immunizationIG/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -90,6 +90,13 @@
     <td>auth = , candidates=</td>
   </tr>
   <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://nzhts.digital.health.nz/fhir</td>
+  </tr>
+  <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>https://tx.fhir.org/r4</td>
     <td>null</td>
@@ -107,6 +114,27 @@
     <td>System not handled by any servers. Using primary server</td>
     <td>https://tx.fhir.org/r4</td>
     <td>null</td>
+    <td>http://nphcda.gov.ng/ig/CodeSystem/clinical-status</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://nphcda.gov.ng/ig/CodeSystem/clinical-status</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
     <td>http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type</td>
     <td>auth = , candidates=</td>
   </tr>
@@ -115,6 +143,41 @@
     <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/sid/cvx</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4|https://nzhts.digital.health.nz/fhir</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://nphcda.gov.ng/fhir/ValueSet/ng-immunization-notdone-reasons</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://nphcda.gov.ng/fhir/ValueSet/ng-immunization-notdone-reasons</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
@@ -151,22 +214,46 @@
     </th>
   </tr>
   <tr>
+    <td>http://hl7.org/fhir/sid/cvx</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-CVX.html">Vaccine Administered Code Set (CVX)</a>
+    </td>
+  </tr>
+  <tr>
     <td>http://nphcda.gov.ng/fhir/CodeSystem/ng-session-type</td>
     <td>0</td>
-    <td>3</td>
+    <td>4</td>
     <td></td>
   </tr>
   <tr>
     <td>http://nphcda.gov.ng/fhir/ValueSet/ng-immunization-notdone-reasons</td>
     <td>0</td>
-    <td>2</td>
+    <td>3</td>
     <td></td>
   </tr>
   <tr>
     <td>http://nphcda.gov.ng/ig/CodeSystem/clinical-status</td>
     <td>0</td>
-    <td>1</td>
+    <td>2</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>http://snomed.info/sct</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+    </td>
   </tr>
 </table>
 </body>

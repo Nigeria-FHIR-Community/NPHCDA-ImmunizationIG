@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NGGenderCS"] ; # 
   fhir:title [ fhir:v "NG-Imm Gender CS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-17T18:57:38+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-03T02:35:31+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
@@ -48,25 +48,11 @@
   fhir:concept ( [
      fhir:code [ fhir:v "male" ] ;
      fhir:display [ fhir:v "male" ] ;
-     fhir:definition [ fhir:v "Client is of the male gender" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/designation-usage"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "display" ]
-       ] ;
-       fhir:value [ fhir:v "male" ]
-     ] )
+     fhir:definition [ fhir:v "Client is of the male gender" ]
   ] [
      fhir:code [ fhir:v "female" ] ;
      fhir:display [ fhir:v "female" ] ;
-     fhir:definition [ fhir:v "Client is of the female gender" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/designation-usage"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "display" ]
-       ] ;
-       fhir:value [ fhir:v "female" ]
-     ] )
+     fhir:definition [ fhir:v "Client is of the female gender" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

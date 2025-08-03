@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="registerclientmodel-to-ngimmpatient"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap registerclientmodel-to-ngimmpatient</b></p><a name="registerclientmodel-to-ngimmpatient"> </a><a name="hcregisterclientmodel-to-ngimmpatient"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureMap/registerclientmodel-to-ngimmpatient<span style="color: navy">&quot; = &quot;</span>RegisterClientModelToNgImmPatient<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map logical RegisterClientModel to NgImmPatient profile</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-register-client-model.html" title="NG-Imm-C5 RegisterClient">https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model</a><span style="color: navy">&quot; </span><b>alias </b>RCM <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition-NgImmPatient<span style="color: navy">&quot; </span><b>alias </b>Patient <b>as </b><b>target</b>
+
+<b>group </b>RCMToNgImmPatient<span style="color: navy">(</span><b>source</b> <span style="color: maroon">rcm</span><span style="color: navy"> : </span>RegisterClientModel, <b>target</b> <span style="color: maroon">patient</span><span style="color: navy"> : </span>Patient<span style="color: navy">)</span><span style="color: navy"> {
+</span>  rcm.identifier<span style="color: navy"><b> -&gt; </b></span>patient.identifier.value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetIdentifier&quot;</i><span style="color: navy">;</span>
+  rcm.name.given<span style="color: navy"><b> -&gt; </b></span>patient.name.given = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetGivenName&quot;</i><span style="color: navy">;</span>
+  rcm.name.family<span style="color: navy"><b> -&gt; </b></span>patient.name.family = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetFamilyName&quot;</i><span style="color: navy">;</span>
+  rcm.sex<span style="color: navy"><b> -&gt; </b></span>patient.gender = <b>translate</b><span style="color: navy">(</span><span style="color: blue">'https://nphcda.gov.ng/immunizationIG/ConceptMap/RCMSexToAdministrativeGender'</span><span style="color: navy">, </span><span style="color: blue">'code'</span><span style="color: navy">)</span> <i>&quot;SetGender&quot;</i><span style="color: navy">;</span>
+  rcm.dateOfBirth<span style="color: navy"><b> -&gt; </b></span>patient.birthDate = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetBirthDate&quot;</i><span style="color: navy">;</span>
+  rcm.address.residentialAddress<span style="color: navy"><b> -&gt; </b></span>patient.address.line = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetAddressLine&quot;</i><span style="color: navy">;</span>
+  rcm.address.town<span style="color: navy"><b> -&gt; </b></span>patient.address.city = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetCity&quot;</i><span style="color: navy">;</span>
+  rcm.address.lga<span style="color: navy"><b> -&gt; </b></span>patient.address.district = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetDistrict&quot;</i><span style="color: navy">;</span>
+  rcm.address.state<span style="color: navy"><b> -&gt; </b></span>patient.address.state = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetState&quot;</i><span style="color: navy">;</span>
+  rcm.contact.name.given<span style="color: navy"><b> -&gt; </b></span>patient.contact.name.given = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetCaregiverGiven&quot;</i><span style="color: navy">;</span>
+  rcm.contact.name.family<span style="color: navy"><b> -&gt; </b></span>patient.contact.name.family = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetCaregiverFamily&quot;</i><span style="color: navy">;</span>
+  rcm.contact.telecom.value<span style="color: navy"><b> -&gt; </b></span>patient.contact.telecom.value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetCaregiverPhone&quot;</i><span style="color: navy">;</span>
+  rcm.contact.relationship.text<span style="color: navy"><b> -&gt; </b></span>patient.contact.relationship.text = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;SetCaregiverRelationship&quot;</i><span style="color: navy">;</span>
+  rcm.pregnancyStatus<span style="color: navy"><b> -&gt; </b></span>patient.extension.valueCodeableConcept = <span style="color: blue">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGPregnancyStatus'</span> <i>&quot;SetPregnancyStatus&quot;</i><span style="color: navy">;</span>
+  rcm.ageInWeeks<span style="color: navy"><b> -&gt; </b></span>patient.extension.valueInteger = <span style="color: blue">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInWeeks'</span> <i>&quot;SetAgeInWeeks&quot;</i><span style="color: navy">;</span>
+  rcm.ageInMonths<span style="color: navy"><b> -&gt; </b></span>patient.extension.valueInteger = <span style="color: blue">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInMonths'</span> <i>&quot;SetAgeInMonths&quot;</i><span style="color: navy">;</span>
+  rcm.ageInYears<span style="color: navy"><b> -&gt; </b></span>patient.extension.valueInteger = <span style="color: blue">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInYears'</span> <i>&quot;SetAgeInYears&quot;</i><span style="color: navy">;</span>
+  rcm.weightAtBirth<span style="color: navy"><b> -&gt; </b></span>patient.extension.valueQuantity = <span style="color: blue">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGBirthWeight'</span> <i>&quot;SetWeightAtBirth&quot;</i><span style="color: navy">;</span>
+  rcm.hivStatus<span style="color: navy"><b> -&gt; </b></span>patient.extension.valueCodeableConcept = <span style="color: blue">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGHIVStatus'</span> <i>&quot;SetHIVStatus&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="https://nphcda.gov.ng/immunizationIG/StructureMap/registerclientmodel-to-ngimmpatient"/>
+  <version value="0.5.0"/>
+  <name value="RegisterClientModelToNgImmPatient"/>
+  <title value="StructureMap: RegisterClientModel to NgImmPatient"/>
+  <status value="active"/>
+  <date value="2025-08-03T02:35:31+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Map logical RegisterClientModel to NgImmPatient profile"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model"/>
+    <mode value="source"/>
+    <alias value="RCM"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition-NgImmPatient"/>
+    <mode value="target"/>
+    <alias value="Patient"/>
+  </structure>
+  <group>
+    <name value="RCMToNgImmPatient"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="rcm"/>
+      <type value="RegisterClientModel"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="patient"/>
+      <type value="Patient"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="SetIdentifier"/>
+      <source>
+        <context value="rcm"/>
+        <element value="identifier"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="identifier.value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetGivenName"/>
+      <source>
+        <context value="rcm"/>
+        <element value="name.given"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="name.given"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetFamilyName"/>
+      <source>
+        <context value="rcm"/>
+        <element value="name.family"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="name.family"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetGender"/>
+      <source>
+        <context value="rcm"/>
+        <element value="sex"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="gender"/>
+        <transform value="translate"/>
+        <parameter>
+          <valueString value="https://nphcda.gov.ng/immunizationIG/ConceptMap/RCMSexToAdministrativeGender"/>
+        </parameter>
+        <parameter>
+          <valueString value="code"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetBirthDate"/>
+      <source>
+        <context value="rcm"/>
+        <element value="dateOfBirth"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="birthDate"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetAddressLine"/>
+      <source>
+        <context value="rcm"/>
+        <element value="address.residentialAddress"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="address.line"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetCity"/>
+      <source>
+        <context value="rcm"/>
+        <element value="address.town"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="address.city"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetDistrict"/>
+      <source>
+        <context value="rcm"/>
+        <element value="address.lga"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="address.district"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetState"/>
+      <source>
+        <context value="rcm"/>
+        <element value="address.state"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="address.state"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetCaregiverGiven"/>
+      <source>
+        <context value="rcm"/>
+        <element value="contact.name.given"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="contact.name.given"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetCaregiverFamily"/>
+      <source>
+        <context value="rcm"/>
+        <element value="contact.name.family"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="contact.name.family"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetCaregiverPhone"/>
+      <source>
+        <context value="rcm"/>
+        <element value="contact.telecom.value"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="contact.telecom.value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetCaregiverRelationship"/>
+      <source>
+        <context value="rcm"/>
+        <element value="contact.relationship.text"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="contact.relationship.text"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetPregnancyStatus"/>
+      <source>
+        <context value="rcm"/>
+        <element value="pregnancyStatus"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="extension.valueCodeableConcept"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGPregnancyStatus"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetAgeInWeeks"/>
+      <source>
+        <context value="rcm"/>
+        <element value="ageInWeeks"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="extension.valueInteger"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInWeeks"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetAgeInMonths"/>
+      <source>
+        <context value="rcm"/>
+        <element value="ageInMonths"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="extension.valueInteger"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInMonths"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetAgeInYears"/>
+      <source>
+        <context value="rcm"/>
+        <element value="ageInYears"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="extension.valueInteger"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInYears"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetWeightAtBirth"/>
+      <source>
+        <context value="rcm"/>
+        <element value="weightAtBirth"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="extension.valueQuantity"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGBirthWeight"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="SetHIVStatus"/>
+      <source>
+        <context value="rcm"/>
+        <element value="hivStatus"/>
+      </source>
+      <target>
+        <context value="patient"/>
+        <contextType value="variable"/>
+        <element value="extension.valueCodeableConcept"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGHIVStatus"/>
+        </parameter>
+      </target>
+    </rule>
+  </group>
+</StructureMap>

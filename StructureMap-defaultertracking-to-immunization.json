@@ -1,0 +1,228 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "defaultertracking-to-immunization",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap defaultertracking-to-immunization</b></p><a name=\"defaultertracking-to-immunization\"> </a><a name=\"hcdefaultertracking-to-immunization\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization<span style=\"color: navy\">&quot; = &quot;</span>DefaulterTrackingToImmunization<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map logical DefaulterTracking model to NgImmImmunization, NgImmPatient, NgImmEncounter, and NgImmPractitioner profiles</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/defaultertracking<span style=\"color: navy\">&quot; </span><b>alias </b>DT <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient<span style=\"color: navy\">&quot; </span><b>alias </b>PAT <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization<span style=\"color: navy\">&quot; </span><b>alias </b>IMM <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-ng-imm-encounter.html\" title=\"NG-Imm Encounter\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter</a><span style=\"color: navy\">&quot; </span><b>alias </b>ENC <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style=\"color: navy\">&quot; </span><b>alias </b>PRAC <b>as </b><b>target</b>\r\n\r\n<b>group </b>defaulterTrackingToPatient<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DT</span>, <b>target</b> <span style=\"color: maroon\">PAT</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  DT.clientName<span style=\"color: navy\"><b> -&gt; </b></span>PAT.name[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>\r\n  DT.clientSex<span style=\"color: navy\"><b> -&gt; </b></span>PAT.gender = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>\r\n  DT.clientAge<span style=\"color: navy\"><b> -&gt; </b></span>PAT.extension[ageInMonths].valueInteger = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><b>group </b>defaulterTrackingToImmunization<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DT</span>, <b>target</b> <span style=\"color: maroon\">IMM</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  DT.missedVaccine<span style=\"color: navy\"><b> -&gt; </b></span>IMM.vaccineCode = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>\r\n  DT.missedVaccineDate<span style=\"color: navy\"><b> -&gt; </b></span>IMM.occurrenceDateTime = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>\r\n  DT.missedReason<span style=\"color: navy\"><b> -&gt; </b></span>IMM.note[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><b>group </b>defaulterTrackingToEncounter<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DT</span>, <b>target</b> <span style=\"color: maroon\">ENC</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  DT.missedVaccineDate<span style=\"color: navy\"><b> -&gt; </b></span>ENC.period.start = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>&quot;encounterPeriod&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><b>group </b>defaulterTrackingToPractitioner<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DT</span>, <b>target</b> <span style=\"color: maroon\">PRAC</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  DT.caregiverName<span style=\"color: navy\"><b> -&gt; </b></span>PRAC.name[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>\r\n  DT.caregiverPhone<span style=\"color: navy\"><b> -&gt; </b></span>PRAC.telecom[0].value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization",
+  "version" : "0.5.0",
+  "name" : "DefaulterTrackingToImmunization",
+  "title" : "StructureMap: DefaulterTracking to Immunization and related profiles",
+  "status" : "active",
+  "date" : "2025-08-03T02:35:31+01:00",
+  "publisher" : "https://nphcda.gov.ng",
+  "contact" : [{
+    "name" : "https://nphcda.gov.ng",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://nphcda.gov.ng"
+    }]
+  },
+  {
+    "name" : "Nigeria Primary Healthcare Development Agency.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ig@nphcda.gov.ng",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Map logical DefaulterTracking model to NgImmImmunization, NgImmPatient, NgImmEncounter, and NgImmPractitioner profiles",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "structure" : [{
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/defaultertracking",
+    "mode" : "source",
+    "alias" : "DT"
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient",
+    "mode" : "target",
+    "alias" : "PAT"
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization",
+    "mode" : "target",
+    "alias" : "IMM"
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter",
+    "mode" : "target",
+    "alias" : "ENC"
+  },
+  {
+    "url" : "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner",
+    "mode" : "target",
+    "alias" : "PRAC"
+  }],
+  "group" : [{
+    "name" : "defaulterTrackingToPatient",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "DT",
+      "mode" : "source"
+    },
+    {
+      "name" : "PAT",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "clientName",
+      "source" : [{
+        "context" : "DT",
+        "element" : "clientName"
+      }],
+      "target" : [{
+        "context" : "PAT",
+        "contextType" : "variable",
+        "element" : "name[0].text",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "clientSex",
+      "source" : [{
+        "context" : "DT",
+        "element" : "clientSex"
+      }],
+      "target" : [{
+        "context" : "PAT",
+        "contextType" : "variable",
+        "element" : "gender",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "clientAge",
+      "source" : [{
+        "context" : "DT",
+        "element" : "clientAge"
+      }],
+      "target" : [{
+        "context" : "PAT",
+        "contextType" : "variable",
+        "element" : "extension[ageInMonths].valueInteger",
+        "transform" : "copy"
+      }]
+    }]
+  },
+  {
+    "name" : "defaulterTrackingToImmunization",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "DT",
+      "mode" : "source"
+    },
+    {
+      "name" : "IMM",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "missedVaccine",
+      "source" : [{
+        "context" : "DT",
+        "element" : "missedVaccine"
+      }],
+      "target" : [{
+        "context" : "IMM",
+        "contextType" : "variable",
+        "element" : "vaccineCode",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "missedVaccineDate",
+      "source" : [{
+        "context" : "DT",
+        "element" : "missedVaccineDate"
+      }],
+      "target" : [{
+        "context" : "IMM",
+        "contextType" : "variable",
+        "element" : "occurrenceDateTime",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "missedReason",
+      "source" : [{
+        "context" : "DT",
+        "element" : "missedReason"
+      }],
+      "target" : [{
+        "context" : "IMM",
+        "contextType" : "variable",
+        "element" : "note[0].text",
+        "transform" : "copy"
+      }]
+    }]
+  },
+  {
+    "name" : "defaulterTrackingToEncounter",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "DT",
+      "mode" : "source"
+    },
+    {
+      "name" : "ENC",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "encounterPeriod",
+      "source" : [{
+        "context" : "DT",
+        "element" : "missedVaccineDate"
+      }],
+      "target" : [{
+        "context" : "ENC",
+        "contextType" : "variable",
+        "element" : "period.start",
+        "transform" : "copy"
+      }]
+    }]
+  },
+  {
+    "name" : "defaulterTrackingToPractitioner",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "DT",
+      "mode" : "source"
+    },
+    {
+      "name" : "PRAC",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "caregiverName",
+      "source" : [{
+        "context" : "DT",
+        "element" : "caregiverName"
+      }],
+      "target" : [{
+        "context" : "PRAC",
+        "contextType" : "variable",
+        "element" : "name[0].text",
+        "transform" : "copy"
+      }]
+    },
+    {
+      "name" : "caregiverPhone",
+      "source" : [{
+        "context" : "DT",
+        "element" : "caregiverPhone"
+      }],
+      "target" : [{
+        "context" : "PRAC",
+        "contextType" : "variable",
+        "element" : "telecom[0].value",
+        "transform" : "copy"
+      }]
+    }]
+  }]
+}

@@ -10,7 +10,7 @@
   <name value="NGClinicalStatusCS"/>
   <title value="NG-Imm Adverse Event Clinical Status CS"/>
   <status value="active"/>
-  <date value="2025-07-17T18:57:38+01:00"/>
+  <date value="2025-08-03T02:35:31+01:00"/>
   <publisher value="https://nphcda.gov.ng"/>
   <contact>
     <name value="https://nphcda.gov.ng"/>
@@ -41,72 +41,30 @@
     <code value="active"/>
     <display value="Active"/>
     <definition value="The clinical condition is currently present, ongoing, or requires active management or monitoring."/>
-    <designation>
-      <use>
-        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
-        <code value="display"/>
-      </use>
-      <value value="Active"/>
-    </designation>
   </concept>
   <concept>
     <code value="inactive"/>
     <display value="Inactive"/>
     <definition value="The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment."/>
-    <designation>
-      <use>
-        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
-        <code value="display"/>
-      </use>
-      <value value="Inactive"/>
-    </designation>
   </concept>
   <concept>
     <code value="resolved"/>
     <display value="Resolved"/>
     <definition value="The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management."/>
-    <designation>
-      <use>
-        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
-        <code value="display"/>
-      </use>
-      <value value="Resolved"/>
-    </designation>
   </concept>
   <concept>
     <code value="recovered"/>
     <display value="Recovered"/>
     <definition value="The individual has recovered fully from the adverse event without any long-term effects or sequelae."/>
-    <designation>
-      <use>
-        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
-        <code value="display"/>
-      </use>
-      <value value="Recovered"/>
-    </designation>
   </concept>
   <concept>
     <code value="recovered-with-sequelae"/>
     <display value="Recovered with sequelae"/>
     <definition value="The individual has recovered from the adverse event but with lasting effects, complications, or disabilities."/>
-    <designation>
-      <use>
-        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
-        <code value="display"/>
-      </use>
-      <value value="Recovered with sequelae"/>
-    </designation>
   </concept>
   <concept>
     <code value="death"/>
     <display value="Death"/>
     <definition value="The adverse event resulted in the death of the individual."/>
-    <designation>
-      <use>
-        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
-        <code value="display"/>
-      </use>
-      <value value="Death"/>
-    </designation>
   </concept>
 </CodeSystem>

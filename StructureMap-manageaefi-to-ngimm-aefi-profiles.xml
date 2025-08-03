@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="manageaefi-to-ngimm-aefi-profiles"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap manageaefi-to-ngimm-aefi-profiles</b></p><a name="manageaefi-to-ngimm-aefi-profiles"> </a><a name="hcmanageaefi-to-ngimm-aefi-profiles"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureMap/manageaefi-to-ngimm-aefi-profiles<span style="color: navy">&quot; = &quot;</span>ManageAEFIToNgImmAEFIProfiles<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEncounter, NgImmPractitioner, and NgImmPatient profiles</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-manage-aefi.html" title="NG-Imm-E Manage &amp; ReportAEFI">https://nphcda.gov.ng/immunizationIG/StructureDefinition/manage-aefi</a><span style="color: navy">&quot; </span><b>alias </b>AEFI <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-allergy-intolerance-profile.html" title="NG-Imm AllergyIntolerance">https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile</a><span style="color: navy">&quot; </span><b>alias </b>Allergy <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-ng-imm-encounter.html" title="NG-Imm Encounter">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter</a><span style="color: navy">&quot; </span><b>alias </b>Encounter <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style="color: navy">&quot; </span><b>alias </b>Practitioner <b>as </b><b>target</b>
+<b>uses</b><span style="color: navy"> &quot;</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient<span style="color: navy">&quot; </span><b>alias </b>Patient <b>as </b><b>target</b>
+
+<b>group </b>manageAefiToAllergyIntolerance<span style="color: navy">(</span><b>source</b> <span style="color: maroon">AEFI</span>, <b>target</b> <span style="color: maroon">Allergy</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  AEFI.reactionDate<span style="color: navy"><b> -&gt; </b></span>Allergy.extension[1].valueInteger = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;reactionDateToOnset&quot;</i><span style="color: navy">;</span>
+  AEFI.totalDoses<span style="color: navy"><b> -&gt; </b></span>Allergy <i>&quot;totalDosesToExtension&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>manageAefiToEncounter<span style="color: navy">(</span><b>source</b> <span style="color: maroon">AEFI</span>, <b>target</b> <span style="color: maroon">Encounter</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  AEFI.observationId<span style="color: navy"><b> -&gt; </b></span>Encounter.identifier[0].value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;aefiIdToEncounterId&quot;</i><span style="color: navy">;</span>
+  AEFI.visitType<span style="color: navy"><b> -&gt; </b></span>Encounter.class = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;visitTypeToClass&quot;</i><span style="color: navy">;</span>
+  AEFI.officerId<span style="color: navy"><b> -&gt; </b></span>Encounter.participant[0].individual.reference = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;practitionerToParticipant&quot;</i><span style="color: navy">;</span>
+  AEFI.facilityId<span style="color: navy"><b> -&gt; </b></span>Encounter.location[0].location.reference = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;locationToEncounterLocation&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>manageAefiToPractitioner<span style="color: navy">(</span><b>source</b> <span style="color: maroon">AEFI</span>, <b>target</b> <span style="color: maroon">Practitioner</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  AEFI.officerId<span style="color: navy"><b> -&gt; </b></span>Practitioner.identifier[0].value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;officerIdToIdentifier&quot;</i><span style="color: navy">;</span>
+  AEFI.officerName<span style="color: navy"><b> -&gt; </b></span>Practitioner.name[0].text = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;officerNameToName&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span><b>group </b>manageAefiToPatient<span style="color: navy">(</span><b>source</b> <span style="color: maroon">AEFI</span>, <b>target</b> <span style="color: maroon">Patient</span><span style="color: navy">)</span><span style="color: navy"> {
+</span>  AEFI.clientId<span style="color: navy"><b> -&gt; </b></span>Patient.identifier[0].value = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;patientIdToIdentifier&quot;</i><span style="color: navy">;</span>
+  AEFI.clientName<span style="color: navy"><b> -&gt; </b></span>Patient.name[0].text = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;patientNameToName&quot;</i><span style="color: navy">;</span>
+  AEFI.sex<span style="color: navy"><b> -&gt; </b></span>Patient.gender = <b>copy</b><span style="color: navy">(</span><span style="color: navy">)</span> <i>&quot;patientSexToGender&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="https://nphcda.gov.ng/immunizationIG/StructureMap/manageaefi-to-ngimm-aefi-profiles"/>
+  <version value="0.5.0"/>
+  <name value="ManageAEFIToNgImmAEFIProfiles"/>
+  <title value="StructureMap: ManageAEFI to AllergyIntolerance, Encounter, Practitioner, and Patient"/>
+  <status value="active"/>
+  <date value="2025-08-03T02:35:31+01:00"/>
+  <publisher value="https://nphcda.gov.ng"/>
+  <contact>
+    <name value="https://nphcda.gov.ng"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://nphcda.gov.ng"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Primary Healthcare Development Agency."/>
+    <telecom>
+      <system value="email"/>
+      <value value="ig@nphcda.gov.ng"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEncounter, NgImmPractitioner, and NgImmPatient profiles"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/manage-aefi"/>
+    <mode value="source"/>
+    <alias value="AEFI"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"/>
+    <mode value="target"/>
+    <alias value="Allergy"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"/>
+    <mode value="target"/>
+    <alias value="Encounter"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"/>
+    <mode value="target"/>
+    <alias value="Practitioner"/>
+  </structure>
+  <structure>
+    <url value="https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient"/>
+    <mode value="target"/>
+    <alias value="Patient"/>
+  </structure>
+  <group>
+    <name value="manageAefiToAllergyIntolerance"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="AEFI"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="Allergy"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="reactionDateToOnset"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="reactionDate"/>
+      </source>
+      <target>
+        <context value="Allergy"/>
+        <contextType value="variable"/>
+        <element value="extension[1].valueInteger"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="totalDosesToExtension"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="totalDoses"/>
+      </source>
+      <target>
+        <context value="Allergy"/>
+        <contextType value="variable"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="manageAefiToEncounter"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="AEFI"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="Encounter"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="aefiIdToEncounterId"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="observationId"/>
+      </source>
+      <target>
+        <context value="Encounter"/>
+        <contextType value="variable"/>
+        <element value="identifier[0].value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="visitTypeToClass"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="visitType"/>
+      </source>
+      <target>
+        <context value="Encounter"/>
+        <contextType value="variable"/>
+        <element value="class"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="practitionerToParticipant"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="officerId"/>
+      </source>
+      <target>
+        <context value="Encounter"/>
+        <contextType value="variable"/>
+        <element value="participant[0].individual.reference"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="locationToEncounterLocation"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="facilityId"/>
+      </source>
+      <target>
+        <context value="Encounter"/>
+        <contextType value="variable"/>
+        <element value="location[0].location.reference"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="manageAefiToPractitioner"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="AEFI"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="Practitioner"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="officerIdToIdentifier"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="officerId"/>
+      </source>
+      <target>
+        <context value="Practitioner"/>
+        <contextType value="variable"/>
+        <element value="identifier[0].value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="officerNameToName"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="officerName"/>
+      </source>
+      <target>
+        <context value="Practitioner"/>
+        <contextType value="variable"/>
+        <element value="name[0].text"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+  <group>
+    <name value="manageAefiToPatient"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="AEFI"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="Patient"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="patientIdToIdentifier"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="clientId"/>
+      </source>
+      <target>
+        <context value="Patient"/>
+        <contextType value="variable"/>
+        <element value="identifier[0].value"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="patientNameToName"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="clientName"/>
+      </source>
+      <target>
+        <context value="Patient"/>
+        <contextType value="variable"/>
+        <element value="name[0].text"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+    <rule>
+      <name value="patientSexToGender"/>
+      <source>
+        <context value="AEFI"/>
+        <element value="sex"/>
+      </source>
+      <target>
+        <context value="Patient"/>
+        <contextType value="variable"/>
+        <element value="gender"/>
+        <transform value="copy"/>
+      </target>
+    </rule>
+  </group>
+</StructureMap>

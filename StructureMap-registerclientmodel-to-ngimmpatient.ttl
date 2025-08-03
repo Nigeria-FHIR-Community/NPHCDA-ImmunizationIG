@@ -1,0 +1,351 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/StructureMap/registerclientmodel-to-ngimmpatient> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "registerclientmodel-to-ngimmpatient"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap registerclientmodel-to-ngimmpatient</b></p><a name=\"registerclientmodel-to-ngimmpatient\"> </a><a name=\"hcregisterclientmodel-to-ngimmpatient\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureMap/registerclientmodel-to-ngimmpatient<span style=\"color: navy\">\" = \"</span>RegisterClientModelToNgImmPatient<span style=\"color: navy\">\"#xD;\n#xD;\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map logical RegisterClientModel to NgImmPatient profile</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-register-client-model.html\" title=\"NG-Imm-C5 RegisterClient\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model</a><span style=\"color: navy\">\" </span><b>alias </b>RCM <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition-NgImmPatient<span style=\"color: navy\">\" </span><b>alias </b>Patient <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>RCMToNgImmPatient<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">rcm</span><span style=\"color: navy\"> : </span>RegisterClientModel, <b>target</b> <span style=\"color: maroon\">patient</span><span style=\"color: navy\"> : </span>Patient<span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  rcm.identifier<span style=\"color: navy\"><b> -&gt; </b></span>patient.identifier.value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetIdentifier\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.name.given<span style=\"color: navy\"><b> -&gt; </b></span>patient.name.given = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetGivenName\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.name.family<span style=\"color: navy\"><b> -&gt; </b></span>patient.name.family = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetFamilyName\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.sex<span style=\"color: navy\"><b> -&gt; </b></span>patient.gender = <b>translate</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'https://nphcda.gov.ng/immunizationIG/ConceptMap/RCMSexToAdministrativeGender'</span><span style=\"color: navy\">, </span><span style=\"color: blue\">'code'</span><span style=\"color: navy\">)</span> <i>\"SetGender\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.dateOfBirth<span style=\"color: navy\"><b> -&gt; </b></span>patient.birthDate = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetBirthDate\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.address.residentialAddress<span style=\"color: navy\"><b> -&gt; </b></span>patient.address.line = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetAddressLine\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.address.town<span style=\"color: navy\"><b> -&gt; </b></span>patient.address.city = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetCity\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.address.lga<span style=\"color: navy\"><b> -&gt; </b></span>patient.address.district = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetDistrict\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.address.state<span style=\"color: navy\"><b> -&gt; </b></span>patient.address.state = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetState\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.contact.name.given<span style=\"color: navy\"><b> -&gt; </b></span>patient.contact.name.given = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetCaregiverGiven\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.contact.name.family<span style=\"color: navy\"><b> -&gt; </b></span>patient.contact.name.family = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetCaregiverFamily\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.contact.telecom.value<span style=\"color: navy\"><b> -&gt; </b></span>patient.contact.telecom.value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetCaregiverPhone\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.contact.relationship.text<span style=\"color: navy\"><b> -&gt; </b></span>patient.contact.relationship.text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"SetCaregiverRelationship\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.pregnancyStatus<span style=\"color: navy\"><b> -&gt; </b></span>patient.extension.valueCodeableConcept = <span style=\"color: blue\">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGPregnancyStatus'</span> <i>\"SetPregnancyStatus\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.ageInWeeks<span style=\"color: navy\"><b> -&gt; </b></span>patient.extension.valueInteger = <span style=\"color: blue\">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInWeeks'</span> <i>\"SetAgeInWeeks\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.ageInMonths<span style=\"color: navy\"><b> -&gt; </b></span>patient.extension.valueInteger = <span style=\"color: blue\">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInMonths'</span> <i>\"SetAgeInMonths\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.ageInYears<span style=\"color: navy\"><b> -&gt; </b></span>patient.extension.valueInteger = <span style=\"color: blue\">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInYears'</span> <i>\"SetAgeInYears\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.weightAtBirth<span style=\"color: navy\"><b> -&gt; </b></span>patient.extension.valueQuantity = <span style=\"color: blue\">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGBirthWeight'</span> <i>\"SetWeightAtBirth\"</i><span style=\"color: navy\">;</span>#xD;\n  rcm.hivStatus<span style=\"color: navy\"><b> -&gt; </b></span>patient.extension.valueCodeableConcept = <span style=\"color: blue\">'https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGHIVStatus'</span> <i>\"SetHIVStatus\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureMap/registerclientmodel-to-ngimmpatient"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "RegisterClientModelToNgImmPatient"] ; # 
+  fhir:title [ fhir:v "StructureMap: RegisterClientModel to NgImmPatient"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-08-03T02:35:31+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Map logical RegisterClientModel to NgImmPatient profile"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "RCM" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition-NgImmPatient"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition-NgImmPatient>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "Patient" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "RCMToNgImmPatient" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "rcm" ] ;
+       fhir:type [ fhir:v "RegisterClientModel" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "patient" ] ;
+       fhir:type [ fhir:v "Patient" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "SetIdentifier" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "identifier" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier.value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetGivenName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "name.given" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name.given" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetFamilyName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "name.family" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name.family" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetGender" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "sex" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "gender" ] ;
+         fhir:transform [ fhir:v "translate" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "https://nphcda.gov.ng/immunizationIG/ConceptMap/RCMSexToAdministrativeGender"
+           ]
+         ] [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "code"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetBirthDate" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "dateOfBirth" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "birthDate" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetAddressLine" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "address.residentialAddress" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.line" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetCity" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "address.town" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.city" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetDistrict" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "address.lga" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.district" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetState" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "address.state" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "address.state" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetCaregiverGiven" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "contact.name.given" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "contact.name.given" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetCaregiverFamily" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "contact.name.family" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "contact.name.family" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetCaregiverPhone" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "contact.telecom.value" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "contact.telecom.value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetCaregiverRelationship" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "contact.relationship.text" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "contact.relationship.text" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetPregnancyStatus" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "pregnancyStatus" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "extension.valueCodeableConcept" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGPregnancyStatus"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetAgeInWeeks" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "ageInWeeks" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "extension.valueInteger" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInWeeks"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetAgeInMonths" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "ageInMonths" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "extension.valueInteger" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInMonths"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetAgeInYears" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "ageInYears" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "extension.valueInteger" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInYears"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetWeightAtBirth" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "weightAtBirth" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "extension.valueQuantity" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGBirthWeight"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "SetHIVStatus" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "rcm" ] ;
+         fhir:element [ fhir:v "hivStatus" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "extension.valueCodeableConcept" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGHIVStatus"
+           ]
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,258 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/StructureMap/manageaefi-to-ngimm-aefi-profiles> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "manageaefi-to-ngimm-aefi-profiles"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap manageaefi-to-ngimm-aefi-profiles</b></p><a name=\"manageaefi-to-ngimm-aefi-profiles\"> </a><a name=\"hcmanageaefi-to-ngimm-aefi-profiles\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureMap/manageaefi-to-ngimm-aefi-profiles<span style=\"color: navy\">\" = \"</span>ManageAEFIToNgImmAEFIProfiles<span style=\"color: navy\">\"#xD;\n#xD;\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEncounter, NgImmPractitioner, and NgImmPatient profiles</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-manage-aefi.html\" title=\"NG-Imm-E Manage &amp; ReportAEFI\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/manage-aefi</a><span style=\"color: navy\">\" </span><b>alias </b>AEFI <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-allergy-intolerance-profile.html\" title=\"NG-Imm AllergyIntolerance\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile</a><span style=\"color: navy\">\" </span><b>alias </b>Allergy <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-ng-imm-encounter.html\" title=\"NG-Imm Encounter\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter</a><span style=\"color: navy\">\" </span><b>alias </b>Encounter <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style=\"color: navy\">\" </span><b>alias </b>Practitioner <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient<span style=\"color: navy\">\" </span><b>alias </b>Patient <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>manageAefiToAllergyIntolerance<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">AEFI</span>, <b>target</b> <span style=\"color: maroon\">Allergy</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  AEFI.reactionDate<span style=\"color: navy\"><b> -&gt; </b></span>Allergy.extension[1].valueInteger = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"reactionDateToOnset\"</i><span style=\"color: navy\">;</span>#xD;\n  AEFI.totalDoses<span style=\"color: navy\"><b> -&gt; </b></span>Allergy <i>\"totalDosesToExtension\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>manageAefiToEncounter<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">AEFI</span>, <b>target</b> <span style=\"color: maroon\">Encounter</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  AEFI.observationId<span style=\"color: navy\"><b> -&gt; </b></span>Encounter.identifier[0].value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"aefiIdToEncounterId\"</i><span style=\"color: navy\">;</span>#xD;\n  AEFI.visitType<span style=\"color: navy\"><b> -&gt; </b></span>Encounter.class = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"visitTypeToClass\"</i><span style=\"color: navy\">;</span>#xD;\n  AEFI.officerId<span style=\"color: navy\"><b> -&gt; </b></span>Encounter.participant[0].individual.reference = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"practitionerToParticipant\"</i><span style=\"color: navy\">;</span>#xD;\n  AEFI.facilityId<span style=\"color: navy\"><b> -&gt; </b></span>Encounter.location[0].location.reference = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"locationToEncounterLocation\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>manageAefiToPractitioner<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">AEFI</span>, <b>target</b> <span style=\"color: maroon\">Practitioner</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  AEFI.officerId<span style=\"color: navy\"><b> -&gt; </b></span>Practitioner.identifier[0].value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"officerIdToIdentifier\"</i><span style=\"color: navy\">;</span>#xD;\n  AEFI.officerName<span style=\"color: navy\"><b> -&gt; </b></span>Practitioner.name[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"officerNameToName\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>manageAefiToPatient<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">AEFI</span>, <b>target</b> <span style=\"color: maroon\">Patient</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  AEFI.clientId<span style=\"color: navy\"><b> -&gt; </b></span>Patient.identifier[0].value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"patientIdToIdentifier\"</i><span style=\"color: navy\">;</span>#xD;\n  AEFI.clientName<span style=\"color: navy\"><b> -&gt; </b></span>Patient.name[0].text = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"patientNameToName\"</i><span style=\"color: navy\">;</span>#xD;\n  AEFI.sex<span style=\"color: navy\"><b> -&gt; </b></span>Patient.gender = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"patientSexToGender\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureMap/manageaefi-to-ngimm-aefi-profiles"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "ManageAEFIToNgImmAEFIProfiles"] ; # 
+  fhir:title [ fhir:v "StructureMap: ManageAEFI to AllergyIntolerance, Encounter, Practitioner, and Patient"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-08-03T02:35:31+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEncounter, NgImmPractitioner, and NgImmPatient profiles"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/manage-aefi"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/manage-aefi>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "AEFI" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "Allergy" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "Encounter" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "Practitioner" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "Patient" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "manageAefiToAllergyIntolerance" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "AEFI" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "Allergy" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "reactionDateToOnset" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "reactionDate" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Allergy" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "extension[1].valueInteger" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "totalDosesToExtension" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "totalDoses" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Allergy" ] ;
+         fhir:contextType [ fhir:v "variable" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "manageAefiToEncounter" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "AEFI" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "Encounter" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "aefiIdToEncounterId" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "observationId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Encounter" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier[0].value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "visitTypeToClass" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "visitType" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Encounter" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "class" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "practitionerToParticipant" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "officerId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Encounter" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "participant[0].individual.reference" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "locationToEncounterLocation" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "facilityId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Encounter" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "location[0].location.reference" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "manageAefiToPractitioner" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "AEFI" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "Practitioner" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "officerIdToIdentifier" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "officerId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Practitioner" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier[0].value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "officerNameToName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "officerName" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Practitioner" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name[0].text" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "manageAefiToPatient" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "AEFI" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "Patient" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "patientIdToIdentifier" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "clientId" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier[0].value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "patientNameToName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "clientName" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name[0].text" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "patientSexToGender" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AEFI" ] ;
+         fhir:element [ fhir:v "sex" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "Patient" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "gender" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "register-facility-model","register-facility-model","","","",0,*,"","","","null {[]} {[]}
-","NG-Imm-A RegisterFacility[information only]","IMMZ.A - A logical model representing a health facility being registered in the immunization system.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","NG-Imm-A RegisterFacility","IMMZ.A - A logical model representing a health facility being registered in the immunization system.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "register-facility-model.identifier","register-facility-model.identifier","","","",1,1,"","","","string {[]} {[]}
 ","Unique identifier for health facilities including the master facility list.","Unique identifier for health facilities including the master facility list.","","","","","","","","","",,,,,"",,,,"register-facility-model.identifier",1,1,"",""
 "register-facility-model.facilityName","register-facility-model.facilityName","","","",1,1,"","","","string {[]} {[]}
@@ -12,7 +12,7 @@
 "register-facility-model.facilityType","register-facility-model.facilityType","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","The type of health facility.","The type of health facility.","","","","","","","","","",,,,,"#NGFacilityTypeVS
 ",,,,"register-facility-model.facilityType",0,1,"",""
-"register-facility-model.facilityStatus","register-facility-model.facilityStatus","","","",0,1,"","","","string {[]} {[]}
+"register-facility-model.facilityStatus","register-facility-model.facilityStatus","","","",0,1,"","","","boolean {[]} {[]}
 ","The Status of the health facility.","The Status of the health facility.","","","","","","","","","",,,,,"",,,,"register-facility-model.facilityStatus",0,1,"",""
 "register-facility-model.facilityContactType","register-facility-model.facilityContactType","","","",0,1,"","","","string {[]} {[]}
 ","The type of health facility contact Eg. email, fax, phone.","The type of health facility contact Eg. email, fax, phone.","","","","","","","","","",,,,,"",,,,"register-facility-model.facilityContactType",0,1,"",""
@@ -126,3 +126,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "register-facility-model.primarycontact.state","register-facility-model.primarycontact.state","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","The state where the primary contact is.","The state where the primary contact is.","","","","","","","","","",,,,,"#NGStatesVS
 ",,,,"register-facility-model.primarycontact.state",0,1,"",""
+"register-facility-model.longitude","register-facility-model.longitude","","","",0,1,"","","","string {[]} {[]}
+","The Longitude of the health facility","The Longitude of the health facility","","","","","","","","","",,,,,"",,,,"register-facility-model.longitude",0,1,"",""
+"register-facility-model.latitude","register-facility-model.latitude","","","",0,1,"","","","string {[]} {[]}
+","The Latitude of the health facility","The Latitude of the health facility","","","","","","","","","",,,,,"",,,,"register-facility-model.latitude",0,1,"",""

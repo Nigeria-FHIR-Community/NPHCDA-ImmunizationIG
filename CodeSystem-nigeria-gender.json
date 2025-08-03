@@ -10,7 +10,7 @@
   "name" : "NGGenderCS",
   "title" : "NG-Imm Gender CS",
   "status" : "active",
-  "date" : "2025-07-17T18:57:38+01:00",
+  "date" : "2025-08-03T02:35:31+01:00",
   "publisher" : "https://nphcda.gov.ng",
   "contact" : [{
     "name" : "https://nphcda.gov.ng",
@@ -41,25 +41,11 @@
   "concept" : [{
     "code" : "male",
     "display" : "male",
-    "definition" : "Client is of the male gender",
-    "designation" : [{
-      "use" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-        "code" : "display"
-      },
-      "value" : "male"
-    }]
+    "definition" : "Client is of the male gender"
   },
   {
     "code" : "female",
     "display" : "female",
-    "definition" : "Client is of the female gender",
-    "designation" : [{
-      "use" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-        "code" : "display"
-      },
-      "value" : "female"
-    }]
+    "definition" : "Client is of the female gender"
   }]
 }

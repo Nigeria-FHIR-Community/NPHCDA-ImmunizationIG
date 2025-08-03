@@ -1,6 +1,21 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
+      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
       "version" : "4.0.1",
       "status" : "draft",
@@ -38,6 +53,22 @@
       "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
       "oids" : ["2.16.840.1.113883.4.642.3.131"],
       "sources" : ["2.16.840.1.113883.4.642.3.131"],
+      "uses" : {
+      },
+      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
       "uses" : {
       },
       "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
@@ -198,10 +229,7 @@
       "description" : "The outcome of the reaction",
       "systems" : [
         "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-clinical-status"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-allergy-intolerance-profile.html" : "NG-Imm AllergyIntolerance"
+      ]
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-facility-types",
@@ -215,8 +243,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-gender",
@@ -227,11 +255,7 @@
       "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
       "systems" : [
         "https://nphcda.gov.ng/immunizationIG/CodeSystem/nigeria-gender"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-mother-other-children.html" : "NG-Imm RelatedPerson"
+      ]
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-hiv-status",
@@ -273,9 +297,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-location-owner",
@@ -361,9 +385,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-nigeria-location.html" : "NG-Imm Location",
+      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization",
       "StructureDefinition-NgImmPatient.html" : "NG-Imm Patient",
-      "StructureDefinition-ng-imm-organization.html" : "NG-Imm Organization"
+      "StructureDefinition-nigeria-location.html" : "NG-Imm Location"
     },
     {
       "url" : "https://nphcda.gov.ng/immunizationIG/ValueSet/nigeria-vaccine-contraindication",

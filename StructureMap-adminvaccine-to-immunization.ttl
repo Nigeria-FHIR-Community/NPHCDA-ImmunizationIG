@@ -1,0 +1,325 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nphcda.gov.ng/immunizationIG/StructureMap/adminvaccine-to-immunization> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "adminvaccine-to-immunization"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap adminvaccine-to-immunization</b></p><a name=\"adminvaccine-to-immunization\"> </a><a name=\"hcadminvaccine-to-immunization\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureMap/adminvaccine-to-immunization<span style=\"color: navy\">\" = \"</span>AdministerVaccineToFHIRResources<span style=\"color: navy\">\"#xD;\n#xD;\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map logical AdministerVaccine to NgImmImmunization, NgImmLocation, NgImmPractitioner, and NgImmEncounter profiles</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/administervaccine<span style=\"color: navy\">\" </span><b>alias </b>AV <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization<span style=\"color: navy\">\" </span><b>alias </b>IMM <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-location<span style=\"color: navy\">\" </span><b>alias </b>LOC <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner<span style=\"color: navy\">\" </span><b>alias </b>PRAC <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-ng-imm-encounter.html\" title=\"NG-Imm Encounter\">https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter</a><span style=\"color: navy\">\" </span><b>alias </b>ENC <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>administerVaccineToImmunization<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">AV</span>, <b>target</b> <span style=\"color: maroon\">IMM</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  AV.vaccineType<span style=\"color: navy\"><b> -&gt; </b></span>IMM.vaccineCode = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"vaccineCode\"</i><span style=\"color: navy\">;</span>#xD;\n  AV.contraindicated<span style=\"color: navy\"><b> -&gt; </b></span>IMM.doNotPerform = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  AV.contraindications<span style=\"color: navy\"><b> -&gt; </b></span>IMM.reasonCode = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  AV.vaccinationDateTime<span style=\"color: navy\"><b> -&gt; </b></span>IMM.occurrenceDateTime = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"occurrenceDateTime\"</i><span style=\"color: navy\">;</span>#xD;\n  AV.vaccineBatchNumber<span style=\"color: navy\"><b> -&gt; </b></span>IMM.lotNumber = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"lotNumber\"</i><span style=\"color: navy\">;</span>#xD;\n  AV.expirationDate<span style=\"color: navy\"><b> -&gt; </b></span>IMM.expirationDate = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  AV.siteAdministered<span style=\"color: navy\"><b> -&gt; </b></span>IMM.site = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"site\"</i><span style=\"color: navy\">;</span>#xD;\n  AV.routeOfAdministration<span style=\"color: navy\"><b> -&gt; </b></span>IMM.route = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"route\"</i><span style=\"color: navy\">;</span>#xD;\n  AV.doseQuantity<span style=\"color: navy\"><b> -&gt; </b></span>IMM.doseQuantity = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>administerVaccineToLocation<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">AV</span>, <b>target</b> <span style=\"color: maroon\">LOC</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  AV.nameOfHealthFacility<span style=\"color: navy\"><b> -&gt; </b></span>LOC.name = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"locationName\"</i><span style=\"color: navy\">;</span>#xD;\n  AV.facilityType<span style=\"color: navy\"><b> -&gt; </b></span>LOC.type = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>administerVaccineToPractitioner<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">AV</span>, <b>target</b> <span style=\"color: maroon\">PRAC</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  AV.healthWorkerIdentifier<span style=\"color: navy\"><b> -&gt; </b></span>PRAC.identifier.value = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"identifier\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span><b>group </b>administerVaccineToEncounter<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">AV</span>, <b>target</b> <span style=\"color: maroon\">ENC</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  AV.sessionType<span style=\"color: navy\"><b> -&gt; </b></span>ENC.class = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><span style=\"color: navy\">;</span>#xD;\n  AV.vaccinationDateTime<span style=\"color: navy\"><b> -&gt; </b></span>ENC.period.start = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"periodStartEnd\"</i><span style=\"color: navy\">;</span>#xD;\n  AV.vaccinationDateTime<span style=\"color: navy\"><b> -&gt; </b></span>ENC.period.end = <b>copy</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span> <i>\"periodEnd\"</i><span style=\"color: navy\">;</span>#xD;\n  AV<span style=\"color: navy\"><b> -&gt; </b></span>ENC.status = <span style=\"color: blue\">'finished'</span> <i>\"status\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nphcda.gov.ng/immunizationIG/StructureMap/adminvaccine-to-immunization"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "AdministerVaccineToFHIRResources"] ; # 
+  fhir:title [ fhir:v "StructureMap: AdministerVaccine to FHIR Resources"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-08-03T02:35:31+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://nphcda.gov.ng"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "https://nphcda.gov.ng" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://nphcda.gov.ng" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nigeria Primary Healthcare Development Agency." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ig@nphcda.gov.ng" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Map logical AdministerVaccine to NgImmImmunization, NgImmLocation, NgImmPractitioner, and NgImmEncounter profiles"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NG" ] ;
+       fhir:display [ fhir:v "Nigeria" ]
+     ] )
+  ] ) ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/administervaccine"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/administervaccine>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "AV" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "IMM" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-location"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-location>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "LOC" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "PRAC" ]
+  ] [
+     fhir:url [
+       fhir:v "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"^^xsd:anyURI ;
+       fhir:link <https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "ENC" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "administerVaccineToImmunization" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "AV" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "IMM" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "vaccineCode" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "vaccineType" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "vaccineCode" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "contraindicated" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "contraindicated" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "doNotPerform" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "contraindications" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "contraindications" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "reasonCode" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "occurrenceDateTime" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "vaccinationDateTime" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "occurrenceDateTime" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "lotNumber" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "vaccineBatchNumber" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "lotNumber" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "expirationDate" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "expirationDate" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "expirationDate" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "site" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "siteAdministered" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "site" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "route" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "routeOfAdministration" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "route" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "doseQuantity" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "doseQuantity" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "IMM" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "doseQuantity" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "administerVaccineToLocation" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "AV" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "LOC" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "locationName" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "nameOfHealthFacility" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "LOC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "name" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "facilityType" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "facilityType" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "LOC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "type" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "administerVaccineToPractitioner" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "AV" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "PRAC" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "identifier" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "healthWorkerIdentifier" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "PRAC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "identifier.value" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "administerVaccineToEncounter" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "AV" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "ENC" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "sessionType" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "sessionType" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "ENC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "class" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "periodStartEnd" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "vaccinationDateTime" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "ENC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "period.start" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "periodEnd" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ] ;
+         fhir:element [ fhir:v "vaccinationDateTime" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "ENC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "period.end" ] ;
+         fhir:transform [ fhir:v "copy" ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "status" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "AV" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "ENC" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "status" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "finished"
+           ]
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
