@@ -6,7 +6,7 @@ Id: allergy-intolerance-profile
 Description: "Nigeria Immunization Allergy Intolerance Profile"
 
 // Required Elements
-* clinicalStatus from NGClinicalStatusVS (required)
+* clinicalStatus from http://hl7.org/fhir/ValueSet/allergyintolerance-clinical (required)
 * clinicalStatus.coding 1..1
 * clinicalStatus.coding ^short = "The clinical status of the allergy or intolerance"
 * verificationStatus from http://hl7.org/fhir/ValueSet/allergyintolerance-verification (required)

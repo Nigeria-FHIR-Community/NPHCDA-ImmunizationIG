@@ -1,6 +1,6 @@
 Logical: RegisterFacilityModel
 Id: register-facility-model
-Title: "NG-Imm-A RegisterFacility[information only]"
+Title: "NG-Imm-A RegisterFacility"
 Description: "IMMZ.A - A logical model representing a health facility being registered in the immunization system."
 
 * identifier 1..1 string "Unique identifier for health facilities including the master facility list."
@@ -9,7 +9,7 @@ Description: "IMMZ.A - A logical model representing a health facility being regi
 * dateOfRecordCreation 0..1 date "Date of capture for administrative purposes."
 * facilityType 0..1 CodeableConcept "The type of health facility."
   * ^code[+] = #NGFacilityTypeVS
-* facilityStatus 0..1 string "The Status of the health facility."
+* facilityStatus 0..1 boolean "The Status of the health facility."
 * facilityContactType 0..1 string "The type of health facility contact Eg. email, fax, phone."
 * facilityContactValue 0..1 string "The actual value of the contact (eg. the phone number +23435565656)."
 * facilityaddress 0..1 BackboneElement "Office address."
@@ -38,6 +38,8 @@ Description: "IMMZ.A - A logical model representing a health facility being regi
     * ^code[+] = #NGLGAsVS
   * state 0..1 CodeableConcept "The state where the primary contact is."
     * ^code[+] = #NGStatesVS
+* longitude 0..1 string "The Longitude of the health facility"
+* latitude 0..1 string "The Latitude of the health facility"
 
 
 

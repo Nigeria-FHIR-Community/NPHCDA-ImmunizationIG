@@ -1,9 +1,10 @@
 
 Logical:      IMMZGGenerateReport
-Title:        "NG-Imm-H GenerateReport[information only]"
+Title:        "NG-Imm-H GenerateReport"
 Description:  "IMMZ.H - Data elements for the IMMZ.G Report Generation Data Dictionary." 
 * ^name = "IMMZHGenerateReport"
 * ^status = #active
+
 
 * reportIdentification 1..1 SU string "Report Identification" "A unique identifier for the instance of the report that has been generated"
 * reportStatus 1..1 SU CodeableConcept "Report Status" "The status of the report (for example, initial, complete, etc.)"

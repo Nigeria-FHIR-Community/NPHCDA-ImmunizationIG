@@ -4,6 +4,7 @@ Parent: Patient
 Title: "NG-Imm Patient"
 Description: "Nigeria Immunization Patient Profile"
 
+
 * meta.lastUpdated 1..1 MS
 * meta.lastUpdated ^short = "The date and time when the client record was created or last updated."
 
@@ -18,8 +19,8 @@ Description: "Nigeria Immunization Patient Profile"
 * name.family 1..1
 * name.family ^short = "The surname or family name of the Immunization client"
 // Bind gender to your custom AdministrativeGender value set
-//* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
-* gender from NGGenderVS (required)
+* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
+//* gender from NGGenderVS (required)
 * gender ^short = "The sex of the Immunization client"
 * active 0..1 
 * active ^short = "Whether this patient's record is in active use (0-23 mnths is active)"

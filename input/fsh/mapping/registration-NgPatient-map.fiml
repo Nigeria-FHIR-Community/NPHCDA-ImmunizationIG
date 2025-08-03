@@ -1,0 +1,86 @@
+map "http://example.org/StructureMap/RegisterClientModelToNgImmPatient" = "RegisterClientModelToNgImmPatient"
+// Map RegisterClientModel Logical Model to NgImmPatient Profile
+
+uses "http://example.org/StructureDefinition/register-client-model" alias RCM as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
+
+group RCMToNgImmPatient(source rcm : RCM, target patient : Patient) {
+
+  // Identifier
+  rcm.identifier as id -> patient.identifier as identifier then {
+    id -> identifier.value = id "SetIdentifierValue";
+  } "SetIdentifier";
+
+  // Name mapping
+  rcm.name as name -> patient.name as pname then {
+    name.given as g -> pname.given = g "SetGivenName";
+    name.family as f -> pname.family = f "SetFamilyName";
+  } "SetName";
+
+  // Gender
+  rcm.sex as sex -> patient.gender = translate(sex, 'http://example.org/ConceptMap/RCMSexToAdministrativeGender', 'code') "SetGender";
+
+  // Date of birth
+  rcm.dateOfBirth as dob -> patient.birthDate = dob "SetBirthDate";
+
+  // Address
+  rcm.address as addr -> patient.address as address then {
+    addr.residentialAddress as line -> address.line = line "SetAddressLine";
+    addr.town as city -> address.city = city "SetCity";
+    addr.lga as lga -> address.district = lga "SetDistrict";
+    addr.state as state -> address.state = state "SetState";
+  } "SetAddress";
+
+  // Administrative Ward Extension
+  rcm.address.ward as ward -> patient.address.extension as ext then {
+    ward -> ext.url = 'http://example.org/fhir/StructureDefinition/NGAdministrativeWard',
+    ward -> ext.valueCodeableConcept = ward "SetWardExtension";
+  } "SetWard";
+
+  // Contact / Caregiver
+  rcm.contact as contact -> patient.contact as c then {
+    contact.name.given as g -> c.name.given = g "SetCaregiverGiven";
+    contact.name.family as f -> c.name.family = f "SetCaregiverFamily";
+    contact.telecom.value as phone -> c.telecom.value = phone "SetCaregiverPhone";
+    contact.telecom.system as system -> c.telecom.system = system "SetCaregiverPhoneSystem";
+    contact.relationship.text as rel -> c.relationship.text = rel "SetCaregiverRelationship";
+  } "SetCaregiver";
+
+  // Caregiver Address Extensions
+  rcm.contact.address.ward as cward -> patient.contact.address.extension as cext then {
+    cward -> cext.url = 'http://example.org/fhir/StructureDefinition/NGAdministrativeWard',
+    cward -> cext.valueCodeableConcept = cward "SetCaregiverWardExtension";
+  } "SetCaregiverWard";
+
+  // Extensions
+  rcm.ageInWeeks as ageW -> patient.extension as ext then {
+    ageW -> ext.url = 'http://example.org/fhir/StructureDefinition/NGAgeInWeeks',
+    ageW -> ext.valueInteger = ageW "SetAgeInWeeks";
+  } "SetAgeWeeks";
+
+  rcm.ageInMonths as ageM -> patient.extension as ext then {
+    ageM -> ext.url = 'http://example.org/fhir/StructureDefinition/NGAgeInMonths',
+    ageM -> ext.valueInteger = ageM "SetAgeInMonths";
+  } "SetAgeMonths";
+
+  rcm.ageInYears as ageY -> patient.extension as ext then {
+    ageY -> ext.url = 'http://example.org/fhir/StructureDefinition/NGAgeInYears',
+    ageY -> ext.valueInteger = ageY "SetAgeInYears";
+  } "SetAgeYears";
+
+  rcm.weightAtBirth as weight -> patient.extension as ext then {
+    weight -> ext.url = 'http://example.org/fhir/StructureDefinition/NGBirthWeight',
+    weight -> ext.valueQuantity = weight "SetWeightAtBirth";
+  } "SetWeight";
+
+  rcm.hivStatus as hiv -> patient.extension as ext then {
+    hiv -> ext.url = 'http://example.org/fhir/StructureDefinition/NGHIVStatus',
+    hiv -> ext.valueCodeableConcept = hiv "SetHIVStatus";
+  } "SetHIV";
+
+  rcm.pregnancyStatus as preg -> patient.extension as ext then {
+    preg -> ext.url = 'http://example.org/fhir/StructureDefinition/NGPregnancyStatus',
+    preg -> ext.valueCodeableConcept = preg "SetPregnancyStatus";
+  } "SetPregnancy";
+
+}

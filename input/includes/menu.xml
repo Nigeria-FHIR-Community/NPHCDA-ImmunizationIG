@@ -21,11 +21,10 @@
       <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
       <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
       <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
-      <li><a href="artifacts.html#artifacts-summary">Capability and Search</a></li>
-      <li><a href="artifacts.html#structures-logical-models">Logical Models</a></li>
+      <li><a href="artifacts.html#artifacts-summary">Capability and Logical Models</a></li>
+      <li><a href="artifacts.html#terminology-structure-maps">Model-Profile Map</a></li>
     </ul>
   </li>
-
 
   <li> <a href="search-operation.html" >Search and Operations</a></li> 
   <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
