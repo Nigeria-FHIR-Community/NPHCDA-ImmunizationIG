@@ -13,10 +13,16 @@
     </thead>
     <tbody>
         <tr>
-            <td>National Primary Health Care Development Agency</td>
+            <td>NPHCDA Immunization IG development GitHub pages build after stakeholder validation</td>
             <td>4th July 2025</td>
             <td>Fifth Draft</td>
             <td>0.5.0</td>
+        </tr>
+                <tr>
+            <td>NPHCDA Immunization FHIR IG upload to build.fhir.org</td>
+            <td>4th August 2025</td>
+            <td>1st ci-build Draft</td>
+            <td>1.0.0</td>
         </tr>
     </tbody>
 </table>
