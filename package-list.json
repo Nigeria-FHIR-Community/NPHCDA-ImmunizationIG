@@ -1,0 +1,20 @@
+{
+  "package-id": "ng.gov.nphcda.immunization",
+  "canonical": "http://nphcda.gov.ng/ig/immunization",
+  "title": "Nigeria Immunization FHIR Implementation Guide",
+  "version": "1.0.0",
+  "list": [
+    {
+      "version": "1.0.0",
+      "desc": "Initial release to build.fhir.org",
+      "path": "1.0.0",
+      "status": "release"
+    },
+    {
+      "version": "current",
+      "desc": "Continuous integration build",
+      "path": "current",
+      "status": "ci-build"
+    }
+  ]
+}

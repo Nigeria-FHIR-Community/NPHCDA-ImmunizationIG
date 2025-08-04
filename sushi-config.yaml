@@ -3,22 +3,22 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.nigeriaImmunizationIG
-canonical: https://nphcda.gov.ng/immunizationIG
+id: ng.gov.nphcda.immunization
+canonical: http://nphcda.gov.ng/ig/immunization
 name: Nigeria-immunization-FHIR-IG
-title: Nigeria Immunization FHIR IG
+title: NPHCDA Immunization FHIR IG
 description: Nigeria Immunization FHIR IG
 status: draft # draft | active | retired | unknown
-version: 0.5.0
+version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
-releaseLabel: draft
+releaseLabel: ci-build
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#NG "Nigeria"  # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: https://nphcda.gov.ng
   url: https://nphcda.gov.ng
-  # email: ig@nphcda.gov.ng
+  email: kasim.sani@nphcda.gov.ng
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
