@@ -6,3 +6,6 @@ input-cache
 temp
 template
 output
+internals
+fhir-ig-list.json
+issue_template.json
