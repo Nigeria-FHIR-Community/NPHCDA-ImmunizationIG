@@ -32,9 +32,9 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
 - [Java JDK](https://adoptopenjdk.net/) (v20 and above)
 - VS - Code (with HL7 fsh extension)
 
-### Setup Instructions
+### Link to the IG
 
-1. **Clone the repository**
+1. **Access the IG**
 
 ```bash
 The IG is accessible here: https://build.fhir.org/ig/Nigeria-FHIR-Community/NPHCDA-ImmunizationIG/index.html
