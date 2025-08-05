@@ -37,11 +37,23 @@ Description: "The HIV status (positive, negative, or unknown) of the Immunizatio
 Extension: NGPregnancyStatus
 Id:  pregnancy-status
 Title:  "NG-Imm Client's Pregnancy status"
-Description: "The Pregnancy status (pregnant or not-pregnant) of the Immunization Client"
+Description: "The Pregnancy status (pregnant or not-pregnant) of the Immunization Client, 
+including the period during which the status was asserted."
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
-* value[x] only CodeableConcept
-* valueCodeableConcept from NGPregnancyStatusVS (required)
+* extension contains
+    status 1..1 and
+    assertionPeriod 0..1
+
+* extension[status].value[x] only CodeableConcept
+* extension[status].valueCodeableConcept from NGPregnancyStatusVS (required)
+* extension[status].valueCodeableConcept ^short = "Pregnancy status"
+* extension[status].valueCodeableConcept ^definition = "Pregnant or not pregnant, using NGPregnancyStatusVS."
+
+// Sub-extension: period when status was asserted
+* extension[assertionPeriod].value[x] only Period
+* extension[assertionPeriod].valuePeriod ^short = "Period when the pregnancy status was asserted"
+* extension[assertionPeriod].valuePeriod ^definition = "The date range during which the pregnancy status was confirmed or applicable."
 
 Extension: NGAgeInWeeks
 Id:  age-in-weeks

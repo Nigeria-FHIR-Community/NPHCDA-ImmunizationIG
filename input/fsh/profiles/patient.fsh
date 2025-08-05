@@ -9,13 +9,14 @@ Description: "Nigeria Immunization Patient Profile"
 * meta.lastUpdated ^short = "The date and time when the client record was created or last updated."
 
 * identifier 1..* MS
+* identifier ^short = "The identifier set given to a Client at different points (can be the National ID, the Hospital specific mrn, or even phone number)"
 * identifier.value 1..1 MS
-* identifier.value ^short = "The actual ID value (eg. NIN35635556)"
+* identifier.value ^short = "The actual ID value eg. in case of NIN, the value will be 12335635556, and phone number like 08031234569, or hospital MRN like 2021-0764564 "
 * identifier.system 1..1 MS
-* identifier.system ^short = "The organization website that assign the ID being entered (eg. https://nimc.gov.ng)"
-* name 1..* MS
+* identifier.system ^short = "The organization website that assign the ID being entered (eg. https://nimc.gov.ng or asokoro hosp., or MTN)"
+* name 1..1 MS
 * name.given 1..* 
-* name.given ^short = "The other names of the Immunization client"
+* name.given ^short = "The other names of the Immunization client like the Firstname and Middle names if applicable"
 * name.family 1..1
 * name.family ^short = "The surname or family name of the Immunization client"
 // Bind gender to your custom AdministrativeGender value set
@@ -45,6 +46,7 @@ Description: "Nigeria Immunization Patient Profile"
 * address.state from NGStatesVS (required)
 * address.state ^short = "The name of the state where the client resides in Nigeria"
 * contact 0..* MS
+* contact ^short = "The contact information of the Client's primary Caregiver, can be a Parent or Guardian"
 * contact.name.given 0..* 
 * contact.name.given ^short = "The first name of the Client's primary Caregiver, can be a Parent or Guardian"
 * contact.name.family 0..1 
@@ -68,18 +70,23 @@ Description: "Nigeria Immunization Patient Profile"
 * communication.language from NGLanguagesVS (extensible)
 * communication.language ^short = "Preferred language which can be used to communicate with the patient about his or her health"
 * photo 0..* MS
-* photo ^short = "Image of the patient"
+* photo ^short = "Image of the patient headshot, not more than 100kb"
 * photo.data 0..1
-* photo.data ^short = "Base64 encoded image data"
+* photo.data ^short = "optional Base64 encoded image data"
 * photo.title 0..1
-* photo.title ^short = "The label of the image"
+* photo.title ^short = "optional The label of the image"
 * photo.url 0..1
 * photo.url ^short = "Public URL or internal endpoint to the patient's photo"
 * photo.size 0..1
 * photo.size ^short = "The size of the image in mega bytes MB"
 * photo.contentType 0..1
 * photo.contentType ^short = "Type of image (e.g., image/jpeg)"
+* link 0..1
+* link.other ^short = "This link provides reference to the immunization client's Related persons"
 * link.other only Reference(NgImmSiblingRelatedPerson)
+* link.type ^short = "The type of Link (eg. reference) client's Related persons"
+* link.type 1..1
+
 
 
 // Include the extensions
@@ -88,11 +95,16 @@ Description: "Nigeria Immunization Patient Profile"
 * contact.address.extension contains NGAdministrativeWard named administrativeWard 0..1 MS
 * extension contains NGBirthWeight named birthWeight 0..1 MS
 * extension contains NGHIVStatus named hivStatus 0..1 MS
-* extension contains NGPregnancyStatus named pregnancyStatus 0..1 MS
 * extension contains NGAgeInWeeks named ageInWeeks 0..1 MS
 * extension contains NGAgeInMonths named ageInMonths 0..1 MS
 * extension contains NGAgeInYears named ageInYears 0..1 MS
-//* extension contains NGCreatedDate named createdDate 0..1 MS
+// Pregnancy status extension (complex extension reference)
+* extension contains NGPregnancyStatus named pregnancyStatus 0..1 MS
+* extension[pregnancyStatus] ^short = "Client's pregnancy status and assertion period"
+* extension[pregnancyStatus] ^definition = "
+Captures the pregnancy status of the immunization client 
+and the period during which the status was asserted.
+"
 
 // Hide dataelements
 
