@@ -66,7 +66,7 @@ Description: "A standardized classification system used to describe the type or 
 * #hospital	"Secondary Hospital" "A referral facility providing specialized care, inpatient services, and emergency response, staffed by medical officers and specialists."
 * #tertiary	"Tertiary Facility" "A highly specialized hospital offering advanced diagnostic, therapeutic, and surgical care, often affiliated with teaching or research institutions."
 
-CodeSystem: NGGenderCS
+/* CodeSystem: NGGenderCS
 Id: nigeria-gender
 Title: "NG-Imm Gender CS"
 Description: "The administrative gender of a person."
@@ -77,4 +77,4 @@ Description: "The administrative gender of a person."
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Gender/sex of a client
 * #male "male" "Client is of the male gender"
-* #female "female" "Client is of the female gender"
+* #female "female" "Client is of the female gender" */

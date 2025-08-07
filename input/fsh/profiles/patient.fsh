@@ -7,21 +7,20 @@ Description: "Nigeria Immunization Patient Profile"
 
 * meta.lastUpdated 1..1 MS
 * meta.lastUpdated ^short = "The date and time when the client record was created or last updated."
-
 * identifier 1..* MS
 * identifier ^short = "The identifier set given to a Client at different points (can be the National ID, the Hospital specific mrn, or even phone number)"
 * identifier.value 1..1 MS
-* identifier.value ^short = "The actual ID value eg. in case of NIN, the value will be 12335635556, and phone number like 08031234569, or hospital MRN like 2021-0764564 "
+* identifier.value ^short = "The actual ID value eg. in case of 11 digit NIN, the value will be 12335635556, and phone number like 11-digit 08031234569, or hospital MRN (varies in length and structure acrsoss facilities) like 2021-0764564 "
 * identifier.system 1..1 MS
-* identifier.system ^short = "The organization website that assign the ID being entered (eg. https://nimc.gov.ng or asokoro hosp., or MTN)"
+* identifier.system ^short = "The organization website/name that assign the ID being entered (eg. https://nimc.gov.ng or asokoro hosp., or MTN)"
 * name 1..1 MS
 * name.given 1..* 
 * name.given ^short = "The other names of the Immunization client like the Firstname and Middle names if applicable"
 * name.family 1..1
 * name.family ^short = "The surname or family name of the Immunization client"
 // Bind gender to your custom AdministrativeGender value set
-* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
-//* gender from NGGenderVS (required)
+//* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
+* gender from NGGenderVS (required)
 * gender ^short = "The sex of the Immunization client"
 * active 0..1 
 * active ^short = "Whether this patient's record is in active use (0-23 mnths is active)"

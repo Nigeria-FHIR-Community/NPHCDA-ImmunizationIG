@@ -15,6 +15,8 @@ Description: "Profile for a Nigerian Practitioner"
 * name.given ^short = "The first name of the practitioner e.g. of the Routine Immunization officer"
 * name.family 1..1
 * name.given ^short = "The surname of the practitioner e.g. of the Routine Immunization officer"
+* gender from NGGenderVS (required)
+* gender ^short = "The sex of the Routine Immunization officer"
 * telecom 0..* MS
 * telecom.system 1..1 
 * telecom.system ^short = "The preferred communication medium e.g. email | mobile"

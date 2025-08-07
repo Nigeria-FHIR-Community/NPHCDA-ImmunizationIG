@@ -24,6 +24,12 @@
             <td>1st ci-build Draft</td>
             <td>1.0.0</td>
         </tr>
+                        <tr>
+            <td>NPHCDA Immunization FHIR IG addressing capability statement comments</td>
+            <td>7th August 2025</td>
+            <td>2st ci-build Draft</td>
+            <td>1.0.0</td>
+        </tr>
     </tbody>
 </table>
 

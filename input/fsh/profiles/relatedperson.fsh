@@ -15,8 +15,8 @@ Description: "Sibling that represents the mother's other children as RelatedPers
 * birthDate 0..1 MS
 * birthDate ^short = "The date the sibling was born"
 //* gender from NGGenderVS (required)
-* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
-* gender ^short = "The sex of the Immunization client"
+* gender from NGGenderVS (required)
+* gender ^short = "The sex of the Immunization client's related person"
 * relationship.text from NGRelationshipsVS (extensible)
 * relationship.text ^short = "The relationship of the sibling with the Client e.g. brother| sister"
 

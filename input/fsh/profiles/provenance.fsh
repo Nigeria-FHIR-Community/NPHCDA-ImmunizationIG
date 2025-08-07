@@ -1,12 +1,9 @@
 Profile: NgImmProvenance
 Parent: Provenance
 Id: ng-imm-provenance
-Title: "NG Immunization Provenance"
-Description: "
-A Provenance profile tailored for Nigeria’s Immunization workflows 
-(using FHIR R4.0.1). Captures the origin, responsible party, and 
-context for the creation, modification, or exchange of immunization-related 
-records, including Immunization, AEFI, Defaulter Tracing, and related 
+Title: "NG-Imm Provenance"
+Description: " A Provenance profile tailored for Nigeria’s Immunization workflows (using FHIR R4.0.1). Captures the origin, responsible party, and 
+context for the creation, modification, or exchange of immunization-related records, including Immunization, AEFI, Defaulter Tracing, and related 
 patient data."
 
 * target 1..* MS
@@ -27,12 +24,12 @@ patient data."
 * policy ^definition = "Policies, regulations, or guidelines (e.g., NDPC privacy law, NITDA guidelines,  WHO guidelines) under which the activity was performed."
 
 * location 0..1 MS
-* location only Reference(Location)
+* location only Reference(NgImmLocation)
 * location ^short = "Where the activity occurred"
 * location ^definition = "The location (facility, outreach site, etc.) where the activity took place."
 
 * reason 0..*
-* reason from http://terminology.hl7.org/CodeSystem/provenance-reason (extensible)
+* reason from http://terminology.hl7.org/ValueSet/v3-PurposeOfUse (extensible)
 * reason ^short = "Reason for the action"
 * reason ^definition = "Justification or explanation for the activity — especially important for updates, corrections, and special case entries."
 
@@ -45,9 +42,9 @@ patient data."
 * agent ^short = "Who was involved"
 * agent ^definition = "Individual, organization, or device responsible for the activity."
 * agent.who 1..1
-* agent.who only Reference(NgImmPractitioner or PractitionerRole or Organization or Device)
-* agent.who ^short = "Person, organization, or device responsible"
-* agent.role 1..*
+* agent.who only Reference(NgImmPractitioner or NgImmPractitionerRole or NgImmOrganization)
+* agent.who ^short = "practitioner, practitionerRole, or organization responsible"
+* agent.role 0..*
 * agent.role from http://terminology.hl7.org/CodeSystem/provenance-participant-role (extensible)
 * agent.role ^short = "Role of the agent"
 * agent.role ^definition = "The role played by the agent in the activity (e.g., author, verifier, transmitter)."
@@ -65,8 +62,7 @@ patient data."
 * signature ^short = "Digital signature"
 * signature ^definition = "Digital signatures supporting authenticity of the action."
 
-/* Invariant: ngimm-provenance-agent
+Invariant: ngimm-provenance-agent
 Description: "At least one agent.who must be specified"
 Expression: "agent.where(who.exists()).exists()"
 Severity: #error
- */

@@ -1,11 +1,21 @@
 //Patient Valuesets
-ValueSet: NGGenderVS
+/* ValueSet: NGGenderVS
 Id: nigeria-gender
 Title: "NG-Imm Gender or Sex VS"
 //Description: "The administrative gender of a person."
 Description: "Subset of HL7 administrative-gender limited to 'male' and 'female'."
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-gender"
-* include codes from system NGGenderCS 
+* include codes from system NGGenderCS  */
+
+
+ValueSet: NGGenderVS
+Id: ng-gender-vs
+Title: "NG Gender or Sex VS"
+Description: "A subset of the administrative gender codes including only 'male' and 'female'"
+* include codes from system http://hl7.org/fhir/administrative-gender where code = "male"
+* include codes from system http://hl7.org/fhir/administrative-gender where code = "female"
+
+
 
 ValueSet: NGWardsVS
 Id: nigeria-wards
