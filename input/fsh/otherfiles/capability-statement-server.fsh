@@ -76,6 +76,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[0].searchParam[3].type = #token
 * rest[0].resource[0].searchParam[3].definition = "SearchParameter/Patient-gender"
 * rest[0].resource[0].searchParam[3].documentation = "Filter patients by sex (Male, Female). Bound to `NGGenderVS`."
+// Supported _revinclude
+* rest[0].resource[0].searchRevInclude[0] = "NgImmProvenance:target"
 
 
 
@@ -106,7 +108,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[1].searchParam[3].name = "date"
 * rest[0].resource[1].searchParam[3].type = #date
 * rest[0].resource[1].searchParam[3].definition = "SearchParameter/Immunization-date"
-
+// Supported _revinclude
+* rest[0].resource[1].searchRevInclude[0] = "NgImmProvenance:target"
 
 
 
@@ -159,7 +162,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[2].searchParam[3].name = "organization-identifier"
 * rest[0].resource[2].searchParam[3].type = #token
 * rest[0].resource[2].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
-
+// Supported _revinclude
+* rest[0].resource[2].searchRevInclude[0] = "NgImmProvenance:target"
 
 
 //NgImmOrganization profile
@@ -180,7 +184,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[3].searchParam[0].name = "organization-identifier"
 * rest[0].resource[3].searchParam[0].type = #token
 * rest[0].resource[3].searchParam[0].definition = "SearchParameter/Organization-identifier"
-
+// Supported _revinclude
+* rest[0].resource[3].searchRevInclude[0] = "NgImmProvenance:target"
 
 
 //NgImmEncounter profile
@@ -201,7 +206,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[4].searchParam[0].name = "encounter-identifier"
 * rest[0].resource[4].searchParam[0].type = #token
 * rest[0].resource[4].searchParam[0].definition = "SearchParameter/Encounter-identifier"
-
+// Supported _revinclude
+* rest[0].resource[4].searchRevInclude[0] = "NgImmProvenance:target"
 
 //NgImmRelatedPerson profile
 
@@ -222,7 +228,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[5].searchParam[0].type = #token
 * rest[0].resource[5].searchParam[0].definition = "SearchParameter/RelatedPerson-pseudo-id"
 * rest[0].resource[5].searchParam[0].documentation = "Search a particular related person. Use steps referenced in Standard Organization of Nigeria (SON's) NIS ISO 25237:2019 for detailed steps"
-
+// Supported _revinclude
+* rest[0].resource[5].searchRevInclude[0] = "NgImmProvenance:target"
 
 
 
@@ -252,6 +259,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[6].searchParam[1].type = #token
 * rest[0].resource[6].searchParam[1].definition = "SearchParameter/Practitioner-license"
 * rest[0].resource[6].searchParam[1].documentation = "Search a practtioner by ther public facing MDCN, Pharmacy, or related licenses"
+// Supported _revinclude
+* rest[0].resource[6].searchRevInclude[0] = "NgImmProvenance:target"
 
 // NgImmMeasureReport profile
 
@@ -271,7 +280,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[7].searchParam[0].name = "measurereport-identifier"
 * rest[0].resource[7].searchParam[0].type = #token
 * rest[0].resource[7].searchParam[0].definition = "SearchParameter/MeasureReport-identifier"
-
+// Supported _revinclude
+* rest[0].resource[7].searchRevInclude[0] = "NgImmProvenance:target"
 
 
 // ---- NgImmProvenance profile ----
@@ -289,7 +299,8 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[8].searchParam[0].name = "provenance-identifier"
 * rest[0].resource[8].searchParam[0].type = #token
 * rest[0].resource[8].searchParam[0].definition = "SearchParameter/Provenance-identifier"
-
+// Supported _revinclude
+* rest[0].resource[8].searchRevInclude[0] = "NgImmProvenance:target"
 
 // ---- StructureMap ----
 * rest[0].resource[9].type = #StructureMap
@@ -297,3 +308,5 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[9].operation[0].name = "transform"
 * rest[0].resource[9].operation[0].definition = "OperationDefinition/StructureMap-transform"
 * rest[0].resource[9].operation[0].documentation = "The Server can recieve the register patient logical model structured data and transform them into an insance of NgImmPatient FHIR profile"
+// Supported _revinclude
+* rest[0].resource[9].searchRevInclude[0] = "NgImmProvenance:target"
