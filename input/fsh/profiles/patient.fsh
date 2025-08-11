@@ -20,7 +20,7 @@ Description: "Nigeria Immunization Patient Profile"
 * name.family ^short = "The surname or family name of the Immunization client"
 // Bind gender to your custom AdministrativeGender value set
 //* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
-* gender from NGGenderVS (required) MS
+* gender from NGGenderVS (required)
 * gender ^short = "The sex of the Immunization client"
 * active 0..1 
 * active ^short = "Whether this patient's record is in active use (0-23 mnths is active)"
