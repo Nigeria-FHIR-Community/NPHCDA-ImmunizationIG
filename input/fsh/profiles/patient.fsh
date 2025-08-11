@@ -20,18 +20,12 @@ Description: "Nigeria Immunization Patient Profile"
 * name.family ^short = "The surname or family name of the Immunization client"
 // Bind gender to your custom AdministrativeGender value set
 //* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
-* gender from NGGenderVS (required)
+* gender from NGGenderVS (required) MS
 * gender ^short = "The sex of the Immunization client"
 * active 0..1 
 * active ^short = "Whether this patient's record is in active use (0-23 mnths is active)"
 * birthDate 0..1 MS
 * birthDate ^short = "The date of birth of the Immunization client in the form dd-mm-yyy"
-* deceased[x] 0..1
-* deceased[x] ^short = "Indicates if an individual client is alive or dead"
-* deceasedBoolean 0..1
-* deceasedBoolean ^short = "Indicates if the individual is deceased (dead) or not"
-* deceasedDateTime 0..1
-* deceasedDateTime ^short = "Indicates when the individual passed away if dead."
 * active 0..1
 * active ^short = "Indicates Whether this patient's record is in active use or not (eg. for Immunization, this flag can be set to true between 0-24 months, and false there after, to optimize searches)"
 * address 0..* MS
@@ -68,7 +62,10 @@ Description: "Nigeria Immunization Patient Profile"
 * communication 0..*
 * communication.language from NGLanguagesVS (extensible)
 * communication.language ^short = "Preferred language which can be used to communicate with the patient about his or her health"
-* photo 0..* MS
+
+
+
+/* * photo 0..* MS
 * photo ^short = "Image of the patient headshot, not more than 100kb"
 * photo.data 0..1
 * photo.data ^short = "optional Base64 encoded image data"
@@ -79,7 +76,15 @@ Description: "Nigeria Immunization Patient Profile"
 * photo.size 0..1
 * photo.size ^short = "The size of the image in mega bytes MB"
 * photo.contentType 0..1
-* photo.contentType ^short = "Type of image (e.g., image/jpeg)"
+* photo.contentType ^short = "Type of image (e.g., image/jpeg)" 
+* deceased[x] 0..1
+* deceased[x] ^short = "Indicates if an individual client is alive or dead"
+* deceasedBoolean 0..1
+* deceasedBoolean ^short = "Indicates if the individual is deceased (dead) or not"
+* deceasedDateTime 0..1
+* deceasedDateTime ^short = "Indicates when the individual passed away if dead."
+
+*/
 * link 0..1
 * link.other ^short = "This link provides reference to the immunization client's Related persons"
 * link.other only Reference(NgImmSiblingRelatedPerson)
@@ -93,17 +98,11 @@ Description: "Nigeria Immunization Patient Profile"
 //* contact.address.extension[NigeriaAdministrativeWard].valueCodeableConcept from NigeriaWardsVS (required)
 * contact.address.extension contains NGAdministrativeWard named administrativeWard 0..1 MS
 * extension contains NGBirthWeight named birthWeight 0..1 MS
-* extension contains NGHIVStatus named hivStatus 0..1 MS
+
 * extension contains NGAgeInWeeks named ageInWeeks 0..1 MS
 * extension contains NGAgeInMonths named ageInMonths 0..1 MS
 * extension contains NGAgeInYears named ageInYears 0..1 MS
-// Pregnancy status extension (complex extension reference)
-* extension contains NGPregnancyStatus named pregnancyStatus 0..1 MS
-* extension[pregnancyStatus] ^short = "Client's pregnancy status and assertion period"
-* extension[pregnancyStatus] ^definition = "
-Captures the pregnancy status of the immunization client 
-and the period during which the status was asserted.
-"
+
 
 // Hide dataelements
 

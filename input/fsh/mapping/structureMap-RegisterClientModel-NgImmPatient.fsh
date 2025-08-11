@@ -93,6 +93,14 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 * group.rule[7].target.element = "address.district"
 * group.rule[7].target.transform = #copy
 
+// Address ward
+* group.rule[7].name = "SetWard"
+* group.rule[7].source.context = "rcm"
+* group.rule[7].source.element = "address.ward"
+* group.rule[7].target.context = "patient"
+* group.rule[7].target.element = "address.ward"
+* group.rule[7].target.transform = #copy
+
 // Address state
 * group.rule[8].name = "SetState"
 * group.rule[8].source.context = "rcm"
@@ -137,51 +145,37 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 
 
 // Extensions
-* group.rule[13].name = "SetPregnancyStatus"
-* group.rule[13].source.context = "rcm"
-* group.rule[13].source.element = "pregnancyStatus"
-* group.rule[13].target.context = "patient"
-* group.rule[13].target.element = "extension.valueCodeableConcept"
-* group.rule[13].target.transform = #copy
-* group.rule[13].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGPregnancyStatus"
 
-* group.rule[14].name = "SetAgeInWeeks"
+* group.rule[13].name = "SetAgeInWeeks"
+* group.rule[13].source.context = "rcm"
+* group.rule[13].source.element = "ageInWeeks"
+* group.rule[13].target.context = "patient"
+* group.rule[13].target.element = "extension.valueInteger"
+* group.rule[13].target.transform = #copy
+* group.rule[13].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInWeeks"
+
+* group.rule[14].name = "SetAgeInMonths"
 * group.rule[14].source.context = "rcm"
-* group.rule[14].source.element = "ageInWeeks"
+* group.rule[14].source.element = "ageInMonths"
 * group.rule[14].target.context = "patient"
 * group.rule[14].target.element = "extension.valueInteger"
 * group.rule[14].target.transform = #copy
-* group.rule[14].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInWeeks"
+* group.rule[14].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInMonths"
 
-* group.rule[15].name = "SetAgeInMonths"
+* group.rule[15].name = "SetAgeInYears"
 * group.rule[15].source.context = "rcm"
-* group.rule[15].source.element = "ageInMonths"
+* group.rule[15].source.element = "ageInYears"
 * group.rule[15].target.context = "patient"
 * group.rule[15].target.element = "extension.valueInteger"
 * group.rule[15].target.transform = #copy
-* group.rule[15].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInMonths"
+* group.rule[15].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInYears"
 
-* group.rule[16].name = "SetAgeInYears"
+* group.rule[16].name = "SetWeightAtBirth"
 * group.rule[16].source.context = "rcm"
-* group.rule[16].source.element = "ageInYears"
+* group.rule[16].source.element = "weightAtBirth"
 * group.rule[16].target.context = "patient"
-* group.rule[16].target.element = "extension.valueInteger"
+* group.rule[16].target.element = "extension.valueQuantity"
 * group.rule[16].target.transform = #copy
-* group.rule[16].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInYears"
+* group.rule[16].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGBirthWeight"
 
-* group.rule[17].name = "SetWeightAtBirth"
-* group.rule[17].source.context = "rcm"
-* group.rule[17].source.element = "weightAtBirth"
-* group.rule[17].target.context = "patient"
-* group.rule[17].target.element = "extension.valueQuantity"
-* group.rule[17].target.transform = #copy
-* group.rule[17].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGBirthWeight"
-
-* group.rule[18].name = "SetHIVStatus"
-* group.rule[18].source.context = "rcm"
-* group.rule[18].source.element = "hivStatus"
-* group.rule[18].target.context = "patient"
-* group.rule[18].target.element = "extension.valueCodeableConcept"
-* group.rule[18].target.transform = #copy
-* group.rule[18].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGHIVStatus"
 

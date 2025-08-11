@@ -19,3 +19,12 @@ Description: "A profile for encounters in the Nigerian  Immunization guide, used
 * serviceProvider only Reference(NgImmOrganization)
 
 
+
+// Pregnancy status extension (complex extension reference)
+* extension contains NGPregnancyStatus named pregnancyStatus 0..1 MS
+* extension[pregnancyStatus] ^short = "Client's pregnancy status and assertion period"
+* extension[pregnancyStatus] ^definition = "
+Captures the pregnancy status of the immunization client 
+and the period during which the status was asserted.
+"
+* extension contains NGHIVStatus named hivStatus 0..1 MS

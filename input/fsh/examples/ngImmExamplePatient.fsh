@@ -37,10 +37,10 @@ Usage: #example
 * photo[0].url = "https://personal_server.org/photos/zainab-abdulraheem.jpg"
 
 * extension[birthWeight].valueDecimal = 3.1
-* extension[ageInWeeks].valueInteger = 20
 * extension[ageInMonths].valueInteger = 5
 * extension[ageInYears].valueInteger = 0
-* extension[pregnancyStatus].extension[status].valueCodeableConcept = http://asokoro.org/fhir/CodeSystem/NGPregnancyStatus#notpregnant "Not Pregnant"
-* extension[pregnancyStatus].extension[assertionPeriod].valuePeriod.start = "2025-06-01"
-* extension[pregnancyStatus].extension[assertionPeriod].valuePeriod.end = "2025-08-01"
+
+* extension[ageInWeeks].extension[ageValue].valueQuantity = 6 'wk' "weeks"
+* extension[ageInWeeks].extension[assertionDateTime].valueDateTime = "2025-08-10"
+
 

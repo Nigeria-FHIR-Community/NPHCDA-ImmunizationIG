@@ -55,13 +55,11 @@ pages:
   business-processes.md:
     title: Business Processes
   decision-support-logic.md:
-    title: Decision Support Logic [TO BE TESTED and REFINED]
+    title: Decision Support Logic
   functional-requirements.md:
     title: Functional Requirements
   non-functional-requirements.md:
     title: Non-Functional Requirements
-  search-operation.md:
-    title: Search and Operation
   privacy-security.md:
     title: Privacy and Security Considerations
 
@@ -108,7 +106,7 @@ contact:
   - name: Nigeria Primary Healthcare Development Agency.
     telecom:
       - system: email # phone | fax | email | pager | url | sms | other
-        value: ig@nphcda.gov.ng
+        value: kasim.sani@nphcda.gov.ng
         use: work
         
       
