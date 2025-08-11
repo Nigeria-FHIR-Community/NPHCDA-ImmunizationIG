@@ -35,7 +35,7 @@ All systems claiming conformance to this IG MUST implement:
 FHIR server and client implementations for immunization bundles MUST:
 
 - **Implement Access Control Policies**: Fine-grained RBAC aligned with `NgImmBundle` operation scopes.
-- **Ensure Authentication Mechanisms**: OAuth2.0, OpenID Connect, or SMART-on-FHIR tokens with expiry and refresh.
+- **Ensure Authentication Mechanisms**: OAuth2.0, OpenID Connect, or tokens with expiry and refresh.
 - **Protect Data in Transit and at Rest**: TLS 1.2+ for API traffic, AES-256 or equivalent for storage.
 - **Include Session Management Controls**: Automatic logout, token revocation, inactivity timeouts.
 - **Maintain System Hardening**: Disable unused services, enforce OS security patches.
