@@ -54,4 +54,23 @@ Description: "A composite Observation profile capturing state of health, underly
 * component[birthWeight].valueQuantity.system = "http://unitsofmeasure.org"
 * component[birthWeight].valueQuantity.code = #g
 
+// // Component: Age in Days - WIP
+// * component contains ageInDays 0..1
+// * component[ageInDays].code = $LOINC#age-days "Age in days" // Find correct LOINC if available
+// * component[ageInDays].valueQuantity.system = "http://unitsofmeasure.org"
+// * component[ageInDays].valueQuantity.code = #d
+
+// // Component: Age in Weeks - WIP
+// * component contains ageInWeeks 0..1
+// * component[ageInWeeks].code = $LOINC#age-weeks "Age in weeks"
+// * component[ageInWeeks].valueQuantity.system = "http://unitsofmeasure.org"
+// * component[ageInWeeks].valueQuantity.code = #wk
+
+// // Component: Age in Months - WIP
+// * component contains ageInMonths 0..1
+// * component[ageInMonths].code = $LOINC#age-months "Age in months"
+// * component[ageInMonths].valueQuantity.system = "http://unitsofmeasure.org"
+// * component[ageInMonths].valueQuantity.code = #mo
+
+
 
