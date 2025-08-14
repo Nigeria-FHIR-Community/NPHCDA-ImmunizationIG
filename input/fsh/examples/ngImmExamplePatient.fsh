@@ -36,16 +36,5 @@ Usage: #example
 * communication[0].language = #ibo "Igbo"
 * photo[0].url = "https://personal_server.org/photos/zainab-abdulraheem.jpg"
 
-* extension[birthWeight].valueDecimal = 3.1
-
-* extension[ageInMonths].extension[ageValue].valueQuantity = 5 'mn' "months"
-* extension[ageInMonths].extension[assertionDateTime].valueDateTime = "2025-08-10"
-
-
-* extension[ageInYears].extension[ageValue].valueQuantity = 0 'yr' "years"
-* extension[ageInYears].extension[assertionDateTime].valueDateTime = "2025-08-10"
-
-* extension[ageInWeeks].extension[ageValue].valueQuantity = 6 'wk' "weeks"
-* extension[ageInWeeks].extension[assertionDateTime].valueDateTime = "2025-08-10"
 
 

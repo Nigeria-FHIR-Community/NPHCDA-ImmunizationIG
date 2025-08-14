@@ -18,8 +18,6 @@ Description: "Nigeria Immunization Patient Profile"
 * name.given ^short = "The other names of the Immunization client like the Firstname and Middle names if applicable"
 * name.family 1..1
 * name.family ^short = "The surname or family name of the Immunization client"
-// Bind gender to your custom AdministrativeGender value set
-//* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
 * gender from NGGenderVS (required)
 * gender ^short = "The sex of the Immunization client"
 * active 0..1 
@@ -63,28 +61,6 @@ Description: "Nigeria Immunization Patient Profile"
 * communication.language from NGLanguagesVS (extensible)
 * communication.language ^short = "Preferred language which can be used to communicate with the patient about his or her health"
 
-
-
-/* * photo 0..* MS
-* photo ^short = "Image of the patient headshot, not more than 100kb"
-* photo.data 0..1
-* photo.data ^short = "optional Base64 encoded image data"
-* photo.title 0..1
-* photo.title ^short = "optional The label of the image"
-* photo.url 0..1
-* photo.url ^short = "Public URL or internal endpoint to the patient's photo"
-* photo.size 0..1
-* photo.size ^short = "The size of the image in mega bytes MB"
-* photo.contentType 0..1
-* photo.contentType ^short = "Type of image (e.g., image/jpeg)" 
-* deceased[x] 0..1
-* deceased[x] ^short = "Indicates if an individual client is alive or dead"
-* deceasedBoolean 0..1
-* deceasedBoolean ^short = "Indicates if the individual is deceased (dead) or not"
-* deceasedDateTime 0..1
-* deceasedDateTime ^short = "Indicates when the individual passed away if dead."
-
-*/
 * link 0..1
 * link.other ^short = "This link provides reference to the immunization client's Related persons"
 * link.other only Reference(NgImmSiblingRelatedPerson)
@@ -97,14 +73,7 @@ Description: "Nigeria Immunization Patient Profile"
 * address.extension contains NGAdministrativeWard named administrativeWard 0..1 MS
 //* contact.address.extension[NigeriaAdministrativeWard].valueCodeableConcept from NigeriaWardsVS (required)
 * contact.address.extension contains NGAdministrativeWard named administrativeWard 0..1 MS
-* extension contains NGBirthWeight named birthWeight 0..1 MS
 
-* extension contains NGAgeInWeeks named ageInWeeks 0..1 MS
-* extension contains NGAgeInMonths named ageInMonths 0..1 MS
-* extension contains NGAgeInYears named ageInYears 0..1 MS
-
-
-// Hide dataelements
 
 * name.use 0..0 
 * identifier.use 0..0
