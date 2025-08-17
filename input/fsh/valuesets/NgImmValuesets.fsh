@@ -41,13 +41,13 @@ Description: "The state where a person or a facility is."
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-states"
 * include codes from system NGStatesCS
 
-ValueSet: NGLanguagesVS
-Id: nigeria-languages
-Title: "NG-Imm Languages VS"
-Description: "The Patient's preferred language for communication."
-* ^status = #active
-//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages"
-* include codes from system NGLanguagesCS
+// ValueSet: NGLanguagesVS
+// Id: nigeria-languages
+// Title: "NG-Imm Languages VS"
+// Description: "The Patient's preferred language for communication."
+// * ^status = #active
+// //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages"
+// * include codes from system NGLanguagesCS
 
 
 ValueSet: NGRelationshipsVS
@@ -114,13 +114,13 @@ Description: "A set of standardized codes used to represent clinical conditions,
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-contraindication"
 * include codes from system NGImmunizationContraindicationCS
 
-ValueSet: NGVaccineLibraryVS
-Id: nigeria-vaccine-library
-Title: "NG-Imm VaccineLibrary VS"
-Description: "A curated list of vaccines recognized under Nigeria's national immunization program"
-* ^status = #active
-//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"
-* include codes from system NGVaccineLibraryCS
+// ValueSet: NGVaccineLibraryVS
+// Id: nigeria-vaccine-library
+// Title: "NG-Imm VaccineLibrary VS"
+// Description: "A curated list of vaccines recognized under Nigeria's national immunization program"
+// * ^status = #active
+// //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-vaccine-library"
+// * include codes from system NGVaccineLibraryCS
 
 
 //Location & Organisation VS
