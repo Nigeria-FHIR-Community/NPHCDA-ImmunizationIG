@@ -59,6 +59,17 @@ Description: "list of persons related to a patient, but who is not a direct targ
 * include codes from system NGRelationshipsCS
 
 
+ValueSet: NGSiblingRelationshipsVS
+Id: nigeria-sibling-relationship
+Title: "NG-Imm Sibling Relationships VS"
+Description: "A sub list from relationship list with only two options brother and sister."
+* ^status = #active
+//* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-relationship"
+* include codes from system NGRelationshipsCS where code = "BROTHER"
+* include codes from system NGRelationshipsCS where code = "SISTER"
+
+
+
 ValueSet: NGHivStatusVS
 Id: nigeria-hiv-status
 Title: "NG-Imm Client HIV Status VS"
@@ -83,6 +94,8 @@ Description: "This CodeSystem defines the health of the client's sibling"
 * ^status = #active
 //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-sibling-health-status"
 * include codes from system NGSiblingHealthStatusCS
+
+
 
 //Immunization Valuesets
 ValueSet: NGSessionTypeVS

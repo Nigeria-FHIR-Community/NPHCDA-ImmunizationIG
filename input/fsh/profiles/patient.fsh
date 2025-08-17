@@ -57,9 +57,9 @@ Description: "Nigeria Immunization Patient Profile"
 * contact.address.district ^short = "The LGA where the Client's primary Caregiver or Guardian lives"
 * contact.address.state from NGStatesVS (required)
 * contact.address.state ^short = "The State in Nigeria where the Client's primary Caregiver or Guardian lives"
-* communication 0..*
-* communication.language from NGLanguagesVS (extensible)
-* communication.language ^short = "Preferred language which can be used to communicate with the patient about his or her health"
+// * communication 0..*
+// * communication.language from NGLanguagesVS (extensible)
+// * communication.language ^short = "Preferred language which can be used to communicate with the patient about his or her health"
 
 * link 0..1
 * link.other ^short = "This link provides reference to the immunization client's Related persons"

@@ -17,7 +17,7 @@ Description: "Sibling that represents the mother's other children as RelatedPers
 //* gender from NGGenderVS (required)
 * gender from NGGenderVS (required)
 * gender ^short = "The sex of the Immunization client's related person"
-* relationship.text from NGRelationshipsVS (extensible)
+* relationship.text from NGSiblingRelationshipsVS (extensible)
 * relationship.text ^short = "The relationship of the sibling with the Client e.g. brother| sister"
 
 // Hide extra items

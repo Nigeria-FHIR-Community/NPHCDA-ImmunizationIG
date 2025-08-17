@@ -1,8 +1,8 @@
 Profile: NgImmRegistrationObservation
 Parent: Observation
-Id: NEIRRegistrationObservation
-Title: "NG-Imm Registration-Observations"
-Description: "A composite Observation profile capturing state of health, underlying conditions, and HIV status during NEIR client registration."
+Id: NgImmRegistrationObservation
+Title: "NG-Imm ClientRegistUpdate-Observations"
+Description: "A composite Observation profile capturing state of health, underlying conditions, HIV status, ages in weeks/months/years during client registration."
 
 * status 1..1
 * status = #final
@@ -20,7 +20,7 @@ Description: "A composite Observation profile capturing state of health, underly
 * effective[x] 1..1
 
 // Define the three required and upto six components
-* component 3..6
+* component 0..6
 
 // Slice the component field
 * component ^slicing.discriminator.type = #pattern
@@ -34,20 +34,20 @@ Description: "A composite Observation profile capturing state of health, underly
 // * component[stateOfHealth].valueCodeableConcept from IMMZC1StateOfHealthOtherChildrenVS (required)
 
 // Component: Pregnancy Status
-* component contains pregnancyStatus 1..1
+* component contains pregnancyStatus 0..1
 * component[pregnancyStatus].code = $LOINC#82810-3 "Pregnancy status"
 * component[pregnancyStatus].valueCodeableConcept 1..1 MS
 * component[pregnancyStatus].valueCodeableConcept from NGPregnancyStatusVS (required)
 
 // Component: HIV Status
-* component contains hivStatus 1..1
+* component contains hivStatus 0..1
 * component[hivStatus].code = $LOINC#55284-4 "HIV status"
 * component[hivStatus].valueCodeableConcept 1..1 MS
 * component[hivStatus].valueCodeableConcept from NGHivStatusVS (required)
 
 
 // Weight at Birth
-* component contains birthWeight 1..1
+* component contains birthWeight 0..1
 * component[birthWeight].code = $LOINC#8339-4 "Birth weight Measured"
 * component[birthWeight].valueQuantity 1..1
 * component[birthWeight].valueQuantity.unit = "g"
