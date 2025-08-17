@@ -11,8 +11,7 @@ Description: "A composite Observation profile capturing state of health, underly
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 
 * code 1..1
-//TODO Create registration-observations
-// * code = NEIR#registration-observations "NEIR Registration Observations"
+
 
 * subject 1..1
 * subject only Reference(NgImmPatient)
