@@ -9,10 +9,65 @@ Description: "Nigeria Immunization Patient Profile"
 * meta.lastUpdated ^short = "The date and time when the client record was created or last updated."
 * identifier 1..* MS
 * identifier ^short = "The identifier set given to a Client at different points (can be the National ID, the Hospital specific mrn, or even phone number)"
-* identifier.value 1..1 MS
-* identifier.value ^short = "The actual ID value eg. in case of 11 digit NIN, the value will be 12335635556, and phone number like 11-digit 08031234569, or hospital MRN (varies in length and structure acrsoss facilities) like 2021-0764564 "
-* identifier.system 1..1 MS
-* identifier.system ^short = "The organization website/name that assign the ID being entered (eg. https://nimc.gov.ng or asokoro hosp., or MTN)"
+
+// STEP 1: Declare the slice
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+
+// STEP 2: Declare the slice
+* identifier contains 
+    NationalIDNo 0..1 MS and 
+    MedicalRecordsNumber 0..1 MS and  
+    ImmunizationRecordsNumber 0..1 MS and 
+    BirthCertificateNo 0..1 MS and 
+    PhoneNumber 0..1 MS and
+    InsuranceNumber 0..1 MS
+
+// STEP 3: Add constraints to the slice
+* identifier[NationalIDNo].value 1..1
+* identifier[NationalIDNo].value ^short = "The NIN number of the client which is a unique 11 digit number"
+* identifier[NationalIDNo].system = "https//:nimc.org/nin"
+* identifier[NationalIDNo].system ^short = "NIMC's identifier in the system"
+
+* identifier[MedicalRecordsNumber].value 1..1
+* identifier[MedicalRecordsNumber].value ^short = "The specific medical number value given the client at a health institution"
+* identifier[MedicalRecordsNumber].system = "http://hospital.org/medicalrecord-no"
+* identifier[MedicalRecordsNumber].system ^short = "The institution issueing the mrn number eg. Asokoro"
+
+* identifier[ImmunizationRecordsNumber].value 1..1
+* identifier[ImmunizationRecordsNumber].value ^short = "The client immunization number generated where applicable"
+* identifier[ImmunizationRecordsNumber].system = "https://nphcda.gov.ng/immunization-no"
+* identifier[ImmunizationRecordsNumber].system ^short = "The institution generating the immunization no. Eg. NPHCDA"
+
+* identifier[BirthCertificateNo].value 1..1
+* identifier[BirthCertificateNo].value ^short = "The client's birth certificate number"
+* identifier[BirthCertificateNo].system = "http://npc.gov.ng/birthCertificate-no"
+* identifier[BirthCertificateNo].system ^short = "The institution generating the birth certificate number eg. NPC"
+
+
+* identifier[PhoneNumber].value 1..1
+* identifier[PhoneNumber].value ^short = "client's phone number which is 11 digits"
+* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
+* identifier[PhoneNumber].system ^short = "The provider of the phone number eg. MTN"
+
+* identifier[InsuranceNumber].value 1..1
+* identifier[InsuranceNumber].value ^short = "The actual insurance number generated at state, national or hmo authorities"
+* identifier[InsuranceNumber].system = "http://nhia.gov.ng/insurance-no"
+* identifier[InsuranceNumber].system ^short = "The generating institution eg. State, nhia, or hmo"
+
+
+// * identifier.value 1..1 MS
+// * identifier.value ^short = "The actual ID value eg. in case of 11 digit NIN, the value will be 12335635556, and phone number like 11-digit 08031234569, or hospital MRN (varies in length and structure acrsoss facilities) like 2021-0764564 "
+// * identifier.system 1..1 MS
+// * identifier.system ^short = "The organization website/name that assign the ID being entered (eg. https://nimc.gov.ng or asokoro hosp., or MTN)"
+
+
+
+// OTHER Demographics
+
+
 * name 1..1 MS
 * name.given 1..* 
 * name.given ^short = "The other names of the Immunization client like the Firstname and Middle names if applicable"
