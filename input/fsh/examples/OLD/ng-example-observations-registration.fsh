@@ -1,5 +1,5 @@
 Instance: NgImmExampleRegistrationObservation
-InstanceOf: NgImmRegistrationObservation
+InstanceOf: NgImmRUObservation
 Title: "NGImm Example Registration observation"
 Description: "Registration observations captured during the registration of the patient"
 Usage: #example

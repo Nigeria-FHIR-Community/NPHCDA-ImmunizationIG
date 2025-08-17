@@ -1,6 +1,6 @@
-Profile: NgImmRegistrationObservation
+Profile: NgImmRUObservation
 Parent: Observation
-Id: NgImmRegistrationObservation
+Id: NgImmRUObservation
 Title: "NG-Imm ClientRegistUpdate-Observations"
 Description: "A composite Observation profile capturing state of health, underlying conditions, HIV status, ages in weeks/months/years during client registration."
 

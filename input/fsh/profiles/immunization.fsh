@@ -15,7 +15,7 @@ Description: "Nigerian Profile for Immunization resource."
 * manufacturer ^short = "Manufacturer description and identity"
 * patient only Reference(NgImmPatient)
 * protocolApplied 0..* MS
-* protocolApplied.targetDisease from https://www.hl7.org/fhir/R4/valueset-immunization-target-disease (example)
+* protocolApplied.targetDisease from http://hl7.org/fhir/ValueSet/immunization-target-disease (example)
 * protocolApplied.targetDisease ^short = "Vaccine preventable disease being targeted" 
 * lotNumber 1..1 MS
 * lotNumber ^short = "Vaccine batch number"
@@ -31,19 +31,18 @@ Description: "Nigerian Profile for Immunization resource."
 * performer.function from http://hl7.org/fhir/ValueSet/immunization-function (extensible)
 * performer.function ^short = "Designation of reporting officer" //What type of performance was done
 * performer.actor only Reference (NgImmPractitioner)
-* performer.actor ^short = "Name of reporting officer" //Individual or organization who was performing
+* performer.actor ^short = "Information of reporting officer" //Individual or organization who was performing
 * occurrence[x] only dateTime
 * reaction.date 0..1 
 * reaction.reported 0..1
-* reaction.detail only Reference(Observation)
+* reaction.detail only Reference(NgImmRUObservation)
 
 
 
 // Immunization Extensions
  
 /* * extension contains NGPrimaryVaccineStatus named primaryVaccineStatus 0..1 MS */
-* extension contains NGSignature named signature 0..1 MS
-* extension contains NGSessionType named sessionType 0..1 MS
+
 * extension contains NGContraindications named contraindications 0..* MS
 * extension contains NGContraindicated named contraindicated 0..* MS
 * protocolApplied.extension contains NextDoseDate named nextDoseDate 0..1 MS

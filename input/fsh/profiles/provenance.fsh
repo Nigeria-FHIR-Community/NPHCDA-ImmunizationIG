@@ -34,7 +34,7 @@ patient data."
 * reason ^definition = "Justification or explanation for the activity — especially important for updates, corrections, and special case entries."
 
 * activity 1..1 MS
-* activity from http://terminology.hl7.org/CodeSystem/provenance-activity-type (required)
+* activity from http://hl7.org/fhir/ValueSet/provenance-activity-type (extensible)
 * activity ^short = "Activity that generated or changed the record"
 * activity ^definition = "Specifies the action performed, such as creation, update, transmission, or amendment."
 
@@ -45,13 +45,13 @@ patient data."
 * agent.who only Reference(NgImmPractitioner or NgImmPractitionerRole or NgImmOrganization)
 * agent.who ^short = "practitioner, practitionerRole, or organization responsible"
 * agent.role 0..*
-* agent.role from http://terminology.hl7.org/CodeSystem/provenance-participant-role (extensible)
+* agent.role from http://hl7.org/fhir/ValueSet/participation-role-type (extensible)
 * agent.role ^short = "Role of the agent"
 * agent.role ^definition = "The role played by the agent in the activity (e.g., author, verifier, transmitter)."
 
 * entity 0..* MS
 * entity.role 1..1
-* entity.role from http://hl7.org/fhir/provenance-entity-role (required)
+* entity.role from http://hl7.org/fhir/ValueSet/provenance-entity-role (required)
 * entity.role ^short = "How the entity was used"
 * entity.role ^definition = "How the entity was used in the activity (e.g., source, derived)."
 * entity.what only Reference(DocumentReference or Media or QuestionnaireResponse or Binary)
