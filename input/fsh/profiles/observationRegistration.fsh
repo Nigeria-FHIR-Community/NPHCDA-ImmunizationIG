@@ -19,8 +19,8 @@ Description: "A composite Observation profile capturing state of health, underly
 
 * effective[x] 1..1
 
-// Define the three required components
-* component 3..3
+// Define the three required and upto six components
+* component 3..6
 
 // Slice the component field
 * component ^slicing.discriminator.type = #pattern
@@ -54,23 +54,27 @@ Description: "A composite Observation profile capturing state of health, underly
 * component[birthWeight].valueQuantity.system = "http://unitsofmeasure.org"
 * component[birthWeight].valueQuantity.code = #g
 
-// // Component: Age in Days - WIP
+// // Component: Age in Days
 // * component contains ageInDays 0..1
-// * component[ageInDays].code = $LOINC#age-days "Age in days" // Find correct LOINC if available
+// * component[ageInDays].code = $LOINC#30525-0 "Age in days" // Find correct LOINC if available
 // * component[ageInDays].valueQuantity.system = "http://unitsofmeasure.org"
-// * component[ageInDays].valueQuantity.code = #d
+// * component[ageInDays].valueQuantity.code = #da
 
-// // Component: Age in Weeks - WIP
-// * component contains ageInWeeks 0..1
-// * component[ageInWeeks].code = $LOINC#age-weeks "Age in weeks"
-// * component[ageInWeeks].valueQuantity.system = "http://unitsofmeasure.org"
-// * component[ageInWeeks].valueQuantity.code = #wk
+// Component: Age in Weeks
+* component contains ageInWeeks 0..1
+* component[ageInWeeks].code = $LOINC#30525-0 "Age in weeks"
+* component[ageInWeeks].valueQuantity.system = "http://unitsofmeasure.org"
+* component[ageInWeeks].valueQuantity.code = #wk
 
-// // Component: Age in Months - WIP
-// * component contains ageInMonths 0..1
-// * component[ageInMonths].code = $LOINC#age-months "Age in months"
-// * component[ageInMonths].valueQuantity.system = "http://unitsofmeasure.org"
-// * component[ageInMonths].valueQuantity.code = #mo
+// Component: Age in Months
+* component contains ageInMonths 0..1
+* component[ageInMonths].code = $LOINC#30525-0 "Age in months"
+* component[ageInMonths].valueQuantity.system = "http://unitsofmeasure.org"
+* component[ageInMonths].valueQuantity.code = #mo
 
 
-
+// Component: Age in Years
+* component contains ageInYears 0..1
+* component[ageInYears].code = $LOINC#30525-0 "Age in years"
+* component[ageInYears].valueQuantity.system = "http://unitsofmeasure.org"
+* component[ageInYears].valueQuantity.code = #yr
