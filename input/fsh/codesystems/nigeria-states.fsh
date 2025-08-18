@@ -1,6 +1,6 @@
 CodeSystem: NGStatesCS
 Id: nigeria-states
-Title: "NG-Imm States in Nigeria CS"
+Title: "IMMZ.C.DE25 States in Nigeria CS"
 Description: "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."
 //* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-states"
 * ^status = #active

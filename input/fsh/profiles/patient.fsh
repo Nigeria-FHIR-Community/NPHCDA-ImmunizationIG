@@ -28,7 +28,7 @@ Description: "Nigeria Immunization Patient Profile"
 // STEP 3: Add constraints to the slice
 * identifier[NationalIDNo].value 1..1
 * identifier[NationalIDNo].value ^short = "The NIN number of the client which is a unique 11 digit number"
-* identifier[NationalIDNo].system = "https//:nimc.org/nin"
+* identifier[NationalIDNo].system = "https://nimc.org/nin"
 * identifier[NationalIDNo].system ^short = "NIMC's identifier in the system"
 
 * identifier[MedicalRecordsNumber].value 1..1

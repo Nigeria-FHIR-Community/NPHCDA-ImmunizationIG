@@ -7,7 +7,7 @@ context for the creation, modification, or exchange of immunization-related reco
 patient data."
 
 * target 1..* MS
-* target only Reference(NgImmImmunization or NgImmAllergyIntolerance or NgImmBundle or NgImmPatient)
+* target only Reference(NgImmImmunization or NgImmAllergyIntolerance or NgImmClientRegistrationBundle or NgImmPatient or NgImmRegisterFacilityBundle or NgImmUpdateClientBundle or NgImmManageReportAEFIBundle or NgImmGenerateReportBundle)
 * target ^short = "The record(s) this provenance statement is about"
 * target ^definition = "Points to the Immunization, Patient, Bundle, or related record to which this provenance applies."
 

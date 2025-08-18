@@ -50,7 +50,7 @@ Description: "This CodeSystem IMMZ.C.DE20 defines list of persons related to a p
 * #MOTHER	"Mother"
 * #FATHER	"Father"
 * #AUNT	"Aunt"
-* #COUNSN	"Cousin"
+* #COUSIN	"Cousin"
 * #GRDSON	"Grand Son"
 * #GRDDAU "Grand Daughter"
 * #INLAW "Inlaw"
@@ -181,7 +181,7 @@ Description: "A set of standardized codes used to represent clinical conditions,
 
 CodeSystem: NGPregnancyStatusCS
 Id: nigeria-pregnancy-status
-Title: "NG-Imm Client Pregnancy status CS"
+Title: "IMMZ.C.DE32 Client Pregnancy status CS"
 Description: "This CodeSystem defines list of options for Pregnancy status of a Client"
 //* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
 * ^status = #active

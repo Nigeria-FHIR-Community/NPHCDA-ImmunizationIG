@@ -18,7 +18,7 @@ Description: "A profile on the Measure resource used to define immunization indi
 * description ^short = "Detailed description of what this measure represents."
 * purpose 0..1 MS
 * purpose ^short = "Explains the reason this measure exists and what it is intended to support."
-* topic 0..* MS
+* topic 0..1 MS
 * topic ^short = "A code or text indicating the domain/topic of the measure (e.g., Immunization Coverage)."
 * scoring 1..1 MS
 * scoring ^short = "How the measure is scored (e.g., proportion, ratio, continuous-variable)."
@@ -28,12 +28,16 @@ Description: "A profile on the Measure resource used to define immunization indi
 * date ^short = "The date this measure profile or version was published."
 * publisher 0..1 MS
 * publisher ^short = "The organization or person responsible for publishing the measure."
-* group 1..* MS
-* group.population 2..* MS
-* group.population.code 1..1
+
+
+* group 0..10 MS
+* group.population 0..10 MS
+* group.population.code 0..1
 * group.population.code ^short = "The type of population for the measure (e.g., numerator, denominator, initial-population)."
-* group.population.description 1..1 MS
+* group.population.description 0..1 MS
 * group.population.description ^short = "Description of the population involved in the indicator."
+* group.population.criteria 1..1 MS
+* group.population.criteria ^short = "Description of the population involved in the indicator."
 
 
 * library 0..1 MS

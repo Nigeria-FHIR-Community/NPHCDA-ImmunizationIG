@@ -35,8 +35,12 @@ Provenance is required for all operations and must contain:
 - **recorded**: Timestamp
 - **who**: Responsible submitting actor
 
-#### When to Use NgImmBundle:
-Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and related resources in mobile/offline scenarios or bulk uploads. The `NgImmBundle` is a template for implementers to use for future bundles based on NPHCDA requests.
+#### Bundles:
+- **NgImmClientRegistrationBundle** – Register a client (Patient, Practitioner, Encounter, Org, Obs, RelatedPerson, Provenance).
+- **NgImmRegisterFacilityBundle** – Register facilities with Organization, Location, Practitioner, PractitionerRole.
+- **NgImmUpdateClientBundle** – Update client details (Encounter, Observation, Immunization, Practitioner, Organization).
+- **NgImmManageReportAEFIBundle** – Submit/manage AEFI reports (Encounter, Observation, AllergyIntolerance).
+- **NgImmGenerateReportBundle** – Exchange of aggregate data using Measure, MeasureReport, Organization, Practitioner.
 
 
 #### Supported Data Exchange:
@@ -105,46 +109,28 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 
 
 
-//NgImmBundle profile
+
+
+//NgImmClientRegistrationBundle profile
+
 
 * rest[0].resource[2].type = #Bundle
-* rest[0].resource[2].profile = Canonical(NgImmBundle)
+* rest[0].resource[2].profile[0] = Canonical(NgImmClientRegistrationBundle)
 * rest[0].resource[2].documentation = "Full support for NgImmBundle including detailed search parameters."
 * rest[0].resource[2].interaction[0].code = #read
 * rest[0].resource[2].interaction[1].code = #vread
-* rest[0].resource[2].interaction[2].code = #patch
-* rest[0].resource[2].interaction[3].code = #history-instance
-* rest[0].resource[2].interaction[4].code = #history-type
-* rest[0].resource[2].interaction[5].code = #create
-* rest[0].resource[2].interaction[6].code = #search-type
+* rest[0].resource[2].interaction[2].code = #update
+* rest[0].resource[2].interaction[3].code = #patch
+* rest[0].resource[2].interaction[4].code = #history-instance
+* rest[0].resource[2].interaction[5].code = #history-type
+* rest[0].resource[2].interaction[6].code = #create
+* rest[0].resource[2].interaction[7].code = #search-type
 * rest[0].resource[2].operation[0].name = "submit-ngimm-bundle"
 * rest[0].resource[2].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
-* rest[0].resource[2].operation[0].documentation = "Submits an instance of `NgImmBundle` profile to the national immunization registry/repository."
-* rest[0].resource[2].operation[1].name = "export-ngimm-bundle"
-* rest[0].resource[2].operation[1].definition = "OperationDefinition/export-ngimm-bundle"
-* rest[0].resource[2].operation[1].documentation = "Export an instance of `NgImmBundle` profile by facility, district, or date"
-* rest[0].resource[2].operation[2].name = "sync-ngimm-bundle"
-* rest[0].resource[2].operation[2].definition = "OperationDefinition/sync-ngimm-bundle"
-* rest[0].resource[2].operation[2].documentation = "Returns all `NgImmBundle` profiles updated since a specified timestamp"
-* rest[0].resource[2].operation[3].name = "evaluate-completeness"
-* rest[0].resource[2].operation[3].definition = "OperationDefinition/eval-ngimm-bundle"
-* rest[0].resource[2].operation[3].documentation = "Checks if all Must Support fields are populated in the submitted bundle"
-* rest[0].resource[2].operation[4].name = "resolve-conflicts"
-* rest[0].resource[2].operation[4].definition = "OperationDefinition/resolve-ngimm-bundle"
-* rest[0].resource[2].operation[4].documentation = "Identifies and resolves duplicate/conflicting bundles for the same patient"
-* rest[0].resource[2].operation[5].name = "generate-summary"
-* rest[0].resource[2].operation[5].definition = "OperationDefinition/summary-ngimm-bundle"
-* rest[0].resource[2].operation[5].documentation = "Produces a readable summary (e.g., printable immunization card) from a bundle"
-* rest[0].resource[2].operation[6].name = "get-next-dose-schedule"
-* rest[0].resource[2].operation[6].definition = "OperationDefinition/next-dose-ngimm-bundle"
-* rest[0].resource[2].operation[6].documentation = "Retrieves next scheduled dose date from `protocolApplied.nextDoseDate`"
-* rest[0].resource[2].operation[7].name = "remove-obsolete-bundles"
-* rest[0].resource[2].operation[7].definition = "OperationDefinition/remove-obsolete-ngimm-bundle"
-* rest[0].resource[2].operation[7].documentation = "Deletes bundles of patients older than 24 months and marked inactive"
-* rest[0].resource[2].searchParam[0].name = "patient-pseudo-id"
+* rest[0].resource[2].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
+* rest[0].resource[2].searchParam[0].name = "patient.identifier"
 * rest[0].resource[2].searchParam[0].type = #token
-* rest[0].resource[2].searchParam[0].definition = "SearchParameter/Bundle-patient.pseudo-id"
-* rest[0].resource[2].searchParam[0].documentation = "Search a particular patient bundle using their Pseudonym identifier. Use steps referenced in Standard Organization of Nigeria (SON's) NIS ISO 25237:2019 for detailed steps"
+* rest[0].resource[2].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
 * rest[0].resource[2].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[2].searchParam[1].type = #date
 * rest[0].resource[2].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
@@ -156,6 +142,148 @@ Use `NgImmBundle` to submit or synchronize batches of Patient, Immunization, and
 * rest[0].resource[2].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[2].searchRevInclude[0] = "NgImmProvenance:target"
+
+
+// The Buncle NgImmRegisterFacilityBundle
+
+* rest[0].resource[10].type = #Bundle
+* rest[0].resource[10].profile[0] = Canonical(NgImmRegisterFacilityBundle)
+* rest[0].resource[10].documentation = "Full support for NgImmBundle including detailed search parameters."
+* rest[0].resource[10].interaction[0].code = #read
+* rest[0].resource[10].interaction[1].code = #vread
+* rest[0].resource[10].interaction[2].code = #update
+* rest[0].resource[10].interaction[3].code = #patch
+* rest[0].resource[10].interaction[4].code = #history-instance
+* rest[0].resource[10].interaction[5].code = #history-type
+* rest[0].resource[10].interaction[6].code = #create
+* rest[0].resource[10].interaction[7].code = #search-type
+* rest[0].resource[10].operation[0].name = "submit-ngimm-bundle"
+* rest[0].resource[10].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[10].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
+* rest[0].resource[10].searchParam[0].name = "patient.identifier"
+* rest[0].resource[10].searchParam[0].type = #token
+* rest[0].resource[10].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[10].searchParam[1].name = "_lastUpdated"
+* rest[0].resource[10].searchParam[1].type = #date
+* rest[0].resource[10].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[10].searchParam[2].name = "vaccine-code"
+* rest[0].resource[10].searchParam[2].type = #token
+* rest[0].resource[10].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[10].searchParam[3].name = "organization-identifier"
+* rest[0].resource[10].searchParam[3].type = #token
+* rest[0].resource[10].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+// Supported _revinclude
+* rest[0].resource[10].searchRevInclude[0] = "NgImmProvenance:target"
+
+
+//NgImmUpdateClientBundle profile
+ 
+* rest[0].resource[11].type = #Bundle
+* rest[0].resource[11].profile[0] = Canonical(NgImmUpdateClientBundle)
+//* rest[0].resource[2].profile[3] = Canonical(NgImmManageReportAEFIBundle)
+//* rest[0].resource[2].profile[4] = Canonical(NgImmGenerateReportBundle)
+* rest[0].resource[11].documentation = "Full support for NgImmBundle including detailed search parameters."
+* rest[0].resource[11].interaction[0].code = #read
+* rest[0].resource[11].interaction[1].code = #vread
+* rest[0].resource[11].interaction[2].code = #update
+* rest[0].resource[11].interaction[3].code = #patch
+* rest[0].resource[11].interaction[4].code = #history-instance
+* rest[0].resource[11].interaction[5].code = #history-type
+* rest[0].resource[11].interaction[6].code = #create
+* rest[0].resource[11].interaction[7].code = #search-type
+* rest[0].resource[11].operation[0].name = "submit-ngimm-bundle"
+* rest[0].resource[11].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[11].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
+* rest[0].resource[11].searchParam[0].name = "patient.identifier"
+* rest[0].resource[11].searchParam[0].type = #token
+* rest[0].resource[11].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[11].searchParam[1].name = "_lastUpdated"
+* rest[0].resource[11].searchParam[1].type = #date
+* rest[0].resource[11].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[11].searchParam[2].name = "vaccine-code"
+* rest[0].resource[11].searchParam[2].type = #token
+* rest[0].resource[11].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[11].searchParam[3].name = "organization-identifier"
+* rest[0].resource[11].searchParam[3].type = #token
+* rest[0].resource[11].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+// Supported _revinclude
+* rest[0].resource[11].searchRevInclude[0] = "NgImmProvenance:target"
+
+// NgImmManageReportAEFIBundle
+* rest[0].resource[12].type = #Bundle
+* rest[0].resource[12].profile[0] = Canonical(NgImmManageReportAEFIBundle)
+//* rest[0].resource[2].profile[4] = Canonical(NgImmGenerateReportBundle)
+* rest[0].resource[12].documentation = "Full support for NgImmBundle including detailed search parameters."
+* rest[0].resource[12].interaction[0].code = #read
+* rest[0].resource[12].interaction[1].code = #vread
+* rest[0].resource[12].interaction[2].code = #update
+* rest[0].resource[12].interaction[3].code = #patch
+* rest[0].resource[12].interaction[4].code = #history-instance
+* rest[0].resource[12].interaction[5].code = #history-type
+* rest[0].resource[12].interaction[6].code = #create
+* rest[0].resource[12].interaction[7].code = #search-type
+* rest[0].resource[12].operation[0].name = "submit-ngimm-bundle"
+* rest[0].resource[12].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[12].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
+* rest[0].resource[12].searchParam[0].name = "patient.identifier"
+* rest[0].resource[12].searchParam[0].type = #token
+* rest[0].resource[12].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[12].searchParam[1].name = "_lastUpdated"
+* rest[0].resource[12].searchParam[1].type = #date
+* rest[0].resource[12].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[12].searchParam[2].name = "vaccine-code"
+* rest[0].resource[12].searchParam[2].type = #token
+* rest[0].resource[12].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[12].searchParam[3].name = "organization-identifier"
+* rest[0].resource[12].searchParam[3].type = #token
+* rest[0].resource[12].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+// Supported _revinclude
+* rest[0].resource[12].searchRevInclude[0] = "NgImmProvenance:target"
+
+// NgImmGenerateReportBundle profile
+* rest[0].resource[13].type = #Bundle
+* rest[0].resource[13].profile[0] = Canonical(NgImmGenerateReportBundle)
+* rest[0].resource[13].documentation = "Full support for NgImmBundle including detailed search parameters."
+* rest[0].resource[13].interaction[0].code = #read
+* rest[0].resource[13].interaction[1].code = #vread
+* rest[0].resource[13].interaction[2].code = #update
+* rest[0].resource[13].interaction[3].code = #patch
+* rest[0].resource[13].interaction[4].code = #history-instance
+* rest[0].resource[13].interaction[5].code = #history-type
+* rest[0].resource[13].interaction[6].code = #create
+* rest[0].resource[13].interaction[7].code = #search-type
+* rest[0].resource[13].operation[0].name = "submit-ngimm-bundle"
+* rest[0].resource[13].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[13].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
+* rest[0].resource[13].searchParam[0].name = "patient.identifier"
+* rest[0].resource[13].searchParam[0].type = #token
+* rest[0].resource[13].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[13].searchParam[1].name = "_lastUpdated"
+* rest[0].resource[13].searchParam[1].type = #date
+* rest[0].resource[13].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[13].searchParam[2].name = "vaccine-code"
+* rest[0].resource[13].searchParam[2].type = #token
+* rest[0].resource[13].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[13].searchParam[3].name = "organization-identifier"
+* rest[0].resource[13].searchParam[3].type = #token
+* rest[0].resource[13].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+// Supported _revinclude
+* rest[0].resource[13].searchRevInclude[0] = "NgImmProvenance:target"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //NgImmOrganization profile
