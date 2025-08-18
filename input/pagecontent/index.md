@@ -31,10 +31,16 @@
             <td>1.0.0</td>
         </tr>
 
-                                <tr>
+        <tr>
             <td>NPHCDA Immunization FHIR IG addressing capability statement comments</td>
             <td>11th August 2025</td>
             <td>3rd ci-build Draft</td>
+            <td>1.0.0</td>
+        </tr>
+        <tr>
+            <td>Create Bundles and examples and update vaccine Library</td>
+            <td>18th August 2025</td>
+            <td>5rd ci-build Draft</td>
             <td>1.0.0</td>
         </tr>
     </tbody>
