@@ -34,7 +34,7 @@ Description: "An outreach immunization service location (temporary site in a sch
 * position.altitude = 450
 
 // ---- Managing organization ----
-* managingOrganization = Reference(NgImmOrganization/ngimmorg-002)
+* managingOrganization = Reference(organization-002)
 
 // ---- Part of another location ----
-* partOf = Reference(NgImmLocation/location-001) // e.g. linked to Surulere PHC or LGA base facility
+* partOf = Reference(location-001) // e.g. linked to Surulere PHC or LGA base facility

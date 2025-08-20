@@ -18,7 +18,7 @@ and contextual information about the reporting Organization and Practitioner.
 * entry 4..* MS
 
 // Entry slicing
-* entry ^slicing.discriminator.type = #pattern
+* entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry ^slicing.ordered = false
@@ -30,34 +30,22 @@ and contextual information about the reporting Organization and Practitioner.
     practitioner   0..1 MS
 
 // ---- Measure ----
-* entry[measure].fullUrl 1..1 MS
-* entry[measure].resource 1..1
 * entry[measure].resource only NgImmMeasure
-* entry[measure].request 1..1
 * entry[measure].request.method = #POST (exactly)
 * entry[measure].request.url = "Measure" (exactly)
 
 // ---- MeasureReport ----
-* entry[measureReport].fullUrl 1..1 MS
-* entry[measureReport].resource 1..1
 * entry[measureReport].resource only NgImmMeasureReport
-* entry[measureReport].request 1..1
 * entry[measureReport].request.method = #POST (exactly)
 * entry[measureReport].request.url = "MeasureReport" (exactly)
 
 // ---- Organization ----
-* entry[organization].fullUrl 1..1 MS
-* entry[organization].resource 1..1
 * entry[organization].resource only NgImmOrganization
-* entry[organization].request 1..1
 * entry[organization].request.method = #POST (exactly)
 * entry[organization].request.url = "Organization" (exactly)
 
 // ---- Practitioner ----
-* entry[practitioner].fullUrl 1..1 MS
-* entry[practitioner].resource 1..1
 * entry[practitioner].resource only NgImmPractitioner
-* entry[practitioner].request 1..1
 * entry[practitioner].request.method = #POST (exactly)
 * entry[practitioner].request.url = "Practitioner" (exactly)
 
@@ -92,25 +80,21 @@ Description: "An example transaction bundle carrying a Measure, MeasureReport, O
 * timestamp = "2025-08-18T10:00:00+01:00"
 
 // ---- Measure ----
-* entry[measure].fullUrl = "urn:uuid:measure-dropout"
 * entry[measure].resource = example-measure-dropout
 * entry[measure].request.method = #POST
 * entry[measure].request.url = "Measure"
 
 // ---- MeasureReport ----
-* entry[measureReport].fullUrl = "urn:uuid:report-dropout"
 * entry[measureReport].resource = example-measurereport-dropout
 * entry[measureReport].request.method = #POST
 * entry[measureReport].request.url = "MeasureReport"
 
 // ---- Organization ----
-* entry[organization].fullUrl = "urn:uuid:org-01"
 * entry[organization].resource = organization-005
 * entry[organization].request.method = #POST
 * entry[organization].request.url = "Organization"
 
 // ---- Practitioner ----
-* entry[practitioner].fullUrl = "urn:uuid:prac-01"
 * entry[practitioner].resource = practitioner-005
 * entry[practitioner].request.method = #POST
 * entry[practitioner].request.url = "Practitioner"
@@ -163,22 +147,23 @@ Usage: #example
 Instance: organization-005
 InstanceOf: NgImmOrganization
 Usage: #example
-* identifier.system = "http://nphcda.gov.ng/facility-code"
-* identifier.value = "LAG-12345"
+* identifier.system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-registry"
+* identifier.value = "HCF-45231"
 * active = true
 * name = "Lagos Island Maternity Hospital"
-* type = NGFacilityTypeCS#hospital "Hospital"
+* type = NGFacilityTypeCS#hospital "Secondary Hospital"
 * address.line = "Lagos Island Maternity"
-* address.city = "Osborn"
-* address.district = #VI
+* address.city = "Lagos Island"
+* address.district = #la-lagos-island
 * address.state = #LA "Lagos"
+
 
 // --- Practitioner ---
 Instance: practitioner-005
 InstanceOf: NgImmPractitioner
 Usage: #example
-* identifier.system = "http://mdcn.gov.ng/practitioner-reg"
-* identifier.value = "MDCN-334455"
+* identifier.system = "http://mdcn.gov.ng/practitioner-id"
+* identifier.value = "CHEW-12347"
 * active = true
 * name.given = "Chinedu"
 * name.family = "Okafor"

@@ -6,11 +6,15 @@ Description: "A sample immunization patient from Lagos State."
 * meta.lastUpdated = "2025-08-16T12:00:00Z"
 
 // ---- Identifiers ----
-* identifier[MedicalRecordsNumber].system = "http://hospital.org/medicalrecord-no"
+//* identifier[MedicalRecordsNumber].system = "http://hospital.org/medicalrecord-no"
 * identifier[MedicalRecordsNumber].value = "LUTH-MRN-2025-0789"
+* identifier[MedicalRecordsNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[MedicalRecordsNumber].type.coding[0].code = #MRN
 
-* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
+//* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
 * identifier[PhoneNumber].value = "08051234567"
+* identifier[PhoneNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[PhoneNumber].type.coding[0].code = #MOBILE
 
 // ---- Name & Demographics ----
 * name.family = "Adeyemi"
@@ -23,11 +27,11 @@ Description: "A sample immunization patient from Lagos State."
 // ---- Address (Lagos context) ----
 * address.line = "Flat 3, Block B, Surulere Housing Estate"
 * address.city = "Surulere"
-* address.district = #lag-lga002 "Surulere LGA"
-* address.state = #lagos "Lagos State"
+* address.district = #la-surulere "Surulere LGA"
+* address.state = #LA "Lagos"
 
 // Administrative Ward Extension
-* address.extension[administrativeWard].valueCodeableConcept = #lag-ward010 "Shitta/Ogunlana Ward"
+//* address.extension[administrativeWard].valueCodeableConcept = #fc-amac-gurdi "Gurdi"
 
 // ---- Caregiver ----
 * contact.name.family = "Adeyemi"
@@ -38,9 +42,9 @@ Description: "A sample immunization patient from Lagos State."
 
 * contact.address.line = "Flat 3, Block B, Surulere Housing Estate"
 * contact.address.city = "Surulere"
-* contact.address.district = #lag-lga002 "Surulere LGA"
-* contact.address.state = #lagos "Lagos State"
-* contact.address.extension[administrativeWard].valueCodeableConcept = #lag-ward010 "Shitta/Ogunlana Ward"
+* contact.address.district = #la-surulere "Surulere LGA"
+* contact.address.state = #LA "Lagos"
+* contact.address.extension[administrativeWard].valueCodeableConcept = #fc-amac-gurdi "Gurdi"
 
 
 // Narrative

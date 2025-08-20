@@ -8,9 +8,9 @@ Description: "A simple immunization record example with minimal fields populated
 * identifier.value = "IMM-2025-0003"
 
 // ---- Patient & Vaccine ----
-* patient = Reference(NgImmPatient/patient-002)
+* patient = Reference(patient-002)
 * vaccineCode.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-vaccine-library"
-* vaccineCode.coding[0].code = #opv
+* vaccineCode.coding[0].code = #1051000221104
 * vaccineCode.coding[0].display = "Oral Polio Vaccine"
 
 // ---- Status ----
@@ -36,7 +36,7 @@ Description: "A simple immunization record example with minimal fields populated
 * route.coding[0].display = "Oral route"
 
 // ---- Performer ----
-* performer[0].actor = Reference(NgImmPractitioner/practitioner-002)
+* performer[0].actor = Reference(practitioner-002)
 * performer[0].function.text = "Vaccinator"
 
 

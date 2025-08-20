@@ -5,8 +5,8 @@ Description: "A licensed midwife responsible for maternal and child health servi
 * id = "practitioner-003"
 
 // ---- Identifier ----
-* identifier[0].system = "http://nmcn.gov.ng/practitioner-id"
-* identifier[0].value  = "NMCN-MW-55872"
+* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
+* identifier[0].value  = "MDCN-12346"
 
 // ---- Core ----
 * active = true
@@ -29,7 +29,7 @@ Description: "A licensed midwife responsible for maternal and child health servi
 * qualification[0].code.text = "Midwife License EN/MID/2019/02345"
 * qualification[0].period.start = "2019-01-01"
 * qualification[0].period.end   = "2024-12-31"
-* qualification[0].issuer = Reference(NgImmOrganization/organization-002) 
+* qualification[0].issuer = Reference(organization-002) 
   // e.g., Enugu State University Teaching Hospital (private/public facility reference)
 
 

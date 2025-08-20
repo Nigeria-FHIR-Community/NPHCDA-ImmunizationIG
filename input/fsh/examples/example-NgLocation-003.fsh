@@ -34,8 +34,8 @@ Description: "A mobile immunization team location operating in Benue State, Nige
 * position.altitude = 120
 
 // ---- Managing organization ----
-* managingOrganization = Reference(NgImmOrganization/organization-003)
+* managingOrganization = Reference(organization-003)
 
 // ---- Part of ----
 // Mobile teams may report to an LGA PHC department
-* partOf = Reference(NgImmLocation/location-002)
+* partOf = Reference(location-002)

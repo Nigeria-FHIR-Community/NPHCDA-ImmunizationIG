@@ -36,7 +36,7 @@ Description: "An immunization service location (Primary Health Centre) in Lagos,
 * position.altitude = 50
 
 // ---- Managing organization ----
-* managingOrganization = Reference(NgImmOrganization/organization-001)
+* managingOrganization = Reference(organization-001)
 
 // ---- Part of another location ----
-* partOf = Reference(NgImmLocation/location-000) // e.g. parent "Lagos State PHC Board HQ"
+* partOf = Reference(location-002) // e.g. parent "Lagos State PHC Board HQ"

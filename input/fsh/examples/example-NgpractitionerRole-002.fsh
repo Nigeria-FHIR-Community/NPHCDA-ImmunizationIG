@@ -5,11 +5,11 @@ Description: "An AEFI Surveillance Officer role linking a CHEW to a public healt
 * id = "practitionerrole-002"
 
 // ---- Practitioner linked to this role ----
-* practitioner = Reference(NgImmPractitioner/practitioner-002) 
+* practitioner = Reference(practitioner-002) 
   // Musa Abdullahi, CHEW in Kano
 
 // ---- Organization ----
-* organization = Reference(NgImmOrganization/organization-003) 
+* organization = Reference(organization-003) 
   // e.g., Gwale PHC, Kano
 
 // ---- Role code ----
@@ -19,7 +19,7 @@ Description: "An AEFI Surveillance Officer role linking a CHEW to a public healt
 * period.start = "2023-05-01"
 
 // ---- Location(s) where role is carried out ----
-* location[0] = Reference(NgImmLocation/location-002) 
+* location[0] = Reference(location-002) 
   // Gwale PHC, Kano
 
 // ---- Healthcare Services ----

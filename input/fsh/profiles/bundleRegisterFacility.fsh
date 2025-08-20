@@ -13,12 +13,12 @@ and PractitionerRole (linking staff to org/location and services).
 
 // Bundle type
 * type 1..1
-* type = #transaction (exactly)
+* type = #transaction
 * timestamp 0..1
-* entry 2..* MS
+//* entry 2..* MS
 
 // Slice entries by contained resource
-* entry ^slicing.discriminator.type = #pattern
+* entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry ^slicing.ordered = false
@@ -30,35 +30,23 @@ and PractitionerRole (linking staff to org/location and services).
     practitionerrole 1..1 MS
 
 // ---- Organization ----
-* entry[organization].fullUrl 1..1 MS
-* entry[organization].resource 1..1
 * entry[organization].resource only NgImmOrganization
-* entry[organization].request 1..1
-* entry[organization].request.method = #POST (exactly)
+* entry[organization].request.method = #POST
 * entry[organization].request.url = "Organization" (exactly)
 
 // ---- Location ----
-* entry[location].fullUrl 1..1 MS
-* entry[location].resource 1..1
 * entry[location].resource only NgImmLocation
-* entry[location].request 1..1
-* entry[location].request.method = #POST (exactly)
+* entry[location].request.method = #POST
 * entry[location].request.url = "Location" (exactly)
 
 // ---- Practitioner ----
-* entry[practitioner].fullUrl 1..1 MS
-* entry[practitioner].resource 1..1
 * entry[practitioner].resource only NgImmPractitioner
-* entry[practitioner].request 1..1
-* entry[practitioner].request.method = #POST (exactly)
+* entry[practitioner].request.method = #POST
 * entry[practitioner].request.url = "Practitioner" (exactly)
 
 // ---- PractitionerRole ----
-* entry[practitionerrole].fullUrl 1..1 MS
-* entry[practitionerrole].resource 1..1
 * entry[practitionerrole].resource only NgImmPractitionerRole
-* entry[practitionerrole].request 1..1
-* entry[practitionerrole].request.method = #POST (exactly)
+* entry[practitionerrole].request.method = #POST
 * entry[practitionerrole].request.url = "PractitionerRole" (exactly)
 
 // ---- Invariants / recommendations ----
@@ -72,7 +60,7 @@ Description: "PractitionerRole MUST reference Practitioner and Organization; MAY
 Expression: "entry.resource.ofType(PractitionerRole).practitioner.exists() and entry.resource.ofType(PractitionerRole).organization.exists()"
 Severity: #error
 
-// Guidance: Use urn:uuid fullUrls and internal references inside resources.
+
 
 
 //EXAMPLE
@@ -84,33 +72,29 @@ Description: "Registers a new PHC facility with its location, a practitioner, an
 * timestamp = "2025-08-17T11:20:00+01:00"
 
 // --- Organization ---
-* entry[organization].fullUrl = "urn:uuid:org-001"
 * entry[organization].resource = organization-001
 * entry[organization].request.method = #POST
 * entry[organization].request.url = "Organization"
 
 // --- Location (managed by organization) ---
-* entry[location].fullUrl = "urn:uuid:loc-001"
 * entry[location].resource = location-001
 * entry[location].request.method = #POST
 * entry[location].request.url = "Location"
 
 // Ensure the Location points to the Organization in-bundle
-* entry[location].resource.managingOrganization.reference = "urn:uuid:org-001"
+* entry[location].resource.managingOrganization.reference = "organization-001"
 
 // --- Practitioner ---
-* entry[practitioner].fullUrl = "urn:uuid:prac-001"
 * entry[practitioner].resource = practitioner-001
 * entry[practitioner].request.method = #POST
 * entry[practitioner].request.url = "Practitioner"
 
 // --- PractitionerRole (links practitioner ↔ org/location) ---
-* entry[practitionerrole].fullUrl = "urn:uuid:prrole-001"
 * entry[practitionerrole].resource = practitionerrole-001
 * entry[practitionerrole].request.method = #POST
 * entry[practitionerrole].request.url = "PractitionerRole"
 
 // Wire the role references to in-bundle resources
-* entry[practitionerrole].resource.practitioner.reference = "urn:uuid:prac-001"
-* entry[practitionerrole].resource.organization.reference = "urn:uuid:org-001"
-* entry[practitionerrole].resource.location[0].reference = "urn:uuid:loc-001"
+* entry[practitionerrole].resource.practitioner.reference = "practitioner-001"
+* entry[practitionerrole].resource.organization.reference = "organization-001"
+* entry[practitionerrole].resource.location[0].reference = "location-001"

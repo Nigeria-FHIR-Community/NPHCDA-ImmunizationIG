@@ -5,8 +5,8 @@ Title: "NG-Imm Allergy Dose Number"
 Description: "Reference immunization dose number for this AllergyIntolerance."
 * ^context[0].type = #element
 * ^context[0].expression = "AllergyIntolerance"
-* valueString 0..1 MS
-* valueString ^short = "Lot number or dose number from the referenced immunization"
+* valueInteger 0..1 MS
+* valueInteger ^short = "Lot number or dose number from the referenced immunization"
 
 Extension: AllergyReferenceDoseSeries
 Id: allergy-reference-dose-series

@@ -6,11 +6,15 @@ Description: "A partially populated patient per NgImmPatient, with only MRN and 
 * meta.lastUpdated = "2025-08-16T12:00:00Z"
 
 // ---- Identifiers (only these two) ----
-* identifier[MedicalRecordsNumber].system = "http://hospital.org/medicalrecord-no"
+//* identifier[MedicalRecordsNumber].system = "http://hospital.org/medicalrecord-no"
 * identifier[MedicalRecordsNumber].value = "ASOK-MRN-2025-219"
+* identifier[MedicalRecordsNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[MedicalRecordsNumber].type.coding[0].code = #MRN
 
-* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
+//* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
 * identifier[PhoneNumber].value = "08021234567"
+* identifier[PhoneNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[PhoneNumber].type.coding[0].code = #MOBILE
 
 // ---- Core demographics ----
 * name.family = "Bello"
@@ -21,16 +25,16 @@ Description: "A partially populated patient per NgImmPatient, with only MRN and 
 
 // ---- Address (basic) ----
 * address.line = "House 4, Angwan Rimi"
-* address.city = "Kaduna"
-* address.district = "Kaduna North"
-* address.state = "Kaduna"
+* address.city = "Gindiri"
+* address.district = #kd-giwa "Giwa LGA"
+* address.state = #KD "Kaduna"
 
 // ---- Primary caregiver (minimal) ----
 * contact.name.family = "Bello"
 * contact.name.given[0] = "Fatima"
 * contact.telecom.system = #phone
 * contact.telecom.value = "08035551234"
-* contact.relationship[0].text = "Mother"
+* contact.relationship[0].text = #MOTHER "Mother"
 
 
 

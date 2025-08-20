@@ -3,7 +3,7 @@ Instance: relatedperson-002
 InstanceOf: NgImmSiblingRelatedPerson
 Title: "Sibling RelatedPerson Example - Sister with Asthma"
 Description: "Example of a RelatedPerson resource representing a sibling (sister) of the immunization client with a chronic condition (asthma)."
-* patient = Reference(NgImmPatient/patient-002)
+* patient = Reference(patient-002)
 * name.given[0] = "Amarachi"
 * name.family = "Okafor"
 * birthDate = "2012-09-21"

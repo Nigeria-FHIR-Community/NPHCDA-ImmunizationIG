@@ -3,7 +3,7 @@ Instance: relatedperson-001
 InstanceOf: NgImmSiblingRelatedPerson
 Title: "Sibling RelatedPerson Example"
 Description: "Example of a RelatedPerson resource representing a sibling (brother) of the immunization client."
-* patient = Reference(NgImmPatient/patient-001)
+* patient = Reference(patient-001)
 * name.given[0] = "Chinonso"
 * name.family = "Okafor"
 * birthDate = "2015-04-12"
@@ -16,7 +16,7 @@ Description: "Example of a RelatedPerson resource representing a sibling (brothe
 * text.div = """
 <div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>Sibling</b>: Chinonso Okafor (male), born 2015-04-12</p>
-  <p><b>Relationship to patient</b>: brother (NgImmPatient/patient-001)</p>
+  <p><b>Relationship to patient</b>: brother (patient-001)</p>
   <p><b>Sibling health status</b>: Healthy</p>
 </div>
 """

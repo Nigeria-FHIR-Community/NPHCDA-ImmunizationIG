@@ -19,17 +19,17 @@ Description: "An example of a severe allergic reaction (anaphylaxis) following Y
 
 // ---- Allergy code (what the allergy is to) ----
 * code.coding[0].system = "http://snomed.info/sct"
-* code.coding[0].code = #836381000000100
+* code.coding[0].code = #871717007
 * code.coding[0].display = "Yellow fever vaccine"
 
 // ---- Subject and context ----
-* patient = Reference(NgImmPatient/patient-002)         // partial patient example
-* encounter = Reference(NgImmEncounter/encounter-003)
+* patient = Reference(patient-002)         // partial patient example
+* encounter = Reference(encounter-003)
 
 // ---- Timeline ----
 * onsetDateTime = "2025-06-05T09:15:00+01:00"
 * recordedDate = "2025-06-05T09:45:00+01:00"
-* recorder = Reference(NgImmPractitioner/practitioner-007)
+* recorder = Reference(practitioner-003)
 * lastOccurrence = "2025-06-05T10:30:00+01:00"
 
 // ---- Reaction block ----
@@ -42,9 +42,9 @@ Description: "An example of a severe allergic reaction (anaphylaxis) following Y
 * reaction[0].severity = #severe
 
 * reaction[0].substance.coding.system = "http://snomed.info/sct"
-* reaction[0].substance.coding.code = #836381000000100
+* reaction[0].substance.coding.code = #871717007
 * reaction[0].substance.coding.display = "Yellow fever vaccine"
 
 // ---- Custom Extensions ----
-* extension[allergyReferenceDoseNumber].valueInteger = 1
+* extension[allergyReferenceDoseNumber].valueInteger = 777
 * extension[allergyReferenceDoseSeries].valueString = "Yellow Fever Routine Infant Dose"

@@ -16,13 +16,13 @@ Description: "Captures the administrative ward within a geographic address "
 
 
 
-Extension: NGBirthWeight
-Id:  birth-weight
-Title:  "NG-Imm Weight at birth"
-Description: "Weight  of the Immunization Client at birth"
-* ^context[0].type = #element
-* ^context[0].expression = "Patient"
-* value[x] only decimal
+// Extension: NGBirthWeight
+// Id:  birth-weight
+// Title:  "NG-Imm Weight at birth"
+// Description: "Weight  of the Immunization Client at birth"
+// * ^context[0].type = #element
+// * ^context[0].expression = "Patient"
+// * value[x] only decimal
 
 
 Extension: NGHIVStatus
@@ -55,69 +55,69 @@ including the period during which the status was asserted."
 * extension[assertionPeriod].valuePeriod ^short = "Period when the pregnancy status was asserted"
 * extension[assertionPeriod].valuePeriod ^definition = "The date range during which the pregnancy status was confirmed or applicable."
 
-Extension: NGAgeInWeeks
-Id:  age-in-weeks
-Title:  "NG-Imm Client Age in Weeks"
-Description: "Age of the Immunization Client recorded in weeks"
-* ^context[0].type = #element
-* ^context[0].expression = "Patient"
-// Complex extension with two sub-extensions
-* extension contains
-    ageValue 1..1 and
-    assertionDateTime 0..1
-// Sub-extension: age in weeks (integer or Quantity)
-* extension[ageValue].value[x] only Quantity
-* extension[ageValue].valueQuantity ^short = "Age in completed weeks"
-* extension[ageValue].valueQuantity ^definition = "The age of the client in whole weeks, as of the assertion date."
+// Extension: NGAgeInWeeks
+// Id:  age-in-weeks
+// Title:  "NG-Imm Client Age in Weeks"
+// Description: "Age of the Immunization Client recorded in weeks"
+// * ^context[0].type = #element
+// * ^context[0].expression = "Patient"
+// // Complex extension with two sub-extensions
+// * extension contains
+//     ageValue 1..1 and
+//     assertionDateTime 0..1
+// // Sub-extension: age in weeks (integer or Quantity)
+// * extension[ageValue].value[x] only Quantity
+// * extension[ageValue].valueQuantity ^short = "Age in completed weeks"
+// * extension[ageValue].valueQuantity ^definition = "The age of the client in whole weeks, as of the assertion date."
 
-// Sub-extension: date/time when the age was asserted
-* extension[assertionDateTime].value[x] only dateTime
-* extension[assertionDateTime].valueDateTime ^short = "When the age was recorded"
-* extension[assertionDateTime].valueDateTime ^definition = "The date and time when the age in weeks was determined or recorded."
-
-
-Extension: NGAgeInMonths
-Id:  age-in-months
-Title:  "NG-Imm Client Age in Months"
-Description: "Age of the Immunization Client recorded in months"
-* ^context[0].type = #element
-* ^context[0].expression = "Patient"
-// Complex extension with two sub-extensions
-* extension contains
-    ageValue 1..1 and
-    assertionDateTime 0..1
-// Sub-extension: age in weeks (integer or Quantity)
-* extension[ageValue].value[x] only Quantity
-* extension[ageValue].valueQuantity ^short = "Age in completed weeks"
-* extension[ageValue].valueQuantity ^definition = "The age of the client in whole months, as of the assertion date."
-
-// Sub-extension: date/time when the age was asserted
-* extension[assertionDateTime].value[x] only dateTime
-* extension[assertionDateTime].valueDateTime ^short = "When the age was recorded"
-* extension[assertionDateTime].valueDateTime ^definition = "The date and time when the age in months was determined or recorded."
+// // Sub-extension: date/time when the age was asserted
+// * extension[assertionDateTime].value[x] only dateTime
+// * extension[assertionDateTime].valueDateTime ^short = "When the age was recorded"
+// * extension[assertionDateTime].valueDateTime ^definition = "The date and time when the age in weeks was determined or recorded."
 
 
+// Extension: NGAgeInMonths
+// Id:  age-in-months
+// Title:  "NG-Imm Client Age in Months"
+// Description: "Age of the Immunization Client recorded in months"
+// * ^context[0].type = #element
+// * ^context[0].expression = "Patient"
+// // Complex extension with two sub-extensions
+// * extension contains
+//     ageValue 1..1 and
+//     assertionDateTime 0..1
+// // Sub-extension: age in weeks (integer or Quantity)
+// * extension[ageValue].value[x] only Quantity
+// * extension[ageValue].valueQuantity ^short = "Age in completed weeks"
+// * extension[ageValue].valueQuantity ^definition = "The age of the client in whole months, as of the assertion date."
+
+// // Sub-extension: date/time when the age was asserted
+// * extension[assertionDateTime].value[x] only dateTime
+// * extension[assertionDateTime].valueDateTime ^short = "When the age was recorded"
+// * extension[assertionDateTime].valueDateTime ^definition = "The date and time when the age in months was determined or recorded."
 
 
-Extension: NGAgeInYears
-Id:  age-in-years
-Title:  "NG-Imm Client Age in Years"
-Description: "Age of the Immunization Client recorded in years"
-* ^context[0].type = #element
-* ^context[0].expression = "Patient"
-// Complex extension with two sub-extensions
-* extension contains
-    ageValue 1..1 and
-    assertionDateTime 0..1
-// Sub-extension: age in years (integer or Quantity)
-* extension[ageValue].value[x] only Quantity
-* extension[ageValue].valueQuantity ^short = "Age in completed years"
-* extension[ageValue].valueQuantity ^definition = "The age of the client in whole years, as of the assertion date."
 
-// Sub-extension: date/time when the age was asserted
-* extension[assertionDateTime].value[x] only dateTime
-* extension[assertionDateTime].valueDateTime ^short = "When the age was recorded"
-* extension[assertionDateTime].valueDateTime ^definition = "The date and time when the age in years was determined or recorded."
+
+// Extension: NGAgeInYears
+// Id:  age-in-years
+// Title:  "NG-Imm Client Age in Years"
+// Description: "Age of the Immunization Client recorded in years"
+// * ^context[0].type = #element
+// * ^context[0].expression = "Patient"
+// // Complex extension with two sub-extensions
+// * extension contains
+//     ageValue 1..1 and
+//     assertionDateTime 0..1
+// // Sub-extension: age in years (integer or Quantity)
+// * extension[ageValue].value[x] only Quantity
+// * extension[ageValue].valueQuantity ^short = "Age in completed years"
+// * extension[ageValue].valueQuantity ^definition = "The age of the client in whole years, as of the assertion date."
+
+// // Sub-extension: date/time when the age was asserted
+// * extension[assertionDateTime].value[x] only dateTime
+// * extension[assertionDateTime].valueDateTime ^short = "When the age was recorded"
+// * extension[assertionDateTime].valueDateTime ^definition = "The date and time when the age in years was determined or recorded."
 
 
 

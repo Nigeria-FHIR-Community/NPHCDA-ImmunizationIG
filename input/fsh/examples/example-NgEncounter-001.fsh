@@ -12,16 +12,16 @@ Description: "An immunization visit encounter per the NG-Imm Encounter profile."
 * class.display = "Fixed session"
 
 // Subject (patient)
-* subject = Reference(NgImmPatient/patient-001)
+* subject = Reference(patient-001)
 
 // Participant (at least one) – vaccinator
-* participant[0].individual = Reference(NgImmPractitioner/practitioner-001)
+* participant[0].individual = Reference(practitioner-001)
 
 // Location (must-support)
-* location.location = Reference(NgImmLocation/location-001)
+* location.location = Reference(location-001)
 
 // Service Provider (must-support)
-* serviceProvider = Reference(NgImmOrganization/organization-001)
+* serviceProvider = Reference(organization-001)
 
 
 // ---- Extensions ----
@@ -36,6 +36,6 @@ Description: "An immunization visit encounter per the NG-Imm Encounter profile."
 * extension[signature].valueSignature.type[0].code = #1.2.840.10065.1.12.1.1
 * extension[signature].valueSignature.type[0].display = "Author's Signature"
 * extension[signature].valueSignature.when = "2025-08-16T10:20:00+01:00"
-* extension[signature].valueSignature.who = Reference(NgImmPractitioner/practitioner-001)
+* extension[signature].valueSignature.who = Reference(practitioner-001)
 * extension[signature].valueSignature.sigFormat = #image/png
 * extension[signature].valueSignature.data = "SGVsbG8="  // sample base64

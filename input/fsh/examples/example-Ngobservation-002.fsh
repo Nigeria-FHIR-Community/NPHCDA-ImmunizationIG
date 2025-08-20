@@ -13,7 +13,7 @@ Description: "Observation recorded during a later visit to update client status 
 * code.coding.code = #8716-3
 * code.coding.display = "Patient registration/update observation"
 
-* subject = Reference(NgImmPatient/patient-003)
+* subject = Reference(patient-003)
 * effectiveDateTime = "2025-10-10T10:00:00+01:00"
 
 // ---- Components (updated at subsequent visit) ----

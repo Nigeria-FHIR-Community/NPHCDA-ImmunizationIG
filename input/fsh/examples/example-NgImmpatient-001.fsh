@@ -6,23 +6,36 @@ Description: "An example patient resource fully populated according to the NG-Im
 * meta.lastUpdated = "2025-08-16T12:00:00Z"
 
 // ---------------- Identifiers ----------------
-* identifier[NationalIDNo].system = "https://nimc.org/nin"
+//* identifier[NationalIDNo].system = "https://nimc.org/nin"
 * identifier[NationalIDNo].value = "12345678901"
+* identifier[NationalIDNo].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[NationalIDNo].type.coding[0].code = #NIN
 
-* identifier[MedicalRecordsNumber].system = "http://hospital.org/medicalrecord-no"
+//* identifier[MedicalRecordsNumber].system = "http://enugugh.ng/medicalrecord-no"
 * identifier[MedicalRecordsNumber].value = "ASOK-MRN-2025-001"
+* identifier[MedicalRecordsNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[MedicalRecordsNumber].type.coding[0].code = #MRN
 
-* identifier[ImmunizationRecordsNumber].system = "https://nphcda.gov.ng/immunization-no"
-* identifier[ImmunizationRecordsNumber].value = "IMM-001-2025"
+//* identifier[ImmunizationRecordsNumber].system = "https://nphcda.gov.ng/immunization-no"
+* identifier[ImmunizationRecordsNumber].type.coding[0].code = #IMMNO
+* identifier[ImmunizationRecordsNumber].value = "NPHCDA-IMM-00123456"
+* identifier[ImmunizationRecordsNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
 
-* identifier[BirthCertificateNo].system = "http://npc.gov.ng/birthCertificate-no"
+
+//* identifier[BirthCertificateNo].system = "http://npc.gov.ng/birthCertificate-no"
 * identifier[BirthCertificateNo].value = "BCN-2020-90876"
+* identifier[BirthCertificateNo].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[BirthCertificateNo].type.coding[0].code = #BIRTHCERT
 
-* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
+//* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
 * identifier[PhoneNumber].value = "08031234567"
+* identifier[PhoneNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[PhoneNumber].type.coding[0].code = #MOBILE
 
-* identifier[InsuranceNumber].system = "http://nhia.gov.ng/insurance-no"
+//* identifier[InsuranceNumber].system = "http://nhia.gov.ng/insurance-no"
 * identifier[InsuranceNumber].value = "NHIA-PL-2025-112233"
+* identifier[InsuranceNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[InsuranceNumber].type.coding[0].code = #INSUR
 
 // ---------------- Name, Gender, BirthDate ----------------
 * name.family = "Okafor"
@@ -36,11 +49,9 @@ Description: "An example patient resource fully populated according to the NG-Im
 // ---------------- Address ----------------
 * address.line = "No 10, Independence Layout"
 * address.city = "Enugu"
-* address.district = #enu-lga001 "Enugu North LGA"
-* address.state = #enugu "Enugu State"
+* address.district = #en-aninri "Aninri LGA"
+* address.state = #EN "Enugu"
 
-// Extension for Administrative Ward
-* address.extension[administrativeWard].valueCodeableConcept = #enu-ward005 "G.R.A Ward"
 
 // ---------------- Caregiver Contact ----------------
 * contact.name.family = "Okafor"
@@ -51,23 +62,23 @@ Description: "An example patient resource fully populated according to the NG-Im
 
 * contact.address.line = "No 10, Independence Layout"
 * contact.address.city = "Enugu"
-* contact.address.district = #enu-lga001 "Enugu North LGA"
-* contact.address.state = #enugu "Enugu State"
+* contact.address.district = #en-aninri "Aninri LGA"
+* contact.address.state = #EN "Enugu"
 
 // Extension for Caregiver Administrative Ward
-* contact.address.extension[administrativeWard].valueCodeableConcept = #enu-ward005 "G.R.A Ward"
+//* contact.address.extension[administrativeWard].valueCodeableConcept = #fc-amac-abajic "Abaji central"
 
 // ---------------- Link to RelatedPerson (Sibling) ----------------
-* link.other = Reference(NgImmSiblingRelatedPerson/example-sibling)
-* link.type = #see-also
+* link.other = Reference(relatedperson-001)
+* link.type = #seealso
 
 
 // Narrative
 * text.status = #generated
 * text.div = """
 <div xmlns="http://www.w3.org/1999/xhtml">
-  <p><b>Patient</b>: Baby Musa (male), born 2023-05-12</p>
-  <p><b>Identifiers</b>: MRN: NGHOSP-001-0001</p>
-  <p><b>Address</b>: Kano, Kano State, Nigeria</p>
+  <p><b>Patient</b>: Emeka Chinedu (male), born 2023-05-12</p>
+  <p><b>Identifiers</b>: MRN: ASOK-MRN-2025-001</p>
+  <p><b>Address</b>: No 10, Independence Layout, Enugu State, Nigeria</p>
 </div>
 """

@@ -8,8 +8,8 @@ Description: "A complete example of an immunization record per the NgImmImmuniza
 * identifier.value = "IMM-2025-0002"
 
 // ---- Patient & Manufacturer ----
-* patient = Reference(NgImmPatient/patient-003)            // Example from Lagos
-* manufacturer = Reference(NgImmOrganization/organization-002) // Example org
+* patient = Reference(patient-003)            // Example from Lagos
+* manufacturer = Reference(organization-002) // Example org
 
 // ---- Vaccine administered ----
 * vaccineCode.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-vaccine-library"
@@ -50,10 +50,10 @@ Description: "A complete example of an immunization record per the NgImmImmuniza
 * performer[0].function.coding[0].system = "http://terminology.hl7.org/CodeSystem/immunization-function"
 * performer[0].function.coding[0].code = #AP
 * performer[0].function.coding[0].display = "Administering Provider"
-* performer[0].actor = Reference(NgImmPractitioner/practitioner-002)
+* performer[0].actor = Reference(practitioner-002)
 
 * performer[1].function.text = "Reporting Officer"
-* performer[1].actor = Reference(NgImmPractitioner/practitioner-003)
+* performer[1].actor = Reference(practitioner-003)
 
 // ---- Protocol Applied ----
 * protocolApplied[0].series = "RI Newborn"
@@ -66,7 +66,7 @@ Description: "A complete example of an immunization record per the NgImmImmuniza
 // ---- Reactions ----
 * reaction[0].date = "2025-08-15T12:00:00+01:00"
 * reaction[0].reported = true
-* reaction[0].detail = Reference(NgImmRUObservation/obs-002)
+* reaction[0].detail = Reference(observation-002)
 
 // ---- Extensions ----
 * extension[contraindications].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-contraindication"

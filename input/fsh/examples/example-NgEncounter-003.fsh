@@ -12,17 +12,17 @@ Description: "A mobile team immunization encounter per the NG-Imm Encounter prof
 * class.display = "Mobile session"
 
 // Subject (patient)
-* subject = Reference(NgImmPatient/patient-002)
+* subject = Reference(patient-002)
 
 // Participants (mobile team vaccinator and supervisor)
-* participant[0].individual = Reference(NgImmPractitioner/practitioner-002)
-* participant[1].individual = Reference(NgImmPractitioner/practitioner-001)
+* participant[0].individual = Reference(practitioner-002)
+* participant[1].individual = Reference(practitioner-001)
 
 // Location (temporary mobile point)
-* location.location = Reference(NgImmLocation/location-003)
+* location.location = Reference(location-003)
 
 // Service Provider (responsible organization)
-* serviceProvider = Reference(NgImmOrganization/organization-003)
+* serviceProvider = Reference(organization-003)
 
 
 // ---- Extensions ----
@@ -37,6 +37,6 @@ Description: "A mobile team immunization encounter per the NG-Imm Encounter prof
 * extension[signature].valueSignature.type[0].code = #1.2.840.10065.1.12.1.1
 * extension[signature].valueSignature.type[0].display = "Author's Signature"
 * extension[signature].valueSignature.when = "2025-08-17T08:30:00+01:00"
-* extension[signature].valueSignature.who = Reference(NgImmPractitioner/practitioner-004)
+* extension[signature].valueSignature.who = Reference(practitioner-001)
 * extension[signature].valueSignature.sigFormat = #image/png
 * extension[signature].valueSignature.data = "TW9iaWxlU2lnbg==" // sample base64

@@ -22,16 +22,16 @@ Description: "An example of allergy or intolerance to a vaccine per the NG-Imm A
 // ---- Allergy code (what the allergy is to) ----
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].code = #293104008
-* code.coding[0].display = "Allergy to vaccine product"
+* code.coding[0].display = "Adverse reaction to immunization"
 
 // ---- Subject and context ----
-* patient = Reference(NgImmPatient/patient-001)
-* encounter = Reference(NgImmEncounter/encounter-001)
+* patient = Reference(patient-001)
+* encounter = Reference(encounter-001)
 
 // ---- Timeline ----
 * onsetDateTime = "2025-08-01T09:30:00+01:00"
 * recordedDate = "2025-08-01T10:00:00+01:00"
-* recorder = Reference(NgImmPractitioner/practitioner-005)
+* recorder = Reference(practitioner-005)
 * lastOccurrence = "2025-08-01T12:00:00+01:00"
 
 // ---- Reaction block ----
@@ -45,8 +45,8 @@ Description: "An example of allergy or intolerance to a vaccine per the NG-Imm A
 
 * reaction[0].substance.coding.system = "http://snomed.info/sct"
 * reaction[0].substance.coding.code = #333346007
-* reaction[0].substance.coding.display = "Vaccine component"
+* reaction[0].substance.coding.display = "Product containing precisely silver nitrate 200 milligram/1 milliliter conventional release cutaneous solution (clinical drug)"
 
 // ---- Custom Extensions ----
-* extension[allergyReferenceDoseNumber].valueInteger = 1
+* extension[allergyReferenceDoseNumber].valueInteger = 165
 * extension[allergyReferenceDoseSeries].valueString = "Pentavalent Infant Series"

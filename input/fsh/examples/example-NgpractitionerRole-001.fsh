@@ -5,10 +5,10 @@ Description: "A Routine Immunization Officer role linking a practitioner to a pr
 * id = "practitionerrole-001"
 
 // ---- Practitioner linked to this role ----
-* practitioner = Reference(NgImmPractitioner/practitioner-001) // e.g., Nkiru Okafor
+* practitioner = Reference(practitioner-001) // e.g., Nkiru Okafor
 
 // ---- Organization ----
-* organization = Reference(NgImmOrganization/organization-001) // e.g., Surulere PHC, Lagos
+* organization = Reference(organization-001) // e.g., Surulere PHC, Lagos
 
 // ---- Role code ----
 * code[0].text = "Routine Immunization Officer"
@@ -18,7 +18,7 @@ Description: "A Routine Immunization Officer role linking a practitioner to a pr
 * period.end   = "2025-12-31"
 
 // ---- Location(s) where role is carried out ----
-* location[0] = Reference(NgImmLocation/location-001) // e.g., Surulere PHC, Lagos
+* location[0] = Reference(location-001) // e.g., Surulere PHC, Lagos
 
 // ---- Healthcare Services ----
 * healthcareService[0].display = "1. Childhood Routine Immunization Services 2. AEFI Surveillance & Reporting"

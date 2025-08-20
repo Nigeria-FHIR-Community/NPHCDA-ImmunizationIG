@@ -5,16 +5,16 @@ Description: "A private hospital in Abuja offering immunization services."
 * id = "organization-002"
 
 // ---- Identifiers ----
-* identifier[0].system = "http://fcta.gov.ng/facility-id"
-* identifier[0].value = "ABJ-HOSP-0456"
+* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-registry"
+* identifier[0].value = "HCF-12347"
 
 // ---- Core ----
 * active = true
 * name = "Garki Specialist Hospital"
 
 // ---- Type (from NGFacilityTypeVS) ----
-* type[0].coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
-* type[0].coding[0].code = #tertiary-hospital
+* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type[0].coding[0].code = #tertiary
 * type[0].coding[0].display = "Tertiary Hospital"
 
 // ---- Telecom(s) ----
@@ -26,8 +26,9 @@ Description: "A private hospital in Abuja offering immunization services."
 // ---- Address ----
 * address[0].line[0] = "Plot 132, Area 3, Garki"
 * address[0].city = "Abuja"
-* address[0].district = #abj-lga001 "Abuja Municipal Area Council"
-* address[0].state = #fct "Federal Capital Territory"
+* address[0].district = #fc-municipal "Abuja Municipal Area Council"
+* address[0].state = #FC "Federal Capital Territory"
+
 
 // ---- Ownership extension ----
 * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
@@ -35,7 +36,7 @@ Description: "A private hospital in Abuja offering immunization services."
 * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].display = "Private Health Institution Location"
 
 // ---- Hierarchy (optional) ----
-* partOf = Reference(NgImmOrganization/org-parent-002) // e.g., FCT Health Services Department
+* partOf = Reference(organization-002) // e.g., FCT Health Services Department
 
 
 // Narrative

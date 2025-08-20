@@ -5,11 +5,11 @@ Description: "A Midwife role linking a licensed midwife to a public teaching hos
 * id = "practitionerrole-003"
 
 // ---- Practitioner linked to this role ----
-* practitioner = Reference(NgImmPractitioner/practitioner-003) 
+* practitioner = Reference(practitioner-003) 
   // Chinelo Eze, Midwife
 
 // ---- Organization ----
-* organization = Reference(NgImmOrganization/organization-002) 
+* organization = Reference(organization-002) 
   // Enugu State University Teaching Hospital
 
 // ---- Role code ----
@@ -20,7 +20,7 @@ Description: "A Midwife role linking a licensed midwife to a public teaching hos
 * period.end   = "2024-12-31"
 
 // ---- Location(s) where role is carried out ----
-* location[0] = Reference(NgImmLocation/location-003) 
+* location[0] = Reference(location-003) 
   // ESUTH Immunization Unit
 
 // ---- Healthcare Services ----

@@ -5,8 +5,8 @@ Description: "A Community Health Extension Worker providing RI services in Kano 
 * id = "practitioner-002"
 
 // ---- Identifier ----
-* identifier[0].system = "http://nmcn.gov.ng/practitioner-id"
-* identifier[0].value  = "NMCN-CHEW-209847"
+* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
+* identifier[0].value  = "CHEW-12346"
 
 // ---- Core ----
 * active = true
@@ -29,7 +29,7 @@ Description: "A Community Health Extension Worker providing RI services in Kano 
 * qualification[0].code.text = "CHEW License KNS/2022/01432"
 * qualification[0].period.start = "2022-02-01"
 * qualification[0].period.end   = "2025-02-01"
-* qualification[0].issuer = Reference(NgImmOrganization/organization-003) // NGO-supported outreach post in Kano
+* qualification[0].issuer = Reference(organization-003) // NGO-supported outreach post in Kano
 
 // Narrative
 * text.status = #generated

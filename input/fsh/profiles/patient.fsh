@@ -12,7 +12,7 @@ Description: "Nigeria Immunization Patient Profile"
 
 // STEP 1: Declare the slice
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.ordered = false
 
@@ -30,32 +30,75 @@ Description: "Nigeria Immunization Patient Profile"
 * identifier[NationalIDNo].value ^short = "The NIN number of the client which is a unique 11 digit number"
 * identifier[NationalIDNo].system = "https://nimc.org/nin"
 * identifier[NationalIDNo].system ^short = "NIMC's identifier in the system"
+* identifier[NationalIDNo].type.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[NationalIDNo].type.coding.code = #NIN
+* identifier[NationalIDNo].type.coding.display = "National Identity Number of Client or Caregiver"
 
+
+// A small CodeSystem for identifier types (you can reference your own canonical)
 * identifier[MedicalRecordsNumber].value 1..1
 * identifier[MedicalRecordsNumber].value ^short = "The specific medical number value given the client at a health institution"
-* identifier[MedicalRecordsNumber].system = "http://hospital.org/medicalrecord-no"
-* identifier[MedicalRecordsNumber].system ^short = "The institution issueing the mrn number eg. Asokoro"
+* identifier[MedicalRecordsNumber].system 0..1
+* identifier[MedicalRecordsNumber].system ^short = "The institution issuing the MRN number (e.g., Asokoro Hospital)"
+* identifier[MedicalRecordsNumber].system ^definition = "The URI system that identifies the assigning authority for the medical record number."
+* identifier[MedicalRecordsNumber].system ^example[0].label = "Example MRN system"
+* identifier[MedicalRecordsNumber].system ^example[0].valueUri = "http://asokoro.org/medicalrecord-no"
+* identifier[MedicalRecordsNumber].type.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[MedicalRecordsNumber].type.coding.code = #MRN
+* identifier[MedicalRecordsNumber].type.coding.display = "Medical Record Number"
+
+
 
 * identifier[ImmunizationRecordsNumber].value 1..1
 * identifier[ImmunizationRecordsNumber].value ^short = "The client immunization number generated where applicable"
-* identifier[ImmunizationRecordsNumber].system = "https://nphcda.gov.ng/immunization-no"
-* identifier[ImmunizationRecordsNumber].system ^short = "The institution generating the immunization no. Eg. NPHCDA"
+* identifier[ImmunizationRecordsNumber].system 0..1
+* identifier[ImmunizationRecordsNumber].system ^short = "The institution generating the immunization number (e.g., NPHCDA)"
+* identifier[ImmunizationRecordsNumber].system ^definition = "The URI system identifying the authority that assigns the immunization record number."
+* identifier[ImmunizationRecordsNumber].system ^example[0].label = "Example Immunization number system"
+* identifier[ImmunizationRecordsNumber].system ^example[0].valueUri = "https://nphcda.gov.ng/immunization-no"
+* identifier[ImmunizationRecordsNumber].type.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[ImmunizationRecordsNumber].type.coding.code = #IMMNO
+* identifier[ImmunizationRecordsNumber].type.coding.display = "Immunization Record Number"
+
+
 
 * identifier[BirthCertificateNo].value 1..1
 * identifier[BirthCertificateNo].value ^short = "The client's birth certificate number"
-* identifier[BirthCertificateNo].system = "http://npc.gov.ng/birthCertificate-no"
-* identifier[BirthCertificateNo].system ^short = "The institution generating the birth certificate number eg. NPC"
+* identifier[BirthCertificateNo].system 0..1
+* identifier[BirthCertificateNo].system ^short = "The institution generating the birth certificate number (e.g., NPC)"
+* identifier[BirthCertificateNo].system ^definition = "The URI system identifying the authority that assigns the birth certificate number."
+* identifier[BirthCertificateNo].system ^example[0].label = "Example Birth Certificate number system"
+* identifier[BirthCertificateNo].system ^example[0].valueUri = "http://npc.gov.ng/birthCertificate-no"
+* identifier[BirthCertificateNo].type.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[BirthCertificateNo].type.coding.code = #BIRTHCERT
+* identifier[BirthCertificateNo].type.coding.display = "Birth Certificate Number"
+
 
 
 * identifier[PhoneNumber].value 1..1
 * identifier[PhoneNumber].value ^short = "client's phone number which is 11 digits"
-* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
-* identifier[PhoneNumber].system ^short = "The provider of the phone number eg. MTN"
+* identifier[PhoneNumber].system 0..1
+* identifier[PhoneNumber].system ^short = "The provider of the phone number (e.g., MTN)"
+* identifier[PhoneNumber].system ^definition = "The URI system identifying the provider of the phone number."
+* identifier[PhoneNumber].system ^example[0].label = "Example Phone Number system"
+* identifier[PhoneNumber].system ^example[0].valueUri = "http://mtnonline.com/phone-no"
+* identifier[PhoneNumber].type.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[PhoneNumber].type.coding.code = #MOBILE
+* identifier[PhoneNumber].type.coding.display = "Primary Mobile Phone Number of the Client or CareGiver"
+
+
 
 * identifier[InsuranceNumber].value 1..1
 * identifier[InsuranceNumber].value ^short = "The actual insurance number generated at state, national or hmo authorities"
-* identifier[InsuranceNumber].system = "http://nhia.gov.ng/insurance-no"
-* identifier[InsuranceNumber].system ^short = "The generating institution eg. State, nhia, or hmo"
+* identifier[InsuranceNumber].system 0..1
+* identifier[InsuranceNumber].system ^short = "The generating institution e.g., State, NHIA, or HMO"
+* identifier[InsuranceNumber].system ^definition = "The URI system identifying the provider of the insurance number."
+* identifier[InsuranceNumber].system ^example[0].label = "Example Insurance system"
+* identifier[InsuranceNumber].system ^example[0].valueUri = "http://nhia.gov.ng/insurance-no"
+* identifier[InsuranceNumber].type.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[InsuranceNumber].type.coding.code = #INSUR
+* identifier[InsuranceNumber].type.coding.display = "The Insurance or HMO number of the client"
+
 
 
 // * identifier.value 1..1 MS

@@ -5,15 +5,15 @@ Description: "A healthcare facility providing routine immunization services in L
 * id = "organization-001"
 
 // ---- Identifiers (1..*) ----
-* identifier[0].system = "http://herfama.lagos.gov.ng/facility-id"
-* identifier[0].value = "LAG-PHC-000123"
+* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-registry"
+* identifier[0].value = "HCF-12345"
 
 // ---- Core flags & naming ----
 * active = true
 * name = "Surulere Primary Health Centre"
 
 // ---- Type (from NGFacilityTypeVS) ----
-* type[0].coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
+* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
 * type[0].coding[0].code = #phc-center-l2
 * type[0].coding[0].display = "PHC Center Level 2"
 
@@ -26,16 +26,17 @@ Description: "A healthcare facility providing routine immunization services in L
 // ---- Address (1..*) ----
 * address[0].line[0] = "45 Bode Thomas Street"
 * address[0].city = "Surulere"
-* address[0].district = #lag-lga002 "Surulere LGA"
-* address[0].state = #lagos "Lagos State"
+* address[0].district = #la-lagos-island
+* address[0].state = #LA "Lagos"
+
 
 // ---- Ownership extension ----
 * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
 * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #public
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].display = "Public Health Institution Location"
+//* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].text = "Public Health Institution Location"
 
 // ---- Hierarchy (optional) ----
-* partOf = Reference(NgImmOrganization/org-parent-001) // e.g., Lagos State Primary Health Care Board
+* partOf = Reference(organization-003) // e.g., Lagos State Primary Health Care Board
 
 // Narrative
 * text.status = #generated

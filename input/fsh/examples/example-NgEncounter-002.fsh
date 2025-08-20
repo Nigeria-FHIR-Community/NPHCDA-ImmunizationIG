@@ -12,17 +12,17 @@ Description: "An outreach immunization encounter per the NG-Imm Encounter profil
 * class.display = "Outreach session"
 
 // Subject (patient)
-* subject = Reference(NgImmPatient/patient-003)
+* subject = Reference(patient-003)
 
 // Participants (vaccinator + recorder)
-* participant[0].individual = Reference(NgImmPractitioner/practitioner-002)
-* participant[+].individual = Reference(NgImmPractitioner/practitioner-003)
+* participant[0].individual = Reference(practitioner-002)
+* participant[+].individual = Reference(practitioner-003)
 
 // Location (must-support)
-* location.location = Reference(NgImmLocation/location-002)
+* location.location = Reference(location-002)
 
 // Service Provider (must-support)
-* serviceProvider = Reference(NgImmOrganization/organization-002)
+* serviceProvider = Reference(organization-002)
 
 
 // ---- Extensions ----
@@ -37,6 +37,6 @@ Description: "An outreach immunization encounter per the NG-Imm Encounter profil
 * extension[signature].valueSignature.type[0].code = #1.2.840.10065.1.12.1.1
 * extension[signature].valueSignature.type[0].display = "Author's Signature"
 * extension[signature].valueSignature.when = "2025-08-16T13:45:00+01:00"
-* extension[signature].valueSignature.who = Reference(NgImmPractitioner/practitioner-002)
+* extension[signature].valueSignature.who = Reference(practitioner-002)
 * extension[signature].valueSignature.sigFormat = #image/png
 * extension[signature].valueSignature.data = "U2lnbkJ5dGVz" // sample base64

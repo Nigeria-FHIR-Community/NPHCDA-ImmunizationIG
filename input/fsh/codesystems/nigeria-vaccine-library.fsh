@@ -44,7 +44,7 @@ Description: "Locally defined vaccine codes used for data capture and UI labels.
 // ValueSets
 // ============================
 
-// 1) Local-only ValueSet (path-based)
+// Local-only ValueSet (path-based)
 ValueSet: NGVaccineLocalVS
 Id: ng-vaccine-local-vs
 Title: "NG IMMZ.D.DE4 Vaccine Local ValueSet"
@@ -53,67 +53,71 @@ Description: "All local vaccine codes (DE1–DE29)."
 * ^status = #active
 * include codes from system NGVaccineLocalCS
 
+// // 2) Master “library” ValueSet (ICD-11)
+// ValueSet: NGVaccineLibraryICD11VS
+// Id: ng-vaccine-library-icd11
+// Title: "NG IMMZ.D.DE4 ICD11 Vaccine Library "
+// Description: "ICD11 code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x]."
+// * ^status = #active
 
-// 2) Master “library” ValueSet (ICD-11 + SNOMED CT + Local) — path-based
-ValueSet: NGVaccineLibraryVS
-Id: ng-vaccine-library
-Title: "NG IMMZ.D.DE4 Vaccine Library (ICD-11 + SNOMED CT + Local)"
-Description: "Union set used to code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x]."
-* ^url = $ngVacVS
-* ^status = #active
+// // --- ICD-11 vaccine concepts ---
+// * ^compose.include[0].system = $icd11
+// * ^compose.include[0].concept[0].code = #XM8142
+// * ^compose.include[0].concept[0].display = "BCG vaccine"
+// * ^compose.include[0].concept[1].code = #XM9V38
+// * ^compose.include[0].concept[1].display = "Hepatitis B vaccine"
+// * ^compose.include[0].concept[2].code = #XM0N50
+// * ^compose.include[0].concept[2].display = "Poliomyelitis vaccines"
+// * ^compose.include[0].concept[3].code = #XM1PB8
+// * ^compose.include[0].concept[3].display = "DTP-HepB-Hib pentavalent vaccines"
+// * ^compose.include[0].concept[4].code = #XM9G97
+// * ^compose.include[0].concept[4].display = "Pneumococcal conjugate vaccines"
+// * ^compose.include[0].concept[5].code = #XM1CE0
+// * ^compose.include[0].concept[5].display = "Rotavirus vaccines"
+// * ^compose.include[0].concept[6].code = #XM8TF3
+// * ^compose.include[0].concept[6].display = "Measles-rubella vaccine"
+// * ^compose.include[0].concept[7].code = #XM0N24
+// * ^compose.include[0].concept[7].display = "Yellow fever vaccine"
+// * ^compose.include[0].concept[8].code = #XM2WV4
+// * ^compose.include[0].concept[8].display = "Meningococcal vaccines"
+// * ^compose.include[0].concept[9].code = #XM32Q5
+// * ^compose.include[0].concept[9].display = "Tetanus-diphtheria vaccines"
+// * ^compose.include[0].concept[10].code = #XM9QP0
+// * ^compose.include[0].concept[10].display = "Human papillomavirus vaccines"
 
-// --- ICD-11 vaccine concepts ---
-* ^compose.include[0].system = $icd11
-* ^compose.include[0].concept[0].code = #XM8142
-* ^compose.include[0].concept[0].display = "BCG vaccine"
-* ^compose.include[0].concept[1].code = #XM9V38
-* ^compose.include[0].concept[1].display = "Hepatitis B vaccine"
-* ^compose.include[0].concept[2].code = #XM0N50
-* ^compose.include[0].concept[2].display = "Poliomyelitis vaccines"
-* ^compose.include[0].concept[3].code = #XM1PB8
-* ^compose.include[0].concept[3].display = "DTP-HepB-Hib pentavalent vaccines"
-* ^compose.include[0].concept[4].code = #XM9G97
-* ^compose.include[0].concept[4].display = "Pneumococcal conjugate vaccines"
-* ^compose.include[0].concept[5].code = #XM1CE0
-* ^compose.include[0].concept[5].display = "Rotavirus vaccines"
-* ^compose.include[0].concept[6].code = #XM8TF3
-* ^compose.include[0].concept[6].display = "Measles-rubella vaccine"
-* ^compose.include[0].concept[7].code = #XM0N24
-* ^compose.include[0].concept[7].display = "Yellow fever vaccine"
-* ^compose.include[0].concept[8].code = #XM2WV4
-* ^compose.include[0].concept[8].display = "Meningococcal vaccines"
-* ^compose.include[0].concept[9].code = #XM32Q5
-* ^compose.include[0].concept[9].display = "Tetanus-diphtheria vaccines"
-* ^compose.include[0].concept[10].code = #XM9QP0
-* ^compose.include[0].concept[10].display = "Human papillomavirus vaccines"
 
-// --- SNOMED CT vaccine concepts ---
-* ^compose.include[1].system = $sct
-* ^compose.include[1].concept[0].code = #1861000221106
-* ^compose.include[1].concept[0].display = "BCG vaccine"
-* ^compose.include[1].concept[1].code = #871822003
-* ^compose.include[1].concept[1].display = "Hepatitis B vaccine"
-* ^compose.include[1].concept[2].code = #293117006
-* ^compose.include[1].concept[2].display = "Poliomyelitis vaccine"
-* ^compose.include[1].concept[3].code = #409568008
-* ^compose.include[1].concept[3].display = "Pentavalent DTP-HepB-Hib vaccine"
-* ^compose.include[1].concept[4].code = #1052328007
-* ^compose.include[1].concept[4].display = "Pneumococcal conjugate vaccine"
-* ^compose.include[1].concept[5].code = #871761004
-* ^compose.include[1].concept[5].display = "Rotavirus vaccine"
-* ^compose.include[1].concept[6].code = #871817003
-* ^compose.include[1].concept[6].display = "Measles and rubella vaccine"
-* ^compose.include[1].concept[7].code = #871717007
-* ^compose.include[1].concept[7].display = "Yellow fever vaccine"
-* ^compose.include[1].concept[8].code = #219088009
-* ^compose.include[1].concept[8].display = "Meningococcal vaccine"
-* ^compose.include[1].concept[9].code = #871826000
-* ^compose.include[1].concept[9].display = "Tetanus and diphtheria vaccine"
-* ^compose.include[1].concept[10].code = #911000221103
-* ^compose.include[1].concept[10].display = "Human papillomavirus vaccine"
+// // 3) Master “library” ValueSet (SNOMED CT)
+// ValueSet: NGVaccineLibrarySNOMEDVS
+// Id: ng-vaccine-library-snomed
+// Title: "NG IMMZ.D.DE4 Vaccine Library (SNOMED CT)"
+// Description: "SNOMED-CT code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x]."
+// //* ^url = $ngVacVS
+// * ^status = #active
 
-// --- Local IMMZ.Z.DE codes (include whole system) ---
-* ^compose.include[2].system = $ngVacCS
+// // --- SNOMED CT vaccine concepts ---
+// * ^compose.include[1].system = $sct
+// * ^compose.include[1].concept[0].code = #1861000221106
+// * ^compose.include[1].concept[0].display = "BCG vaccine"
+// * ^compose.include[1].concept[1].code = #871822003
+// * ^compose.include[1].concept[1].display = "Hepatitis B vaccine"
+// * ^compose.include[1].concept[2].code = #293117006
+// * ^compose.include[1].concept[2].display = "Poliomyelitis vaccine"
+// * ^compose.include[1].concept[3].code = #409568008
+// * ^compose.include[1].concept[3].display = "Pentavalent DTP-HepB-Hib vaccine"
+// * ^compose.include[1].concept[4].code = #1052328007
+// * ^compose.include[1].concept[4].display = "Pneumococcal conjugate vaccine"
+// * ^compose.include[1].concept[5].code = #871761004
+// * ^compose.include[1].concept[5].display = "Rotavirus vaccine"
+// * ^compose.include[1].concept[6].code = #871817003
+// * ^compose.include[1].concept[6].display = "Measles and rubella vaccine"
+// * ^compose.include[1].concept[7].code = #871717007
+// * ^compose.include[1].concept[7].display = "Yellow fever vaccine"
+// * ^compose.include[1].concept[8].code = #219088009
+// * ^compose.include[1].concept[8].display = "Meningococcal vaccine"
+// * ^compose.include[1].concept[9].code = #871826000
+// * ^compose.include[1].concept[9].display = "Tetanus and diphtheria vaccine"
+// * ^compose.include[1].concept[10].code = #911000221103
+// * ^compose.include[1].concept[10].display = "Human papillomavirus vaccine"
 
 
 // ============================
@@ -131,7 +135,7 @@ Description: "Maps local dose-labelled DE codes to ICD-11 vaccine concepts (anti
 * sourceUri = $ngVacCS
 * targetUri = $icd11
 * group[0].source = $ngVacCS
-* group[0].target = $icd11
+* group[0].target = $ngVacVS
 
 // BCG
 * group[0].element[0].code = #IMMZ.Z.DE1
@@ -262,7 +266,7 @@ Description: "Maps local dose-labelled DE codes to SNOMED CT vaccine concepts (a
 * sourceUri = $ngVacCS
 * targetUri = $sct
 * group[0].source = $ngVacCS
-* group[0].target = $sct
+* group[0].target = $ngVacVS
 
 // BCG
 * group[0].element[0].code = #IMMZ.Z.DE1

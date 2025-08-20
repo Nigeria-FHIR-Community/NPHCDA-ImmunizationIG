@@ -5,17 +5,17 @@ Description: "A temporary outreach post supported by an international NGO provid
 * id = "organization-003"
 
 // ---- Identifiers ----
-* identifier[0].system = "http://nphcda.gov.ng/facility-id"
-* identifier[0].value = "NGO-OUT-0789"
+* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-registry"
+* identifier[0].value = "HCF-12346"
 
 // ---- Core ----
 * active = true
 * name = "UNICEF Supported Outreach Immunization Post"
 
 // ---- Type (from NGFacilityTypeVS) ----
-* type[0].coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
-* type[0].coding[0].code = #outreach-post
-* type[0].coding[0].display = "Outreach Post"
+* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type[0].coding[0].code = #outreach
+* type[0].coding[0].display = "Outreach session"
 
 // ---- Telecom(s) ----
 * telecom[0].system = #phone
@@ -26,16 +26,18 @@ Description: "A temporary outreach post supported by an international NGO provid
 // ---- Address ----
 * address[0].line[0] = "Community Square, Kumbotso"
 * address[0].city = "Kano"
-* address[0].district = #kn-lga005 "Kumbotso LGA"
-* address[0].state = #kano "Kano State"
+* address[0].district = #kn-albasu "Albasu LGA"
+* address[0].state = #KN "Kano"
+
+
 
 // ---- Ownership extension ----
 * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #ngo
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].display = "NGO Supported Location"
+* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #faith-based
+* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].display = "Faith-based Institution Locations such as churches, musques, and traditional homes"
 
 // ---- Hierarchy (optional) ----
-* partOf = Reference(NgImmOrganization/org-parent-003) // e.g., Kano State Primary Health Care Management Board
+* partOf = Reference(organization-003) // e.g., Kano State Primary Health Care Management Board
 
 
 

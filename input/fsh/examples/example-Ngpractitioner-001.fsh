@@ -5,7 +5,7 @@ Description: "A Nigerian healthcare practitioner serving as a Routine Immunizati
 * id = "practitioner-001"
 
 // ---- Identifier ----
-* identifier[0].system = "http://mdcn.gov.ng/practitioner-id"
+* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
 * identifier[0].value = "MDCN-45231"
 
 // ---- Core ----
@@ -29,7 +29,7 @@ Description: "A Nigerian healthcare practitioner serving as a Routine Immunizati
 * qualification[0].code.text = "RN-IMM-2021-00456"
 * qualification[0].period.start = "2021-01-01"
 * qualification[0].period.end = "2026-01-01"
-* qualification[0].issuer = Reference(NgImmOrganization/organization-001) 
+* qualification[0].issuer = Reference(organization-001) 
   // e.g., Surulere Primary Health Centre / or regulatory body
 
 // Narrative

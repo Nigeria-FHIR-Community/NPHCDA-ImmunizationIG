@@ -4,7 +4,7 @@ Title: "Minimal NG-Imm Provenance Example"
 Description: "Minimal provenance capturing creation of an immunization record."
 
 // Required target
-* target[0] = Reference(NgImmImmunization/immunization-003)
+* target[0] = Reference(immunization-003)
 
 // When the provenance was recorded
 * recorded = "2025-08-17T10:30:00+01:00"
@@ -15,4 +15,4 @@ Description: "Minimal provenance capturing creation of an immunization record."
 * activity.coding[0].display = "Record Creation"
 
 // Agent (required)
-* agent[0].who = Reference(NgImmPractitioner/practitioner-001)
+* agent[0].who = Reference(practitioner-001)

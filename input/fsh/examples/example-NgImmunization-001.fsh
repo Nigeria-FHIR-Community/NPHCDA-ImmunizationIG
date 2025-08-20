@@ -11,13 +11,13 @@ Description: "An example Immunization resource per the NG-Imm Immunization profi
 // statusReason is typically used when status = not-done; omitted here
 
 // ---- Subject & manufacturer ----
-* patient = Reference(NgImmPatient/patient-001)
-* manufacturer = Reference(NgImmOrganization/ngimmorg-001)
+* patient = Reference(patient-001)
+* manufacturer = Reference(organization-001)
 
 // ---- Vaccine, lot, expiry, occurrence ----
 * vaccineCode.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-vaccine-library"
-* vaccineCode.coding[0].code = #penta
-* vaccineCode.coding[0].display = "Pentavalent (DTP-HepB-Hib)"
+* vaccineCode.coding[0].code = #IMMZ.Z.DE4
+* vaccineCode.coding[0].display = "Pentavalent 1"
 * vaccineCode.text = "Penta (DTP-HepB-Hib)"
 
 * lotNumber = "PENTA-LOT-24-0098"
@@ -40,20 +40,20 @@ Description: "An example Immunization resource per the NG-Imm Immunization profi
 * route.coding[0].display = "Intramuscular"
 
 // ---- Performer ----
-* performer[0].actor = Reference(NgImmPractitioner/practitioner-001)
+* performer[0].actor = Reference(practitioner-001)
 * performer[0].function.text = "Vaccinator"
 
 // ---- Protocol applied (target disease example binding) ----
 * protocolApplied[0].series = "RI Infant"
 * protocolApplied[0].doseNumberPositiveInt = 1
 * protocolApplied[0].targetDisease[0].text = "Diphtheria"
-* protocolApplied[0].targetDisease[+] = http://snomed.info/sct#240532009 "Hepatitis B" // example coding
+* protocolApplied[0].targetDisease[+] = http://snomed.info/sct#871822003 "Hepatitis B vaccine" // example coding
 * protocolApplied[0].extension[nextDoseDate].valueDate = "2025-09-10"
 
 // ---- Reaction (optional) ----
 * reaction[0].date = "2025-08-10T12:00:00+01:00"
 * reaction[0].reported = true
-* reaction[0].detail = Reference(NgImmRUObservation/obs-001)
+* reaction[0].detail = Reference(observation-001)
 
 // ---- NG-Imm Extensions ----
 * extension[contraindications].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-contraindication"

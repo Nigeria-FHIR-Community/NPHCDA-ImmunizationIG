@@ -3,7 +3,7 @@ CodeSystem: NGWardsCS
 Id: nigeria-wards
 Title: "IMMZ.C.DE14 Administrative Wards CS"
 Description: "This CodeSystem IMMZ.C.DE14 defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-administrative-ward"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-wards"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -87,13 +87,13 @@ Description: "This CodeSystem IMMZ.C.DE31 defines list of options for HIV status
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
-* ^hierarchyMeaning = #is-a
+//* ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Client's HIV Status
-* #DE44	"Positive" "The Client is HIV positive"
-* #DE45 	"Negative" "The Client is HIV Negative"
-* #DE46	"Unknown" "The Client does not know their HIV status"
+* #positive	"Positive" "The Client is HIV positive"
+* #negative 	"Negative" "The Client is HIV Negative"
+* #unknown	"Unknown" "The Client does not know their HIV status"
 
 
 
@@ -102,7 +102,7 @@ CodeSystem: NGFacilityTypeCS
 Id: nigeria-facility-type
 Title: "IMMZ.D.DE3 Facility Type CS"
 Description: "A standardized classification system IMMZ.D.DE3 used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-facility-typeCS"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
 * ^status = #active
 * ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
@@ -120,8 +120,9 @@ CodeSystem: NGOrganizationOwnerCS
 Id: nigeria-location-owner-cs
 Title: "IMMZ.D.DE3-2 Location Owner CS"
 Description: "This CodeSystem defines Immunization Location Owner."
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-lgas"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-location-owner-cs"
 * ^publisher = "NPHCDA"
+* ^caseSensitive = false
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 
 // Location Owner types and their codes
@@ -139,6 +140,7 @@ Description: "A classification system that represents the current clinical statu
 //* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"
 * ^status = #active
 * ^content = #complete
+* ^caseSensitive = false
 * #active "Active" "The clinical condition is currently present, ongoing, or requires active management or monitoring."
 * #inactive "Inactive" "The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment."
 * #resolved "Resolved" "The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management."
@@ -154,6 +156,7 @@ Description: "Type of session for immunization IMMZ.D.DE3. Could be in a fixed f
 //* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"
 * ^status = #active
 * ^hierarchyMeaning = #is-a
+* ^caseSensitive = false
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Immunization session types
@@ -166,9 +169,10 @@ CodeSystem: NGImmunizationContraindicationCS
 Id: nigeria-immunization-contraindication
 Title: "IMMZ.D.DE6 Vaccine contraindications CS"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
+* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
 * ^status = #active
-* ^hierarchyMeaning = #is-a
+//* ^hierarchyMeaning = #is-a
+* ^caseSensitive = false
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Immunization Contraindications
@@ -186,14 +190,88 @@ Description: "This CodeSystem defines list of options for Pregnancy status of a 
 //* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
 * ^status = #active
 * ^content = #complete
-* ^caseSensitive = true
-* ^hierarchyMeaning = #is-a
+* ^caseSensitive = false
+//* ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Pregnancy Status
 * #pregnant	"Pregnant" "The Client's pregnancy status is positive"
 * #notpregnant	"Not Pregnant" "The Client's pregnancy status is negative"
 * #unknown	"Not known" "The Client does not know their Pregnancy status"
+
+
+
+
+
+
+CodeSystem: NGIdentifierCS
+Id: patient-identifier-cs
+Title: "IMMZ.C.DE1 Client Identifier CS"
+Description: "This CodeSystem defines list of options for uniquely Identifting a Client"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/patient-identifier-cs"
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = false
+* ^hierarchyMeaning = #is-a
+* ^publisher = "NPHCDA"
+* ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
+
+* #MRN	"mrn" "Medical Record Number"
+* #NIN	"nin" "National Identity Number"
+* #MOBILE	"mobile" "Phone Number"
+* #INSUR "insurance no" "Insurance or HMO number"
+* #BIRTHCERT "birthcert" "Birth certificate number"
+* #IMMNO "immunizationo" "Immunization Number"
+
+
+
+
+CodeSystem: NGMDCNCS
+Id: nigeria-mdcn
+Title: "IMMZ.D.DE14 Practitiner Identifier CS"
+Description: "This CodeSystem IMMZ.C.DE14 defines placeholder codes to manage physician identifiers in Nigeria."
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = true
+* ^hierarchyMeaning = #grouped-by
+* ^publisher = "MDCN"
+* ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
+
+// Sample Codes for testing
+* #MDCN-45231 "1"
+* #MDCN-12345 "2"
+* #MDCN-12346 "3"
+* #MDCN-12347  "4"
+* #CHEW-12346 "3"
+* #CHEW-12347  "4"
+
+//.... to be completed
+
+
+
+
+CodeSystem: NGFacilityIdentifierCS
+Id: nigeria-facility-registry
+Title: "IMMZ.A.DE1 Facility Identifier CS"
+Description: "This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Facility identifiers in Nigeria."
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-registry"
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = true
+* ^hierarchyMeaning = #grouped-by
+* ^publisher = "MDCN"
+* ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
+
+// Sample Codes for testing
+* #HCF-45231 "1"
+* #HCF-12342 "2"
+* #HCF-12343 "3"
+* #HCF-12344  "4"
+* #HCF-12345 "3"
+* #HCF-12346  "4"
+* #HCF-12347  "5"
+//.... to be completed
 
 
 
