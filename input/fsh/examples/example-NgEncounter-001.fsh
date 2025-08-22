@@ -27,7 +27,7 @@ Description: "An immunization visit encounter per the NG-Imm Encounter profile."
 // ---- Extensions ----
 
 // NGSessionType extension (typically a CodeableConcept mirroring session type)
-* extension[sessionType].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-session-type"
+* extension[sessionType].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-session-type"
 * extension[sessionType].valueCodeableConcept.coding[0].code = #fixed
 * extension[sessionType].valueCodeableConcept.coding[0].display = "Fixed session"
 

@@ -8,9 +8,9 @@ Description: "A mobile immunization team location operating in Benue State, Nige
 * name = "Benue State Mobile Immunization Team"
 
 // Facility type – mobile team represented using tertiary or outreach category
-* type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-session-type"
-* type.coding[0].code = #outreach
-* type.coding[0].display = "Outreach Post"
+* type.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type.coding[0].code = #phc-center-l2
+//* type.coding[0].display = "Outreach Post"
 
 // ---- Address (limited, but still required) ----
 * address.line = "Mobile outreach service operating along Gboko Road"

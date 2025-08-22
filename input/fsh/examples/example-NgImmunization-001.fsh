@@ -15,7 +15,7 @@ Description: "An example Immunization resource per the NG-Imm Immunization profi
 * manufacturer = Reference(organization-001)
 
 // ---- Vaccine, lot, expiry, occurrence ----
-* vaccineCode.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-vaccine-library"
+* vaccineCode.coding[0].system = "http://nphcda.gov.ng/ValueSet/vaccine-local"
 * vaccineCode.coding[0].code = #IMMZ.Z.DE4
 * vaccineCode.coding[0].display = "Pentavalent 1"
 * vaccineCode.text = "Penta (DTP-HepB-Hib)"

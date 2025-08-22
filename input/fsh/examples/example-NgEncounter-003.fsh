@@ -7,7 +7,7 @@ Description: "A mobile team immunization encounter per the NG-Imm Encounter prof
 * status = #in-progress
 
 // Encounter.class – bound to NGSessionTypeVS (fixed | outreach | mobile)
-* class.system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-session-type"
+* class.system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-session-type"
 * class.code = #mobile
 * class.display = "Mobile session"
 
@@ -28,7 +28,7 @@ Description: "A mobile team immunization encounter per the NG-Imm Encounter prof
 // ---- Extensions ----
 
 // NGSessionType extension
-* extension[sessionType].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-session-type"
+* extension[sessionType].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-session-type"
 * extension[sessionType].valueCodeableConcept.coding[0].code = #mobile
 * extension[sessionType].valueCodeableConcept.coding[0].display = "Mobile session"
 

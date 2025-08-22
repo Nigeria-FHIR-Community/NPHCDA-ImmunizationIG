@@ -50,7 +50,7 @@ ValueSet: NGVaccineLocalVS
 Id: ng-vaccine-local-vs
 Title: "NG IMMZ.D.DE4 Vaccine Local ValueSet"
 Description: "All local vaccine codes (DE1–DE29)."
-* ^url = $ngVacCS
+* ^url = $ngVacLocalVS
 * ^status = #active
 * include codes from system NGVaccineLocalCS
 

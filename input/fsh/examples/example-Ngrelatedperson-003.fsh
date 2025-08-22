@@ -8,8 +8,8 @@ Description: "Example of a RelatedPerson resource representing a younger infant 
 * name.family = "Okoro"
 * birthDate = "2024-01-15"
 * gender = #male
-* relationship.text = "brother"
-* extension[siblingHealthStatus].valueCodeableConcept = $sct#2492009 "Malnutrition (disorder)"
+* relationship.text = "BROTHER"
+//* extension[siblingHealthStatus].valueCodeableConcept = $sct#2492009 "Malnutrition (disorder)"
 
 // Narrative
 * text.status = #generated

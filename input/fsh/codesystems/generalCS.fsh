@@ -160,7 +160,7 @@ CodeSystem: NGImmunizationSessionTypeCS
 Id: nigeria-immunization-session-type
 Title: "IMMZ.D.DE3 Immunization Session types CS"
 Description: "Type of session for immunization IMMZ.D.DE3. Could be in a fixed facility, outreach or mobile."
-* ^url = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-session-type"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-immunization-session-type"
 * ^status = #active
 * ^hierarchyMeaning = #is-a
 * ^caseSensitive = false
@@ -177,7 +177,7 @@ CodeSystem: NGImmunizationContraindicationCS
 Id: nigeria-immunization-contraindication
 Title: "IMMZ.D.DE6 Vaccine contraindications CS"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
-* ^url = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-contraindication"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-immunization-contraindication"
 * ^status = #active
 //* ^hierarchyMeaning = #is-a
 * ^experimental = false
@@ -196,7 +196,7 @@ CodeSystem: NGPregnancyStatusCS
 Id: nigeria-pregnancy-status
 Title: "IMMZ.C.DE32 Client Pregnancy status CS"
 Description: "This CodeSystem defines list of options for Pregnancy status of a Client"
-* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-pregnancy-status"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
@@ -218,7 +218,7 @@ CodeSystem: NGIdentifierCS
 Id: patient-identifier-cs
 Title: "IMMZ.C.DE1 Client Identifier CS"
 Description: "This CodeSystem defines list of options for uniquely Identifting a Client"
-* ^url = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/patient-identifier-cs"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
@@ -294,6 +294,7 @@ Title: "NG Age Component Codes"
 * ^url = $ngAgeComp
 * ^caseSensitive = true
 * ^content = #complete
+* ^experimental = false
 * #age-in-weeks "Age in weeks"
 * #age-in-months "Age in months"
 * #age-in-years "Age in years"

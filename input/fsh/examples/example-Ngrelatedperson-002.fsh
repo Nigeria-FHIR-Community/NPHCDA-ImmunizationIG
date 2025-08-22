@@ -8,8 +8,8 @@ Description: "Example of a RelatedPerson resource representing a sibling (sister
 * name.family = "Okafor"
 * birthDate = "2012-09-21"
 * gender = #female
-* relationship.text = "sister"
-* extension[siblingHealthStatus].valueCodeableConcept = $sct#195967001 "Asthma (disorder)"
+* relationship.text = "SISTER"
+//* extension[siblingHealthStatus].valueCodeableConcept = $sct#195967001 "Asthma (disorder)"
 
 // Narrative
 * text.status = #generated

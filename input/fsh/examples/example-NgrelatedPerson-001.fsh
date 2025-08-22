@@ -9,7 +9,7 @@ Description: "Example of a RelatedPerson resource representing a sibling (brothe
 * birthDate = "2015-04-12"
 * gender = #male
 * relationship.text = "brother"
-* extension[siblingHealthStatus].valueCodeableConcept = $sct#161901003 "Healthy (finding)"
+//* extension[siblingHealthStatus].valueCodeableConcept = $sct#161901003 "Healthy (finding)"
 
 // Narrative
 * text.status = #generated
