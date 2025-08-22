@@ -19,10 +19,10 @@ Description: "A complete example of an immunization record per the NgImmImmuniza
 
 // ---- Immunization status ----
 * status = #not-done
-* statusReason.coding[0].system = "http://hl7.org/fhir/immunization-status-reason"
-* statusReason.coding[0].code = #PATOBJ
-* statusReason.coding[0].display = "Patient objection"
-* statusReason.text = "Immunization missed due to caregiver refusal"
+* statusReason.coding[0].system = "http://hl7.org/fhir/ValueSet/immunization-recommendation-status"
+* statusReason.coding[0].code = #immune
+* statusReason.coding[0].display = "Immune"
+* statusReason.text = "Patient Immune to vaccine"
 
 // ---- Lot and expiry ----
 * lotNumber = "BCG-LOT-25-0045"
@@ -69,9 +69,9 @@ Description: "A complete example of an immunization record per the NgImmImmuniza
 * reaction[0].detail = Reference(observation-002)
 
 // ---- Extensions ----
-* extension[contraindications].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-contraindication"
-* extension[contraindications].valueCodeableConcept.coding[0].code = #hiv
-* extension[contraindications].valueCodeableConcept.coding[0].display = "HIV positive"
+// * extension[contraindications].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-contraindication"
+// * extension[contraindications].valueCodeableConcept.coding[0].code = #hiv
+// * extension[contraindications].valueCodeableConcept.coding[0].display = "HIV positive"
 
 * extension[contraindicated].valueBoolean = true
 

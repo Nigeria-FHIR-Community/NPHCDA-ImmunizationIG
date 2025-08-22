@@ -7,6 +7,7 @@ Description: "This CodeSystem defines ward codes and names mapped to their respe
 * ^content = #complete
 * ^caseSensitive = true
 * ^hierarchyMeaning = #grouped-by
+* ^experimental = false
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 

@@ -9,6 +9,7 @@ Description: "Locally defined vaccine codes used for data capture and UI labels.
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
+* ^experimental = false
 
 * #IMMZ.Z.DE1  "BCG birth dose"
 * #IMMZ.Z.DE2  "HepB birth dose"

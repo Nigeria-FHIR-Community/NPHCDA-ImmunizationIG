@@ -8,21 +8,21 @@ Description: "A mobile immunization team location operating in Benue State, Nige
 * name = "Benue State Mobile Immunization Team"
 
 // Facility type – mobile team represented using tertiary or outreach category
-* type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
-* type.coding[0].code = #outreach-post
-* type.coding[0].display = "Outreach Post (Mobile Team)"
+* type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-session-type"
+* type.coding[0].code = #outreach
+* type.coding[0].display = "Outreach Post"
 
 // ---- Address (limited, but still required) ----
 * address.line = "Mobile outreach service operating along Gboko Road"
 * address.city = "Makurdi"
-* address.district = #ben-lga012 "Makurdi LGA"
-* address.state = #benue "Benue State"
+* address.district = #be-makurdi "Makurdi LGA"
+* address.state = #BE "Benue"
 * address.country = "NG"
 
 // Extension for Administrative Ward
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-wards"
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].code = #ben-ward034
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].display = "Wadata Ward"
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-wards"
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].code = #fc-amac-gawu
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].display = "Gawu"
 
 // ---- Telecom ----
 * telecom[0].system = #phone

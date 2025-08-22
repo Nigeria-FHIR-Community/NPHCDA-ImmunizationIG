@@ -8,21 +8,21 @@ Description: "An outreach immunization service location (temporary site in a sch
 * name = "Sabon Gari Primary School Outreach Post"
 
 // Facility type – outreach-post from NGFacilityTypeVS
-* type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
-* type.coding[0].code = #outreach-post
+* type.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type.coding[0].code = #outreach
 * type.coding[0].display = "Outreach Post"
 
 // ---- Address ----
 * address.line = "Sabon Gari Primary School"
 * address.city = "Kano"
-* address.district = #kan-lga007 "Fagge LGA"
-* address.state = #kano "Kano State"
+* address.district = #kn-gezawa "Gezawa LGA"
+* address.state = #KN "Kano"
 * address.country = "NG"
 
 // Extension for Administrative Ward
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-wards"
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].code = #kan-ward023
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].display = "Sabon Gari Ward"
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-wards"
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].code = #fc-amac-gawu 
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].display = "Gawu"
 
 // ---- Telecom ----
 * telecom[0].system = #phone

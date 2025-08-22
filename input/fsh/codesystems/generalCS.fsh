@@ -9,6 +9,7 @@ Description: "This CodeSystem IMMZ.C.DE14 defines ward codes and names mapped to
 * ^caseSensitive = true
 * ^hierarchyMeaning = #grouped-by
 * ^publisher = "NPHCDA"
+* ^experimental = false
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 
 // Abaji area councle wards in FCT
@@ -38,6 +39,7 @@ Description: "This CodeSystem IMMZ.C.DE20 defines list of persons related to a p
 * ^content = #complete
 * ^caseSensitive = true
 * ^hierarchyMeaning = #is-a
+* ^experimental = false
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 
@@ -69,6 +71,7 @@ Description: "This CodeSystem IMMZ.C.DE30 defines the health of the client's sib
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
+* ^experimental = false
 * ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
@@ -87,7 +90,8 @@ Description: "This CodeSystem IMMZ.C.DE31 defines list of options for HIV status
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
-//* ^hierarchyMeaning = #is-a
+* ^experimental = false
+* ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Client's HIV Status
@@ -105,10 +109,11 @@ Description: "A standardized classification system IMMZ.D.DE3 used to describe t
 * ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
 * ^status = #active
 * ^hierarchyMeaning = #is-a
+* ^experimental = false
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Grouping different Facility types
-* #outreach-post	"Outreach Post" "A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations."
+* #outreach	"Outreach Post" "A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations."
 * #phc-center-l1	"PHC Center Level 1" "A basic primary healthcare facility providing preventive and promotive services, often staffed by community health workers."
 * #phc-center-l2    "PHC Center Level 2" "A primary healthcare facility with limited diagnostic and treatment services, typically staffed by nurses, CHEWs, or junior medical personnel."
 * #phc-center-l3    "PHC Center Level 3" "An advanced primary healthcare facility offering comprehensive outpatient care, minor/light procedures, and referral support, often with a resident medical officer."
@@ -124,6 +129,7 @@ Description: "This CodeSystem defines Immunization Location Owner."
 * ^publisher = "NPHCDA"
 * ^caseSensitive = false
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
+* ^experimental = false
 
 // Location Owner types and their codes
 * #public "Public Health Institution Location"
@@ -137,10 +143,11 @@ CodeSystem: NGClinicalStatusCS
 Id: nigeria-clinical-status 
 Title: "IMMZ.E.DE6 Adverse Event Clinical Status CS"
 Description: "A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-clinical-status"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-clinical-status"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
+* ^experimental = false
 * #active "Active" "The clinical condition is currently present, ongoing, or requires active management or monitoring."
 * #inactive "Inactive" "The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment."
 * #resolved "Resolved" "The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management."
@@ -153,11 +160,12 @@ CodeSystem: NGImmunizationSessionTypeCS
 Id: nigeria-immunization-session-type
 Title: "IMMZ.D.DE3 Immunization Session types CS"
 Description: "Type of session for immunization IMMZ.D.DE3. Could be in a fixed facility, outreach or mobile."
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-session-type"
+* ^url = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-session-type"
 * ^status = #active
 * ^hierarchyMeaning = #is-a
 * ^caseSensitive = false
 * ^publisher = "NPHCDA"
+* ^experimental = false
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Immunization session types
 * #fixed	"Fixed session" "An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available."
@@ -169,9 +177,10 @@ CodeSystem: NGImmunizationContraindicationCS
 Id: nigeria-immunization-contraindication
 Title: "IMMZ.D.DE6 Vaccine contraindications CS"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
-* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-contraindication"
+* ^url = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-contraindication"
 * ^status = #active
 //* ^hierarchyMeaning = #is-a
+* ^experimental = false
 * ^caseSensitive = false
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
@@ -187,10 +196,11 @@ CodeSystem: NGPregnancyStatusCS
 Id: nigeria-pregnancy-status
 Title: "IMMZ.C.DE32 Client Pregnancy status CS"
 Description: "This CodeSystem defines list of options for Pregnancy status of a Client"
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
+* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
+* ^experimental = false
 //* ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
@@ -208,10 +218,11 @@ CodeSystem: NGIdentifierCS
 Id: patient-identifier-cs
 Title: "IMMZ.C.DE1 Client Identifier CS"
 Description: "This CodeSystem defines list of options for uniquely Identifting a Client"
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/patient-identifier-cs"
+* ^url = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
+* ^experimental = false
 * ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
@@ -228,13 +239,14 @@ Description: "This CodeSystem defines list of options for uniquely Identifting a
 
 CodeSystem: NGMDCNCS
 Id: nigeria-mdcn
-Title: "IMMZ.D.DE14 Practitiner Identifier CS"
+Title: "IMMZ.D.DE14 Practitioner Identifier CS"
 Description: "This CodeSystem IMMZ.C.DE14 defines placeholder codes to manage physician identifiers in Nigeria."
 * ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
 * ^hierarchyMeaning = #grouped-by
+* ^experimental = false
 * ^publisher = "MDCN"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 
@@ -260,7 +272,8 @@ Description: "This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Fac
 * ^content = #complete
 * ^caseSensitive = true
 * ^hierarchyMeaning = #grouped-by
-* ^publisher = "MDCN"
+* ^publisher = "FMoHSW"
+* ^experimental = false
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 
 // Sample Codes for testing
@@ -275,6 +288,15 @@ Description: "This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Fac
 
 
 
+CodeSystem: AgeComponentCodes
+Id: age-component-codes
+Title: "NG Age Component Codes"
+* ^url = $ngAgeComp
+* ^caseSensitive = true
+* ^content = #complete
+* #age-in-weeks "Age in weeks"
+* #age-in-months "Age in months"
+* #age-in-years "Age in years"
 
 
 

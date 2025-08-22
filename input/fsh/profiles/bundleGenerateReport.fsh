@@ -162,8 +162,9 @@ Usage: #example
 Instance: practitioner-005
 InstanceOf: NgImmPractitioner
 Usage: #example
-* identifier.system = "http://mdcn.gov.ng/practitioner-id"
-* identifier.value = "CHEW-12347"
+
+* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
+* identifier[0].value  = "CHEW-12346"
 * active = true
 * name.given = "Chinedu"
 * name.family = "Okafor"

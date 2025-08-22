@@ -9,9 +9,9 @@ Description: "Observation recorded during a later visit to update client status 
 * category[0].coding.code = #social-history
 * category[0].coding.display = "Social History"
 
-* code.coding.system = "http://loinc.org"
-* code.coding.code = #8716-3
-* code.coding.display = "Patient registration/update observation"
+// * code.coding.system = "http://loinc.org"
+// * code.coding.code = #8716-3
+// * code.coding.display = "Patient registration/update observation"
 
 * subject = Reference(patient-003)
 * effectiveDateTime = "2025-10-10T10:00:00+01:00"
@@ -34,29 +34,26 @@ Description: "Observation recorded during a later visit to update client status 
 * component[hivStatus].valueCodeableConcept.coding.code = #DE46
 * component[hivStatus].valueCodeableConcept.coding.display = "Unknown"
 
-// Age in Weeks
-* component[ageInWeeks].code.coding.system = "http://loinc.org"
-* component[ageInWeeks].code.coding.code = #30525-0
-* component[ageInWeeks].code.coding.display = "Age in weeks"
-* component[ageInWeeks].valueQuantity.value = 12
-* component[ageInWeeks].valueQuantity.unit = "wk"
-* component[ageInWeeks].valueQuantity.system = "http://unitsofmeasure.org"
+// Only the weeks slice populated
+* component[ageInWeeks].code = $ngAgeComp#age-in-weeks "Age in weeks"
+* component[ageInWeeks].valueQuantity.value = 5
+* component[ageInWeeks].valueQuantity.system = $ucum
 * component[ageInWeeks].valueQuantity.code = #wk
+* component[ageInWeeks].valueQuantity.unit = "week"
 
-// Age in Months
-* component[ageInMonths].code.coding.system = "http://loinc.org"
-* component[ageInMonths].code.coding.code = #30525-0
-* component[ageInMonths].code.coding.display = "Age in months"
-* component[ageInMonths].valueQuantity.value = 3
-* component[ageInMonths].valueQuantity.unit = "mo"
-* component[ageInMonths].valueQuantity.system = "http://unitsofmeasure.org"
+
+// Only the months slice populated
+* component[ageInMonths].code = $ngAgeComp#age-in-months "Age in months"
+* component[ageInMonths].valueQuantity.value = 2
+* component[ageInMonths].valueQuantity.system = $ucum
 * component[ageInMonths].valueQuantity.code = #mo
+* component[ageInMonths].valueQuantity.unit = "month"
 
-// Age in Years
-* component[ageInYears].code.coding.system = "http://loinc.org"
-* component[ageInYears].code.coding.code = #30525-0
-* component[ageInYears].code.coding.display = "Age in years"
+
+
+// Only the years slice populated
+* component[ageInYears].code = $ngAgeComp#age-in-years "Age in years"
 * component[ageInYears].valueQuantity.value = 0
-* component[ageInYears].valueQuantity.unit = "yr"
-* component[ageInYears].valueQuantity.system = "http://unitsofmeasure.org"
+* component[ageInYears].valueQuantity.system = $ucum
 * component[ageInYears].valueQuantity.code = #yr
+* component[ageInYears].valueQuantity.unit = "year"
