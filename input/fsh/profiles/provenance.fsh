@@ -2,7 +2,7 @@ Profile: NgImmProvenance
 Parent: Provenance
 Id: ng-imm-provenance
 Title: "NG-Imm Provenance"
-Description: " A Provenance profile tailored for Nigeria’s Immunization workflows (using FHIR R4.0.1). Captures the origin, responsible party, and 
+Description: "A Provenance profile tailored for Nigeria’s Immunization workflows (using FHIR R4.0.1). Captures the origin, responsible party, and 
 context for the creation, modification, or exchange of immunization-related records, including Immunization, AEFI, Defaulter Tracing, and related 
 patient data."
 

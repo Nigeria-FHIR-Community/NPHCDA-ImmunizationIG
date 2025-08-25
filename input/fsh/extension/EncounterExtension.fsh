@@ -26,12 +26,12 @@ Description: "A digital or electronic signature capturing who signed, when, type
 
 
 
-Extension: NGSessionType
-Id: session-type
-Title: "NG-Imm Session Type"
-Description: "Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site)."
-* ^context[0].type = #element
-* ^context[0].expression = "Encounter"
-* value[x] only CodeableConcept
-* valueCodeableConcept from NGSessionTypeVS (required)
-* valueCodeableConcept ^short = "Type of vaccination session"
+// Extension: NGSessionType
+// Id: session-type
+// Title: "NG-Imm Session Type"
+// Description: "Type of session for immunization (e.g., fixed-site clinic, outreach session, campaign site)."
+// * ^context[0].type = #element
+// * ^context[0].expression = "Encounter"
+// * value[x] only CodeableConcept
+// * valueCodeableConcept from NGSessionTypeVS (required)
+// * valueCodeableConcept ^short = "Type of vaccination session"

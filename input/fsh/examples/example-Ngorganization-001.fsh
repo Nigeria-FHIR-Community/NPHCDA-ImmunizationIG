@@ -31,8 +31,8 @@ Description: "A healthcare facility providing routine immunization services in L
 
 
 // ---- Ownership extension ----
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #public
+// * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
+// * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #public
 //* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].text = "Public Health Institution Location"
 
 // ---- Hierarchy (optional) ----

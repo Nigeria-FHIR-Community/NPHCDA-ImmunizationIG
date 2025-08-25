@@ -15,7 +15,7 @@ Description: "An organization profile representing healthcare facilities respons
 * name 1..1 MS
 * name ^short = "The name of the organization or health facility"
 * type 1..*
-* type from NGFacilityTypeVS (required)
+* type from NGFacilityTypeVS (extensible)
 * type ^short = "The type of the organization or health facility"
 * telecom 0..*
 * telecom.system 1..1

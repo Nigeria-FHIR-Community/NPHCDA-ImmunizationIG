@@ -4,25 +4,20 @@ Title: "Example NG-Imm Immunization (Complete)"
 Description: "A complete example of an immunization record per the NgImmImmunization profile."
 
 // ---- Identifier ----
-* identifier.system = "http://nphcda.gov.ng/ig/identifier/immunization"
-* identifier.value = "IMM-2025-0002"
+// * identifier.system = "http://nphcda.gov.ng/ig/identifier/immunization"
+// * identifier.value = "IMM-2025-0002"
 
 // ---- Patient & Manufacturer ----
 * patient = Reference(patient-003)            // Example from Lagos
 * manufacturer = Reference(organization-002) // Example org
 
 // ---- Vaccine administered ----
-* vaccineCode.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/vaccine-local"
-* vaccineCode.coding[0].code = #bcg
-* vaccineCode.coding[0].display = "BCG Vaccine"
-* vaccineCode.text = "BCG"
+* vaccineCode = $ngVacCS#IMMZ.Z.DE16 "Rotavirus 3"
+
 
 // ---- Immunization status ----
 * status = #not-done
-* statusReason.coding[0].system = "http://hl7.org/fhir/ValueSet/immunization-recommendation-status"
-* statusReason.coding[0].code = #immune
-* statusReason.coding[0].display = "Immune"
-* statusReason.text = "Patient Immune to vaccine"
+
 
 // ---- Lot and expiry ----
 * lotNumber = "BCG-LOT-25-0045"
@@ -38,16 +33,16 @@ Description: "A complete example of an immunization record per the NgImmImmuniza
 * doseQuantity.code = #mL
 
 // ---- Site & Route ----
-* site.coding[0].system = "http://terminology.hl7.org/CodeSystem/immunization-site"
+* site.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ActSite"
 * site.coding[0].code = #LA
 * site.coding[0].display = "Left Arm"
 
 * route.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
-* route.coding[0].code = #ID
-* route.coding[0].display = "Intradermal"
+* route.coding[0].code = #PO
+* route.coding[0].display = "Swallow, oral"
 
 // ---- Performer(s) ----
-* performer[0].function.coding[0].system = "http://terminology.hl7.org/CodeSystem/immunization-function"
+* performer[0].function.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0443"
 * performer[0].function.coding[0].code = #AP
 * performer[0].function.coding[0].display = "Administering Provider"
 * performer[0].actor = Reference(practitioner-002)
@@ -61,7 +56,7 @@ Description: "A complete example of an immunization record per the NgImmImmuniza
 * protocolApplied[0].seriesDosesPositiveInt = 1
 * protocolApplied[0].targetDisease[0].coding[0].system = "http://snomed.info/sct"
 * protocolApplied[0].targetDisease[0].coding[0].code = #397428000
-* protocolApplied[0].extension[nextDoseDate].valueDate = "2026-08-15"
+//* protocolApplied[0].extension[nextDoseDate].valueDate = "2026-08-15"
 
 // ---- Reactions ----
 * reaction[0].date = "2025-08-15T12:00:00+01:00"

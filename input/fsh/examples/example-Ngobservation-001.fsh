@@ -20,18 +20,15 @@ Description: "An example observation recorded when a client is registered, captu
 // ---- Components ----
 
 // Pregnancy Status
-* component[pregnancyStatus].code.coding.system = $loinc
-* component[pregnancyStatus].code.coding.code = #82810-3
-//* component[pregnancyStatus].code.coding.display = "Pregnancy status"
-* component[pregnancyStatus].valueCodeableConcept.coding.system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-pregnancy-status"
-* component[pregnancyStatus].valueCodeableConcept.coding.code = #notpregnant
-* component[pregnancyStatus].valueCodeableConcept.coding.display = "Not Pregnant"
+* component[pregnancyStatus].code.coding = $loinc#82810-3
+//* "Pregnancy status"
+* component[pregnancyStatus].valueCodeableConcept.coding = http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-pregnancy-status#notpregnant
 
 // HIV Status
-* component[hivStatus].code.coding.system = $loinc
-* component[hivStatus].code.coding.code = #55284-4
-//* component[hivStatus].code.coding.display = "HIV status"
-* component[hivStatus].valueCodeableConcept.coding.system = "hhttp://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-hiv-status"
+* component[hivStatus].code.coding.system = $sct
+* component[hivStatus].code.coding.code = #278977008
+* component[hivStatus].code.coding.display = "HIV status"
+* component[hivStatus].valueCodeableConcept.coding.system = $ngAgeComp
 * component[hivStatus].valueCodeableConcept.coding.code = #negative
 * component[hivStatus].valueCodeableConcept.coding.display = "Negative"
 
@@ -42,7 +39,7 @@ Description: "An example observation recorded when a client is registered, captu
 * component[birthWeight].valueQuantity.value = 3200
 //* component[birthWeight].valueQuantity.unit = "g"
 * component[birthWeight].valueQuantity.system = $ucum
-* component[birthWeight].valueQuantity.code = #g
+//* component[birthWeight].valueQuantity.code = #g
 
 
 
@@ -51,7 +48,7 @@ Description: "An example observation recorded when a client is registered, captu
 * component[ageInWeeks].code = $ngAgeComp#age-in-weeks "Age in weeks"
 * component[ageInWeeks].valueQuantity.value = 5
 * component[ageInWeeks].valueQuantity.system = $ucum
-* component[ageInWeeks].valueQuantity.code = #wk
+//* component[ageInWeeks].valueQuantity.code = #wk
 * component[ageInWeeks].valueQuantity.unit = "week"
 
 
@@ -59,7 +56,7 @@ Description: "An example observation recorded when a client is registered, captu
 * component[ageInMonths].code = $ngAgeComp#age-in-months "Age in months"
 * component[ageInMonths].valueQuantity.value = 2
 * component[ageInMonths].valueQuantity.system = $ucum
-* component[ageInMonths].valueQuantity.code = #mo
+//* component[ageInMonths].valueQuantity.code = #mo
 * component[ageInMonths].valueQuantity.unit = "month"
 
 
@@ -68,5 +65,5 @@ Description: "An example observation recorded when a client is registered, captu
 * component[ageInYears].code = $ngAgeComp#age-in-years "Age in years"
 * component[ageInYears].valueQuantity.value = 0
 * component[ageInYears].valueQuantity.system = $ucum
-* component[ageInYears].valueQuantity.code = #yr
+//* component[ageInYears].valueQuantity.code = #yr
 * component[ageInYears].valueQuantity.unit = "year"

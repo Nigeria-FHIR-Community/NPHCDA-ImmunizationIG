@@ -29,7 +29,7 @@ Description: "An example of allergy/adverse reaction following measles vaccine a
 // ---- Timeline ----
 * onsetDateTime = "2025-07-20T10:45:00+01:00"
 * recordedDate = "2025-07-20T11:30:00+01:00"
-* recorder = Reference(practitioner-005)
+* recorder = Reference(practitioner-002)
 * lastOccurrence = "2025-07-21T08:00:00+01:00"
 
 // ---- Reaction block ----

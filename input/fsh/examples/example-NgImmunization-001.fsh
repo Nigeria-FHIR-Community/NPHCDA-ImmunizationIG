@@ -4,8 +4,8 @@ Title: "Example NG-Imm Immunization -001"
 Description: "An example Immunization resource per the NG-Imm Immunization profile."
 
 // ---- Core identifiers & status ----
-* identifier.system = "http://nphcda.gov.ng/ig/identifier/immunization-lot"
-* identifier.value = "IMM-ADMIN-0001"
+// * identifier.system = "http://nphcda.gov.ng/ig/identifier/immunization-lot"
+// * identifier.value = "IMM-ADMIN-0001"
 
 * status = #completed
 // statusReason is typically used when status = not-done; omitted here
@@ -15,10 +15,8 @@ Description: "An example Immunization resource per the NG-Imm Immunization profi
 * manufacturer = Reference(organization-001)
 
 // ---- Vaccine, lot, expiry, occurrence ----
-* vaccineCode.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/vaccine-local"
-* vaccineCode.coding[0].code = #IMMZ.Z.DE4
-* vaccineCode.coding[0].display = "Pentavalent 1"
-* vaccineCode.text = "Penta (DTP-HepB-Hib)"
+* vaccineCode = $ngVacCS#IMMZ.Z.DE4 "Pentavalent 1"
+
 
 * lotNumber = "PENTA-LOT-24-0098"
 * expirationDate = "2026-03-31"
@@ -31,7 +29,7 @@ Description: "An example Immunization resource per the NG-Imm Immunization profi
 * doseQuantity.code = #mL
 
 // ---- Site & Route (HL7-defined) ----
-* site.coding[0].system = "http://terminology.hl7.org/CodeSystem/immunization-site"
+* site.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ActSite"
 * site.coding[0].code = #LA
 * site.coding[0].display = "Left arm"
 
@@ -62,15 +60,3 @@ Description: "An example Immunization resource per the NG-Imm Immunization profi
 
 * extension[contraindicated].valueBoolean = false
 
-
-// Narrative
-* text.status = #generated
-* text.div = """
-<div xmlns="http://www.w3.org/1999/xhtml">
-  <p><b>Immunization</b>: BCG vaccine administered</p>
-  <p><b>Date</b>: 2023-06-15</p>
-  <p><b>Patient</b>: Baby Musa</p>
-  <p><b>Performer</b>: Dr. Nkiru Eze</p>
-  <p><b>Location</b>: LUTH, Lagos</p>
-</div>
-"""

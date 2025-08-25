@@ -3,10 +3,10 @@ Parent: Immunization
 Title: "NG-Imm Immunization"
 Description: "Nigerian Profile for Immunization resource."
 
-* identifier 1..1
+* identifier 0..1
 * vaccineCode from NGVaccineLocalVS 
 * vaccineCode ^short = "Vaccine Product Administered"
-* statusReason from http://hl7.org/fhir/ValueSet/immunization-status-reason (required)
+* statusReason from http://hl7.org/fhir/ValueSet/immunization-status-reason (extensible)
 * statusReason ^short = "Reason immunization was not done (or was missed)"
 * status MS
 * status from http://hl7.org/fhir/ValueSet/immunization-status (required)

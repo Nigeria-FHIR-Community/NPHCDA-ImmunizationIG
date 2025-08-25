@@ -32,9 +32,9 @@ Description: "A temporary outreach post supported by an international NGO provid
 
 
 // ---- Ownership extension ----
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #faith-based
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].display = "Faith-based Institution Locations such as churches, musques, and traditional homes"
+// * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
+// * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #faith-based
+// * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].display = "Faith-based Institution Locations such as churches, musques, and traditional homes"
 
 // ---- Hierarchy (optional) ----
 * partOf = Reference(organization-003) // e.g., Kano State Primary Health Care Management Board

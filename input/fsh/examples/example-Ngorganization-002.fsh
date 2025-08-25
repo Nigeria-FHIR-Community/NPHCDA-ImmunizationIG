@@ -31,9 +31,9 @@ Description: "A private hospital in Abuja offering immunization services."
 
 
 // ---- Ownership extension ----
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #private
-* extension[NGOrganizationOwner].valueCodeableConcept.coding[0].display = "Private Health Institution Location"
+// * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
+// * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].code = #private
+// * extension[NGOrganizationOwner].valueCodeableConcept.coding[0].display = "Private Health Institution Location"
 
 // ---- Hierarchy (optional) ----
 * partOf = Reference(organization-002) // e.g., FCT Health Services Department

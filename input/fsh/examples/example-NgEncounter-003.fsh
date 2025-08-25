@@ -8,8 +8,8 @@ Description: "A mobile team immunization encounter per the NG-Imm Encounter prof
 
 // Encounter.class – bound to NGSessionTypeVS (fixed | outreach | mobile)
 * class.system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
-* class.code = #mobile
-* class.display = "Mobile session"
+* class.code = #outreach
+* class.display = "Outreach Post"
 
 // Subject (patient)
 * subject = Reference(patient-002)
@@ -26,11 +26,6 @@ Description: "A mobile team immunization encounter per the NG-Imm Encounter prof
 
 
 // ---- Extensions ----
-
-// NGSessionType extension
-* extension[sessionType].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-session-type"
-* extension[sessionType].valueCodeableConcept.coding[0].code = #mobile
-* extension[sessionType].valueCodeableConcept.coding[0].display = "Mobile session"
 
 // NGSignature extension (signature from mobile team lead)
 * extension[signature].valueSignature.type[0].system = "urn:iso-astm:E1762-95:2013"

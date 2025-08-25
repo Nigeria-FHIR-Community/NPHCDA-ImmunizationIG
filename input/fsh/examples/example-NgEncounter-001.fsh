@@ -8,8 +8,8 @@ Description: "An immunization visit encounter per the NG-Imm Encounter profile."
 
 // Encounter.class is a Coding; bound (required) to NGSessionTypeVS (fixed | outreach | mobile)
 * class.system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
-* class.code = #fixed
-* class.display = "Fixed session"
+* class.code = #phc-center-l2
+* class.display = "PHC Center Level 2"
 
 // Subject (patient)
 * subject = Reference(patient-001)
@@ -25,11 +25,6 @@ Description: "An immunization visit encounter per the NG-Imm Encounter profile."
 
 
 // ---- Extensions ----
-
-// NGSessionType extension (typically a CodeableConcept mirroring session type)
-* extension[sessionType].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-session-type"
-* extension[sessionType].valueCodeableConcept.coding[0].code = #fixed
-* extension[sessionType].valueCodeableConcept.coding[0].display = "Fixed session"
 
 // NGSignature extension (valueSignature)
 * extension[signature].valueSignature.type[0].system = "urn:iso-astm:E1762-95:2013"

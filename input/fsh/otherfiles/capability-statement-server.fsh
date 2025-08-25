@@ -15,7 +15,7 @@ Description: """ This CapabilityStatement describes the expected behaviour of an
 * format[0] = #json
 * format[1] = #xml
 * implementation.description = "NG-IMM Immunization Server system (Registry) implementation"
-* implementation.url = "https://nphcda.gov.ng/ig/immunization"
+* implementation.url = "https://nphcda.gov.ng/server-ig/immunization"
 
 * rest[0].mode = #server
 * rest[0].documentation = "The server system (Registry) allow interaction by clients systems via standard RESTful interactions and some custom operations.
@@ -60,19 +60,19 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[0].interaction[3].code = #search-type
 * rest[0].resource[0].searchParam[0].name = "pseudo-id"
 * rest[0].resource[0].searchParam[0].type = #token
-* rest[0].resource[0].searchParam[0].definition = "SearchParameter/patient-pseudo-id"
+* rest[0].resource[0].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/patient-pseudo-id"
 * rest[0].resource[0].searchParam[0].documentation = "Search a particular patient using their Pseudonym identifier as per NIS ISO 25237:2019"
 * rest[0].resource[0].searchParam[1].name = "birthdate"
 * rest[0].resource[0].searchParam[1].type = #date
-* rest[0].resource[0].searchParam[1].definition = "SearchParameter/patient-birthdate"
+* rest[0].resource[0].searchParam[1].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/patient-birthdate"
 * rest[0].resource[0].searchParam[1].documentation = "Filter patients by date of birth. Format: YYYY-MM-DD."
 * rest[0].resource[0].searchParam[2].name = "createddate"
 * rest[0].resource[0].searchParam[2].type = #date
-* rest[0].resource[0].searchParam[2].definition = "SearchParameter/patient-createddate"
+* rest[0].resource[0].searchParam[2].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/patient-createddate"
 * rest[0].resource[0].searchParam[2].documentation = "Filter patients by date of record creation. Format: YYYY-MM-DD."
 * rest[0].resource[0].searchParam[3].name = "gender"
 * rest[0].resource[0].searchParam[3].type = #token
-* rest[0].resource[0].searchParam[3].definition = "SearchParameter/patient-gender"
+* rest[0].resource[0].searchParam[3].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/patient-gender"
 * rest[0].resource[0].searchParam[3].documentation = "Filter patients by sex (Male, Female). Bound to `NGGenderVS`."
 // Supported _revinclude
 * rest[0].resource[0].searchRevInclude[0] = "NgImmProvenance:target"
@@ -90,20 +90,20 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[1].interaction[3].code = #history-type
 * rest[0].resource[1].interaction[4].code = #search-type
 * rest[0].resource[1].operation[0].name = "submit-ngimm-immunization"
-* rest[0].resource[1].operation[0].definition = "OperationDefinition/submit-ngimm-immunization"
+* rest[0].resource[1].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-immunization"
 * rest[0].resource[1].operation[0].documentation = "Submits an instance of NgImmImmunization profile to the national immunization registry/repository."
 * rest[0].resource[1].searchParam[0].name = "patient-pseudo-id"
 * rest[0].resource[1].searchParam[0].type = #reference
-* rest[0].resource[1].searchParam[0].definition = "SearchParameter/immunization-patient-pseudo-id"
+* rest[0].resource[1].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/immunization-patient-pseudo-id"
 * rest[0].resource[1].searchParam[1].name = "status"
 * rest[0].resource[1].searchParam[1].type = #token
-* rest[0].resource[1].searchParam[1].definition = "SearchParameter/immunization-status"
+* rest[0].resource[1].searchParam[1].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/immunization-status"
 * rest[0].resource[1].searchParam[2].name = "vaccine-code"
 * rest[0].resource[1].searchParam[2].type = #token
-* rest[0].resource[1].searchParam[2].definition = "SearchParameter/immunization-vaccine-code"
+* rest[0].resource[1].searchParam[2].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/immunization-vaccine-code"
 * rest[0].resource[1].searchParam[3].name = "date"
 * rest[0].resource[1].searchParam[3].type = #date
-* rest[0].resource[1].searchParam[3].definition = "SearchParameter/immunization-date"
+* rest[0].resource[1].searchParam[3].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/immunization-date"
 // Supported _revinclude
 * rest[0].resource[1].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -126,20 +126,20 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[2].interaction[6].code = #create
 * rest[0].resource[2].interaction[7].code = #search-type
 * rest[0].resource[2].operation[0].name = "submit-ngimm-bundle"
-* rest[0].resource[2].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[2].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-bundle"
 * rest[0].resource[2].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[2].searchParam[0].name = "patient.identifier"
 * rest[0].resource[2].searchParam[0].type = #token
-* rest[0].resource[2].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
+* rest[0].resource[2].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[2].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[2].searchParam[1].type = #date
-* rest[0].resource[2].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[2].searchParam[1].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[2].searchParam[2].name = "vaccine-code"
 * rest[0].resource[2].searchParam[2].type = #token
-* rest[0].resource[2].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
+* rest[0].resource[2].searchParam[2].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-vaccine-code"
 * rest[0].resource[2].searchParam[3].name = "organization-identifier"
 * rest[0].resource[2].searchParam[3].type = #token
-* rest[0].resource[2].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
+* rest[0].resource[2].searchParam[3].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[2].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -158,20 +158,20 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[10].interaction[6].code = #create
 * rest[0].resource[10].interaction[7].code = #search-type
 * rest[0].resource[10].operation[0].name = "submit-ngimm-bundle"
-* rest[0].resource[10].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[10].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-bundle"
 * rest[0].resource[10].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[10].searchParam[0].name = "patient.identifier"
 * rest[0].resource[10].searchParam[0].type = #token
-* rest[0].resource[10].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
+* rest[0].resource[10].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[10].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[10].searchParam[1].type = #date
-* rest[0].resource[10].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[10].searchParam[1].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[10].searchParam[2].name = "vaccine-code"
 * rest[0].resource[10].searchParam[2].type = #token
-* rest[0].resource[10].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
+* rest[0].resource[10].searchParam[2].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-vaccine-code"
 * rest[0].resource[10].searchParam[3].name = "organization-identifier"
 * rest[0].resource[10].searchParam[3].type = #token
-* rest[0].resource[10].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
+* rest[0].resource[10].searchParam[3].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[10].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -192,20 +192,20 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[11].interaction[6].code = #create
 * rest[0].resource[11].interaction[7].code = #search-type
 * rest[0].resource[11].operation[0].name = "submit-ngimm-bundle"
-* rest[0].resource[11].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[11].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-bundle"
 * rest[0].resource[11].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[11].searchParam[0].name = "patient.identifier"
 * rest[0].resource[11].searchParam[0].type = #token
-* rest[0].resource[11].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
+* rest[0].resource[11].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[11].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[11].searchParam[1].type = #date
-* rest[0].resource[11].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[11].searchParam[1].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[11].searchParam[2].name = "vaccine-code"
 * rest[0].resource[11].searchParam[2].type = #token
-* rest[0].resource[11].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
+* rest[0].resource[11].searchParam[2].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-vaccine-code"
 * rest[0].resource[11].searchParam[3].name = "organization-identifier"
 * rest[0].resource[11].searchParam[3].type = #token
-* rest[0].resource[11].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
+* rest[0].resource[11].searchParam[3].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[11].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -223,20 +223,20 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[12].interaction[6].code = #create
 * rest[0].resource[12].interaction[7].code = #search-type
 * rest[0].resource[12].operation[0].name = "submit-ngimm-bundle"
-* rest[0].resource[12].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[12].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-bundle"
 * rest[0].resource[12].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[12].searchParam[0].name = "patient.identifier"
 * rest[0].resource[12].searchParam[0].type = #token
-* rest[0].resource[12].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
+* rest[0].resource[12].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[12].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[12].searchParam[1].type = #date
-* rest[0].resource[12].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[12].searchParam[1].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[12].searchParam[2].name = "vaccine-code"
 * rest[0].resource[12].searchParam[2].type = #token
-* rest[0].resource[12].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
+* rest[0].resource[12].searchParam[2].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-vaccine-code"
 * rest[0].resource[12].searchParam[3].name = "organization-identifier"
 * rest[0].resource[12].searchParam[3].type = #token
-* rest[0].resource[12].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
+* rest[0].resource[12].searchParam[3].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[12].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -253,36 +253,22 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[13].interaction[6].code = #create
 * rest[0].resource[13].interaction[7].code = #search-type
 * rest[0].resource[13].operation[0].name = "submit-ngimm-bundle"
-* rest[0].resource[13].operation[0].definition = "OperationDefinition/submit-ngimm-bundle"
+* rest[0].resource[13].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-bundle"
 * rest[0].resource[13].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[13].searchParam[0].name = "patient.identifier"
 * rest[0].resource[13].searchParam[0].type = #token
-* rest[0].resource[13].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
+* rest[0].resource[13].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[13].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[13].searchParam[1].type = #date
-* rest[0].resource[13].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[13].searchParam[1].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[13].searchParam[2].name = "vaccine-code"
 * rest[0].resource[13].searchParam[2].type = #token
-* rest[0].resource[13].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
+* rest[0].resource[13].searchParam[2].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-vaccine-code"
 * rest[0].resource[13].searchParam[3].name = "organization-identifier"
 * rest[0].resource[13].searchParam[3].type = #token
-* rest[0].resource[13].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
+* rest[0].resource[13].searchParam[3].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[13].searchRevInclude[0] = "NgImmProvenance:target"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -300,10 +286,10 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[3].interaction[6].code = #search-type
 * rest[0].resource[3].operation[0].name = "submit-ngimm-organization"
 * rest[0].resource[3].operation[0].documentation = "Submits an instance of NgImmOrganiztion profile to the national immunization registry/repository."
-* rest[0].resource[3].operation[0].definition = "OperationDefinition/submit-ngimm-organization"
+* rest[0].resource[3].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-organization"
 * rest[0].resource[3].searchParam[0].name = "organization-identifier"
 * rest[0].resource[3].searchParam[0].type = #token
-* rest[0].resource[3].searchParam[0].definition = "SearchParameter/Organization-identifier"
+* rest[0].resource[3].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/Organization-identifier"
 // Supported _revinclude
 * rest[0].resource[3].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -321,11 +307,11 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[4].interaction[5].code = #create
 * rest[0].resource[4].interaction[6].code = #search-type
 * rest[0].resource[4].operation[0].name = "submit-ngimm-encounter"
-* rest[0].resource[4].operation[0].definition = "OperationDefinition/submit-ngimm-encounter"
+* rest[0].resource[4].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-encounter"
 * rest[0].resource[4].operation[0].documentation = "Submits an instance of NgImmEncounter profile to the national immunization registry/repository."
 * rest[0].resource[4].searchParam[0].name = "encounter-identifier"
 * rest[0].resource[4].searchParam[0].type = #token
-* rest[0].resource[4].searchParam[0].definition = "SearchParameter/Encounter-identifier"
+* rest[0].resource[4].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/Encounter-identifier"
 // Supported _revinclude
 * rest[0].resource[4].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -342,11 +328,11 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[5].interaction[5].code = #create
 * rest[0].resource[5].interaction[6].code = #search-type
 * rest[0].resource[5].operation[0].name = "submit-ngimm-relatedperson"
-* rest[0].resource[5].operation[0].definition = "OperationDefinition/submit-ngimm-relatedperson"
+* rest[0].resource[5].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-relatedperson"
 * rest[0].resource[5].operation[0].documentation = "Submits an instance of NgImmRelatedPerson profile to the national immunization registry/repository."
 * rest[0].resource[5].searchParam[0].name = "sibling-pseudo-id"
 * rest[0].resource[5].searchParam[0].type = #token
-* rest[0].resource[5].searchParam[0].definition = "SearchParameter/RelatedPerson-pseudo-id"
+* rest[0].resource[5].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/RelatedPerson-pseudo-id"
 * rest[0].resource[5].searchParam[0].documentation = "Search a particular related person. Use steps referenced in Standard Organization of Nigeria (SON's) NIS ISO 25237:2019 for detailed steps"
 // Supported _revinclude
 * rest[0].resource[5].searchRevInclude[0] = "NgImmProvenance:target"
@@ -369,15 +355,15 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[6].interaction[5].code = #create
 * rest[0].resource[6].interaction[6].code = #search-type
 * rest[0].resource[6].operation[0].name = "submit-ngimm-practitioner"
-* rest[0].resource[6].operation[0].definition = "OperationDefinition/submit-ngimm-pr"
+* rest[0].resource[6].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-pr"
 * rest[0].resource[6].operation[0].documentation = "Submits an instance of NgImmPractiioner profile to the national immunization registry/repository."
 * rest[0].resource[6].searchParam[0].name = "practitioner-pseudo-id"
 * rest[0].resource[6].searchParam[0].type = #token
-* rest[0].resource[6].searchParam[0].definition = "SearchParameter/Practitioner-pseudo-id"
+* rest[0].resource[6].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/Practitioner-pseudo-id"
 * rest[0].resource[6].searchParam[0].documentation = "Search a particular Practitioner. Use steps referenced in Standard Organization of Nigeria (SON's) NIS ISO 25237:2019 for detailed steps"
 * rest[0].resource[6].searchParam[1].name = "license"
 * rest[0].resource[6].searchParam[1].type = #token
-* rest[0].resource[6].searchParam[1].definition = "SearchParameter/Practitioner-license"
+* rest[0].resource[6].searchParam[1].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/Practitioner-license"
 * rest[0].resource[6].searchParam[1].documentation = "Search a practtioner by ther public facing MDCN, Pharmacy, or related licenses"
 // Supported _revinclude
 * rest[0].resource[6].searchRevInclude[0] = "NgImmProvenance:target"
@@ -395,11 +381,11 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[7].interaction[5].code = #create
 * rest[0].resource[7].interaction[6].code = #search-type
 * rest[0].resource[7].operation[0].name = "submit-ngimm-measurereport"
-* rest[0].resource[7].operation[0].definition = "OperationDefinition/submit-ngimm-measurereport"
+* rest[0].resource[7].operation[0].definition = "https://nphcda.gov.ng/server-ig/immunization/OperationDefinition/submit-ngimm-measurereport"
 * rest[0].resource[7].operation[0].documentation = "Submits an instance of NgImmMeasureReport profile to the national immunization registry/repository."
 * rest[0].resource[7].searchParam[0].name = "measurereport-identifier"
 * rest[0].resource[7].searchParam[0].type = #token
-* rest[0].resource[7].searchParam[0].definition = "SearchParameter/MeasureReport-identifier"
+* rest[0].resource[7].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/MeasureReport-identifier"
 // Supported _revinclude
 * rest[0].resource[7].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -418,7 +404,7 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[8].interaction[6].code = #search-type
 * rest[0].resource[8].searchParam[0].name = "provenance-identifier"
 * rest[0].resource[8].searchParam[0].type = #token
-* rest[0].resource[8].searchParam[0].definition = "SearchParameter/Provenance-identifier"
+* rest[0].resource[8].searchParam[0].definition = "https://nphcda.gov.ng/server-ig/immunization/SearchParameter/Provenance-identifier"
 // Supported _revinclude
 * rest[0].resource[8].searchRevInclude[0] = "NgImmProvenance:target"
 

@@ -16,7 +16,7 @@ and Provenance entries documenting the submission.
 * type 1..1
 * type = #transaction
 * timestamp 0..1
-* entry 2..7 MS
+* entry 0..7 MS
 
 // ---------------- Slicing ----------------
 * entry ^slicing.discriminator[0].type = #profile
@@ -81,49 +81,49 @@ Severity: #warning
 
 
 
-// Example Bundle
-// ============================================================
-// Instance 1: Full Client Registration Transaction
-// ============================================================
-Instance: client-registration-bundle-001
-InstanceOf: NgImmClientRegistrationBundle
-Usage: #example
-Title: "Client Registration Transaction (Full)"
-Description: "Registers a new client with practitioner, org, encounter, registration observation, one sibling related person, and provenance."
-* type = #transaction
-* timestamp = "2025-08-17T09:10:00+01:00"
+// // Example Bundle
+// // ============================================================
+// // Instance 1: Full Client Registration Transaction
+// // ============================================================
+// Instance: client-registration-bundle-001
+// InstanceOf: NgImmClientRegistrationBundle
+// Usage: #example
+// Title: "Client Registration Transaction (Full)"
+// Description: "Registers a new client with practitioner, org, encounter, registration observation, one sibling related person, and provenance."
+// * type = #transaction
+// * timestamp = "2025-08-17T09:10:00+01:00"
 
-// --- Organization ---
-* entry[organization].resource = organization-001
-* entry[organization].request.method = #POST
-* entry[organization].request.url = "Organization"
+// // --- Organization ---
+// * entry[organization].resource = organization-001
+// * entry[organization].request.method = #POST
+// * entry[organization].request.url = "Organization"
 
-// --- Practitioner ---
-* entry[practitioner].resource = practitioner-001
-* entry[practitioner].request.method = #POST
-* entry[practitioner].request.url = "Practitioner"
+// // --- Practitioner ---
+// * entry[practitioner].resource = practitioner-001
+// * entry[practitioner].request.method = #POST
+// * entry[practitioner].request.url = "Practitioner"
 
-// --- Patient ---
-* entry[patient].resource = patient-001
-* entry[patient].request.method = #POST
-* entry[patient].request.url = "Patient"
+// // --- Patient ---
+// * entry[patient].resource = patient-001
+// * entry[patient].request.method = #POST
+// * entry[patient].request.url = "Patient"
 
-// --- Encounter (optional but shown) ---
-* entry[encounter].resource = encounter-001
-* entry[encounter].request.method = #POST
-* entry[encounter].request.url = "Encounter"
+// // --- Encounter (optional but shown) ---
+// * entry[encounter].resource = encounter-001
+// * entry[encounter].request.method = #POST
+// * entry[encounter].request.url = "Encounter"
 
-// --- Registration / Update Observation (optional but shown) ---
-* entry[observation].resource = observation-001
-* entry[observation].request.method = #POST
-* entry[observation].request.url = "Observation"
+// // --- Registration / Update Observation (optional but shown) ---
+// * entry[observation].resource = observation-001
+// * entry[observation].request.method = #POST
+// * entry[observation].request.url = "Observation"
 
-// --- RelatedPerson (optional; one example) ---
-* entry[relatedperson].resource = relatedperson-001
-* entry[relatedperson].request.method = #POST
-* entry[relatedperson].request.url = "RelatedPerson"
+// // --- RelatedPerson (optional; one example) ---
+// * entry[relatedperson].resource = relatedperson-001
+// * entry[relatedperson].request.method = #POST
+// * entry[relatedperson].request.url = "RelatedPerson"
 
-// --- Provenance (required) ---
-* entry[provenance].resource = provenance-001
-* entry[provenance].request.method = #POST
-* entry[provenance].request.url = "Provenance"
+// // --- Provenance (required) ---
+// * entry[provenance].resource = provenance-001
+// * entry[provenance].request.method = #POST
+// * entry[provenance].request.url = "Provenance"

@@ -8,7 +8,7 @@ Description: "A profile for encounters in the Nigerian  Immunization guide, used
 * ^publisher = "National Primary Healthcare Development Agency"
 * status ^short = "Status of the immunization encounter"
 * class ^short = "Type of encounter (e.g. Facility encounter, Outreach, or Home visit)"
-* class from NGSessionTypeVS (required)
+* class from NGSessionTypeVS (extensible)
 * subject 1..1 MS
 * subject only Reference(NgImmPatient)
 * participant 1..* MS
@@ -21,7 +21,6 @@ Description: "A profile for encounters in the Nigerian  Immunization guide, used
 
 // Extensions
 * extension contains NGSignature named signature 0..1 MS
-* extension contains NGSessionType named sessionType 0..1 MS
 
 // Pregnancy status extension (complex extension reference)
 // * extension contains NGPregnancyStatus named pregnancyStatus 0..1 MS

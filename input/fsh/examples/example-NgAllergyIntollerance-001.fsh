@@ -31,7 +31,7 @@ Description: "An example of allergy or intolerance to a vaccine per the NG-Imm A
 // ---- Timeline ----
 * onsetDateTime = "2025-08-01T09:30:00+01:00"
 * recordedDate = "2025-08-01T10:00:00+01:00"
-* recorder = Reference(practitioner-005)
+* recorder = Reference(practitioner-001)
 * lastOccurrence = "2025-08-01T12:00:00+01:00"
 
 // ---- Reaction block ----

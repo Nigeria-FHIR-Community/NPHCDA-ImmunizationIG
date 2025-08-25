@@ -8,8 +8,8 @@ Description: "An outreach immunization encounter per the NG-Imm Encounter profil
 
 // Encounter.class – bound to NGSessionTypeVS (fixed | outreach | mobile)
 * class.system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
-* class.code = #outreach
-* class.display = "Outreach session"
+* class.code = #phc-center-l2
+* class.display = "PHC Center Level 2"
 
 // Subject (patient)
 * subject = Reference(patient-003)
@@ -26,11 +26,6 @@ Description: "An outreach immunization encounter per the NG-Imm Encounter profil
 
 
 // ---- Extensions ----
-
-// NGSessionType extension
-* extension[sessionType].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-session-type"
-* extension[sessionType].valueCodeableConcept.coding[0].code = #outreach
-* extension[sessionType].valueCodeableConcept.coding[0].display = "Outreach session"
 
 // NGSignature extension (valueSignature)
 * extension[signature].valueSignature.type[0].system = "urn:iso-astm:E1762-95:2013"

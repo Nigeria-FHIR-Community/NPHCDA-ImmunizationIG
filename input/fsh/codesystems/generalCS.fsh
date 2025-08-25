@@ -7,7 +7,7 @@ Description: "This CodeSystem IMMZ.C.DE14 defines ward codes and names mapped to
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
-* ^hierarchyMeaning = #grouped-by
+//* ^hierarchyMeaning = #grouped-by
 * ^publisher = "NPHCDA"
 * ^experimental = false
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
@@ -38,7 +38,7 @@ Description: "This CodeSystem IMMZ.C.DE20 defines list of persons related to a p
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
-* ^hierarchyMeaning = #is-a
+//* ^hierarchyMeaning = #is-a
 * ^experimental = false
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
@@ -72,7 +72,7 @@ Description: "This CodeSystem IMMZ.C.DE30 defines the health of the client's sib
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false
-* ^hierarchyMeaning = #is-a
+//* ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Sibling Health Status
@@ -91,7 +91,7 @@ Description: "This CodeSystem IMMZ.C.DE31 defines list of options for HIV status
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false
-* ^hierarchyMeaning = #is-a
+//* ^hierarchyMeaning = #is-a
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Client's HIV Status
@@ -108,9 +108,11 @@ Title: "IMMZ.D.DE3 Facility Type CS"
 Description: "A standardized classification system IMMZ.D.DE3 used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."
 * ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
 * ^status = #active
-* ^hierarchyMeaning = #is-a
+//* ^hierarchyMeaning = #is-a
+* ^caseSensitive = true
 * ^experimental = false
 * ^publisher = "NPHCDA"
+* ^content = #complete
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Grouping different Facility types
 * #outreach	"Outreach Post" "A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations."
@@ -128,6 +130,7 @@ Description: "This CodeSystem defines Immunization Location Owner."
 * ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-location-owner-cs"
 * ^publisher = "NPHCDA"
 * ^caseSensitive = false
+* ^content = #complete
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 * ^experimental = false
 
@@ -156,16 +159,17 @@ Description: "A classification system that represents the current clinical statu
 * #death "Death" "The adverse event resulted in the death of the individual."
 
 
-CodeSystem: NGImmunizationSessionTypeCS
+CodeSystem: NGSessionTypeCS
 Id: nigeria-immunization-session-type
 Title: "IMMZ.D.DE3 Immunization Session types CS"
 Description: "Type of session for immunization IMMZ.D.DE3. Could be in a fixed facility, outreach or mobile."
 * ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-immunization-session-type"
 * ^status = #active
-* ^hierarchyMeaning = #is-a
+//* ^hierarchyMeaning = #is-a
 * ^caseSensitive = false
 * ^publisher = "NPHCDA"
 * ^experimental = false
+* ^content = #complete
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Immunization session types
 * #fixed	"Fixed session" "An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available."
@@ -173,7 +177,7 @@ Description: "Type of session for immunization IMMZ.D.DE3. Could be in a fixed f
 * #mobile	"Mobile session" "An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport."
 
 
-CodeSystem: NGImmunizationContraindicationCS
+CodeSystem: NGImmContraindicationCS
 Id: nigeria-immunization-contraindication
 Title: "IMMZ.D.DE6 Vaccine contraindications CS"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
@@ -182,6 +186,7 @@ Description: "A set of standardized codes used to represent clinical conditions,
 //* ^hierarchyMeaning = #is-a
 * ^experimental = false
 * ^caseSensitive = false
+* ^content = #complete
 * ^publisher = "NPHCDA"
 * ^jurisdiction = urn:iso:std:iso:3166#NG "Nigeria"
 // The CodeSystem for Immunization Contraindications
@@ -291,6 +296,7 @@ Description: "This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Fac
 CodeSystem: AgeComponentCodes
 Id: age-component-codes
 Title: "NG Age Component Codes"
+Description: "This CodeSystem defines list of age options for a Client"
 * ^url = $ngAgeComp
 * ^caseSensitive = true
 * ^content = #complete

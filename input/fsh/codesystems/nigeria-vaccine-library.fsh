@@ -45,14 +45,6 @@ Description: "Locally defined vaccine codes used for data capture and UI labels.
 // ValueSets
 // ============================
 
-// Local-only ValueSet (path-based)
-ValueSet: NGVaccineLocalVS
-Id: ng-vaccine-local-vs
-Title: "NG IMMZ.D.DE4 Vaccine Local ValueSet"
-Description: "All local vaccine codes (DE1–DE29)."
-* ^url = $ngVacLocalVS
-* ^status = #active
-* include codes from system NGVaccineLocalCS
 
 // // 2) Master “library” ValueSet (ICD-11)
 // ValueSet: NGVaccineLibraryICD11VS
@@ -132,11 +124,13 @@ Usage: #definition
 Title: "Local Vaccine Codes → ICD-11"
 Description: "Maps local dose-labelled DE codes to ICD-11 vaccine concepts (antigen/product level)."
 * url = $cmLocalToICD11
+* name = "Local-icd11"
+* experimental = false
 * status = #active
 * sourceUri = $ngVacCS
 * targetUri = $icd11
 * group[0].source = $ngVacCS
-* group[0].target = $ngVacVS
+* group[0].target = $icd11
 
 // BCG
 * group[0].element[0].code = #IMMZ.Z.DE1
@@ -264,10 +258,12 @@ Title: "Local Vaccine Codes → SNOMED CT"
 Description: "Maps local dose-labelled DE codes to SNOMED CT vaccine concepts (antigen/product level)."
 * url = $cmLocalToSCT
 * status = #active
+* name = "Local-Snomed"
 * sourceUri = $ngVacCS
 * targetUri = $sct
 * group[0].source = $ngVacCS
-* group[0].target = $ngVacVS
+* group[0].target = $sct
+* experimental = false
 
 // BCG
 * group[0].element[0].code = #IMMZ.Z.DE1
