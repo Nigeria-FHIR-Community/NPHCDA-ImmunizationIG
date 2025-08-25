@@ -9,7 +9,7 @@ Description: "A simple immunization record example with minimal fields populated
 
 // ---- Patient & Vaccine ----
 * patient = Reference(patient-002)
-* vaccineCode.coding[0].system = "http://nphcda.gov.ng/ValueSet/vaccine-local"
+* vaccineCode.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/vaccine-library"
 * vaccineCode.coding[0].code = #1051000221104
 * vaccineCode.coding[0].display = "Oral Polio Vaccine"
 

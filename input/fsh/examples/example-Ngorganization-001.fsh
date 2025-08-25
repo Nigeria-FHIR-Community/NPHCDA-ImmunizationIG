@@ -13,7 +13,7 @@ Description: "A healthcare facility providing routine immunization services in L
 * name = "Surulere Primary Health Centre"
 
 // ---- Type (from NGFacilityTypeVS) ----
-* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-facility-types"
 * type[0].coding[0].code = #phc-center-l2
 * type[0].coding[0].display = "PHC Center Level 2"
 

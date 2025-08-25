@@ -15,7 +15,7 @@ Description: """ This CapabilityStatement describes the expected behaviour of an
 * format[0] = #json
 * format[1] = #xml
 * implementation.description = "NG-IMM Immunization Server system (Registry) implementation"
-* implementation.url = "https://nphcda.gov.ng/IG"
+* implementation.url = "https://nphcda.gov.ng/ig/immunization"
 
 * rest[0].mode = #server
 * rest[0].documentation = "The server system (Registry) allow interaction by clients systems via standard RESTful interactions and some custom operations.
@@ -60,19 +60,19 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[0].interaction[3].code = #search-type
 * rest[0].resource[0].searchParam[0].name = "pseudo-id"
 * rest[0].resource[0].searchParam[0].type = #token
-* rest[0].resource[0].searchParam[0].definition = "SearchParameter/Patient-pseudo-id"
+* rest[0].resource[0].searchParam[0].definition = "SearchParameter/patient-pseudo-id"
 * rest[0].resource[0].searchParam[0].documentation = "Search a particular patient using their Pseudonym identifier as per NIS ISO 25237:2019"
 * rest[0].resource[0].searchParam[1].name = "birthdate"
 * rest[0].resource[0].searchParam[1].type = #date
-* rest[0].resource[0].searchParam[1].definition = "SearchParameter/Patient-birthdate"
+* rest[0].resource[0].searchParam[1].definition = "SearchParameter/patient-birthdate"
 * rest[0].resource[0].searchParam[1].documentation = "Filter patients by date of birth. Format: YYYY-MM-DD."
 * rest[0].resource[0].searchParam[2].name = "createddate"
 * rest[0].resource[0].searchParam[2].type = #date
-* rest[0].resource[0].searchParam[2].definition = "SearchParameter/Patient-createddate"
+* rest[0].resource[0].searchParam[2].definition = "SearchParameter/patient-createddate"
 * rest[0].resource[0].searchParam[2].documentation = "Filter patients by date of record creation. Format: YYYY-MM-DD."
 * rest[0].resource[0].searchParam[3].name = "gender"
 * rest[0].resource[0].searchParam[3].type = #token
-* rest[0].resource[0].searchParam[3].definition = "SearchParameter/Patient-gender"
+* rest[0].resource[0].searchParam[3].definition = "SearchParameter/patient-gender"
 * rest[0].resource[0].searchParam[3].documentation = "Filter patients by sex (Male, Female). Bound to `NGGenderVS`."
 // Supported _revinclude
 * rest[0].resource[0].searchRevInclude[0] = "NgImmProvenance:target"
@@ -94,16 +94,16 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[1].operation[0].documentation = "Submits an instance of NgImmImmunization profile to the national immunization registry/repository."
 * rest[0].resource[1].searchParam[0].name = "patient-pseudo-id"
 * rest[0].resource[1].searchParam[0].type = #reference
-* rest[0].resource[1].searchParam[0].definition = "SearchParameter/Immunization-patient-pseudo-id"
+* rest[0].resource[1].searchParam[0].definition = "SearchParameter/immunization-patient-pseudo-id"
 * rest[0].resource[1].searchParam[1].name = "status"
 * rest[0].resource[1].searchParam[1].type = #token
-* rest[0].resource[1].searchParam[1].definition = "SearchParameter/Immunization-status"
+* rest[0].resource[1].searchParam[1].definition = "SearchParameter/immunization-status"
 * rest[0].resource[1].searchParam[2].name = "vaccine-code"
 * rest[0].resource[1].searchParam[2].type = #token
-* rest[0].resource[1].searchParam[2].definition = "SearchParameter/Immunization-vaccine-code"
+* rest[0].resource[1].searchParam[2].definition = "SearchParameter/immunization-vaccine-code"
 * rest[0].resource[1].searchParam[3].name = "date"
 * rest[0].resource[1].searchParam[3].type = #date
-* rest[0].resource[1].searchParam[3].definition = "SearchParameter/Immunization-date"
+* rest[0].resource[1].searchParam[3].definition = "SearchParameter/immunization-date"
 // Supported _revinclude
 * rest[0].resource[1].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -130,16 +130,16 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[2].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[2].searchParam[0].name = "patient.identifier"
 * rest[0].resource[2].searchParam[0].type = #token
-* rest[0].resource[2].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[2].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
 * rest[0].resource[2].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[2].searchParam[1].type = #date
-* rest[0].resource[2].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[2].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[2].searchParam[2].name = "vaccine-code"
 * rest[0].resource[2].searchParam[2].type = #token
-* rest[0].resource[2].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[2].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
 * rest[0].resource[2].searchParam[3].name = "organization-identifier"
 * rest[0].resource[2].searchParam[3].type = #token
-* rest[0].resource[2].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+* rest[0].resource[2].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[2].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -162,16 +162,16 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[10].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[10].searchParam[0].name = "patient.identifier"
 * rest[0].resource[10].searchParam[0].type = #token
-* rest[0].resource[10].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[10].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
 * rest[0].resource[10].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[10].searchParam[1].type = #date
-* rest[0].resource[10].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[10].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[10].searchParam[2].name = "vaccine-code"
 * rest[0].resource[10].searchParam[2].type = #token
-* rest[0].resource[10].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[10].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
 * rest[0].resource[10].searchParam[3].name = "organization-identifier"
 * rest[0].resource[10].searchParam[3].type = #token
-* rest[0].resource[10].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+* rest[0].resource[10].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[10].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -196,16 +196,16 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[11].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[11].searchParam[0].name = "patient.identifier"
 * rest[0].resource[11].searchParam[0].type = #token
-* rest[0].resource[11].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[11].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
 * rest[0].resource[11].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[11].searchParam[1].type = #date
-* rest[0].resource[11].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[11].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[11].searchParam[2].name = "vaccine-code"
 * rest[0].resource[11].searchParam[2].type = #token
-* rest[0].resource[11].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[11].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
 * rest[0].resource[11].searchParam[3].name = "organization-identifier"
 * rest[0].resource[11].searchParam[3].type = #token
-* rest[0].resource[11].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+* rest[0].resource[11].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[11].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -227,16 +227,16 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[12].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[12].searchParam[0].name = "patient.identifier"
 * rest[0].resource[12].searchParam[0].type = #token
-* rest[0].resource[12].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[12].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
 * rest[0].resource[12].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[12].searchParam[1].type = #date
-* rest[0].resource[12].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[12].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[12].searchParam[2].name = "vaccine-code"
 * rest[0].resource[12].searchParam[2].type = #token
-* rest[0].resource[12].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[12].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
 * rest[0].resource[12].searchParam[3].name = "organization-identifier"
 * rest[0].resource[12].searchParam[3].type = #token
-* rest[0].resource[12].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+* rest[0].resource[12].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[12].searchRevInclude[0] = "NgImmProvenance:target"
 
@@ -257,16 +257,16 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[13].operation[0].documentation = "Submits an instance of bundle profile to the national immunization registry/repository."
 * rest[0].resource[13].searchParam[0].name = "patient.identifier"
 * rest[0].resource[13].searchParam[0].type = #token
-* rest[0].resource[13].searchParam[0].definition = "SearchParameter/Bundle-patient.identifier"
+* rest[0].resource[13].searchParam[0].definition = "SearchParameter/bundle-patient.identifier"
 * rest[0].resource[13].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[13].searchParam[1].type = #date
-* rest[0].resource[13].searchParam[1].definition = "SearchParameter/Bundle-_lastUpdated"
+* rest[0].resource[13].searchParam[1].definition = "SearchParameter/bundle-_lastUpdated"
 * rest[0].resource[13].searchParam[2].name = "vaccine-code"
 * rest[0].resource[13].searchParam[2].type = #token
-* rest[0].resource[13].searchParam[2].definition = "SearchParameter/Bundle-vaccine-code"
+* rest[0].resource[13].searchParam[2].definition = "SearchParameter/bundle-vaccine-code"
 * rest[0].resource[13].searchParam[3].name = "organization-identifier"
 * rest[0].resource[13].searchParam[3].type = #token
-* rest[0].resource[13].searchParam[3].definition = "SearchParameter/Bundle-organization-identifier"
+* rest[0].resource[13].searchParam[3].definition = "SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[13].searchRevInclude[0] = "NgImmProvenance:target"
 

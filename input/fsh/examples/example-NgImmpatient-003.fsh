@@ -8,12 +8,12 @@ Description: "A sample immunization patient from Lagos State."
 // ---- Identifiers ----
 //* identifier[MedicalRecordsNumber].system = "http://hospital.org/medicalrecord-no"
 * identifier[MedicalRecordsNumber].value = "LUTH-MRN-2025-0789"
-* identifier[MedicalRecordsNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[MedicalRecordsNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/patient-identifier-cs"
 * identifier[MedicalRecordsNumber].type.coding[0].code = #MRN
 
 //* identifier[PhoneNumber].system = "http://ncc.gov.ng/phone-no"
 * identifier[PhoneNumber].value = "08051234567"
-* identifier[PhoneNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/CodeSystem/ng-identifier-type"
+* identifier[PhoneNumber].type.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/patient-identifier-cs"
 * identifier[PhoneNumber].type.coding[0].code = #MOBILE
 
 // ---- Name & Demographics ----

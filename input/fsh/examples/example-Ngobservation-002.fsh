@@ -22,7 +22,7 @@ Description: "Observation recorded during a later visit to update client status 
 * component[pregnancyStatus].code.coding.system = "http://loinc.org"
 * component[pregnancyStatus].code.coding.code = #82810-3
 * component[pregnancyStatus].code.coding.display = "Pregnancy status"
-* component[pregnancyStatus].valueCodeableConcept.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-pregnancy-status"
+* component[pregnancyStatus].valueCodeableConcept.coding.system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-pregnancy-status"
 * component[pregnancyStatus].valueCodeableConcept.coding.code = #notpregnant
 * component[pregnancyStatus].valueCodeableConcept.coding.display = "Not Pregnant"
 
@@ -30,9 +30,9 @@ Description: "Observation recorded during a later visit to update client status 
 * component[hivStatus].code.coding.system = "http://loinc.org"
 * component[hivStatus].code.coding.code = #55284-4
 * component[hivStatus].code.coding.display = "HIV status"
-* component[hivStatus].valueCodeableConcept.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-hiv-status"
+* component[hivStatus].valueCodeableConcept.coding.system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-hiv-status"
 * component[hivStatus].valueCodeableConcept.coding.code = #DE46
-* component[hivStatus].valueCodeableConcept.coding.display = "Unknown"
+//* component[hivStatus].valueCodeableConcept.coding.display = "Unknown"
 
 // Only the weeks slice populated
 * component[ageInWeeks].code = $ngAgeComp#age-in-weeks "Age in weeks"

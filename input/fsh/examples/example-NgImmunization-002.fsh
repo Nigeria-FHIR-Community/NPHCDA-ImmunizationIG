@@ -12,7 +12,7 @@ Description: "A complete example of an immunization record per the NgImmImmuniza
 * manufacturer = Reference(organization-002) // Example org
 
 // ---- Vaccine administered ----
-* vaccineCode.coding[0].system = "http://nphcda.gov.ng/ValueSet/vaccine-local"
+* vaccineCode.coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/vaccine-local"
 * vaccineCode.coding[0].code = #bcg
 * vaccineCode.coding[0].display = "BCG Vaccine"
 * vaccineCode.text = "BCG"

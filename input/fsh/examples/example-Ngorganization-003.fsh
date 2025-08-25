@@ -13,7 +13,7 @@ Description: "A temporary outreach post supported by an international NGO provid
 * name = "UNICEF Supported Outreach Immunization Post"
 
 // ---- Type (from NGFacilityTypeVS) ----
-* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-facility-types"
 * type[0].coding[0].code = #outreach
 * type[0].coding[0].display = "Outreach session"
 

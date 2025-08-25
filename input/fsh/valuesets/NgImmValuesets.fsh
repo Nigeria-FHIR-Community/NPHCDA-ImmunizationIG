@@ -108,6 +108,17 @@ Description: "This CodeSystem defines the health of the client's sibling"
 
 
 
+//Identifier VS
+
+ValueSet: NGIdentifierVS
+Id: patient-identifier-vs
+Title: "NG-Imm MMZ.C.DE1 Client Identifier VS"
+Description: "This ValueSet defines list of options for uniquely Identifting a Client"
+* ^status = #active
+* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/patient-identifier-cs"
+* ^experimental = false
+* include codes from system NGIdentifierCS
+
 
 //Immunization Valuesets
 ValueSet: NGSessionTypeVS
@@ -167,6 +178,17 @@ Description: "The outcome of the reaction"
 * ^experimental = false
 * include codes from system NGClinicalStatusCS
 
+
+
+//Facility Registry
+ValueSet: NGFacilityIdentifierVS
+Id: ng-facility-identifier-cs
+Title: "NG-Imm Clinical Status VS"
+Description: "The outcome of the reaction"
+* ^status = #active
+* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-facility-identifier-cs"
+* ^experimental = false
+* include codes from system NGFacilityIdentifierCS
 
 
 

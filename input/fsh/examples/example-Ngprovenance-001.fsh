@@ -109,7 +109,7 @@ Usage: #example
 * item[7].linkId = "facility"
 * item[7].text = "Health Facility of Registration"
 * item[7].type = #reference
-* item[7].answerValueSet = "http://nphcda.gov.ng/ValueSet/facility-list"
+* item[7].answerValueSet = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-facility-identifier-cs"
 
 
 

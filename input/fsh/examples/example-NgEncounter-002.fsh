@@ -7,7 +7,7 @@ Description: "An outreach immunization encounter per the NG-Imm Encounter profil
 * status = #finished
 
 // Encounter.class – bound to NGSessionTypeVS (fixed | outreach | mobile)
-* class.system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-session-type"
+* class.system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
 * class.code = #outreach
 * class.display = "Outreach session"
 

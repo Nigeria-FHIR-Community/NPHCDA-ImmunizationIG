@@ -34,7 +34,7 @@ CodeSystem: NGRelationshipsCS
 Id: nigeria-relationship
 Title: "IMMZ.C.DE20 - Relationships CS"
 Description: "This CodeSystem IMMZ.C.DE20 defines list of persons related to a patient, but who is not a direct target of care"
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-relationship"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-relationship"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -67,7 +67,7 @@ CodeSystem: NGSiblingHealthStatusCS
 Id: nigeria-sibling-health-status
 Title: "IMMZ.C.DE30 Sibling Health Status CS"
 Description: "This CodeSystem IMMZ.C.DE30 defines the health of the client's sibling"
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-sibling-health-statusCS"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-sibling-health-status"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -86,7 +86,7 @@ CodeSystem: NGHivStatusCS
 Id: nigeria-hiv-status
 Title: "IMMZ.C.DE31 - Client HIV status CS"
 Description: "This CodeSystem IMMZ.C.DE31 defines list of options for HIV status of a Client"
-//* ^url = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-hiv-statusCS"
+* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-hiv-status"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

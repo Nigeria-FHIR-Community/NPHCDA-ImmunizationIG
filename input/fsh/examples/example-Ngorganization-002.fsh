@@ -13,7 +13,7 @@ Description: "A private hospital in Abuja offering immunization services."
 * name = "Garki Specialist Hospital"
 
 // ---- Type (from NGFacilityTypeVS) ----
-* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type[0].coding[0].system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-facility-types"
 * type[0].coding[0].code = #tertiary
 * type[0].coding[0].display = "Tertiary Hospital"
 

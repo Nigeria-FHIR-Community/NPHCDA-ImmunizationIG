@@ -22,17 +22,17 @@ Description: "An example observation recorded when a client is registered, captu
 // Pregnancy Status
 * component[pregnancyStatus].code.coding.system = $loinc
 * component[pregnancyStatus].code.coding.code = #82810-3
-* component[pregnancyStatus].code.coding.display = "Pregnancy status"
-* component[pregnancyStatus].valueCodeableConcept.coding.system = "http://nphcda.gov.ng/ig/fhir/CodeSystem/ng-pregnancy-statusCS"
+//* component[pregnancyStatus].code.coding.display = "Pregnancy status"
+* component[pregnancyStatus].valueCodeableConcept.coding.system = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-pregnancy-status"
 * component[pregnancyStatus].valueCodeableConcept.coding.code = #notpregnant
 * component[pregnancyStatus].valueCodeableConcept.coding.display = "Not Pregnant"
 
 // HIV Status
 * component[hivStatus].code.coding.system = $loinc
 * component[hivStatus].code.coding.code = #55284-4
-* component[hivStatus].code.coding.display = "HIV status"
-* component[hivStatus].valueCodeableConcept.coding.system = "http://nphcda.gov.ng/ig/CodeSystem/nigeria-hiv-status"
-* component[hivStatus].valueCodeableConcept.coding.code = #DE45
+//* component[hivStatus].code.coding.display = "HIV status"
+* component[hivStatus].valueCodeableConcept.coding.system = "hhttp://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-hiv-status"
+* component[hivStatus].valueCodeableConcept.coding.code = #negative
 * component[hivStatus].valueCodeableConcept.coding.display = "Negative"
 
 // Birth Weight
