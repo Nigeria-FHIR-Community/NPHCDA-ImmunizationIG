@@ -4,16 +4,16 @@ Usage: #definition
 Title: "StructureMap: RegisterClientModel to NgImmPatient"
 Description: "Map logical RegisterClientModel to NgImmPatient profile"
 * id = "registerclientmodel-to-ngimmpatient"
-* url = "https://nphcda.gov.ng/immunizationIG/StructureMap/registerclientmodel-to-ngimmpatient"
+* url = "http://nphcda.gov.ng/ig/immunization/StructureMap/registerclientmodel-to-ngimmpatient"
 * name = "RegisterClientModelToNgImmPatient"
 * status = #active
 
 // Source and target structures
-* structure[0].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model"
+* structure[0].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/register-client-model"
 * structure[0].mode = #source
 * structure[0].alias = "RCM"
 
-* structure[1].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition-NgImmPatient"
+* structure[1].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition-NgImmPatient"
 * structure[1].mode = #target
 * structure[1].alias = "Patient"
 
@@ -58,7 +58,7 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 * group.rule[3].target.context = "patient"
 * group.rule[3].target.element = "gender"
 * group.rule[3].target.transform = #translate
-* group.rule[3].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/ConceptMap/RCMSexToAdministrativeGender"
+* group.rule[3].target.parameter[0].valueString = "http://nphcda.gov.ng/ig/immunization/ConceptMap/RCMSexToAdministrativeGender"
 * group.rule[3].target.parameter[1].valueString = "code"
 
 // Date of birth
@@ -152,7 +152,7 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 * group.rule[13].target.context = "patient"
 * group.rule[13].target.element = "extension.valueInteger"
 * group.rule[13].target.transform = #copy
-* group.rule[13].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInWeeks"
+* group.rule[13].target.parameter[0].valueString = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/NGAgeInWeeks"
 
 * group.rule[14].name = "SetAgeInMonths"
 * group.rule[14].source.context = "rcm"
@@ -160,7 +160,7 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 * group.rule[14].target.context = "patient"
 * group.rule[14].target.element = "extension.valueInteger"
 * group.rule[14].target.transform = #copy
-* group.rule[14].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInMonths"
+* group.rule[14].target.parameter[0].valueString = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/NGAgeInMonths"
 
 * group.rule[15].name = "SetAgeInYears"
 * group.rule[15].source.context = "rcm"
@@ -168,7 +168,7 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 * group.rule[15].target.context = "patient"
 * group.rule[15].target.element = "extension.valueInteger"
 * group.rule[15].target.transform = #copy
-* group.rule[15].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGAgeInYears"
+* group.rule[15].target.parameter[0].valueString = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/NGAgeInYears"
 
 * group.rule[16].name = "SetWeightAtBirth"
 * group.rule[16].source.context = "rcm"
@@ -176,6 +176,6 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 * group.rule[16].target.context = "patient"
 * group.rule[16].target.element = "extension.valueQuantity"
 * group.rule[16].target.transform = #copy
-* group.rule[16].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGBirthWeight"
+* group.rule[16].target.parameter[0].valueString = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/NGBirthWeight"
 
 

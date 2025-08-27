@@ -4,29 +4,29 @@ Usage: #definition
 Title: "StructureMap: ManageAEFI to AllergyIntolerance, Encounter, Practitioner, and Patient"
 Description: "Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEncounter, NgImmPractitioner, and NgImmPatient profiles"
 * id = "manageaefi-to-ngimm-aefi-profiles"
-* url = "https://nphcda.gov.ng/immunizationIG/StructureMap/manageaefi-to-ngimm-aefi-profiles"
+* url = "http://nphcda.gov.ng/ig/immunization/StructureMap/manageaefi-to-ngimm-aefi-profiles"
 * name = "ManageAEFIToNgImmAEFIProfiles"
 * status = #active
 
 // Source structure
-* structure[0].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/manage-aefi"
+* structure[0].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/manage-aefi"
 * structure[0].mode = #source
 * structure[0].alias = "AEFI"
 
 // Target structures
-* structure[+].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/allergy-intolerance-profile"
+* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/allergy-intolerance-profile"
 * structure[=].mode = #target
 * structure[=].alias = "Allergy"
 
-* structure[+].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"
+* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-encounter"
 * structure[=].mode = #target
 * structure[=].alias = "Encounter"
 
-* structure[+].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"
+* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-practitioner"
 * structure[=].mode = #target
 * structure[=].alias = "Practitioner"
 
-* structure[+].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient"
+* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-patient"
 * structure[=].mode = #target
 * structure[=].alias = "Patient"
 

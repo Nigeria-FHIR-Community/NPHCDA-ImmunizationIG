@@ -107,7 +107,7 @@ Id: patient-identifier-vs
 Title: "NG-Imm MMZ.C.DE1 Client Identifier VS"
 Description: "This ValueSet defines list of options for uniquely Identifting a Client"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/patient-identifier-cs"
+* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/patient-identifier-vs"
 * ^experimental = false
 * include codes from system NGIdentifierCS
 
@@ -166,7 +166,7 @@ Id: nigeria-clinical-status
 Title: "NG-Imm Clinical Status VS"
 Description: "The outcome of the reaction"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-hiv-status"
+* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-clinical-status"
 * ^experimental = false
 * include codes from system NGClinicalStatusCS
 
@@ -190,7 +190,7 @@ ValueSet: NGVaccineLocalVS
 Id: ng-vaccine-local-vs
 Title: "NG IMMZ.D.DE4 Vaccine Local ValueSet"
 Description: "All local vaccine codes (DE1–DE29)."
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/vaccine-local"
+* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-vaccine-local-vs"
 * ^experimental = false
 * ^status = #active
 * include codes from system NGVaccineLocalCS

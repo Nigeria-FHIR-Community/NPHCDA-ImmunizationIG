@@ -4,31 +4,31 @@ Usage: #definition
 Title: "StructureMap: AdministerVaccine to FHIR Resources"
 Description: "Map logical AdministerVaccine to NgImmImmunization, NgImmLocation, NgImmPractitioner, and NgImmEncounter profiles"
 * id = "adminvaccine-to-immunization"
-* url = "https://nphcda.gov.ng/immunizationIG/StructureMap/adminvaccine-to-immunization"
+* url = "http://nphcda.gov.ng/ig/immunization/StructureMap/adminvaccine-to-immunization"
 * name = "AdministerVaccineToFHIRResources"
 * status = #active
 
-* structure[0].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/administervaccine"
+* structure[0].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/administervaccine"
 * structure[0].mode = #source
 * structure[0].alias = "AV"
 
-* structure[1].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization"
+* structure[1].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-immunization"
 * structure[1].mode = #target
 * structure[1].alias = "IMM"
 
-* structure[2].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-location"
+* structure[2].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-location"
 * structure[2].mode = #target
 * structure[2].alias = "LOC"
 
-* structure[3].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"
+* structure[3].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-practitioner"
 * structure[3].mode = #target
 * structure[3].alias = "PRAC"
 
-* structure[4].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"
+* structure[4].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-encounter"
 * structure[4].mode = #target
 * structure[4].alias = "ENC"
 
-* structure[5].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/register-client-model"
+* structure[5].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/register-client-model"
 * structure[5].mode = #source
 * structure[5].alias = "RCM"
 
@@ -46,7 +46,7 @@ Description: "Map logical AdministerVaccine to NgImmImmunization, NgImmLocation,
 * group[0].rule[0].target.context = "ENC"
 * group[0].rule[0].target.element = "extension.valueCodeableConcept"
 * group[0].rule[0].target.transform = #copy
-* group[0].rule[0].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGPregnancyStatus"
+* group[0].rule[0].target.parameter[0].valueString = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/NGPregnancyStatus"
 
 * group[0].rule[1].name = "SetHIVStatus"
 * group[0].rule[1].source.context = "RCM"
@@ -54,7 +54,7 @@ Description: "Map logical AdministerVaccine to NgImmImmunization, NgImmLocation,
 * group[0].rule[1].target.context = "ENC"
 * group[0].rule[1].target.element = "extension.valueCodeableConcept"
 * group[0].rule[1].target.transform = #copy
-* group[0].rule[1].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/NGHIVStatus"
+* group[0].rule[1].target.parameter[0].valueString = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/NGHIVStatus"
 
 
 

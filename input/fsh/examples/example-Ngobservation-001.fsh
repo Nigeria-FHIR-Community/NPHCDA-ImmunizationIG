@@ -28,7 +28,7 @@ Description: "An example observation recorded when a client is registered, captu
 * component[hivStatus].code.coding.system = $sct
 * component[hivStatus].code.coding.code = #278977008
 * component[hivStatus].code.coding.display = "HIV status"
-* component[hivStatus].valueCodeableConcept.coding.system = $ngAgeComp
+* component[hivStatus].valueCodeableConcept.coding.system = $hivStatus
 * component[hivStatus].valueCodeableConcept.coding.code = #negative
 * component[hivStatus].valueCodeableConcept.coding.display = "Negative"
 

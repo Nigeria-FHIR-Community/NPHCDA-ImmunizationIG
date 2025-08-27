@@ -4,24 +4,24 @@ Usage: #definition
 Title: "StructureMap: ReportGeneration to MeasureReport and Related Profiles"
 Description: "Map ReportGeneration logical model to NgImmMeasureReport, NgImmMeasure, and NgImmPractitioner"
 * id = "reportgeneration-to-measurereport"
-* url = "https://nphcda.gov.ng/immunizationIG/StructureMap/reportgeneration-to-measurereport"
+* url = "http://nphcda.gov.ng/ig/immunization/StructureMap/reportgeneration-to-measurereport"
 * name = "ReportGenerationToMeasureReport"
 * status = #active
 
 // Structures
-* structure[0].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/reportgeneration"
+* structure[0].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/reportgeneration"
 * structure[0].mode = #source
 * structure[0].alias = "RG"
 
-* structure[1].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measurereport"
+* structure[1].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ngimm-measurereport"
 * structure[1].mode = #target
 * structure[1].alias = "MR"
 
-* structure[2].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ngimm-measure"
+* structure[2].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ngimm-measure"
 * structure[2].mode = #target
 * structure[2].alias = "MEASURE"
 
-* structure[3].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"
+* structure[3].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-practitioner"
 * structure[3].mode = #target
 * structure[3].alias = "PRAC"
 

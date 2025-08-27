@@ -4,28 +4,28 @@ Usage: #definition
 Title: "StructureMap: DefaulterTracking to Immunization and related profiles"
 Description: "Map logical DefaulterTracking model to NgImmImmunization, NgImmPatient, NgImmEncounter, and NgImmPractitioner profiles"
 * id = "defaultertracking-to-immunization"
-* url = "https://nphcda.gov.ng/immunizationIG/StructureMap/defaultertracking-to-immunization"
+* url = "http://nphcda.gov.ng/ig/immunization/StructureMap/defaultertracking-to-immunization"
 * name = "DefaulterTrackingToImmunization"
 * status = #active
 
 // Structures
-* structure[0].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/defaultertracking"
+* structure[0].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/defaultertracking"
 * structure[0].mode = #source
 * structure[0].alias = "DT"
 
-* structure[1].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-patient"
+* structure[1].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-patient"
 * structure[1].mode = #target
 * structure[1].alias = "PAT"
 
-* structure[2].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-immunization"
+* structure[2].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-immunization"
 * structure[2].mode = #target
 * structure[2].alias = "IMM"
 
-* structure[3].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-encounter"
+* structure[3].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-encounter"
 * structure[3].mode = #target
 * structure[3].alias = "ENC"
 
-* structure[4].url = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/ng-imm-practitioner"
+* structure[4].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-practitioner"
 * structure[4].mode = #target
 * structure[4].alias = "PRAC"
 
