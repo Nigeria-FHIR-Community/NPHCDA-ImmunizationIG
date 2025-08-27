@@ -38,8 +38,8 @@ Description: "Map logical AdministerVaccine to NgImmImmunization, NgImmLocation,
 * group[0].typeMode = #none
 * group[0].input[0].name = "RCM"
 * group[0].input[0].mode = #source
-* group[0].input[0].name = "ENC"
-* group[0].input[0].mode = #target
+* group[0].input[1].name = "ENC"
+* group[0].input[1].mode = #target
 * group[0].rule[0].name = "SetPregnancyStatus"
 * group[0].rule[0].source.context = "RCM"
 * group[0].rule[0].source.element = "pregnancyStatus"
