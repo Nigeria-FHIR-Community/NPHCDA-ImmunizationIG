@@ -127,9 +127,9 @@ Description: "Maps local dose-labelled DE codes to ICD-11 vaccine concepts (anti
 * name = "Local-icd11"
 * experimental = false
 * status = #active
-* sourceUri = $ngVacCS
+* sourceUri = $ngVacVS
 * targetUri = $icd11
-* group[0].source = $ngVacCS
+* group[0].source = $ngVacVS
 * group[0].target = $icd11
 
 // BCG
