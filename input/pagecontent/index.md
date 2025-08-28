@@ -27,7 +27,7 @@
                         <tr>
             <td>NPHCDA Immunization FHIR IG addressing capability statement comments</td>
             <td>7th August 2025</td>
-            <td>2st ci-build Draft</td>
+            <td>2nd ci-build Draft</td>
             <td>1.0.0</td>
         </tr>
 
@@ -40,7 +40,13 @@
         <tr>
             <td>Create Bundles and examples and update vaccine Library</td>
             <td>18th August 2025</td>
-            <td>5rd ci-build Draft</td>
+            <td>4th ci-build Draft</td>
+            <td>1.0.0</td>
+        </tr>
+         <tr>
+            <td>Create Bundles and examples and update vaccine Library</td>
+            <td>28th August 2025</td>
+            <td>5th ci-build Draft</td>
             <td>1.0.0</td>
         </tr>
     </tbody>
@@ -66,8 +72,8 @@ A User Requirement Gathering (URG) process is critical in developing Nigeria’s
 This Implementation Guide (IG) defines the core FHIR profiles, extensions, value sets, and terminology bindings required to support routine immunization workflows in Nigeria, using HL7® FHIR® standards using the WHO SMART Guidelines framework. Developed under the leadership of the National Primary Health Care Development Agency (NPHCDA), this IG provides structured guidance for digitizing, exchanging, and interpreting immunization-related data in an interoperable and scalable way.
 
 The scope of this guide focuses on the following core components:
-- **Standardizing how immunization clients (patients) are registered and managed**, using the [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile.
-- **Structuring immunization service delivery records**, such as vaccine administration, using the [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profile.
+- **PROFILES:**, The Immunization IG contain the following profile; [**NgImmAllergyIntolerance**](StructureDefinition-allergy-intolerance-profile.html) profile, [**NgImmEncounter**](StructureDefinition-ng-imm-encounter.html) profile, [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profile, [**NgImmLocation**](StructureDefinition-nigeria-location.html) profile, [**NgImmMeasure**](StructureDefinition-ngimm-measure.html) profile, [**NgImmMeasureReport**](StructureDefinition-measure-report-profile.html) profile, [**NgImmRUObservation**](StructureDefinition-NgImmRUObservation.html) profile, [**NgImmOrganisation**](StructureDefinition-/ng-imm-organization.html) profile, [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile, [**NgPractitioner**](StructureDefinition-NgImmPractitioner.html) profile, [**NgImmPractitionerRole**](StructureDefinition-ng-imm-practitionerrole.html) profile, [**NgImmProvenance**](StructureDefinition-ng-imm-provenance.html) profile, [**NgImmRelatedPerson**](StructureDefinition-mother-other-children.html) profile.
+- **TRANSACTION BUNDLES**: The bundles associated with this IG includes; [**NgImmRegisterFacilityBundle**](StructureDefinition-ngimm-register-facility-bundle.html) profile, [**NgImmClientRegistrationBundle**](StructureDefinition-ngimm-ngimm-client-registration-bundle.html) profile, [**NgImmUpdateClientBundle**](StructureDefinition-ngimm-update-client-bundle.html) profile, [**NgImmManageReportAEFIBundle**](StructureDefinition-ngimm-manage-report-aefi-bundle.html) profile, [**NgImmGenerateReportBundle**](StructureDefinition-ngimm-generate-report-bundle.html) profile
 - **Defining the necessary search parameters, RESTful operations, and data constraints** to ensure interoperable exchange of immunization data across digital platforms.
 - **Providing the minimum data structures required** for systems to exchange immunization-related data across multiple levels of the health system, from point-of-care to national dashboards.
 
