@@ -84,3 +84,68 @@ Description: "IMMZ.C6 - A logical model for tracking client immunization history
   * ^code[+] = #IMMZ.C1.DE42
 * signature 0..1 string "Signature" "The signature of the reporting officer."
   * ^code[+] = #IMMZ.C1.DE43
+
+
+
+
+
+
+// Average example for the logical model: UpdateClientHistory
+Instance: Example-UpdateClientHistory
+InstanceOf: UpdateClientHistory
+Usage: #example
+Title: "Example UpdateClientHistory (Average)"
+Description: "Tracks an individual’s immunization history updates for routine antigens and supplements."
+
+* clientCompletedPrimarySeries = true
+
+// HIV status (use a CodeSystem in the example, not a ValueSet)
+* hivStatus.coding[0].system = "http://nphcda.gov.ng/CodeSystem/hiv-status"
+* hivStatus.coding[0].code = #negative
+* hivStatus.coding[0].display = "Negative"
+* hivStatus.text = "HIV negative"
+
+// ---- Vaccine Administration Dates (illustrative schedule) ----
+* bcgDoseDate = "2023-01-05"
+* hepB0DoseDate = "2023-01-05"
+* polioBopv0DoseDate = "2023-01-05"
+
+* pentavalent1DoseDate = "2023-03-05"
+* opv1DoseDate = "2023-03-05"
+* pcv1DoseDate = "2023-03-05"
+* rotavirus1DoseDate = "2023-03-05"
+
+* ipv1DoseDate = "2023-05-05"
+* opv2DoseDate = "2023-05-05"
+* pcv2DoseDate = "2023-05-05"
+* pentavalent2DoseDate = "2023-05-05"
+* rotavirus2DoseDate = "2023-05-05"
+
+* opv3DoseDate = "2023-07-05"
+* pentavalent3DoseDate = "2023-07-05"
+* pcv3DoseDate = "2023-07-05"
+
+* mr1DoseDate = "2024-01-10"
+* yellowFeverDoseDate = "2024-01-10"
+* menADoseDate = "2024-01-10"
+* vitaminA1DoseDate = "2024-01-10"
+
+// Optional additional series where applicable
+* malaria1DoseDate = "2023-06-10"
+* malaria2DoseDate = "2023-07-10"
+* malaria3DoseDate = "2023-08-10"
+* malaria4DoseDate = "2025-01-10"
+
+* ipv2DoseDate = "2024-01-10"
+* rotavirus3DoseDate = "2023-07-05" // if 3-dose rota schedule in use
+* mr2DoseDate = "2025-01-10"
+* vitaminA2DoseDate = "2025-01-10"
+
+* llinGivenDate = "2023-01-05"
+
+// ---- Reporting & Notes ----
+* state = "Well at last visit"
+* comments = "Primary series complete; received LLIN at birth contact."
+* reportingOfficerName = "Ngozi Okafor"
+* designation = "Immunization Officer"
+* signature = "Signed electronically by N. Okafor on 2025-08-20"

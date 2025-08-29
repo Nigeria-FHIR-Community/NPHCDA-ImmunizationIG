@@ -70,31 +70,3 @@ Transaction Bundle to register an immunization client and related context.
 
 
 
-
-// Example bundle with only Patient to keep surface area tiny
-// Instance: client-registration-bundle-min-001
-// InstanceOf: NgImmClientRegistrationBundle
-// Usage: #example
-// * type = #transaction
-// * timestamp = "2025-08-17T09:10:00+01:00"
-
-// // Patient entry
-// * entry[patient].fullUrl = "urn:uuid:patient-001"
-// * entry[patient].resource = patient-001
-// * entry[patient].request.method = #POST
-// * entry[patient].request.url = "Patient"
-
-// Minimal Patient that typically passes most profiles (adjust if yours requires more)
-// Instance: patient-001
-// InstanceOf: NgImmPatient
-// Usage: #example
-// * id = "patient-001"
-// * identifier[0].system = "http://hospital.example.org/mrn"
-// * identifier[0].value = "MRN-0001"
-// * name[0].family = "Okoro"
-// * name[0].given[0] = "Ada"
-// * gender = #female
-// * birthDate = "2023-05-10"
-
-
-

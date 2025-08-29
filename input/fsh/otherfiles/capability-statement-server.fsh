@@ -133,7 +133,7 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[2].searchParam[0].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[2].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[2].searchParam[1].type = #date
-* rest[0].resource[2].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[2].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-lastUpdated"
 * rest[0].resource[2].searchParam[2].name = "vaccine-code"
 * rest[0].resource[2].searchParam[2].type = #token
 * rest[0].resource[2].searchParam[2].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-vaccine-code"
@@ -312,7 +312,7 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[10].searchParam[0].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[10].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[10].searchParam[1].type = #date
-* rest[0].resource[10].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[10].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-lastUpdated"
 * rest[0].resource[10].searchParam[2].name = "vaccine-code"
 * rest[0].resource[10].searchParam[2].type = #token
 * rest[0].resource[10].searchParam[2].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-vaccine-code"
@@ -344,7 +344,7 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[11].searchParam[0].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[11].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[11].searchParam[1].type = #date
-* rest[0].resource[11].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[11].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-lastUpdated"
 * rest[0].resource[11].searchParam[2].name = "vaccine-code"
 * rest[0].resource[11].searchParam[2].type = #token
 * rest[0].resource[11].searchParam[2].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-vaccine-code"
@@ -374,7 +374,7 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[12].searchParam[0].definition = "http://nphcda.gov.ng/ig/immunization/OperationDefinition/bundle-patient.identifier"
 * rest[0].resource[12].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[12].searchParam[1].type = #date
-* rest[0].resource[12].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[12].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-lastUpdated"
 * rest[0].resource[12].searchParam[2].name = "vaccine-code"
 * rest[0].resource[12].searchParam[2].type = #token
 * rest[0].resource[12].searchParam[2].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-vaccine-code"
@@ -404,7 +404,7 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[13].searchParam[0].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-patient.identifier"
 * rest[0].resource[13].searchParam[1].name = "_lastUpdated"
 * rest[0].resource[13].searchParam[1].type = #date
-* rest[0].resource[13].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-_lastUpdated"
+* rest[0].resource[13].searchParam[1].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-lastUpdated"
 * rest[0].resource[13].searchParam[2].name = "vaccine-code"
 * rest[0].resource[13].searchParam[2].type = #token
 * rest[0].resource[13].searchParam[2].definition = "http://nphcda.gov.ng/ig/immunization//SearchParameter/bundle-vaccine-code"
@@ -413,4 +413,7 @@ Provenance is required for all operations and must contain:
 * rest[0].resource[13].searchParam[3].definition = "http://nphcda.gov.ng/ig/immunization/SearchParameter/bundle-organization-identifier"
 // Supported _revinclude
 * rest[0].resource[13].searchRevInclude[0] = "NgImmProvenance:target"
+
+
+
 

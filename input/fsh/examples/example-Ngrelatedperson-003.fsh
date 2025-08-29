@@ -11,12 +11,3 @@ Description: "Example of a RelatedPerson resource representing a younger infant 
 * relationship.text = "BROTHER"
 //* extension[siblingHealthStatus].valueCodeableConcept = $sct#2492009 "Malnutrition (disorder)"
 
-// Narrative
-* text.status = #generated
-* text.div = """
-<div xmlns="http://www.w3.org/1999/xhtml">
-  <p><b>Sibling</b>: Chinedu Okoro (male), born 2024-01-15</p>
-  <p><b>Relationship to patient</b>: brother (NgImmPatient/patient-003)</p>
-  <p><b>Sibling health status</b>: Malnutrition</p>
-</div>
-"""

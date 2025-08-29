@@ -68,3 +68,49 @@ Description: "IMMZ.C5 - A logical model representing a client being registered i
 
 
 
+
+
+// Average EXAMPLE for the logical model: RegisterClientModel
+Instance: Example-RegisterClient
+InstanceOf: RegisterClientModel
+Usage: #example
+Title: "Example RegisterClient (Average)"
+Description: "Representative example of a client registered in the immunization system."
+
+// ---------------- Core Identifiers & Demographics ----------------
+* identifier = "CLI-2025-0001"
+* name.family = "Okafor"
+* name.given = "Amaka"
+* sex = http://nphcda.gov.ng/ValueSet/NGGenderVS#female "Female"
+* dateOfBirth = "2021-05-12"
+* ageInYears = 4
+* weightAtBirth.value = 3.2
+* weightAtBirth.unit = "kg"
+* weightAtBirth.system = "http://unitsofmeasure.org"
+* weightAtBirth.code = #kg
+
+// ---------------- Address ----------------
+* address.residentialAddress = "No. 12 Independence Layout"
+* address.houseNumber = "12"
+* address.village = "Independence"
+* address.town = "Enugu"
+* address.ward = http://nphcda.gov.ng/ValueSet/NGWardsVS#en-agwu "Agwu"
+* address.lga = http://nphcda.gov.ng/ValueSet/NGLGAsVS#en-awgu "Awgu LGA"
+* address.state = http://nphcda.gov.ng/ValueSet/NGStatesVS#EN "Enugu"
+
+// ---------------- Contacts (Caregivers) ----------------
+* contact[0].name.family = "Okafor"
+* contact[0].name.given = "Ngozi"
+* contact[0].telecom[0].system = #phone
+* contact[0].telecom[0].value = "+2348012345678"
+* contact[0].relationship.text = "Mother"
+
+// ---------------- Other Children ----------------
+* otherChildren[0].name = "Chidi Okafor"
+* otherChildren[0].birthYear = 2019
+* otherChildren[0].sex = http://nphcda.gov.ng/ValueSet/NGGenderVS#male "Male"
+
+// ---------------- Health / Status ----------------
+* healthStatus = http://nphcda.gov.ng/ValueSet/NGSiblingHealthStatusVS#healthy "Healthy"
+* hivStatus = http://nphcda.gov.ng/ValueSet/NGHivStatusVS#negative "Negative"
+* pregnancyStatus = http://nphcda.gov.ng/ValueSet/NGPregnancyStatusVS#notpregnant "Not Pregnant"

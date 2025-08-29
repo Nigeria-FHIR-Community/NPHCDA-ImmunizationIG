@@ -22,32 +22,32 @@
             <td>NPHCDA Immunization FHIR IG upload to build.fhir.org</td>
             <td>4th August 2025</td>
             <td>1st ci-build Draft</td>
-            <td>1.0.0</td>
+            <td>0.5.1</td>
         </tr>
                         <tr>
             <td>NPHCDA Immunization FHIR IG addressing capability statement comments</td>
             <td>7th August 2025</td>
             <td>2nd ci-build Draft</td>
-            <td>1.0.0</td>
+            <td>0.6.0</td>
         </tr>
 
         <tr>
             <td>NPHCDA Immunization FHIR IG addressing capability statement comments</td>
             <td>11th August 2025</td>
             <td>3rd ci-build Draft</td>
-            <td>1.0.0</td>
+            <td>0.6.1</td>
         </tr>
         <tr>
             <td>Create Bundles and examples and update vaccine Library</td>
             <td>18th August 2025</td>
             <td>4th ci-build Draft</td>
-            <td>1.0.0</td>
+            <td>0.6.2</td>
         </tr>
          <tr>
-            <td>Create Bundles and examples and update vaccine Library</td>
+            <td>Updated the QA Reports</td>
             <td>28th August 2025</td>
             <td>5th ci-build Draft</td>
-            <td>1.0.0</td>
+            <td>0.7.0</td>
         </tr>
     </tbody>
 </table>
@@ -55,13 +55,13 @@
 
 ### Purpose
 
-This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country's adoption of the WHO SMART Guidelines approach by presenting the Digital Adaptation Kit (Business Requirments) for Immunization developed from National Primary Health Care Development Agency (NPHCDA) immunization guidelines. In addition, this IG presents the minimal Client/Server Capability for software-agnostic immunization systems in Nigeria. It presents the workflow in form of logical models, profiles and extensions, terminology structures (ValueSets and CodeSystems), and examples. Also, key operations necessary for conformance of the priority profiles where also presented. This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions.
+This Nigeria Immunization FHIR Implementation Guide (IG) is designed to support the country's adoption of the WHO SMART Guidelines approach by presenting the Digital Adaptation Kit (Business Requirements) for Immunization developed from National Primary Health Care Development Agency (NPHCDA) immunization guidelines. In addition, this IG presents the minimal Client/Server Capability for software-agnostic immunization systems in Nigeria. It presents the workflow in form of logical models, profiles and extensions, terminology structures (ValueSets and CodeSystems), and examples. Also, key operations necessary for conformance of the priority profiles were also presented. This initiative aims to strengthen immunization data management, enhance interoperability, and improve data-driven decision-making by developing standardized, contextually relevant digital solutions.
 
 ### Background
 
 Immunization is one of the most cost-effective public health interventions, yet many countries, including Nigeria, face challenges in achieving full vaccine coverage. Digital tools and data management systems are being integrated into immunization programs to improve efficiency, accuracy, and accessibility. However, the successful adoption and scaling of these systems require solutions that are country-driven, user-friendly, reliable, and contextually relevant.
 
-The WHO SMART Guidelines provide a standardized framework for developing and implementing interoperable, evidence-based, and scalable digital health solutions. This is particularly crucial for immunization, where timely and accurate data supports vaccine coverage tracking, identification of zero-dose children, and equitable service delivery. A key component of this approach is the Digital Adaptation Kit (DAK), which includes health interventions, workflows, core data elements, decision support logic, and other technical components necessary for effective immunization service management.
+The WHO SMART Guidelines provide a standardized framework for developing and implementing interoperable, evidence-based, and scalable digital health solutions. This is particularly crucial for immunization, where timely and accurate data supports vaccine coverage tracking, identification of zero-dose children, and equitable service delivery. A key component of this approach is the Digital Adaptation Kit (DAK), which include health interventions, workflows, core data elements, decision support logic, and other technical components necessary for effective immunization service management.
 
 Nigeria has faced challenges such as data quality issues, fragmented systems, and disparities in access to immunization services. To address these, the country is aligning with the SMART Guidelines methodology and national health strategies like the National Immunization Strategy (NIS) and Immunization Agenda 2030 (IA2030). This initiative aims to enhance data interoperability, decision-making, and service delivery through the adoption of FHIR-based digital systems.
 
@@ -72,8 +72,8 @@ A User Requirement Gathering (URG) process is critical in developing Nigeria’s
 This Implementation Guide (IG) defines the core FHIR profiles, extensions, value sets, and terminology bindings required to support routine immunization workflows in Nigeria, using HL7® FHIR® standards using the WHO SMART Guidelines framework. Developed under the leadership of the National Primary Health Care Development Agency (NPHCDA), this IG provides structured guidance for digitizing, exchanging, and interpreting immunization-related data in an interoperable and scalable way.
 
 The scope of this guide focuses on the following core components:
-- **PROFILES:**, The Immunization IG contain the following profile; [**NgImmAllergyIntolerance**](StructureDefinition-allergy-intolerance-profile.html) profile, [**NgImmEncounter**](StructureDefinition-ng-imm-encounter.html) profile, [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profile, [**NgImmLocation**](StructureDefinition-nigeria-location.html) profile, [**NgImmMeasure**](StructureDefinition-ngimm-measure.html) profile, [**NgImmMeasureReport**](StructureDefinition-measure-report-profile.html) profile, [**NgImmRUObservation**](StructureDefinition-NgImmRUObservation.html) profile, [**NgImmOrganisation**](StructureDefinition-/ng-imm-organization.html) profile, [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile, [**NgPractitioner**](StructureDefinition-NgImmPractitioner.html) profile, [**NgImmPractitionerRole**](StructureDefinition-ng-imm-practitionerrole.html) profile, [**NgImmProvenance**](StructureDefinition-ng-imm-provenance.html) profile, [**NgImmRelatedPerson**](StructureDefinition-mother-other-children.html) profile.
-- **TRANSACTION BUNDLES**: The bundles associated with this IG includes; [**NgImmRegisterFacilityBundle**](StructureDefinition-ngimm-register-facility-bundle.html) profile, [**NgImmClientRegistrationBundle**](StructureDefinition-ngimm-ngimm-client-registration-bundle.html) profile, [**NgImmUpdateClientBundle**](StructureDefinition-ngimm-update-client-bundle.html) profile, [**NgImmManageReportAEFIBundle**](StructureDefinition-ngimm-manage-report-aefi-bundle.html) profile, [**NgImmGenerateReportBundle**](StructureDefinition-ngimm-generate-report-bundle.html) profile
+- **PROFILES:**, The Immunization IG contain the following profile; [**NgImmAllergyIntolerance**](StructureDefinition-allergy-intolerance-profile.html) profile, [**NgImmEncounter**](StructureDefinition-ng-imm-encounter.html) profile, [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profile, [**NgImmLocation**](StructureDefinition-nigeria-location.html) profile, [**NgImmMeasure**](StructureDefinition-ngimm-measure.html) profile, [**NgImmMeasureReport**](StructureDefinition-measure-report-profile.html) profile, [**NgImmRUObservation**](StructureDefinition-NgImmRUObservation.html) profile, [**NgImmOrganisation**](StructureDefinition-ng-imm-organization.html) profile, [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile, [**NgPractitioner**](StructureDefinition-NgImmPractitioner.html) profile, [**NgImmPractitionerRole**](StructureDefinition-ng-imm-practitionerrole.html) profile, [**NgImmProvenance**](StructureDefinition-ng-imm-provenance.html) profile, [**NgImmRelatedPerson**](StructureDefinition-mother-other-children.html) profile.
+- **TRANSACTION BUNDLES**: The bundles associated with this IG includes; [**NgImmRegisterFacilityBundle**](StructureDefinition-ngimm-register-facility-bundle.html) profile, [**NgImmClientRegistrationBundle**](StructureDefinition-ngimm-client-registration-bundle.html) profile, [**NgImmUpdateClientBundle**](StructureDefinition-ngimm-update-client-bundle.html) profile, [**NgImmManageReportAEFIBundle**](StructureDefinition-ngimm-manage-report-aefi-bundle.html) profile, [**NgImmGenerateReportBundle**](StructureDefinition-ngimm-generate-report-bundle.html) profile
 - **Defining the necessary search parameters, RESTful operations, and data constraints** to ensure interoperable exchange of immunization data across digital platforms.
 - **Providing the minimum data structures required** for systems to exchange immunization-related data across multiple levels of the health system, from point-of-care to national dashboards.
 
@@ -339,5 +339,6 @@ These integrations are essential to achieving the goals of a nationally scalable
       <td>WHO</td>
       <td>World Health Organization</td>
     </tr>
+   </table>
   </tbody>
 

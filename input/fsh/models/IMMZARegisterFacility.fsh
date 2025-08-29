@@ -44,3 +44,14 @@ Description: "IMMZ.A - A logical model representing a health facility being regi
 
 
 
+
+// Minimal EXAMPLE for the logical model: RegisterFacilityModel
+Instance: Example-RegisterFacility
+InstanceOf: register-facility-model
+Usage: #example
+Title: "Example RegisterFacility (Minimal)"
+Description: "Minimal required fields for NG-Imm-A RegisterFacility logical model."
+
+* identifier = "HCF-45231"
+* facilityName = "General Hospital Garki"
+

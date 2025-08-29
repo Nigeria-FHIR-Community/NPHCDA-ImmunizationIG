@@ -127,10 +127,10 @@ Description: "Maps local dose-labelled DE codes to ICD-11 vaccine concepts (anti
 * name = "Local-icd11"
 * experimental = false
 * status = #active
-* sourceUri = $ngVacVS
-* targetUri = $icd11
-* group[0].source = $ngVacVS
-* group[0].target = $icd11
+* sourceUri = $ngVacLocalVS
+* targetUri = $ngicd11VS
+* group[0].source = $ngVacLocalVS
+* group[0].target = $ngicd11VS
 
 // BCG
 * group[0].element[0].code = #IMMZ.Z.DE1
@@ -259,10 +259,10 @@ Description: "Maps local dose-labelled DE codes to SNOMED CT vaccine concepts (a
 * url = $cmLocalToSCT
 * status = #active
 * name = "Local-Snomed"
-* sourceUri = $ngVacCS
-* targetUri = $sct
-* group[0].source = $ngVacCS
-* group[0].target = $sct
+* sourceUri = $ngVacLocalVS
+* targetUri = $ngsctVS
+* group[0].source = $ngVacLocalVS
+* group[0].target = $ngsctVS
 * experimental = false
 
 // BCG

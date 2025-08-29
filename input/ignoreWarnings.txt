@@ -6,3 +6,5 @@
 
 # Model warnings removed
 Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+
+A code with no system has no defined meaning, and it cannot be validated. A system should be provided

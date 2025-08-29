@@ -197,6 +197,30 @@ Description: "All local vaccine codes (DE1–DE29)."
 
 
 
+// ICD11 ValueSet
+ValueSet: NGVaccineICDVS
+Id: ng-vaccine-icd11-vs
+Title: "NG IMMZ.D.DE4 Vaccine ICD ValueSet"
+Description: "All ICD11 vaccine codes (DE1–DE29)."
+* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-vaccine-icd11-vs"
+* ^experimental = false
+* ^status = #active
+* include codes from system $icd11
+
+
+// SNOMED ValueSet
+ValueSet: NGVaccineSCTVS
+Id: ng-vaccine-sct-vs
+Title: "NG IMMZ.D.DE4 Vaccine SNOMED ValueSet"
+Description: "All SNOMED vaccine codes (DE1–DE29)."
+* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-vaccine-sct-vs"
+* ^experimental = false
+* ^status = #active
+* include codes from system $sct
+
+
+
+
 /* ValueSet: NGImmunizationSiteVS
 Id: nigeria-vaccine-site
 Title: "NG-Imm Vaccine Site VS"
