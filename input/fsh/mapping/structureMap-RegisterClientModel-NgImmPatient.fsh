@@ -11,7 +11,7 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 // Source and target structures
 * structure[0].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/register-client-model"
 * structure[0].mode = #source
-* structure[0].alias = "RCM"
+* structure[0].alias = "rcm"
 
 * structure[1].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition-NgImmPatient"
 * structure[1].mode = #target
@@ -21,7 +21,7 @@ Description: "Map logical RegisterClientModel to NgImmPatient profile"
 * group.name = "RCMToNgImmPatient"
 * group.typeMode = #none
 * group.input[0].name = "rcm"
-* group.input[0].type = "RegisterClientModel"
+//* group.input[0].type = "RCM"
 * group.input[0].mode = #source
 * group.input[1].name = "patient"
 * group.input[1].type = "Patient"

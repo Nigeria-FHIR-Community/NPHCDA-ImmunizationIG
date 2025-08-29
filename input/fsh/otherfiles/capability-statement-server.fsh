@@ -8,7 +8,6 @@ Description: """ This CapabilityStatement describes the expected behaviour of an
 
 * experimental = false
 * publisher = "NPHCDA"
-
 * status = #active
 * date = "2025-08-07"
 * publisher = "National Primary Healthcare Development Agency (NPHCDA)"
