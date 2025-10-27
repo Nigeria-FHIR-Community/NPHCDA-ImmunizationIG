@@ -22,7 +22,7 @@ Description: "An example observation recorded when a client is registered, captu
 // Pregnancy Status
 * component[pregnancyStatus].code.coding = $loinc#82810-3
 //* "Pregnancy status"
-* component[pregnancyStatus].valueCodeableConcept.coding = http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-pregnancy-status#notpregnant
+* component[pregnancyStatus].valueCodeableConcept.coding = https://nphcda.gov.ng/ig/CodeSystem/nigeria-pregnancy-status#notpregnant
 
 // HIV Status
 * component[hivStatus].code.coding.system = $sct

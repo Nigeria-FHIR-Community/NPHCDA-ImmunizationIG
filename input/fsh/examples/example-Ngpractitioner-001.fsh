@@ -5,7 +5,7 @@ Description: "A Nigerian healthcare practitioner serving as a Routine Immunizati
 * id = "practitioner-001"
 
 // ---- Identifier ----
-* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
+* identifier[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-mdcn"
 * identifier[0].value = "MDCN-45231"
 
 // ---- Core ----

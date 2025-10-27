@@ -5,7 +5,7 @@ Description: "A Community Health Extension Worker providing RI services in Kano 
 * id = "practitioner-002"
 
 // ---- Identifier ----
-* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
+* identifier[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-mdcn"
 * identifier[0].value  = "CHEW-12346"
 
 // ---- Core ----

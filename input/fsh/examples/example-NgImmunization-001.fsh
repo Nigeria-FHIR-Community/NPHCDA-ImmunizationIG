@@ -4,7 +4,7 @@ Title: "Example NG-Imm Immunization -001"
 Description: "An example Immunization resource per the NG-Imm Immunization profile."
 
 // ---- Core identifiers & status ----
-// * identifier.system = "http://nphcda.gov.ng/ig/identifier/immunization-lot"
+// * identifier.system = "https://nphcda.gov.ng/ig/identifier/immunization-lot"
 // * identifier.value = "IMM-ADMIN-0001"
 
 * status = #completed

@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: ng.gov.nphcda.immunization
-canonical: http://nphcda.gov.ng/ig/immunization
+canonical: https://nphcda.gov.ng/ig
 name: Nigeria-immunization-FHIR-IG
 title: NPHCDA Immunization FHIR IG
 description: Nigeria Immunization FHIR IG

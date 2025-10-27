@@ -7,7 +7,7 @@ Description: "An outreach immunization encounter per the NG-Imm Encounter profil
 * status = #finished
 
 // Encounter.class – bound to NGSessionTypeVS (fixed | outreach | mobile)
-* class.system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* class.system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
 * class.code = #phc-center-l2
 * class.display = "PHC Center Level 2"
 

@@ -8,7 +8,7 @@ Description: "An outreach immunization service location (temporary site in a sch
 * name = "Sabon Gari Primary School Outreach Post"
 
 // Facility type – outreach-post from NGFacilityTypeVS
-* type.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type.coding[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
 * type.coding[0].code = #outreach
 * type.coding[0].display = "Outreach Post"
 
@@ -20,7 +20,7 @@ Description: "An outreach immunization service location (temporary site in a sch
 * address.country = "NG"
 
 // Extension for Administrative Ward
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-wards"
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-wards"
 * address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].code = #fc-amac-gawu 
 * address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].display = "Gawu"
 

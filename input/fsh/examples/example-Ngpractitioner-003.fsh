@@ -5,7 +5,7 @@ Description: "A licensed midwife responsible for maternal and child health servi
 * id = "practitioner-003"
 
 // ---- Identifier ----
-* identifier[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
+* identifier[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-mdcn"
 * identifier[0].value  = "MDCN-12346"
 
 // ---- Core ----

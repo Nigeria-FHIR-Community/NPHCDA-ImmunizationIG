@@ -4,21 +4,21 @@ Usage: #definition
 Title: "StructureMap: RegisterFacilityModel to NgImmOrganization and NgImmLocation"
 Description: "Map logical RegisterFacilityModel to NgImmOrganization and NgImmLocation profiles"
 * id = "registerfacilitymodel-to-ngimmorganization-location"
-* url = "http://nphcda.gov.ng/ig/immunization/StructureMap/registerfacilitymodel-to-ngimmorganization-location"
+* url = "https://nphcda.gov.ng/ig/StructureMap/registerfacilitymodel-to-ngimmorganization-location"
 * name = "RegisterFacilityModelToNgImmOrganizationAndNgImmLocation"
 * status = #active
 
 // Source structure
-* structure[0].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/register-facility-model"
+* structure[0].url = "https://nphcda.gov.ng/ig/StructureDefinition/register-facility-model"
 * structure[0].mode = #source
 * structure[0].alias = "RFM"
 
 // Target structures
-* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-organization"
+* structure[+].url = "https://nphcda.gov.ng/ig/StructureDefinition/ng-imm-organization"
 * structure[=].mode = #target
 * structure[=].alias = "Org"
 
-* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/nigeria-location"
+* structure[+].url = "https://nphcda.gov.ng/ig/StructureDefinition/nigeria-location"
 * structure[=].mode = #target
 * structure[=].alias = "Loc"
 

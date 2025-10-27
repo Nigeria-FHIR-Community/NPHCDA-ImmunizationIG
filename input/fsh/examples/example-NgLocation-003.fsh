@@ -8,7 +8,7 @@ Description: "A mobile immunization team location operating in Benue State, Nige
 * name = "Benue State Mobile Immunization Team"
 
 // Facility type – mobile team represented using tertiary or outreach category
-* type.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type.coding[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
 * type.coding[0].code = #phc-center-l2
 //* type.coding[0].display = "Outreach Post"
 
@@ -20,7 +20,7 @@ Description: "A mobile immunization team location operating in Benue State, Nige
 * address.country = "NG"
 
 // Extension for Administrative Ward
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-wards"
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-wards"
 * address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].code = #fc-amac-gawu
 * address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].display = "Gawu"
 

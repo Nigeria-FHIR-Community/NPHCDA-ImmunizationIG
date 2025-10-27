@@ -3,7 +3,7 @@ InstanceOf: NgImmMeasure
 Title: "Measure - Penta1 to Measles Dropout Rate"
 Description: "Example of an NG-Imm Measure resource representing the dropout rate between Penta1 and Measles vaccinations."
 
-* identifier.system = "http://nphcda.gov.ng/measures"
+* identifier.system = "https://nphcda.gov.ng/measures"
 * identifier.value = "penta1-measles-dropout"
 
 * status = #active
@@ -28,4 +28,4 @@ Description: "Example of an NG-Imm Measure resource representing the dropout rat
 * group[0].population[1].description = "Children who received Penta1 but did not receive the measles vaccine by 12 months of age."
 * group[0].population[1].criteria.expression = "Patient.address.district"
 
-//* library = Reference(Library/NgImmDropoutLogic)
+//* library = Reference(NgImmDropoutLogic)

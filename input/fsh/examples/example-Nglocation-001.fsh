@@ -8,7 +8,7 @@ Description: "An immunization service location (Primary Health Centre) in Lagos,
 * name = "Surulere Primary Health Centre"
 
 // Type of facility (from NGFacilityTypeVS)
-* type.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* type.coding[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
 * type.coding[0].code = #phc-center-l2
 * type.coding[0].display = "PHC Center Level 2"
 
@@ -22,7 +22,7 @@ Description: "An immunization service location (Primary Health Centre) in Lagos,
 
 
 // Extension for Administrative Ward
-* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-wards"
+* address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].system = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-wards"
 * address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].code = #fc-amac-gawu 
 * address.extension[NGadministrativeWard].valueCodeableConcept.coding[0].display = "Gawu"
 

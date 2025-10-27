@@ -4,7 +4,7 @@ Id: ng-gender-vs
 Title: "NG Gender or Sex VS"
 Description: "A subset of the administrative gender codes including only 'male' and 'female'"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-gender-vs"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/ng-gender-vs"
 * ^experimental = true
 * include codes from system http://hl7.org/fhir/administrative-gender where code = "male"
 * include codes from system http://hl7.org/fhir/administrative-gender where code = "female"
@@ -15,7 +15,7 @@ Id: nigeria-wards
 Title: "NG-Imm Wards VS"
 Description: "The administrative Ward (within an LGA) where a person or a facility is."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-wards"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-wards"
 * ^experimental = false
 * include codes from system NGWardsCS
 
@@ -24,7 +24,7 @@ Id: nigeria-lgas
 Title: "NG-Imm LGAs VS"
 Description: "The administrative Local Government Areas where a person or a facility is."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-lgas"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-lgas"
 * ^experimental = false
 * include codes from system NGLGAsCS
 
@@ -33,7 +33,7 @@ Id: nigeria-states
 Title: "NG-Imm States VS"
 Description: "The state where a person or a facility is."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-states"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-states"
 * ^experimental = false
 * include codes from system NGStatesCS
 
@@ -42,7 +42,7 @@ Description: "The state where a person or a facility is."
 // Title: "NG-Imm Languages VS"
 // Description: "The Patient's preferred language for communication."
 // * ^status = #active
-// //* ^url = "http://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages"
+// //* ^url = "https://nphcda.gov.ng/ig/fhir/ValueSet/ng-languages"
 // * include codes from system NGLanguagesCS
 
 
@@ -51,7 +51,7 @@ Id: nigeria-relationship
 Title: "NG-Imm Relationships VS"
 Description: "list of persons related to a patient, but who is not a direct target of care."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-relationship"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-relationship"
 * ^experimental = false
 * include codes from system NGRelationshipsCS
 
@@ -61,7 +61,7 @@ Id: nigeria-sibling-relationship
 Title: "NG-Imm Sibling Relationships VS"
 Description: "A sub list from relationship list with only two options brother and sister."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-sibling-relationship"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-sibling-relationship"
 * ^experimental = false
 * include codes from system NGRelationshipsCS where code = "BROTHER"
 * include codes from system NGRelationshipsCS where code = "SISTER"
@@ -73,7 +73,7 @@ Id: nigeria-hiv-status
 Title: "NG-Imm Client HIV Status VS"
 Description: "Client HIV Status"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-hiv-status"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-hiv-status"
 * include codes from system NGHivStatusCS
 
 //Pregnancy Status ValueSet
@@ -82,7 +82,7 @@ Id: nigeria-pregnancy-status
 Title: "NG-Imm Clinical Status VS"
 Description: "The outcome of the reaction"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-pregnancy-status"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-pregnancy-status"
 * ^experimental = false
 * include codes from system NGPregnancyStatusCS
 
@@ -94,7 +94,7 @@ Id: nigeria-sibling-health-status
 Title: "NG-Imm Sibling Health Status VS"
 Description: "This CodeSystem defines the health of the client's sibling"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-sibling-health-status"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-sibling-health-status"
 * ^experimental = false
 * include codes from system NGSiblingHealthStatusCS
 
@@ -107,7 +107,7 @@ Id: patient-identifier-vs
 Title: "NG-Imm MMZ.C.DE1 Client Identifier VS"
 Description: "This ValueSet defines list of options for uniquely Identifting a Client"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/patient-identifier-vs"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/patient-identifier-vs"
 * ^experimental = false
 * include codes from system NGIdentifierCS
 
@@ -118,7 +118,7 @@ Id: nigeria-session-type
 Title: "NG-Imm Session Type VS"
 Description: "Type of session for immunization. Could be in a fixed facility, outreach or mobile."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-session-type"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-session-type"
 * ^experimental = false
 * include codes from system NGSessionTypeCS
 
@@ -127,7 +127,7 @@ Id: nigeria-vaccine-contraindication
 Title: "NG-Imm Vaccine Contraindication VS"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-vaccine-contraindication"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-vaccine-contraindication"
 * ^experimental = false
 * include codes from system NGImmContraindicationCS
 
@@ -147,7 +147,7 @@ Id: nigeria-facility-types
 Title: "NG-Imm HealthFacility Type VS"
 Description: "Classification of Nigerian health facilities"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-facility-types"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-facility-types"
 * ^experimental = false
 * include codes from system NGFacilityTypeCS
 
@@ -156,7 +156,7 @@ Id: nigeria-location-owner
 Title: "NG-Imm Location Owner"
 Description: "The owner of an Immunization location"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-location-owner"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-location-owner"
 * ^experimental = false
 * include codes from system NGOrganizationOwnerCS
 
@@ -166,7 +166,7 @@ Id: nigeria-clinical-status
 Title: "NG-Imm Clinical Status VS"
 Description: "The outcome of the reaction"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/nigeria-clinical-status"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/nigeria-clinical-status"
 * ^experimental = false
 * include codes from system NGClinicalStatusCS
 
@@ -176,11 +176,11 @@ Description: "The outcome of the reaction"
 
 // //Facility Registry
 ValueSet: NGFacilityIdentifierVS
-Id: ng-facility-identifier-cs
+Id: ng-facility-identifier-vs
 Title: "NG-Imm Clinical Status VS"
 Description: "The outcome of the reaction"
 * ^status = #active
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-facility-identifier-cs"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/ng-facility-identifier-vs"
 * ^experimental = false
 * include codes from system NGFacilityIdentifierCS
 
@@ -190,7 +190,7 @@ ValueSet: NGVaccineLocalVS
 Id: ng-vaccine-local-vs
 Title: "NG IMMZ.D.DE4 Vaccine Local ValueSet"
 Description: "All local vaccine codes (DE1–DE29)."
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-vaccine-local-vs"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/ng-vaccine-local-vs"
 * ^experimental = false
 * ^status = #active
 * include codes from system NGVaccineLocalCS
@@ -202,10 +202,10 @@ ValueSet: NGVaccineICDVS
 Id: ng-vaccine-icd11-vs
 Title: "NG IMMZ.D.DE4 Vaccine ICD ValueSet"
 Description: "All ICD11 vaccine codes (DE1–DE29)."
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-vaccine-icd11-vs"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/ng-vaccine-icd11-vs"
 * ^experimental = false
 * ^status = #active
-* include codes from system $icd11
+* include codes from system NGVaccineLibraryICD11CS
 
 
 // SNOMED ValueSet
@@ -213,10 +213,10 @@ ValueSet: NGVaccineSCTVS
 Id: ng-vaccine-sct-vs
 Title: "NG IMMZ.D.DE4 Vaccine SNOMED ValueSet"
 Description: "All SNOMED vaccine codes (DE1–DE29)."
-* ^url = "http://nphcda.gov.ng/ig/immunization/ValueSet/ng-vaccine-sct-vs"
+* ^url = "https://nphcda.gov.ng/ig/ValueSet/ng-vaccine-sct-vs"
 * ^experimental = false
 * ^status = #active
-* include codes from system $sct
+* include codes from system NGVaccineLibrarySNOMEDCS
 
 
 
@@ -331,3 +331,5 @@ Description: "Vaccine reaction Severity"
 * ^status = #active
 * ^url = "http://hl7.org/fhir/ValueSet/reaction-event-severity"
 * include codes from system http://hl7.org/fhir/ValueSet/reaction-event-severity */
+
+

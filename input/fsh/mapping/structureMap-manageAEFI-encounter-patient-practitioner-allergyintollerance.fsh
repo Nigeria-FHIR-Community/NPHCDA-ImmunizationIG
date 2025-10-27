@@ -4,29 +4,29 @@ Usage: #definition
 Title: "StructureMap: ManageAEFI to AllergyIntolerance, Encounter, Practitioner, and Patient"
 Description: "Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEncounter, NgImmPractitioner, and NgImmPatient profiles"
 * id = "manageaefi-to-ngimm-aefi-profiles"
-* url = "http://nphcda.gov.ng/ig/immunization/StructureMap/manageaefi-to-ngimm-aefi-profiles"
+* url = "https://nphcda.gov.ng/ig/StructureMap/manageaefi-to-ngimm-aefi-profiles"
 * name = "ManageAEFIToNgImmAEFIProfiles"
 * status = #active
 
 // Source structure
-* structure[0].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/manage-aefi"
+* structure[0].url = "https://nphcda.gov.ng/ig/StructureDefinition/manage-aefi"
 * structure[0].mode = #source
 * structure[0].alias = "AEFI"
 
 // Target structures
-* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/allergy-intolerance-profile"
+* structure[+].url = "https://nphcda.gov.ng/ig/StructureDefinition/allergy-intolerance-profile"
 * structure[=].mode = #target
 * structure[=].alias = "Allergy"
 
-* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-encounter"
+* structure[+].url = "https://nphcda.gov.ng/ig/StructureDefinition/ng-imm-encounter"
 * structure[=].mode = #target
 * structure[=].alias = "Encounter"
 
-* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-practitioner"
+* structure[+].url = "https://nphcda.gov.ng/ig/StructureDefinition/ng-imm-practitioner"
 * structure[=].mode = #target
 * structure[=].alias = "Practitioner"
 
-* structure[+].url = "http://nphcda.gov.ng/ig/immunization/StructureDefinition/ng-imm-patient"
+* structure[+].url = "https://nphcda.gov.ng/ig/StructureDefinition/ng-imm-patient"
 * structure[=].mode = #target
 * structure[=].alias = "Patient"
 
@@ -88,7 +88,7 @@ Description: "Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEnc
 * group[0].rule[=].target.context = "Allergy"
 * group[=].rule[0].target.element = "extension[0].url"
 * group[=].rule[0].target.transform = #copy
-//* group[=].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/AllergyReferenceDoseNumber"
+//* group[=].target.parameter[0].valueString = "https://nphcda.gov.ng/StructureDefinition/AllergyReferenceDoseNumber"
 * group[=].rule[0].target.element = "extension[0].valueInteger"
 * group[=].rule[0].target.transform = #copy
 
@@ -99,7 +99,7 @@ Description: "Maps ManageAEFI logical model to NgImmAllergyIntolerance, NgImmEnc
 * group[=].rule[0].target.element = "extension[1].url"
 * group[=].rule[0].target.transform = #copy
 
-//* group[=].target.parameter[0].valueString = "https://nphcda.gov.ng/immunizationIG/StructureDefinition/AllergyReferenceDoseSeries"
+//* group[=].target.parameter[0].valueString = "https://nphcda.gov.ng/StructureDefinition/AllergyReferenceDoseSeries"
 * group[=].rule[0].target.element = "extension[1].valueInteger"
 * group[=].rule[0].target.transform = #copy
 

@@ -3,7 +3,7 @@ CodeSystem: NGWardsCS
 Id: nigeria-wards
 Title: "IMMZ.C.DE14 Administrative Wards CS"
 Description: "This CodeSystem IMMZ.C.DE14 defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-wards"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-wards"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -35,7 +35,7 @@ CodeSystem: NGRelationshipsCS
 Id: nigeria-relationship
 Title: "IMMZ.C.DE20 - Relationships CS"
 Description: "This CodeSystem IMMZ.C.DE20 defines list of persons related to a patient, but who is not a direct target of care"
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-relationship"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-relationship"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -68,7 +68,7 @@ CodeSystem: NGSiblingHealthStatusCS
 Id: nigeria-sibling-health-status
 Title: "IMMZ.C.DE30 Sibling Health Status CS"
 Description: "This CodeSystem IMMZ.C.DE30 defines the health of the client's sibling"
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-sibling-health-status"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-sibling-health-status"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -87,7 +87,7 @@ CodeSystem: NGHivStatusCS
 Id: nigeria-hiv-status
 Title: "IMMZ.C.DE31 - Client HIV status CS"
 Description: "This CodeSystem IMMZ.C.DE31 defines list of options for HIV status of a Client"
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-hiv-status"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-hiv-status"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -107,7 +107,7 @@ CodeSystem: NGFacilityTypeCS
 Id: nigeria-facility-type
 Title: "IMMZ.D.DE3 Facility Type CS"
 Description: "A standardized classification system IMMZ.D.DE3 used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-type"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-type"
 * ^status = #active
 //* ^hierarchyMeaning = #is-a
 * ^caseSensitive = true
@@ -128,7 +128,7 @@ CodeSystem: NGOrganizationOwnerCS
 Id: nigeria-location-owner-cs
 Title: "IMMZ.D.DE3-2 Location Owner CS"
 Description: "This CodeSystem defines Immunization Location Owner."
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-location-owner-cs"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-location-owner-cs"
 * ^publisher = "NPHCDA"
 * ^caseSensitive = false
 * ^content = #complete
@@ -147,7 +147,7 @@ CodeSystem: NGClinicalStatusCS
 Id: nigeria-clinical-status 
 Title: "IMMZ.E.DE6 Adverse Event Clinical Status CS"
 Description: "A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-clinical-status"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-clinical-status"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
@@ -164,7 +164,7 @@ CodeSystem: NGSessionTypeCS
 Id: nigeria-immunization-session-type
 Title: "IMMZ.D.DE3 Immunization Session types CS"
 Description: "Type of session for immunization IMMZ.D.DE3. Could be in a fixed facility, outreach or mobile."
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-immunization-session-type"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-session-type"
 * ^status = #active
 //* ^hierarchyMeaning = #is-a
 * ^caseSensitive = false
@@ -182,7 +182,7 @@ CodeSystem: NGImmContraindicationCS
 Id: nigeria-immunization-contraindication
 Title: "IMMZ.D.DE6 Vaccine contraindications CS"
 Description: "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-immunization-contraindication"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-immunization-contraindication"
 * ^status = #active
 //* ^hierarchyMeaning = #is-a
 * ^experimental = false
@@ -202,7 +202,7 @@ CodeSystem: NGPregnancyStatusCS
 Id: nigeria-pregnancy-status
 Title: "IMMZ.C.DE32 Client Pregnancy status CS"
 Description: "This CodeSystem defines list of options for Pregnancy status of a Client"
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-pregnancy-status"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-pregnancy-status"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
@@ -224,7 +224,7 @@ CodeSystem: NGIdentifierCS
 Id: patient-identifier-cs
 Title: "IMMZ.C.DE1 Client Identifier CS"
 Description: "This CodeSystem defines list of options for uniquely Identifting a Client"
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/patient-identifier-cs"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/patient-identifier-cs"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
@@ -247,7 +247,7 @@ CodeSystem: NGMDCNCS
 Id: nigeria-mdcn
 Title: "IMMZ.D.DE14 Practitioner Identifier CS"
 Description: "This CodeSystem IMMZ.C.DE14 defines placeholder codes to manage physician identifiers in Nigeria."
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-mdcn"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-mdcn"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -273,7 +273,7 @@ CodeSystem: NGFacilityIdentifierCS
 Id: nigeria-facility-registry
 Title: "IMMZ.A.DE1 Facility Identifier CS"
 Description: "This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Facility identifiers in Nigeria."
-* ^url = "http://nphcda.gov.ng/ig/immunization/CodeSystem/nigeria-facility-registry"
+* ^url = "https://nphcda.gov.ng/ig/CodeSystem/nigeria-facility-registry"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
