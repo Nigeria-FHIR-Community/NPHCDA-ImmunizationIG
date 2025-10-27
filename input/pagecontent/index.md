@@ -49,6 +49,12 @@
             <td>5th ci-build Draft</td>
             <td>0.7.0</td>
         </tr>
+         <tr>
+            <td>Updated the Concept maps</td>
+            <td>27th October 2025</td>
+            <td>6th ci-build Draft</td>
+            <td>0.8.0</td>
+        </tr>
     </tbody>
 </table>
 
