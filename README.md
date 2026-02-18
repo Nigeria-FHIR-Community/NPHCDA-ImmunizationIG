@@ -37,4 +37,4 @@ The IG defines how HL7 FHIR standards are applied to immunization use cases in N
 **For comments on this repo contact** - kasim.sani@nphcda.gov.ng
 
 ```bash
-The IG is accessible here: https://build.fhir.org/ig/Nigeria-FHIR-Community/NPHCDA-ImmunizationIG/index.html
+The IG is accessible here : https://build.fhir.org/ig/Nigeria-FHIR-Community/NPHCDA-ImmunizationIG/index.html
