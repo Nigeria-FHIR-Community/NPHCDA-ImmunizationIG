@@ -112,30 +112,13 @@ The business processes here have been informed by <a href="https://www.who.int/p
         </ul>
       </td>
     </tr>
+    
     <tr>
       <td>E</td>
-      <td>Manage and Report AEFI
-      <br>
-      <img src="icon-e-manage-report-aefi.png" alt="icon-e-manage-report-aefi" style="width:85%"/></td>
-      <td>IMMZ.E</td>
-      <td>Health worker</td>
-      <td>To monitor, record, and report AEFI.</td>
-      <td>
-       <p>Starting point: The Client reports AEFI or present with AEFI complaint at health facility</p>
-        <ul>
-          <li>The health worker searches the record and records the AEFI against the vaccine administered.</li>
-          <li>Monitor and Report any AEFI as appropriate</li>
-          <li>Counsels the Client and treats them appropriately.</li>
-          <li>Advises Client on when to come for the next vaccine.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>F</td>
       <td>Client reminder
       <br>
       <img src="icon-f-client-reminder.png" alt="icon-f-client-reminder" style="width:85%"/></td>
-      <td>IMMZ.F</td>
+      <td>IMMZ.E</td>
       <td>Health worker</td>
       <td>This is to remind clients that it is time to return for vaccination.</td>
       <td>
@@ -148,11 +131,11 @@ The business processes here have been informed by <a href="https://www.who.int/p
       </td>
     </tr>
     <tr>
-      <td>G</td>
+      <td>F</td>
       <td>Defaulter tracking
       <br>
       <img src="icon-g-defaulter-tracking.png" alt="icon-g-defaulter-tracking" style="width:85%"/></td>
-      <td>IMMZ.G</td>
+      <td>IMMZ.F</td>
       <td>Community health worker</td>
       <td>To identify clients that are overdue for follow-up.</td>
       <td>
@@ -165,28 +148,13 @@ The business processes here have been informed by <a href="https://www.who.int/p
         </ul>
       </td>
     </tr>
+    
     <tr>
-      <td>H</td>
-      <td>Report generation
-      <br>
-      <img src="icon-h-report-generation.png" alt="icon-h-report-generation" style="width:85%"/></td>
-      <td>IMMZ.H</td>
-      <td>Health worker</td>
-      <td>To provide data access and analysis for decision-making.</td>
-      <td>
-        <p>Starting point: Define the reporting parameters.</p>
-        <ul>
-          <li>Generate report.</li>
-          <li>High-level review and analyze.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>I</td>
+      <td>G</td>
       <td>Resolve duplicate Client records
       <br>
       <img src="icon-i-resolve-duplicate-client.png" alt="icon-i-resolve-duplicate-client" style="width:85%"/></td>
-      <td>IMMZ.I</td>
+      <td>IMMZ.G</td>
       <td>Health Facility Systems Administrator</td>
       <td>To ensure accurate and unified client data by identifying and merging duplicate records.</td>
       <td>
@@ -199,11 +167,11 @@ The business processes here have been informed by <a href="https://www.who.int/p
       </td>
     </tr>
     <tr>
-      <td>J</td>
+      <td>H</td>
       <td>Resolve duplicate vaccination events
       <br>
       <img src="icon-i-resolve-duplicate-event.png" alt="icon-i-resolve-duplicate-event" style="width:85%"/></td>
-      <td>IMMZ.J</td>
+      <td>IMMZ.H</td>
       <td>Routine immunization service provider</td>
       <td>To maintain reliable immunization records by detecting and resolving duplicate vaccination entries.</td>
       <td>
@@ -212,6 +180,41 @@ The business processes here have been informed by <a href="https://www.who.int/p
           <li>Review duplicate events</li>
           <li>Select the most accurate/suitable event record.</li>
           <li>Update vaccination event.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>Report generation
+      <br>
+      <img src="icon-h-report-generation.png" alt="icon-h-report-generation" style="width:85%"/></td>
+      <td>IMMZ.I</td>
+      <td>Health worker</td>
+      <td>To provide data access and analysis for decision-making.</td>
+      <td>
+        <p>Starting point: Define the reporting parameters.</p>
+        <ul>
+          <li>Generate report.</li>
+          <li>High-level review and analyze.</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>J</td>
+      <td>Manage and Report AEFI
+      <br>
+      <img src="icon-e-manage-report-aefi.png" alt="icon-e-manage-report-aefi" style="width:85%"/></td>
+      <td>IMMZ.J</td>
+      <td>Health worker</td>
+      <td>To monitor, record, and report AEFI.</td>
+      <td>
+       <p>Starting point: The Client reports AEFI or present with AEFI complaint at health facility</p>
+        <ul>
+          <li>The health worker searches the record and records the AEFI against the vaccine administered.</li>
+          <li>Monitor and Report any AEFI as appropriate</li>
+          <li>Counsels the Client and treats them appropriately.</li>
+          <li>Advises Client on when to come for the next vaccine.</li>
         </ul>
       </td>
     </tr>
