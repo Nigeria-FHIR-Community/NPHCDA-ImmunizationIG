@@ -55,6 +55,12 @@
             <td>6th ci-build Draft</td>
             <td>0.8.0</td>
         </tr>
+        <tr>
+            <td>Updated the Workflow to better align with WHO core workflow lettering</td>
+            <td>2nd April 2026</td>
+            <td>7th ci-build Draft</td>
+            <td>0.8.0</td>
+        </tr>
     </tbody>
 </table>
 
