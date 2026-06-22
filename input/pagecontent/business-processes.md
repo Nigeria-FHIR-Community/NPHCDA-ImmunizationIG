@@ -385,7 +385,6 @@ The overview of the business processes in this DAK captures all business process
  <div> 
 <img src="workflow-j-manage-report-aefi.png" alt="manage-and-report-aefi.png" style="width:85%"/>
 </div>
-<br>
 
 
 See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)

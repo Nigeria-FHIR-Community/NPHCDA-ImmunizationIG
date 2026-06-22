@@ -632,5 +632,5 @@ Provides the general attributes and features of the digital system to ensure usa
     </table>
 
 
-<br>
+
 See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)

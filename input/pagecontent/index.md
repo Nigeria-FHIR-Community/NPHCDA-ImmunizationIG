@@ -360,5 +360,4 @@ These integrations are essential to achieving the goals of a nationally scalable
    </table>
   </tbody>
 
-<br>
 See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)

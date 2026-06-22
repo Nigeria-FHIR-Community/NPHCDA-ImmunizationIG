@@ -265,5 +265,5 @@ This document is intended to provide a clear description of Nigeria's routine im
 
 Readers designing or evaluating a digital solution should use this page together with the DAK sections covering personas, user scenarios, business processes and workflows, decision-support logic, functional requirements, and non-functional requirements. Collectively, these sections define the expected system behaviour and provide a basis for verifying that an implemented solution functions as intended.
 
-<br>
+
 See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)

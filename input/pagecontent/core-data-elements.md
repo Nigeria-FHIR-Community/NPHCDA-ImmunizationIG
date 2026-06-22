@@ -6,5 +6,5 @@ This page outlines the core set of data elements corresponding to different poin
 
 The data elements in the data dictionary have been extracted from different registers and forms shared as indicated [here](https://docs.google.com/spreadsheets/d/1a-7n7pd2f4AVteTOWLnR7aFx2bdjcTtz/edit?gid=365633507#gid=365633507).
 
-<br>
+
 See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)
