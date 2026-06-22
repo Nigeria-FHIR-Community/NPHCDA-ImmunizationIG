@@ -1,32 +1,107 @@
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
 
- <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
-  
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
   <li class="dropdown">
-    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements (DAKs)-(L2)<b class="caret"></b></a>
+    <a href="#"
+       class="dropdown-toggle"
+       data-toggle="dropdown"
+       role="button"
+       aria-haspopup="true"
+       aria-expanded="false">
+      Business Requirements (DAK) – L2
+      <b class="caret"></b>
+    </a>
+
     <ul class="dropdown-menu">
-      <li><a href="health-interventions-recommendations.html">Health Interventions &amp; Recommendations</a></li>
-      <li><a href="generic-personas.html">Generic Personas</a></li>
-      <li><a href="user-scenarios.html">User Scenarios</a></li>
-      <li><a href="business-processes.html">Business Processes &amp; Workflows</a></li>
-      <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
-       <li><a href="core-data-elements.html">Core Data Elements</a></li>     
-      <li><a href="Indicators.html">Indicators</a></li>
-       <li><a href="functional-requirements.html">Functional Requirements</a></li>
-       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+      <li>
+        <a href="business-requirements.html">Business Requirements Overview</a>
+      </li>
+      <li>
+        <a href="health-interventions-recommendations.html">
+          Health Interventions &amp; Recommendations
+        </a>
+      </li>
+      <li>
+        <a href="generic-persona.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="user-scenario.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes-workflows.html">
+          Business Processes &amp; Workflows
+        </a>
+      </li>
+      <li>
+        <a href="decision-support-logic.html">Decision Support Logic</a>
+      </li>
+      <li>
+        <a href="core-data-elements.html">Core Data Elements</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicators</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">
+          Non-Functional Requirements
+        </a>
+      </li>
     </ul>
   </li>
 
   <li class="dropdown">
-    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">FHIR Artifacts-(L3)<b class="caret"></b></a>
+    <a href="#"
+       class="dropdown-toggle"
+       data-toggle="dropdown"
+       role="button"
+       aria-haspopup="true"
+       aria-expanded="false">
+      FHIR Artifacts – L3
+      <b class="caret"></b>
+    </a>
+
     <ul class="dropdown-menu">
-      <li><a href="artifacts.html#structures-resource-profiles">Profiles and Extensions</a></li>
-      <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
-      <li><a href="artifacts.html#example-example-instances">Examples and Instances</a></li>
-      <li><a href="artifacts.html#artifacts-summary">Capability and Logical Models</a></li>
-      <li><a href="artifacts.html#terminology-structure-maps">Model-Profile Map</a></li>
+      <li>
+        <a href="artifacts.html">FHIR Artifacts Overview</a>
+      </li>
+      <li>
+        <a href="artifacts.html#structures-resource-profiles">
+          Profiles and Extensions
+        </a>
+      </li>
+      <li>
+        <a href="artifacts.html#terminology-value-sets">
+          Terminology
+        </a>
+      </li>
+      <li>
+        <a href="artifacts.html#example-example-instances">
+          Examples and Instances
+        </a>
+      </li>
+      <li>
+        <a href="artifacts.html#artifacts-summary">
+          Capability Statements and Logical Models
+        </a>
+      </li>
+      <li>
+        <a href="artifacts.html#terminology-structure-maps">
+          Model-to-Profile Map
+        </a>
+      </li>
     </ul>
   </li>
 
-  <li> <a href="privacy-security.html" >Privacy and Security</a></li> 
+  <li>
+    <a href="privacy-security.html">Privacy and Security</a>
+  </li>
+
+</ul>
+
