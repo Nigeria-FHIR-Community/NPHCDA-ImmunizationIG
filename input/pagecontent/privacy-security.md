@@ -1,7 +1,5 @@
 
-# Privacy and Security Guidance for Nigeria Immunization FHIR IG
-
-## 1. Introduction
+## Introduction
 
 Immunization data handled under the **Nigeria Immunization FHIR Implementation Guide** contains **sensitive personal data** as defined in the **Nigeria Data Protection Act (NDPA, 2023)**. Such data includes identifiers, demographic details, and health status information of clients, often linked to children and vulnerable populations. This section provides additional guidance on how to implement privacy and security safeguards in line with:
 
@@ -16,7 +14,7 @@ This extended guidance applies **from FHIR IG design through to deployed immuniz
 
 ---
 
-## 2. Core Privacy and Security Principles
+## Core Privacy and Security Principles
 
 All systems claiming conformance to this IG MUST implement:
 
@@ -28,9 +26,9 @@ All systems claiming conformance to this IG MUST implement:
 
 ---
 
-## 3. Technical Requirements by Standard
+## Technical Requirements by Standard
 
-### 3.1 NIS ISO 14441:2019 – Security & Privacy for EHR Systems
+### NIS ISO 14441:2019 – Security & Privacy for EHR Systems
 
 FHIR server and client implementations for immunization bundles MUST:
 
@@ -42,7 +40,7 @@ FHIR server and client implementations for immunization bundles MUST:
 
 These map to ISO 14441 Clause 5.3 requirements on **identification, authentication, authorization, confidentiality, integrity, accountability, and non-repudiation**.
 
-### 3.2 NIS ISO 27789:2019 – Audit Trails
+### NIS ISO 27789:2019 – Audit Trails
 
 All immunization transactions, whether via `$submit-ngimm-bundle` or `$export-ngimm-bundle`, MUST be recorded in **immutable audit logs** containing:
 
@@ -55,7 +53,7 @@ All immunization transactions, whether via `$submit-ngimm-bundle` or `$export-ng
 
 Audit data MUST be **retained for a minimum of 10 years** for compliance investigations, per Clause 9.3 (Retention) of ISO 27789.
 
-### 3.3 NIS ISO 21547:2019 – Long-Term Archiving
+### NIS ISO 21547:2019 – Long-Term Archiving
 
 For long-term immunization records (e.g., >5 years post-service):
 
@@ -66,7 +64,7 @@ For long-term immunization records (e.g., >5 years post-service):
 
 Archived bundles SHOULD be cryptographically signed and stored with metadata linking them to consent and audit records.
 
-### 3.4 NIS ISO 25237:2019 – Pseudonymization
+### NIS ISO 25237:2019 – Pseudonymization
 
 Where immunization data is used for analytics, research, submitted to the registry, or dashboarding:
 
@@ -75,7 +73,7 @@ Where immunization data is used for analytics, research, submitted to the regist
 - Apply **risk assessment for re-identification** before sharing datasets externally (Clause 6.2).
 - Use **consistent pseudonyms** across datasets where linkage is required, but without exposing raw identifiers.
 
-### 3.5 NIS ISO/TR 17975:2019 – Consent
+### NIS ISO/TR 17975:2019 – Consent
 
 FHIR `Consent` resources SHOULD be implemented to capture:
 
@@ -88,19 +86,19 @@ Consent directives MUST be **machine-readable** and enforceable by the FHIR serv
 
 ---
 
-## 4. Integration into Workflow and Operations
+## Integration into Workflow and Operations
 
-### 4.1 At System Implementation Stage
+### At System Implementation Stage
 - Build **shared libraries or modules** for authentication, audit logging, consent enforcement, pseudonymization, and archiving.
 - Ensure modules are **tested against conformance criteria**.
 
-### 4.2 At Certification & Compliance Stage
+### At Certification & Compliance Stage
 - Use **conformity assessment programs** for vendor and system certification.
 - Maintain **DPIAs** before major deployments or system upgrades.
 
 ---
 
-## 5. Privacy-by-Design for NgImmBundle Operations
+## Privacy-by-Design for NgImmBundle Operations
 
 ### `$submit-ngimm-bundle`
 - Validate bundle contents against consent and scope before commit.
@@ -117,7 +115,7 @@ Consent directives MUST be **machine-readable** and enforceable by the FHIR serv
 
 ---
 
-## 6. Compliance Monitoring
+## Compliance Monitoring
 
 The FHIR server SHOULD expose:
 - `AuditEvent` queries for compliance audits.

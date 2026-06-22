@@ -9,7 +9,7 @@ name: Nigeria-immunization-FHIR-IG
 title: NPHCDA Immunization FHIR IG
 description: Nigeria Immunization FHIR IG
 status: draft # draft | active | retired | unknown
-version: 0.8.0
+version: 0.9.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -45,7 +45,7 @@ publisher:
 #
 pages:
   index.md:
-    title: Home
+    title: Nigeria Immunization FHIR Implementation Guide (IG)
   business-requirements.md:
     title: Business Requirements (DAKs)-(L2)
   generic-personas.md:
@@ -62,6 +62,12 @@ pages:
     title: Non-Functional Requirements
   privacy-security.md:
     title: Privacy and Security Considerations
+  health-interventions-recommendations.md:
+    title: Health Interventions and Recommendations
+  core-data-elements.md:
+    title: Core Data Elements
+  indicators.md:
+    title: Indicators
 
 # dependancies.md:
 #   title: Dependancies

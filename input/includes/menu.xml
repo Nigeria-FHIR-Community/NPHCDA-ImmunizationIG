@@ -6,10 +6,13 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements (DAKs)-(L2)<b class="caret"></b></a>
     <ul class="dropdown-menu">
+      <li><a href="health-interventions-recommendations.html">Health Interventions &amp; Recommendations</a></li>
       <li><a href="generic-personas.html">Generic Personas</a></li>
       <li><a href="user-scenarios.html">User Scenarios</a></li>
       <li><a href="business-processes.html">Business Processes &amp; Workflows</a></li>
       <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
+       <li><a href="core-data-elements.html">Core Data Elements</a></li>     
+      <li><a href="Indicators.html">Indicators</a></li>
        <li><a href="functional-requirements.html">Functional Requirements</a></li>
        <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
     </ul>

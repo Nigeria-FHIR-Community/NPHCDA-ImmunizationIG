@@ -433,3 +433,6 @@ The table below provides an example of a breakdown of these three elements extra
 </tr>
 </tbody>
 </table>
+
+<br>
+See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)

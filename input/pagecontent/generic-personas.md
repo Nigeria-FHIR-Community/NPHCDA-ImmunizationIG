@@ -141,3 +141,6 @@ Health Facilities can vary in size and setup. A health facility can be public or
   
   </tbody>
 </table>
+
+<br>
+See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)

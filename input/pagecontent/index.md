@@ -1,6 +1,5 @@
-# Nigeria Immunization FHIR Implementation Guide (IG)
 
-#### Revision History
+### Revision History
 
 <table class="table table-hover table-bordered table-striped">
     <thead>
@@ -60,6 +59,12 @@
             <td>2nd April 2026</td>
             <td>7th ci-build Draft</td>
             <td>0.8.0</td>
+        </tr>
+        <tr>
+            <td>Update the DAK sections of the IG</td>
+            <td>22nd June 2026</td>
+            <td>9th ci-build Draft</td>
+            <td>0.9.0</td>
         </tr>
     </tbody>
 </table>
@@ -354,3 +359,5 @@ These integrations are essential to achieving the goals of a nationally scalable
    </table>
   </tbody>
 
+<br>
+See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)

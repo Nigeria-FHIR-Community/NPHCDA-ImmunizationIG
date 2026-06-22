@@ -1,3 +1,4 @@
+
 A business process, or process, is a set of related activities or tasks performed together to achieve the objectives of the health Programme area, such as registration, counseling, and referrals. 
 Workflows are a visual representation of the progression of activities (tasks, events, and interactions) that are performed within the business process. The workflow provides a story for the business process being diagrammed and is used to enhance communication and collaboration among users, stakeholders, and engineers.
 
@@ -104,20 +105,20 @@ The business processes here have been informed by <a href="https://www.who.int/p
         <ul>
           <li>Capture or query Client’s record.</li>
           <li>Determine Client’s vaccination eligibility (also check contraindication).</li>
+          <li>Verify the required vaccines.</li>          
           <li>Prepare and administer vaccines.</li>
-          <li>Record the appropriate data.</li>
           <li>Monitor the Client for any adverse effects following vaccination.</li>
           <li>Inform the Client when to return for vaccination/set Client reminder.</li>
           <li>Provide Client with vaccination card</li>
         </ul>
       </td>
     </tr>
-    
+
     <tr>
       <td>E</td>
       <td>Client reminder
       <br>
-      <img src="icon-f-client-reminder.png" alt="icon-f-client-reminder" style="width:85%"/></td>
+      <img src="icon-e-client-reminder.png" alt="icon-e-client-reminder" style="width:85%"/></td>
       <td>IMMZ.E</td>
       <td>Health worker</td>
       <td>This is to remind clients that it is time to return for vaccination.</td>
@@ -130,11 +131,13 @@ The business processes here have been informed by <a href="https://www.who.int/p
         </ul>
       </td>
     </tr>
+    
+
     <tr>
       <td>F</td>
       <td>Defaulter tracking
       <br>
-      <img src="icon-g-defaulter-tracking.png" alt="icon-g-defaulter-tracking" style="width:85%"/></td>
+      <img src="icon-f-defaulter-tracking.png" alt="icon-f-defaulter-tracking" style="width:85%"/></td>
       <td>IMMZ.F</td>
       <td>Community health worker</td>
       <td>To identify clients that are overdue for follow-up.</td>
@@ -153,7 +156,7 @@ The business processes here have been informed by <a href="https://www.who.int/p
       <td>G</td>
       <td>Resolve duplicate Client records
       <br>
-      <img src="icon-i-resolve-duplicate-client.png" alt="icon-i-resolve-duplicate-client" style="width:85%"/></td>
+      <img src="icon-g-resolve-duplicate-client.png" alt="icon-g-resolve-duplicate-client" style="width:85%"/></td>
       <td>IMMZ.G</td>
       <td>Health Facility Systems Administrator</td>
       <td>To ensure accurate and unified client data by identifying and merging duplicate records.</td>
@@ -166,11 +169,12 @@ The business processes here have been informed by <a href="https://www.who.int/p
         </ul>
       </td>
     </tr>
+
     <tr>
       <td>H</td>
       <td>Resolve duplicate vaccination events
       <br>
-      <img src="icon-i-resolve-duplicate-event.png" alt="icon-i-resolve-duplicate-event" style="width:85%"/></td>
+      <img src="icon-h-resolve-duplicate-event.png" alt="icon-h-resolve-duplicate-event" style="width:85%"/></td>
       <td>IMMZ.H</td>
       <td>Routine immunization service provider</td>
       <td>To maintain reliable immunization records by detecting and resolving duplicate vaccination entries.</td>
@@ -183,11 +187,12 @@ The business processes here have been informed by <a href="https://www.who.int/p
         </ul>
       </td>
     </tr>
+
     <tr>
       <td>I</td>
       <td>Report generation
       <br>
-      <img src="icon-h-report-generation.png" alt="icon-h-report-generation" style="width:85%"/></td>
+      <img src="icon-i-report-generation.png" alt="icon-i-report-generation" style="width:85%"/></td>
       <td>IMMZ.I</td>
       <td>Health worker</td>
       <td>To provide data access and analysis for decision-making.</td>
@@ -204,7 +209,7 @@ The business processes here have been informed by <a href="https://www.who.int/p
       <td>J</td>
       <td>Manage and Report AEFI
       <br>
-      <img src="icon-e-manage-report-aefi.png" alt="icon-e-manage-report-aefi" style="width:85%"/></td>
+      <img src="icon-j-manage-report-aefi.png" alt="icon-j-manage-report-aefi" style="width:85%"/></td>
       <td>IMMZ.J</td>
       <td>Health worker</td>
       <td>To monitor, record, and report AEFI.</td>
@@ -332,19 +337,11 @@ The overview of the business processes in this DAK captures all business process
 </div>
 <br>
 
-#### Manage AEFIs
-<b> Objective: </b> To manage caregiver reports or client presenting at health facilities with cases of AEFI based on set triggers.
- 
- <div> 
-<img src="workflow-e-manage-report-aefi.png" alt="manage-and-report-aefi.png" style="width:85%"/>
-</div>
-<br>
-
 #### Client reminder 
 <b> Objective: </b> To send vaccination reminders to community health workers that certain clients are due for vaccination.
  
  <div> 
-<img src="workflow-f-client-reminder.png" alt="client-reminder.png" style="width:85%"/>
+<img src="workflow-e-client-reminder.png" alt="client-reminder.png" style="width:85%"/>
 </div>
 <br>
 
@@ -352,15 +349,7 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To identify clients that are overdue for follow-up
  
  <div> 
-<img src="workflow-g-defaulter-tracking.png" alt="defaulter-tracking.png" style="width:85%"/>
-</div>
-<br>
-
-#### Report generation
-<b> Objective: </b> To provide data access and analysis for decision-making
- 
- <div> 
-<img src="workflow-h-report-generation.png" alt="report-generation.png" style="width:85%"/>
+<img src="workflow-f-defaulter-tracking.png" alt="defaulter-tracking.png" style="width:85%"/>
 </div>
 <br>
 
@@ -368,7 +357,7 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To ensure accurate and unified client data by identifying and merging duplicate records.
  
  <div> 
-<img src="workflow-i-resolve-duplicate-client.png" alt="resolve-duplicate-client-records.png" style="width:85%"/>
+<img src="workflow-g-resolve-duplicate-client.png" alt="resolve-duplicate-client-records.png" style="width:85%"/>
 </div>
 <br>
 
@@ -376,7 +365,35 @@ The overview of the business processes in this DAK captures all business process
 <b> Objective: </b> To maintain reliable immunization records by detecting and resolving duplicate vaccination entries.
  
  <div> 
-<img src="workflow-i-resolve-duplicate-event.png" alt="resolve-duplicate-vaccination-event.png" style="width:85%"/>
+<img src="workflow-h-resolve-duplicate-event.png" alt="resolve-duplicate-vaccination-event.png" style="width:85%"/>
 </div>
 <br>
+
+#### Report generation
+<b> Objective: </b> To provide data access and analysis for decision-making
+ 
+ <div> 
+<img src="workflow-i-report-generation.png" alt="report-generation.png" style="width:85%"/>
+</div>
+<br>
+
+
+#### Manage AEFIs
+<b> Objective: </b> To manage caregiver reports or client presenting at health facilities with cases of AEFI based on set triggers.
+ 
+ <div> 
+<img src="workflow-j-manage-report-aefi.png" alt="manage-and-report-aefi.png" style="width:85%"/>
+</div>
+<br>
+
+
+See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)
+
+
+
+
+
+
+
+
  

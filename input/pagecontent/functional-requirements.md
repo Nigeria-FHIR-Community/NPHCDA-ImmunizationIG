@@ -576,3 +576,6 @@ Business process A: Health Facility Registration
 </tbody>
 
  </table>
+
+<br>
+See the complete Digital Adaptation Kit (DAK) [here](business-requirements.html)
