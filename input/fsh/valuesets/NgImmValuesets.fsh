@@ -5,9 +5,9 @@ Title: "NG Gender or Sex VS"
 Description: "A subset of the administrative gender codes including only 'male' and 'female'"
 * ^status = #active
 * ^url = "https://nphcda.gov.ng/ig/ValueSet/ng-gender-vs"
-* ^experimental = true
-* include codes from system http://hl7.org/fhir/administrative-gender where code = "male"
-* include codes from system http://hl7.org/fhir/administrative-gender where code = "female"
+* ^experimental = false
+* http://hl7.org/fhir/administrative-gender#male "Male"
+* http://hl7.org/fhir/administrative-gender#female "Female"
 
 
 ValueSet: NGWardsVS
