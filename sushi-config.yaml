@@ -43,31 +43,31 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-pages:
-  index.md:
-    title: Nigeria Immunization FHIR Implementation Guide (IG)
-  business-requirements.md:
-    title: Business Requirements (DAKs)-(L2)
-  generic-personas.md:
-    title: Generic Personas
-  user-scenarios.md:
-    title: User Scenarios
-  business-processes.md:
-    title: Business Processes
-  decision-support-logic.md:
-    title: Decision Support Logic
-  functional-requirements.md:
-    title: Functional Requirements
-  non-functional-requirements.md:
-    title: Non-Functional Requirements
-  privacy-security.md:
-    title: Privacy and Security Considerations
-  health-interventions-recommendations.md:
-    title: Health Interventions and Recommendations
-  core-data-elements.md:
-    title: Core Data Elements
-  indicators.md:
-    title: Indicators
+# pages:
+#   index.md:
+#     title: Nigeria Immunization FHIR Implementation Guide (IG)
+#   business-requirements.md:
+#     title: Business Requirements (DAKs)-(L2)
+#   generic-personas.md:
+#     title: Generic Personas
+#   user-scenarios.md:
+#     title: User Scenarios
+#   business-processes.md:
+#     title: Business Processes
+#   decision-support-logic.md:
+#     title: Decision Support Logic
+#   functional-requirements.md:
+#     title: Functional Requirements
+#   non-functional-requirements.md:
+#     title: Non-Functional Requirements
+#   privacy-security.md:
+#     title: Privacy and Security Considerations
+#   health-interventions-recommendations.md:
+#     title: Health Interventions and Recommendations
+#   core-data-elements.md:
+#     title: Core Data Elements
+#   indicators.md:
+#     title: Indicators
 
 # dependancies.md:
 #   title: Dependancies

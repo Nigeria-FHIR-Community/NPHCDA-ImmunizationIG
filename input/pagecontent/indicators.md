@@ -1,3 +1,4 @@
+# Indicators
 
 This page details indicators and performance metrics that would be aggregated from core data elements identified in Component 5. The list in the spreadsheet is a minimum set of indicators that can be aggregated for decision-making, performance metrics, and subnational and national reporting based on data collected from individual-level, routine health systems. 
 

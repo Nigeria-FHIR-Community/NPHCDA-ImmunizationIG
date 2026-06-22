@@ -1,3 +1,5 @@
+# User Scenario
+
 User scenarios are narratives that describe how the different personas may interact with each other and are intended to give an illustrative idea of a typical workflow.  This section is intended to provide an understanding of how the system would be used, and how it would fit into existing workflows.
 
 ### User scenario for Routine Vaccination

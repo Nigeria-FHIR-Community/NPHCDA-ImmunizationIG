@@ -1,3 +1,4 @@
+# Core Data Elements
 
 This page outlines the core set of data elements corresponding to different points of the workflow within the identified business processes. These data elements provide the foundation for executing the decision-support logic, as well as populating indicators and performance metrics.
 

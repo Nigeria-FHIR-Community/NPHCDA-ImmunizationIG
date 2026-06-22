@@ -1,4 +1,6 @@
 
+# Privacy & Security
+
 ## Introduction
 
 Immunization data handled under the **Nigeria Immunization FHIR Implementation Guide** contains **sensitive personal data** as defined in the **Nigeria Data Protection Act (NDPA, 2023)**. Such data includes identifiers, demographic details, and health status information of clients, often linked to children and vulnerable populations. This section provides additional guidance on how to implement privacy and security safeguards in line with:
