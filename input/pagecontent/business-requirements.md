@@ -1,5 +1,5 @@
 
-# Immunization Digital Adaptation Kits (DAK)
+
 
 The Nigeria Immunization Digital Adaptation Kit (DAK) translates national immunization policies, programme guidance, and service-delivery expectations into structured requirements that can be implemented consistently in digital health solutions.
 

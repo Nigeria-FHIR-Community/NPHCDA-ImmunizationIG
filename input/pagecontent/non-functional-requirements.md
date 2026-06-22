@@ -1,4 +1,4 @@
-# Non-Functional Requirements
+
 Provides the general attributes and features of the digital system to ensure usability and overcome technical and physical constraints.
 
 <table border="1" class="dataframe table table-striped table-bordered">
